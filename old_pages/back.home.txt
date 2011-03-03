@@ -1,0 +1,11 @@
+====== xCloud ======
+Engine Yard xCloud is an enterprise-grade platform that ensures the success of your Rails applications in the cloud. It surpasses today's definition of "high-availability" because xCloud environments are virtualized to deliver unmatched reliability, scalability and customizability. This eliminates the need to manage expensive, redundant systems that drain productivity and profitability from your business.
+
+With fully configured virtual machines, Engine Yard xCloud is unique because its immediately ready for your Ruby application with a managed and integrated Ruby on Rails stack. It includes web, application and database servers, built-in monitoring and process management, a Rails-optimized Linux distribution, in-memory caches and more. Each component in the xCloud is actively managed by Engine Yard based on our history of success with thousands of enterprise applications.
+
+Engine Yard xCloud is a Platform-as-a-Service (PaaS) that reduces your infrastructure costs, and fits within any agile methodology to increase the speed and frequency of application deployment. It delivers robust hardware options, high-performance SAN storage, guaranteed resources, custom hardware support, and a variety of compliance guarantees including SAS70 and PCI.
+
+Because the experts at Engine Yard help deploy your application, you'll be up and running in the xCloud in a fraction of the time it would take you to deploy on another cloud infrastructure by yourself. After Engine Yard completes your initial setup, you can deploy new versions of your application to staging or production environments in minutes with easy to use automated functionality. Everything you need from web and application servers to monitoring happens in the background.
+
+Organizations trust Engine Yard xCloud because it is designed and maintained by a world-class team of Ruby and Rails contributors, application analysts, system administrators and DBAs. We invite you to learn more about Engine Yard xCloud−the most reliable, secure and scalable Platform-as-a-Service for Ruby in the industry.
+

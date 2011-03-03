@@ -1,0 +1,10 @@
+~~NOTOC~~
+====== JRuby FAQ ======
+
+Can't find your FAQ? [[docs@engineyard.com?SUBJECT=Missing JRuby FAQ|Ask it and you'll get an answer]]!
+
+
+===== History =====
+==== Who created JRuby? ====
+==== What was the date of the first commit? ====
+

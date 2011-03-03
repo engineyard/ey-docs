@@ -1,0 +1,11 @@
+====== Contribution Guide ======
+
+Shows a user how to.
+
+1. Create an SSO account.
+
+2. What sections of the site they will be able to edit by default.
+
+3. Then gives them the links to the syntax guide and they style guide.
+
+4. Links to the help if they have questions.

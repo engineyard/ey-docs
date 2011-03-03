@@ -1,0 +1,34 @@
+====== Monitoring a Rails App ======
+
+Monitoring your site’s uptime is an important component to an overall strategy of keeping your site online and your visitors happy.
+
+===== Install the FitterHappier Plugin =====
+
+[[http://github.com/atmos/fitter_happier/tree/master|FitterHappier]] is a Rails plug-in that provides actions for monitoring site and/or database availability. FitterHappier’s monitoring controller disables unnecessary Rails features, like sessions, layouts, and logging, for lightning-fast monitoring URIs.
+
+To install FitterHappier, run the following commands from the project root of your Rails application:
+
+    cd vendor/plugins
+    git clone git://github.com/atmos/fitter_happier.git
+
+For assurance, fire-up your application on your development machine and test the following URIs:
+
+    curl localhost:3000/fitter_happier
+    FitterHappier Site Check Passed
+    
+    curl localhost:3000/fitter_happier/site_check
+    FitterHappier Site Check Passed @ Wed, 17 Dec 2008 14:27:47 -0800
+    
+    curl localhost:3000/fitter_happier/site_and_database_check
+    FitterHappier Site and Database Check Passed @ Wed, 17 Dec 2008 14:27:57 -0800
+    Schema Version: 20081217141904
+
+===== A Ticket Adds Your URL to Siteuptime =====
+
+Once your fitter happier plugin is setup on your application and deployed, you need to [[http://support.cloud.engineyard.com|open a ticket]] and let us know that you're ready for us to monitor this URL for you.
+
+The best one to include is the ''site_and_database_check'' URL:
+
+    http://yoursite.com/fitter_happier/site_and_database_check
+    
+We will setup the URL monitor with our 3rd party provider [[http://siteuptime.com|siteuptime.com]] and reply to you via the ticket when it's complete, and you're URL is being monitored!

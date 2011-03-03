@@ -1,0 +1,10 @@
+====== HOWTO Add a New Relic RPM User ======
+
+Once you've added the [[howtos:howto-use-new-relic-rpm-with-engine-yard-cloud|New Relic RPM service]] to your account you can now give other users access to the RPM data through the New Relic interface.
+
+This needs to be created through the primary SSO account that turned on the New Relic service.
+
+  - Click on **Services** button under ACCOUNT MANAGEMENT on the left side.
+  - Then click the **View performance information** link to view the New Relic app.{{:howtos:add_new_relic_rpm_step_2.jpg?700|Go to New Relic}}\\
+  - From the New Relic application click on **Account Settings**.
+  - Then click on **Add User** and fill out the form.{{:howtos:add_new_relic_rpm_steps_3-4.jpg?700|Add User}}\\

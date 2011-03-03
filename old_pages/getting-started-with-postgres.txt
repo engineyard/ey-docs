@@ -1,0 +1,19 @@
+====== Getting Started with Postgres ======
+
+To enable the new **Database Stack** option and be able to choose PostgreSQL database instead of the MySQL you'll need to follow these steps.
+
+NOTE: Before this can begin you'll need to [[beta:signup-postgres|sign-up for Postgres]] beta option to be turned on for your account.
+
+===== Steps =====
+
+  - Make sure you are on the **Dashboard**.
+  - Then for the environment you want to change to Postgres, click on the **a) More Options** tab and then click on **b) Edit Environment**.{{:beta:edit_environment.jpg|}}\\
+  - Then under the **Database Stack** option, choose the **PostgreSQL** option.{{:beta:database_stack_option.jpg|}}
+
+===== Under the Hood =====
+
+The changes that happen behind the scenes are this:
+
+  * it changes the ''database.yml'' file for you.
+  * it will install ''postgres'' instead of ''mysql'' on the instance.
+  * backups will be done based on the settings in the environment (default is every 24 hours keeping the 10 recent backups).

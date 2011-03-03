@@ -1,0 +1,10 @@
+====== Create your Bundler Gemfile ======
+{{ :appcloud:rating-beginner.png|}}
+
+Bundler is an amazing tool for handling the gems that you use with your application. The screencast below will get you up and running with bundler. Make sure to install bundler before viewing the screencast ''gem install bundler''. If you need more reference just visit the [[http://gembundler.com|bundler website]].
+
+<html>
+<iframe src="http://player.vimeo.com/video/10914990?portrait=0&amp;color=ffffff" width="600" height="375" frameborder="0"></iframe>
+</html>
+
+Check out this [[http://www.decisionesinteligentes.com/guides/bundle-gemfile|Spanish translation of the Create your Bundler Gemfile tutorial]], courtesy of Mario Alberto Chávez Cárdenas of [[http://www.decisionesinteligentes.com/|Decisiones Inteligentes]] and [[http://tijuanarb.org/|Tiajuana.rb]].
