@@ -1,9 +1,0 @@
-====== Postgres ======
-
-{{ :beta:logo_postgres.gif|}}
-
-We are no longer accepting request for 8.x customers because we are currently evaluating the 9.x version of Postgres.
-
-  - [[signup-postgres]]
-  - [[Getting Started with Postgres]]
-

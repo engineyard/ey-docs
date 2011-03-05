@@ -1,9 +1,0 @@
-~~NOTOC~~
-====== Rubinius FAQ ======
-
-Can't find your FAQ? [[docs@engineyard.com?SUBJECT=Missing Rubinius FAQ|Ask it and you'll get an answer]]!
-
-===== History =====
-==== Who created Rubinius? ====
-==== What was the date of the first commit? ====
-

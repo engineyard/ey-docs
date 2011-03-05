@@ -1,5 +1,0 @@
-====== Security ======
-
-This the security page and shows what ports are open and explains what access the slices have to each other by default.
-
-

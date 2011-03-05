@@ -1,8 +1,0 @@
-~~NOTOC~~
-====== Rails FAQ ======
-
-Can't find your FAQ? [[docs@engineyard.com?SUBJECT=Missing Rails FAQ|Ask it and you'll get an answer]]!
-
-===== History =====
-==== Who created Rails? ====
-==== What was the date of the first commit? ====
