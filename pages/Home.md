@@ -10,6 +10,7 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
 * [Twitter](http://www.twitter.com/engineyard)
 
 ### In Depth On
+* [[Quick Start to Deploying|getting_started_home]]
 * [Quick Start to Deploying](getting_started_home)
 * [[Managing Environments]]
 * [[Databases]]
