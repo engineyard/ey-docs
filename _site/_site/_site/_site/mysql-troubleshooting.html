@@ -1,0 +1,35 @@
+<h1>MySQL Error Troubleshooting</h1>
+
+<h2>Host '...' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'</h2>
+
+<h3>Relevant URL</h3>
+
+<p>http://dev.mysql.com/doc/refman/5.0/en/blocked-host.html</p>
+
+<h3>Why</h3>
+
+<p>This is a security feature of MySQL to prevent unauthorized users from gaining access to your database server.  After 10 failed authentications from a specific host that host will be barred from further attempts to log in until the administrator flushes the hosts or the database server is restarted.  Frequent occurrences of this error may indicate an attack or possibly an otherwise undetectable network issue.</p>
+
+<h3>Solution</h3>
+
+<p>As part of <a href="https://github.com/engineyard/ey-cloud-recipes/tree/master/cookbooks/mysql_administrative_tools">ey-cloud-recipes</a>, we have made a cookbook available that automates running of <code>mysqladmin flush-hosts</code> through cron.  The default schedule is to run on the first day of each month but this can be adjusted in the cookbook.  A schedule more frequent than weekly may indicate the issue requires further investigation.</p>
+
+<p>For additional information on applying custom chef recipes, see <a href="custom-chef-recipes">How to Use Custom Chef Recipes</a>.</p>
+
+<h2>MySQL Server has gone away</h2>
+
+<h3>Relevant URL:</h3>
+
+<p>http://dev.mysql.com/doc/refman/5.0/en/gone-away.html</p>
+
+<h3>Why</h3>
+
+<p>Rails relies upon connection pooling to eliminate the time overhead of spawning a database connection when a request comes in; the default connection pool size is 5.  MySQL operates with a default <code>wait_timeout</code> setting of 28,800 seconds (8 hours).  If a connection in the pool is inactive for more than 8 hours MySQL will close it to avoid the memory overhead of unused connections.  The next attempt by Rails to use this connection results in the error that the connection has gone away.</p>
+
+<p>This error can also be seen if the MySQL server is not running.</p>
+
+<h3>Solution</h3>
+
+<p>Verify MySQL is running on the appropriate database instance.</p>
+
+<p><a href="http://guides.rubyonrails.org/2_3_release_notes.html#reconnecting-mysql-connections">Rails 2.3</a> and higher offers the ability to specify <code>reconnect: true</code> in the <code>database.yml</code>.  Using this functionality results in rails automatically reconnecting to the database if the connection has been closed.</p>
