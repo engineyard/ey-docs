@@ -1,0 +1,67 @@
+<h1>Frequently Asked Questions for the Engine Yard CLI:</h1>
+
+<h3>Can I use the CLI with multiple accounts?</h3>
+
+<p>Yes, though it requires a little bit of work to set up.</p>
+
+<p>The <code>ey</code> command looks at the <code>EYRC</code> environment variable to determine what <code>rc</code> file to use (<code>~/.eyrc</code> by default). To work with both Alice's and Bob's accounts, have Alice do this:</p>
+
+<p><code>
+$ rm -f ~/.eyrc                              # clean slate
+$ ey environments                            # </code></p>
+
+<p>Then have Bob do the same, but save his credentials in <code>~/.eyrc-bob</code>.</p>
+
+<p>With a bit of shell aliasing, you can have <code>alice-ey</code> and <code>bob-ey</code> commands that operate as Alice and Bob, respectively.</p>
+
+<h3>How can I do zero-downtime deploys?</h3>
+
+<p>This is a two-step process.</p>
+
+<ul><li>Use either Passenger or Unicorn. If you're using Mongrel, all the mongrels have to be shut down and then restarted, so the maintenance page will have to go up briefly.</li>
+<li>Run <code>ey deploy --no-migrate</code>. This will not run any migrations, so if you're running Passenger or Unicorn, you'll get a zero-downtime deploy.</li>
+</ul><h3>How do I 'bundle lock' before doing a deploy?</h3>
+
+<p>The best way to do it is to check in <code>Gemfile.lock</code> with your application. There are many good reasons to do this.</p>
+
+<ul><li>It ensures that the gems you get in production are the same ones you develop and test with.</li>
+<li>It speeds up your deploys. Taking your <code>Gemfile</code> and figuring out which gem versions to use is a (NP-)hard problem. Checking in the <code>Gemfile.lock</code> lets <code>bundle install</code> skip all that expensive computation and get right to fetching and installing your gems.</li>
+<li>It ensures that the gems on each of your application servers are the same. While unlikely, if the author were to release a new version of a gem just in the middle of your deploy, you could wind up with some of your application servers running <code>version 1.2.0</code> of some gem and the rest running <code>version 1.2.1</code>.</li>
+</ul><h3>How do I use the CLI with separate SSH keys for each project?</h3>
+
+<ul><li>You can simply set an entry in your SSH config with the key you want set as the identity file for the correct hostname.</li>
+<li>Copy the SSH url for the App Master of your cluster from the AppCloud web interface and just take the hostname from it.</li>
+<li>Then create or modify <code>~/.ssh/config</code> with the following contents:</li>
+</ul><p>  <code></code></p>
+
+<pre><code>Host HOSTNAME_OF_APP_MASTER
+IdentityFile ~/.ssh/my_cloud_priv_key
+</code></pre>
+
+<p>  </p>
+
+<p>If you are using an elastic IP for your cluster, this hostname will not change and will continue to work across cluster reboots.</p>
+
+<h3>How do I avoid copying my large .git directory with every deploy?</h3>
+
+<p>If you have a large <code>.git</code> directory and you do not want it copied over on every deploy, add a <code>config/ey.yml</code> to your application's repository with the following contents:</p>
+
+<p>  environments:
+   YOUR-ENVIRONMENT-NAME-GOES-HERE:</p>
+
+<pre><code> copy_exclude:
+   - .git
+   - 
+   - 
+</code></pre>
+
+<h3>Where is the deploy log?</h3>
+
+<p>If there is a problem deploying your application, the dashboard will tell you to view the deploy log. This is currently viewable via the dashboard or by logging in over SSH.</p>
+
+<p>Once logged in, you will find the log in your home directory with a filename like the following:
+  <code>yourapp-deploy.log</code></p>
+
+<p>Where 'yourapp' is the name of your application in the environment.</p>
+
+<p>You can view the log using the usual UNIX commands <code>cat</code>, <code>more</code> or <code>less</code>.</p>

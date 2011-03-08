@@ -1,0 +1,15 @@
+<h1>Boot Instances</h1>
+
+<p>Here you need to decide how you want to architect your environment. There are three main choices:</p>
+
+<ul><li>Single Server - Use this for test applications that do not require significant load, or for staging/development environments. These use a HighCPU Medium.</li>
+<li>Basic Cluster - This is the basic recommendation for production applications. It offers high availability, a dedicated database, and horizontal scalability.</li>
+<li>Customer - Here you can create your own cluster configuration. This allows you to choose different instance sizes, set up Utility instances, and slave databases.</li>
+</ul><p>This will also give you the IP Address for your environment. If you have any non-allocated IP addresses, you can choose one in the drop-down menu or Amazon will provision a new one for you.</p>
+
+<p>Moving from a single instance to a cluster can be done, but it requires some downtime. Follow <a href="">these instructions</a> to learn how to make this move.</p>
+
+<p><a href="">Learn more about EC2 Instances</a>
+<a href="">Learn more about Elastic IP Addresses</a>
+<a href="">Learn about the instance bootstrap process</a>
+<a href="">I get a message <em>Amazon Out Of Capacity</em>. What do I need to do?</a></p>

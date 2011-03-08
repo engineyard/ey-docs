@@ -1,0 +1,63 @@
+<h1>Setup SSMTP for Mail Relay to AuthSMTP</h1>
+
+<p>We do not provide SMTP email services from Engine Yard AppCloud because the entire EC2 IP space is black-listed by many spam services.</p>
+
+<p>Our recommendation is to get an account with one of the following providers:</p>
+
+<ul><li><a href="http://sendgrid.com">SendGrid</a></li>
+<li><a href="http://google.com/a">Google Apps</a> (for a small volume of emails)</li>
+<li><a href="http://www.authsmtp.com">AuthSMTP</a></li>
+<li><a href="http://smtp.com">SMTP.com</a></li>
+</ul><p>Once you have your account set up, take note of your username/password and come back to this article.</p>
+
+<p><strong>NOTE</strong>: If using AuthSMTP, go into the control panel and enable SSL access to your mail relay.</p>
+
+<p>===== Configure Your Instance =====</p>
+
+<p>Now you can configure ssmtp on your instance.</p>
+
+<p>Edit <code>/etc/ssmtp/ssmtp.conf</code> (a config file for ssmtp sendmail) and make it look like the following:</p>
+
+<p>  mailhub=mail.authsmtp.com:2525
+  mailhub=smtp.gmail.com:587  -- used for google apps</p>
+
+<p>Replace this with the hostname you want email to come from:</p>
+
+<p>  rewriteDomain=example.com</p>
+
+<p>Set <code>FromLineOverride</code> to make the the <strong>From:</strong> use the from line from the envelope.  The only exception is if no <em>from line</em> is given.</p>
+
+<p>  FromLineOverride=YES</p>
+
+<p>Use SSL/TLS to send secure messages to server:</p>
+
+<p>  UseSTARTTLS=YES</p>
+
+<p>Make sure that this isn't <code>UseTLS=YES</code>. If you're getting errors like:</p>
+
+<p>  SSL connection to host = Success, Cannot open mail.authsmtp.com:2525</p>
+
+<p>then you have the wrong variable. <code>UseTLS</code> doesn't work with authsmtp, only <code>UseSTARTTLS</code> does.</p>
+
+<p>Add your own user/pass here:</p>
+
+<p>  AuthUser=username
+  AuthPass=password
+  AuthMethod=DIGEST-MD5 #Comment this out if you are using gmail or google apps</p>
+
+<p>Set your action mailer setting in <code>RAILS_ROOT/config/environment.rb</code> (or an env specific env file if you prefer)</p>
+
+<p>  ActionMailer::Base.delivery_method = :sendmail</p>
+
+<p>Or for newer versions of Rails</p>
+
+<p>  config.action_mailer.delivery_method = :sendmail</p>
+
+<p>Ensure permissions on the three files above(<code>/etc/ssmtp/ssmtp.conf</code>, <code>/usr/sbin/ssmtp</code>, <code>/usr/bin/sendmail</code>) are properly set:</p>
+
+<p>  $ sudo chmod +x /usr/sbin/ssmtp /usr/bin/sendmail
+  $ sudo chown deploy:deploy /etc/ssmtp/ssmtp.conf</p>
+
+<p>Where <code>deploy</code> is the name of your SSH user you logged into your instance with.</p>
+
+<p>And that's it! You can now send emails from your app via your SMTP relay.</p>
