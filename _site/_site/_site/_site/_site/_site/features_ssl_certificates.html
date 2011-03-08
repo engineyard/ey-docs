@@ -1,0 +1,129 @@
+<h1>SSL Certificates</h1>
+
+<p>This section contains (almost) everything you need to get your SSL certificate.  First, it covers generating a key and signing request.</p>
+
+<p>But it doesn't show you how to purchase the certificate from <a href="http://www.godaddy.com">Godaddy</a> or <a href="http://www.verisign.com">Verisign</a>, etc.  You'll need to assess your company's needs and make that decision on your own.</p>
+
+<p>Then, we pick up after you've purchased you're certificate and are ready to install your SSL certificate to your application on Engine Yard AppCloud.</p>
+
+<p>Here's the information <strong>you need</strong> to get SSL working on Engine Yard AppCloud.</p>
+
+<h2>Generate Your SSL Certificate Key and Signing Request</h2>
+
+<p>This process will help you to generate the two files you need to purchase a SSL certificate.</p>
+
+<ul><li>yourdomain.key - the private key</li>
+<li>yourdomain.csr - the certificate signing request</li>
+</ul><h3>Generate Your Private Key ====</h3>
+
+<p><span>You cannot use a passphrase for your SSL certificate on Engine Yard AppCloud.</span></p>
+
+<p>Follow these steps to remove the passphrase from the key.</p>
+
+<p>First generate the key file.</p>
+
+<p>  <code>openssl genrsa -des3 -out yourdomain.com.key 2048</code></p>
+
+<p>You will be prompted for a password, just use "none".</p>
+
+<p>Now here's how to remove it:</p>
+
+<p>  <code>cp yourdomain.com.key temp.key</code>
+  <code>openssl rsa -in temp.key -out yourdomain.com.key</code></p>
+
+<p>You will be prompted for the password, remember it is "none".</p>
+
+<p>You can delete the temp file.</p>
+
+<p>  <code>rm temp.key</code></p>
+
+<p>And you've got you're passphrase-less key!</p>
+
+<h3>Generate Your CSR</h3>
+
+<p>  <code>$  openssl req -new -key yourdomain.com.key -out yourdomain.com.csr</code>
+  You are about to be asked to enter information that will be incorporated into your
+  certificate request.
+  What you are about to enter is what is called a Distinguished Name or a DN.
+  There are quite a few fields but you can leave some blank
+  For some fields there will be a default value,
+  If you enter '.', the field will be left blank.</p>
+
+<hr /><p>  Country Name (2 letter code) [AU]:US
+  State or Province Name (full name) [Some-State]:Washington
+  Locality Name (eg, city) []:Seattle
+  Organization Name (eg, company) [Internet Widgits Pty Ltd]:  Your Company
+  Organizational Unit Name (eg, section) []:
+  Common Name (eg, YOUR name) []:yourdomain.com
+  Email Address []:your.email@address.com</p>
+
+<p>This generates the .csr file you'll use to request your certificate.</p>
+
+<p><strong>NOTE</strong>: The "common name" (indicated as "yourdomain.com" above) is the Fully Qualified Domain Name (FQDN) for the certificate you're generating.  "www.yourdomain.com" is not the same as "yourdomain.com".</p>
+
+<p>If you want to have unlimited subdomains covered by your SSL certificate, you'll need to purchase a "Wildcard" certificate.  When doing "Wildcard" certificates we recommend the file format <em>.yourdomain.key </em>.yourdomain.csr, etc.</p>
+
+<p>==== Purchase a Certificate ====</p>
+
+<p>You have your two files, now you can purchase your certificate.  This is there part you need to do on your own, outside of Engine Yard.  Here's some helpful advice when setting up your certificate with your provider:</p>
+
+<ul><li>When presented with server type: Choose Apache.</li>
+<li>You will get at least .CRT file back.</li>
+<li>You might also get a "certificate chain file".  Make sure to grab this.</li>
+</ul><h2>Add SSL to Your Application</h2>
+
+<p>You can either use an SSL certificate you've purchased or have us generate a Self-Signed certificate (for testing).</p>
+
+<h3>Add A Certificate</h3>
+
+<p>If you've already got your certificate and you're ready to install it log into EY AppCloud. From the dashboard under SERVER TOOLS on the left, click <strong>SSL Certificates</strong> button.  The page will list any certs you have stored.</p>
+
+<p>If you don't haven any SSL certificates configured click on the link in the top right: <strong>Add SSL Certificate</strong></p>
+
+<p>The <strong>Create New SSL Certificate</strong> page appears.</p>
+
+<p>{{:appcloud:guides:applications:appcloudsslcertificates.png|}}</p>
+
+<ul><li>Give your SSL cert a name.  Use the <strong>SSL Certificate Name</strong> field.</li>
+<li>Click on <strong>Upload SSL Certificate</strong> radio button.</li>
+<li>Paste in your certificate in the <strong>SSL Certificate</strong> text area.</li>
+<li>Paste in your key in the <strong>SSL Certificate Key</strong> text area.</li>
+<li>Optionally you may need to add a <strong>SSL Certificated Chain</strong>.</li>
+<li>Click <strong>Add Certificate</strong> button.</li>
+</ul><h3>Intermediate Certificates</h3>
+
+<p>If you're using a company that provides an intermediate certificate, be aware that Step #<strong>5.</strong> is where you'll insert your intermediate certificate in the <strong>SSL Certificate Chain</strong> field.</p>
+
+<h3>Add A Self-Signed Certificate</h3>
+
+<p>Optionally, if you don't have a certificate and you just want to test SSL features or you want to develop against our stack with our SSL, you can use a Self-Signed Certificate.  Use the steps below to generate a certificate.</p>
+
+<p><span>Skip down to "Link SSL Certificate" section if you're adding your PRODUCTION certificate.</span></p>
+
+<p>What is a Self-Signed Certificate?  See what <a href="http://en.wikipedia.org/wiki/Self-signed_certificate">WikiPedia</a> has to say about the topic.</p>
+
+<ul><li>Give your SSL cert a name.  Use the <strong>SSL Certificate Name</strong> field.</li>
+<li>Click on <strong>Generate Self-Signed SSL Certificate</strong> radio button.</li>
+<li>Click <strong>Add Certificate</strong> button.</li>
+</ul><h3>Link SSL Certificate to Application</h3>
+
+<p>After you've configured your SSL Certificate (either a purchased SSL cert or a self-signed cert) you'll want to let EY AppCloud know what application can use it.</p>
+
+<p>Get back to your <strong>Dashboard</strong>, then click on the <strong>SSL</strong> tab for your environment.</p>
+
+<p>{{:appcloud:guides:ssl_tab.jpg?725|}}</p>
+
+<ul><li>Click on <strong>Assign SSL Certifiicate to ... </strong> for the application you want.</li>
+<li>Choose the certificate you want from the <strong>SSL Certificate</strong> drop-down.</li>
+<li>Click on <strong>Update SSL Settings</strong> button to save changes.</li>
+</ul><p>The page will refresh and the message will appear:</p>
+
+<p>//SSL Certificate "rubyflow_cert" is assigned to application "rubyflow"//</p>
+
+<h3>Deploying a SSL Certificate</h3>
+
+<p>When you start an instance the SSL certificate will be automatically deployed and configured.</p>
+
+<p>If you are currently running an instance and you've completed the steps to //Add A Certificate// and //Link SSL Certificate to Application// above, then you can follow these steps to deploy your certificate.</p>
+
+<p>Click on the <strong>Update Instances</strong> button, and your environment will rebuild with your SSL certificate in place.</p>
