@@ -77,4 +77,7 @@
   * [[Using Passenger3|using-passenger-with-engine-yard-appcloud]]
   * [[Using Ruby 1.9.2|using-ruby-1.9.2-with-engine-yard-appcloud]]
   * [[Using Snapshots|using-snapshots]]
-  
+  * [[AppCloud Glossary|appcloud_glossary]]
+  * [[AppCloud Home|appcloud_home]]
+  * [[Application Home|application_home]]
+  * [[Cloud FAQ|cloud_faq]]

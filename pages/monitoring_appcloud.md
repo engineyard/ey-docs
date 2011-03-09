@@ -17,7 +17,7 @@ With **Instance Monitoring**, Engine Yard keeps an eye on your instance, records
   - Specify the email you want to receive the alerts.
   - Click on **Update Alert Settings** button.
 
-{{:appcloud:guides:enable_alerts.jpg?700|}}
+![Enable Alerts](images/enable_alerts.jpg)
 
 Follow the above steps for each environment that you'd like to receive alerts for.  For instance you may not need to receive alerts for your "staging" environment, but rather you do want alerts for your "production" environment.
 
@@ -30,13 +30,13 @@ Follow the above steps for each environment that you'd like to receive alerts fo
 See the three most current alerts.  Click on the **Alerts** tab.
 
 
-{{:appcloud:guides:recent_alerts.jpg?700|}}
+![Recent Alerts](images/recent_alerts.jpg)
 
 #### All Alerts
 
 To see all recorded alerts click on the **View All Alerts** link.
 
-{{:appcloud:guides:all_alerts.jpg?700|}}
+![All Alerts](images/all_alerts.jpg)
 
 ### Understand Alerts
 
@@ -95,7 +95,7 @@ Monitoring your site’s uptime is an important component to an overall strategy
 
 ### Install the FitterHappier Plugin
 
-[FitterHappier](http://github.com/atmos/fitter_happier/tree/master) is a Rails plug-in that provides actions for monitoring site and/or database availability. FitterHappier’s monitoring controller disables unnecessary Rails features, like sessions, layouts, and logging, for lightning-fast monitoring URIs.
+[[FitterHappier|http://github.com/atmos/fitter_happier/tree/master] is a Rails plug-in that provides actions for monitoring site and/or database availability. FitterHappier’s monitoring controller disables unnecessary Rails features, like sessions, layouts, and logging, for lightning-fast monitoring URIs.
 
 To install FitterHappier, run the following commands from the project root of your Rails application:
 
