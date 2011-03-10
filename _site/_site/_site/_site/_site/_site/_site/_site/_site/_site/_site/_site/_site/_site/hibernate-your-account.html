@@ -1,0 +1,32 @@
+<h1>Hibernate Your Account</h1>
+
+<p>If you don't need to use your EY AppCloud account, you don't have to cancel, hibernate it instead!</p>
+
+<h2>What is Hibernation?</h2>
+
+<p>You Hibernate your account when you turn off all running instances, delete all environments and remove any Elastic IP addresses.</p>
+
+<h2>Step-by-Step Instructions</h2>
+
+<p>{{:appcloud:howtos:billing:turn_off_then_delete_environments.jpg?700|}}</p>
+
+<ul><li>Go to your Dashboard.</li>
+<li>Turn off your instances by clicking on the <strong>Terminate</strong> button.</li>
+<li>Then <strong>Delete</strong> each Environment.</li>
+<li>Click on <strong>IP Addresses</strong>, under Server Tools.</li>
+</ul><p>{{:appcloud:howtos:billing:delete_all_ip_address.jpg?700|}}</p>
+
+<ul><li>Then make sure to <strong>Delete</strong> all Elastic IP addresses.</li>
+</ul><h2>Why Do I Have to Delete the IP Addresses?</h2>
+
+<p>If an IP address is in use, Amazon will not charge you.</p>
+
+<p>But if you "reserve" an IP, that is keep it assigned to your account but not running an instance, Amazon charges you a monthly fee for each IP address.</p>
+
+<p>They charge $0.01 per hour.  For a 30 day month, that would be $7.20 to keep the IP address.</p>
+
+<p><a class="internal absent" href="/%7B%7B%3Aappcloud%3Ahowtos%3Abilling%3Aamazon_ec2_ip_cost.jpg.html">http://aws.amazon.com/ec2/</a></p>
+
+<h2>How to Re-activate</h2>
+
+<p>When you're ready to use EY AppCloud again, just log in to your account, re-create your environment and start up an instance.</p>

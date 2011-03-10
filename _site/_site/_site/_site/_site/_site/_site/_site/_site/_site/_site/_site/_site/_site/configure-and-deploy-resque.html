@@ -1,0 +1,195 @@
+<h1>Configuring and Deploying Resque</h1>
+
+<p>Resque is a Ruby job queue. You can find it, and all you need to know about coding for it <a href="http://github.com/defunkt/resque">here</a>. This is the Readme for resque, it's quite comprehensive and worth reading more than once.</p>
+
+<p><strong><em>Important Caveat: A lot of the configuration options are dependent on our portage package ey_monit_scripts at version 0.18.3. At the time of writing, this version isn't available on either xCloud or AppCloud, so to work with this please contact EY support staff who can provide you with a copy.</em></strong></p>
+
+<h2>Anatomy of our Resque Configuration</h2>
+
+<p>The files used to configure Resque in your application are:</p>
+
+<table><tr><th>File</th><th>Description</th>
+  </tr><tr><td>/data/{app_name}/shared/config/resque.yml</td><td>Points to redis database, is symlinked to your $RAILS_ROOT/config directory.</td>
+  </tr><tr><td>resque_?.conf</td><td>One of each of these per instance to list the queues for that worker</td>
+  </tr><tr><td>/engineyard/bin/resque</td><td>Monit wrapper provided by engineyard</td>
+  </tr><tr><td>/etc/monit.d/resque_{app_name}.monitrc</td><td>Monit configuration file for Resque</td>
+  </tr></table><h2>Quick Start Guide</h2>
+
+<p>If you just want to get going, and work the rest out later, here's the quick version:</p>
+
+<ul><li>Be familiar with our docs on:
+
+<ul><li> <a href="http://docs.engineyard.com/appcloud/howtos/customizations/custom-chef-recipes">using chef recipes</a></li>
+<li> and <a href="http://docs.engineyard.com/appcloud/guides/deployment/home#deploy-hooks">deploy hooks</a></li>
+</ul></li>
+<li>Check you have these gems installed\
+
+<ul><li><a href="http://rubygems.org/gems/resque">resque</a></li>
+<li><a href="http://rubygems.org/gems/redis">redis</a></li>
+<li><a href="http://rubygems.org/gems/redis-namespace">redis-namespace</a></li>
+<li><a href="http://rubygems.org/gems/yajl-ruby">yajl-ruby</a></li>
+</ul></li>
+<li>Add <code>config/resque.yml</code> as per the Resque <code>README</code>
+
+<ul><li>Typically this will be in <code>/data/{app_name}/shared/config/resque.yml</code> and you will use a deploy hook to symlink this into <code>current/config</code>.</li>
+</ul></li>
+<li>For each worker you wish to have create a <code>resque_{x}.conf</code>
+
+<ul><li>(where x is a number for the worker counting from 0) IF you want to use this mechanism to prioritize. Otherwise you can simply skip this step.</li>
+</ul></li>
+<li>Enable the resque recipe in chef (read <code>/etc/chef-custom/recipes/cookbooks/resque/README.rdoc</code>), and upload your recipes.</li>
+<li>Add deploy hooks to your code to ensure that the workers are restarted during deploys.</li>
+</ul><h2>Thinking Through the Configuration</h2>
+
+<h3>Redis configuration</h3>
+
+<p>All our AppCloud environments use redis on the master db server (or on the solo instance if just one slice is used with out a separate db) as part of our cloud apps infrastructure. Typically for Resque you will use this redis instance, however you are of course free to use a custom chef recipe to put a redis instance on your utility or any other slice you like and use that.</p>
+
+<h3>Queues vs Workers</h3>
+
+<p>The first thing to decide is how many workers you will need, and how you will allocate those workers.</p>
+
+<p>When writing your resque code, you will have assigned jobs to queues. Its important to note, that queues and workers aren't synonymous. A worker can service many queues, and each queue can be serviced by many workers.</p>
+
+<p>You can have as many workers as your resources will allow. Each worker in our default setup will be monitored by monit, and so will have one stanza in our monit configuration per worker.</p>
+
+<p>Each intended worker, will have a conf file in <code>/data/{APP}/shared/config</code> called <code>resque_{conf_name}.conf</code>.</p>
+
+<p>So, for 3 workers, in an app called my_app you might have:</p>
+
+<pre><code>`/data/my_app/shared/config/resque_0.conf`
+`/data/my_app/shared/config/resque_1.conf`
+`/data/my_app/shared/config/resque_2.conf`
+</code></pre>
+
+<p>Each of these will have a <code>QUEUE</code> statement as described in the resque <code>README</code>. The default is <code>QUEUE=*</code>.
+However, you may customize it to list the queues you'd like handled by that worker. By choosing how you allocate your queues to your workers, you essentially prioritize the queues.</p>
+
+<p>Each worker when ran will have a memory foot print, approximately the size of one of your mongrels, unicorns or passenger workers at start up. Every time it gets a job it will fork a child which will also be about that size, and it  will grow as big as it needs to.</p>
+
+<h3>Stopping Jobs</h3>
+
+<p>At different times, you'll be needing to stop, or restart your workers. Perhaps a job has exceeded its allowed memory, or you need to deploy new code or for any number of other reasons.</p>
+
+<p>Workers can be asked to stop one of two ways, with either a <code>SIGTERM</code> or a <code>SIGQUIT</code> (<code>kill -15</code> or <code>kill -3</code>).</p>
+
+<p>If they receive a <code>SIGQUIT</code>, they will allow an already running job to finish before quitting. If they receive a <code>SIGTERM</code>, then if there is a job running, that will be killed immediately, along with the worker.</p>
+
+<p>So, the two things that need consideration then are how long your job will run for, and what are the consequences of a job being terminated during processing.</p>
+
+<h4>To TERM or to QUIT</h4>
+
+<p>If terminating your job mid process leaves you databases in a consistent state, doesn't result in half drawn thumbnails, or cause other embarrassing mishaps, then <code>SIGTERM</code> is the  simplest way forward.</p>
+
+<p>This will involve a line in the monit configuration like:</p>
+
+<pre><code>`stop program "/engineyard/bin/resque my_app term production resque_0.conf"` 
+</code></pre>
+
+<p>If for any reason the worker doesn't stop, the script will check for and kill its child, then itself with <code>kill -9</code>.</p>
+
+<p>If however your job can't be interrupted, you'll need to ask it to stop with QUIT. This will involve a line in the monit configuration like:</p>
+
+<pre><code>`stop program "/engineyard/bin/resque my_app quit production resque_0.conf"`
+</code></pre>
+
+<p>This will allow your script 60 seconds to try and finish its job, before the wrapper script will ensure that it has in fact died. Note, that for the sake of following conventions used in other monit wrapper scripts, <code>quit</code> and <code>stop</code> are synonyms.</p>
+
+<h4>Time to Die</h4>
+
+<p>However we have customers with jobs that 5, 10, and 30 minutes, and even up to 12 hours.</p>
+
+<p>To cater for this, you can set a <code>GRACE_TIME</code> environment variable:</p>
+
+<pre><code>`stop program "/bin/env GRACE_TIME=300 /engineyard/bin/resque my_app stop production resque_0.conf"`
+</code></pre>
+
+<p>will cause the wrapper script to wait 300 seconds before forcing the death of the worker.</p>
+
+<h3>Deploy Time Considerations</h3>
+
+<p>Its important that resque gets restarted when you deploy. Firstly because if you don't your resque jobs will be being carried out with redundant code, possibly against the wrong database schema. Secondly, as only 3 releases are kept (by default), after the 3rd deploy the jobs will be running on code thats deleted from the disk. This is likely the case if you're intermittently seeing <code>NameError: Uninitialized Constant</code>.</p>
+
+<p>The correct way to have resque restarted on each deploy is to have a line like:
+<code>
+run "monit restart all -g {app_name}_resque"
+</code>
+in your after_symlink deploy hook.</p>
+
+<p>However, its also likely that you don't want your deploy to run while there are jobs still in action, or for resque to start a new job while the deploy is underway. So in either your <code>before_symlink</code> or <code>before_migrate</code> deploy hook, code like this might be in order:</p>
+
+<p>Case 1. we have monit configured to use SIGQUIT, and want the workers to stop when they've finished the current job. We also don't want the deploy to proceed if jobs are running.
+<code>
+run "sudo monit stop all -g fractalresque_resque"
+if %x[ps axo command|grep resque[-]|grep -c Forked].to_i &gt; 0
+  raise "Resque Workers Working!!"
+end
+</code></p>
+
+<p>Case 2. Monit is configured using <code>SIGTERM</code> - but we want the workers to stop when they've finished the current job and we don't want the deploy to proceed if jobs are running. However if they're not running, we want the workers stopped.
+<code>
+if %x[ps axo command|grep resque[-]|grep -c Forked].to_i &gt; 0
+  raise "Resque Workers Working!!"
+else
+  run "sudo monit stop all -g fractalresque_resque"
+end
+</code></p>
+
+<p>These are just suggested starting points, you'll need to consider what needs to happen in your own situation.</p>
+
+<h3>Debugging</h3>
+
+<p>Resque will log its activity to:
+   <code>/data/{APP}/shared/log/resque_?.log</code></p>
+
+<p>So, for the worker associated <code>resque_0.conf</code>, its activity can be seen in
+   <code>/data/{APP}/shared/log/resque_0.log</code></p>
+
+<p>Resque changes the verbosity of its logging, when <code>VERBOSE</code> or <code>VVERBOSE</code> environment variables are set. To set these your monit config's start line will look like</p>
+
+<pre><code>`start program "/bin/env VERBOSE=1 /engineyard/bin/resque my_app start production resque_0.conf"`  
+</code></pre>
+
+<p>On top of that the monit resque script logs its handling of resque to
+   <code>/var/log/syslog</code></p>
+
+<h2>Frequent Small Jobs</h2>
+
+<p>If you have a queue thats servicing frequent small jobs, we've experienced bottle neck that you may need to grapple with.</p>
+
+<h4>Class Caching</h4>
+
+<p>So, you're in production, you've followed the <code>README</code> and loaded the environment in your rake file, and you've got <code>config.cache_classes = true</code> (which is the default).</p>
+
+<p>In case you're not aware, this setting in <code>config/environments/production.rb</code> is why you don't see all those pesky <code>SHOW FIELDS</code> (assuming MySQL) statements in your production.log, like you do while you're developing. Its also why you need to restart your app server when you deploy code, unlike in development. In development, the appropriate models are loaded on each request (complete with changes), in production they're loaded on demand, the first time their called.</p>
+
+<p>So why is that a problem? Because in resque, the worker doesn't do the work, the child it forks does. For all useful purposes it has a copy of the worker with your Rails app. At this stage no models have been accessed, and this is what the forked child inherits.</p>
+
+<p>Once this child starts processing your job, as each model pertinent to that job is touched, the class code defining that model is ran. This involves issuing a <code>SHOW FIELDS</code> for each model involved to the database which has locking implications for your db. Further some fat models, may also have a substantial time cost spent in ruby itself. In fact for a very quick job, most of the time could be spent instantiating your models.</p>
+
+<p>A very simple solution is to modify your Rakefile or, wherever you set your environment up, to change this line:</p>
+
+<pre><code>`task resque:setup =&gt; :environment`
+</code></pre>
+
+<p>to something like this:</p>
+
+<p><code></code></p>
+
+<pre><code>task resque:setup =&gt; :environment do
+  User.columns
+  Post.columns
+end
+</code></pre>
+
+
+
+<p>Or perhaps as away to hit all your models at once:</p>
+
+<p><code></code></p>
+
+<pre><code>task resque:setup =&gt; :environment do    
+  ActiveRecord::Base.send(:subclasses).each { |klass|  klass.columns }
+end
+</code></pre>
+
