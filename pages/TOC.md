@@ -12,8 +12,7 @@
     * [[Basic Git Commands|basic-git-commands]]
     * [[Create Your Bundler Gemfile|create-your-bundler-gemfile]]
     * [[Create Your Rails Application|create-your-rails-application]]
-  * Applications and Deployment
-    * [[Application Home|application_home]]
+  * [[Application and Deployment|application_home]]
     * [[Deploying with CLI|ey_cli_user_guide]]
     * [[Steps of Deployment|deployment_steps]]
     * [[Use Deploy Hooks|use-deploy-hooks-with-engine-yard-appcloud]]
@@ -37,7 +36,7 @@
     * [[Rebuilding an Environment|rebuilding-an-environment]]
     * [[Usage Graphs|usage-graphs]]
     * [[Using Snapshots|using-snapshots]]
-  * Database
+  * [[Database|database_home]]
     * [[Find Your Generated MySQL Password and Connect to Your DB|find-your-generated-mysql-password-and-connect-to-your-db]]
     * [[Access Your MySQL Database Remotely|access-your-mysql-database-remotely]]
     * [[Configure MySQL Server|configure-mysql-server]]
@@ -64,7 +63,7 @@
     * [[Review Usage Charges|review-usage-charges]]
     * [[How to Add a New Relic RPM User|howto-add-a-new-relic-rpm-user]]
     * [[Use New Relic|use-new-relic-rpm-with-engine-yard-cloud]]
-  * BETA
+  * [[BETA|beta_home]]
     * [[BETA: Collaboration|collaboration]]
     * [[Collaboration Info|collaboration_info]]
     * [[REQUEST: Collaboration|signup-collaboration]]
