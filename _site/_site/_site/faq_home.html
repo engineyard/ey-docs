@@ -1,0 +1,406 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  
+    <title>Engine Yard Docs: Engine Yard AppCloud FAQs</title>
+    <meta name="description" content="Learn why Engine Yard\'s managed Rails hosting, Rails deployment &amp; 24/7/365 live service is the best">
+    <meta name="keywords" content="Ruby on Rails Fully-Managed Hosting, Scaling, Scaled, Cluster Slices, Cloud Computing, On-Demand Deployment, Merb, Rubinius, Open-Source Software">
+    <meta http-equiv="expires" content="0">
+
+    <!--[if IE]>
+	  <script src="/javascripts/html5shiv"></script>
+    <![endif]-->
+    
+	<link rel="stylesheet" href="/css/application.css" type="text/css" charset="utf-8" />
+    
+    <!--[if IE]>
+	  <link rel="stylesheet" href="/css/ie.css" type="text/css" charset="utf-8" />
+    <![endif]-->
+    
+    <!--[if lte IE 7]>
+	  <link rel="stylesheet" href="/css/ie7.css" type="text/css" charset="utf-8" />
+    <![endif]-->
+
+    <script src="http://use.typekit.com/cra4agv.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="wrapper">
+          <h1 class="branding">
+              <a href="http://engineyard.com/">Ruby On Rails Hosting Management: Engine Yard Platform-as-a-Service</a> <!-- CHANGE ON GO LIVE -->
+          </h1>
+
+          <ul class="utility">
+            <li>866-518-YARD</li>
+            <li>
+              <form action="/search" method="get" class="search">
+                <input type="text" name="q" id="searchbox" placeholder="search" />
+                <input type="submit" value="Search" class="gsc-search-button" />
+              </form>
+            </li>
+            <li>
+			  <a href="https://login.engineyard.com/signup" class="login">Create Account</a>
+            </li>
+            <li>
+			  <a href="https://cloud.engineyard.com" class="login">Sign In</a>
+            </li>
+          </ul>
+
+          <nav> <!-- CHANGE ON GO LIVE -->
+		  <ul class="navigation">
+		    <li>
+		      <a href="http://engineyard.com/products/appcloud"><span>Cloud Products</span></a>
+		      <ul>
+		        <li>
+		          <a href="http://engineyard.com/products/appcloud">Engine Yard AppCloud</a>
+		          <ul>
+		            <li><a href="http://engineyard.com/products/appcloud/features">Features</a></li>
+		            <li><a href="http://engineyard.com/products/appcloud/pricing">Pricing</a></li>
+		            <li><a href="http://engineyard.com/video/17825326">Video Tour</a></li>
+		          </ul>
+		        </li>
+		        <li>
+		          <a href="http://engineyard.com/products/xcloud">Engine Yard xCloud</a>
+		          <ul>
+		            <li><a href="http://engineyard.com/products/xcloud/features">Features</a></li>
+		            <li><a href="http://engineyard.com/products/xcloud/pricing">Pricing</a></li>
+		          </ul>
+		        </li>
+		        <li>
+		          <a href="http://engineyard.com/products/technology">Engine Yard Platform</a>
+		          <ul>
+		            <li><a href="http://engineyard.com/products/technology/stack">Technology Stack</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/support-plans"><span>Support</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/support-plans">Support Plans</a></li>
+		        <li><a href="http://engineyard.com/services">Professional Services</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+			  <a href="http://engineyard.com/university"><span>EY University</span></a>	
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/videos"><span>Resources</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/videos">Videos</a></li>
+		        <li><a href="http://engineyard.com/podcasts">Podcasts</a></li>
+		        <li><a href="http://engineyard.com/developer/events">Events</a></li>
+		        <li><a href="http://engineyard.com/partners">Development Partners</a></li>
+		        <li><a href="http://engineyard.com/developer/groups">User Groups</a></li> 
+		        <li><a href="http://jobs.engineyard.com">Jobs Board</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/open-source"><span>Open Source</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/open-source">Projects</a></li>
+		        <li><a href="http://engineyard.com/open-source/people">Contributors</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/company/"><span>About</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/company/">Overview</a></li>
+		        <li><a href="http://engineyard.com/company/customers">Customers</a></li>
+		        <li><a href="http://engineyard.com/company/team">Leadership Team</a></li>
+		        <li><a href="http://engineyard.com/company/partners">Technology Partners</a></li>
+		        <li><a href="http://engineyard.com/company/careers">Careers</a></li>
+		        <li><a href="http://engineyard.com/company/news">News &amp; Press</a></li>
+		        <li><a href="http://engineyard.com/company/contact">Contact Us</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/blog"><span>Blog</span></a>
+		    </li>
+		  </ul>
+		</nav>
+        </div>
+      </header>
+
+      <div id="content">
+        <div class="wrapper">
+			<h1>Engine Yard AppCloud FAQs</h1>
+
+<h2>Which SCMs (Source Code Management) do you support?</h2>
+
+<p>Only git is supported at this time. Your repository will need to be ported to git before your application can be deployed on EY AppCloud. <a href="http://github.com/guides/import-from-subversion">GitHub</a> has a great doc on porting an SVN repository to git.</p>
+
+<h2>Is there any shared storage on EY AppCloud?</h2>
+
+<p>No. Shared storage (GFS) is not supported on EY AppCloud. If your application stores dynamic assets in <code>/data</code>, you'll need to move these assets to a content delivery network (CDN) such as S3.</p>
+
+<p>We currently do not have any plans to support a shared storage on EY AppCloud.</p>
+
+<h2>Do you offer Email services on EY AppCloud?</h2>
+
+<p>Email services are not offered on EY AppCloud. If your application uses Engine Yard for email either inbound or outbound, you will need to sign up with an external service provider. For applications which send a lot of mail we recommend SendGrid or authSMTP. For incoming, try Rackspace mail hosting. For lower volumes in either direction we recommend Google.</p>
+
+<p>Your slice environment likely came bundled with Mailtrust (now Rackspace) and if you would like to continue using that service you should submit a request to Rackspace to take over that account. They will send us an email to approve release of that domain.</p>
+
+<h2>Can EY AppCloud host my DNS?</h2>
+
+<p>Domain Name System (DNS) services are not offered on EY AppCloud. If you are currently using Engine Yard's name servers you'll need to register with a DNS service provider and update your registrar to use that provider's name servers. Check with your registrar; they may also offer control of your DNS zone records.</p>
+
+<h2>Can I have more than one IP address for my application?</h2>
+
+<p>No. Amazon only allows us to attach a single IP address to any one instance.</p>
+
+<p>On our Classic Cloud it has been possible to have multiple domains, each with their own SSL certificate and IP address, all accessing the same application. This setup isn't supported on Engine Yard AppCloud because Amazon EC2 instances can have only one IP address.</p>
+
+<p>If you have multiple domains pointed at your application and they all need to run under SSL you need to purchase a multi-domain cert.</p>
+
+<h2>Can I failover to a Database Slave?</h2>
+
+<p>No, failover to a database slave is not currently an option on EY AppCloud. If you do ever run into issues with your Database Master we suggest you can recreate your Master Database Instance from a snapshot. This is quicker than failing over and does not pose the risk of any data loss should replication be out-of-sync.</p>
+
+<p>We take fresh snapshots of your <code>/db</code> volume when you terminate an instance. If you have to rebuild your DB instance you can terminate it and recreate it from the most recent snapshots.</p>
+
+<h2>Do you offer Ruby version 1.8.7?</h2>
+
+<p>Yes. You can choose either Ruby 1.8.7 or 1.8.6 when you are creating or editing an environment.</p>
+
+<h2>Do you support Bundler?</h2>
+
+<p>Yes. If you have a Gemfile in your application directory when you deploy your application we will detect it and then bundle your gems. This means you can skip the gems page during the setup of your environment.</p>
+
+<h2>Is PostgreSQL Supported on Engine Yard AppCloud?</h2>
+
+<p>Not at this time.  You can use our Chef recipe hosted at <a href="http://github.com/engineyard/ey-cloud-recipes/tree/master/cookbooks/postgres/">ey-cloud-recipes</a> to run PostgreSQL on an instance.</p>
+
+<h2>Are You Going to Support PostgreSQL?</h2>
+
+<p>We don't have a timetable for developing support for PostgreSQL at this time.</p>
+
+<h2>What scale of apps are appropriate for Engine Yard AppCloud?</h2>
+
+<p>Engine Yard AppCloud is our recommended deployment platform for users who want to scale from small to large scale web applications. It provides metered billing and advanced provisioning, monitoring and management workflows that make it ideal for:</p>
+
+<ul><li>Production environments that need to rapidly scale up or down with the demand of your application.</li>
+<li>Temporary demonstration environments.</li>
+<li>Utility instances for any use you can imagine and</li>
+<li><a class="internal present" href="/custom-chef-recipes.html">program with chef</a>.</li>
+<li>Staging environments.  Use our cloning feature to quickly clone your current production environment.</li>
+<li>Experimentation and exploration with Engine Yard's <a href="http://www.engineyard.com/technology/stack">battle-ready stack</a>.</li>
+</ul><p>Users who need specific compliance needs, such as SAS 70, should consider our dedicated <a class="internal absent" href="/private-cloud-offerings.html">http://www.engineyard.com/products/private-cloud</a>.</p>
+
+<h2>What types of applications will run on Engine Yard AppCloud?</h2>
+
+<p>If you've got an app that runs with:</p>
+
+<ul><li>Rails</li>
+<li>Merb</li>
+<li>Sinatra</li>
+<li>Rack</li>
+</ul><p>Then it runs on Engine Yard AppCloud.  Check our <a href="http://www.engineyard.com/technology/stack">Stack Page</a> for the latest version we support.</p>
+
+<h2>Does Engine Yard manage my Domain Name or does my Company?</h2>
+
+<p>You setup and control the DNS records for your domain name of your website. You'll setup the IP address inside the AppCloud application and then point your DNS to that IP address.</p>
+
+<h2>Do I need an IP address?</h2>
+
+<p>If you're just doing staging or testing, no.  If you're ready for production then yes, because you'll need the IP address to point your DNS entries to your IP address.</p>
+
+<p>Read the <a class="internal present" href="/ip-addresses.html">IP Address Overview</a> article for more in-depth information about IP addresses and how they are used with Engine Yard AppCloud.</p>
+
+<h2>Do I have sudo access?</h2>
+
+<p>Yes.  Via sudo you have complete control over your instances.  We have sudo configured so that the user you setup has access to sudo without a password being required.</p>
+
+<h2>Can I use my own SSH key?</h2>
+
+<p>Yes you can upload your own SSH key to Engine Yard AppCloud.  You can even specify keys which keys are used on which environments.</p>
+
+<p>For more information read the <a class="internal present" href="/env_ssh_keys.html">Manage Keys</a> section.</p>
+
+<h2>Can I reboot my instance without worrying about losing data?</h2>
+
+<p>Yes.  An explicit <em>reboot</em> of an instance from the command line will not affect your data on your root partition. You can <em>reboot</em> the instance at will.</p>
+
+<p>NOTE: Destroying an instance from the web interface and/or a crash of the instance will not preserve the data on the instance's root partition.</p>
+
+<p>The distinction is between <em>rebooting</em> an instance and <em>terminating</em> an instance.  When you terminate an instance, the data on the root partition <strong>is</strong> lost.</p>
+
+<p>Therefore we recommend you keep all vital data on the persistent EBS storage volumes, which are attached as <code>/data</code> and <code>/db</code>.</p>
+
+<p><a href="http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1145#02">View Amazon's FAQ: What happens to my data when my instance terminates?</a></p>
+
+<h2>If I shutdown and create an instance with the same volumes, will I lose data?</h2>
+
+<p>No.  Turning off your instance will destroy the virtual instance on Amazon EC2.  But your files and data stored on the <code>/data</code> and <code>/db</code> volumes are saved to snapshots.  When you boot your instance again, select a custom configuration so you can choose the most recent snapshot. Your instance will then be restored to the state before shutdown.</p>
+
+<p>It's worth noting that snapshot of the <code>/data</code> volume is only taken off of the Application Master instance.  The same is true for the <code>/db</code> volume and the Database Master.</p>
+
+<p>Read <a class="internal present" href="/appcloud-instances.html">Instance Overview</a> for more information.</p>
+
+<h2>How do I migrate from SVN to Git?</h2>
+
+<p>Github has written a guide that outlines many options you have when you would like to import your SVN repository into GIT.</p>
+
+<p><a href="http://github.com/guides/import-from-subversion">GitHub - Import from Subversion</a></p>
+
+<p>If you plan on using GitHub, the first option to automatically import your SVN repo is very easy to use.  The other manual options give you more control over reconfiguring your authors or the ability to import Tags.</p>
+
+<h2>Are there reserved names in Engine Yard AppCloud?</h2>
+
+<ul><li>An environment cannot be named <strong>test</strong>.</li>
+<li>A user account cannot be named <strong>root</strong>.</li>
+</ul><h2>What are availability zones?</h2>
+
+<p>"Availability Zones are distinct locations that are engineered to be insulated from failures in other Availability Zones and provide inexpensive, low latency network connectivity to other Availability Zones in the same Region.</p>
+
+<p>Each availability zone runs on its own physically distinct, independent infrastructure, and is engineered to be highly reliable. Common points of failures like generators and cooling equipment are not shared across availability zones, and availability zones are designed to be independent with failure modes like fires and flooding."</p>
+
+<p>Source: <a href="http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1347&amp;categoryID=174">Feature Guide: Amazon EC2 Availability Zones</a></p>
+
+<h2>How do I change my Credit Card information?</h2>
+
+<ul><li>Click on <strong>Payment Information</strong> under ACCOUNT MANAGEMENT in the bottom left.</li>
+<li>Then enter in new Credit Card information and click on the <strong>Add a Credit Card</strong> link.</li>
+</ul><p>Once you've added a new card you can change the current credit card.  There is not a way to delete a credit card.</p>
+
+<h2>How do EY AppCloud instances differ from xCloud slices?</h2>
+
+<h3>What Instances and Slices Have in Common</h3>
+
+<p>Right now, your EY AppCloud instance closely resembles the xCloud slices.</p>
+
+<p>All of the hard work, detailed configuration and battle-tested setup that have gone into building and perfecting the <a href="http://www.engineyard.com/technology/stack">Engine Yard Stack</a> serves as the foundation for each EY AppCloud instance.</p>
+
+<h3>Convention over Configuration</h3>
+
+<p>We continue to use conventions developed on the xCloud.  If you know your way around an Engine Yard slice, you should feel right at home.</p>
+
+<h3>No GFS or Shared Volume</h3>
+
+<p>The primary difference you may notice after tinkering with your first setup is that there is no shared volume between instances.  If you need shared assets, look to use a service like <a href="http://aws.amazon.com/s3/">Amazon S3</a> or <a href="http://aws.amazon.com/cloudfront/">Amazon Cloudfront CDN</a>.</p>
+
+<h2>Unicorn failing to reload after Bundler</h2>
+
+<p>After upgrading to Bundler 1.0 you may notice that Unicorn no longer gracefully deploys.  In order to resolve this problem you need to add the <code>unicorn</code> gem to your Gemfile like below and re-deploy.</p>
+
+<p><code>
+gem 'unicorn', '1.1.5'
+</code></p>
+
+<p>Then restart unicorn like below:</p>
+
+<p><code>
+/engineyard/bin/app_myapp reload
+</code></p>
+
+<h2>Do you offer any DDoS Protection on EY AppCloud?</h2>
+
+<p>Due to the nature of DDoS attacks and how difficult it can be successfully protect a site against the various DDoS attacks Engine Yard does not offer any services to help in the event of a DDoS attack.</p>
+
+<p>If you need assistance in Protecting your site against a DDoS attacks we provide a list of several companies below for you to review and contact for assistance.</p>
+
+<ul><li><a href="http://www.prolexic.com">Prolexic Technologies</a></li>
+<li><a href="http://www.secureworks.com">Secure Works</a></li>
+<li><a href="http://www.verisigninc.com/en_US/products-and-services/network-intelligence-availability/ddos/index.xhtml">Verisign</a></li>
+<li><a href="http://serverorigin.com">Serverorigin</a></li>
+</ul><h2>400 Bad Request While Updating Chef Recipes</h2>
+
+<p>While trying to update your custom chef scripts, if you run into the error "400 Bad Request" you will need to do two things.</p>
+
+<ul><li>Click on <strong>Update Instance</strong> on the environment you're trying to apply scripts to.</li>
+<li>Then run <code>sudo gem update engineyard</code> to make sure your <code>engineyard</code> gem is on the latest version.</li>
+</ul><p>This should make sure all API endpoints line up between the gem and the EY AppCloud application.</p>
+
+<p>Also you may see the error:</p>
+
+<pre><code>EY::API::RequestFailed 400 Bad Request {"message":"A newer version of the Engine Yard stack is available. You must 'Update Instances' before custom chef recipes can be applied."}
+</code></pre>
+
+<h2>Error: "missing activerecord-mysql2-adapter gem"</h2>
+
+<p>To fix this, you just need to include the <code>mysql2</code> gem in your Gemfile.</p>
+
+<h2>Bundler 1.0 Will Not Install Compiled Gems in UNIX When <code>bundle install</code> is Run in Windows</h2>
+
+<p>When developing on Windows you'll find when you deploy your Applications on EY that it will not find certain gems such as MySQL2 no matter what you do.  Please review this open <a href="https://github.com/carlhuda/bundler/issues#issue/646">Bug report #646</a> for more information on it.</p>
+		</div>
+	</div>
+
+      <div class="clear"></div> 
+
+      <div id="footer">
+        <div id="footer-content">
+          <div class="page">
+            <div class="grid_4">
+              <p id="copyright">
+                <p>   
+                Running on Engine Yard: <a href="http://engineyard.com/products/appcloud">The Ruby Cloud</a> and <a href="http://github.com/github/gollum">Gollum</a><br /> <!-- CHANGE WHEN GO LIVE -->
+                Ruby is the Language of the Cloud.<br />
+                Copyright &copy; Engine Yard, Inc. All rights reserved.
+              </p>
+            </div>
+            <div class="grid_2">
+              <h2>Ruby Products</h2><!--CHANGE WHEN GO LIVE -->
+              <ul>
+                <li><a href="http://engineyard.com/products/appcloud">Engine Yard AppCloud</a></li>
+                <li><a href="http://engineyard.com/products/xcloud">Engine Yard xCloud</a></li>
+                <li><a href="http://engineyard.com/university/scheduled_classes">Rails 3 Training</a></li>
+                <li><a href="http://engineyard.com/services">Professional Services</a></li>
+              </ul>
+            </div>
+            <div class="grid_2">
+              <h2>Customer Service</h2>  
+              <ul>                       
+                <li><a href="http://support.cloud.engineyard.com/">Request Support</a></li> 
+                <li><a href="http://docs.engineyard.com">Documentation</a></li> 
+                <li><a href="http://community.engineyard.com">Community Forums</a></li> 
+                <li><a href="/products/support-policies">Support Policies</a></li>
+                <li><a href="/legal/privacy">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="grid_2">
+              <h2>Ruby Community</h2>
+              <ul>
+                <li><a href="http://www.jruby.org">JRuby</a></li>
+                <li><a href="http://rubini.us">Rubinius</a></li>
+                <li><a href="http://www.railsinstaller.com">Rails Installer</a></li>
+                <li><a href="http://jobs.engineyard.com">Ruby Jobs</a></li>
+                <li><a href="http://www.railsdevelopment.com">Rails Developers</a></li>
+              </ul>
+            </div>
+            <div class="grid_2">
+              <h2>Socialize With Us</h2>
+              <ul>
+                <li>
+					<a href="http://engineyard.com/blog" class="blog">Blog</a> <!--CHANGE WHEN LIVE-->
+                </li>
+                <li>
+					<a href="http://twitter.com/engineyard" class="twitter trackLink">Twitter</a>
+                </li>
+                <li>                                                                             
+					<a href="http://facebook.com/engineyard" class="facebook trackLink">Facebook</a>
+                </li>
+                <li>                                                                             
+					<a href="http://www.linkedin.com/groups?gid=111752" class="linkedin trackLink">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>           
+    </div>
+
+    <div class="hidden">
+	  <script src="/javascripts/application.min.js"></script>
+    </div>
+  </body>
+</html>

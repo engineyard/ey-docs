@@ -1,0 +1,57 @@
+<h1>Managing Database Backups</h1>
+
+<p>Each instance comes with the <code>ey-backup</code> gem pre-installed.  This tool will allow you create, view, download, and restore your database backups.</p>
+
+<h2>On-Demand Backup</h2>
+
+<p>While your regular database backups will be performed according to the schedule you set for your environment, you can also request a backup to be performed at any time.  This is done with the following command:</p>
+
+<pre><code>sudo -i eybackup --new-backup
+</code></pre>
+
+<p><strong>Tip:</strong> Instead of <code>--new-backup</code> you may use the abbreviated flag <code>-n</code>.</p>
+
+<h2>List Available Backups</h2>
+
+<p>You may view all available backups at any time.  Assuming that the name of our database is "Tests_production", we would use the following command:</p>
+
+<pre><code>sudo -i eybackup --list-backup Tests_production
+</code></pre>
+
+<p><strong>Tip:</strong> Instead of <code>--list-backup</code> you may use the abbreviated flag <code>-l</code>.</p>
+
+<p>You will see a list like:</p>
+
+<pre><code>listing Tests_production database
+0:Tests_production Tests_production.2009-01-22T08-02-17.sql.gz
+1:Tests_production Tests_production.2009-01-22T08-02-29.sql.gz
+2:Tests_production Tests_production.2009-01-22T08-03-06.sql.gz
+</code></pre>
+
+<p><strong>Tip:</strong> Notice that each of the backups has a numeric index.  This is used to identify individual backups for the options that we will describe next.</p>
+
+<h2>Download a Backup</h2>
+
+<p>You may download a backup file, identified by it's unique index.  For example, if we wished to download the backup file <code>Tests_production.2009-01-22T08-02-29.sql.gz</code> shown above, we should note that it has an index of <code>1:Tests_production</code>.  The command to download the file would then be:</p>
+
+<pre><code>sudo -i eybackup --download 1:Tests_production
+</code></pre>
+
+<p><strong>Tip:</strong> Instead of <code>--download</code> you may use the abbreviated flag <code>-d</code>.</p>
+
+<p>The file will be downloaded into <code>/mnt/tmp</code> on your server instance.</p>
+
+<h2>Restore From a Backup</h2>
+
+<p>If you wish to restore your Database from an available backup, assuming we again wished to use the above mentioned backup with an index of <code>1:Tests_production</code>, we would use the following command:</p>
+
+<pre><code>sudo -i eybackup --restore 1:Tests_production
+</code></pre>
+
+<p><strong>Tip:</strong> Instead of <code>--restore</code> you may use the abbreviated flag <code>-r</code>.</p>
+
+<p><strong>Warning!</strong> This command will result in your current database being completely overwritten with the selected backup.  That being the case you may wish to execute a <code>--new-backup</code> immediately prior to the restore.</p>
+
+<h2>Download a File</h2>
+
+<p>If you want to download the backup file you just created, read the <a href="download-a-database-backup">Download a Database Backup</a> article.</p>

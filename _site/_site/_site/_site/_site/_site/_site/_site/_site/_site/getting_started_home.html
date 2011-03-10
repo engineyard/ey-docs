@@ -1,0 +1,107 @@
+<h1>Getting Started</h1>
+
+<h2>Step 1: Add Application</h2>
+
+<h3>Application Information</h3>
+
+<p>This page is where you will add your git repo that host the code for your application.
+<img src="images/quick_start_home_1.jpg" alt="Quick Start - Git Repo" /></p>
+
+<ul><li>Git Repository URI</li>
+<li>Application Type</li>
+</ul><p>We need to have your Git Repository URI to checkout your code and deploy it to the instance.  And your Application Type helps us to know how to start your application once it's deployed.</p>
+
+<p>The Quick Start will use the name of your git repo to name and something else to make the name of your Environment.</p>
+
+<h3>Advanced Options</h3>
+
+<ul><li>Framework Environment</li>
+<li>Web Server Stack</li>
+<li>Avaliablity Zone</li>
+</ul><p>The <strong>Framework Environment</strong> gives you the ability to use any environment you want on Engine Yard AppCloud.  Great for production, staging, CI, testing, QA, etc.</p>
+
+<p>We offer a choice of <strong>Web Server Stacks</strong> to our customers.</p>
+
+<ul><li>Nginx + Mongrel</li>
+<li>Nginx + Passenger</li>
+<li>Nginx + Unicorn</li>
+<li>Nginx + Glassfish (JRuby Only)</li>
+</ul><p>You can easily choose from the list now and then boot your instance.  But wait, there's more!  You can then choose to change your configuration and then deploy those changes.</p>
+
+<p>With this flexibility, you can decide which stack is right for your app.</p>
+
+<p><strong>Availability Zones</strong> are Amazon's idea of data centers.  Currently we offer a choice of the us-east area.  We offer other regions in our <a href="">Multi-Region Alpha</a> feature.</p>
+
+<h2>Step 2: Git Deploy Key</h2>
+
+<p>If you're deploying an application that is on a public repository, this step will be skipped.  If not, you'll be prompted with a generated deploy key to be applied to your repository.</p>
+
+<h3>Git Deploy Key for myapp</h3>
+
+<p>We're going to step you through how to get your deploy key setup on your private repository.</p>
+
+<p>Not using GitHub?  Well you're probably smart enough to know how to add the deploy key yourself, so skip ahead to [Step 3: Configure Gems][]</p>
+
+<h3>Add a Deploy Key to A GitHub Private Repo</h3>
+
+<p><img src="images/quick_start_home_2.jpg" alt="Quick Start - Add Deploy Key" /></p>
+
+<p>Use the copy to clipboard button on the page (or just select all in the text area form and copy).</p>
+
+<p>Then let's open your <a href="http://www.github.com">GitHub</a> repository's address in a new window.</p>
+
+<ul><li>From the homepage of your private repository click on the <strong>Admin</strong> button.</li>
+<li>Once on the Admin page, you'll see the Deploy Key's section, click <strong>Add another deploy key</strong>.</li>
+<li>Give your Deploy Key a <strong>Title</strong> and paste in the <strong>Key</strong> into the field below Title.</li>
+<li>Click <strong>Add key</strong> to save your key to the repository.</li>
+</ul><p>Now you're Deploy Key is installed on GitHub, you can click the check box <strong>My Deploy Key is in place</strong> and click the <strong>Next</strong> button to proceed.</p>
+
+<p><br /></p>
+
+<h2>Step 3: Configure Gems</h2>
+
+<p>Configure all the gems you need for your application on one screen.  If you're vendoring your gems or using Bundler, you can simply click the <strong>Next</strong> button in the bottom right to proceed to [Step 4: SSH Key][].</p>
+
+<h3>Search for a Gem</h3>
+
+<ul><li>Once you search for a gem you need installed, the results are shown below "Select Your Gems".</li>
+<li>Click the <strong>Add Gem -&gt;</strong> link to include the gem in your configuration.</li>
+<li>The gem moves over into the Selected Gems list, which are installed on all instances you create.</li>
+</ul><h3>Or Add a Gem From a Custom Gem Server</h3>
+
+<p>If you've got a custom gem tucked away somewhere, you can add that here as well and we'll make sure it's added to your instances.</p>
+
+<h2>Step 4: SSH Key</h2>
+
+<p>You can add the first SSH Key to your instance here.  Optionally you can <a href="env_ssh_keys">manage and deploy keys</a> anytime later.</p>
+
+<ul><li>If you don't want to add a SSH Key at this time you can click the <strong>Next</strong> button.</li>
+</ul><p>OR</p>
+
+<ul><li>If you're ready to add an SSH Key give it a <strong>Keypair Name</strong> and paste your ''id_rsa.pub'' or ''id_dsa.pub'' into the <strong>Public Key</strong> field, then click the <strong>Next</strong> button.</li>
+</ul><p>For more information about generating SSH Keys read our <a href="generating_ssh_keys">Generate an SSH Keypair</a> article.</p>
+
+<h2>Boot Your Cluster</h2>
+
+<p>You're ready to boot your first instance on Engine Yard AppCloud!</p>
+
+<p>Use the on-screen instructions to make the best decision for your needs. If you are hosting a production ready application, we recommend you choose the basic cluster. This gives you a dedicated database and gives you the flexibility to scale. If you are still in development, the single server is the best option. If you have other needs, you can configure that with the custom option.</p>
+
+<p><img src="images/quick_start_home_3.jpg" alt="Quick Start - Boot Instances" /></p>
+
+<h2>One Last Step - Deploy</h2>
+
+<p><img src="images/quick_start_home_4.jpg" alt="Quick Start - Deploy" /></p>
+
+<p>After you've booted your instance there's one last step you need to do.  Click on the <strong>Applications</strong> tab and click the <strong>Deploy</strong> button to deploy your application to the instance and restart Rails/Ruby server (mongrel/passenger/unicorn etc.). If you want to know more about deployment or want to know more about the <a href="https://github.com/engineyard/engineyard">engineyard gem</a> go to our <a class="internal absent" href="/Deployment-page.html">appcloud:guides:deployment:home</a>.</p>
+
+<p>Also, if you want to be able to view your Deploy log file. You will need to SSH into your instance and go into your <strong>/home/deploy</strong> directory. Once you are in your instance if you type ''pwd'' you should already be in that directory and the file in there will be your Deploy log.</p>
+
+<h2>Where to Go From Here</h2>
+
+<p>You can setup various Internet &amp; Networking technologies.</p>
+
+<ul><li><a href="env_ip_addresses">IP Addresses</a></li>
+<li><a href="env_ssh_keys">SSH Keys and Configuration</a></li>
+<li><a href="features_ssl_certificates">SSL Certificates</a></li>
+</ul><p>Learn more about the different types of <a href="appcloud/guides/environments/appcloud-instances">Instances</a> are available to you including Application, Utility and Database Instances.</p>
