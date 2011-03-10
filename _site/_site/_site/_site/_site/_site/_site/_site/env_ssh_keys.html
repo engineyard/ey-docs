@@ -1,0 +1,59 @@
+<h1>SSH Keys and Configuration</h1>
+
+<p>If you need help generating an SSH keypair please see: <a href="generating_ssh_keys">Generating SSH Keys</a></p>
+
+<h2>Manage Keys</h2>
+
+<p>In order to access your slice via command line interface like Terminal on Mac OS X, you'll need to upload your SSH public key to Engine Yard AppCloud, then attach it to an environment.</p>
+
+<h3>Add a SSH Keypair</h3>
+
+<ul><li>Under SERVER TOOLS in Engine Yard AppCloud, click on <strong>SSH Public Keys</strong> menu item.</li>
+<li>Then click on <strong>Add a new SSH public key</strong> link in the top right.</li>
+<li>Give your Keypair a <strong>name</strong>.</li>
+<li>Click <strong>Upload</strong> button to save this keypair.</li>
+</ul><h3>Select Keypairs</h3>
+
+<ul><li>Click on the <strong>Dashboard</strong> link under <em>Server Tools</em> on the left, then select the <strong>More Options</strong> tab for the environment you want to edit.</li>
+<li>Click on <strong>Edit Environment</strong> and the <em>Edit the Environment</em> page will appear.</li>
+<li>You then need to click on the <strong>show advanced options</strong> link under which you'll find a checkbox for each key you have entered in the system.  Check the box next to the keys you want in the environment.</li>
+<li>Click the <strong>Update environment</strong> button to save your changes.</li>
+</ul><p><img src="images/manage_ssh_keys.jpg" alt="Adding SSH Keys" /></p>
+
+<p>Repeat these steps for each environment you have.</p>
+
+<h3>Deploy Your Keys</h3>
+
+<p>You <strong>deploy</strong> your keys to push them to your instance.</p>
+
+<ul><li>Go back to your <strong>Dashboard</strong>.</li>
+<li>For the environment you've changed, click on the <strong>Deploy</strong> button.</li>
+<li>Now you're ready to connect!</li>
+</ul><h3>Connect to Your Instance</h3>
+
+<p>From the Dashboard tab you'll be able to see an SSH link for your instance.  Click on that, then click on <strong>Allow</strong> to connect to your instance via SSH.</p>
+
+<p>Otherwise you can SSH into the slice by using your IP or amazon hostname and your username.  By default your username is <em>depoy</em>.</p>
+
+<p>  <code>ssh deploy@123.123.123.123</code></p>
+
+<p>  or</p>
+
+<p>  <code>ssh deploy@ec2-123-123-123-123.compute-1.amazonaws.com</code></p>
+
+<h2>SSH Configuration Tips</h2>
+
+<h3>SSH Hostname Alias</h3>
+
+<p>Setup an SSH hostname alias and you'll be able to save your fingers some walking.  Once you've setup the alias you can access your instance by typing:</p>
+
+<p>  <code> ssh myapp</code></p>
+
+<p>On your local computer open the <code>~/.ssh/config</code> file in your favorite text-editor.  And add an entry like this:</p>
+
+<pre><code>Host myapp
+  Hostname     123.123.123.123
+  User         deploy
+</code></pre>
+
+<p>Where the <em>Hostname</em> is the IP Address you've assigned to your instance and the <em>User</em> is the one you have configured in your environment.</p>

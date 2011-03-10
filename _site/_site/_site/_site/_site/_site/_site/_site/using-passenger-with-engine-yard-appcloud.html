@@ -1,0 +1,39 @@
+<h1>Using Passenger 3 with Engine Yard AppCloud</h1>
+
+<h2>Introduction</h2>
+
+<p>Phusion Passenger 3 is currently in Beta support on Engine Yard AppCloud. This version of Passenger brings substantial performance improvements. As a major version release, we decided to release it as an Alpha feature for opt-in customers.</p>
+
+<h2>Overview</h2>
+
+<p>Each environment can choose to change from “Passenger” to “Passenger 3” independently. All applications on that environment will use the Passenger 3 web server.</p>
+
+<p>See below for <strong>Getting Started</strong> instructions for New Environments or updating Existing Environments.</p>
+
+<h2>FAQ</h2>
+
+<ul><li>What is the differences between spawning methods?
+<a href="http://www.modrails.com/documentation/Users%20guide%20Nginx.html#spawning_methods_explained">Answer</a></li>
+</ul><h2>Support</h2>
+
+<p>Support for users of Passenger is provided via emails to <a href="mailto:drnic@engineyard.com">Dr Nic Williams</a>. He will create internal development tickets and follow up with you on their solutions and/or temporary workarounds.</p>
+
+<h3>New Environment</h3>
+
+<ul><li>Create a new environment using the <strong>Create New Environment</strong> link on the dashboard.</li>
+<li>In the “Web Stack Server” section, choose <strong>Passenger 3</strong></li>
+</ul><p>{{:beta:change-web-server-stack.png|}}</p>
+
+<h3>Existing Environment</h3>
+
+<p>To edit an existing environment:</p>
+
+<ul><li><strong>Terminate</strong> your environment.</li>
+</ul><p>{{:beta:existing_environment.jpg|}}</p>
+
+<ul><li>Click <strong>More Options</strong> -&gt; <strong>Edit Environment</strong> for the environment you wish to modify.</li>
+</ul><p>{{:beta:change-web-server-stack.png|}}</p>
+
+<ul><li>In the <strong>Web Stack Server</strong> section, choose “Passenger 3”</li>
+<li>If you have existing applications running in the environment, the dashboard will prompt you to rebuild the environment, which will re-run chef recipes and update the runtime to use Passenger 3.</li>
+</ul>
