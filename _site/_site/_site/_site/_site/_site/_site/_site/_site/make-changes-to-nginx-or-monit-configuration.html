@@ -1,0 +1,39 @@
+<h1>Make Changes to Nginx or Monit Configuration</h1>
+
+<p>A <strong>keep file</strong> gives you the flexibility to modify configuration settings on your <code>/data</code> EBS volume.  Basically rename the default file from <code>file.name</code> to <code>keep.file.name</code>.</p>
+
+<h2>Nginx</h2>
+
+<p>Your application named <strong>myapp</strong> you'd take your standard:</p>
+
+<pre><code>/data/nginx/servers/myapp.conf
+</code></pre>
+
+<p>And you need to rename that file to:</p>
+
+<pre><code>/data/nginx/servers/keep.myapp.conf
+</code></pre>
+
+<p>Then make all your changes and they will be used in your nginx server.</p>
+
+<p>This also works for other files in the folder:</p>
+
+<pre><code>/data/nginx/servers/*    
+</code></pre>
+
+<h3>Extra Step for <code>nginx.conf</code></h3>
+
+<p>Changing the <code>nginx.conf</code> file requires an additional step because it's a file required by nginx itself.</p>
+
+<ul><li>Rename the file from <code>/data/nginx.conf</code> to <code>/data/nginx/keep.nginx.conf</code></li>
+<li><p>Add a deploy hook to create a symlink:</p>
+
+<p>   ln -nfs /data/nginx/keep.nginx.conf /data/nginx/nginx.conf</p></li>
+</ul><h2>Monit</h2>
+
+<p>You can also edit and keep any monit configs inside of:</p>
+
+<pre><code>/etc/monit.d/*
+</code></pre>
+
+<p>This can be useful if you're trying to increase the memory limit for mongrels or background processes, etc.</p>

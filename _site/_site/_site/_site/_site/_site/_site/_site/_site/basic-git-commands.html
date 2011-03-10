@@ -1,0 +1,65 @@
+<h1>Basic Git Commands</h1>
+
+<p>Now that you have your local environment setup, we want to give you a brief background on our favorite version control system, Git.</p>
+
+<h2>What is git?</h2>
+
+<p>Git is a version control system. While there are numerous uses for Git, we will highlight using it to manage the changes you make to your project. Check out the links at the bottom for some more ideas and uses for Git.</p>
+
+<h2>Basic Commands</h2>
+
+<p>Git stores everything in a Git repository.  To retrieve a Git repository, there are two options.  You can either initialize a new repository in a project's directory or you can clone one from a public Git repository.</p>
+
+<h3>Initialize a New Repository</h3>
+
+<p>To create a repository for an existing directory of files, move into the home directory of your project and initialize the repository:</p>
+
+<pre><code>git init
+</code></pre>
+
+<h3>Clone an Existing Repository</h3>
+
+<p>To create a copy of an existing project, you must run the ''git clone'' command with the URL for the project you want</p>
+
+<p><code>git clone git://github.com/radiant/radiant.git</code></p>
+
+<h2>Working in Repository</h2>
+
+<p>Think of git as taking snapshots of your files.  You can edit and manipulate your files to how you want them, then you can send them to the staging area, and then you can take a snapshot of these files.</p>
+
+<p>To add a list of files (README and test.rb) you can use:</p>
+
+<pre><code>git add README test.rb
+</code></pre>
+
+<p>Or you can add all files in the directory:</p>
+
+<pre><code>git add .
+</code></pre>
+
+<p>Lastly you want to commit the code to the repository:</p>
+
+<pre><code>git commit -m 'first commit'
+</code></pre>
+
+<p>The <code>-m</code> option allows you to append a message with the commit. Preferably something useful so that you can know what that commit is about.</p>
+
+<p>To view the status of your files in your directory:</p>
+
+<pre><code>git status
+</code></pre>
+
+<p>This will tell you what files have been modified since the last time they were committed.</p>
+
+<h2>Tools</h2>
+
+<p>A great tool to use is a git history viewer. Git comes in with a built in viewer. If you <code>cd</code> into your repository and run the <code>gitk</code> command you will be presented with a nice GUI to view your git history. This is a very barebones viewer. If you want to have one that feels more native to your OS and have some more functionalities I would look at <a href="https://github.com/pieter/gitx/wiki/">GitX</a> for Mac and <a href="http://code.google.com/p/tortoisegit/">tortoisegit</a> for Windows.</p>
+
+<h2>Links</h2>
+
+<ul><li><a href="http://help.github.com">GitHub Help Section</a></li>
+<li><a href="http://gitref.org/">Git Reference Site</a></li>
+<li><a href="http://railscasts.com/episodes/96-git-on-rails">VIDEO: Railscasts on Git</a></li>
+<li><a href="http://peepcode.com/products/git">VIDEO: PeepCode on Git</a></li>
+<li><a href="http://rockablepress.com/books/getting-good-with-git/">BOOK &amp; VIDEO: Getting Good with Git</a></li>
+</ul><p>Check out this <a href="http://www.decisionesinteligentes.com/guides/comandos-basicos-git">Spanish translation of the Basic Git Commands tutorial</a>, courtesy of Mario Alberto Chávez Cárdenas of <a href="http://www.decisionesinteligentes.com/">Decisiones Inteligentes</a> and <a href="http://tijuanarb.org/">Tiajuana.rb</a>.</p>
