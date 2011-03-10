@@ -1,6 +1,5 @@
 * [[Docs Home|Home]]
   * [[Intro to Engine Yard AppCloud|appcloud_home]]  
-    
   * [[Getting Started Home|getting_started_home]]
     * [[Sign Up for Engine Yard AppCloud|sign-up-for-engine-yard-appcloud]]
     * [[Quick Start 1|quick_start_1]]
@@ -9,12 +8,10 @@
     * [[Quick Start 4|quick_start_4]]
     * [[Booting Instances|booting_instances]]
     * [[Quick Start 6|quick_start_6]]
-
     * [[Host Your Code on GitHub|host-your-code-on-github]]
     * [[Basic Git Commands|basic-git-commands]]
     * [[Create Your Bundler Gemfile|create-your-bundler-gemfile]]
     * [[Create Your Rails Application|create-your-rails-application]]
-    
   * Applications and Deployment
     * [[Application Home|application_home]]
     * [[Deploying with CLI|ey_cli_user_guide]]
@@ -28,7 +25,6 @@
     * [[Change Your Repo Location|change-your-repo-location]]
     * [[Monitoring AppCloud|monitoring_appcloud]]
     * [[Amazon Out of Capacity Error | amazon-out-of-capacity]]
-    
   * [[Environment|environment_home]]
     * [[Setup Environment|setup-environment]]
     * [[AppCloud Instances|appcloud-instances]]
@@ -41,7 +37,6 @@
     * [[Rebuilding an Environment|rebuilding-an-environment]]
     * [[Usage Graphs|usage-graphs]]
     * [[Using Snapshots|using-snapshots]]
-
   * Database
     * [[Find Your Generated MySQL Password and Connect to Your DB|find-your-generated-mysql-password-and-connect-to-your-db]]
     * [[Access Your MySQL Database Remotely|access-your-mysql-database-remotely]]
@@ -52,11 +47,9 @@
     * [[Dump and Load Your MySQL Database|dump-and-load-your-mysql-database]]
     * [[Growing the DB Volume|growing-the-db-volume]]
     * [[MySQL Troubleshooting|mysql-troubleshooting]]
-    
   * [[Migrating|migrating_home]]
     * [[Migration Steps Template|migration-steps-template]]
     * [[EM-Proxy|em-proxy]]
-    
   * [[HowTos|howtos_home]]
     * [[Custom Chef Recipes|custom-chef-recipes]]
     * [[Make Changes to Nginx or Monit Configuration|make-changes-to-nginx-or-monit-configuration]]
@@ -71,7 +64,6 @@
     * [[Review Usage Charges|review-usage-charges]]
     * [[How to Add a New Relic RPM User|howto-add-a-new-relic-rpm-user]]
     * [[Use New Relic|use-new-relic-rpm-with-engine-yard-cloud]]
-    
   * BETA
     * [[BETA: Collaboration|collaboration]]
     * [[Collaboration Info|collaboration_info]]
@@ -88,7 +80,6 @@
     * [[BETA: Ruby 1.9.2|ruby-1.9.2]]
     * [[Using Ruby 1.9.2|using-ruby-1.9.2-with-engine-yard-appcloud]]    
     * [[REQUEST: Ruby 1.9.2|signup-ruby-192]]                           
-    
   * [[FAQs|faq_home]]
     * [[Amazon AWS FAQ |amazon_faq]]
     * [[Engine Yard FAQ|engine-yard-faq]]
@@ -98,7 +89,7 @@
     * [[Rubinius FAQ|rubinius-faq]]
     * [[Rails FAQ|rails-faq]]
     * [[Deployment FAQ|deployment_faq]]
-    
   * [[Known Issues|known_issues]]
   * [[Troubleshooting|troubleshooting]]
   * [[AppCloud Glossary|appcloud_glossary]]
+  * [[Josh|josh]]

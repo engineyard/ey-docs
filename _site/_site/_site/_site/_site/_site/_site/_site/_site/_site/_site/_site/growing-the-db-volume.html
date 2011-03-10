@@ -1,0 +1,14 @@
+<h1>Growing the /db Volume</h1>
+
+<p>If your database outgrows the current available space on your <code>/db</code> volume you'll have to grow the volume. You can follow the same steps if you need to grow the <code>/data</code> volume on your application or utility instances as well.</p>
+
+<h2>Step-by-Step Instructions</h2>
+
+<ul><li>Terminate your currently running instance by clicking the <strong>Terminate</strong> button located at the top of the environment. When this is done we'll snapshot both your <code>/data</code> and <code>/db</code> volumes for you.</li>
+<li>Once the instances spin down click the <strong>Boot Instances</strong> button from the top of the environment.</li>
+<li>Choose the <strong>Custom</strong> radio button.</li>
+<li>Choose the number of app instance, utility instances and database instances. Be sure to select the proper instance size for each.</li>
+<li>Choose the most recent snapshots from the drop-downs. This will ensure you get your most recent data from when you terminated. If any snapshots are still pending we'll indicate so in the dropdown.</li>
+<li>Resize any volume that you want to grow. When the environment boots back up this volume will be automatically resized for you.</li>
+<li>Click the <strong>Boot This Configuration</strong> button from the bottom of the page.</li>
+</ul><p>Once the environment is back up you'll have your newly sized <code>/db</code> and/or <code>/data</code> volumes.</p>

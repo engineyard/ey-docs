@@ -1,0 +1,29 @@
+<h1>Dump and Load your MySQL Database</h1>
+
+<p>Here are the steps involved to dump a MySQL Database from one location and load it into a database in another location.</p>
+
+<h2>Create a Dumpfile</h2>
+
+<p>First conduct a MySQL dump, then compress and copy the output to the new location:</p>
+
+<pre><code>mysqldump -u user -ppassword -h hostname dbname &gt; dumpfile.sql  
+
+gzip -v dumpfile.sql 
+
+scp dumpfile.sql newserver:/path/to/file/dumpfile.sql 
+</code></pre>
+
+<p><strong>NOTE: You'll need keys and <code>scp</code> setup for the <code>scp</code> command to work.</strong></p>
+
+<h2>Import a Dumpfile</h2>
+
+<p>SSH into the new location, Uncompress and import the MySQL dump.</p>
+
+<pre><code>gunzip -v dumpfile.sql
+
+mysql -u user -ppassword -h hostname dbname &lt; dumpfile.sql
+</code></pre>
+
+<h2>Concepts and Terms</h2>
+
+<p>Keep in mind that terms such as <code>user</code>, <code>password</code>, <code>hostname</code> and <code>newserver</code> need to be replaced with the appropriate values for your environment(s).  Of specific note, there is no space between <code>–p</code> and <code>password</code> when entering said commands.</p>
