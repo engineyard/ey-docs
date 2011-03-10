@@ -25,7 +25,7 @@ Once you've setup the deploy key, you're ready to setup any other specific gems.
   * Or Add a Gem From a Custom Gem Server
   * Click **Select Unix Packages** after all Gems have been configured.
 
-On the Unix Packages page you can configure system dependences.  For example: ''imagemagick''.
+On the Unix Packages page you can configure system dependences.  For example: *imagemagick*.
 
   * Search for a Unix Package
   * Click **Go to dashboard** after you've configured all Unix packages.
