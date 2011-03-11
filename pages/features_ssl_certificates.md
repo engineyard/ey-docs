@@ -43,7 +43,6 @@ And you've got you're passphrase-less key!
 ### Generate Your CSR
 
 
-<code>
   $  openssl req -new -key yourdomain.com.key -out yourdomain.com.csr
   You are about to be asked to enter information that will be incorporated into your
   certificate request.
@@ -59,9 +58,9 @@ And you've got you're passphrase-less key!
   Organizational Unit Name (eg, section) []:
   Common Name (eg, YOUR name) []:yourdomain.com
   Email Address []:your.email@address.com
-</code>
 
-This generates the .csr file you'll use to request your certificate.
+
+This generates the `.csr` file you'll use to request your certificate.
 
 **NOTE**: The "common name" (indicated as "yourdomain.com" above) is the Fully Qualified Domain Name (FQDN) for the certificate you're generating.  <nowiki>"www.yourdomain.com" is not the same as "yourdomain.com".</nowiki>
 
