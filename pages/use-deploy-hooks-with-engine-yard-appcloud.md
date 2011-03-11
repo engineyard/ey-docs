@@ -1,4 +1,4 @@
-# HOWTO Use Deploy Hooks with Engine Yard AppCloud
+# How To Use Deploy Hooks with Engine Yard AppCloud
 
 Our deployment system mimics Capistrano's filesystem layout so it will be familiar to you if you have ever used Capistrano. In fact it is still backwards compatible with Capistrano so you can use both at the same time if so desired.
 
