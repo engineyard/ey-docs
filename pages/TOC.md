@@ -19,7 +19,6 @@
     * [[Deploy Hooks API|deploy_hooks_api]]
     * [[Maintenance Pages|maintenance_pages]]
     * [[Convert Capistrano Symlinks to AppCloud Symlinks|convert-capistrano-symlinks-to-appcloud-symlinks]]
-    * [[How to Use Bundler Gem and Deploy Hooks to Automate Gem Dependencies|howto-use-bundler-gem-and-deploy-hooks-to-automate-gem-dependencies]]
     * [[ey.yml |ey_yml]]
     * [[Change Your Repo Location|change-your-repo-location]]
     * [[Monitoring AppCloud|monitoring_appcloud]]
