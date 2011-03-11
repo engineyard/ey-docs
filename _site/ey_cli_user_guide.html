@@ -156,32 +156,26 @@
 
 <p><strong> Formatting Warning: </strong> This wiki renders two dashes (- -) as an em-dash (--). All single-letter options start with a single dash (e.g. -e), but all long options start with two dashes (- - environment). We are working on making this wiki not screw up the formatting. Until then, watch out for missing dashes.</p>
 
-<h4><code>ey help</code></h4>
+<hr /><h4><code>ey help</code></h4>
 
-<p>Print a short help message.</p>
+<ul><li><p> Print a short help message.</p></li>
+<li><p> <code>ey help COMMAND</code> will print out the help for that command. For example, <code>ey help deploy</code> will print out the help for the <code>ey deploy</code> command, while <code>ey help recipes apply</code> will show the help for <code>ey recipes apply</code>.</p></li>
+</ul><hr /><h4><code>ey version</code></h4>
 
-<p><code>ey help COMMAND</code> will print out the help for that command. For example, <code>ey help deploy</code> will print out the help for the <code>ey deploy</code> command, while <code>ey help recipes apply</code> will show the help for <code>ey recipes apply</code>.</p>
+<ul><li><p> Print the version of the engineyard gem.</p></li>
+<li><p> Arguments: none</p></li>
+</ul><hr /><h4><code>ey deploy</code></h4>
 
-<h4><code>ey version</code></h4>
+<ul><li><p> Deploy your application.</p></li>
+<li><p> This command must be run from a checked-out copy of your application.</p></li>
+<li><p> Arguments:</p>
 
-<p>Print the version of the engineyard gem.</p>
+<ul><li><code>--environment/-e NAME</code> (optional): the environment to which you want this application to deploy.
 
-<p>Arguments: none</p>
-
-<h4><code>ey deploy</code></h4>
-
-<p>Deploy your application.</p>
-
-<p>This command must be run from a checked-out copy of your application.</p>
-
-<p>Arguments:
-  * <code>--environment/-e NAME</code> (optional): the environment to which you want this application to deploy.</p>
-
-<pre><code>* If this application is only deployed in one environment, this argument may be omitted. 
-* This argument may be specified by unambiguous substring; for example, if this app is in environments `myapp_staging` and `myapp_production`, then any one of `myapp_production`, `production`, `prod`, or even just `p` is sufficient to indicate `myapp_production`.
-</code></pre>
-
-<ul><li><code>--ref/-r GIT-REF</code> (optional): the reference to deploy
+<ul><li>If this application is only deployed in one environment, this argument may be omitted.</li>
+<li>This argument may be specified by unambiguous substring; for example, if this app is in environments <code>myapp_staging</code> and <code>myapp_production</code>, then any one of <code>myapp_production</code>, <code>production</code>, <code>prod</code>, or even just <code>p</code> is sufficient to indicate <code>myapp_production</code>.</li>
+</ul></li>
+<li><code>--ref/-r GIT-REF</code> (optional): the reference to deploy
 
 <ul><li>You can specify a branch, a tag, or a SHA.</li>
 <li>This argument defaults to the current branch.</li>
@@ -193,89 +187,86 @@
 <li><code>--migrate/-m COMMAND</code>: the command to use for database migrations. Default is <code>rake db:migrate</code>.</li>
 <li><code>--no-migrate</code>: Skip migrations.</li>
 <li><code>--force/-f</code>: Allow deployment of non-default branch. Only useful if you have a default branch configured in <code>ey.yml</code>.</li>
-</ul><p>Deployment takes place in several stages. For more information, see our documentation on <a class="internal present" href="/deployment_steps.html">Steps of Deployment</a>.</p>
+</ul></li>
+<li><p> Deployment takes place in several stages. For more information, see our documentation on <a class="internal present" href="/deployment_steps.html">Steps of Deployment</a>.</p></li>
+</ul><hr /><h4><code>ey environments</code></h4>
 
-<h4><code>ey environments</code></h4>
+<ul><li><p> List your applications and environments. By default, lists only the environments for the current application.</p></li>
+<li><p> Arguments:</p>
 
-<p>List your applications and environments. By default, lists only the environments for the current application.</p>
+<ul><li><code>--all</code>: list all applications and environments</li>
+</ul></li>
+</ul><hr /><h4><code>ey rebuild</code></h4>
 
-<p>Arguments:
-  * <code>--all</code>: list all applications and environments</p>
+<ul><li><p>Ensure the configuration of your environment is up-to-date.</p></li>
+<li><p>Arguments:</p>
 
-<h4><code>ey rebuild</code></h4>
+<ul><li><code>--environment/-e NAME</code> (optional): the environment to rebuild.
 
-<p>Ensure the configuration of your environment is up-to-date.</p>
+<ul><li>This argument may be specified by unambiguous substring.</li>
+</ul></li>
+</ul></li>
+</ul><hr /><h4><code>ey ssh</code></h4>
 
-<p>Arguments:
-  * <code>--environment/-e NAME</code> (optional): the environment to rebuild.</p>
+<ul><li><p>SSH into a session or run a command on the application master. A command can also be run on <code>--all</code> servers.</p></li>
+<li><p>Arguments:</p>
 
-<pre><code>* This argument may be specified by unambiguous substring.
-</code></pre>
+<ul><li><code>--environment/-e NAME</code> (optional): the environment to SSH into.
 
-<h4><code>ey ssh</code></h4>
+<ul><li>This argument may be specified by unambiguous substring.</li>
+</ul></li>
+<li><code>--all/-a</code> (optional): run command on all servers.</li>
+</ul></li>
+</ul><hr /><h4><code>ey logs</code></h4>
 
-<p>SSH into a session or run a command on the application master. A command can also be run on <code>--all</code> servers.</p>
+<ul><li><p>Show the most recent configuration logs.</p></li>
+<li><p>Arguments:</p>
 
-<p>Arguments:
-  * <code>--environment/-e NAME</code> (optional): the environment to SSH into.</p>
+<ul><li><code>--environment/-e NAME</code> (optional): the environment in whose logs you are interested.
 
-<pre><code>* This argument may be specified by unambiguous substring.
-</code></pre>
+<ul><li>This argument may be specified by unambiguous substring.</li>
+</ul></li>
+</ul></li>
+</ul><hr /><h4><code>ey recipes apply</code></h4>
 
-<ul><li><code>--all/-a</code> (optional): run command on all servers.</li>
-</ul><h4><code>ey logs</code></h4>
+<ul><li><p>Run already uploaded custom chef recipes.</p></li>
+<li><p>Arguments:</p>
 
-<p>Show the most recent configuration logs.</p>
+<ul><li><code>--environment/-e NAME</code> (optional): the environment in which to run the recipes.
 
-<p>Arguments:
-  * <code>--environment/-e NAME</code> (optional): the environment in whose logs you are interested.</p>
+<ul><li>This argument may be specified by unambiguous substring.</li>
+</ul></li>
+</ul></li>
+</ul><hr /><h4><code>ey recipes upload</code></h4>
 
-<pre><code>* This argument may be specified by unambiguous substring.
-</code></pre>
+<ul><li><p>Upload custom chef recipes.</p></li>
+<li><p>Arguments:</p>
 
-<h4><code>ey recipes apply</code></h4>
+<ul><li><code>--environment/-e NAME</code> (optional): the environment in which to place the recipes.
 
-<p>Run already uploaded custom chef recipes.</p>
+<ul><li>This argument may be specified by unambiguous substring.</li>
+</ul></li>
+</ul></li>
+</ul><hr /><h4><code>ey web disable</code></h4>
 
-<p>Arguments:
-  * <code>--environment/-e NAME</code> (optional): the environment in which to run the recipes.</p>
+<ul><li><p>Put up a maintenance page.</p></li>
+<li><p>Arguments:</p>
 
-<pre><code>* This argument may be specified by unambiguous substring.
-</code></pre>
+<ul><li><code>--environment/-e NAME</code> (optional): the environment in which to put up the maintenance page.</li>
+<li><code>app/-a APP</code> (optional): name of the application whose maintenance page will be put up</li>
+</ul></li>
+<li><p>This command has to be invoked from the application's Git repository so it can figure out which application gets the maintenance page.</p></li>
+</ul><hr /><h4><code>ey web enable</code></h4>
 
-<h4><code>ey recipes upload</code></h4>
+<ul><li><p>Take down the maintenance page.</p></li>
+<li><p>Arguments:</p>
 
-<p>Upload custom chef recipes.</p>
-
-<p>Arguments:
-  * <code>--environment/-e NAME</code> (optional): the environment in which to place the recipes.</p>
-
-<pre><code>* This argument may be specified by unambiguous substring.
-</code></pre>
-
-<h4><code>ey web disable</code></h4>
-
-<p>Put up a maintenance page.</p>
-
-<p>Arguments:
-  * <code>--environment/-e NAME</code> (optional): the environment in which to put up the maintenance page.
-  * <code>app/-a APP</code> (optional): name of the application whose maintenance page will be put up</p>
-
-<p>This command has to be invoked from the application's Git repository so it can figure out which application gets the maintenance page.</p>
-
-<h4><code>ey web enable</code></h4>
-
-<p>Take down the maintenance page.</p>
-
-<p>Arguments:
-  * <code>--environment/-e NAME</code> (optional): the environment in which to take down the maintenance page.
-  * <code>app/-a APP</code> (optional): name of the application whose maintenance page will be put up</p>
-
-<p>This command has to be invoked from the application's Git repository so it can figure out which application gets its maintenance page taken down.</p>
-
-<p>For more information, see <a class="internal present" href="/maintenance_pages.html">Maintenance Pages</a>.</p>
-
-<h2>Environment Variables</h2>
+<ul><li><code>--environment/-e NAME</code> (optional): the environment in which to take down the maintenance page.</li>
+<li><code>app/-a APP</code> (optional): name of the application whose maintenance page will be put up</li>
+</ul></li>
+<li><p>This command has to be invoked from the application's Git repository so it can figure out which application gets its maintenance page taken down.</p></li>
+<li><p>For more information, see <a class="internal present" href="/maintenance_pages.html">Maintenance Pages</a>.</p></li>
+</ul><hr /><h2>Environment Variables</h2>
 
 <h3><code>CLOUD_URL</code></h3>
 
