@@ -1,16 +1,16 @@
 # Rebuilding an Environment
 
-We will walk you through how to rebuild an environment.  And advise you on the steps necessary to ensure the minimal downtime.
+We will walk you through how to rebuild an environment and advise you on the steps necessary to ensure the minimal downtime.
 
-Why would you need to rebuild an environment?
+##Why would you need to rebuild an environment?
 
   * When upgrading a Database Instance there is no way to "terminate" the separate DB instance.
 
-## Snapshots
+### Snapshots
 
 Before we talk rebuild, we want to stress the importance of taking a snapshot before you terminate the instance.
 
-Snapshots are incremental.  
+***Snapshots are incremental.***
 
 When you take a snapshot before you terminate the environment, it catches up all changes to that point.  And then when you terminate all instances in your environment, the snapshot that is taken at the time of termination runs very quickly because you've already got a recent snapshot.
 
