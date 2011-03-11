@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  
+    <title>Engine Yard Docs: How to Use New Relic RPM with Engine Yard AppCloud</title>
+    <meta name="description" content="Learn why Engine Yard\'s managed Rails hosting, Rails deployment &amp; 24/7/365 live service is the best">
+    <meta name="keywords" content="Ruby on Rails Fully-Managed Hosting, Scaling, Scaled, Cluster Slices, Cloud Computing, On-Demand Deployment, Merb, Rubinius, Open-Source Software">
+    <meta http-equiv="expires" content="0">
+
+    <!--[if IE]>
+	  <script src="/javascripts/html5shiv"></script>
+    <![endif]-->
+    
+	<link rel="stylesheet" href="/css/application.css" type="text/css" charset="utf-8" />
+    
+    <!--[if IE]>
+	  <link rel="stylesheet" href="/css/ie.css" type="text/css" charset="utf-8" />
+    <![endif]-->
+    
+    <!--[if lte IE 7]>
+	  <link rel="stylesheet" href="/css/ie7.css" type="text/css" charset="utf-8" />
+    <![endif]-->
+
+    <script src="http://use.typekit.com/cra4agv.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="wrapper">
+          <h1 class="branding">
+              <a href="http://engineyard.com/">Ruby On Rails Hosting Management: Engine Yard Platform-as-a-Service</a> <!-- CHANGE ON GO LIVE -->
+          </h1>
+
+          <ul class="utility">
+            <li>866-518-YARD</li>
+            <li>
+              <form action="/search" method="get" class="search">
+                <input type="text" name="q" id="searchbox" placeholder="search" />
+                <input type="submit" value="Search" class="gsc-search-button" />
+              </form>
+            </li>
+            <li>
+			  <a href="https://login.engineyard.com/signup" class="login">Create Account</a>
+            </li>
+            <li>
+			  <a href="https://cloud.engineyard.com" class="login">Sign In</a>
+            </li>
+          </ul>
+
+          <nav> <!-- CHANGE ON GO LIVE -->
+		  <ul class="navigation">
+		    <li>
+		      <a href="http://engineyard.com/products/appcloud"><span>Cloud Products</span></a>
+		      <ul>
+		        <li>
+		          <a href="http://engineyard.com/products/appcloud">Engine Yard AppCloud</a>
+		          <ul>
+		            <li><a href="http://engineyard.com/products/appcloud/features">Features</a></li>
+		            <li><a href="http://engineyard.com/products/appcloud/pricing">Pricing</a></li>
+		            <li><a href="http://engineyard.com/video/17825326">Video Tour</a></li>
+		          </ul>
+		        </li>
+		        <li>
+		          <a href="http://engineyard.com/products/xcloud">Engine Yard xCloud</a>
+		          <ul>
+		            <li><a href="http://engineyard.com/products/xcloud/features">Features</a></li>
+		            <li><a href="http://engineyard.com/products/xcloud/pricing">Pricing</a></li>
+		          </ul>
+		        </li>
+		        <li>
+		          <a href="http://engineyard.com/products/technology">Engine Yard Platform</a>
+		          <ul>
+		            <li><a href="http://engineyard.com/products/technology/stack">Technology Stack</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/support-plans"><span>Support</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/support-plans">Support Plans</a></li>
+		        <li><a href="http://engineyard.com/services">Professional Services</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+			  <a href="http://engineyard.com/university"><span>EY University</span></a>	
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/videos"><span>Resources</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/videos">Videos</a></li>
+		        <li><a href="http://engineyard.com/podcasts">Podcasts</a></li>
+		        <li><a href="http://engineyard.com/developer/events">Events</a></li>
+		        <li><a href="http://engineyard.com/partners">Development Partners</a></li>
+		        <li><a href="http://engineyard.com/developer/groups">User Groups</a></li> 
+		        <li><a href="http://jobs.engineyard.com">Jobs Board</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/open-source"><span>Open Source</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/open-source">Projects</a></li>
+		        <li><a href="http://engineyard.com/open-source/people">Contributors</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/company/"><span>About</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/company/">Overview</a></li>
+		        <li><a href="http://engineyard.com/company/customers">Customers</a></li>
+		        <li><a href="http://engineyard.com/company/team">Leadership Team</a></li>
+		        <li><a href="http://engineyard.com/company/partners">Technology Partners</a></li>
+		        <li><a href="http://engineyard.com/company/careers">Careers</a></li>
+		        <li><a href="http://engineyard.com/company/news">News &amp; Press</a></li>
+		        <li><a href="http://engineyard.com/company/contact">Contact Us</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/blog"><span>Blog</span></a>
+		    </li>
+		  </ul>
+		</nav>
+        </div>
+      </header>
+
+      <div id="content">
+        <div class="wrapper">
+			<h1>How to Use New Relic RPM with Engine Yard AppCloud</h1>
+
+<p><strong>NOTE: Engine Yard AppCloud customers can now use <a href="http://www.newrelic.com/press-release-20110118.html">Bronze RPM for Free</a>!</strong></p>
+
+<p>In order to use the New Relic RPM agent with Engine Yard AppCloud you'll need to follow these steps.</p>
+
+<p>We also have <a href="setup-performance-monitoring-with-new-relic-rpm">a screencast</a> to guide you through these steps.</p>
+
+<p>NOTE: The screencast is currently a bit behind in the UI, but the doc below is up-to-date.</p>
+
+<h2>Choose a Plan</h2>
+
+<ul><li>In the top menu, click on <strong>Account</strong>.</li>
+</ul><p>{{:appcloud:howtos:services:services-1.jpg?700|}}</p>
+
+<ul><li>Under the Services section then click on the <strong>New Relic</strong> logo.</li>
+<li>On this page there are links for <a href="http://www.newrelic.com/features.html">RPM's capabilities</a> based on the <a href="http://www.newrelic.com/get-RPM.html">subscription level</a>.</li>
+</ul><p>{{:appcloud:howtos:services:choose_a_plan.jpg?700|}}</p>
+
+<ul><li>Once you've read and agreed to the New Relic Terms of Service, click the <strong>check box</strong> and click the <strong>Choose</strong> button to activate the plan right for you.</li>
+</ul><p>Your New Relic account is created automatically and you are billed all in one place: your Engine Yard AppCloud account.</p>
+
+<h2>Configure your Application</h2>
+
+<p>There are two parts to configuring your application.</p>
+
+<ul><li>You need to install a gem and add a configuration line to your <code>environment.rb</code> file.</li>
+<li>You also need to make a change in the Engine Yard AppCloud UI to let us know you've got everything setup.</li>
+</ul><h3>Install the Gem</h3>
+
+<ul><li>Click on the <strong>Dashboard</strong> link.</li>
+<li>Then click on the <strong>Applications</strong> tab for the environment you will monitor with New Relic.</li>
+<li>Click on the <strong>red ruby icon</strong> to edit your gems.</li>
+<li>Search for the <code>newrelic_rpm</code> gem, then add it to your <strong>Selected Gems</strong>.</li>
+</ul><h3>Add the Gem to your <code>environment.rb</code> File</h3>
+
+<p>For Rails versions 2.1 and above, edit <code>environment.rb</code> and add to the initializer block:</p>
+
+<p>  config.gem "newrelic_rpm"</p>
+
+<p>For Rails versions 2.0.*, edit <code>environment.rb</code> and add this statement after the initializer block:</p>
+
+<p>  require "newrelic_rpm"</p>
+
+<p>If you're running a rails app older than 2.0 you'll need to use the plugin and <a href="http://support.newrelic.com/faqs/docs/ruby-agent-installation">follow New Relic's guide</a>.</p>
+
+<p>If you are using bundler you can just add the <code>newrelic_rpm</code> gem to your Gemfile and it should work fine. It will work with Rails 3.x and Rails 2.3.x.</p>
+
+<h3>Enable your Application</h3>
+
+<ul><li>Under <em>Server Tools</em> on the left, click on the <strong>Application</strong> link.</li>
+<li>The pencil is your <strong>edit</strong>  link to change your application's settings.</li>
+<li>At the bottom of this page, check the box to <strong>Enable New Relic Monitoring</strong>.</li>
+</ul><h2>Deploy your Application</h2>
+
+<p>In order for New Relic to begin gathering data you need to deploy your application.</p>
+
+<h2>View New Relic Information</h2>
+
+<ul><li>Click on your <strong>Account</strong>, then the <strong>New Relic</strong> logo.</li>
+<li>On the page there is a link that says: <strong>Click here to login and view your performance data.</strong>  It will take you to the New Relic site to review your information.</li>
+</ul>
+		</div>
+	</div>
+
+      <div class="clear"></div> 
+
+      <div id="footer">
+        <div id="footer-content">
+          <div class="page">
+            <div class="grid_4">
+              <p id="copyright">
+                <p>   
+                Running on Engine Yard: <a href="http://engineyard.com/products/appcloud">The Ruby Cloud</a> and <a href="http://github.com/github/gollum">Gollum</a><br /> <!-- CHANGE WHEN GO LIVE -->
+                Ruby is the Language of the Cloud.<br />
+                Copyright &copy; Engine Yard, Inc. All rights reserved.
+              </p>
+            </div>
+            <div class="grid_2">
+              <h2>Ruby Products</h2><!--CHANGE WHEN GO LIVE -->
+              <ul>
+                <li><a href="http://engineyard.com/products/appcloud">Engine Yard AppCloud</a></li>
+                <li><a href="http://engineyard.com/products/xcloud">Engine Yard xCloud</a></li>
+                <li><a href="http://engineyard.com/university/scheduled_classes">Rails 3 Training</a></li>
+                <li><a href="http://engineyard.com/services">Professional Services</a></li>
+              </ul>
+            </div>
+            <div class="grid_2">
+              <h2>Customer Service</h2>  
+              <ul>                       
+                <li><a href="http://support.cloud.engineyard.com/">Request Support</a></li> 
+                <li><a href="http://docs.engineyard.com">Documentation</a></li> 
+                <li><a href="http://community.engineyard.com">Community Forums</a></li> 
+                <li><a href="/products/support-policies">Support Policies</a></li>
+                <li><a href="/legal/privacy">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="grid_2">
+              <h2>Ruby Community</h2>
+              <ul>
+                <li><a href="http://www.jruby.org">JRuby</a></li>
+                <li><a href="http://rubini.us">Rubinius</a></li>
+                <li><a href="http://www.railsinstaller.com">Rails Installer</a></li>
+                <li><a href="http://jobs.engineyard.com">Ruby Jobs</a></li>
+                <li><a href="http://www.railsdevelopment.com">Rails Developers</a></li>
+              </ul>
+            </div>
+            <div class="grid_2">
+              <h2>Socialize With Us</h2>
+              <ul>
+                <li>
+					<a href="http://engineyard.com/blog" class="blog">Blog</a> <!--CHANGE WHEN LIVE-->
+                </li>
+                <li>
+					<a href="http://twitter.com/engineyard" class="twitter trackLink">Twitter</a>
+                </li>
+                <li>                                                                             
+					<a href="http://facebook.com/engineyard" class="facebook trackLink">Facebook</a>
+                </li>
+                <li>                                                                             
+					<a href="http://www.linkedin.com/groups?gid=111752" class="linkedin trackLink">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>           
+    </div>
+
+    <div class="hidden">
+	  <script src="/javascripts/application.min.js"></script>
+    </div>
+  </body>
+</html>

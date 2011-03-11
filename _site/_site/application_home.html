@@ -1,0 +1,331 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  
+    <title>Engine Yard Docs: Applications</title>
+    <meta name="description" content="Learn why Engine Yard\'s managed Rails hosting, Rails deployment &amp; 24/7/365 live service is the best">
+    <meta name="keywords" content="Ruby on Rails Fully-Managed Hosting, Scaling, Scaled, Cluster Slices, Cloud Computing, On-Demand Deployment, Merb, Rubinius, Open-Source Software">
+    <meta http-equiv="expires" content="0">
+
+    <!--[if IE]>
+	  <script src="/javascripts/html5shiv"></script>
+    <![endif]-->
+    
+	<link rel="stylesheet" href="/css/application.css" type="text/css" charset="utf-8" />
+    
+    <!--[if IE]>
+	  <link rel="stylesheet" href="/css/ie.css" type="text/css" charset="utf-8" />
+    <![endif]-->
+    
+    <!--[if lte IE 7]>
+	  <link rel="stylesheet" href="/css/ie7.css" type="text/css" charset="utf-8" />
+    <![endif]-->
+
+    <script src="http://use.typekit.com/cra4agv.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="wrapper">
+          <h1 class="branding">
+              <a href="http://engineyard.com/">Ruby On Rails Hosting Management: Engine Yard Platform-as-a-Service</a> <!-- CHANGE ON GO LIVE -->
+          </h1>
+
+          <ul class="utility">
+            <li>866-518-YARD</li>
+            <li>
+              <form action="/search" method="get" class="search">
+                <input type="text" name="q" id="searchbox" placeholder="search" />
+                <input type="submit" value="Search" class="gsc-search-button" />
+              </form>
+            </li>
+            <li>
+			  <a href="https://login.engineyard.com/signup" class="login">Create Account</a>
+            </li>
+            <li>
+			  <a href="https://cloud.engineyard.com" class="login">Sign In</a>
+            </li>
+          </ul>
+
+          <nav> <!-- CHANGE ON GO LIVE -->
+		  <ul class="navigation">
+		    <li>
+		      <a href="http://engineyard.com/products/appcloud"><span>Cloud Products</span></a>
+		      <ul>
+		        <li>
+		          <a href="http://engineyard.com/products/appcloud">Engine Yard AppCloud</a>
+		          <ul>
+		            <li><a href="http://engineyard.com/products/appcloud/features">Features</a></li>
+		            <li><a href="http://engineyard.com/products/appcloud/pricing">Pricing</a></li>
+		            <li><a href="http://engineyard.com/video/17825326">Video Tour</a></li>
+		          </ul>
+		        </li>
+		        <li>
+		          <a href="http://engineyard.com/products/xcloud">Engine Yard xCloud</a>
+		          <ul>
+		            <li><a href="http://engineyard.com/products/xcloud/features">Features</a></li>
+		            <li><a href="http://engineyard.com/products/xcloud/pricing">Pricing</a></li>
+		          </ul>
+		        </li>
+		        <li>
+		          <a href="http://engineyard.com/products/technology">Engine Yard Platform</a>
+		          <ul>
+		            <li><a href="http://engineyard.com/products/technology/stack">Technology Stack</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/support-plans"><span>Support</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/support-plans">Support Plans</a></li>
+		        <li><a href="http://engineyard.com/services">Professional Services</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+			  <a href="http://engineyard.com/university"><span>EY University</span></a>	
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/videos"><span>Resources</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/videos">Videos</a></li>
+		        <li><a href="http://engineyard.com/podcasts">Podcasts</a></li>
+		        <li><a href="http://engineyard.com/developer/events">Events</a></li>
+		        <li><a href="http://engineyard.com/partners">Development Partners</a></li>
+		        <li><a href="http://engineyard.com/developer/groups">User Groups</a></li> 
+		        <li><a href="http://jobs.engineyard.com">Jobs Board</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/open-source"><span>Open Source</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/open-source">Projects</a></li>
+		        <li><a href="http://engineyard.com/open-source/people">Contributors</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/company/"><span>About</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/company/">Overview</a></li>
+		        <li><a href="http://engineyard.com/company/customers">Customers</a></li>
+		        <li><a href="http://engineyard.com/company/team">Leadership Team</a></li>
+		        <li><a href="http://engineyard.com/company/partners">Technology Partners</a></li>
+		        <li><a href="http://engineyard.com/company/careers">Careers</a></li>
+		        <li><a href="http://engineyard.com/company/news">News &amp; Press</a></li>
+		        <li><a href="http://engineyard.com/company/contact">Contact Us</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/blog"><span>Blog</span></a>
+		    </li>
+		  </ul>
+		</nav>
+        </div>
+      </header>
+
+      <div id="content">
+        <div class="wrapper">
+			<h1>Applications</h1>
+
+<p>This section outlines how to manage your application on EY AppCloud. If you're looking to add SSL to your application please see this article: <a class="internal present" href="/features_ssl_certificates.html">SSL Certs</a>.</p>
+
+<h2>Add an Application</h2>
+
+<p>You can configure many different applications and their corresponding repository URL and framework under Engine Yard AppCloud.  Then applications can be used in one or more environment.</p>
+
+<ul><li>Under SERVER TOOLS, click on the <strong>Applications</strong> section.</li>
+<li>In the top right corner, click on the <strong>Add a New Application</strong> link.</li>
+<li>Give your application a name.</li>
+<li>Enter a Git Repository URI.</li>
+<li>Choose an Application Type.</li>
+<li>Then click the "Create application" button to begin the process.</li>
+</ul><p>A new screen with the git deploy key for your application will appear.</p>
+
+<ul><li>Copy the git deploy key.</li>
+<li>Paste it to your GitHub Account.</li>
+<li>Click <strong>My Deploy Key is in Place</strong> when ready.</li>
+</ul><p>Once you've setup the deploy key, you're ready to setup any other specific gems. If you are using bundler, you can skip to the Unix Packages page.</p>
+
+<ul><li>Search for a Gem</li>
+<li>Or Add a Gem From a Custom Gem Server</li>
+<li>Click <strong>Select Unix Packages</strong> after all Gems have been configured.</li>
+</ul><p>On the Unix Packages page you can configure system dependences.  For example: <em>imagemagick</em>.</p>
+
+<ul><li>Search for a Unix Package</li>
+<li>Click <strong>Go to dashboard</strong> after you've configured all Unix packages.</li>
+</ul><p>Now all dependences for your application have been configured by Engine Yard AppCloud, we'll be able to boot our custom AMI, apply your changes, deploy your application, and breath life to it on EC2!</p>
+
+<h2>Edit an Application</h2>
+
+<p>There is more than one way to get to the edit an application screen.</p>
+
+<ul><li>The <strong>Applications</strong> tab under SERVER TOOLS will list your applications.</li>
+<li>You can then click on the name of your application to edit.</li>
+</ul><p>Alternatively you can go from the Dashboard.</p>
+
+<ul><li>In your environment, under the Applications tab there is an <strong>Edit</strong> link.</li>
+</ul><p>Once you're on the <strong>Edit Application</strong> screen you'll be able to modify the following options.</p>
+
+<ul><li>Git Repository URI</li>
+<li>Application Type</li>
+<li>Domain Name</li>
+</ul><p>Save the settings by clicking <strong>Update application</strong> button.</p>
+
+<p>NOTE: You can't change your Git Deploy Key, but you can copy it if needed.</p>
+
+<h2>Attach an App to an Environment</h2>
+
+<p>You may want to attach a second application or re-attach the correct application to an environment.  If so, follow these steps.</p>
+
+<ul><li>Click on <strong>Dashboard</strong>.</li>
+<li>Then click on the <strong>Applications</strong> tab, and click the <strong>Add Application</strong> link.</li>
+</ul><p>You'll be taken to the list of applications for this environment.  It will then list the available Applications you can choose from.</p>
+
+<ul><li>Click on <strong>Add to environment</strong> link, to add the specific application you desire.</li>
+<li>The "Choose a Domain Name" dialog appears.</li>
+<li>Enter the domain name.</li>
+<li>Then click <strong>Save domain name</strong> to save your changes.</li>
+</ul><p>NOTE: You may enter ''_'' for the first domain name.</p>
+
+<h2>Detach an App from an Environment</h2>
+
+<p>Ready to scratch that first prototype?  Before you can delete an app you have to detach it from an environment.</p>
+
+<ul><li>Under you environment under the Dashboard, click on the <strong>Applications</strong> tab.</li>
+<li>Your application is listed here, the <strong>Detach</strong> link is on the right.</li>
+<li>Click <strong>OK</strong> if your ready to detach.</li>
+</ul><p>You can always reattach if you want, but now you're app is detached.</p>
+
+<h2>Delete an Application</h2>
+
+<p>When you delete an application from Engine Yard AppCloud you're just removing the record of how it's configured.</p>
+
+<p>NOTE: Before you can delete any application it cannot be attached to an environment.</p>
+
+<ul><li>From SERVER TOOLS, click on <strong>Applications</strong>.</li>
+<li>Find the application you'd like to remove and click the <strong>Delete</strong> link.</li>
+<li>To confirm, click <strong>OK</strong>.</li>
+</ul><h2>Manage Gems</h2>
+
+<p>If you need to configure gems for your application now or anytime, just navigate to the gems page.</p>
+
+<ul><li>Under SERVER TOOLS, click on <strong>Dashboard</strong> to view your list of environments.</li>
+<li>For your given environment, click on the <strong>Applications</strong> tab.</li>
+<li>Then locate the <strong>red Add RubyGems icon</strong>. Click on the icon to view the Gems page.</li>
+</ul><h3>Search for a Gem</h3>
+
+<ul><li>Type in a search string for your package. For example "will_paginate" for Mislav Marohnić's <a href="http://wiki.github.com/mislav/will_paginate">will_paginate</a> gem.</li>
+</ul><p>Results returned under the heading "Available Gems" can be configured to install when you boot an instance.</p>
+
+<ul><li>Click on the <strong>Add Gem -&gt; link</strong> to add your gem.</li>
+</ul><p>Now your gem moves to the "Selected Gems" on the right. Boot your instance and the gem will be installed.</p>
+
+<p>To remove a gem, click on the <strong>x Remove link</strong> and the gem is removed. Re-start your instance to effect the change.</p>
+
+<h3>Add a Gem from a Custom Server</h3>
+
+<p>Use the section "Or Add a Gem From a Custom Gem Server".</p>
+
+<ul><li>Complete the exact "Name", "Version" and gem repository URL in the "Source" field.</li>
+<li>With your information accurate and complete, click the <strong>Add Gem</strong> button.</li>
+</ul><p>The gem appears on the "Selected Gems" list below. Boot your instance and the gem will be installed.</p>
+
+<h2>Manage Unix Packages</h2>
+
+<p>Configure additional software packages for your application within Engine Yard AppCloud.</p>
+
+<ul><li>Under SERVER TOOLS, click on <strong>Dashboard</strong> to view your list of environments.</li>
+<li>For your given environment, click on the <strong>Applications</strong> tab.</li>
+<li>Then locate the yellow <strong>Add Unix Packages</strong> icon.  Click on the icon to view the Ebuilds page.</li>
+</ul><h3>Add a Software Package</h3>
+
+<ul><li>Type in a search string for your package.  For example ''rabbitmq'' for RabbitMQ.</li>
+</ul><p>Results returned under the heading "Available Unix Packages" can be configured to install when you boot an instance.</p>
+
+<ul><li>Click on the <strong>Add -&gt;</strong> link to add your package.</li>
+</ul><p>Now your package moves to the "Selected Unix Packages" on the right.  Boot your instance and the package will be installed.</p>
+
+<h3>Remove a Software Package</h3>
+
+<p>Just click on the <strong>x Remove</strong> link and the package is removed.  This will remove the package from the UI but will not remove the package from any currently running instances.</p>
+
+<p>Next -&gt; <a class="internal present" href="/monitoring_appcloud.html">Application Monitoring</a></p>
+		</div>
+	</div>
+
+      <div class="clear"></div> 
+
+      <div id="footer">
+        <div id="footer-content">
+          <div class="page">
+            <div class="grid_4">
+              <p id="copyright">
+                <p>   
+                Running on Engine Yard: <a href="http://engineyard.com/products/appcloud">The Ruby Cloud</a> and <a href="http://github.com/github/gollum">Gollum</a><br /> <!-- CHANGE WHEN GO LIVE -->
+                Ruby is the Language of the Cloud.<br />
+                Copyright &copy; Engine Yard, Inc. All rights reserved.
+              </p>
+            </div>
+            <div class="grid_2">
+              <h2>Ruby Products</h2><!--CHANGE WHEN GO LIVE -->
+              <ul>
+                <li><a href="http://engineyard.com/products/appcloud">Engine Yard AppCloud</a></li>
+                <li><a href="http://engineyard.com/products/xcloud">Engine Yard xCloud</a></li>
+                <li><a href="http://engineyard.com/university/scheduled_classes">Rails 3 Training</a></li>
+                <li><a href="http://engineyard.com/services">Professional Services</a></li>
+              </ul>
+            </div>
+            <div class="grid_2">
+              <h2>Customer Service</h2>  
+              <ul>                       
+                <li><a href="http://support.cloud.engineyard.com/">Request Support</a></li> 
+                <li><a href="http://docs.engineyard.com">Documentation</a></li> 
+                <li><a href="http://community.engineyard.com">Community Forums</a></li> 
+                <li><a href="/products/support-policies">Support Policies</a></li>
+                <li><a href="/legal/privacy">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="grid_2">
+              <h2>Ruby Community</h2>
+              <ul>
+                <li><a href="http://www.jruby.org">JRuby</a></li>
+                <li><a href="http://rubini.us">Rubinius</a></li>
+                <li><a href="http://www.railsinstaller.com">Rails Installer</a></li>
+                <li><a href="http://jobs.engineyard.com">Ruby Jobs</a></li>
+                <li><a href="http://www.railsdevelopment.com">Rails Developers</a></li>
+              </ul>
+            </div>
+            <div class="grid_2">
+              <h2>Socialize With Us</h2>
+              <ul>
+                <li>
+					<a href="http://engineyard.com/blog" class="blog">Blog</a> <!--CHANGE WHEN LIVE-->
+                </li>
+                <li>
+					<a href="http://twitter.com/engineyard" class="twitter trackLink">Twitter</a>
+                </li>
+                <li>                                                                             
+					<a href="http://facebook.com/engineyard" class="facebook trackLink">Facebook</a>
+                </li>
+                <li>                                                                             
+					<a href="http://www.linkedin.com/groups?gid=111752" class="linkedin trackLink">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>           
+    </div>
+
+    <div class="hidden">
+	  <script src="/javascripts/application.min.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  
+    <title>Engine Yard Docs: SSL Certificates</title>
+    <meta name="description" content="Learn why Engine Yard\'s managed Rails hosting, Rails deployment &amp; 24/7/365 live service is the best">
+    <meta name="keywords" content="Ruby on Rails Fully-Managed Hosting, Scaling, Scaled, Cluster Slices, Cloud Computing, On-Demand Deployment, Merb, Rubinius, Open-Source Software">
+    <meta http-equiv="expires" content="0">
+
+    <!--[if IE]>
+	  <script src="/javascripts/html5shiv"></script>
+    <![endif]-->
+    
+	<link rel="stylesheet" href="/css/application.css" type="text/css" charset="utf-8" />
+    
+    <!--[if IE]>
+	  <link rel="stylesheet" href="/css/ie.css" type="text/css" charset="utf-8" />
+    <![endif]-->
+    
+    <!--[if lte IE 7]>
+	  <link rel="stylesheet" href="/css/ie7.css" type="text/css" charset="utf-8" />
+    <![endif]-->
+
+    <script src="http://use.typekit.com/cra4agv.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="wrapper">
+          <h1 class="branding">
+              <a href="http://engineyard.com/">Ruby On Rails Hosting Management: Engine Yard Platform-as-a-Service</a> <!-- CHANGE ON GO LIVE -->
+          </h1>
+
+          <ul class="utility">
+            <li>866-518-YARD</li>
+            <li>
+              <form action="/search" method="get" class="search">
+                <input type="text" name="q" id="searchbox" placeholder="search" />
+                <input type="submit" value="Search" class="gsc-search-button" />
+              </form>
+            </li>
+            <li>
+			  <a href="https://login.engineyard.com/signup" class="login">Create Account</a>
+            </li>
+            <li>
+			  <a href="https://cloud.engineyard.com" class="login">Sign In</a>
+            </li>
+          </ul>
+
+          <nav> <!-- CHANGE ON GO LIVE -->
+		  <ul class="navigation">
+		    <li>
+		      <a href="http://engineyard.com/products/appcloud"><span>Cloud Products</span></a>
+		      <ul>
+		        <li>
+		          <a href="http://engineyard.com/products/appcloud">Engine Yard AppCloud</a>
+		          <ul>
+		            <li><a href="http://engineyard.com/products/appcloud/features">Features</a></li>
+		            <li><a href="http://engineyard.com/products/appcloud/pricing">Pricing</a></li>
+		            <li><a href="http://engineyard.com/video/17825326">Video Tour</a></li>
+		          </ul>
+		        </li>
+		        <li>
+		          <a href="http://engineyard.com/products/xcloud">Engine Yard xCloud</a>
+		          <ul>
+		            <li><a href="http://engineyard.com/products/xcloud/features">Features</a></li>
+		            <li><a href="http://engineyard.com/products/xcloud/pricing">Pricing</a></li>
+		          </ul>
+		        </li>
+		        <li>
+		          <a href="http://engineyard.com/products/technology">Engine Yard Platform</a>
+		          <ul>
+		            <li><a href="http://engineyard.com/products/technology/stack">Technology Stack</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/support-plans"><span>Support</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/support-plans">Support Plans</a></li>
+		        <li><a href="http://engineyard.com/services">Professional Services</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+			  <a href="http://engineyard.com/university"><span>EY University</span></a>	
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/videos"><span>Resources</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/videos">Videos</a></li>
+		        <li><a href="http://engineyard.com/podcasts">Podcasts</a></li>
+		        <li><a href="http://engineyard.com/developer/events">Events</a></li>
+		        <li><a href="http://engineyard.com/partners">Development Partners</a></li>
+		        <li><a href="http://engineyard.com/developer/groups">User Groups</a></li> 
+		        <li><a href="http://jobs.engineyard.com">Jobs Board</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/open-source"><span>Open Source</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/open-source">Projects</a></li>
+		        <li><a href="http://engineyard.com/open-source/people">Contributors</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/company/"><span>About</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/company/">Overview</a></li>
+		        <li><a href="http://engineyard.com/company/customers">Customers</a></li>
+		        <li><a href="http://engineyard.com/company/team">Leadership Team</a></li>
+		        <li><a href="http://engineyard.com/company/partners">Technology Partners</a></li>
+		        <li><a href="http://engineyard.com/company/careers">Careers</a></li>
+		        <li><a href="http://engineyard.com/company/news">News &amp; Press</a></li>
+		        <li><a href="http://engineyard.com/company/contact">Contact Us</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/blog"><span>Blog</span></a>
+		    </li>
+		  </ul>
+		</nav>
+        </div>
+      </header>
+
+      <div id="content">
+        <div class="wrapper">
+			<h1>SSL Certificates</h1>
+
+<p>This section contains (almost) everything you need to get your SSL certificate.  First, it covers generating a key and signing request.</p>
+
+<p>But it doesn't show you how to purchase the certificate from [[Godaddy|http://www.godaddy.com] or [[Verisign|http://www.verisign.com], etc.  You'll need to assess your company's needs and make that decision on your own.</p>
+
+<p>Then, we pick up after you've purchased you're certificate and are ready to install your SSL certificate to your application on Engine Yard AppCloud.</p>
+
+<p>Here's the information <strong>you need</strong> to get SSL working on Engine Yard AppCloud.</p>
+
+<h2>Generate Your SSL Certificate Key and Signing Request</h2>
+
+<p>This process will help you to generate the two files you need to purchase a SSL certificate.</p>
+
+<ul><li>yourdomain.key - the private key</li>
+<li>yourdomain.csr - the certificate signing request</li>
+</ul><h3>Generate Your Private Key ====</h3>
+
+<p><span>You cannot use a passphrase for your SSL certificate on Engine Yard AppCloud.</span></p>
+
+<p>Follow these steps to remove the passphrase from the key.</p>
+
+<p>First generate the key file.</p>
+
+<pre><code>openssl genrsa -des3 -out yourdomain.com.key 2048
+</code></pre>
+
+<p>You will be prompted for a password, just use "none".</p>
+
+<p>Now here's how to remove it:</p>
+
+<pre><code>cp yourdomain.com.key temp.key
+openssl rsa -in temp.key -out yourdomain.com.key
+</code></pre>
+
+<p>You will be prompted for the password, remember it is "none".</p>
+
+<p>You can delete the temp file.</p>
+
+<pre><code>rm temp.key
+</code></pre>
+
+<p>And you've got you're passphrase-less key!</p>
+
+<h3>Generate Your CSR</h3>
+
+<p>  <code>
+  $  openssl req -new -key yourdomain.com.key -out yourdomain.com.csr
+  You are about to be asked to enter information that will be incorporated into your
+  certificate request.
+  What you are about to enter is what is called a Distinguished Name or a DN.
+  There are quite a few fields but you can leave some blank
+  For some fields there will be a default value,
+  If you enter '.', the field will be left blank.</code></p>
+
+<hr /><p>  Country Name (2 letter code) [AU]:US
+  State or Province Name (full name) [Some-State]:Washington
+  Locality Name (eg, city) []:Seattle
+  Organization Name (eg, company) [Internet Widgits Pty Ltd]:  Your Company
+  Organizational Unit Name (eg, section) []:
+  Common Name (eg, YOUR name) []:yourdomain.com
+  Email Address []:your.email@address.com
+  </p>
+
+<p>This generates the .csr file you'll use to request your certificate.</p>
+
+<p><strong>NOTE</strong>: The "common name" (indicated as "yourdomain.com" above) is the Fully Qualified Domain Name (FQDN) for the certificate you're generating.  "www.yourdomain.com" is not the same as "yourdomain.com".</p>
+
+<p>If you want to have unlimited subdomains covered by your SSL certificate, you'll need to purchase a "Wildcard" certificate.  When doing "Wildcard" certificates we recommend the file format <em>.yourdomain.key </em>.yourdomain.csr, etc.</p>
+
+<h3>Purchase a Certificate</h3>
+
+<p>You have your two files, now you can purchase your certificate.  This is there part you need to do on your own, outside of Engine Yard.  Here's some helpful advice when setting up your certificate with your provider:</p>
+
+<ul><li>When presented with server type: Choose Apache.</li>
+<li>You will get at least .CRT file back.</li>
+<li>You might also get a "certificate chain file".  Make sure to grab this.</li>
+</ul><h2>Add SSL to Your Application</h2>
+
+<p>You can either use an SSL certificate you've purchased or have us generate a Self-Signed certificate (for testing).</p>
+
+<h3>Add A Certificate</h3>
+
+<p>If you've already got your certificate and you're ready to install it log into EY AppCloud. From the dashboard under SERVER TOOLS on the left, click <strong>SSL Certificates</strong> button.  The page will list any certs you have stored.</p>
+
+<p>If you don't haven any SSL certificates configured click on the link in the top right: <strong>Add SSL Certificate</strong></p>
+
+<p>The <strong>Create New SSL Certificate</strong> page appears.</p>
+
+<p><img src="images/appcloudsslcertificates.png" alt="SSL Cert" /></p>
+
+<ul><li>Give your SSL cert a name.  Use the <strong>SSL Certificate Name</strong> field.</li>
+<li>Click on <strong>Upload SSL Certificate</strong> radio button.</li>
+<li>Paste in your certificate in the <strong>SSL Certificate</strong> text area.</li>
+<li>Paste in your key in the <strong>SSL Certificate Key</strong> text area.</li>
+<li>Optionally you may need to add a <strong>SSL Certificated Chain</strong>.</li>
+<li>Click <strong>Add Certificate</strong> button.</li>
+</ul><h3>Intermediate Certificates</h3>
+
+<p>If you're using a company that provides an intermediate certificate, be aware that Step #<strong>5.</strong> is where you'll insert your intermediate certificate in the <strong>SSL Certificate Chain</strong> field.</p>
+
+<h3>Add A Self-Signed Certificate</h3>
+
+<p>Optionally, if you don't have a certificate and you just want to test SSL features or you want to develop against our stack with our SSL, you can use a Self-Signed Certificate.  Use the steps below to generate a certificate.</p>
+
+<p><span>Skip down to "Link SSL Certificate" section if you're adding your PRODUCTION certificate.</span></p>
+
+<p>What is a Self-Signed Certificate?  See what [[WikiPedia|http://en.wikipedia.org/wiki/Self-signed_certificate] has to say about the topic.</p>
+
+<ul><li>Give your SSL cert a name.  Use the <strong>SSL Certificate Name</strong> field.</li>
+<li>Click on <strong>Generate Self-Signed SSL Certificate</strong> radio button.</li>
+<li>Click <strong>Add Certificate</strong> button.</li>
+</ul><h3>Link SSL Certificate to Application</h3>
+
+<p>After you've configured your SSL Certificate (either a purchased SSL cert or a self-signed cert) you'll want to let EY AppCloud know what application can use it.</p>
+
+<p>Get back to your <strong>Dashboard</strong>, then click on the <strong>SSL</strong> tab for your environment.</p>
+
+<p><img src="images/ssl_tab.jpg" alt="SSL Tab" /></p>
+
+<ul><li>Click on <strong>Assign SSL Certifiicate to ... </strong> for the application you want.</li>
+<li>Choose the certificate you want from the <strong>SSL Certificate</strong> drop-down.</li>
+<li>Click on <strong>Update SSL Settings</strong> button to save changes.</li>
+</ul><p>The page will refresh and the message will appear:</p>
+
+<p><em>SSL Certificate "rubyflow_cert" is assigned to application "rubyflow"</em></p>
+
+<h3>Deploying a SSL Certificate</h3>
+
+<p>When you start an instance the SSL certificate will be automatically deployed and configured.</p>
+
+<p>If you are currently running an instance and you've completed the steps to //Add A Certificate// and //Link SSL Certificate to Application// above, then you can follow these steps to deploy your certificate.</p>
+
+<p>Click on the <strong>Update Instances</strong> button, and your environment will rebuild with your SSL certificate in place.</p>
+		</div>
+	</div>
+
+      <div class="clear"></div> 
+
+      <div id="footer">
+        <div id="footer-content">
+          <div class="page">
+            <div class="grid_4">
+              <p id="copyright">
+                <p>   
+                Running on Engine Yard: <a href="http://engineyard.com/products/appcloud">The Ruby Cloud</a> and <a href="http://github.com/github/gollum">Gollum</a><br /> <!-- CHANGE WHEN GO LIVE -->
+                Ruby is the Language of the Cloud.<br />
+                Copyright &copy; Engine Yard, Inc. All rights reserved.
+              </p>
+            </div>
+            <div class="grid_2">
+              <h2>Ruby Products</h2><!--CHANGE WHEN GO LIVE -->
+              <ul>
+                <li><a href="http://engineyard.com/products/appcloud">Engine Yard AppCloud</a></li>
+                <li><a href="http://engineyard.com/products/xcloud">Engine Yard xCloud</a></li>
+                <li><a href="http://engineyard.com/university/scheduled_classes">Rails 3 Training</a></li>
+                <li><a href="http://engineyard.com/services">Professional Services</a></li>
+              </ul>
+            </div>
+            <div class="grid_2">
+              <h2>Customer Service</h2>  
+              <ul>                       
+                <li><a href="http://support.cloud.engineyard.com/">Request Support</a></li> 
+                <li><a href="http://docs.engineyard.com">Documentation</a></li> 
+                <li><a href="http://community.engineyard.com">Community Forums</a></li> 
+                <li><a href="/products/support-policies">Support Policies</a></li>
+                <li><a href="/legal/privacy">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="grid_2">
+              <h2>Ruby Community</h2>
+              <ul>
+                <li><a href="http://www.jruby.org">JRuby</a></li>
+                <li><a href="http://rubini.us">Rubinius</a></li>
+                <li><a href="http://www.railsinstaller.com">Rails Installer</a></li>
+                <li><a href="http://jobs.engineyard.com">Ruby Jobs</a></li>
+                <li><a href="http://www.railsdevelopment.com">Rails Developers</a></li>
+              </ul>
+            </div>
+            <div class="grid_2">
+              <h2>Socialize With Us</h2>
+              <ul>
+                <li>
+					<a href="http://engineyard.com/blog" class="blog">Blog</a> <!--CHANGE WHEN LIVE-->
+                </li>
+                <li>
+					<a href="http://twitter.com/engineyard" class="twitter trackLink">Twitter</a>
+                </li>
+                <li>                                                                             
+					<a href="http://facebook.com/engineyard" class="facebook trackLink">Facebook</a>
+                </li>
+                <li>                                                                             
+					<a href="http://www.linkedin.com/groups?gid=111752" class="linkedin trackLink">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>           
+    </div>
+
+    <div class="hidden">
+	  <script src="/javascripts/application.min.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  
+    <title>Engine Yard Docs: Load Testing your AppCloud Environment using em-proxy</title>
+    <meta name="description" content="Learn why Engine Yard\'s managed Rails hosting, Rails deployment &amp; 24/7/365 live service is the best">
+    <meta name="keywords" content="Ruby on Rails Fully-Managed Hosting, Scaling, Scaled, Cluster Slices, Cloud Computing, On-Demand Deployment, Merb, Rubinius, Open-Source Software">
+    <meta http-equiv="expires" content="0">
+
+    <!--[if IE]>
+	  <script src="/javascripts/html5shiv"></script>
+    <![endif]-->
+    
+	<link rel="stylesheet" href="/css/application.css" type="text/css" charset="utf-8" />
+    
+    <!--[if IE]>
+	  <link rel="stylesheet" href="/css/ie.css" type="text/css" charset="utf-8" />
+    <![endif]-->
+    
+    <!--[if lte IE 7]>
+	  <link rel="stylesheet" href="/css/ie7.css" type="text/css" charset="utf-8" />
+    <![endif]-->
+
+    <script src="http://use.typekit.com/cra4agv.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="wrapper">
+          <h1 class="branding">
+              <a href="http://engineyard.com/">Ruby On Rails Hosting Management: Engine Yard Platform-as-a-Service</a> <!-- CHANGE ON GO LIVE -->
+          </h1>
+
+          <ul class="utility">
+            <li>866-518-YARD</li>
+            <li>
+              <form action="/search" method="get" class="search">
+                <input type="text" name="q" id="searchbox" placeholder="search" />
+                <input type="submit" value="Search" class="gsc-search-button" />
+              </form>
+            </li>
+            <li>
+			  <a href="https://login.engineyard.com/signup" class="login">Create Account</a>
+            </li>
+            <li>
+			  <a href="https://cloud.engineyard.com" class="login">Sign In</a>
+            </li>
+          </ul>
+
+          <nav> <!-- CHANGE ON GO LIVE -->
+		  <ul class="navigation">
+		    <li>
+		      <a href="http://engineyard.com/products/appcloud"><span>Cloud Products</span></a>
+		      <ul>
+		        <li>
+		          <a href="http://engineyard.com/products/appcloud">Engine Yard AppCloud</a>
+		          <ul>
+		            <li><a href="http://engineyard.com/products/appcloud/features">Features</a></li>
+		            <li><a href="http://engineyard.com/products/appcloud/pricing">Pricing</a></li>
+		            <li><a href="http://engineyard.com/video/17825326">Video Tour</a></li>
+		          </ul>
+		        </li>
+		        <li>
+		          <a href="http://engineyard.com/products/xcloud">Engine Yard xCloud</a>
+		          <ul>
+		            <li><a href="http://engineyard.com/products/xcloud/features">Features</a></li>
+		            <li><a href="http://engineyard.com/products/xcloud/pricing">Pricing</a></li>
+		          </ul>
+		        </li>
+		        <li>
+		          <a href="http://engineyard.com/products/technology">Engine Yard Platform</a>
+		          <ul>
+		            <li><a href="http://engineyard.com/products/technology/stack">Technology Stack</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/support-plans"><span>Support</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/support-plans">Support Plans</a></li>
+		        <li><a href="http://engineyard.com/services">Professional Services</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+			  <a href="http://engineyard.com/university"><span>EY University</span></a>	
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/videos"><span>Resources</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/videos">Videos</a></li>
+		        <li><a href="http://engineyard.com/podcasts">Podcasts</a></li>
+		        <li><a href="http://engineyard.com/developer/events">Events</a></li>
+		        <li><a href="http://engineyard.com/partners">Development Partners</a></li>
+		        <li><a href="http://engineyard.com/developer/groups">User Groups</a></li> 
+		        <li><a href="http://jobs.engineyard.com">Jobs Board</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/open-source"><span>Open Source</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/open-source">Projects</a></li>
+		        <li><a href="http://engineyard.com/open-source/people">Contributors</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/company/"><span>About</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/company/">Overview</a></li>
+		        <li><a href="http://engineyard.com/company/customers">Customers</a></li>
+		        <li><a href="http://engineyard.com/company/team">Leadership Team</a></li>
+		        <li><a href="http://engineyard.com/company/partners">Technology Partners</a></li>
+		        <li><a href="http://engineyard.com/company/careers">Careers</a></li>
+		        <li><a href="http://engineyard.com/company/news">News &amp; Press</a></li>
+		        <li><a href="http://engineyard.com/company/contact">Contact Us</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/blog"><span>Blog</span></a>
+		    </li>
+		  </ul>
+		</nav>
+        </div>
+      </header>
+
+      <div id="content">
+        <div class="wrapper">
+			<h1>Load Testing your AppCloud Environment using em-proxy</h1>
+
+<p>With <a href="http://github.com/igrigorik/em-proxy">em-proxy</a>, a proxy built with <a href="http://rubyeventmachine.com/">eventmachine</a>, you can send some real traffic to your Engine Yard AppCloud environment for load testing.  This allows you to test your application's performance prior to migrating giving you peace of mind that things will perform great once you do migrate. It will also allow you to compare your <a href="http://rpm.newrelic.com">New Relic</a> stats and make any needed adjustments.</p>
+
+<p><strong><em>WARNING: Since you will be sending real traffic to Engine Yard AppCloud using this technique you need to be absolutely sure to disable things like email and billing in your application while you test.  You do not want to be double billing or spamming your users.</em></strong></p>
+
+<p><a href="http://thoughtbot.com">Thoughbot</a> did a great blogpost on their experience <a href="http://robots.thoughtbot.com/post/486653439/hopping-in-the-cloud">using this benchmarking technique</a>.  Additionally you can read <a href="http://www.igvita.com/2009/04/20/ruby-proxies-for-scale-and-monitoring">Igvita's post</a> on the topic as well.</p>
+
+<p>Using this example configuration, requests returning from Engine Yard AppCloud will be dropped at the proxy. This will make your testing completely transparent to your end users.</p>
+
+<h2>Configuration and Installation</h2>
+
+<p>You perform the proxy setup and configuration on your current production servers.  It resides between your load balancer and your web server.  As a few adjustments will need to be made, we'll describe those in detail in a moment.</p>
+
+<h4>Install The Gem and Create Your Config File</h4>
+
+<p><code>
+ sudo gem install em-proxy --no-ri --no-rdoc
+</code></p>
+
+<p>Create a <code>proxy.rb</code> file to the root users home directory.</p>
+
+<h4>Update Nginx</h4>
+
+<p>Since em-proxy will be running on port <code>80</code>, nginx will have to run on port <code>8080</code>.  Change your nginx vhost listening on port <code>80</code> to port <code>8080</code>, then restart nginx using <code>/etc/init.d/nginx restart</code> command.</p>
+
+<h4>Start The Proxy</h4>
+
+<p>Start the proxy up on one server at a time, if you run into issues along the way it will be much easier to back out any changes.</p>
+
+<p>Run the <code>proxy.rb</code> inside of a screen session.</p>
+
+<p><code>
+$ screen
+$ ruby proxy.rb
+</code></p>
+
+<p>To detach from the screen session simply hit <code>ctrl+a+d</code> and you will detach.</p>
+
+<p>To later resume the screen session:
+<code>
+$screen -x
+</code></p>
+
+<p>The proxy will start up and start taking traffic on port <code>80</code>. It will proxy traffic to nginx, locally, on port <code>8080</code>.</p>
+
+<h4>Test The Setup</h4>
+
+<p>Make sure you can curl your app and receive the response you expect.</p>
+
+<p><code>
+$ curl -H host:yourhostname.com http://localhost
+</code></p>
+
+<h2>Disabling The Proxy</h2>
+
+<p>To turn the proxy off:</p>
+
+<ul><li>First kill the ruby process you fired up.</li>
+<li>Next revert the nginx config changes so that your vhosts are listening on port <code>80</code> instead of port <code>8080</code>.</li>
+<li>Then restart nginx using the command: <code>/etc/init.d/nginx restart</code></li>
+</ul><p>Now you are back to your default configuration.</p>
+
+<h2>Example Code</h2>
+
+<p>An example of <code>proxy.rb</code>:
+<code>
+<code>#</code> proxy.rb
+require 'em-proxy'</code></p>
+
+<p>Proxy.start(:host =&gt; "0.0.0.0", :port =&gt; 80) do |conn|
+  conn.server :production, :host =&gt; '127.0.0.1', :port =&gt; 8080
+  conn.server :ey_cloud, :host =&gt; '192.0.32.10', :port =&gt; 80
+  conn.on_data do |data|</p>
+
+<pre><code>data
+</code></pre>
+
+<p>  end
+  conn.on_response do |server, resp|</p>
+
+<pre><code>resp if server == :production
+</code></pre>
+
+<p>  end
+end
+</p>
+
+<p>Let's step through this script and describe what it does.</p>
+
+<p>This starts the proxy up on port <code>80</code>, and listens for any incoming requests.</p>
+
+<p><code>
+Proxy.start(:host =&gt; "0.0.0.0", :port =&gt; 80) do |conn|
+</code></p>
+
+<p>This proxies the traffic to the servers you define. Your production server proxies locally to nginx and listens on port <code>8080</code>.</p>
+
+<p><strong>NOTE</strong>: Replace <code>192.0.32.10</code> with the IP of your EY AppCloud environment.</p>
+
+<p><code>
+conn.server :production, :host =&gt; '127.0.0.1', :port =&gt; 8080
+conn.server :ey_cloud, :host =&gt; '192.0.32.10', :port =&gt; 80
+</code></p>
+
+<p>This sends the response back to the user if the traffic came from the production server.</p>
+
+<p><code>
+ conn.on_response do |server, resp|
+   resp if server == :production
+ end
+</code></p>
+		</div>
+	</div>
+
+      <div class="clear"></div> 
+
+      <div id="footer">
+        <div id="footer-content">
+          <div class="page">
+            <div class="grid_4">
+              <p id="copyright">
+                <p>   
+                Running on Engine Yard: <a href="http://engineyard.com/products/appcloud">The Ruby Cloud</a> and <a href="http://github.com/github/gollum">Gollum</a><br /> <!-- CHANGE WHEN GO LIVE -->
+                Ruby is the Language of the Cloud.<br />
+                Copyright &copy; Engine Yard, Inc. All rights reserved.
+              </p>
+            </div>
+            <div class="grid_2">
+              <h2>Ruby Products</h2><!--CHANGE WHEN GO LIVE -->
+              <ul>
+                <li><a href="http://engineyard.com/products/appcloud">Engine Yard AppCloud</a></li>
+                <li><a href="http://engineyard.com/products/xcloud">Engine Yard xCloud</a></li>
+                <li><a href="http://engineyard.com/university/scheduled_classes">Rails 3 Training</a></li>
+                <li><a href="http://engineyard.com/services">Professional Services</a></li>
+              </ul>
+            </div>
+            <div class="grid_2">
+              <h2>Customer Service</h2>  
+              <ul>                       
+                <li><a href="http://support.cloud.engineyard.com/">Request Support</a></li> 
+                <li><a href="http://docs.engineyard.com">Documentation</a></li> 
+                <li><a href="http://community.engineyard.com">Community Forums</a></li> 
+                <li><a href="/products/support-policies">Support Policies</a></li>
+                <li><a href="/legal/privacy">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="grid_2">
+              <h2>Ruby Community</h2>
+              <ul>
+                <li><a href="http://www.jruby.org">JRuby</a></li>
+                <li><a href="http://rubini.us">Rubinius</a></li>
+                <li><a href="http://www.railsinstaller.com">Rails Installer</a></li>
+                <li><a href="http://jobs.engineyard.com">Ruby Jobs</a></li>
+                <li><a href="http://www.railsdevelopment.com">Rails Developers</a></li>
+              </ul>
+            </div>
+            <div class="grid_2">
+              <h2>Socialize With Us</h2>
+              <ul>
+                <li>
+					<a href="http://engineyard.com/blog" class="blog">Blog</a> <!--CHANGE WHEN LIVE-->
+                </li>
+                <li>
+					<a href="http://twitter.com/engineyard" class="twitter trackLink">Twitter</a>
+                </li>
+                <li>                                                                             
+					<a href="http://facebook.com/engineyard" class="facebook trackLink">Facebook</a>
+                </li>
+                <li>                                                                             
+					<a href="http://www.linkedin.com/groups?gid=111752" class="linkedin trackLink">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>           
+    </div>
+
+    <div class="hidden">
+	  <script src="/javascripts/application.min.js"></script>
+    </div>
+  </body>
+</html>

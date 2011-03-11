@@ -19,7 +19,7 @@ While that opens in a new window you can continue to follow along here.
 
 By creating an Engine Yard Single Sign-On account you'll be able to access all our applications on the internet with one set of credentials.
 
-{{ :appcloud:guides:account_verified.jpg|Figure 1}}
+![Figure 1](images/account_verified.jpg)
 
 On the sign up page you need to fill out the following:
 
@@ -42,7 +42,7 @@ Click on that link to continue.
 
 ## Choose Your Support Plan
 
-{{:appcloud:guides:support_billing_choice.jpg?700|Figure 2}}
+![Figure 2](images/support_billing_choice.jpg)
 
 Your first screen is a choice of which support plan to use.  Keep in mind that you can upgrade or downgrade later.
 
@@ -73,22 +73,22 @@ Premium support provides unlimited access to the Engine Yard support team during
   * Stack upgrades and updates
   * Access for up to 2 named users
 
-For more information visit [AppCloud Support Plans](http://www.engineyard.com/products/cloud/support).
+For more information visit [[AppCloud Support Plans|http://www.engineyard.com/products/cloud/support]].
 
 ## Accept Terms of Service
 
-In order to use the software you need to read the [Terms of Service](http://www.engineyard.com/legal/tos), click the check box and click the **Continue** button.
+In order to use the software you need to read the [[Terms of Service|http://www.engineyard.com/legal/tos]], click the check box and click the **Continue** button.
 
 Once you've accepted the Terms of Service and decided on your AppCloud Support Plan you'll be taken to the billing page.
 
 
 ## Enter Billing Info
 
-{{ :appcloud:guides:successfull_billing_info.jpg|Figure 3}}
+![Figure 3](images/successfull_billing_info.jpg)
 
 Rather than instruct you how to fill out another form, you can just know that once you're credit card information is validated, you're ready to go!
 
-Later, once you're in the system, if you need to change the credit card information for any reason you'll be able to.  
+Later, once you're in the system, if you need to change the credit card information for any reason you'll be able to.
 
 So if you're a developer and want to get started and have "the money" come in later and put their card on file later, you can do that.
 

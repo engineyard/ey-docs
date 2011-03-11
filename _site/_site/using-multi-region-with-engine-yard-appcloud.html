@@ -1,0 +1,303 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  
+    <title>Engine Yard Docs: Using Multi-Region on AppCloud</title>
+    <meta name="description" content="Learn why Engine Yard\'s managed Rails hosting, Rails deployment &amp; 24/7/365 live service is the best">
+    <meta name="keywords" content="Ruby on Rails Fully-Managed Hosting, Scaling, Scaled, Cluster Slices, Cloud Computing, On-Demand Deployment, Merb, Rubinius, Open-Source Software">
+    <meta http-equiv="expires" content="0">
+
+    <!--[if IE]>
+	  <script src="/javascripts/html5shiv"></script>
+    <![endif]-->
+    
+	<link rel="stylesheet" href="/css/application.css" type="text/css" charset="utf-8" />
+    
+    <!--[if IE]>
+	  <link rel="stylesheet" href="/css/ie.css" type="text/css" charset="utf-8" />
+    <![endif]-->
+    
+    <!--[if lte IE 7]>
+	  <link rel="stylesheet" href="/css/ie7.css" type="text/css" charset="utf-8" />
+    <![endif]-->
+
+    <script src="http://use.typekit.com/cra4agv.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="wrapper">
+          <h1 class="branding">
+              <a href="http://engineyard.com/">Ruby On Rails Hosting Management: Engine Yard Platform-as-a-Service</a> <!-- CHANGE ON GO LIVE -->
+          </h1>
+
+          <ul class="utility">
+            <li>866-518-YARD</li>
+            <li>
+              <form action="/search" method="get" class="search">
+                <input type="text" name="q" id="searchbox" placeholder="search" />
+                <input type="submit" value="Search" class="gsc-search-button" />
+              </form>
+            </li>
+            <li>
+			  <a href="https://login.engineyard.com/signup" class="login">Create Account</a>
+            </li>
+            <li>
+			  <a href="https://cloud.engineyard.com" class="login">Sign In</a>
+            </li>
+          </ul>
+
+          <nav> <!-- CHANGE ON GO LIVE -->
+		  <ul class="navigation">
+		    <li>
+		      <a href="http://engineyard.com/products/appcloud"><span>Cloud Products</span></a>
+		      <ul>
+		        <li>
+		          <a href="http://engineyard.com/products/appcloud">Engine Yard AppCloud</a>
+		          <ul>
+		            <li><a href="http://engineyard.com/products/appcloud/features">Features</a></li>
+		            <li><a href="http://engineyard.com/products/appcloud/pricing">Pricing</a></li>
+		            <li><a href="http://engineyard.com/video/17825326">Video Tour</a></li>
+		          </ul>
+		        </li>
+		        <li>
+		          <a href="http://engineyard.com/products/xcloud">Engine Yard xCloud</a>
+		          <ul>
+		            <li><a href="http://engineyard.com/products/xcloud/features">Features</a></li>
+		            <li><a href="http://engineyard.com/products/xcloud/pricing">Pricing</a></li>
+		          </ul>
+		        </li>
+		        <li>
+		          <a href="http://engineyard.com/products/technology">Engine Yard Platform</a>
+		          <ul>
+		            <li><a href="http://engineyard.com/products/technology/stack">Technology Stack</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/support-plans"><span>Support</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/support-plans">Support Plans</a></li>
+		        <li><a href="http://engineyard.com/services">Professional Services</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+			  <a href="http://engineyard.com/university"><span>EY University</span></a>	
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/videos"><span>Resources</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/videos">Videos</a></li>
+		        <li><a href="http://engineyard.com/podcasts">Podcasts</a></li>
+		        <li><a href="http://engineyard.com/developer/events">Events</a></li>
+		        <li><a href="http://engineyard.com/partners">Development Partners</a></li>
+		        <li><a href="http://engineyard.com/developer/groups">User Groups</a></li> 
+		        <li><a href="http://jobs.engineyard.com">Jobs Board</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/open-source"><span>Open Source</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/open-source">Projects</a></li>
+		        <li><a href="http://engineyard.com/open-source/people">Contributors</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/company/"><span>About</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/company/">Overview</a></li>
+		        <li><a href="http://engineyard.com/company/customers">Customers</a></li>
+		        <li><a href="http://engineyard.com/company/team">Leadership Team</a></li>
+		        <li><a href="http://engineyard.com/company/partners">Technology Partners</a></li>
+		        <li><a href="http://engineyard.com/company/careers">Careers</a></li>
+		        <li><a href="http://engineyard.com/company/news">News &amp; Press</a></li>
+		        <li><a href="http://engineyard.com/company/contact">Contact Us</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/blog"><span>Blog</span></a>
+		    </li>
+		  </ul>
+		</nav>
+        </div>
+      </header>
+
+      <div id="content">
+        <div class="wrapper">
+			<h1>Using Multi-Region on AppCloud</h1>
+
+<p>If you have multi-region enabled, you will be able to create environments and boot instances in any of the following Amazon regions:</p>
+
+<ul><li>US East (Northern Virginia/us-east-1)</li>
+<li>US West (Northern California/us-west-1)</li>
+<li>EU (Ireland/eu-west-1)</li>
+<li>Asia Pacific (Singapore/ap-southeast-1)</li>
+</ul><p>All AppCloud features are supported in each of these regions.</p>
+
+<p>{{:beta:ey-regions_sm.png|}}</p>
+
+<h2>Current Limitations</h2>
+
+<p>There are a few limitations:</p>
+
+<ul><li>Environments cannot be migrated to a new region (the region cannot be changed).</li>
+<li>Environments can be cloned, but only in the same region.</li>
+<li>IP addresses are assigned to a region - and thus cannot be moved to a different region.</li>
+<li>All limitations regarding the number of instances, IP addresses, and snapshots are per-region.</li>
+<li><strong>WARNING</strong>: Database backups are currently being sent to <strong>US East</strong> region (us-east-1), so all backup traffic will incur bandwidth charges.
+
+<ul><li>This is limitation is scheduled to be lifted before Multi-Region leaves the Beta Program.</li>
+</ul></li>
+<li>Pricing within each region is subject to change.</li>
+</ul><h2>Steps for Booting Instances in any Region</h2>
+
+<p>After the Multi-Region feature is enabled for your account, click the ‘Create New Environment’ button in the AppCloud dashboard.</p>
+
+<p>Click the drop-down arrow next to <strong>Show advanced options</strong> to choose the Availability Zone.</p>
+
+<p>{{:beta:show_adv_options.jpg|}}</p>
+
+<p>Under the drop down box for <strong>Availability Zone</strong>, you can choose from any of the Amazon Regions and the specific Availability Zone for each.</p>
+
+<p>{{:beta:availability_zone.jpg|}}</p>
+
+<p>Add your application to the environment. It will prompt you to add your domain name. If you do not want to set your domain name at this point, you can leave the “_” domain name as a default.</p>
+
+<p>Environment is created. Boot Instances for this and wait for the instances to boot.</p>
+
+<h2>Recreating Existing Environments in a New Region</h2>
+
+<p>If you currently have an application deployed in our US East region and would like to move it to one of the newly offered regions, follow these steps below explaining how.</p>
+
+<h3>Create a New Environment in the New Region</h3>
+
+<p>First, Create a new environment and choose the new region. Then you can choose the application to add.</p>
+
+<p>Next, boot Instances for this new environment.</p>
+
+<p>Finally, deploy your application and run any migrations you need.</p>
+
+<h3>Migrate Your Data to New Region</h3>
+
+<p>Next, you need to migrate the data from your old application. Since snapshots cannot be moved across environments, you need to take the data from your database and move it to your new one.</p>
+
+<p>On your old environment, take a database dump and gzip it.</p>
+
+<pre><code>mysqldump -u USER -pPASSWORD -h HOST db_name &gt; db_dump.sql
+
+gzip db_dump.sql
+</code></pre>
+
+<p><strong>NOTE:</strong> The username, password and host can be found in <code>database.yml</code>. On a solo instance, HOST will be localhost for example.</p>
+
+<p>On your local machine, copy the dumpfile from the old environment:</p>
+
+<pre><code>scp deploy@127.0.0.1:/data/app_name/current/db_dump.sql.gz .
+</code></pre>
+
+<p>Then, copy this file to your new environment:</p>
+
+<pre><code>scp db_dump.sql.gz deploy@127.0.0.2:/data/app_name/current/db_dump.sql.gz
+</code></pre>
+
+<p>SSH into the new environment and unzip your dumpfile:</p>
+
+<pre><code>gunzip -v db_dump.sql.gz
+</code></pre>
+
+<p>Finally, load your database dump into the MySQL database:</p>
+
+<pre><code>mysql -u USER -pPASSWORD -h localhost db_name &lt; db_dump.sql
+</code></pre>
+
+<p>From here you can check the data is correct and your application is working perfectly. Make sure you update your DNS records to point to this new IP address.</p>
+
+<h3>Final Migration to New Region</h3>
+
+<p>Change your DNS TTL to the lowest setting, such as 60 seconds. Make this change as early in the migration process as you can to minimize the "maintenance" downtime.</p>
+
+<p>Setup and enable your maintenance page on your old environment.</p>
+
+<p>Perform a final database migration, as above.</p>
+
+<p>Change your DNS to the new IP addresses for the new environment. When the DNS finishes propagating, your customers will automatically see your application in the new region!</p>
+		</div>
+	</div>
+
+      <div class="clear"></div> 
+
+      <div id="footer">
+        <div id="footer-content">
+          <div class="page">
+            <div class="grid_4">
+              <p id="copyright">
+                <p>   
+                Running on Engine Yard: <a href="http://engineyard.com/products/appcloud">The Ruby Cloud</a> and <a href="http://github.com/github/gollum">Gollum</a><br /> <!-- CHANGE WHEN GO LIVE -->
+                Ruby is the Language of the Cloud.<br />
+                Copyright &copy; Engine Yard, Inc. All rights reserved.
+              </p>
+            </div>
+            <div class="grid_2">
+              <h2>Ruby Products</h2><!--CHANGE WHEN GO LIVE -->
+              <ul>
+                <li><a href="http://engineyard.com/products/appcloud">Engine Yard AppCloud</a></li>
+                <li><a href="http://engineyard.com/products/xcloud">Engine Yard xCloud</a></li>
+                <li><a href="http://engineyard.com/university/scheduled_classes">Rails 3 Training</a></li>
+                <li><a href="http://engineyard.com/services">Professional Services</a></li>
+              </ul>
+            </div>
+            <div class="grid_2">
+              <h2>Customer Service</h2>  
+              <ul>                       
+                <li><a href="http://support.cloud.engineyard.com/">Request Support</a></li> 
+                <li><a href="http://docs.engineyard.com">Documentation</a></li> 
+                <li><a href="http://community.engineyard.com">Community Forums</a></li> 
+                <li><a href="/products/support-policies">Support Policies</a></li>
+                <li><a href="/legal/privacy">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="grid_2">
+              <h2>Ruby Community</h2>
+              <ul>
+                <li><a href="http://www.jruby.org">JRuby</a></li>
+                <li><a href="http://rubini.us">Rubinius</a></li>
+                <li><a href="http://www.railsinstaller.com">Rails Installer</a></li>
+                <li><a href="http://jobs.engineyard.com">Ruby Jobs</a></li>
+                <li><a href="http://www.railsdevelopment.com">Rails Developers</a></li>
+              </ul>
+            </div>
+            <div class="grid_2">
+              <h2>Socialize With Us</h2>
+              <ul>
+                <li>
+					<a href="http://engineyard.com/blog" class="blog">Blog</a> <!--CHANGE WHEN LIVE-->
+                </li>
+                <li>
+					<a href="http://twitter.com/engineyard" class="twitter trackLink">Twitter</a>
+                </li>
+                <li>                                                                             
+					<a href="http://facebook.com/engineyard" class="facebook trackLink">Facebook</a>
+                </li>
+                <li>                                                                             
+					<a href="http://www.linkedin.com/groups?gid=111752" class="linkedin trackLink">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>           
+    </div>
+
+    <div class="hidden">
+	  <script src="/javascripts/application.min.js"></script>
+    </div>
+  </body>
+</html>

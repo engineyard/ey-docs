@@ -1,0 +1,439 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  
+    <title>Engine Yard Docs: Engine Yard CLI User Guide</title>
+    <meta name="description" content="Learn why Engine Yard\'s managed Rails hosting, Rails deployment &amp; 24/7/365 live service is the best">
+    <meta name="keywords" content="Ruby on Rails Fully-Managed Hosting, Scaling, Scaled, Cluster Slices, Cloud Computing, On-Demand Deployment, Merb, Rubinius, Open-Source Software">
+    <meta http-equiv="expires" content="0">
+
+    <!--[if IE]>
+	  <script src="/javascripts/html5shiv"></script>
+    <![endif]-->
+    
+	<link rel="stylesheet" href="/css/application.css" type="text/css" charset="utf-8" />
+    
+    <!--[if IE]>
+	  <link rel="stylesheet" href="/css/ie.css" type="text/css" charset="utf-8" />
+    <![endif]-->
+    
+    <!--[if lte IE 7]>
+	  <link rel="stylesheet" href="/css/ie7.css" type="text/css" charset="utf-8" />
+    <![endif]-->
+
+    <script src="http://use.typekit.com/cra4agv.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="wrapper">
+          <h1 class="branding">
+              <a href="http://engineyard.com/">Ruby On Rails Hosting Management: Engine Yard Platform-as-a-Service</a> <!-- CHANGE ON GO LIVE -->
+          </h1>
+
+          <ul class="utility">
+            <li>866-518-YARD</li>
+            <li>
+              <form action="/search" method="get" class="search">
+                <input type="text" name="q" id="searchbox" placeholder="search" />
+                <input type="submit" value="Search" class="gsc-search-button" />
+              </form>
+            </li>
+            <li>
+			  <a href="https://login.engineyard.com/signup" class="login">Create Account</a>
+            </li>
+            <li>
+			  <a href="https://cloud.engineyard.com" class="login">Sign In</a>
+            </li>
+          </ul>
+
+          <nav> <!-- CHANGE ON GO LIVE -->
+		  <ul class="navigation">
+		    <li>
+		      <a href="http://engineyard.com/products/appcloud"><span>Cloud Products</span></a>
+		      <ul>
+		        <li>
+		          <a href="http://engineyard.com/products/appcloud">Engine Yard AppCloud</a>
+		          <ul>
+		            <li><a href="http://engineyard.com/products/appcloud/features">Features</a></li>
+		            <li><a href="http://engineyard.com/products/appcloud/pricing">Pricing</a></li>
+		            <li><a href="http://engineyard.com/video/17825326">Video Tour</a></li>
+		          </ul>
+		        </li>
+		        <li>
+		          <a href="http://engineyard.com/products/xcloud">Engine Yard xCloud</a>
+		          <ul>
+		            <li><a href="http://engineyard.com/products/xcloud/features">Features</a></li>
+		            <li><a href="http://engineyard.com/products/xcloud/pricing">Pricing</a></li>
+		          </ul>
+		        </li>
+		        <li>
+		          <a href="http://engineyard.com/products/technology">Engine Yard Platform</a>
+		          <ul>
+		            <li><a href="http://engineyard.com/products/technology/stack">Technology Stack</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/support-plans"><span>Support</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/support-plans">Support Plans</a></li>
+		        <li><a href="http://engineyard.com/services">Professional Services</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+			  <a href="http://engineyard.com/university"><span>EY University</span></a>	
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/videos"><span>Resources</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/videos">Videos</a></li>
+		        <li><a href="http://engineyard.com/podcasts">Podcasts</a></li>
+		        <li><a href="http://engineyard.com/developer/events">Events</a></li>
+		        <li><a href="http://engineyard.com/partners">Development Partners</a></li>
+		        <li><a href="http://engineyard.com/developer/groups">User Groups</a></li> 
+		        <li><a href="http://jobs.engineyard.com">Jobs Board</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/open-source"><span>Open Source</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/open-source">Projects</a></li>
+		        <li><a href="http://engineyard.com/open-source/people">Contributors</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/company/"><span>About</span></a>
+		      <ul>
+		        <li><a href="http://engineyard.com/company/">Overview</a></li>
+		        <li><a href="http://engineyard.com/company/customers">Customers</a></li>
+		        <li><a href="http://engineyard.com/company/team">Leadership Team</a></li>
+		        <li><a href="http://engineyard.com/company/partners">Technology Partners</a></li>
+		        <li><a href="http://engineyard.com/company/careers">Careers</a></li>
+		        <li><a href="http://engineyard.com/company/news">News &amp; Press</a></li>
+		        <li><a href="http://engineyard.com/company/contact">Contact Us</a></li>
+		      </ul>
+		    </li>
+
+		    <li>
+		      <a href="http://engineyard.com/blog"><span>Blog</span></a>
+		    </li>
+		  </ul>
+		</nav>
+        </div>
+      </header>
+
+      <div id="content">
+        <div class="wrapper">
+			<h1>Engine Yard CLI User Guide</h1>
+
+<p>Welcome to the deployment guide for deploying to Engine Yard AppCloud with the <code>engineyard</code> gem using a command line interface.</p>
+
+<h2>Getting Started</h2>
+
+<ul><li>Install the <code>engineyard</code> gem: <code>gem install engineyard</code></li>
+<li>Switch to your local app directory: <code>cd ~/my_application</code></li>
+<li>Deploy your app: <code>ey deploy</code>
+
+<ul><li>You will be prompted for your EY AppCloud login (email address) and password. You'll only have to enter these once.</li>
+<li>If your application is running in multiple environments, tack on <code>-e ENV_NAME</code> to disambiguate.</li>
+</ul></li>
+<li>Congratulations! Your application is now deployed.</li>
+</ul><h2>Useful Links</h2>
+
+<p><a class="internal present" href="/deployment_faq.html">Deployment Frequently Asked Questions</a></p>
+
+<p><a class="internal present" href="/ey_yml.html">Customizing with ey.yml</a></p>
+
+<h2>Command Reference</h2>
+
+<p><strong> Formatting Warning: </strong> This wiki renders two dashes (- -) as an em-dash (--). All single-letter options start with a single dash (e.g. -e), but all long options start with two dashes (- - environment). We are working on making this wiki not screw up the formatting. Until then, watch out for missing dashes.</p>
+
+<h4><code>ey help</code></h4>
+
+<p>Print a short help message.</p>
+
+<p><code>ey help COMMAND</code> will print out the help for that command. For example, <code>ey help deploy</code> will print out the help for the <code>ey deploy</code> command, while <code>ey help recipes apply</code> will show the help for <code>ey recipes apply</code>.</p>
+
+<h4><code>ey version</code></h4>
+
+<p>Print the version of the engineyard gem.</p>
+
+<p>Arguments: none</p>
+
+<h4><code>ey deploy</code></h4>
+
+<p>Deploy your application.</p>
+
+<p>This command must be run from a checked-out copy of your application.</p>
+
+<p>Arguments:
+  * <code>--environment/-e NAME</code> (optional): the environment to which you want this application to deploy.</p>
+
+<pre><code>* If this application is only deployed in one environment, this argument may be omitted. 
+* This argument may be specified by unambiguous substring; for example, if this app is in environments `myapp_staging` and `myapp_production`, then any one of `myapp_production`, `production`, `prod`, or even just `p` is sufficient to indicate `myapp_production`.
+</code></pre>
+
+<ul><li><code>--ref/-r GIT-REF</code> (optional): the reference to deploy
+
+<ul><li>You can specify a branch, a tag, or a SHA.</li>
+<li>This argument defaults to the current branch.</li>
+<li>Note: the deployment process pulls the code from the git remote that was previously entered into the EY AppCloud web application. Thus, the named branch must exist in that git remote for your deployment to succeed.</li>
+</ul></li>
+<li><code>--branch</code>: alias for <code>--ref</code></li>
+<li><code>--tag</code>: alias for <code>--ref</code></li>
+<li><code>--app/-a NAME</code> (optional): the application to deploy. If the current working directory is inside the application's Git repository and <code>--app</code> is omitted, <code>ey</code> will infer the application from the configured Git remotes.</li>
+<li><code>--migrate/-m COMMAND</code>: the command to use for database migrations. Default is <code>rake db:migrate</code>.</li>
+<li><code>--no-migrate</code>: Skip migrations.</li>
+<li><code>--force/-f</code>: Allow deployment of non-default branch. Only useful if you have a default branch configured in <code>ey.yml</code>.</li>
+</ul><p>Deployment takes place in several stages. For more information, see our documentation on <a class="internal present" href="/deployment_steps.html">Steps of Deployment</a>.</p>
+
+<h4><code>ey environments</code></h4>
+
+<p>List your applications and environments. By default, lists only the environments for the current application.</p>
+
+<p>Arguments:
+  * <code>--all</code>: list all applications and environments</p>
+
+<h4><code>ey rebuild</code></h4>
+
+<p>Ensure the configuration of your environment is up-to-date.</p>
+
+<p>Arguments:
+  * <code>--environment/-e NAME</code> (optional): the environment to rebuild.</p>
+
+<pre><code>* This argument may be specified by unambiguous substring.
+</code></pre>
+
+<h4><code>ey ssh</code></h4>
+
+<p>SSH into a session or run a command on the application master. A command can also be run on <code>--all</code> servers.</p>
+
+<p>Arguments:
+  * <code>--environment/-e NAME</code> (optional): the environment to SSH into.</p>
+
+<pre><code>* This argument may be specified by unambiguous substring.
+</code></pre>
+
+<ul><li><code>--all/-a</code> (optional): run command on all servers.</li>
+</ul><h4><code>ey logs</code></h4>
+
+<p>Show the most recent configuration logs.</p>
+
+<p>Arguments:
+  * <code>--environment/-e NAME</code> (optional): the environment in whose logs you are interested.</p>
+
+<pre><code>* This argument may be specified by unambiguous substring.
+</code></pre>
+
+<h4><code>ey recipes apply</code></h4>
+
+<p>Run already uploaded custom chef recipes.</p>
+
+<p>Arguments:
+  * <code>--environment/-e NAME</code> (optional): the environment in which to run the recipes.</p>
+
+<pre><code>* This argument may be specified by unambiguous substring.
+</code></pre>
+
+<h4><code>ey recipes upload</code></h4>
+
+<p>Upload custom chef recipes.</p>
+
+<p>Arguments:
+  * <code>--environment/-e NAME</code> (optional): the environment in which to place the recipes.</p>
+
+<pre><code>* This argument may be specified by unambiguous substring.
+</code></pre>
+
+<h4><code>ey web disable</code></h4>
+
+<p>Put up a maintenance page.</p>
+
+<p>Arguments:
+  * <code>--environment/-e NAME</code> (optional): the environment in which to put up the maintenance page.
+  * <code>app/-a APP</code> (optional): name of the application whose maintenance page will be put up</p>
+
+<p>This command has to be invoked from the application's Git repository so it can figure out which application gets the maintenance page.</p>
+
+<h4><code>ey web enable</code></h4>
+
+<p>Take down the maintenance page.</p>
+
+<p>Arguments:
+  * <code>--environment/-e NAME</code> (optional): the environment in which to take down the maintenance page.
+  * <code>app/-a APP</code> (optional): name of the application whose maintenance page will be put up</p>
+
+<p>This command has to be invoked from the application's Git repository so it can figure out which application gets its maintenance page taken down.</p>
+
+<p>For more information, see <a class="internal present" href="/maintenance_pages.html">Maintenance Pages</a>.</p>
+
+<h2>Environment Variables</h2>
+
+<h3><code>CLOUD_URL</code></h3>
+
+<p>Location of Engine Yard AppCloud. Mainly used in development. Default is https://cloud.engineyard.com/</p>
+
+<h3><code>DEBUG</code></h3>
+
+<p>Debug the engineyard gem (print a lot of stuff). Default is off.</p>
+
+<h3><code>EYRC</code></h3>
+
+<p>Specifies the location of the <code>.eyrc</code> file to use. The <code>.eyrc</code> file is where the API token is stored. Default is <code>~/.eyrc</code>.</p>
+
+<h3><code>NO_SSH</code></h3>
+
+<p>If set, all commands (e.g. <code>ey deploy</code>, <code>ey rollback</code>) that require an SSH connection will short-circuit. Mainly used in the engineyard gem's integration tests.</p>
+
+<h2>Deploy Hooks</h2>
+
+<p>Deploy hooks are Ruby scripts that you write and that get run at designated points in the deployment process.</p>
+
+<p>They live in the <code>deploy/</code> directory of your repository. The order in which they run is specified in the documentation for the <code>ey deploy</code> command.</p>
+
+<p>Deploy hooks allow you to customize the deployment of your application to meet its particular needs. For example, if your application uses Resque, then deploy hooks provide a way for you to restart your Resque workers when you deploy a new version of your application; Hoptoad users can use them to notify Hoptoad of a deploy.</p>
+
+<p>For more information, see <a class="internal present" href="/deploy_hooks_api.html">Deploy Hooks API</a>.</p>
+
+<h2>Advanced Customization</h2>
+
+<p>In addition to deploy hooks, we also provide a more advanced level of customization via an overrides file.  This file is instance_eval'd into the main deploy class so that you can over ride core functionality of the deploy.  You should not use this for simple modifications around a deploy (deploy hooks are a better choice for those tasks).</p>
+
+<p>To use deploy overrides, create a file in your code repository at either <code>config/eydeploy.rb</code> or <code>eydeploy.rb</code>.  This file should contain a list of methods, and will be instance_eval'd into the main <code>EY::Deploy</code> class.  You will be able to super into any of the methods that you override. You can see the source of the class that your customization will be instance_eval'd into on GitHub at <a href="https://github.com/engineyard/engineyard-serverside/blob/master/lib/engineyard-serverside/deploy.rb">https://github.com/engineyard/engineyard-serverside/blob/master/lib/engineyard-serverside/deploy.rb</a> We guarantee the top level tasks (bundle, symlink_configs, enable_maintenance_page, migrate, symlink, restart, disable_maintenance_page, and cleanup_old_releases) will remain consistent and in a consistent order.  All other methods in the class are subject (but unlikely) to change.</p>
+
+<h3>Example: GitHub style deploy</h3>
+
+<pre><code># This is an overrides file for ey deploy that uses git to do all
+# moving around, rather than using multiple directories and symlinks
+
+
+class ::EY::Serverside::Deploy::Configuration
+  # no separate releases directories
+  def release_path(*args)
+    current_path
+  end
+
+  def all_releases(*args)
+    [current_path]
+  end
+end
+
+def copy_repository_cache
+  # Don't need to do this, just make sure current is linked to
+  # cached-copy
+  run "ln -nfs #{c.repository_cache} #{c.current_path}"
+end
+
+def symlink(*args)
+  # do nothing
+end
+
+def cleanup_old_releases(*args)
+  # do nothing
+end
+</code></pre>
+
+<h3><code>ey.yml</code> Customizations</h3>
+
+<p>Extra customization can be accomplished with an <code>ey.yml</code> file. <a class="internal present" href="/ey_yml.html">More about the ey.yml file.</a></p>
+
+<h4>Disable migrations</h4>
+
+<p>To prevent the <code>rake db:migrate</code> for certain environments, add <code>migrate: false</code> to the environment section ey.yml:</p>
+
+<p>  environments:</p>
+
+<pre><code>YOUR-ENVIRONMENT-NAME-GOES-HERE:
+  migrate: false
+</code></pre>
+
+<h4>Exclude the .git directory</h4>
+
+<p>If you have a large .git directory and you do not want it copied over on every deploy, add a <code>config/ey.yml</code> to your application's repository with the following contents:</p>
+
+<p>  environments:
+   YOUR-ENVIRONMENT-NAME-GOES-HERE:</p>
+
+<pre><code> copy_exclude:
+   - .git
+</code></pre>
+		</div>
+	</div>
+
+      <div class="clear"></div> 
+
+      <div id="footer">
+        <div id="footer-content">
+          <div class="page">
+            <div class="grid_4">
+              <p id="copyright">
+                <p>   
+                Running on Engine Yard: <a href="http://engineyard.com/products/appcloud">The Ruby Cloud</a> and <a href="http://github.com/github/gollum">Gollum</a><br /> <!-- CHANGE WHEN GO LIVE -->
+                Ruby is the Language of the Cloud.<br />
+                Copyright &copy; Engine Yard, Inc. All rights reserved.
+              </p>
+            </div>
+            <div class="grid_2">
+              <h2>Ruby Products</h2><!--CHANGE WHEN GO LIVE -->
+              <ul>
+                <li><a href="http://engineyard.com/products/appcloud">Engine Yard AppCloud</a></li>
+                <li><a href="http://engineyard.com/products/xcloud">Engine Yard xCloud</a></li>
+                <li><a href="http://engineyard.com/university/scheduled_classes">Rails 3 Training</a></li>
+                <li><a href="http://engineyard.com/services">Professional Services</a></li>
+              </ul>
+            </div>
+            <div class="grid_2">
+              <h2>Customer Service</h2>  
+              <ul>                       
+                <li><a href="http://support.cloud.engineyard.com/">Request Support</a></li> 
+                <li><a href="http://docs.engineyard.com">Documentation</a></li> 
+                <li><a href="http://community.engineyard.com">Community Forums</a></li> 
+                <li><a href="/products/support-policies">Support Policies</a></li>
+                <li><a href="/legal/privacy">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="grid_2">
+              <h2>Ruby Community</h2>
+              <ul>
+                <li><a href="http://www.jruby.org">JRuby</a></li>
+                <li><a href="http://rubini.us">Rubinius</a></li>
+                <li><a href="http://www.railsinstaller.com">Rails Installer</a></li>
+                <li><a href="http://jobs.engineyard.com">Ruby Jobs</a></li>
+                <li><a href="http://www.railsdevelopment.com">Rails Developers</a></li>
+              </ul>
+            </div>
+            <div class="grid_2">
+              <h2>Socialize With Us</h2>
+              <ul>
+                <li>
+					<a href="http://engineyard.com/blog" class="blog">Blog</a> <!--CHANGE WHEN LIVE-->
+                </li>
+                <li>
+					<a href="http://twitter.com/engineyard" class="twitter trackLink">Twitter</a>
+                </li>
+                <li>                                                                             
+					<a href="http://facebook.com/engineyard" class="facebook trackLink">Facebook</a>
+                </li>
+                <li>                                                                             
+					<a href="http://www.linkedin.com/groups?gid=111752" class="linkedin trackLink">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>           
+    </div>
+
+    <div class="hidden">
+	  <script src="/javascripts/application.min.js"></script>
+    </div>
+  </body>
+</html>
