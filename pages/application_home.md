@@ -67,7 +67,7 @@ You'll be taken to the list of applications for this environment.  It will then 
   - Enter the domain name.
   - Then click **Save domain name** to save your changes.
 
-NOTE: You may enter ''_'' for the first domain name.
+NOTE: You may enter `_` for the first domain name.
 
 ## Detach an App from an Environment
 
@@ -130,7 +130,7 @@ Configure additional software packages for your application within Engine Yard A
 
 ### Add a Software Package
 
-  * Type in a search string for your package.  For example ''rabbitmq'' for RabbitMQ.
+  * Type in a search string for your package.  For example `rabbitmq` for RabbitMQ.
 
 Results returned under the heading "Available Unix Packages" can be configured to install when you boot an instance.
 
@@ -141,6 +141,3 @@ Now your package moves to the "Selected Unix Packages" on the right.  Boot your 
 ### Remove a Software Package
 
 Just click on the **x Remove** link and the package is removed.  This will remove the package from the UI but will not remove the package from any currently running instances.
-
-
-Next -> [[Application Monitoring|monitoring_appcloud]]
