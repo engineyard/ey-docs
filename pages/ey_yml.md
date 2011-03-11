@@ -10,8 +10,9 @@
 
 All these examples assume your environment is **myapp_staging**. Replace that with your environment's actual name.
 
-### Example 1: ***Don't copy .git directory to each release***
+### Example 1: 
 
+***Don't copy .git directory to each release***
 
 <code>
 environments:
@@ -21,8 +22,9 @@ environments:
 </code>
 
 
-### Example 2: ***Set a default branch***
+### Example 2: 
 
+***Set a default branch***
 
 <code>
 environments:
@@ -31,7 +33,9 @@ environments:
 </code>
 
 
-### Example 3: ***Use thor to run migrations, but only run them when --migrate is specified***
+### Example 3: 
+
+***Use thor to run migrations, but only run them when --migrate is specified***
 
 
 <code>
