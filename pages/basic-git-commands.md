@@ -1,4 +1,5 @@
 # Basic Git Commands
+
 Now that you have your local environment setup, we want to give you a brief background on our favorite version control system, Git.
 
 ## What is git?
@@ -16,7 +17,7 @@ To create a repository for an existing directory of files, move into the home di
 
 ### Clone an Existing Repository
 
-To create a copy of an existing project, you must run the ''git clone'' command with the URL for the project you want
+To create a copy of an existing project, you must run the `git clone` command with the URL for the project you want
 
 <code>git clone git://github.com/radiant/radiant.git</code>
 
@@ -50,10 +51,8 @@ A great tool to use is a git history viewer. Git comes in with a built in viewer
 
 ## Links
 
-  * [GitHub Help Section](http://help.github.com)
-  * [Git Reference Site](http://gitref.org/)
-  * [VIDEO: Railscasts on Git](http://railscasts.com/episodes/96-git-on-rails)
-  * [VIDEO: PeepCode on Git](http://peepcode.com/products/git)
-  * [BOOK & VIDEO: Getting Good with Git](http://rockablepress.com/books/getting-good-with-git/)
-
-Check out this [Spanish translation of the Basic Git Commands tutorial](http://www.decisionesinteligentes.com/guides/comandos-basicos-git), courtesy of Mario Alberto Chávez Cárdenas of [Decisiones Inteligentes](http://www.decisionesinteligentes.com/) and [Tiajuana.rb](http://tijuanarb.org/).
+  * [[GitHub Help Section|http://help.github.com]]
+  * [[Git Reference Site|http://gitref.org/]]
+  * [[VIDEO: Railscasts on Git|http://railscasts.com/episodes/96-git-on-rails]]
+  * [[VIDEO: PeepCode on Git|http://peepcode.com/products/git]]
+  * [[BOOK & VIDEO: Getting Good with Git|http://rockablepress.com/books/getting-good-with-git/]]
