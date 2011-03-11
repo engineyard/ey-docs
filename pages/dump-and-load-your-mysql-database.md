@@ -24,4 +24,4 @@ SSH into the new location, Uncompress and import the MySQL dump.
 
 ## Concepts and Terms
 
-Keep in mind that terms such as `user`, `password`, `hostname` and `newserver` need to be replaced with the appropriate values for your environment(s).  Of specific note, there is no space between `–p` and `password` when entering said commands.
+Keep in mind that terms such as `user`, `password`, `hostname` and `newserver` need to be replaced with the appropriate values for your environment(s).
