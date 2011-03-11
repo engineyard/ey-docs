@@ -6,9 +6,10 @@ We use this to authenticate you on the system, it has the additional benefit of 
 
 The command you run from a *nix based command line terminal is this:
 
-  $ ssh-keygen -t rsa
+    $ ssh-keygen -t rsa
 
 The output will come back like this:
+
 
 <code>
 Generating public/private rsa key pair.
@@ -33,13 +34,14 @@ The key's randomart image is:
 +-----------------+
 </code>
 
+
   - When it prompts you where to save the key, the default path is fine.
   - Entering a passphrase is more secure.  You can use an ssh-agent so that you won't have to type your passphrase every time you connect.
   - The rest of the output will automatically be generated.
 
 Then two files are generated in your home directory.
 
-  id_rsa
-  id_rsa.pub
+    id_rsa
+    id_rsa.pub
 
-The ''id_rsa.pub'' file is the public key file that you'll use to push to Engine Yard AppCloud.
+The `id_rsa.pub` file is the public key file that you'll use to push to Engine Yard AppCloud.
