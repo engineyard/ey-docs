@@ -21,10 +21,11 @@ To ensure you have as quick and smooth a migration as possible, it is important 
     * Check that your app can properly connect to the database.
 
 ## Finalize Your Migration
-    * Iterate through your migration plan skipping any steps that will affect your current production environment.
-    * Update or add any steps as needed.
-    * Continue to iterate until you can run through the migration without any issues.
-    * Schedule the final cut-over and communicate the maintenance to your users. 
+
+   * Iterate through your migration plan skipping any steps that will affect your current production environment.
+   * Update or add any steps as needed.
+   * Continue to iterate until you can run through the migration without any issues.
+   * Schedule the final cut-over and communicate the maintenance to your users. 
 
 ## Special Requirements
   

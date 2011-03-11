@@ -4,7 +4,7 @@
 
 ### Relevant URL
 
-[http://dev.mysql.com/doc/refman/5.0/en/blocked-host.html]
+[[http://dev.mysql.com/doc/refman/5.0/en/blocked-host.html]]
 
 ### Why
 This is a security feature of MySQL to prevent unauthorized users from gaining access to your database server.  After 10 failed authentications from a specific host that host will be barred from further attempts to log in until the administrator flushes the hosts or the database server is restarted.  Frequent occurrences of this error may indicate an attack or possibly an otherwise undetectable network issue.
