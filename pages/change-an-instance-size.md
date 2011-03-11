@@ -29,6 +29,6 @@ To resize your instances properly, take the following steps.
   - Scroll down a bit and setup your Utility Instances (if you had any) choosing the new instance size and snapshot you want to use.
   - Click the **Boot this Configuration** button at the bottom of the page once you're finished.
 
-In some cases, you may run into problems where Amazon has run out of capacity for the instance size you're using (this happens most frequently with Small instances or the extremely large ones). If this happens it would show up on your main dashboard as an instance's status turning red and "Amazon is currently out of capacity" will show as the error. If you get that error, [read here](amazon-out-of-capacity) to fix the problem.
+In some cases, you may run into problems where Amazon has run out of capacity for the instance size you're using (this happens most frequently with Small instances or the extremely large ones). If this happens it would show up on your main dashboard as an instance's status turning red and "Amazon is currently out of capacity" will show as the error. If you get that error, [[read here|amazon-out-of-capacity]] to fix the problem.
 
 Generally speaking, this process is fairly painless aside from how long it can take sometimes. It's highly recommended that you plan to perform this upgrade at a non-peak hour and give yourself plenty of time to sort out any potential issues you may run into.

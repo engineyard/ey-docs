@@ -47,6 +47,7 @@ All the way from the small to the extremely large, you have 7 instance size brok
 <html><span style="color:#999900;">The <strong>High CPU Medium</strong></span></html> instances are a top choice for your application when you start taking on real production traffic.
 
 Normal instances are a well balanced match of CPU and RAM.
+  
   * **Small** is 32-bit with 1.7 GB RAM, 1 ECU
     * These are great for staging and development environments. However, with only 1 ECU they're not ideal for environments taking real production traffic. When these types of instances taken on some traffic they tend to become CPU starved. 
   * **Large** is 64-bit with 7.5 GB RAM, 4 ECU
@@ -55,12 +56,14 @@ Normal instances are a well balanced match of CPU and RAM.
     * These instances pack extra RAM and CPU but are still affordable for those who need it.
 
 High Memory instances come with extra RAM and are ideal when you need really need a large amount of RAM.
+  
   * **High Memory Double Extra Large** is 64-bit with 34.2 GB RAM
     * These instances are a perfect fit for databases with large datasets. It allows you to load much of your database into RAM helping relieve disk reads from your database instance.
   * **High Memory Quadruple Extra Large** is 64-bit with 68.4 GB RAM, 26 ECU
     * These are the largest instances you can boot up. Their size speaks for themselves.
 
 High CPU instances come with extra CPU and are ideal when you need extra processing power.
+  
   * <html><span style="color:#999900;"><strong>High CPU Medium</strong></span></html> is 32-bit with 1.7 GB RAM, 5 ECU
     * These are the most ideal instance size when your app is first starting to take on real production traffic. They're also a great size for scaling out horizontally, allowing you to add or remove application instances as need at an affordable rate. The 5 ECU's, equating to 2 VCPUs, is a wonderful balance of RAM to CPU. Give these a try, we're sure you'll love them.
   * **High CPU Extra Large** is 64-bit with 7 GB RAM, 20 ECU
