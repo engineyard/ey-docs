@@ -33,13 +33,13 @@ Follow these steps to add your configuration change to the system dynamically.
   - SSH into your MySQL instance.
   - Log into the MySQL console.
 
-      mysql -u root -ppassword
+      `mysql -u root -ppassword`
 
 Your root MySQL password is the same as your deploy user password.
 
   - From the MySQL prompt type:
 
-      mysql> SET GLOBAL <varname> = '<varvalue>';
+      `mysql> SET GLOBAL <varname> = '<varvalue>';`
 
 Where you'd enter the dynamic variable your wanting to set as `<varname>` and the new value as `<varvalue>`.  
 
