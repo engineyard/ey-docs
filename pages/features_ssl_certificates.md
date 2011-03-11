@@ -50,7 +50,7 @@ And you've got you're passphrase-less key!
     There are quite a few fields but you can leave some blank
     For some fields there will be a default value,
     If you enter '.', the field will be left blank.
-    \-\-\-\-\-\-
+    ------
     Country Name (2 letter code) [AU]:US
     State or Province Name (full name) [Some-State]:Washington
     Locality Name (eg, city) []:Seattle
