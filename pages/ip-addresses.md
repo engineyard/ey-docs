@@ -1,6 +1,6 @@
 # IP Addresses
 
-In order to use a static IP address with Amazon's Elastic Compute Cloud (EC2), you need to request one via the Engine Yard AppCloud interface. You may request up to 5 IP addresses.
+Engine Yard's AppCloud uses [[Amazon's Elastic IP Addresses|http://aws.amazon.com/ec2/]]. In order to use a static IP address, you need to request one via the Engine Yard AppCloud interface. You may request up to 5 IP addresses.
 
 ## Add an Address
 
