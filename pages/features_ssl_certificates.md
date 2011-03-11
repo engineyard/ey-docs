@@ -15,7 +15,7 @@ This process will help you to generate the two files you need to purchase a SSL 
   * yourdomain.key - the private key
   * yourdomain.csr - the certificate signing request
 
-### Generate Your Private Key ====
+### Generate Your Private Key
 
 <html><span style="color:red;">You cannot use a passphrase for your SSL certificate on Engine Yard AppCloud.</span></html>
 
@@ -41,8 +41,9 @@ You can delete the temp file.
 And you've got you're passphrase-less key!
 
 ### Generate Your CSR
-  
-  <code>
+
+
+<code>
   $  openssl req -new -key yourdomain.com.key -out yourdomain.com.csr
   You are about to be asked to enter information that will be incorporated into your
   certificate request.
@@ -50,7 +51,7 @@ And you've got you're passphrase-less key!
   There are quite a few fields but you can leave some blank
   For some fields there will be a default value,
   If you enter '.', the field will be left blank.
-  -----
+  \-\-\-\-\-\-
   Country Name (2 letter code) [AU]:US
   State or Province Name (full name) [Some-State]:Washington
   Locality Name (eg, city) []:Seattle
@@ -58,7 +59,7 @@ And you've got you're passphrase-less key!
   Organizational Unit Name (eg, section) []:
   Common Name (eg, YOUR name) []:yourdomain.com
   Email Address []:your.email@address.com
-  </code>
+</code>
 
 This generates the .csr file you'll use to request your certificate.
 
