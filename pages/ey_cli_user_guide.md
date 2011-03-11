@@ -43,19 +43,19 @@ Welcome to the deployment guide for deploying to Engine Yard AppCloud with the `
    - This command must be run from a checked-out copy of your application.
 
    - Arguments: 
-      * `--environment/-e NAME` (optional): the environment to which you want this application to deploy. 
-        * If this application is only deployed in one environment, this argument may be omitted. 
-        * This argument may be specified by unambiguous substring; for example, if this app is in environments `myapp_staging` and `myapp_production`, then any one of `myapp_production`, `production`, `prod`, or even just `p` is sufficient to indicate `myapp_production`.
-      * `--ref/-r GIT-REF` (optional): the reference to deploy 
-        * You can specify a branch, a tag, or a SHA. 
-        * This argument defaults to the current branch. 
-        * Note: the deployment process pulls the code from the git remote that was previously entered into the EY AppCloud web application. Thus, the named branch must exist in that git remote for your deployment to succeed.
-    * `--branch`: alias for `--ref`
-    * `--tag`: alias for `--ref`
-    * `--app/-a NAME` (optional): the application to deploy. If the current working directory is inside the application's Git repository and `--app` is omitted, `ey` will infer the application from the configured Git remotes.
-    * `--migrate/-m COMMAND`: the command to use for database migrations. Default is `rake db:migrate`.
-    * `--no-migrate`: Skip migrations.
-    * `--force/-f`: Allow deployment of non-default branch. Only useful if you have a default branch configured in `ey.yml`.
+      - `--environment/-e NAME` (optional): the environment to which you want this application to deploy. 
+        - If this application is only deployed in one environment, this argument may be omitted. 
+        - This argument may be specified by unambiguous substring; for example, if this app is in environments `myapp_staging` and `myapp_production`, then any one of `myapp_production`, `production`, `prod`, or even just `p` is sufficient to indicate `myapp_production`.
+      - `--ref/-r GIT-REF` (optional): the reference to deploy 
+        - You can specify a branch, a tag, or a SHA. 
+        - This argument defaults to the current branch. 
+        - Note: the deployment process pulls the code from the git remote that was previously entered into the EY AppCloud web application. Thus, the named branch must exist in that git remote for your deployment to succeed.
+    - `--branch`: alias for `--ref`
+    - `--tag`: alias for `--ref`
+    - `--app/-a NAME` (optional): the application to deploy. If the current working directory is inside the application's Git repository and `--app` is omitted, `ey` will infer the application from the configured Git remotes.
+    - `--migrate/-m COMMAND`: the command to use for database migrations. Default is `rake db:migrate`.
+    - `--no-migrate`: Skip migrations.
+    - `--force/-f`: Allow deployment of non-default branch. Only useful if you have a default branch configured in `ey.yml`.
 
 
    - Deployment takes place in several stages. For more information, see our documentation on [[Steps of Deployment|deployment_steps]].
@@ -66,7 +66,7 @@ Welcome to the deployment guide for deploying to Engine Yard AppCloud with the `
    - List your applications and environments. By default, lists only the environments for the current application.
 
    - Arguments: 
-      * `--all`: list all applications and environments
+      - `--all`: list all applications and environments
 
 - - -
 #### `ey rebuild`
@@ -74,8 +74,8 @@ Welcome to the deployment guide for deploying to Engine Yard AppCloud with the `
   - Ensure the configuration of your environment is up-to-date.
 
   - Arguments:
-    * `--environment/-e NAME` (optional): the environment to rebuild. 
-      * This argument may be specified by unambiguous substring.
+    - `--environment/-e NAME` (optional): the environment to rebuild. 
+      - This argument may be specified by unambiguous substring.
 
 - - -
 #### `ey ssh`
@@ -83,9 +83,9 @@ Welcome to the deployment guide for deploying to Engine Yard AppCloud with the `
   - SSH into a session or run a command on the application master. A command can also be run on `--all` servers.
 
   - Arguments:
-    * `--environment/-e NAME` (optional): the environment to SSH into. 
-      * This argument may be specified by unambiguous substring.
-    * `--all/-a` (optional): run command on all servers.
+    - `--environment/-e NAME` (optional): the environment to SSH into. 
+      - This argument may be specified by unambiguous substring.
+    - `--all/-a` (optional): run command on all servers.
 
 - - -
 #### `ey logs`
@@ -93,8 +93,8 @@ Welcome to the deployment guide for deploying to Engine Yard AppCloud with the `
   - Show the most recent configuration logs.
 
   - Arguments:
-    * `--environment/-e NAME` (optional): the environment in whose logs you are interested. 
-      * This argument may be specified by unambiguous substring.
+    - `--environment/-e NAME` (optional): the environment in whose logs you are interested. 
+      - This argument may be specified by unambiguous substring.
 
 - - - 
 #### `ey recipes apply`
@@ -102,8 +102,8 @@ Welcome to the deployment guide for deploying to Engine Yard AppCloud with the `
   - Run already uploaded custom chef recipes.
 
   - Arguments:
-    * `--environment/-e NAME` (optional): the environment in which to run the recipes. 
-      * This argument may be specified by unambiguous substring.
+    - `--environment/-e NAME` (optional): the environment in which to run the recipes. 
+      - This argument may be specified by unambiguous substring.
 
 - - -
 #### `ey recipes upload`
@@ -111,8 +111,8 @@ Welcome to the deployment guide for deploying to Engine Yard AppCloud with the `
   - Upload custom chef recipes.
 
   - Arguments:
-    * `--environment/-e NAME` (optional): the environment in which to place the recipes.
-      * This argument may be specified by unambiguous substring.
+    - `--environment/-e NAME` (optional): the environment in which to place the recipes.
+      - This argument may be specified by unambiguous substring.
 
 - - - 
 #### `ey web disable`
@@ -120,8 +120,8 @@ Welcome to the deployment guide for deploying to Engine Yard AppCloud with the `
   - Put up a maintenance page.
 
   - Arguments:
-    * `--environment/-e NAME` (optional): the environment in which to put up the maintenance page.
-    * `app/-a APP` (optional): name of the application whose maintenance page will be put up
+    - `--environment/-e NAME` (optional): the environment in which to put up the maintenance page.
+    - `app/-a APP` (optional): name of the application whose maintenance page will be put up
 
   - This command has to be invoked from the application's Git repository so it can figure out which application gets the maintenance page.
 
@@ -131,8 +131,8 @@ Welcome to the deployment guide for deploying to Engine Yard AppCloud with the `
   - Take down the maintenance page.
 
   - Arguments:
-    * `--environment/-e NAME` (optional): the environment in which to take down the maintenance page.
-    * `app/-a APP` (optional): name of the application whose maintenance page will be put up
+    - `--environment/-e NAME` (optional): the environment in which to take down the maintenance page.
+    - `app/-a APP` (optional): name of the application whose maintenance page will be put up
 
   - This command has to be invoked from the application's Git repository so it can figure out which application gets its maintenance page taken down.
 
