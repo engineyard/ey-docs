@@ -129,11 +129,12 @@
 		</nav>
         </div>
       </header>
-      <nav id="sidebar" class="wiki">
-         {{ site.pages["toc"].content }}
-       </nav>
+
       <div id="content">
         <div class="wrapper">
+	      <nav id="sidebar" class="wiki">
+	         {{ site.pages["toc"].content }}
+	       </nav>
 			{{ page.content }}
 		</div>
 	</div>
