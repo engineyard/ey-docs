@@ -74,7 +74,7 @@ Current Alpha Features (and how to request access):
   * [[Ruby 1.9.2]]  - [[Request access|signup-ruby-192]]
   * [[JRuby]]  - [[Request access|signup-jruby]]
   * [[Collaboration]]  - [[Request access|signup-collaboration]]
-  * [[Passenger3|Passenger 3]] - [[Request access|signup-passenger3]]
+  * [[Passenger 3|Passenger3]] - [[Request access|signup-passenger3]]
   * [[Multi-Region]] - [[Request access|signup-multi-region]]
 
 ## Beta Features
