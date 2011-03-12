@@ -56,7 +56,6 @@
     * [[Setup SSMTP for Mail Relay to AuthSMTP|setup-ssmtp-for-mail-relay-to-authsmtp]]
     * [[Find Important Log Files|find-important-log-files]]
     * [[Set Time Zone for an AppCloud Instance|set-time-zone-for-an-appcloud-instance]]
-    * [[Diagnose Errors on Engine Yard AppCloud|diagnose-errors-on-engine-yard-cloud]]    
     * [[Setup Cygwin to Run Linux Commands in Windows|setup-cygwin-to-run-nix-commands-in-windows]]
     * [[Hibernate Your Account|hibernate-your-account]]
     * [[Review Usage Charges|review-usage-charges]]
