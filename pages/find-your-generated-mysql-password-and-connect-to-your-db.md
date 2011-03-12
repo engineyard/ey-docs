@@ -1,16 +1,12 @@
 # Find Your Generated MySQL Password and Connect to Your DB
 
-Before you begin, you must be running at least one application instance.
+Before you begin, you must be running at least one application instance. When you configure application we randomly generate a password for you and render it on your slice. Your database password can be obtained by connecting over SSH into your instance and viewing your `database.yml` file.
 
-When you configure application we randomly generate a password for you and render it on your slice.
-
-Your database password can be obtained by connecting over SSH into your instance and viewing your `database.yml` file.
-
-## Access Your `database.yml` File
+## Access Your database.yml File
 
 SSH into an application slice and run this command:
 
-    `cat /data/app_name/shared/config/database.yml`
+    cat /data/app_name/shared/config/database.yml
 
 For example:
 
@@ -26,4 +22,4 @@ For example:
 
 Now you're ready to log into mysql from the command line:
 
-    `mysql -u deploy -peQlmeEqGxv -h localhost app_name_production`
+    mysql -u deploy -peQlmeEqGxv -h localhost app_name_production

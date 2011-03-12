@@ -19,14 +19,14 @@ This also works for other files in the folder:
     /data/nginx/servers/*    
 
 
-### Extra Step for `nginx.conf`
+### Extra Step for nginx.conf
 
 Changing the `nginx.conf` file requires an additional step because it's a file required by nginx itself.
 
   - Rename the file from `/data/nginx.conf` to `/data/nginx/keep.nginx.conf`
   - Add a deploy hook to create a symlink:
 
-       ln -nfs /data/nginx/keep.nginx.conf /data/nginx/nginx.conf
+    `ln -nfs /data/nginx/keep.nginx.conf /data/nginx/nginx.conf`
 
 
 ## Monit 

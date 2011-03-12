@@ -10,19 +10,11 @@ If your Repo URL looks like http://svn.mydomain.com/svn/myapp/trunk, then it's m
 
 You can configure many different applications and their corresponding repository URL and framework under Engine Yard AppCloud.  Then applications can be used in one or more environment.
 
-{{:appcloud:howtos:repo_update_1.jpg|}}
-
   - Under SERVER MANAGEMENT, click on the **Applications** section.
 
-{{:appcloud:howtos:repo_update_2.jpg?700|}}
-  
   - On the right side, click on the **Edit an Application** link.
 
-{{:appcloud:howtos:repo_update_3.jpg|}}  
-  
   - Enter a Git Repository URL.
-
-{{:appcloud:howtos:repo_update_4.jpg|}}
   
   - Then click the "Update application" button to finish the process.
 
@@ -30,8 +22,6 @@ You can configure many different applications and their corresponding repository
 
 Remember, that if the repository has been moved to a new account, please check that the deploy key is installed.  You can copy it from the **Application** page.
 
-{{:appcloud:howtos:repo_update_5.jpg|}}
- 
 ## Testing
 
-The simple means to test your changes is to try a deploy.  If you have other production code already running on the site, you can [clone the environment](clone-an-environment) and test it there.
+The simple means to test your changes is to try a deploy.  If you have other production code already running on the site, you can [[clone the environment|clone-an-environment]] and test it there.

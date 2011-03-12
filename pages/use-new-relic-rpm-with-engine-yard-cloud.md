@@ -1,23 +1,19 @@
 # How to Use New Relic RPM with Engine Yard AppCloud
 
-**NOTE: Engine Yard AppCloud customers can now use [Bronze RPM for Free](http://www.newrelic.com/press-release-20110118.html)!**
+**NOTE: Engine Yard AppCloud customers can now use [[Bronze RPM for Free|http://www.newrelic.com/press-release-20110118.html]]!**
 
 In order to use the New Relic RPM agent with Engine Yard AppCloud you'll need to follow these steps.
-
-We also have [a screencast](setup-performance-monitoring-with-new-relic-rpm) to guide you through these steps.
-
-NOTE: The screencast is currently a bit behind in the UI, but the doc below is up-to-date.
 
 ## Choose a Plan
 
   - In the top menu, click on **Account**.
   
-{{:appcloud:howtos:services:services-1.jpg?700|}}
+![Figure 1](images/services-1.jpg)
   
   - Under the Services section then click on the **New Relic** logo.
-  - On this page there are links for [RPM's capabilities](http://www.newrelic.com/features.html) based on the [subscription level](http://www.newrelic.com/get-RPM.html).
+  - On this page there are links for [[RPM's capabilities|http://www.newrelic.com/features.html]] based on the [[subscription level|http://www.newrelic.com/get-RPM.html]].
   
-{{:appcloud:howtos:services:choose_a_plan.jpg?700|}}
+![Figure 2](images/choose_a_plan.jpg)
     
   - Once you've read and agreed to the New Relic Terms of Service, click the **check box** and click the **Choose** button to activate the plan right for you.
 
@@ -41,13 +37,13 @@ There are two parts to configuring your application.
   
 For Rails versions 2.1 and above, edit `environment.rb` and add to the initializer block:
 
-  config.gem "newrelic_rpm"
+    config.gem "newrelic_rpm"
 
 For Rails versions 2.0.*, edit `environment.rb` and add this statement after the initializer block:
 
-  require "newrelic_rpm"
+    require "newrelic_rpm"
   
-If you're running a rails app older than 2.0 you'll need to use the plugin and [follow New Relic's guide](http://support.newrelic.com/faqs/docs/ruby-agent-installation).
+If you're running a rails app older than 2.0 you'll need to use the plugin and [[follow New Relic's guide|http://support.newrelic.com/faqs/docs/ruby-agent-installation]].
 
 If you are using bundler you can just add the `newrelic_rpm` gem to your Gemfile and it should work fine. It will work with Rails 3.x and Rails 2.3.x.
 

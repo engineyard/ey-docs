@@ -1,6 +1,6 @@
 # SSH Keys and Configuration
 
-If you need help generating an SSH keypair please see: [Generating SSH Keys](generating_ssh_keys)
+If you need help generating an SSH keypair please see: [[Generating SSH Keys|generating_ssh_keys]].
 
 ## Manage Keys
 

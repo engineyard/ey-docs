@@ -35,10 +35,10 @@ To restart unicorn run:
 
 First in order to run Unicorn under bundler you must add unicorn to the Gemfile and re-deploy.  Update `env.custom` with the following:
 
-<code>
-RUBY="/usr/bin/bundle"
-UNICORN_EXEC="exec unicorn"
-</code>
+
+    RUBY="/usr/bin/bundle"
+    UNICORN_EXEC="exec unicorn"
+
 
 Then restart unicorn like below:
 

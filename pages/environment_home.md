@@ -1,7 +1,5 @@
 # Environments
 
-## Overview
-
 **Environment** is an overloaded term. Here at EY when we refer to your 'environment' we are talking about the cluster of instances that collectively run an application or set of applications. An environment includes Application Instance(s), Database Instance(s), and possibly
 one or more Utility Instances. Check out this article if you want to know more about the various instances types: [[AppCloud Instances|appcloud-instances]].
 
@@ -95,7 +93,7 @@ Gone are the costs of having to maintain a staging environment and the time it t
 
 ## Cluster Architechture
 
-![Cluster Architecture](cluster_architechture.png)
+![Cluster Architecture](images/cluster_architechture.png)
 
 ## View Your HAProxy Stats
 
@@ -112,7 +110,7 @@ Your password is generated for each environment you've got running.
 
 Upon clicking the link, you'll be greeted with a page full of information recorded by HAProxy on the current connections.
 
-![HAProxy Stats](haproxy_stats.jpg)
+![HAProxy Stats](images/haproxy_stats.jpg)
 
 Just refresh the page to get the latest stats.
 

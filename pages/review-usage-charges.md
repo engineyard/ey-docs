@@ -7,4 +7,4 @@ When you've logged into your cloud account it's easy to get see your usage charg
 
 Here's an example of a client running many different environments and as many as twelve instances.
 
-{{:appcloud:howtos:billing:billing_example.jpg?700|}}
+![Figure 1](images/billing_example.jpg)

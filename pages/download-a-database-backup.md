@@ -1,6 +1,6 @@
 # Download a Database Backup
 
-If you have downloaded a database backup via the [ey-backup gem](http://cloud-support.engineyard.com/faqs/database/how-to-manage-database-backups) to your running instance, you can then use `scp` to transfer the backup file to your local computer.
+If you have downloaded a database backup via the [[ey-backup gem|manage-database-backups]] to your running instance, you can then use `scp` to transfer the backup file to your local computer.
 
     scp username@IP_address:/path_to_file destination
 

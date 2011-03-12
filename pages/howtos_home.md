@@ -1,40 +1,27 @@
-# HOWTOs
+# How To's:
 
 ## Billing
-  * [[appcloud/howtos/billing/review-usage-charges|Review Usage Charges]]
-  * [[appcloud/howtos/billing/hibernate-your-account|Hibernate Your Account]]
+  * [[Review Usage Charges|review-usage-charges]]
+  * [[Hibernate Your Account|hibernate-your-account]]
 
 ## Customizations
-  * [[appcloud/howtos/customizations/Customize Unicorn|Customize Unicorn]]
-  * [[appcloud/howtos/customizations/Setup SSMTP for Mail Relay to AuthSMTP|Setup SSMTP for Mail Relay to AuthSMTP]]
-  * [[appcloud/howtos/customizations/Make Changes to Nginx or Monit Configuration|Make Changes to Nginx or Monit Configuration]]
-  * [[appcloud/howtos/customizations/Custom Chef Recipes|Custom Chef Recipes]]
-
-## Deployment
-  * [[appcloud/howtos/deployment/convert-capistrano-symlinks-to-appcloud-symlinks|Convert Capistrano Symlinks to AppCloud Symlinks]]
-  * [[appcloud/howtos/deployment/Use Deploy Hooks with Engine Yard AppCloud|Use Deploy Hooks with Engine Yard AppCloud]]
-  * [[appcloud/howtos/deployment/change-your-repo-location|Change Your Repo Location]]
-
-## Databases
-  * [[appcloud/howtos/databases/Configure MySQL Server|Configure MySQL Server]]
-  * [[appcloud/howtos/databases/Manage Database Backups|Manage Database Backups]]
-  * [[appcloud/howtos/databases/Download a Database Backup|Download a Database Backup]]
-  * [[appcloud/howtos/databases/Access Your MySQL Database Remotely|Access Your MySQL Database Remotely]]
-  * [[appcloud/howtos/databases/Find Your Generated MySQL Password and Connect to Your DB|Find Your Generated MySQL Password and Connect to Your DB]]
-  * [[appcloud/howtos/databases/Dump and Load your MySQL Database|Dump and Load your MySQL Database]]
-  * [[appcloud/howtos/databases/Upgrading PostgreSQL|Upgrading PosgreSQL]]
-  * [[appcloud/howtos/databases/MySQL Troubleshooting|MySQL Error Troubleshooting]]
+  * [[Customize Unicorn|customize-unicorn]]
+  * [[Setup SSMTP for Mail Relay to AuthSMTP|setup-ssmtp-for-mail-relay-to-authsmtp]]
+  * [[Make Changes to Nginx or Monit Configuration|make-changes-to-nginx-or-monit-configuration]]
+  * [[Custom Chef Recipes|custom-chef-recipes]]
+  * [[Set Time Zone for an AppCloud Instance|set-time-zone-for-an-appcloud-instance]]
 
 ## Queues
 
-  * [[appcloud:howtos:configure-and-deploy-resque|]]
+  * [[Configure and Deploy Resque|configure-and-deploy-resque]]
 
 ## Services
-  * [[appcloud/howtos/services/Use New Relic RPM with Engine Yard Cloud|Use New Relic RPM with Engine Yard AppCloud]]
+  * [[How to Add a New Relic RPM User|howto-add-a-new-relic-rpm-user]]
+  * [[Use New Relic|use-new-relic-rpm-with-engine-yard-cloud]]  
 
 ## Troubleshooting
-  * [[appcloud/howtos/troubleshooting/Amazon Out of Capacity| Boot after an Amazon Out of Capacity Message]]
-  * [[appcloud/howtos/troubleshooting/Diagnose Errors on Engine Yard Cloud|Diagnose Errors on Engine Yard AppCloud]]
+  * [[Find Important Log Files|find-important-log-files]]
+  * [[Diagnose Errors on Engine Yard AppCloud|diagnose-errors-on-engine-yard-cloud]]    
 
 ## Windows
-  * [[appcloud/howtos/windows/Setup Cygwin to Run *NIX Commands in Windows|Setup Cygwin to Run *NIX Commands in Windows]]
+  * [[Setup Cygwin to Run Linux Commands in Windows|setup-cygwin-to-run-nix-commands-in-windows]]

@@ -8,7 +8,7 @@ So if today is a Monday you can restore back to the 2nd previous Friday.
 
 Use the quick list below to see at a glance how far back your backups are currently stored.  The last day on the row would be whatever day it is today.
 
-  F S U M T W R F S U M
+  F S U M T W R F S U M  
   S U M T W R F S U M T  
   U M T W R F S U M T W  
   M T W R F S U M T W R  
@@ -20,7 +20,7 @@ LEGEND: M=Monday, T=Tuesday, W=Wednesday, R=Thursday, F=Friday, S=Saturday, U=Su
 
 When creating or editing an environment you can change the default settings for number of backups and hours between backups.
 
-![Backup Options](backup_options.jpg)
+![Backup Options](images/backup_options.jpg)
 
 
 ## Locate Backups

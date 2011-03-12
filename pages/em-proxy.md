@@ -31,17 +31,18 @@ Start the proxy up on one server at a time, if you run into issues along the way
 
 Run the `proxy.rb` inside of a screen session.
 
-<code>
-$ screen
-$ ruby proxy.rb
-</code>
+
+    $ screen
+    $ ruby proxy.rb
+
 
 To detach from the screen session simply hit `ctrl+a+d` and you will detach.
 
 To later resume the screen session:
-<code>
-$screen -x
-</code>
+
+
+    $screen -x
+
 
 The proxy will start up and start taking traffic on port `80`. It will proxy traffic to nginx, locally, on port `8080`. 
 
@@ -49,9 +50,8 @@ The proxy will start up and start taking traffic on port `80`. It will proxy tra
 
 Make sure you can curl your app and receive the response you expect.
 
-<code>
-$ curl -H host:yourhostname.com http://localhost
-</code>
+
+    $ curl -H host:yourhostname.com http://localhost
 
 
 ## Disabling The Proxy
@@ -67,43 +67,43 @@ Now you are back to your default configuration.
 ## Example Code
 
 An example of `proxy.rb`:
-<code>
-`#` proxy.rb
-require 'em-proxy'
 
-Proxy.start(:host => "0.0.0.0", :port => 80) do |conn|
-  conn.server :production, :host => '127.0.0.1', :port => 8080
-  conn.server :ey_cloud, :host => '192.0.32.10', :port => 80
-  conn.on_data do |data|
-    data
-  end
-  conn.on_response do |server, resp|
-    resp if server == :production
-  end
-end
-</code>
+
+    `#` proxy.rb
+    require 'em-proxy'
+    
+    Proxy.start(:host => "0.0.0.0", :port => 80) do |conn|
+      conn.server :production, :host => '127.0.0.1', :port => 8080
+      conn.server :ey_cloud, :host => '192.0.32.10', :port => 80
+      conn.on_data do |data|
+        data
+      end
+      conn.on_response do |server, resp|
+        resp if server == :production
+      end
+    end
+
 
 Let's step through this script and describe what it does.
 
 This starts the proxy up on port `80`, and listens for any incoming requests.
 
-<code>
-Proxy.start(:host => "0.0.0.0", :port => 80) do |conn|
-</code>
+
+    Proxy.start(:host => "0.0.0.0", :port => 80) do |conn|
+
 
 This proxies the traffic to the servers you define. Your production server proxies locally to nginx and listens on port `8080`. 
 
 **NOTE**: Replace `192.0.32.10` with the IP of your EY AppCloud environment.
 
-<code>
-conn.server :production, :host => '127.0.0.1', :port => 8080
-conn.server :ey_cloud, :host => '192.0.32.10', :port => 80
-</code>
+
+    conn.server :production, :host => '127.0.0.1', :port => 8080
+    conn.server :ey_cloud, :host => '192.0.32.10', :port => 80
+
 
 This sends the response back to the user if the traffic came from the production server.
 
-<code>
- conn.on_response do |server, resp|
-   resp if server == :production
- end
-</code>
+
+    conn.on_response do |server, resp|
+      resp if server == :production
+    end

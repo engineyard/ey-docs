@@ -20,7 +20,8 @@ Fork and clone the [ey-cloud-recipes](http://github.com/engineyard/ey-cloud-reci
   - Click on the **clipboard icon** to copy the URL of your forked repository to your clipboard.
   - Clone the repository to your local development machine. Be sure you do **not** put this inside of your app repository as nested repositories aren't supported in git.
 
-    git clone git@github.com:<github username>/ey-cloud-recipes.git
+
+    `git clone git@github.com:<github username>/ey-cloud-recipes.git`
 
 This local copy of your **ey-cloud-recipes** repository will be the folder you work in when writing custom recipes for your environment.
 
@@ -28,14 +29,14 @@ This local copy of your **ey-cloud-recipes** repository will be the folder you w
 
 ### Base Files and Folders
 
-  README.md
-  Rakefile
-  cookbooks/
-    main/
-      attributes/
-      definitions/
-      libraries/
-      recipes/
+    README.md
+    Rakefile
+    cookbooks/
+      main/
+        attributes/
+        definitions/
+        libraries/
+        recipes/
 
 These folders and files were original to the **ey-cloud-recipes** repository before any other cookbooks were added.
 
@@ -45,15 +46,15 @@ Under `cookbooks/` you will see a folder for each of the self-contained recipes 
 
 Each folder under a cookbook has a number of sub-folders.  For this example the sphinx recipe is used:
 
-  cookbooks/sphinx/
-    files/
-      default/
-        sphinx.logrotate
-    recipes/
-      default.rb
-    templates/
-      sphinx.monitrc.erb
-      sphinx.yml.erb
+    cookbooks/sphinx/
+      files/
+        default/
+          sphinx.logrotate
+      recipes/
+        default.rb
+      templates/
+        sphinx.monitrc.erb
+        sphinx.yml.erb
 
 #### Recipes Folder
 
@@ -63,16 +64,16 @@ For each cookbook the `recipes/default.rb` is the main definition file that will
 
 In the sphinx cookbook the `recipes/default.rb` creates a `remote_file` *resource* (that's a chef term).  And that *resource* is found in the `files/default/sphinx.logrotate` location.  Which corresponds to the *source* value in the code block below.
 
-<code RUBY>
-remote_file "/etc/logrotate.d/sphinx" do
-  owner "root"
-  group "root"
-  mode 0755
-  source "sphinx.logrotate"
-  backup false
-  action :create
-end
-</code>
+
+    remote_file "/etc/logrotate.d/sphinx" do
+      owner "root"
+      group "root"
+      mode 0755
+      source "sphinx.logrotate"
+      backup false
+      action :create
+    end
+
 
 Why have a flat file?  Well the `sphinx.logrotate` is a file that has no variables.  That's what the *templates* are for and that's what you can use standard ERB to inject variable data.
 
@@ -80,33 +81,33 @@ Why have a flat file?  Well the `sphinx.logrotate` is a file that has no variabl
 
 Once again in the `recipes/default.rb` of the sphinx cookbook a *resource* is created.  This time it is passing variables to a template.
 
-<code RUBY>
-template "/etc/monit.d/sphinx.#{app_name}.monitrc" do
-  source "sphinx.monitrc.erb"
-  owner node[:owner_name]
-  group node[:owner_name]
-  mode 0644
-  variables({
-    :app_name => app_name,
-    :user => node[:owner_name],
-    :flavor => flavor
-  })
-end
-</code>
+
+    template "/etc/monit.d/sphinx.#{app_name}.monitrc" do
+      source "sphinx.monitrc.erb"
+      owner node[:owner_name]
+      group node[:owner_name]
+      mode 0644
+      variables({
+        :app_name => app_name,
+        :user => node[:owner_name],
+        :flavor => flavor
+      })
+    end
+
 
 The variables above are passed to the template below and then chef renders the static file defined in the template resource, i.e `/etc/monit.d/sphinx.myapp.monitrc`.
 
-<code RUBY>
-check process sphinx_<%= @app_name %>_3312
-  with pidfile /var/run/sphinx/<%= @app_name %>.pid
-  start program = "/engineyard/bin/<%= @flavor %>_searchd <%= @app_name %> start" as uid <%= @user %> and gid <%= @user %>
-  stop program = "/engineyard/bin/<%= @flavor %>_searchd <%= @app_name %> stop" as uid <%= @user %> and gid <%= @user %>
-  group sphinx_<%= @app_name %>
-</code>
+
+    check process sphinx_<%= @app_name %>_3312
+      with pidfile /var/run/sphinx/<%= @app_name %>.pid
+      start program = "/engineyard/bin/<%= @flavor %>_searchd <%= @app_name %> start" as uid <%= @user %> and gid <%= @user %>
+      stop program = "/engineyard/bin/<%= @flavor %>_searchd <%= @app_name %> stop" as uid <%= @user %> and gid <%= @user %>
+      group sphinx_<%= @app_name %>
+
 
 ## Turn on a Cookbook
 
-Please browse the [available cookbooks](http://github.com/engineyard/ey-cloud-recipes/tree/master/cookbooks) to see the latest versions.
+Please browse the [[available cookbooks|http://github.com/engineyard/ey-cloud-recipes/tree/master/cookbooks]] to see the latest versions.
 
 In order to turn on a cookbook and have that set of recipes run when you deploy your application you need to open the `cookbooks/main/recipes/default.rb` file.
 
@@ -114,9 +115,9 @@ This file contains a series of lines commented out that either describe or requi
 
 You want to run the sphinx recipe?  Uncomment the line:
 
-<code RUBY>
-require_recipe "sphinx"
-</code>
+
+    require_recipe "sphinx"
+
 
 Save your changes and commit the file to the repository.
 
@@ -132,58 +133,68 @@ Go to your local **ey-cloud-recipes** repository folder.  To generate a new reci
 
 Edit **cookbooks/nginx_logrotate/recipes/default.rb** adding the following code:
 
-<code RUBY>
-remote_file "/etc/logrotate.d/nginx" do
-  owner "root"
-  group "root"
-  mode 0755
-  source "nginx.logrotate"
-  backup false
-  action :create
-end
-</code>
+
+    remote_file "/etc/logrotate.d/nginx" do
+      owner "root"
+      group "root"
+      mode 0755
+      source "nginx.logrotate"
+      backup false
+      action :create
+    end
+
 
 Create a new nginx logrotate config file. Change the retention of Nginx logs to 60 days (the default is 30) by creating the file **files/default/nginx.logrotate** with the following content:
 
-  /var/log/engineyard/nginx/*.log {
-    daily
-    missingok
-    compress
-    rotate 60
-    dateext
-    notifempty
-    sharedscripts
-    extension gz
-    postrotate
-        [ ! -f /var/run/nginx.pid ] || kill -USR1 `cat /var/run/nginx.pid`
-    endscript
-  }
+    /var/log/engineyard/nginx/*.log {
+      daily
+      missingok
+      compress
+      rotate 60
+      dateext
+      notifempty
+      sharedscripts
+      extension gz
+      postrotate
+          [ ! -f /var/run/nginx.pid ] || kill -USR1 `cat /var/run/nginx.pid`
+      endscript
+    }
+
 
 Add the following line to the bottom of **cookbook/main/recipes/default.rb** to enable the recipe:
 
-<code RUBY>
-require_recipe "nginx_logrotate"
-</code>
+
+    require_recipe "nginx_logrotate"
+
 
 Test the syntax of your new recipe:
 
+
     $ rake test
+
 
 The final step is to commit your changes to the repository.  Once your changes are committed to HEAD of your local git repository then you are ready to deploy.
 
+
     $ git add . && git commit -am "Custom logrotate for nginx"
+
 
 ## Invoking Custom Chef Recipes
 
 To run your new recipe set you first need to upload the recipes to your environment.
 
   From the root of your recipes repository run:
+
+
     $ ey recipes upload -e <environment name>
-  
+
+
   Then run them with:
+
     $ ey recipes apply -e <environment name>
 
   You can also choose to do a full chef run:
+
     $ ey rebuild -e <environment name>
 
 You can now deploy your app code that depends on customizations that chef has configured for you.
