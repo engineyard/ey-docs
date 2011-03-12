@@ -11,6 +11,6 @@ This needs to be created through the primary SSO account that turned on the New 
   - Then click the **View performance information** link to view the New Relic app.
   - From the New Relic application click on **Account Settings**.
   
-![Add User](add_new_relic_rpm_steps_3-4.jpg)
+![Add User](images/add_new_relic_rpm_steps_3-4.jpg)
   
   - Then click on **Add User** and fill out the form.
