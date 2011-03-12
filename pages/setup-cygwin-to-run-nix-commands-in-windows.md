@@ -10,7 +10,7 @@ So Cygwin isn't required to deploy to AppCloud, but we recommend it.
 
 Go to [[http://cygwin.com]] and download the **setup.exe** file.
 
-![Figure 1](cywgin_download_normal.png)
+![Figure 1](images/cywgin_download_normal.png)
 
 Right click and save the **setup.exe** file.  You run the **setup.exe** every time you want to make changes to the packages installed in the Cygwin environment.
 
@@ -27,11 +27,11 @@ There are many steps you need to go through just to pick the packages you want i
 
 Now you're to the Select Packages page.  From here we'll select some specific packages that will help you connect and deploy to your instances.
 
-![Figure 2](cygwin_intitial_packages_normal.png)
+![Figure 2](images/cygwin_intitial_packages_normal.png)
 
 By default they have organized all the packages by Category.  The options are Category, Full, Partial, Up To Date, Not Installed.  Here's the help text to explain what each of those views present:
 
-![Figure 3](cygwin_view_button_help_normal.png)
+![Figure 3](images/cygwin_view_button_help_normal.png)
 
 ## Choose Packages for Cygwin
 
@@ -56,4 +56,4 @@ The final page called Create Icons will create Cygwin icons for your desktop or 
 
 Use the Cygwin icon (on the Desktop or in your Start Menu) to start the Cygwin bash shell, and you'll get a beautiful green text on black background with a blinking prompt!
 
-![Figure 4](cygwin_bash_shell_normal.png)
+![Figure 4](images/cygwin_bash_shell_normal.png)
