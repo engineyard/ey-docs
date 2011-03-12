@@ -22,7 +22,7 @@ In the `syslog` you will find system messages, monit restart calls, cron job not
 
   `/var/log/syslog`
 
-## Rotate Your Logs with `logrotate`
+## Rotate Your Logs with logrotate
 
 By default, all parts of the stack are under `logrotate` to properly rotate and gzip old logs. The individual configuration files are found here:
 
