@@ -6,12 +6,12 @@ Yes, though it requires a little bit of work to set up.
 
 The `ey` command looks at the `EYRC` environment variable to determine what `rc` file to use (`~/.eyrc` by default). To work with both Alice's and Bob's accounts, have Alice do this:
 
-<code>
-$ rm -f ~/.eyrc                              # clean slate
-$ ey environments                            # <-- this prompts for login + saves credentials
-$ mv ~/.eyrc ~/.eyrc-alice
-$ EYRC=~/.eyrc-alice ey environments         # <-- this uses Alice's saved credentials
-</code>
+
+    $ rm -f ~/.eyrc                              # clean slate
+    $ ey environments                            # <-- this prompts for login + saves credentials
+    $ mv ~/.eyrc ~/.eyrc-alice
+    $ EYRC=~/.eyrc-alice ey environments         # <-- this uses Alice's saved credentials
+
 
 Then have Bob do the same, but save his credentials in `~/.eyrc-bob`.
 
@@ -39,10 +39,10 @@ The best way to do it is to check in `Gemfile.lock` with your application. There
   - Copy the SSH url for the App Master of your cluster from the AppCloud web interface and just take the hostname from it. 
   - Then create or modify `~/.ssh/config` with the following contents:
 
-  <code>
+
     Host HOSTNAME_OF_APP_MASTER
     IdentityFile ~/.ssh/my_cloud_priv_key
-  </code>
+
 
 If you are using an elastic IP for your cluster, this hostname will not change and will continue to work across cluster reboots. 
 
@@ -50,19 +50,20 @@ If you are using an elastic IP for your cluster, this hostname will not change a
 
 If you have a large `.git` directory and you do not want it copied over on every deploy, add a `config/ey.yml` to your application's repository with the following contents:
 
-  environments:
-   YOUR-ENVIRONMENT-NAME-GOES-HERE:
-     copy_exclude:
-       - .git
-       - 
-       - 
+    environments:
+      YOUR-ENVIRONMENT-NAME-GOES-HERE:
+        copy_exclude:
+         - .git
+         - 
+         - 
 
 ### Where is the deploy log?
 
 If there is a problem deploying your application, the dashboard will tell you to view the deploy log. This is currently viewable via the dashboard or by logging in over SSH.
 
 Once logged in, you will find the log in your home directory with a filename like the following:
-  `yourapp-deploy.log`
+
+    yourapp-deploy.log
 
 Where 'yourapp' is the name of your application in the environment.
 
