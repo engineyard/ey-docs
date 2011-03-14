@@ -11,53 +11,53 @@
 - An example snippet to your Gemfile:
 
 <code>
-source 'http://gems.engineyard.com'
-
-if defined?(JRUBY_VERSION)
-  gem 'activerecord-jdbc-adapter'
-  gem 'jruby-openssl'
-  gem 'jdbc-mysql', :require => false
-  gem 'jdbc-sqlite3', :require => false
-  gem 'glassfish'
-else
-  gem 'sqlite3-ruby', :require => 'sqlite3'
-end
+    source 'http://gems.engineyard.com'
+    
+    if defined?(JRUBY_VERSION)
+      gem 'activerecord-jdbc-adapter'
+      gem 'jruby-openssl'
+      gem 'jdbc-mysql', :require => false
+      gem 'jdbc-sqlite3', :require => false
+      gem 'glassfish'
+    else
+      gem 'sqlite3-ruby', :require => 'sqlite3'
+    end
 </code>
 
 or, equivalently:
 
 <code>
-gem 'activerecord-jdbc-adapter', :platforms => :jruby
-gem 'jruby-openssl', :platforms => :jruby
-gem 'jdbc-mysql', :require => false, :platforms => :jruby
-gem 'jdbc-sqlite3', :require => false, :platforms => :jruby
-gem 'glassfish', :platforms => :jruby
-gem 'sqlite3-ruby', :require => 'sqlite3', :platforms => :ruby
+    gem 'activerecord-jdbc-adapter', :platforms => :jruby
+    gem 'jruby-openssl', :platforms => :jruby
+    gem 'jdbc-mysql', :require => false, :platforms => :jruby
+    gem 'jdbc-sqlite3', :require => false, :platforms => :jruby
+    gem 'glassfish', :platforms => :jruby
+    gem 'sqlite3-ruby', :require => 'sqlite3', :platforms => :ruby
 </code>
 
 Then run these commands to update your Gemfile.lock:
 
 <code>
-rvm install jruby
-rvm jruby
-bundle install
-glassfish .
-
-git checkout -b jruby
-git commit -a -m "Gemfile updated for jruby/glassfish"
-git push origin jruby
-
-rvm 1.8.7
-gem install engineyard --pre --source http://gems.engineyard.com
+    rvm install jruby
+    rvm jruby
+    bundle install
+    glassfish .
+    
+    git checkout -b jruby
+    git commit -a -m "Gemfile updated for jruby/glassfish"
+    git push origin jruby
+    
+    rvm 1.8.7
+    gem install engineyard --pre --source http://gems.engineyard.com
 </code>
 
 If you are not using RVM, do this in `$RAILS_ROOT` to update `Gemfile`:
 
 <code>
-jruby -S bundle bundle install
-git add Gemfile*
-git commit -m 'Update Gemfile* for JRuby'
-git push
+    jruby -S bundle bundle install
+    git add Gemfile*
+    git commit -m 'Update Gemfile* for JRuby'
+    git push
 </code>
 
 (Use branch of your choice.)
@@ -65,15 +65,15 @@ git push
 - `config.ru` needs to be modified to `require 'bundler/setup'` correctly before the first use of `Bundler`, like so:
 
 <code>
-  # This file is used by Rack-based servers to start the application.
-  # Find the latest bundler and get started                          
-  
-require 'rbconfig'
-$:.unshift(Dir[RbConfig::CONFIG["libdir"] + "/ruby/gems/1.8/gems/bundler-*/lib"].sort.last)
-require 'bundler/setup'
-
-require ::File.expand_path('../config/environment',  __FILE__)
-run CloudstockDemo::Application
+    # This file is used by Rack-based servers to start the application.
+    # Find the latest bundler and get started                          
+    
+    require 'rbconfig'
+    $:.unshift(Dir[RbConfig::CONFIG["libdir"] + "/ruby/gems/1.8/gems/bundler-*/lib"].sort.last)
+    require 'bundler/setup'
+    
+    require ::File.expand_path('../config/environment',  __FILE__)
+    run CloudstockDemo::Application
 </code>
 
 ## Steps
@@ -94,10 +94,11 @@ run CloudstockDemo::Application
   - Click on **Deploy** button. Note, change "HEAD" to your jruby branch if necessary. Alternately, from the console.
   - ***NOTE:*** If you have migrations, you must run them manually via SSH:
   
-      <code>ey ssh
-        cd /data/APPNAME/current
-        jruby -S rake db:migrate
-      </code>
+<code>
+    ey ssh
+    cd /data/APPNAME/current
+    jruby -S rake db:migrate
+</code>
       
   - Back in the Instances tab, click on "HTTP" link to view your application.
 
@@ -106,8 +107,8 @@ run CloudstockDemo::Application
 We are aware of these issues and working on identifying and fixing the causes.
 
   - Booting an environment does not completely deploy the application.
-  - The "rake" command is not using the correct platform. [ticket](https://tickets.engineyard.com/issue/SD-3420)
-  - Only one application is allowed. [ [[https://tickets.engineyard.com/issue/PL-2939|ticket]] ]
+  - The "rake" command is not using the correct platform.
+  - Only one application is allowed.
 
 Also, not referenced above:
 
