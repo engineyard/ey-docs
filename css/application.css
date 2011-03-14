@@ -2426,16 +2426,16 @@ li.plan h3 {
 
 /* Wiki sidebar */
 
-#content nav#sidebar li {
+#content.wrapper nav#sidebar li {
   list-style-image: url("../images/arrow-spacer.png"); padding: 5px 5px; border-bottom: 1px solid #f4f4f4; margin-left: 20px;
 }
-#content nav#sidebar li.collapsed {
+#content.wrapper nav#sidebar li.collapsed {
   list-style-image: url("../images/collapsed-arrow.png");
 }
-#content nav#sidebar li.expanded {
+#content.wrapper nav#sidebar li.expanded {
   list-style-image: url("../images/expanded-arrow.png");
 }
 
-#content nav#sidebar ul li a { font-weight: bold; color: #595c61; padding: 0; border: none; display: inline; text-decoration: none; }
+#content.wrapper nav#sidebar ul li a { font-weight: bold; color: red; padding: 0; border: none; display: inline; text-decoration: none; }
 
-#content nav#sidebar ul li ul li a { font-weight: normal; }
+#content.wrapper nav#sidebar ul li ul li a { font-weight: normal; }
