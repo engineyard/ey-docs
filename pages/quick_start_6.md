@@ -12,4 +12,4 @@ The UI will display if the Deployment was successful or if there was a problem. 
 Also check out the *Deployment history* to see a list of your deployments for this application.
 You can add any additional gems or Unix packages here as well.
 
-CONGRATS! You've deployed your application to AppCloud. Make sure you look at some of the [Features]() available so you can use AppCloud to its fullest potential.
+CONGRATS! You've deployed your application to AppCloud. Make sure you look at some of the [[environment's features|environment_home]] available so you can use AppCloud to its fullest potential.
