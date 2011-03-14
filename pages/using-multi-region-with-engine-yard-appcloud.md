@@ -10,7 +10,7 @@ If you have multi-region enabled, you will be able to create environments and bo
 
 All AppCloud features are supported in each of these regions.
 
-{{:beta:ey-regions_sm.png|}}
+![EY Regions](images/ey-regions_sm.png)
 
 
 ## Current Limitations
@@ -32,11 +32,11 @@ After the Multi-Region feature is enabled for your account, click the ‘Create 
 
 Click the drop-down arrow next to **Show advanced options** to choose the Availability Zone.
 
-{{:beta:show_adv_options.jpg|}}
+![Figure 1](images/show_adv_options.jpg)
 
 Under the drop down box for **Availability Zone**, you can choose from any of the Amazon Regions and the specific Availability Zone for each.
 
-{{:beta:availability_zone.jpg|}} 
+![Figure 2](images/availability_zone.jpg)
 
 Add your application to the environment. It will prompt you to add your domain name. If you do not want to set your domain name at this point, you can leave the “_” domain name as a default.
 
