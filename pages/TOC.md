@@ -63,7 +63,7 @@
     * [[Use New Relic|use-new-relic-rpm-with-engine-yard-cloud]]
   * [[BETA|beta_home]]
     * [[BETA: Collaboration|collaboration]]
-    * [[Collaboration Info|collaboration_info]]
+    * [[Getting Started with Collaboration|collaboration_info]]
     * [[REQUEST: Collaboration|signup-collaboration]]
     * [[BETA: JRuby|jruby-beta]]
     * [[JRuby|jruby]]

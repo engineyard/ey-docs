@@ -36,11 +36,11 @@ The typical use cases for using the collaboration feature are:
 
 Click on the account link on the top bar to see the list of accounts the current user belongs to.
 
-{{:appcloud:guides:environments:collaboration_1.jpg|}}
+![Collaboration 1](images/collaboration_1.jpg)
 
 The accounts page lists each account, the creator for that account and some other summary information. You can manage each account by clicking on the account name to get to the account management screen.
 
-{{:appcloud:guides:environments:appcloud-accounts-3.jpg?628|}}
+![Appcloud Accounts 3](images/appcloud-accounts-3.jpg)
 
 On the account management screen for each account, you can edit the name of the account, change support level for the account, or add new users to this account.
 
@@ -54,7 +54,7 @@ Enter the email address of the new user you would like to add to the current acc
 
 You can remove a user from an account by going to the account management page (Dashboard > Accounts > Account Name) and clicking the “Remove” link next to the user in the Members area.
 
-{{:appcloud:guides:environments:collaboration_2.jpg|}}
+![Collaboration 2](images/collaboration_2.jpg)
 
 ### 3. Working with Multiple Accounts
 
@@ -66,7 +66,7 @@ If a user is a part of multiple accounts, each environment from each account wil
 
 Many Engine Yard customers develop applications for multiple consumers simultaneously. These consumers might be external customers, or separate internal applications. In such situations, having common credentials that can be used across each account is useful for customers. The following is a recommended workflow for these use cases:
 
-  - Create a new account for each customer. You can do so by [signing up](http://cloud.engineyard.com). This will create a new creator user, which is the administrator user for this account. **NOTE: If you already have existing accounts that you would like to collaborate with, skip this step.** 
+  - Create a new account for each customer. You can do so by [[signing up|http://cloud.engineyard.com]]. This will create a new creator user, which is the administrator user for this account. **NOTE: If you already have existing accounts that you would like to collaborate with, skip this step.** 
   - In the new account, go to the accounts section and add developers to the account. If the developers already have Engine Yard credentials, they can accept the invitation under whatever account they’re signed in as. You can also add new users to each account.  Simply add their email information and they will receive an invitation to open a new account.
   - If you would like to hand off the project to your customer, give them credentials for the creator account, and remove any members that are no longer need access from the Accounts page.
 
@@ -76,7 +76,7 @@ The email invitation sent to a user can be accepted only once. However, we do no
 
 Each developer is tasked with managing their own ssh keys. They cannot see anyone else’s keys. When you add your keys to an environment, you will not affect anyone else on that environment.
 
-Learn more about [managing your ssh keys](env_ssh_keys) on our docs site.
+Learn more about [[managing your ssh keys|env_ssh_keys]] on our docs site.
 
 ## Frequently Asked Questions
 
