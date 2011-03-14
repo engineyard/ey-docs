@@ -1,8 +1,8 @@
 # Passenger 3
 
-{{:beta:phusion-passenger.png|}}
+![Passenger 3](images/phusion-passenger.png)
 
-The latest major version of [[http://www.modrails.com/|Phusion Passenger]] is now a candidate for testing on Engine Yard AppCloud.
+The latest major version of [[Phusion Passenger|http://www.modrails.com/]] is now a candidate for testing on Engine Yard AppCloud.
 
-  - [Request Access](signup-passenger3)
-  - [[Using Passenger with Engine Yard AppCloud](using-passenger-with-engine-yard-appcloud)
+  - [[Request Access|signup-passenger3]]
+  - [[Using Passenger with Engine Yard AppCloud|using-passenger-with-engine-yard-appcloud]]
