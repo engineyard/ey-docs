@@ -2425,7 +2425,7 @@ li.plan h3 {
   margin: 0; }
 
 /* Sidebar Nav */
-#content nav { width: 190px; float: left; margin-right: 15px; }
+#content nav { float: left; margin-right: 15px; }
    #content nav ul li a { font-weight: bold; color: #595c61; padding: 10px 10px 10px 25px; border-bottom: 1px solid #f4f4f4; display: block; text-decoration: none; }
      #content nav ul li:last-child a { border: none; }
 

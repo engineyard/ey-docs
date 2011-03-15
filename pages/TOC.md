@@ -1,4 +1,4 @@
-* [[Docs Home|Home]]
+[[Docs Home|Home]]
   * [[Intro to Engine Yard AppCloud|appcloud_home]]  
   * [[Getting Started Home|getting_started_home]]
     * [[Sign Up for Engine Yard AppCloud|sign-up-for-engine-yard-appcloud]]
