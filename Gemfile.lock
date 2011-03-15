@@ -1,0 +1,41 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    albino (1.1.1)
+    diff-lcs (1.1.2)
+    github-markup (0.5.3)
+    gollum (1.1.1)
+      albino (~> 1.1.1)
+      github-markup (>= 0.4.0, < 1.0.0)
+      grit (~> 2.3)
+      mustache (>= 0.11.2, < 1.0.0)
+      nokogiri (~> 1.4)
+      sanitize (~> 1.1)
+      sinatra (~> 1.0)
+    gollum-site (0.1.7)
+      gollum (>= 1.1.0)
+      liquid (>= 2.2.2)
+      mixlib-log (>= 1.1.0)
+    grit (2.4.1)
+      diff-lcs (~> 1.1)
+      mime-types (~> 1.15)
+    liquid (2.2.2)
+    mime-types (1.16)
+    mixlib-log (1.2.0)
+    mustache (0.99.2)
+    nokogiri (1.4.4)
+    rack (1.2.2)
+    rdiscount (1.6.8)
+    sanitize (1.2.1)
+      nokogiri (~> 1.4.1)
+    sinatra (1.2.0)
+      rack (~> 1.1)
+      tilt (>= 1.2.2, < 2.0)
+    tilt (1.2.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  gollum-site
+  rdiscount
