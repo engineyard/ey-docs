@@ -1,8 +1,8 @@
 # The Engine Yard Wiki
 
-This repo holds all the content (and other bits) for the Engine Yard wiki, located at [docs.engineyard.com][ey-wiki].
+This repo holds all the content (and other bits) for the Engine Yard wiki, located at [EY Wiki][ey-wiki].
 
-The inspiration of this wiki came from the awesome guys at [http://www.basho.com/][basho] who have the [Basho Wiki][basho-wiki] setup with Gollum.
+The inspiration of this wiki came from the awesome guys at [Basho][basho] who have the [Basho Wiki][basho-wiki] setup with Gollum.
 
 We are using [Gollum][gollum] and [Gollum-Site][gol-site] to generate the wiki. Gollum is a great piece of open source software released by the GitHub team that lets you maintain and build wikis from the contents of a Git repo.
 
@@ -59,26 +59,6 @@ If you want to build and view the Riak Wiki locally, here is what you need to do
 
 5. Navigate to <http://localhost:8000/> (Default) to access a fully-functional copy of the EY Wiki.
 
-## Updating docs.engineyard.com
-
-After adding new content or updating existing content in the wiki repo, it then needs to be pushed live to wiki.basho.com. We do this using a post-receive hook [(written by Basho's Dan Reverri)](https://github.com/dreverri/repo-sync-webhook) and the "publish" branch. Here's the process to update the live site. **(Only people who have commit access to this repo will be able to do this.)** 
-
-1. Make sure lastest changes are merged or committed to master branch
-
-2. Checkout "publish" branch
-   
-    `git checkout publish`
-
-3. Merge changes from master into publish
-
-   	`git merge master`
-
-4. Push changes back to publish branch 
-
-   	`git push origin publish`
-
-After you merge your changes into publish and push them back to the repo, the post-receive hook will fire and docs.engineyard.com should be updated within several minutes.
-
 
 <A name="feedback">
 ## Issues, Questions, Comments, Etc.
@@ -94,3 +74,5 @@ After you merge your changes into publish and push them back to the repo, the po
 [gollum]:     https://github.com/github/gollum "Gollum Repo"
 [gol-site]:   https://github.com/dreverri/gollum-site "Gollum-Site Repo"
 [basho-wiki]: http://wiki.basho.com "Basho Wiki"
+[basho]:      http://basho.com "Basho"
+[ey-wiki]:    http://docs.engineyard.com "EY Wiki"
