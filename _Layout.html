@@ -131,10 +131,10 @@
       </header>
 
       <div id="content">
+	    <nav id="sidebar">
+	        {{ site.pages["toc"].content }}
+	    </nav>
         <div class="wrapper">
-	      <nav id="sidebar">
-	         {{ site.pages["toc"].content }}
-	       </nav>
 			{{ page.content }}
 		</div>
 	</div>
@@ -205,7 +205,6 @@
 
     <div class="hidden">
 	  <script src="{{ wiki.base_path }}js/application.min.js"></script>
-	  <!-- // <script src="{{ wiki.base_path }}js/jquery.js"></script> -->
 	  <script src="{{ wiki.base_path }}js/plugins.js"></script>
     </div>
   </body>
