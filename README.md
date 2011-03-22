@@ -42,7 +42,7 @@ If you want to build and view the Riak Wiki locally, here is what you need to do
 
 1. Clone this repo:
 
-        git clone git://github.com/basho/riak_wiki.git
+        git clone git://github.com/engineyard/ey_wiki.git
 
 2. Ensure that you have [Bundler][bundler] installed:
 
