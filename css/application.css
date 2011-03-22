@@ -796,14 +796,6 @@ li {
 p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, .halfColumn, small {
   margin: 0; }
 
-pre {
-  background: none repeat scroll 0 0 #F3F3F3;
-  border: 1px dotted #DDDDDD;
-  color: #636363;
-  font: 12px Monaco,Courier New,mono;
-  padding: 0 3px;
-}
-
 .wrapper {
   width: 820px;
   margin: 0 auto; }
