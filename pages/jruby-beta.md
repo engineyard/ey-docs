@@ -10,7 +10,7 @@
 
 - An example snippet to your Gemfile:
 
-<code>
+<pre>
     source 'http://gems.engineyard.com'
     
     if defined?(JRUBY_VERSION)
@@ -22,22 +22,22 @@
     else
       gem 'sqlite3-ruby', :require => 'sqlite3'
     end
-</code>
+</pre>
 
 or, equivalently:
 
-<code>
-    gem 'activerecord-jdbc-adapter', :platforms => :jruby
-    gem 'jruby-openssl', :platforms => :jruby
-    gem 'jdbc-mysql', :require => false, :platforms => :jruby
-    gem 'jdbc-sqlite3', :require => false, :platforms => :jruby
-    gem 'glassfish', :platforms => :jruby
-    gem 'sqlite3-ruby', :require => 'sqlite3', :platforms => :ruby
-</code>
+<pre>
+  gem 'activerecord-jdbc-adapter', :platforms => :jruby
+  gem 'jruby-openssl', :platforms => :jruby
+  gem 'jdbc-mysql', :require => false, :platforms => :jruby
+  gem 'jdbc-sqlite3', :require => false, :platforms => :jruby
+  gem 'glassfish', :platforms => :jruby
+  gem 'sqlite3-ruby', :require => 'sqlite3', :platforms => :ruby
+</pre>
 
 Then run these commands to update your Gemfile.lock:
 
-<code>
+<pre>
     rvm install jruby
     rvm jruby
     bundle install
@@ -49,22 +49,22 @@ Then run these commands to update your Gemfile.lock:
     
     rvm 1.8.7
     gem install engineyard --pre --source http://gems.engineyard.com
-</code>
+</pre>
 
 If you are not using RVM, do this in `$RAILS_ROOT` to update `Gemfile`:
 
-<code>
+<pre>
     jruby -S bundle bundle install
     git add Gemfile*
     git commit -m 'Update Gemfile* for JRuby'
     git push
-</code>
+</pre>
 
 (Use branch of your choice.)
 
 - `config.ru` needs to be modified to `require 'bundler/setup'` correctly before the first use of `Bundler`, like so:
 
-<code>
+<pre>
     # This file is used by Rack-based servers to start the application.
     # Find the latest bundler and get started                          
     
@@ -74,7 +74,7 @@ If you are not using RVM, do this in `$RAILS_ROOT` to update `Gemfile`:
     
     require ::File.expand_path('../config/environment',  __FILE__)
     run CloudstockDemo::Application
-</code>
+</pre>
 
 ## Steps
 
@@ -94,11 +94,11 @@ If you are not using RVM, do this in `$RAILS_ROOT` to update `Gemfile`:
   - Click on **Deploy** button. Note, change "HEAD" to your jruby branch if necessary. Alternately, from the console.
   - ***NOTE:*** If you have migrations, you must run them manually via SSH:
   
-<code>
+<pre>
     ey ssh
     cd /data/APPNAME/current
     jruby -S rake db:migrate
-</code>
+</pre>
       
   - Back in the Instances tab, click on "HTTP" link to view your application.
 
