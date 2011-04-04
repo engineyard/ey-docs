@@ -24,4 +24,4 @@ Remember, that if the repository has been moved to a new account, please check t
 
 ## Testing
 
-The simple means to test your changes is to try a deploy.  If you have other production code already running on the site, you can [[clone the environment|clone-an-environment]] and test it there.
+The simple means to test your changes is to try a deploy.  If you have other production code already running on the site, you can clone the environment and test it there.

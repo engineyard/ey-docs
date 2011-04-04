@@ -8,7 +8,7 @@ We'll automatically associate an [[IP Address|ip-addresses]] to your environment
 At the 'environment' level you'll be able to manage the following:
 
   * [[IP Addresses|ip-addresses]]
-  * [[SSH Keys|env_ssh_keys]]
+  * [[SSH Keys|ssh-keys-and-configuration]]
   * [[Adding Cron Jobs|adding-cron-jobs]]
   * [[Instance Sizes|change-an-instance-size]]
   * [[Resource Usage Graphs|usage-graphs|]]
