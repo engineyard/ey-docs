@@ -1,6 +1,6 @@
 * [[Docs Home|Home]]
 * [[Intro to Engine Yard AppCloud|appcloud_home]]  
-* [[Getting Started Home|getting_started_home]]
+* [[Getting Started|getting_started_home]]
   * [[Sign Up for Engine Yard AppCloud|sign-up-for-engine-yard-appcloud]]
   * [[Setup Environment|setup-environment]]
   * [[Host Your Code on GitHub|host-your-code-on-github]]
