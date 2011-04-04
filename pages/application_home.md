@@ -1,6 +1,6 @@
 # Applications
 
-This section outlines how to manage your application on EY AppCloud. If you're looking to add SSL to your application please see this article: [[SSL Certs|features_ssl_certificates]].
+This section outlines how to manage your application on EY AppCloud. If you're looking to add SSL to your application please see this article: [[SSL Certs|ssl-certificates]].
 
 ## Add an Application
 
