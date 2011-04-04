@@ -1,48 +1,48 @@
-# Getting Started
+====== Getting Started ======
 
-This guide assumes that you have already [[signed up for an EY AppCloud Account|sign-up-for-engine-yard-appcloud]. If you have not yet done so, go ahead and get started now -> [[Engine Yard AppCloud|http://cloud.engineyard.com]]
+This guide assumes that you have already [[appcloud/guides/getting-started/sign-up-for-engine-yard-appcloud|signed up for an EY AppCloud Account]]. If you have not yet done so, go ahead and get started now -> [[http://cloud.engineyard.com|Engine Yard AppCloud]]
 
-## Application Information
+===== Application Information =====
 
 When you first sign up for AppCloud you will need to configure your first application. 
 
-![Entering your application's details](images/1sm.png)
+{{:appcloud:guides:getting-started:1sm.png|Entering your application's details}}
 
 We need to have your **Git repository URI** to checkout your code and deploy it to the instance. If you are using GitHub, you can find your Git repository URI here:
 
-![Where to find your Github repository URL](images/2sm.png)
+{{:appcloud:guides:getting-started:2sm.png|Where to find your Github repository URL}}
 
 We will try to guess a good name for your application from the Git URI. If we choose poorly, please enter a better name. 
 
 Next we need to know how to setup your application. This depends largely on what framework you used to develop your application. For all modern frameworks (including Sinatra and Rails 3), simply select Rack and everything will work. If you are using an older framework, please select the appropriate one. 
 
-## Deploy Key
+===== Deploy Key =====
 
 If you are using a private repository, we will now need to help you set up your deploy key. We automatically generate a deploy key for all applications with private repositories. Simply copy the deploy key from this page:
 
-![Where to find your deploy key on AppCloud](images/3sm.png)
+{{:appcloud:guides:getting-started:3sm.png|Where to find your deploy key on AppCloud}}
 
 Then add this deploy key to your Git repository so we can access your code. If you are using GitHub, you can add a deploy key in the admin section for your repository. 
 
-![How to paste your deploy key into Github](images/4sm.png)
+{{:appcloud:guides:getting-started:4sm.png|How to paste your deploy key into Github}}
 
-## Environment Information
+===== Environment Information =====
 
 Next we need to ask a few questions about the environment where your application will run.
 
-![New environment setup](images/5sm.png)
+{{:appcloud:guides:getting-started:5sm.png|New environment setup}}
 
-First, and most importantly, we need to know what environment your app should run under. This will be used for the Rails.environment or the **RACK_ENV** in your application. 
+First, and most importantly, we need to know what environment your app should run under. This will be used for the Rails.environment or the ''RACK_ENV'' in your application. 
 
-Second, we need to name this environment. By default we will choose a name of **APPNAME_ENVIRONMENT**. If this does not suit your application, feel free to change it. 
+Second, we need to name this environment. By default we will choose a name of ''APPNAME_ENVIRONMENT''. If this does not suit your application, feel free to change it. 
 
 Next, we need to know what application server you would like to use. We recommend Passenger for staging environments or other cases where zero downtime deploys are not critical and where traffic requirements are not high. Passenger also works best if you intend to have multiple applications on this environment. We recommend Unicorn for production environments for its zero downtime deploys and its excellent response under heavy load. Mongrel was the workhorse of Ruby hosting for a long time, but we feel that it has been surpassed by the other options. Mongrel will not work with Rails applications newer than Rails 2.3.8.
 
-Finally, we need to configure the virtual host for this application in this environment. This should be the domain you intend to use for this application. If you are only adding one application to this environment, you can use the wildcard **_** (underscore) virtual host. 
+Finally, we need to configure the virtual host for this application in this environment. This should be the domain you intend to use for this application. If you are only adding one application to this environment, you can use the wildcard ''_'' (underscore) virtual host. 
 
 There are also a few advanced options. In most cases the defaults are fine.
 
-## Boot Your Cluster
+===== Boot Your Cluster =====
 
 The final step is to select the servers you would like to boot for this environment. 
 
@@ -52,12 +52,12 @@ If this is a staging environment without strict uptime requirements and which yo
 
 If you have larger needs right now, please select **Custom** and configure your cluster as necessary. 
 
-## Where to Go From Here
+===== Where to Go From Here =====
 
 You can set up various Internet and networking technologies.
 
-  * [[IP Addressess|ip-addresses]]
-  * [[SSH Keys and Configuration|ssh-keys-and-configuration]]
-  * [[SSL Certificates|ssl-certificates]]
+  * [[appcloud/guides/environments/ip-addresses|IP Addressess]]
+  * [[appcloud/guides/environments/ssh-keys-and-configuration|SSH Keys and Configuration]]
+  * [[appcloud/guides/applications/ssl-certificates|SSL Certificates]]
 
-Learn more about the different types of [[instances|appcloud-instances]] available to you, including Application, Utility, and Database instances.
+Learn more about the different types of [[appcloud/guides/environments/appcloud-instances|instances]] available to you, including Application, Utility, and Database instances.
