@@ -55,7 +55,7 @@ Engine Yard AppCloud is our recommended deployment platform for users who want t
   * Staging environments.  Use our cloning feature to quickly clone your current production environment.
   * Experimentation and exploration with Engine Yard's [[battle-ready stack|http://www.engineyard.com/technology/stack]].
 
-Users who need specific compliance needs, such as SAS 70, should consider our dedicated [[http://www.engineyard.com/products/private-cloud|private cloud offerings]].
+Users who need specific compliance needs, such as SAS 70, should consider our dedicated [[private cloud offerings|http://www.engineyard.com/]].
 
 ## What types of applications will run on Engine Yard AppCloud?
 
@@ -86,7 +86,7 @@ Yes.  Via sudo you have complete control over your instances.  We have sudo conf
 
 Yes you can upload your own SSH key to Engine Yard AppCloud.  You can even specify keys which keys are used on which environments.
 
-For more information read the [[Manage Keys|env_ssh_keys]] section.
+For more information read the [[Manage Keys|ssh-keys-and-configuration]] section.
 
 ## Can I reboot my instance without worrying about losing data?
 
