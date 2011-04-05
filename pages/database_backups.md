@@ -33,7 +33,7 @@ Download the backup you are interested in restoring and you can continue with th
 
 The key to which instance you run the restore command on is if you're running a separate database server or not.
 
-If you've setup an [[ssh alias to your database or solo instance|env_ssh_keys]] then you could use a command like this to copy your dump to your instance:
+If you've setup an [[ssh alias to your database or solo instance|ssh-keys-and-configuration]] then you could use a command like this to copy your dump to your instance:
 
     scp ~/Downloads/wiki_production.2010-03-17T01-10-03.sql myapp/~
 

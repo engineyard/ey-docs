@@ -20,7 +20,7 @@ Have Chef render a file to the include folder.
                                      
 **Option B**
 
-Place the file on `/db` volume (such as `/db/mysql.d/`) and then create a symlink with a [[deploy hook|deploy_hooks]].
+Place the file on `/db` volume (such as `/db/mysql.d/`) and then create a symlink with a [[deploy hook|deploy_hooks_api]].
 
 ## Dynamic Change
 
