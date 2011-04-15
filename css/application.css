@@ -2439,13 +2439,13 @@ button.issue {
   box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333;
   color: #fff;
   font-family: "helvetica neue", helvetica, arial, sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   line-height: 1;
   padding: 12px 0 14px 0;
   text-align: center;
   text-shadow: 0px -1px 1px rgba(0, 0, 0, .8);
-  width: 150px;
+  width: 165px;
 }
 
 button.issue:hover {
@@ -2462,6 +2462,10 @@ button.issue:active {
   -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
   -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
   box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
+}
+
+p.issue_question {
+	font-size: 17px;
 }
 
 /* Sidebar Nav */
