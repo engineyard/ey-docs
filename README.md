@@ -23,13 +23,9 @@ Part of the reason we switched to Gollum and GitHub for the EY Docs was to make 
 
 4. Add your changes
 
-5. Run the specs and fix any formatting issues
+5. Commit changes to your branch
 
-        rake spec
-
-6. Commit changes to your branch
-
-7. [Send us a pull request][pull-req]
+6. [Send us a pull request][pull-req]
 
 If it's a small or obvious change, we're likely to merge it right away.  If we have questions, we'll communicate with you using the pull request's issue page.
 
