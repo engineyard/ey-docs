@@ -1535,9 +1535,13 @@ header {
   .content + .content {
     border: none; }
 
+wrapper section {
+  float:left;
+  width:500px;
+}
 .sidebar {
   clear: none;
-  float: right;
+  float: left;
   width: 240px;
   border-top: 0;
   padding-top: 0; }
@@ -2468,12 +2472,18 @@ p.issue_question {
 	font-size: 17px;
 }
 
+#content .wrapper {
+  position:relative;
+  width:100px;
+  left:100px;
+}
 /* Sidebar Nav */
 #content nav { float: left; margin-right: 15px; }
    #content nav ul li a { font-weight: bold; color: #595c61; padding: 10px 10px 10px 25px; border-bottom: 1px solid #f4f4f4; display: block; text-decoration: none; }
      #content nav ul li:last-child a { border: none; }
 
 /* Wiki Sidebar */
+
 
 #content nav#sidebar li {
   		list-style-image: url("../images/arrow-spacer.png"); padding: 5px 5px; border-bottom: 1px solid #f4f4f4; margin-left: 20px;

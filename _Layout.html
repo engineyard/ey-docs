@@ -132,11 +132,14 @@
 
     <div id="content">
       <div class="wrapper">
-        {{ page.content }}
-      </div>
-      <nav id="sidebar">
-        {{ site.pages["toc"].content }}
-      </nav>
+        <nav id="sidebar">
+          {{ site.pages["toc"].content }}
+        </nav>
+        <section>                               
+          {{ page.content }}
+        </section>
+        <div class="clear"></div>
+      </div>  
     </div>            
 
     <div class="clear"></div> 
