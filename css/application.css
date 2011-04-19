@@ -2471,6 +2471,7 @@ p.issue_question {
 .wrapper section {
   float:left;
   width:500px;
+  clear:none;
 }
 
 /* Sidebar Nav */
