@@ -2468,7 +2468,7 @@ p.issue_question {
 	font-size: 17px;
 }
 
-#wrapper section {
+.wrapper section {
   float:left;
   width:500px;
 }
