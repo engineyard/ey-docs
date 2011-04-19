@@ -2472,11 +2472,6 @@ p.issue_question {
 	font-size: 17px;
 }
 
-#content .wrapper {
-  position:relative;
-  width:100px;
-  left:100px;
-}
 /* Sidebar Nav */
 #content nav { float: left; margin-right: 15px; }
    #content nav ul li a { font-weight: bold; color: #595c61; padding: 10px 10px 10px 25px; border-bottom: 1px solid #f4f4f4; display: block; text-decoration: none; }
