@@ -2483,7 +2483,7 @@ p.issue_question {
 
 
 #content nav#sidebar li {
-  		list-style-image: url("../images/arrow-spacer.png"); padding: 5px 5px; border-bottom: 1px solid #f4f4f4; margin-left: 20px;
+  		list-style-image: url("../images/arrow-spacer.png"); padding: 5px 5px 5px 0; border-bottom: 1px solid #f4f4f4; margin-left: 20px;
 	}
 	#content nav#sidebar li.collapsed {
   		list-style-image: url("../images/collapsed-arrow.png");
