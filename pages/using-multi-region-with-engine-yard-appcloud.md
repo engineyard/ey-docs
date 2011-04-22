@@ -7,6 +7,7 @@ If you have multi-region enabled, you will be able to create environments and bo
   * US West (Northern California/us-west-1)
   * EU (Ireland/eu-west-1)
   * Asia Pacific (Singapore/ap-southeast-1)
+  * Japan (Tokyo/ap-northeast-1)
 
 All AppCloud features are supported in each of these regions.
 
@@ -21,8 +22,6 @@ There are a few limitations:
   * Environments can be cloned, but only in the same region.
   * IP addresses are assigned to a region - and thus cannot be moved to a different region.
   * All limitations regarding the number of instances, IP addresses, and snapshots are per-region.
-  * **WARNING**: Database backups are currently being sent to **US East** region (us-east-1), so all backup traffic will incur bandwidth charges. 
-    * This is limitation is scheduled to be lifted before Multi-Region leaves the Beta Program.
   * Pricing within each region is subject to change.
 
 ## Steps for Booting Instances in any Region
