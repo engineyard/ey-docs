@@ -1,6 +1,6 @@
 # Steps to Recover from a US-East Outage
 
-We sincerely apologize for the downtime and issues that this has cause for your company and customers.  We have compiled these steps, with links to helpful documentation, in order to help you recover your site.
+We sincerely apologize for the downtime and issues that this has caused your company and customers.  We have compiled these steps, with links to helpful documentation, in order to help you recover your site.
 
 Here are the steps you can take to bring your site back up in the US West zone.
 
