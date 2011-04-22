@@ -53,7 +53,7 @@ If you want to build and view the EY Docs locally, here is what you need to do:
         gollum-site generate   # Will generate the files
         gollum-site serve      # Will start the gollum-site server
 
-5. Navigate to <http://localhost:8000/> (Default) to access a fully-functional copy of the EY Docs.
+5. Navigate to <http://localhost:8000/Home.html> (Default) to access a fully-functional copy of the EY Docs.
 
 
 <A name="feedback">
