@@ -13,5 +13,3 @@ Here are the steps you can take to bring your site back up in the US West zone.
 4. Once your environment is up in the US-West zone you’ll need to upload your database and any assets, etc. to the new environment.
 
 5. The final step will be to update your DNS information so your domain name points to the new IP address for your environment in the US-West zone.
-
-NOTE: If you’re unable to get your files from either /db or /data volumes please open a [ticket with support](http://support.cloud.engineyard.com) immediately.
