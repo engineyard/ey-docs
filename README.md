@@ -61,6 +61,10 @@ If you want to build and view the EY Docs locally, here is what you need to do:
 
 * Create a new [Issue][issues]
 
+## EY Staff How to Deploy Changes
+* When deploying changes from the CLI make sure to pass the no-migration option `ey deploy --no-migrate`.
+* When deploying changes from the Web UI make sure that the checkbox next to Migrations is unchecked.
+
 [issues]:     https://github.com/engineyard/ey-docs/issues "EY-Docs Issues Page"
 [forking]:    http://help.github.com/forking/ "Github Forking Guide"
 [pull-req]:   http://help.github.com/pull-requests/ "Github Pull-Requests Guide"
