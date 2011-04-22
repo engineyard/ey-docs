@@ -13,4 +13,5 @@ Some customers have been able to utilize our multi-region beta feature to move t
 Snapshots can fail if your volume is affected by the EBS problem. Normally when an environment is terminated we initiate snapshots of the volumes required to bring the environment back up to its previous state. This can fail for the environment affected by this problem. If you choose to take down the environment, it can result in data loss.
 
 **Steps to recover if multi-region is an option**
-Follow the directions laid out for you here [[Moving your site to US West|moving-your-site-to-us-west-zone]]
+
+Follow the directions on [[Moving your site to US West|moving-your-site-to-us-west-zone]]
