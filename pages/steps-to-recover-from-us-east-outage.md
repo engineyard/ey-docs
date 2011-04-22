@@ -1,15 +1,16 @@
 # Steps to Recover from a US-East Outage
 
-We sincerely apologize for the downtime and issues that this has caused your company and customers.  We have compiled these steps, with links to helpful documentation, in order to help you recover your site.
+**If data retention is more important to you at this time, we are recommending that you wait it out now until full operation is restored. Looking at the AWS status page now (http://status.aws.amazon.com), it doesn't sound like this can be too much further away.**
 
-Here are the steps you can take to bring your site back up in the US West zone.
+**Steps to recover if multi-region is not an option**
 
-1. Dump your data from the /db volume and pull that dump down locally: [http://docs.engineyard.com/dump-and-load-your-mysql-database.html](http://docs.engineyard.com/dump-and-load-your-mysql-database.html)
+*Trying a different subzone*
 
-2. Any other assets required for your site, on the /data volume would also need to be pulled down locally in preparation to be restored on the new zone.
+Some customers have been able to utilize our multi-region beta feature to move to another availability zone. However, it may be best to first try and create on East in a different sub zone since this would be the simplest option. Amazon is stating that all but one subzone in the US East region is operating properly. Unfortunately, the zone labels are assigned differently on a per-client basis to aid in load balancing -- so we recommend using trial and error by selecting a specific zone in the “Edit Environment” link under more options.
 
-3. This excellent blog post shows how to create a new environment in the US-West zone: [http://www.bluemangolearning.com/blog/2011/04/migrate-instance-to-us-west-availability-zone-in-ey-appcloud/](http://www.bluemangolearning.com/blog/2011/04/migrate-instance-to-us-west-availability-zone-in-ey-appcloud/)
+*Note about snapshots*
 
-4. Once your environment is up in the US-West zone you’ll need to upload your database and any assets, etc. to the new environment.
+Snapshots can fail if your volume is affected by the EBS problem. Normally when an environment is terminated we initiate snapshots of the volumes required to bring the environment back up to its previous state. This can fail for the environment affected by this problem. If you choose to take down the environment, it can result in data loss.
 
-5. The final step will be to update your DNS information so your domain name points to the new IP address for your environment in the US-West zone.
+**Steps to recover if multi-region is an option**
+Follow the directions laid out for you here [[Moving your site to US West|moving-your-site-to-us-west-zone]]
