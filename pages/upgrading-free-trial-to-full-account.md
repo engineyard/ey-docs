@@ -36,7 +36,7 @@ Once you’ve selected the Custom option, you will see some new options show up 
 
 Next, you can specify the quantity of Application Instances you’d like to add as well as their size.  For more information on the details associated with various instance sizes, check out the Engine Yard AppCloud [[price list|http://www.engineyard.com/products/appcloud/pricing]].
 
-Once you’ve specified your instance requirements, the next step is to choose which snapshot you’d like to boot from. The most recent snapshot should appear at the top, or notify you if the most recent snapshot is still pending. You can also choose how large you want your snapshots to be- the default is 5GB and it can range up to 1024GB.  Finally, you can choose to add Utility instances (servers designed to run dedicated tasks) if you would like.
+Once you’ve specified your instance requirements, the next step is to choose which snapshot you’d like to boot from. The most recent snapshot should appear at the top, or notify you if the most recent snapshot is still pending. You can also choose how much room you want to reserve for future snapshot storage- the default is 5GB and it can range up to 1024GB.  Finally, you can choose to add Utility instances (servers designed to run dedicated tasks) if you would like.
 
 ###Booting and Verifying your Environment
 
