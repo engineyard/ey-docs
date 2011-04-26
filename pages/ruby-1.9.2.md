@@ -4,5 +4,4 @@
 
 The latest version of the ruby interpreter from www.ruby-lang.org is now a candidate for testing on Engine Yard AppCloud.
 
-  - [[signup-ruby-192]]
   - [[Using Ruby 1.9.2 with Engine Yard AppCloud]]
