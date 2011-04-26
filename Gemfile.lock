@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/francois2metz/gollum-site.git
+  revision: d244e27a551b0b177d9f4762602289df91b640f8
+  specs:
+    gollum-site (0.1.9)
+      gollum (>= 1.2.0)
+      liquid (>= 2.2.2)
+      mixlib-log (>= 1.1.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -13,10 +22,6 @@ GEM
       nokogiri (~> 1.4)
       sanitize (~> 2.0.0)
       sinatra (~> 1.0)
-    gollum-site (0.1.9)
-      gollum (>= 1.2.0)
-      liquid (>= 2.2.2)
-      mixlib-log (>= 1.1.0)
     grit (2.4.1)
       diff-lcs (~> 1.1)
       mime-types (~> 1.15)
@@ -40,5 +45,5 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (= 1.0.10)
-  gollum-site
+  gollum-site!
   rdiscount
