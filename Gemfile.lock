@@ -39,6 +39,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.0.10)
+  bundler (= 1.0.10)
   gollum-site
   rdiscount
