@@ -58,7 +58,6 @@
   * [[Upgrade Free Trial to Full Account|upgrading-free-trial-to-full-account]]
 * [[BETA|beta_home]]
   * [[Collaboration|collaboration]]
-  * [[JRuby|jruby]]
   * [[Multi-Region|multi-region]]
   * [[Passenger3|passenger3]]
   * [[Ruby 1.9.2|ruby-1.9.2]]
