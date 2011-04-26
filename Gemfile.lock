@@ -1,6 +1,7 @@
 GIT
   remote: https://github.com/francois2metz/gollum-site.git
-  revision: d244e27a551b0b177d9f4762602289df91b640f8
+  revision: 6e015310a44685238f5b5bfbe9c27cbb5e9774c5
+  branch: custom_sanitization
   specs:
     gollum-site (0.1.9)
       gollum (>= 1.2.0)
