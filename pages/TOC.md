@@ -60,6 +60,7 @@
   * [[Collaboration|collaboration]]
   * [[Multi-Region|multi-region]]
   * [[Passenger3|passenger3]]
+  * [[Rubinius|rubinius]]
   * [[Ruby 1.9.2|ruby-1.9.2]]
 * [[FAQs|faq_home]]
   * [[AppCloud FAQ|appcloud_faq]]
