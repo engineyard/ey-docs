@@ -22,8 +22,8 @@ Once you have lost the ability to connect to the instance over SSH, the only way
 
   * **Application Master or Solo Instance** - If an application master in a clustered environment fails, our takeover process will kick in and terminate this instance for you. It will then promote another application instance to the master and build another application instance for you. However, if you run a solo environment, then this protocol is not in place and you will need to [[terminate and rebuild the whole environment|rebuilding-an-environment]].
   * **DB Master** - If your DB master fails, you need to [[rebuild the whole environment|rebuilding-an-environment]] as there is no way to terminate a DB master.
-  * **Application Instance** - You can terminate the specific problematic instance via the instance's ![Terminate icon](images/terminate-button.png) icon on the dashboard, then add a new instance to the cluster.
-  * **Utility Instance** - you can terminate the specific problematic instance via the instance's  ![Terminate icon](images/terminate-button.png) icon on the dashboard, then add a new instance to the cluster, using the last snapshot that was taken.
+  * **Application Instance** - You can terminate the specific problematic instance via the instance's ![Terminate icon](images/terminate.png) icon on the dashboard, then add a new instance to the cluster.
+  * **Utility Instance** - you can terminate the specific problematic instance via the instance's  ![Terminate icon](images/terminate.png) icon on the dashboard, then add a new instance to the cluster, using the last snapshot that was taken.
 
 
 ## Note about Custom Chef Recipes
