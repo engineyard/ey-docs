@@ -20,13 +20,13 @@ While we cannot often find out the reason for a crash like this, it's certainly 
 
 Once you have lost the ability to connect to the instance over SSH, the only way to recover is to terminate it and rebuild from snapshots. The way to do this differs, depending on the role of the problematic instance:
 
-  * **Application Master or Solo Instance** - If an application master in a clustered environment fails, our takeover process will kick in and terminate this instance for you. It will then promote another application instance to the master and build another application instance for you. However, if you run a solo environment, then this protocol is not in place and you will need to [[appcloud:guides:environments:rebuilding-an-environment|terminate and rebuild the whole environment]].
-  * **DB Master** - If your DB master fails, you need to [[rebuilding-an-environment|rebuild the whole environment]] as there is no way to terminate a DB master.
+  * **Application Master or Solo Instance** - If an application master in a clustered environment fails, our takeover process will kick in and terminate this instance for you. It will then promote another application instance to the master and build another application instance for you. However, if you run a solo environment, then this protocol is not in place and you will need to [[terminate and rebuild the whole environment|rebuilding-an-environment]].
+  * **DB Master** - If your DB master fails, you need to [[rebuild the whole environment|rebuilding-an-environment]] as there is no way to terminate a DB master.
   * **Application Instance** - You can terminate the specific problematic instance via the instance's {{:appcloud:guides:environments:terminate.png|Terminate icon}} icon on the dashboard, then add a new instance to the cluster.
   * **Utility Instance** - you can terminate the specific problematic instance via the instance's {{:appcloud:guides:environments:terminate.png|Terminate icon}} icon on the dashboard, then add a new instance to the cluster, using the last snapshot that was taken.
 
 
 ## Note about Custom Chef Recipes
 
-Because instances or environments need to be terminated and rebuilt, it is important that any customizations that you have made to your environment have been carried out using custom chef recipes and not just done manually. When chef recipes have been used, a rebuild should be painless and can get you back up and running again quickly, without any intervention required. Please make sure you are familiar with our [[custom-chef-recipes|custom chef docs]] and you are using recipes for your custom configurations.
+Because instances or environments need to be terminated and rebuilt, it is important that any customizations that you have made to your environment have been carried out using custom chef recipes and not just done manually. When chef recipes have been used, a rebuild should be painless and can get you back up and running again quickly, without any intervention required. Please make sure you are familiar with our [[custom chef docs|custom-chef-recipes]] and you are using recipes for your custom configurations.
 
