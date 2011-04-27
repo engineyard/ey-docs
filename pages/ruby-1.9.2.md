@@ -1,7 +1,0 @@
-# Ruby 1.9.2
-
-![Figure 1](images/ruby-a-programmer-s-best-friend.gif)
-
-The latest version of the ruby interpreter from www.ruby-lang.org is now a candidate for testing on Engine Yard AppCloud.
-
-  - [[Using Ruby 1.9.2 with Engine Yard AppCloud]]

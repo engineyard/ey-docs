@@ -86,6 +86,6 @@ For each Beta feature there is a Mailing List to discuss bugs, issues and featur
 
 Current Beta Features (and their discussion lists):
 
-* [[Ruby 1.9.2]]
+* There are currently no features in public Beta.
 
 
