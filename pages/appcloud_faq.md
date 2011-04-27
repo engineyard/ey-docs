@@ -196,5 +196,5 @@ When developing on Windows you'll find when you deploy your Applications on EY t
 
 ## One of my instances is not responding. What can I do?
 
-If one of your instances stops responding, it may have crashed or frozen. You will need to terminate and rebuild the instance or environment, depending on which instance is problematic. Please read [[Dealing with a Frozen/Crashed Instance|frozen-instance]]
+If one of your instances stops responding, it may have crashed or frozen. You will need to terminate and rebuild the instance or environment, depending on which instance is problematic. Please read [[Dealing with a Frozen/Crashed Instance|frozen-instances]]
 
