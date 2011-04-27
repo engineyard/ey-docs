@@ -9,4 +9,4 @@ Icon?
 .Trashes
 
 # Static HTML
-_site/*
+_site/*.*.swp
