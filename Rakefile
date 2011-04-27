@@ -13,3 +13,13 @@ end
 
 desc "Generate and run the gollum site in development mode"
 task :dev => [:generate, :serve]
+
+desc "Deploy to stage environment"
+task :generate do
+  sh "ey deploy --no-migrate -e EY_Documentation_clone"
+end
+
+desc "Deploy to production environment"
+task :generate do
+  sh "ey deploy --no-migrate -e EY_Documentation"
+end
