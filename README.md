@@ -64,7 +64,7 @@ You can customize sanitization with three options:
 * --allow_attributes: custom attributes allowed, comma separated
 * --allow_protocols: custom protocols in *href* allowed, comma separated
 
-       $ gollum-site generate --allow_elements embed,object --allow_attributes src --allow_protocols irc
+       `$ gollum-site generate --allow_elements embed,object --allow_attributes src --allow_protocols irc`
 
 <A name="feedback">
 ## Issues, Questions, Comments, Etc.
