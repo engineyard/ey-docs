@@ -193,3 +193,8 @@ To fix this, you just need to include the `mysql2` gem in your Gemfile.
 ## Bundler 1.0 Will Not Install Compiled Gems in UNIX When `bundle install` is Run in Windows
 
 When developing on Windows you'll find when you deploy your Applications on EY that it will not find certain gems such as MySQL2 no matter what you do.  Please review this open [[Bug report #646|https://github.com/carlhuda/bundler/issues#issue/646]] for more information on it.
+
+## One of my instances is not responding. What can I do?
+
+If one of your instances stops responding, it may have crashed or frozen. You will need to terminate and rebuild the instance or environment, depending on which instance is problematic. Please read [[Dealing with a Frozen/Crashed Instance|frozen-instance]]
+
