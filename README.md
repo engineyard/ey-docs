@@ -56,6 +56,16 @@ If you want to build and view the EY Docs locally, here is what you need to do:
 5. Navigate to <http://localhost:8000/Home.html> (Default) to access a fully-functional copy of the EY Docs.
 
 
+## Sanitization
+
+You can customize sanitization with three options:
+
+* --allow_elements: custom elements allowed, comma separated
+* --allow_attributes: custom attributes allowed, comma separated
+* --allow_protocols: custom protocols in *href* allowed, comma separated
+
+       `$ gollum-site generate --allow_elements embed,object --allow_attributes src --allow_protocols irc`
+
 <A name="feedback">
 ## Issues, Questions, Comments, Etc.
 

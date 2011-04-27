@@ -71,11 +71,10 @@ Alpha features carry a **warning: do not request support via the normal support 
 
 Current Alpha Features (and how to request access):
 
-  * [[Ruby 1.9.2]]  - [[Request access|signup-ruby-192]]
-  * [[JRuby]]  - [[Request access|signup-jruby]]
   * [[Collaboration]]  - [[Request access|signup-collaboration]]
   * [[Passenger 3|Passenger3]] - [[Request access|signup-passenger3]]
   * [[Multi-Region]] - [[Request access|signup-multi-region]]
+  * [[Rubinius]] - [[Request access|signup-rubinius]]
 
 ## Beta Features
 
@@ -87,6 +86,6 @@ For each Beta feature there is a Mailing List to discuss bugs, issues and featur
 
 Current Beta Features (and their discussion lists):
 
-* There are no public Beta features
+* [[Ruby 1.9.2]]
 
 
