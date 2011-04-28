@@ -52,6 +52,7 @@
   * [[Find Important Log Files|find-important-log-files]]
   * [[Set Time Zone for an AppCloud Instance|set-time-zone-for-an-appcloud-instance]]
   * [[Setup Cygwin to Run Linux Commands in Windows|setup-cygwin-to-run-nix-commands-in-windows]]
+  * [[Deal with Frozen Instances|frozen-instances]]
   * [[Hibernate Your Account|hibernate-your-account]]
   * [[Review Usage Charges|review-usage-charges]]
   * [[How to Add a New Relic RPM User|howto-add-a-new-relic-rpm-user]]
