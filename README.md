@@ -50,8 +50,10 @@ If you want to build and view the EY Docs locally, here is what you need to do:
 
 4. Generate the site and start a local server (This will take a minute. Don't fret.)
 
-        gollum-site generate   # Will generate the files
-        gollum-site serve      # Will start the gollum-site server
+        rake generate   # Will generate the files
+        rake serve      # Will start the gollum-site server
+
+		rake dev		# Generate and run the gollum site in development mode
 
 5. Navigate to <http://localhost:8000/Home.html> (Default) to access a fully-functional copy of the EY Docs.
 
@@ -72,7 +74,9 @@ You can customize sanitization with three options:
 * Create a new [Issue][issues]
 
 ## EY Staff How to Deploy Changes
-* When deploying changes from the CLI make sure to pass the no-migration option `ey deploy --no-migrate`.
+Make sure you deploy to staging before you push to production
+
+* When deploying changes from the terminal run `rake stage` and `rake production`.
 * When deploying changes from the Web UI make sure that the checkbox next to Migrations is unchecked.
 
 [issues]:     https://github.com/engineyard/ey-docs/issues "EY-Docs Issues Page"
