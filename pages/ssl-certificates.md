@@ -2,7 +2,7 @@
 
 This section contains (almost) everything you need to get your SSL certificate.  First, it covers generating a key and signing request.  
 
-But it doesn't show you how to purchase the certificate from [[Godaddy|http://www.godaddy.com] or [[Verisign|http://www.verisign.com], etc.  You'll need to assess your company's needs and make that decision on your own.
+But it doesn't show you how to purchase the certificate from [Godaddy](http://www.godaddy.com) or [Verisign](http://www.verisign.com), etc.  You'll need to assess your company's needs and make that decision on your own.
 
 Then, we pick up after you've purchased you're certificate and are ready to install your SSL certificate to your application on Engine Yard AppCloud.
 
@@ -19,26 +19,9 @@ This process will help you to generate the two files you need to purchase a SSL 
 
 <html><span style="color:red;">You cannot use a passphrase for your SSL certificate on Engine Yard AppCloud.</span></html>
 
-Follow these steps to remove the passphrase from the key.
+Generate a key file with no passphrase.
 
-First generate the key file.
-
-    openssl genrsa -des3 -out yourdomain.com.key 2048
-
-You will be prompted for a password, just use "none".
-
-Now here's how to remove it:
-
-    cp yourdomain.com.key temp.key
-    openssl rsa -in temp.key -out yourdomain.com.key
-
-You will be prompted for the password, remember it is "none".
-
-You can delete the temp file.
-
-    rm temp.key
-
-And you've got you're passphrase-less key!
+    openssl genrsa -out yourdomain.com.key 2048
 
 ### Generate Your CSR
 
@@ -105,7 +88,7 @@ Optionally, if you don't have a certificate and you just want to test SSL featur
 
 <html><span style="color:red;">Skip down to "Link SSL Certificate" section if you're adding your PRODUCTION certificate.</span></html>
 
-What is a Self-Signed Certificate?  See what [[WikiPedia|http://en.wikipedia.org/wiki/Self-signed_certificate] has to say about the topic.
+What is a Self-Signed Certificate?  See what [WikiPedia](http://en.wikipedia.org/wiki/Self-signed_certificate) has to say about the topic.
 
   - Give your SSL cert a name.  Use the **SSL Certificate Name** field.
   - Click on **Generate Self-Signed SSL Certificate** radio button.
