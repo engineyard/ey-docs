@@ -19,26 +19,9 @@ This process will help you to generate the two files you need to purchase a SSL 
 
 <html><span style="color:red;">You cannot use a passphrase for your SSL certificate on Engine Yard AppCloud.</span></html>
 
-Follow these steps to remove the passphrase from the key.
+Generate a key file with no passphrase.
 
-First generate the key file.
-
-    openssl genrsa -des3 -out yourdomain.com.key 2048
-
-You will be prompted for a password, just use "none".
-
-Now here's how to remove it:
-
-    cp yourdomain.com.key temp.key
-    openssl rsa -in temp.key -out yourdomain.com.key
-
-You will be prompted for the password, remember it is "none".
-
-You can delete the temp file.
-
-    rm temp.key
-
-And you've got you're passphrase-less key!
+    openssl genrsa -out yourdomain.com.key 2048
 
 ### Generate Your CSR
 
