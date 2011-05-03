@@ -4,7 +4,7 @@ Engine Yard's AppCloud uses [[Amazon's Elastic IP Addresses|http://aws.amazon.co
 
 ## Add an Address
 
-  - From the Dashboard for your non-running environment, you click **Boot Instances**.
+  - From the Dashboard for your non-running environment, you click **Boot**.
   - Then for the External Address drop-down you select **Add IP Address** and a new IP address will be allocated for you and assigned this application in this environment.
 
 ## Detach an Address
@@ -27,7 +27,7 @@ Once you detach an IP address you can move it to a different environment.  You w
 ### Boot The Instance
 
 Now you'll reboot the instance and attach the IP address you detached above.
-  - Click on **Boot Instances** to be taken to the configuration for "your application" screen.
+  - Click on **Boot** to be taken to the configuration for "your application" screen.
   - Configure your cluster for your needs.
   - For the External Address drop-down, choose the **IP address** you detached.
 

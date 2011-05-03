@@ -19,7 +19,7 @@ When you take a snapshot before you terminate the environment, it catches up all
   - Put your site into maintenance mode.  You can run `ey web disable` to put up a maintenance page.
   - Take a snapshot before you begin by clicking on the **Snapshot** button in your environment.  
   - Click on the **Terminate** button to shutdown your environment.
-  - Once all instances are terminated, you can click the **Boot Instances** button.
+  - Once all instances are terminated, you can click the **Boot** button.
   - From the Configuration screen, you need to choose the **Custom** option.
   - Configure the appropriate instances (as you have done before, or with the new options you desire.)
   - Ensure that the most recent snapshots from the **Application snapshot** and **Database snapshot** drop-downs are selected.  (They are by default.)

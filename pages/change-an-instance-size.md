@@ -22,7 +22,7 @@ To resize your instances properly, take the following steps.
 
   - Make a note of the current instance sizes being used, their volume sizes, and any utility instance names you're using.
   - Click the **Terminate** button for the environment you want to change. This is when you would want to change your application stack if you're going to do so.
-  - Click the **Boot Instances** button for the environment you terminated and now want to restart.
+  - Click the **Boot** button for the environment you terminated and now want to restart.
   - Choose the **Custom** option.
   - Choose the number of application instances you want, set the new size you'd like and then choose the snapshot you want to restore from.
   - Check **Use separate database instance** (this will already be checked if you chose more than one application server). Choose the size you want for your database instance (add the number of slaves you want or had setup previously) and choose the snapshot you want to restore from.
