@@ -2,7 +2,7 @@
 
 This section contains (almost) everything you need to get your SSL certificate.  First, it covers generating a key and signing request.  
 
-But it doesn't show you how to purchase the certificate from [[Godaddy|http://www.godaddy.com] or [[Verisign|http://www.verisign.com], etc.  You'll need to assess your company's needs and make that decision on your own.
+But it doesn't show you how to purchase the certificate from [Godaddy](http://www.godaddy.com) or [Verisign](http://www.verisign.com), etc.  You'll need to assess your company's needs and make that decision on your own.
 
 Then, we pick up after you've purchased you're certificate and are ready to install your SSL certificate to your application on Engine Yard AppCloud.
 
@@ -88,7 +88,7 @@ Optionally, if you don't have a certificate and you just want to test SSL featur
 
 <html><span style="color:red;">Skip down to "Link SSL Certificate" section if you're adding your PRODUCTION certificate.</span></html>
 
-What is a Self-Signed Certificate?  See what [[WikiPedia|http://en.wikipedia.org/wiki/Self-signed_certificate] has to say about the topic.
+What is a Self-Signed Certificate?  See what [WikiPedia](http://en.wikipedia.org/wiki/Self-signed_certificate) has to say about the topic.
 
   - Give your SSL cert a name.  Use the **SSL Certificate Name** field.
   - Click on **Generate Self-Signed SSL Certificate** radio button.
