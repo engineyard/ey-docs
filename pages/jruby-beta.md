@@ -2,8 +2,8 @@
 
 ## Before starting
 
-  * Your application should use Bundler 1.0.1 or later to manage gems.
-  * Gemfile must include `trinidad`
+  * Your application should use Bundler 1.0.10 or later to manage gems.
+  * Gemfile must include `trinidad`.
 
 ## Preparing an existing Rails app
 
@@ -12,13 +12,14 @@
 <pre>
     source 'http://gems.engineyard.com'
     
-    if defined?(JRUBY_VERSION)
+    platforms :jruby do
       gem 'activerecord-jdbc-adapter'
       gem 'jruby-openssl'
       gem 'jdbc-mysql', :require => false
       gem 'jdbc-sqlite3', :require => false
       gem 'trinidad'
-    else
+    end
+    platforms :ruby do
       gem 'sqlite3-ruby', :require => 'sqlite3'
     end
 </pre>
@@ -40,11 +41,9 @@ Then run these commands to update your Gemfile.lock:
     rvm install jruby
     rvm jruby
     bundle install
-    trinidad
     
-    git checkout -b jruby
     git commit -a -m "Gemfile updated for jruby/trinidad"
-    git push origin jruby
+    git push origin
     
     rvm 1.8.7
     gem install engineyard --pre --source http://gems.engineyard.com
