@@ -58,7 +58,7 @@
   * [[How to Add a New Relic RPM User|howto-add-a-new-relic-rpm-user]]
   * [[Use New Relic|use-new-relic-rpm-with-engine-yard-cloud]]
   * [[Upgrade Free Trial to Full Account|upgrading-free-trial-to-full-account]]
-* [[BETA|beta_home]]
+* [[Beta|beta_home]]
   * [[Collaboration|collaboration]]
   * [[Multi-Region|multi-region]]
   * [[Passenger3|passenger3]]
