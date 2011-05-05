@@ -52,7 +52,7 @@ Then run these commands to update your Gemfile.lock:
 If you are not using RVM, do this in `$RAILS_ROOT` to update `Gemfile`:
 
 <pre>
-    jruby -S bundle bundle install
+    jruby -S bundle install
     git add Gemfile*
     git commit -m 'Update Gemfile* for JRuby'
     git push
