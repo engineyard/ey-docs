@@ -10,7 +10,7 @@
 - An example snippet to your Gemfile:
 
 <pre>
-    source 'http://gems.engineyard.com'
+    source 'http://rubygems.org'
     
     platforms :jruby do
       gem 'activerecord-jdbc-adapter'
@@ -45,8 +45,8 @@ Then run these commands to update your Gemfile.lock:
     git commit -a -m "Gemfile updated for jruby/trinidad"
     git push origin
     
-    rvm 1.8.7
-    gem install engineyard --pre --source http://gems.engineyard.com
+    rvm 1.8.7 gem install engineyard
+    
 </pre>
 
 If you are not using RVM, do this in `$RAILS_ROOT` to update `Gemfile`:
