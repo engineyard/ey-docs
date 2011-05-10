@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Ruby 1.9 is version of MRI which brings substantial performance improvements. Engine Yard's version of Ruby 1.9 also has garage collection enabled which allows customization for your specific requirements.
+Ruby 1.9 is version of MRI which brings substantial performance improvements. Engine Yard's version of Ruby 1.9 also has garbage collection enabled which allows customization for your specific requirements.
 
 ## Getting Started
 
