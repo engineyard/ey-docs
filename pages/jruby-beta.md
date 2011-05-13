@@ -10,18 +10,18 @@
 - An example snippet to your Gemfile:
 
 <pre>
-    source 'http://rubygems.org'
-    
-    platforms :jruby do
-      gem 'activerecord-jdbc-adapter'
-      gem 'jruby-openssl'
-      gem 'jdbc-mysql', :require => false
-      gem 'jdbc-sqlite3', :require => false
-      gem 'trinidad'
-    end
-    platforms :ruby do
-      gem 'sqlite3-ruby', :require => 'sqlite3'
-    end
+  source 'http://rubygems.org'
+  
+  platforms :jruby do
+    gem 'activerecord-jdbc-adapter'
+    gem 'jruby-openssl'
+    gem 'jdbc-mysql', :require => false
+    gem 'jdbc-sqlite3', :require => false
+    gem 'trinidad'
+  end
+  platforms :ruby do
+    gem 'mysql2'
+  end
 </pre>
 
 or, equivalently:
@@ -32,30 +32,34 @@ or, equivalently:
   gem 'jdbc-mysql', :require => false, :platforms => :jruby
   gem 'jdbc-sqlite3', :require => false, :platforms => :jruby
   gem 'trinidad', :platforms => :jruby
-  gem 'sqlite3-ruby', :require => 'sqlite3', :platforms => :ruby
+  gem 'mysql2', :platforms => :ruby
 </pre>
 
 Then run these commands to update your Gemfile.lock:
 
 <pre>
-    rvm install jruby
-    rvm jruby
-    bundle install
-    
-    git commit -a -m "Gemfile updated for jruby/trinidad"
-    git push origin
-    
-    rvm 1.8.7 gem install engineyard
-    
+  rvm install jruby
+  rvm jruby
+  bundle install
+  
+  git commit -a -m "Gemfile updated for jruby/trinidad"
+  git push origin
+</pre>
+
+To use the `ey deploy` CLI tool:
+
+<pre>  
+  rvm --create 1.9.2@ey exec gem install engineyard
+  rvm wrapper 1.9.2@ey --no-prefix ey
 </pre>
 
 If you are not using RVM, do this in `$RAILS_ROOT` to update `Gemfile`:
 
 <pre>
-    jruby -S bundle install
-    git add Gemfile*
-    git commit -m 'Update Gemfile* for JRuby'
-    git push
+  jruby -S bundle install
+  git add Gemfile*
+  git commit -m 'Update Gemfile* for JRuby'
+  git push
 </pre>
 
 (Use branch of your choice.)
@@ -63,15 +67,15 @@ If you are not using RVM, do this in `$RAILS_ROOT` to update `Gemfile`:
 - `config.ru` needs to be modified to `require 'bundler/setup'` correctly before the first use of `Bundler`, like so:
 
 <pre>
-    # This file is used by Rack-based servers to start the application.
-    # Find the latest bundler and get started                          
-    
-    require 'rbconfig'
-    $:.unshift(Dir[RbConfig::CONFIG["libdir"] + "/ruby/gems/1.8/gems/bundler-*/lib"].sort.last)
-    require 'bundler/setup'
-    
-    require ::File.expand_path('../config/environment',  __FILE__)
-    run CloudstockDemo::Application
+  # This file is used by Rack-based servers to start the application.
+  # Find the latest bundler and get started                          
+  
+  require 'rbconfig'
+  $:.unshift(Dir[RbConfig::CONFIG["libdir"] + "/ruby/gems/1.8/gems/bundler-*/lib"].sort.last)
+  require 'bundler/setup'
+  
+  require ::File.expand_path('../config/environment',  __FILE__)
+  run CloudstockDemo::Application
 </pre>
 
 ## Steps
