@@ -63,6 +63,7 @@
   * [[Multi-Region|multi-region]]
   * [[Passenger3|passenger3]]
   * [[Rubinius|rubinius]]
+  * [[Trinidad/JRuby|jruby]]
 * [[FAQs|faq_home]]
   * [[AppCloud FAQ|appcloud_faq]]
   * [[CLI Deployment FAQ|deployment_faq]]
