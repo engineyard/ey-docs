@@ -46,7 +46,7 @@ This section lists the actions that you need to take to ensure smooth operation 
 * [Update custom recipes](http://docs.engineyard.com/appcloud_update_2011_05_24.html#recipes)
 * [(Optional) Refactor rewrite directives](http://docs.engineyard.com/appcloud_update_2011_05_24.html#optional)
 
-<h3><a href="false">Replace "false" with "off"</a></h3>
+<h3><a id="false">Replace "false" with "off"</a></h3>
 
 If you use keep files or custom recipes, then you need to do this.
 In nginx 0.7.x and above, "false" is not valid. Use "off" instead.
@@ -59,7 +59,7 @@ In nginx 0.7.x and above, "false" is not valid. Use "off" instead.
 	
 	do not write `proxy_redirect false;`
 
-<h3><a href="keep">Update keep files</a></h3>
+<h3><a id="keep">Update keep files</a></h3>
 
 If you use keep files, then you need to test your changes in a non-production environment. Don't update your production environment until you have validated your customization in a test environment.
 
@@ -73,7 +73,7 @@ If you use keep files, then you need to test your changes in a non-production en
 4. Validate/customize behavior in the environment, recreating keep files as needed.
 5. Apply the update to your production environment by copying any new keep files and deleting obsolete keep files.
 
-<h3><a href="recipes">Update custom recipes</a></h3>
+<h3><a id="recipes">Update custom recipes</a></h3>
 
 If you use custom recipes, then you need to test your changes in a non-production environment Don't update your production environment until you have validated the update in a test environment.
 
@@ -86,7 +86,7 @@ If you use custom recipes, then you need to test your changes in a non-productio
 3. Validate/customize the behavior of your custom recipes as needed using the [engineyard gem](https://github.com/engineyard/engineyard) to upload and apply them to your testing environment.
 4. Use the engineyard gem to update and apply your custom recipes to your production environment.
 
-<h3><a href="optional">(Optional) Refactor rewrite directives</a></h3>
+<h3><a id="optional">(Optional) Refactor rewrite directives</a></h3>
 
 Now is a good time to refactor rewrite directives.
 
