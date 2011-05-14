@@ -32,7 +32,7 @@ Nginx Configuration Changes
 		* [Max HTTP Connections Module](https://github.com/ry/nginx-ey-balancer). A module that limited maximum connections to each upstream process in the upstream block.
 	* Modified modules in nginx:
 		* [Nginx Upload Module](https://github.com/vkholodkov/nginx-upload-module). Updated to v2.2.0.
-		* [Nginx Headers More Module](https://github.com/agentzh/headers-more-nginx-module). Updated v0.14rc1
+		* [Nginx Headers More Module](https://github.com/agentzh/headers-more-nginx-module). Updated to v0.14rc1.
 	* Removed the patch "[Post to static html](https://gist.github.com/47503/261f8e0a31ed4bb3ea03a9b6480bbea8f688d850)" from nginx. Files are now posted to application.
 
 <h3><a id="what">What do I have to do?</a></h3>
