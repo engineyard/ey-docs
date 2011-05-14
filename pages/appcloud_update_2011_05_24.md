@@ -17,10 +17,8 @@ Nginx Configuration Changes
 * Removed most "if statements" in accordance with [nginx best practices](http://wiki.nginx.org/IfIsEvil)
 * Improved documentation in the configuration files
 * Deprecated usage:
-    	```bash
 		/etc/nginx/#{application}.rewrites
     	/etc/nginx/#{application}/custom.locations.conf
-		```
   both are replaced by:
 		/etc/nginx/#{application}/custom.conf
 * Added new file for SSL-based connection customizations:
