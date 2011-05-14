@@ -59,8 +59,6 @@
   * [[Use New Relic|use-new-relic-rpm-with-engine-yard-cloud]]
   * [[Upgrade Free Trial to Full Account|upgrading-free-trial-to-full-account]]
 * [[Beta|beta_home]]
-  * [[Collaboration|collaboration]]
-  * [[Multi-Region|multi-region]]
   * [[Passenger3|passenger3]]
   * [[Rubinius|rubinius]]
   * [[Trinidad/JRuby|jruby]]
