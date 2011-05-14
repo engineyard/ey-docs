@@ -1,6 +1,6 @@
 ## Read these release notes before updating!
 
-**Important!** If you are currently using keep files or custom recipes, you need to take action before upgrading in order to keep everything working. See "What do I have to do?" below.
+**Important!** If you are currently using keep files or custom recipes, you need to take action before upgrading in order to keep everything working. See "[What do I have to do?](http://docs.engineyard.com/appcloud_update_2011_05_24.html#what)" below.
 
 ## What's changed?
 
@@ -35,7 +35,7 @@ Nginx Configuration Changes
 		* [Nginx Headers More Module](https://github.com/agentzh/headers-more-nginx-module). Updated v0.14rc1
 	* Removed the patch "[Post to static html](https://gist.github.com/47503/261f8e0a31ed4bb3ea03a9b6480bbea8f688d850)" from nginx. Files are now posted to application.
 
-## What do I have to do?
+<h3><a id="what">What do I have to do?</a></h3>
 
 This section lists the actions that you need to take to ensure smooth operation of your Ruby on Rails applications.
 
