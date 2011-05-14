@@ -8,7 +8,6 @@ Now you can, with Collaboration for Engine Yard AppCloud.
 
 Steps to getting started:
 
-  - [[Request Access|signup-collaboration]]
   - [[Getting Started with Collaboration|collaboration_info]]
 
 Note, only the account owner needs to request the Collaboration feature. They can share their account with other users who haven't requested access to the Collaboration feature.
