@@ -75,6 +75,7 @@ Current Alpha Features (and how to request access):
   * [[Passenger 3|Passenger3]] - [[Request access|signup-passenger3]]
   * [[Multi-Region]] - [[Request access|signup-multi-region]]
   * [[Rubinius]] - [[Request access|signup-rubinius]]
+  * [[Trinidad/JRuby]] - [[Request access|signup-jruby]]
 
 ## Beta Features
 
