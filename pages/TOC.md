@@ -67,5 +67,6 @@
 * [[FAQs|faq_home]]
   * [[AppCloud FAQ|appcloud_faq]]
   * [[CLI Deployment FAQ|deployment_faq]]
+* [[Release Notes|release_notes]]
 * [[Known Issues|known_issues]]
 * [[AppCloud Glossary|appcloud_glossary]]
