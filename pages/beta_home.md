@@ -71,9 +71,7 @@ Alpha features carry a **warning: do not request support via the normal support 
 
 Current Alpha Features (and how to request access):
 
-  * [[Collaboration]]  - [[Request access|signup-collaboration]]
   * [[Passenger 3|Passenger3]] - [[Request access|signup-passenger3]]
-  * [[Multi-Region]] - [[Request access|signup-multi-region]]
   * [[Rubinius]] - [[Request access|signup-rubinius]]
   * [[Trinidad/JRuby|jruby]] - [[Request access|signup-jruby]]
 
