@@ -1,6 +1,6 @@
 ## Read these release notes before updating!
 
-**Important!** If you are currently using keep files or custom recipes, you need to take action before upgrading in order to keep everything working. See "[What do I have to do?](http://docs.engineyard.com/appcloud_update_2011_05_24.html#what)" below.
+**Important!** If you are currently using keep files or custom recipes, you need to take action before upgrading in order to keep everything working. See "[What do I have to do?](http://docs.engineyard.com/appcloud_update_2011_05_18.html#what)" below.
 
 ## What's changed?
 
@@ -39,10 +39,10 @@ Nginx Configuration Changes
 
 This section lists the actions that you need to take to ensure smooth operation of your Ruby on Rails applications.
 
-* [Replace "false" with "off"](http://docs.engineyard.com/appcloud_update_2011_05_24.html#false)
-* [Update keep files](http://docs.engineyard.com/appcloud_update_2011_05_24.html#keep)
-* [Update custom recipes](http://docs.engineyard.com/appcloud_update_2011_05_24.html#recipes)
-* [(Optional) Refactor rewrite directives](http://docs.engineyard.com/appcloud_update_2011_05_24.html#optional)
+* [Replace "false" with "off"](http://docs.engineyard.com/appcloud_update_2011_05_18.html#false)
+* [Update keep files](http://docs.engineyard.com/appcloud_update_2011_05_18.html#keep)
+* [Update custom recipes](http://docs.engineyard.com/appcloud_update_2011_05_18.html#recipes)
+* [(Optional) Refactor rewrite directives](http://docs.engineyard.com/appcloud_update_2011_05_18.html#optional)
 
 <h3><a id="false">Replace "false" with "off"</a></h3>
 
