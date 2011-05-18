@@ -4,7 +4,7 @@ One of the most exciting ways to run production-quality Ruby on Rails applicatio
 
 Steps to getting started:
 
-  - [[Request Access|signup-jruby]]
+  - [[Request Access|signupjruby]]
   - [[Getting Started with JRuby on AppCloud|jruby-beta]]
 
 ![JRuby](images/jruby-logo.png)
