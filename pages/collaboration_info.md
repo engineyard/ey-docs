@@ -87,11 +87,3 @@ Currently there are no per-user permissions in Engine Yard AppCloud.  Each user 
 ### Can we change the creator user for an account?
 
 At this point, we do not support reassigning the creator user for an account.
-
-### Are there other caveats we should be aware of during the beta program?
-
-The following are known issues that we will be fixing soon:
-  
-  * Certain pages have not been fully adapted to work for collaboration accounts. This only means some pages will only be accessible for the creator.
-  * Your Dashboard may become a little cluttered. We’re working on ways to improve this, but we want users using the new collaboration features before we worry too much about looks.
-  * The engineyard CLI gem needs to be upgraded to handle multiple accounts. Please get the newest version of the CLI. Using an old version of the CLI can cause errors if you have the same application or same environment name on two accounts to which you have access.  Run `sudo gem update engineyard` to install the latest gem.
