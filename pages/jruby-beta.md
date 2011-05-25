@@ -84,7 +84,6 @@ If you are not using RVM, do this in `$RAILS_ROOT` to update `Gemfile`:
   - Choose an application to deploy, and press **Add Environment**.
     - If you're deploying a new application, press **Create New Application**, fill in the repository URI, choose the application type and version, and press **Create Application**.
   - On the **Create New Environment** screen, enter the **Environment Name**, select the **Framework Environment**, and select **Trinidad** as your application server stack.
-    - For the moment, you will also need to expand the **Show Advanced Options** section and select **JRuby** as your **Ruby Runtime**.
   - Press **Create Environment** to finish creating the environment.
   - Choose your server configuration as usual, and click on **Boot This Configuration**.
   - After the instance(s) have booted, your application code will be deployed!
