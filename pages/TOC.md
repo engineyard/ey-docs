@@ -56,6 +56,7 @@
   * [[Deal with Frozen Instances|frozen-instances]]
   * [[Hibernate Your Account|hibernate-your-account]]
   * [[Review Usage Charges|review-usage-charges]]
+  * [[Use Collaboration|collaboration_info]]
   * [[How to Add a New Relic RPM User|howto-add-a-new-relic-rpm-user]]
   * [[Use New Relic|use-new-relic-rpm-with-engine-yard-cloud]]
   * [[Upgrade Free Trial to Full Account|upgrading-free-trial-to-full-account]]
