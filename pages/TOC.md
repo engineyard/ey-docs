@@ -30,7 +30,7 @@
   * [[Rebuilding an Environment|rebuilding-an-environment]]
   * [[Usage Graphs|usage-graphs]]
   * [[Using Snapshots|using-snapshots]]
-  * [[Using Multi-Region| using-multi-region-on-appcloud]]
+  * [[Using Multi-Region|using-multi-region-with-engine-yard-appcloud]]
 * [[Database|database_home]]
   * [[Find Your Generated MySQL Password and Connect to Your DB|find-your-generated-mysql-password-and-connect-to-your-db]]
   * [[Access Your MySQL Database Remotely|access-your-mysql-database-remotely]]
