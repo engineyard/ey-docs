@@ -95,7 +95,7 @@ Monitoring your site’s uptime is an important component to an overall strategy
 
 ### Install the FitterHappier Plugin
 
-[[FitterHappier|http://github.com/atmos/fitter_happier/tree/master] is a Rails plug-in that provides actions for monitoring site and/or database availability. FitterHappier’s monitoring controller disables unnecessary Rails features, like sessions, layouts, and logging, for lightning-fast monitoring URIs.
+[[FitterHappier|http://github.com/atmos/fitter_happier/tree/master]] is a Rails plug-in that provides actions for monitoring site and/or database availability. FitterHappier’s monitoring controller disables unnecessary Rails features, like sessions, layouts, and logging, for lightning-fast monitoring URIs.
 
 To install FitterHappier, run the following commands from the project root of your Rails application:
 
