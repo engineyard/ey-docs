@@ -17,12 +17,12 @@ Nginx Configuration Changes
 * Removed most "if statements" in accordance with [nginx best practices](http://wiki.nginx.org/IfIsEvil)
 * Improved documentation in the configuration files
 * Deprecated usage:
-		/etc/nginx/#{application}.rewrites
-    	/etc/nginx/#{application}/custom.locations.conf
+		/etc/nginx/servers/#{application}.rewrites
+    	/etc/nginx/servers/#{application}/custom.locations.conf
   both are replaced by:
-		/etc/nginx/#{application}/custom.conf
+		/etc/nginx/servers/#{application}/custom.conf
 * Added new file for SSL-based connection customizations:
-		/etc/nginx/#{application}/custom.ssl.conf
+		/etc/nginx/servers/#{application}/custom.ssl.conf
 * All non-proxy code was removed from `/etc/nginx/common/proxy.conf`. Similar configuration is made available in `/etc/nginx/servers/#{application}.conf`
 * All environments upgraded to nginx 0.8.54 have the following changes:
 	* Removed modules from nginx:
