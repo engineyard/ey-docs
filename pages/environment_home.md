@@ -77,19 +77,27 @@ Click the **Add to Instances** button to add the type of instance to your cluste
 
 ## Clone an Environment
 
-AppCloud makes it easy to clone your environment.  This can be useful so that you can do a test deploy, make sure everything will run correctly, before deploying to production.
+####Introduction
 
-Because when you clone an environment, it clones **everything**, including the volumes your original environment uses.
+You can clone your AppCloud environment. For example, clone your existing production environment and use it as a testing environment before deploying changes to production.  
 
-### Steps
+Because you can terminate a testing environment when your tests are done, you don't have to maintain a staging environment and keep it in sync with your production environment.
 
-  - From the Dashboard, click on the **Clone** link for the environment you'd like to clone.
-  - The *Clone your production environment* page appears.  Setup the **Name**, **Framework Environment**, **IP Address**, and **Domain Name(s)** for each application.  Click **Clone Environment** button.
-  - Once your cloned environment is booted, you'll see it in your Dashboard as ready.
+When you clone an environment, it clones *nearly* everything including the volumes that your original environment uses but *excluding* any custom files.  
 
-Now you're ready to do your tests and when your done you can terminate the experimental cloned environment.  
+#### To clone an environment
 
-Gone are the costs of having to maintain a staging environment and the time it takes to make it match production!
+1. In AppCloud, click Dashboard.
+2. Click Clone for the environment to clone.  
+    The "Clone your production environment" page appears.  
+3. Specify Name, Framework Environment, IP Address, and Domain Name(s) for each application.  
+4. Click Clone Environment.  
+    When your cloned environment has booted, it displays as ready in your Dashboard.
+5. If you use custom files, copy them to your cloned environment. 
+
+Now, you're ready to do your tests.
+
+**Tip:** If this is a test environment, remember to stop it when your tests are done.
 
 ## Cluster Architechture
 
