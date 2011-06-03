@@ -198,3 +198,7 @@ When developing on Windows you'll find when you deploy your Applications on EY t
 
 If one of your instances stops responding, it may have crashed or frozen. You will need to terminate and rebuild the instance or environment, depending on which instance is problematic. Please read [[Dealing with a Frozen/Crashed Instance|frozen-instances]]
 
+## Can I open a custom port for my application?
+
+No. Turning on a custom port can create security risks and incite problems difficult to diagnose. 
+
