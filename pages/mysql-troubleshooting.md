@@ -12,13 +12,13 @@ This is a security feature of MySQL to prevent unauthorized users from gaining a
 ### Solution
 There are two ways to run the "FLUSH HOSTS;" command, both require you to first log into the database instance via ssh.
 
-1. Execute the "FLUSH HOSTS;" command directly via the mysql client. The password for the root user is the same password used for your deploy user.
+1.  Execute the "FLUSH HOSTS;" command directly via the mysql client. The password for the root user is the same password used for your deploy user.
 
-mysql -u root -p<password> -e"FLUSH HOSTS;"
+    > mysql -u root -p<password> -e"FLUSH HOSTS;"
 
-2. Use mysqladmin (again, with the root user):
+2.  Use mysqladmin (again, with the root user):
 
-mysqladmin -u root -p<password> flush-hosts
+    > mysqladmin -u root -p<password> flush-hosts
 
 
 ## MySQL Server has gone away
