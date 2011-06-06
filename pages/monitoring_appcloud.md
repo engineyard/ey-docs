@@ -1,44 +1,49 @@
 # Monitoring
 
-Engine Yard AppCloud includes the ability to monitor your instances for CPU usage, free space, etc. so you're aware of any extreme resource usage as they happen.   Read more about Instance Monitoring and how to configure it for your environment.
+AppCloud can monitor your instances for CPU usage, free space, etc. so that you're aware of extreme resource usage when it happens. 
 
-We also recommend and offer an External Monitoring For a Rails App|external URL monitor checking service that will alert you if after two consecutive attempts if we've not been able to contact your URL with a HTTP 200 OK response.  
+We offer and recommend an External Monitoring For a Rails App|external URL monitor checking service to alert you if, after two consecutive attempts, if we have not been able to contact your URL with an HTTP 200 OK response.
 
-## Instance Monitoring
+This page describes:
 
-With **Instance Monitoring**, Engine Yard keeps an eye on your instance, records the alerts and optionally will email you.
+  * [How to enable email alerts and view alerts for your environment] [1]
+  * [The alert thresholds] [2]
+  * [External monitoring for a Rails app] [3]
 
-### Enable Email Alerts
+---
+<h2><a id="topic1"> Instance monitoring </a></h2>
 
-**NOTE**: Email alerts are disabled by default.
+With **Instance Monitoring**, Engine Yard keeps an eye on your instance, records the alerts, and (optionally) emails you.
 
-  - Click on the **Alerts** tab.
-  - Click on **Enable email alerts**.
-  - Specify the email you want to receive the alerts.
-  - Click on **Update Alert Settings** button.
+#### To enable email alerts
 
-![Enable Alerts](images/enable_alerts.jpg)
+**Important!** By default, email alerts are disabled.
+
+1. In AppCloud, click Dashboard.
+2. Click **Alerts**.
+2. Select the **Enable email alerts** check box.
+3. Specify an email to receive the alerts.
+4. Click **Update Alert Settings**.
+
+    ![Enable Alerts](images/enable_alerts.jpg)
 
 Follow the above steps for each environment that you'd like to receive alerts for.  For instance you may not need to receive alerts for your "staging" environment, but rather you do want alerts for your "production" environment.
 
-### View Alerts
+#### To view alerts
 
-**NOTE**: You can view the alerts, even if you have not specified an email to receive alerts.
+**Note:** You can view the alerts, even if you have not enabled email alerts.
 
-#### Most Recent
+1. In AppCloud, click Dashboard.
+2. To view the three most current alerts, click **Alerts**.
 
-See the three most current alerts.  Click on the **Alerts** tab.
+    ![Recent Alerts](images/recent_alerts.jpg)
 
+3. To view all recorded alerts, click **View All Alerts**.
 
-![Recent Alerts](images/recent_alerts.jpg)
+    ![All Alerts](images/all_alerts.jpg)
 
-#### All Alerts
-
-To see all recorded alerts click on the **View All Alerts** link.
-
-![All Alerts](images/all_alerts.jpg)
-
-### Understand Alerts
+---
+<h2><a id="topic2">Understand alerts</a></h2>
 
 #### Load Average
 
@@ -63,39 +68,32 @@ Current Thresholds:
 
 #### Swap Used
 
-This alerts when the Swap space is getting low.  
+This alerts when the swap space is getting low.  
 
 Current Thresholds:
 
   * Warn: 128 MB Swap Used
   * Fail: 384 MB Swap Used
 
-#### Free Space on `/data`
+#### Free Space
 
-You may not realize the instance is almost out of disk space until you get this alert.  This alert will help give you the warning you need in advance.
+Free space is monitored on these mount points: `/`, `/data`, `/db`, and `/mnt`.
 
-Current Thresholds:
-
-  * Warn: 1 GB
-  * Fail: 256 MB
-
-
-#### Free Space on `/db`
-
-The database volume needs monitoring for free disk space as well.
+You might not realize the instance is almost out of disk space until you get this alert. The thresholds are calculated based on the space allocated to the mount point.
 
 Current Thresholds:
 
-  * Warn: 1 GB
-  * Fail: 256 MB
+* Warn: If the disk space for a particular mount point is 10 GB or less, then the warning threshold is 70% full. If the disk space is greater than 10 GB, then the warning threshold is 80% full. 
+* Fail: 90% of disk space is full.
 
-## External Monitoring For a Rails App
+---
+<h2><a id="topic3">External monitoring for a Rails app</a></h2>
 
-Monitoring your site’s uptime is an important component to an overall strategy of keeping your site online and your visitors happy.
+Monitoring your site’s uptime is an important for keeping your site online and your visitors happy.
 
-### Install the FitterHappier Plugin
+### Install the FitterHappier plugin
 
-[[FitterHappier|http://github.com/atmos/fitter_happier/tree/master]] is a Rails plug-in that provides actions for monitoring site and/or database availability. FitterHappier’s monitoring controller disables unnecessary Rails features, like sessions, layouts, and logging, for lightning-fast monitoring URIs.
+[[FitterHappier|http://github.com/atmos/fitter_happier/tree/master]] is a Rails plugin that provides actions for monitoring site and/or database availability. FitterHappier’s monitoring controller disables unnecessary Rails features, like sessions, layouts, and logging, for lightning-fast monitoring URIs.
 
 To install FitterHappier, run the following commands from the project root of your Rails application:
 
@@ -114,9 +112,9 @@ For assurance, fire-up your application on your development machine and test the
     FitterHappier Site and Database Check Passed @ Wed, 17 Dec 2008 14:27:57 -0800
     Schema Version: 20081217141904
 
-### Update Your Production Environment
+### Update your production environment
 
-Once successfully installed, commit the plug-in to your application’s repository and deploy.  Ensure deployment was successful by testing the same URIs from above.
+Once successfully installed, commit the plugin to your application’s repository and deploy.  Ensure deployment was successful by testing the same URIs from above.
 
 ### Adding the URL to AppCloud
 
@@ -133,3 +131,7 @@ For example:
 If the URL returns a 200 OK HTTP response, you'll get an email confirming your site is up.  Now if the site goes down, or doesn't respond quickly, you'll be alerted via email!
 
 The email is the account owner of the EY AppCloud account.
+
+  [1]: #topic1        "topic1"
+  [2]: #topic2        "topic2"
+  [3]: #topic3        "topic3"
