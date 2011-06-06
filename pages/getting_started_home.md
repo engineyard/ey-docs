@@ -16,15 +16,19 @@ We will try to guess a good name for your application from the Git URI. If we ch
 
 Next we need to know how to setup your application. This depends largely on what framework you used to develop your application. For all modern frameworks (including Sinatra and Rails 3), simply select Rack and everything will work. If you are using an older framework, please select the appropriate one. 
 
-## Deploy Key
+## Set up a git deploy key
 
-If you are using a private repository, we will now need to help you set up your deploy key. We automatically generate a deploy key for all applications with private repositories. Simply copy the deploy key from this page:
+If you use a private repository, set up your git deploy key. Engine Yard automatically generates a deploy key for applications with private repositories. 
 
-![Where to find your deploy key on AppCloud](images/3sm.png)
+#### To set up a git deploy key
 
-Then add this deploy key to your Git repository so we can access your code. If you are using GitHub, you can add a deploy key in the admin section for your repository. 
+1. In the AppCloud Show Deploy Keys page, copy the git deploy key.
 
-![How to paste your deploy key into Github](images/4sm.png)
+    ![Where to find your deploy key on AppCloud](images/3sm.png)
+
+2. Add the git deploy key to your github repository. 
+
+    See [github:help](http://help.github.com/deploy-keys) for how to add a deploy key.
 
 ## Environment Information
 
