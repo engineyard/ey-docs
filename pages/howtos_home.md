@@ -16,8 +16,7 @@
   * [[Configure and Deploy Resque|configure-and-deploy-resque]]
 
 ## Services
-  * [[How to Add a New Relic RPM User|howto-add-a-new-relic-rpm-user]]
-  * [[Use New Relic|use-new-relic-rpm-with-engine-yard-cloud]]  
+  * [[Monitor Applications with New Relic|use-new-relic-rpm-with-engine-yard-cloud]]  
 
 ## Troubleshooting
   * [[Find Important Log Files|find-important-log-files]]
