@@ -11,4 +11,5 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
 * [[HowTos|howtos_home]]
 * [[Beta Program|beta_home]]
 * [[FAQs|faq_home]]
+* [[Release Notes|release_notes]]
 * [[Known Issues|known_issues]]

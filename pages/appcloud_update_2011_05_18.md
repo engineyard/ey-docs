@@ -1,4 +1,6 @@
-## Read these release notes before updating!
+# Nginx update and more
+
+#### May 18th, 2011
 
 **Important!** If you are currently using keep files or custom recipes, you need to take action before upgrading in order to keep everything working. See "[What do I have to do?](http://docs.engineyard.com/appcloud_update_2011_05_18.html#what)" below.
 
@@ -35,21 +37,21 @@ Nginx Configuration Changes
 		* [Nginx Headers More Module](https://github.com/agentzh/headers-more-nginx-module). Updated to v0.14rc1.
 	* Removed the patch "[Post to static html](https://gist.github.com/47503/261f8e0a31ed4bb3ea03a9b6480bbea8f688d850)" from nginx. Files are now posted to application.
 
-<h3><a id="what">What do I have to do?</a></h3>
+<h3 id="what"> What do I have to do? </h3>
 
 This section lists the actions that you need to take to ensure smooth operation of your Ruby on Rails applications.
 
-* [Replace "false" with "off"](http://docs.engineyard.com/appcloud_update_2011_05_18.html#false)
-* [Update keep files](http://docs.engineyard.com/appcloud_update_2011_05_18.html#keep)
-* [Update custom recipes](http://docs.engineyard.com/appcloud_update_2011_05_18.html#recipes)
-* [(Optional) Refactor rewrite directives](http://docs.engineyard.com/appcloud_update_2011_05_18.html#optional)
+* [Replace "false" with "off"](#false)
+* [Update keep files](#keep)
+* [Update custom recipes](#recipes)
+* [(Optional) Refactor rewrite directives](#optional)
 
-<h3><a id="false">Replace "false" with "off"</a></h3>
+<h3 id="false"> Replace "false" with "off" </h3>
 
 If you use keep files or custom recipes, then you need to do this.
 In nginx 0.7.x and above, "false" is not valid. Use "off" instead.
 
-**To update false to off:**
+#### To update false to off
 
 * In all your keep files and custom recipes, replace "false" with "off".
 	
@@ -57,11 +59,11 @@ In nginx 0.7.x and above, "false" is not valid. Use "off" instead.
 	
 	do not write `proxy_redirect false;`
 
-<h3><a id="keep">Update keep files</a></h3>
+<h3 id="keep"> Update keep files </h3>
 
 If you use keep files, then you need to test your changes in a non-production environment. Don't update your production environment until you have validated your customization in a test environment.
 
-**To test the update:**
+#### To test the update
 
 1. Do one of the following to create a test environment:
 	* Clone your production environment.
@@ -71,11 +73,11 @@ If you use keep files, then you need to test your changes in a non-production en
 4. Validate/customize behavior in the environment, recreating keep files as needed.
 5. Apply the update to your production environment by copying any new keep files and deleting obsolete keep files.
 
-<h3><a id="recipes">Update custom recipes</a></h3>
+<h3 id="recipes"> Update custom recipes </h3>
 
 If you use custom recipes, then you need to test your changes in a non-production environment Don't update your production environment until you have validated the update in a test environment.
 
-**To test the update**
+#### To test the update
 
 1. Do one of the following to create a test environment.
 	* Clone your production environment.
@@ -84,7 +86,7 @@ If you use custom recipes, then you need to test your changes in a non-productio
 3. Validate/customize the behavior of your custom recipes as needed using the [engineyard gem](https://github.com/engineyard/engineyard) to upload and apply them to your testing environment.
 4. Use the engineyard gem to update and apply your custom recipes to your production environment.
 
-<h3><a id="optional">(Optional) Refactor rewrite directives</a></h3>
+<h3 id="optional"> (Optional) Refactor rewrite directives </h3>
 
 Now is a good time to refactor rewrite directives.
 
@@ -123,4 +125,4 @@ For help understanding if, see [How if works](http://agentzh.blogspot.com/2011/0
 3. Refactor your rewrites into a default server block based on the above example.
 4. Test on a staging environment before deploying to production.
 
-Note: Rewrite directives use PCRE for regular expressions.
+**Note:** Rewrite directives use PCRE for regular expressions.
