@@ -8,7 +8,7 @@ In order to use the New Relic RPM agent with Engine Yard AppCloud you'll need to
 
   - In the top menu, click on **Account**.
   
-![Figure 1](images/services-1.jpg)
+![Figure 1](images/services-1.png)
   
   - Under the Services section then click on the **New Relic** logo.
   - On this page there are links for [[RPM's capabilities|http://www.newrelic.com/features.html]] based on the [[subscription level|http://www.newrelic.com/get-RPM.html]].
