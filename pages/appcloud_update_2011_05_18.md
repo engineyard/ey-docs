@@ -1,6 +1,6 @@
-# Nginx update and more
+# AppCloud updates May 2011
 
-#### May 18th, 2011
+This page describes the action-required update of May 18th, 2011. (This is not a complete listing of updates in May.)
 
 **Important!** If you are currently using keep files or custom recipes, you need to take action before upgrading in order to keep everything working. See "[What do I have to do?](http://docs.engineyard.com/appcloud_update_2011_05_18.html#what)" below.
 
