@@ -2,7 +2,7 @@
 
 ###To ensure your satisfaction, we are continually working on the Engine Yard stack.
 
-The Engine Yard Technology Stack is a fully-curated Ruby on Rails web application framework stack, designed and optimized for business-critical Ruby on Rails application development. Each individual component within the stack has been customized and optimized over the course of 1,000s of developer hours by engineers at Engine Yard, which includes leading Ruby on Rails contributors, expert cluster engineers and seasoned DBAs for web server performance, database efficiency and long-term scalability. We meticulously test and fully integrate each new component and component update to provide reliability, security and compatibility within the stack.
+The Engine Yard Technology Stack is a fully-curated Ruby on Rails web application framework stack, designed and optimized for business-critical Ruby on Rails application development. Each component in the stack has been customized and optimized over 1,000s of developer hours by engineers at Engine Yard; our engineers include leading Ruby on Rails contributors, expert cluster engineers, and seasoned DBAs for web server performance, database efficiency, and long-term scalability. We meticulously test and fully integrate each new component and component update to provide reliability, security, and compatibility within the stack.
 
 As a result of all the work we do, you can confidently deploy and manage your application with any Engine Yard cloud product. Read about the many [[benefits|http://www.engineyard.com/products/appcloud/benefits]] of using our Platform-as-a-Service.
 
