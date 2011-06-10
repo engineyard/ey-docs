@@ -48,7 +48,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (= 1.0.12)
+  bundler (~> 1.0.12)
   gollum-site!
   pygmentize
   rdiscount
