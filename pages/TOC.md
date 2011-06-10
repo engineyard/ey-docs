@@ -66,6 +66,7 @@
 * [[FAQs|faq_home]]
   * [[AppCloud FAQ|appcloud_faq]]
   * [[CLI Deployment FAQ|deployment_faq]]
+  * [[Trial FAQ|http://www.engineyard.com/products/appcloud/trial-faq]]
 * [[Release Notes|release_notes]]
 * [[Known Issues|known_issues]]
 * [[Technology Stack|technology_stack]]
