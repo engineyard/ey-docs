@@ -4,7 +4,7 @@ The EngineYard platform currently defaults to using Bundler version
 1.0.0 which throws the above error with newer versions of Rubygems. A
 common fix for this is to specify the actual Bundler version.
 
-If the current Bundler version is 1.0.15, add this to your Gemfile
+If the version of Bundler you're using is 1.0.15, add this to your Gemfile
 
     gem 'bundler', '1.0.15'
 
