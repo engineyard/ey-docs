@@ -2,19 +2,23 @@
 
 ### [[June 2011|appcloud_updates_june_2011]]
 
-* [[Bug Fix: Rubygems 1.5.2 (June 3rd, 2011)|appcloud_updates_june_2011#update6]]
+* [[Fix: Automatic snapshot size|appcloud_updates_june_2011#update8]]  *June 8th, 2011*
 
-* [[High memory XL VM’s available (June 3rd, 2011)|appcloud_updates_june_2011#update5]]
+* [[Fix: Environment update notification|appcloud_updates_june_2011#update7]]  *June 8th, 2011*
 
-* [[Environment variables for custom scripts (June 2nd, 2011)|appcloud_updates_june_2011#update4]]
+* [[Fix: Rubygems 1.5.2|appcloud_updates_june_2011#update6]]  *June 3rd, 2011*
 
-* [[Bug Fix: HAproxy restart from single instance snapshot (June 2nd, 2011)|appcloud_updates_june_2011#update3]]
+* [[<b>Major:</b> High memory XL VM’s available|appcloud_updates_june_2011#update5]] *June 3rd, 2011*
 
-* [[Bug Fix: Rubygems 1.5.2 update (June 2nd, 2011)|appcloud_updates_june_2011#update2]]
+* [[Minor: Environment variables for custom scripts|appcloud_updates_june_2011#update4]] *June 2nd, 2011*
 
-* [[X-Forwarded-For SSL traffic enabled (June 2nd, 2011)|appcloud_updates_june_2011#update1]]
+* [[Fix: HAproxy restart from single instance snapshot|appcloud_updates_june_2011#update3]] *June 2nd, 2011*
+
+* [[Fix: Rubygems 1.5.2 update|appcloud_updates_june_2011#update2]] *June 2nd, 2011*
+
+* [[<b>Major:</b> X-Forwarded-For SSL traffic enabled |appcloud_updates_june_2011#update1]] *June 2nd, 2011*
    
 
-### May 2011
+### [[May 2011|appcloud_update_2011_05_18]]
 
-* [[Nginx update and more|appcloud_update_2011_05_18]] — **Action required**
+* [[<b>Action Req'd:</b> Nginx update and more|appcloud_update_2011_05_18]]

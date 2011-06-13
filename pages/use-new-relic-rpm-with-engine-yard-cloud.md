@@ -1,62 +1,132 @@
-# How to Use New Relic RPM with Engine Yard AppCloud
+# How to monitor your Engine Yard applications with New Relic
 
-**NOTE: Engine Yard AppCloud customers can now use [[Bronze RPM for Free|http://www.newrelic.com/press-release-20110118.html]]!**
+#### Introduction
 
-In order to use the New Relic RPM agent with Engine Yard AppCloud you'll need to follow these steps.
+New Relic is a tool for monitoring web application performance — from the end-user experience down to a line of application code. 
 
-## Choose a Plan
+You get real data about your users. For example, you can see what countries your users are in, what browsers they use, how long they wait for pages to download. You get trending data; is your application is faster or slower this week than last week? When problems occur, you can get a transaction response performance breakdown and view a detailed timeline of an individual request.    
 
-  - In the top menu, click on **Account**.
-  
-![Figure 1](images/services-1.png)
-  
-  - Under the Services section then click on the **New Relic** logo.
-  - On this page there are links for [[RPM's capabilities|http://www.newrelic.com/features.html]] based on the [[subscription level|http://www.newrelic.com/get-RPM.html]].
-  
-![Figure 2](images/choose_a_plan.jpg)
+**Note:** New Relic Standard is free for AppCloud customers.
+
+#### Process for setting up and using New Relic to monitor your application
+
+1. [Choose a New Relic plan] [1]
+2. [Configure your application for monitoring] [2]
+3. [View New Relic performance data for your application] [3]
+
+---
+
+<h2><a id="topic1"> Choose a New Relic plan</a></h2>
+
+#### Introduction
+
+The first task in setting up New Relic is to choose the plan you want. The Standard plan is free with your Engine Yard account. But, you might decide that the Professional plan better suits you needs. 
+
+#### To choose a New Relic plan
+
+1. In AppCloud, click Account > Account Settings.
     
-  - Once you've read and agreed to the New Relic Terms of Service, click the **check box** and click the **Choose** button to activate the plan right for you.
+2. Click your account name.
 
-Your New Relic account is created automatically and you are billed all in one place: your Engine Yard AppCloud account.
+3. Under the Services section at the bottom of the Account page, click Manage your New Relic plan.
 
-## Configure your Application
+    ![New Relic logo under Services](images/new_relic_logo.png)
 
-There are two parts to configuring your application.  
-
-  * You need to install a gem and add a configuration line to your `environment.rb` file.  
-  * You also need to make a change in the Engine Yard AppCloud UI to let us know you've got everything setup.
-
-### Install the Gem
-
-  - Click on the **Dashboard** link.
-  - Then click on the **Applications** tab for the environment you will monitor with New Relic.
-  - Click on the **red ruby icon** to edit your gems.
-  - Search for the `newrelic_rpm` gem, then add it to your **Selected Gems**.
-
-### Add the Gem to your `environment.rb` File
+3. Read and agree to the New Relic Terms of Service and select the check box. 
   
-For Rails versions 2.1 and above, edit `environment.rb` and add to the initializer block:
+    ![Figure 2](images/choose_a_plan.jpg)
 
-    config.gem "newrelic_rpm"
+	<!-- this figure needs to be updated when the UI is updated -->
+	
+	Choose Bronze for the Standard plan or Gold for the Professional plan. (Our website will be updated soon to reflect the new plan names.)
+	
+    
+5. Activate a plan.
 
-For Rails versions 2.0.*, edit `environment.rb` and add this statement after the initializer block:
+Your New Relic account is created automatically using your Engine Yard account and password. 
 
-    require "newrelic_rpm"
+If you selected the Professional plan, the New Relic charge appears on your AppCloud account bill; you won't get a separate bill from New Relic.
+
+---
+
+<h2><a id="topic2"> Configure your application for monitoring</a></h2>
+
+#### Introduction
+
+There are three parts to configuring your application:  
+
+  * [Install the newrelic gem.] [A]  
+  * [Edit your environment.rb file or your Gemfile.] [B]  
+  * [Enable New Relic monitoring in AppCloud.] [C]
+
+<h4><a id="topicA"> To install the newrelic_rpm gem</h4> </a>
+
+1. In AppCloud, click Dashboard.
+2. Click the Applications *tab*.
+3. Click the Add Rubygems icon. 
+
+    ![add rubygems icon](images/add_ruby_gem.png)
+
+4. Search for the newrelic_rpm gem and add it to your selected gem list.
+
+    ![newrelic rpm 3.0.1 gem selected](images/newrelic_rpm_gem_selected.png)
+
+<!-- 2011.06.03 JD says: at some later date replace the above with a cross-reference to the generic process of adding a gem -->
+
+<h4><a id="topicA"> To edit environment.rb or Gemfile</h4> </a>
+
+1. Do one of the following to add the newrelic_rpm gem:
+
+    * For Rails 3 and installations using Bundler, add the gem to your Gemfile.
+
+    * For Rails 2.0 and Rails 2.1 to 2.3 without Bundler, edit your environment.rb file.
+
+    For details, see the [[New Relic Knowledge Base about installing the gem.|  http://support.newrelic.com/kb/ruby/ruby-agent-installation-gem]]
+
+<h4><a id="topicC"> To enable your application for New Relic monitoring</h4> </a>
+
+1. In AppCloud, click Dashboard.
+2. Click the Applications *link*.
+3. Click the pencil icon.
+
+    ![pencil icon](images/pencil_icon.png)
+
+3. At the bottom of this page, select the check box to Enable New Relic Monitoring.
+
+    ![Enable New Relic Monitoring check box](images/enable_new_relic_monitoring.png)
+
+4. Deploy your application.
+
+---
+
+<h2><a id="topic3"> View New Relic performance data for your application</a></h2>
+
+#### Introduction
+
+The goal is to monitor your application through the New Relic dashboard. When you are signed on to AppCloud, SSO lets you click through to view your New Relic data.
+
+#### To view New Relic data for your application
+
+1. In AppCloud, click Account > Account Settings.
   
-If you're running a rails app older than 2.0 you'll need to use the plugin and [[follow New Relic's guide|http://support.newrelic.com/faqs/docs/ruby-agent-installation]].
+    ![Account Settings page](images/services-1.png)
+  
+2. Click the account name.
 
-If you are using bundler you can just add the `newrelic_rpm` gem to your Gemfile and it should work fine. It will work with Rails 3.x and Rails 2.3.x.
+3. Under the Services section, click the New Relic logo.
 
-### Enable your Application
-  - Under *Server Tools* on the left, click on the **Application** link.
-  - The pencil is your **edit**  link to change your application's settings.
-  - At the bottom of this page, check the box to **Enable New Relic Monitoring**.
+    ![New Relic logo under Services now activated](images/new_relic_logo_activated.png)
 
-## Deploy your Application
+4. Click the link to login and view your performance data.
 
-In order for New Relic to begin gathering data you need to deploy your application.
+    This links to New Relic website where you can review your data.
 
-## View New Relic Information
+---
 
-  - Click on your **Account**, then the **New Relic** logo.
-  - On the page there is a link that says: **Click here to login and view your performance data.**  It will take you to the New Relic site to review your information.
+
+  [1]: #topic1        "topic1"
+  [2]: #topic2        "topic2"
+  [3]: #topic3        "topic3"
+  [A]: #topicA        "topicA"	
+  [B]: #topicB        "topicB"
+  [C]: #topicC        "topicC"
