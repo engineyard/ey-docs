@@ -2492,6 +2492,9 @@ p.issue_question {
   		list-style-image: url("../images/expanded-arrow.png");
 	}
 
+	#content nav#sidebar ul ul {padding-left:0;}
+	#content nav#sidebar ul li {margin-left:0;}
+
 	#content nav#sidebar ul li a { font-weight: bold; color: #595c61; padding: 0; border: none; display: inline; text-decoration: none; }
 
 				#content nav#sidebar ul li ul li a { font-weight: normal; }
