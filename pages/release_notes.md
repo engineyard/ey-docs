@@ -2,6 +2,10 @@
 
 ### [[June 2011|appcloud_updates_june_2011]]
 
+* [[Minor: The default DB volume size is now 15GB|appcloud_updates_june_2011#update10]]  *June 16th, 2011*
+
+* [[Minor: Mongrel is deprecated for new environments|appcloud_updates_june_2011#update9]]  *June 16th, 2011*
+
 * [[Fix: Automatic snapshot size|appcloud_updates_june_2011#update8]]  *June 8th, 2011*
 
 * [[Fix: Environment update notification|appcloud_updates_june_2011#update7]]  *June 8th, 2011*
