@@ -50,12 +50,12 @@ If you want to build and view the EY Docs locally, here is what you need to do:
 
 4. Generate the site and start a local server (This will take a minute. Don't fret.)
 
-        rake generate   # Will generate the files
-        rake serve      # Will start the gollum-site server
+        bundle exec rake generate   # Will generate the files
+        bundle exec rake serve      # Will start the gollum-site server
 
-		rake dev		# Generate and run the gollum site in development mode
+	bundle exec rake dev	    # Generate and run the gollum site in development mode
 
-5. Navigate to <http://localhost:8000/Home.html> (Default) to access a fully-functional copy of the EY Docs.
+5. Navigate to <http://localhost:3011/Home.html> (Default) to access a fully-functional copy of the EY Docs.
 
 
 ## Sanitization

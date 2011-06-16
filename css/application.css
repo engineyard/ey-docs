@@ -798,7 +798,8 @@ p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, .halfC
 
 .wrapper {
   width: 820px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 p, ul, ol, dl, fieldset, .catalog, address, small {
   margin: 1em 0 1.5em; }
@@ -810,7 +811,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, .h1 {
   font-weight: 100;
-  font-size: 2.6em; }
+  font-size: 2.6em;
+  margin-top:0;}
 
 h2, .h2 {
   font-size: 2.2em;
@@ -2464,20 +2466,32 @@ button.issue:active {
   box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
 }
 
-p.issue_question {
-	font-size: 17px;
-}
+p.issue_question { font-size: 17px; }
+p.issue_question strong {padding-right:10px;}
 
-.wrapper section {
+
+/* Overrides and Additions to base styles */
+h1, .h1 { margin-top:0;}
+h2, .h2 { margin-bottom:.25em; font-size:2em;}
+h3, .h3 { margin-bottom:0;}
+
+#content .wrapper {margin-top:15px;}
+
+
+/* Main Content */
+#content .wrapper section {
   float:left;
   width:540px;
   clear:none;
 }
 
+
 /* Sidebar Nav */
-#content nav { float: left; width:260px; margin-right: 15px; }
+#content nav { float: left; width:260px; margin-right: 20px; }
    #content nav ul li a { font-weight: bold; color: #595c61; padding: 10px 10px 10px 25px; border-bottom: 1px solid #f4f4f4; display: block; text-decoration: none; }
      #content nav ul li:last-child a { border: none; }
+
+
 
 /* Wiki Sidebar */
 
@@ -2491,6 +2505,9 @@ p.issue_question {
 	#content nav#sidebar li.expanded {
   		list-style-image: url("../images/expanded-arrow.png");
 	}
+
+	#content nav#sidebar ul ul {padding-left:0;}
+	#content nav#sidebar ul li {margin-left:0;}
 
 	#content nav#sidebar ul li a { font-weight: bold; color: #595c61; padding: 0; border: none; display: inline; text-decoration: none; }
 

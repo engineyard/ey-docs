@@ -19,6 +19,7 @@ To add a new cron job
 ## Notes about commands
 
 One of the most common uses for the crontab is to schedule the running of rake tasks or Rails runner scripts. When setting up such a task, you need to be aware of the following points:
+
   - rake tasks and runners need to be run from your application root
   - the cron environment does not have the same variables available as your standard shell (i.e.: RAILS_ENV will not be defined)
 

@@ -36,11 +36,12 @@ The typical use cases for using the collaboration feature are:
 
 Click on the account settings link on the top bar to see the list of accounts the current user belongs to.
 
-![Account Settings Link for Collaboration](images/collaboration/collab-nav-link.jpg)
+
+<img src="/images/collaboration/collab-nav-link.jpg" alt="Account Settings Link" width="700" />
 
 The accounts page lists each account, the creator for that account and some other summary information. You can manage each account by clicking on the account name to get to the account management screen.
 
-![AppCloud List of Accounts](images/collaboration/collab-account-list.jpg)
+<img src="/images/collaboration/collab-account-list.jpg" alt="AppCloud List of Accounts" width="700" />
 
 On the account management screen for each account, you can edit the name of the account, change support level for the account, or add new users to this account.
 
@@ -50,13 +51,15 @@ On the account management screen for each account, you can edit the name of the 
 
 Enter the email address of the new user you would like to add to the current account, and hit “Add User”. This will send an email invite to that account with a link to accept the invite. Once the recipient accepts the invite, they will show up on the list of members of this account, and their dashboard will show all the environments from this account.
 
-![Invite Collaboration User](images/collaboration/collab-invite.jpg)
+<img src="/images/collaboration/collab-invite.jpg" alt="Invite Collaboration User" width="700" />
+
 
 #### Remove Users
 
 You can remove a user from an account by going to the account management page (Account > Account Settings > Account Name) and clicking the “Remove” link next to the user in the Members area.
 
-![Remove Collaboration User](images/collaboration/collab-delete.jpg)
+<img src="/images/collaboration/collab-delete.jpg" alt="Remove Collaboration User" width="700" />
+
 
 ### 3. Working with Multiple Accounts
 
