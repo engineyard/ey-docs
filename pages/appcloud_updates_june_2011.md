@@ -4,7 +4,7 @@ The updates described are either important (where you need to take action) or of
 
 ---
 
-<a href=#update8><h2 id="update10"> Minor: The default DB volume size is now 15GB </h2></a>
+<a href=#update10><h2 id="update10"> Minor: The default DB volume size is now 15GB </h2></a>
 
 June 16th, 2011
 
@@ -12,7 +12,7 @@ The default size of the database volume has increased from 5GB to 15GB.
 
 ---
 
-<a href=#update8><h2 id="update9"> Minor: Mongrel is deprecated for new environments  </h2></a>
+<a href=#update9><h2 id="update9"> Minor: Mongrel is deprecated for new environments  </h2></a>
 
 June 16th, 2011
 
