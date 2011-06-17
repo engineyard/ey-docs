@@ -7,5 +7,6 @@
 * [[Download a Database Backup|download-a-database-backup]]
 * [[Manage Database Backups|manage-database-backups]]
 * [[Dump and Load Your MySQL Database|dump-and-load-your-mysql-database]]
+* [[Dump and Load Your Postgres Database|dump-and-load-your-postgres-database]]
 * [[Growing the DB Volume|growing-the-db-volume]]
 * [[MySQL Troubleshooting|mysql-troubleshooting]]
