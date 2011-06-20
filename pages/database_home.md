@@ -9,3 +9,4 @@
 * [[Dump and Load Your MySQL Database|dump-and-load-your-mysql-database]]
 * [[Growing the DB Volume|growing-the-db-volume]]
 * [[MySQL Troubleshooting|mysql-troubleshooting]]
+* [[Add Redis to your Application|add-redis-to-your-application]]
