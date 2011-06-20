@@ -4,6 +4,24 @@ The updates described are either important (where you need to take action) or of
 
 ---
 
+<a href=#update10><h2 id="update10"> Minor: The default DB volume size is now 15GB </h2></a>
+
+June 16th, 2011
+
+The default size of the database volume has increased from 5GB to 15GB.
+
+---
+
+<a href=#update9><h2 id="update9"> Minor: Mongrel is deprecated for new environments  </h2></a>
+
+June 16th, 2011
+
+This does not affect environments currently running Mongrel. 
+
+If you need to create a new environment where Mongrel is the application server stack, please file a ticket with [[Engine Yard Support|http://support.cloud.engineyard.com]].
+
+---
+
 <a href=#update8><h2 id="update8"> Fix: Automatic snapshot size </h2></a>
 
 June 8th, 2011
@@ -87,4 +105,6 @@ You can now request Engine Yard Support to enable HTTPS support of X-Forwarded-F
 [5]: #update5        "update5"
 [6]: #update6        "update6"
 [7]: #update7        "update7"
-[7]: #update8        "update8"
+[8]: #update8        "update8"
+[9]: #update9        "update9"
+[10]: #update10        "update10"

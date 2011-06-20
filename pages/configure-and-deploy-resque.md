@@ -66,7 +66,7 @@ So, for 3 workers, in an app called my_app you might have:
 Each of these will have a `QUEUE` statement as described in the resque `README`. The default is `QUEUE=*`.
 However, you may customize it to list the queues you'd like handled by that worker. By choosing how you allocate your queues to your workers, you essentially prioritize the queues.
 
-Each worker when ran will have a memory foot print, approximately the size of one of your mongrels, unicorns or passenger workers at start up. Every time it gets a job it will fork a child which will also be about that size, and it  will grow as big as it needs to. 
+Each worker when run will have a memory foot print, approximately the size of one of your unicorns or passenger workers at start up. Every time it gets a job it will fork a child which will also be about that size, and it  will grow as big as it needs to. 
 
 ### Stopping Jobs
 

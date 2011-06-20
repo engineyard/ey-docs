@@ -76,7 +76,7 @@ You can customize sanitization with three options:
 ## EY Staff How to Deploy Changes
 Make sure you deploy to staging before you push to production
 
-* When deploying changes from the terminal run `rake stage` and `rake production`.
+* When deploying changes from the terminal run `rake stage` and make sure everything is correct then run `rake production`.
 * When deploying changes from the Web UI make sure that the checkbox next to Migrations is unchecked.
 
 [issues]:     https://github.com/engineyard/ey-docs/issues "EY-Docs Issues Page"
