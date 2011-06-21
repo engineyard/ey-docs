@@ -4,6 +4,14 @@ The updates described are either important (where you need to take action) or of
 
 ---
 
+<a href=#update11><h2 id="update11"> Minor: The dashboard is now application-centric </h2></a>
+
+June 21st, 2011
+
+The dashboard has moved from an *environment*-centric user interface to an *application*-centric user interface. For more information about this change, see [[We’re Getting Application-centric!|http://www.engineyard.com/blog/2011/were-getting-application-centric/]]
+
+---
+
 <a href=#update10><h2 id="update10"> Minor: The default DB volume size is now 15GB </h2></a>
 
 June 16th, 2011
@@ -108,3 +116,4 @@ You can now request Engine Yard Support to enable HTTPS support of X-Forwarded-F
 [8]: #update8        "update8"
 [9]: #update9        "update9"
 [10]: #update10        "update10"
+[11]: #update11        "update11"

@@ -2,6 +2,7 @@
 <a href="http://feed43.com/1082485410203701.xml">Release Notes RSS Feed</a>
 
 ### [[June 2011|appcloud_updates_june_2011]]
+* [[Minor: The dashboard is now application-centric|appcloud_updates_june_2011#update11]]  *June 21st, 2011*
 
 * [[Minor: The default DB volume size is now 15GB|appcloud_updates_june_2011#update10]]  *June 16th, 2011*
 
