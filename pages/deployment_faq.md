@@ -22,8 +22,8 @@ With a bit of shell aliasing, you can have `alice-ey` and `bob-ey` commands that
 
 This is a two-step process.
 
-  - Use either Passenger or Unicorn. If you're using Mongrel, all the mongrels have to be shut down and then restarted, so the maintenance page will have to go up briefly.
-  - Run `ey deploy --no-migrate`. This will not run any migrations, so if you're running Passenger or Unicorn, you'll get a zero-downtime deploy.
+  - Use Unicorn.
+  - Run `ey deploy --no-migrate`. This will not run any migrations, so if you're running Unicorn, you'll get a zero-downtime deploy.
 
 ### How do I 'bundle lock' before doing a deploy?
 
