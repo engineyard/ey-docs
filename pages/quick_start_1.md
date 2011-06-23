@@ -33,7 +33,6 @@ Choose the Web Server Stack that best suits your application.
 
 * [[Passenger|http://www.modrails.com/]] - This is great for multi-application environments.
 * [[Mongrel|https://github.com/fauna/mongrel]] - For most applications, this is the tried and true old standby. However, this **will not work** for Rails 2.3.8+ or Rails 3.
-* [[Unicorn|http://unicorn.bogomips.org/]] - Light and fast Rack server. Supports zero-downtime deploys. Make sure you have the Unicorn gem installed to use this.
 * [[Passenger 3|http://www.modrails.com/]] - This is currently in our Beta program. Visit [here]() for more information and to sign up.
 
 [Can I change the Web Server Stack?]()
