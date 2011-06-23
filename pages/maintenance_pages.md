@@ -14,4 +14,3 @@ When a rollback is performed the maintenance page used will be the one contained
 
   - `ey web enable`
   - `ey web disable`
-  - **NOTE:** `ey deploy` and `ey rollback` also put up a maintenance page during deploys with migrations (the default). `ey deploy` can be passed `--no-migrate` to avoid putting up a maintenance page (zero-downtime), but only for environments using `nginx_passenger` or `nginx_unicorn` (not `nginx_mongrel`).
