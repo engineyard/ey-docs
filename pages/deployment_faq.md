@@ -17,14 +17,6 @@ Then have Bob do the same, but save his credentials in `~/.eyrc-bob`.
 
 With a bit of shell aliasing, you can have `alice-ey` and `bob-ey` commands that operate as Alice and Bob, respectively.
 
-
-### How can I do zero-downtime deploys?
-
-This is a two-step process.
-
-  - Use Unicorn.
-  - Run `ey deploy --no-migrate`. This will not run any migrations, so if you're running Unicorn, you'll get a zero-downtime deploy.
-
 ### How do I 'bundle lock' before doing a deploy?
 
 The best way to do it is to check in `Gemfile.lock` with your application. There are many good reasons to do this.
