@@ -5,7 +5,7 @@ Welcome to the deployment guide for deploying to Engine Yard AppCloud with the `
 ## Getting Started
 
   - Install the `engineyard` gem: `gem install engineyard`
-  - Switch to your local app directory: `cd ~/my_application`
+  - Switch to your local app directory that contains your git repo: `cd ~/my_application`
   - Deploy your app: `ey deploy`
     - You will be prompted for your EY AppCloud login (email address) and password. You'll only have to enter these once. 
     - If your application is running in multiple environments, tack on `-e ENV_NAME` to disambiguate.
