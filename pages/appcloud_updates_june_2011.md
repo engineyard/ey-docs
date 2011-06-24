@@ -4,6 +4,29 @@ The updates described are either important (where you need to take action) or of
 
 ---
 
+<a href=#update13><h2 id="update13"> Minor: A link to a sample application in GitHub is provided on the New Application page </h2></a>
+
+If you are new to AppCloud, test our sample repository and get the ToDo application up and running in your AppCloud account. 
+
+Click Try our sample… to populate the Git Repository URI with the source code for the ToDo application.
+
+![Try our sample ToDo application](images/github_sample_repo.png)
+
+---
+
+<a href=#update12><h2 id="update12"> Minor: Improved alert for out-of-date stacks </h2></a>
+
+June 24th, 2011
+
+When your Engine Yard stack is not the most current, you see this message under the environment name. 
+
+![Stack update notice](images/stack_update_notice.png)
+
+Click !Update to update the stack. The message persists until the instance is running again and you refresh the browser page. 
+
+
+---
+
 <a href=#update11><h2 id="update11"> Minor: The dashboard is now application-centric </h2></a>
 
 June 21st, 2011
@@ -117,3 +140,5 @@ You can now request Engine Yard Support to enable HTTPS support of X-Forwarded-F
 [9]: #update9        "update9"
 [10]: #update10        "update10"
 [11]: #update11        "update11"
+[12]: #update12        "update12"
+[13]: #update13        "update13"
