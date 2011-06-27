@@ -1,4 +1,5 @@
 # Release Notes
+<a href="http://feed43.com/1082485410203701.xml">Release Notes RSS Feed</a>
 
 ### [[June 2011|appcloud_updates_june_2011]]
 
