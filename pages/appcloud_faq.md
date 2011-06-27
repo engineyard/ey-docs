@@ -208,8 +208,5 @@ If one of your instances stops responding, it may have crashed or frozen. You wi
 
 No. Turning on a custom port can create security risks and incite problems difficult to diagnose. 
 
-<a href=#FAQ31><h2 id="FAQ31"> How do I get help? </h2></a>
-
-[[Submit a ticket|submit_a_ticket]]git
 
 
