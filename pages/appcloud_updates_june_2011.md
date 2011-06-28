@@ -4,7 +4,17 @@ The updates described are either important (where you need to take action) or of
 
 ---
 
+<a href=#update14><h2 id="update14"> Fix: Changing the domain name for an environment </h2></a>
+
+June 28th, 2011
+
+Fixed an issue where changes to the Domain Name field were not saved. Domain names can now be changed in the Edit the Environment page.
+
+---
+
 <a href=#update13><h2 id="update13"> Minor: A link to a sample application in GitHub is provided on the New Application page </h2></a>
+
+June 24th, 2011
 
 If you are new to AppCloud, test our sample repository and get the ToDo application up and running in your AppCloud account. 
 
