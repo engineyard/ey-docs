@@ -60,7 +60,7 @@
   * [[Monitor Applications with New Relic|use-new-relic-rpm-with-engine-yard-cloud]]
   * [[Upgrade Free Trial to Full Account|upgrading-free-trial-to-full-account]]
 * [[Beta|beta_home]]
-  * [[Passenger3|passenger3]]
+  * [[Passenger 3|using-passenger-with-engine-yard-appcloud]]
   * [[Rubinius|rubinius]]
   * [[Trinidad/JRuby|jruby]]
 * [[FAQs|faq_home]]
