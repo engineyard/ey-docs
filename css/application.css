@@ -2512,3 +2512,11 @@ h3, .h3 { margin-bottom:0;}
 	#content nav#sidebar ul li a { font-weight: bold; color: #595c61; padding: 0; border: none; display: inline; text-decoration: none; }
 
 				#content nav#sidebar ul li ul li a { font-weight: normal; }
+
+/* RSS Icon */
+.rss { padding: 2px 0 2px 20px; }
+
+.rss {
+  background: url(/images/icn_rss.png) no-repeat left center; }
+  .rss:hover {
+    background: url(/images/icn_rss_color.png) no-repeat left center; }
