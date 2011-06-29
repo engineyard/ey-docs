@@ -4,6 +4,29 @@ The updates described are either important (where you need to take action) or of
 
 ---
 
+<a href=#update16><h2 id="update16"> **Major:** Passenger 3 is now available with Beta support</h2></a>
+
+June 29th, 2011
+
+Phusion Passenger 3 is available with Beta support in AppCloud. (No sign-up required.)
+
+Passenger 3 brings substantial performance improvements over Passenger 2. For more information, see [[Using Passenger 3 with Engine Yard AppCloud|using-passenger-with-engine-yard-appcloud]].
+
+---
+
+<a href=#update15><h2 id="update15"> Minor: The new Basic Cluster environment is now three medium servers </h2></a>
+
+June 29th, 2011
+
+For new environments, the default configuration is now a Basic Cluster of:  
+
+* 2 medium application servers  
+* 1 medium database server  
+
+Previously, the default environment was the Single Server configuration, and the Basic Cluster had only one application server (and one database server).
+
+---
+
 <a href=#update14><h2 id="update14"> Fix: Changing the domain name for an environment </h2></a>
 
 June 28th, 2011
@@ -152,3 +175,6 @@ You can now request Engine Yard Support to enable HTTPS support of X-Forwarded-F
 [11]: #update11        "update11"
 [12]: #update12        "update12"
 [13]: #update13        "update13"
+[14]: #update14        "update14"
+[15]: #update15        "update15"
+[16]: #update16        "update16"
