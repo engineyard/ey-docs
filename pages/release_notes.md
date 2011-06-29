@@ -3,6 +3,10 @@
 
 ### [[June 2011|appcloud_updates_june_2011]]
 
+* [[<b>Major:</b> Passenger 3 is now available with Beta support|appcloud_updates_june_2011#update16]]  *June 29th, 2011*  
+
+* [[Minor: Basic Cluster change|appcloud_updates_june_2011#update15]]  *June 29th, 2011*  
+
 * [[Fix: Changing the domain name for an environment|appcloud_updates_june_2011#update14]]  *June 28th, 2011*  
 
 * [[Minor: A link to a sample application in GitHub is provided on the New Application page|appcloud_updates_june_2011#update13]]  *June 24th, 2011*  
