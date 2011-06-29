@@ -71,9 +71,10 @@ Alpha features carry a **warning: do not request support via the normal support 
 
 Current Alpha Features (and how to request access):
 
-  * [[Passenger 3|Passenger3]] - [[Request access|signup-passenger3]]
+<!--  * [[PostgreSQL 9|Postgres9]] - [[Request access|signup-postgres9]] -->
   * [[Rubinius]] - [[Request access|signup-rubinius]]
   * [[Trinidad/JRuby|jruby]] - [[Request access|signup-jruby]]
+
 
 ## Beta Features
 
@@ -81,10 +82,8 @@ When we feel a feature is close to being ready for Production applications, has 
 
 Beta features are visible and usable by all Engine Yard customers (as applicable AppCloud and xCloud) but carry a **warning: do not request support via the normal support channels**. 
 
-For each Beta feature there is a Mailing List to discuss bugs, issues and feature requests with Engine Yard staff and other Engine Yard customers.
+For each Beta feature there is the [[Beta Conversations|http://groups.google.com/group/ey-beta-talk]] group to discuss bugs, issues, and feature requests with Engine Yard staff and other Engine Yard customers.
 
-Current Beta Features (and their discussion lists):
+Current Beta feature:
 
-* There are currently no features in public Beta.
-
-
+  * [[Passenger 3|using-passenger-with-engine-yard-appcloud]]
