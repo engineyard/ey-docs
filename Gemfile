@@ -5,3 +5,4 @@ gem 'gollum-site', :git => 'https://github.com/francois2metz/gollum-site.git', :
 gem 'rdiscount'
 gem 'pygmentize'
 gem 'rake'
+gem "engineyard", :group => :development
