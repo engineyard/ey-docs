@@ -59,6 +59,8 @@
   * [[Use Collaboration|collaboration_info]]
   * [[Monitor Applications with New Relic|use-new-relic-rpm-with-engine-yard-cloud]]
   * [[Upgrade Free Trial to Full Account|upgrading-free-trial-to-full-account]]
+  * [[How to use Carrier Wave|use-carrierwave-and-optionally-fog-to-upload-and-store-files]]
+  * [[Full text search with Thinking Sphix| full-text-search-with-thinking-sphinx]]
 * [[Beta|beta_home]]
   * [[Passenger 3|using-passenger-with-engine-yard-appcloud]]
   * [[Rubinius|rubinius]]
