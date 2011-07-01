@@ -113,15 +113,7 @@ In order to turn on a cookbook and have that set of recipes run when you deploy 
 
 This file contains a series of lines commented out that either describe or require a given recipe.  The `require_recipe` method, followed by a string named after the same cookbook.
 
-You want to run the sphinx recipe?  Uncomment the line:
-
-
-    require_recipe "sphinx"
-
-
-Save your changes and commit the file to the repository.
-
-    $ git commit -am "activated sphinx"
+For an example of using a cookbook checkout: [[Full text search with thinking sphinx |full-text-search-with-thinking-sphinx]]
 
 ## Create a Cookbook
 
