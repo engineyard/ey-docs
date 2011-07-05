@@ -18,6 +18,7 @@
   * [[Change Your Repo Location|change-your-repo-location]]
   * [[Monitoring AppCloud|monitoring_appcloud]]
   * [[Amazon Out of Capacity Error | amazon-out-of-capacity]]
+  * [[Bundler Tips for AppCloud|bundler-tips-for-appcloud]]
 * [[Environment|environment_home]]
   * [[Upgrading to Ruby 1.9|upgrading-to-ruby19]]
   * [[AppCloud Instances|appcloud-instances]]
