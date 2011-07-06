@@ -47,7 +47,7 @@ Follow this procedure to gain access to the Alpha program and access to the Beta
 
 ####To use PostgreSQL 9 with AppCloud in Alpha
 
-1. [[Request access to the PostgreSQL Alpha program|request-access-to-postgresql-alpha]].
+1. [[Request access to the PostgreSQL Alpha program|signup-postgresql]].
 
 2. Subscribe to Beta Conversations Google group under the Beta Conversations heading on the [[Beta Program page|beta_home]].     
 	If you have participated in other Engine Yard Alpha and Beta programs, you might already be group member.
@@ -75,8 +75,9 @@ If you are migrating an existing PostgreSQL database, you'll to perform a dump a
 
     * Add the pg gem to your Gemfile for Rails 3 (or via the dashboard for Rails 2).
 
-            source "http://rubygems.org"
-            gem 'pg'
+      <pre>
+source "http://rubygems.org"
+gem "pg"</pre>
 	
 3. Deploy the application.
 
@@ -95,14 +96,15 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 
 1.  Dump the database. For example:  
 
-    `pg_dump -o dbname > dumpfile`  
+      <pre>pg_dump -o dbname > dumpfile`</pre>
 
     **Note:** -o is needed to dump OIDs (such as foreign keys).
 
 2. 	Compress the output file and move it to the new server. For example:
 
-        gzip -v dumpfile
-        scp dumpfile newserver:/path/to/file/dumpfile
+      <pre>
+gzip -v dumpfile
+scp dumpfile newserver:/path/to/file/dumpfile</pre>
 	
 	In this case, the new server is the database server assigned for your AppCloud environment.
 	

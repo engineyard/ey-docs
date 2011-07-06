@@ -71,9 +71,9 @@ Alpha features carry a **warning: do not request support via the normal support 
 
 Current Alpha Features (and how to request access):
 
-<!--  * [[PostgreSQL 9|Postgres9]] - [[Request access|signup-postgresql]] -->
-  * [[Rubinius]] - [[Request access|signup-rubinius]]
-  * [[Trinidad/JRuby|jruby]] - [[Request access|signup-jruby]]
+* [[PostgreSQL 9|postgresql]] - [[Request access|signup-postgresql]]
+* [[Rubinius]] - [[Request access|signup-rubinius]]
+* [[Trinidad/JRuby|jruby]] - [[Request access|signup-jruby]]
 
 
 ## Beta Features
