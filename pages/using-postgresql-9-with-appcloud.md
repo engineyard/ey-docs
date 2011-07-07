@@ -92,11 +92,11 @@ You can perform these tasks yourself (as outlined below) or ask [[Engine Yard Pr
 ####To dump and restore the PostgreSQL database
 
 See the PostgreSQL documentation for full details on dumping and restoring a database. 
-** Note:** The following commands assume you are logged into the db_master instance.  
+    **Note:** The following commands assume you are logged into the db_master instance.  
 
 1.  Dump the database. For example:  
 
-      `pg_dump -oFc dbname > dumpfile`
+      `pg_dump -oFc -U deploy dbname > dumpfile`
 
     **Note:** -o is needed to dump OIDs (such as foreign keys). -Fc is needed to use PostgreSQL's custom dump format and compression.  
 
@@ -112,7 +112,7 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 
 4. Import the output file to the new PostgreSQL 9 database. For example:
 
-    `pg_restore -d dbname dumpfile` 
+    `pg_restore -U deploy -d dbname dumpfile` 
 
 5. Test the application running in the new environment before deleting your original environment.
 
