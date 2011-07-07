@@ -1,4 +1,3 @@
-
 # Using PostgreSQL 9 with AppCloud
 
 #### Introduction
@@ -124,6 +123,26 @@ scp dumpfile newserver:/path/to/file/dumpfile</pre>
 
 ---
 
+<h2 id="topic8">Connect to your PostgreSQL 9 Database </h2>
+
+#### Introduction
+Follow this procedure to connect to your newly created PostgreSQL 9 database. 
+
+#### To connect to your PosgreSQL 9 database
+See the [[Database Home|database_home.html]] documentation (Many of the tasks apply to PostgreSQL as well as MySQL.)
+
+1. Find your generated PostgreSQL password (the [[MySQL instructions on passwords|find-your-generated-mysql-password-and-connect-to-your-db.html]] describe this step)
+
+2. Extract list of databases
+
+    `psql -l -U deploy`
+
+3. Connect to your database
+
+    `psql -U deploy -W eQlmeEqGxv -h localhost -d dbname`
+
+
+---
 <h2 id="topic7"> Known issues</h2>
 
 Known issues associated with PostgresSQL 9 on AppCloud are:
