@@ -92,8 +92,7 @@ You can perform these tasks yourself (as outlined below) or ask [[Engine Yard Pr
 ####To dump and restore the PostgreSQL database
 
 See the PostgreSQL documentation for full details on dumping and restoring a database. 
-
-    **Note:** The following commands assume you are logged into the db_master instance.  
+**Note:** The following commands assume you are logged into the db_master instance.  
 
 1.  Dump the database. For example:  
 
