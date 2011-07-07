@@ -98,7 +98,7 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 
       `pg_dump -Fc dbname > dumpfile`
 
-    **Note:** -Fc is needed to use PostgreSQL's custom dump format and compression. (Use the -o option only if your application explicitly references OID values)  
+    **Note:** -Fc is needed to use PostgreSQL's custom dump format and compression (use the -o option only if your application explicitly references OID values).  
 
 2. 	Move the output file to the new server. For example:
 
