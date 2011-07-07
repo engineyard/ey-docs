@@ -96,9 +96,9 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 
 1.  Dump the database. For example:  
 
-      `pg_dump -o -Fc -U deploy dbname > dumpfile`
+      `pg_dump -Fc dbname > dumpfile`
 
-    **Note:** -o is needed to dump OIDs (use this option only if your application explicitly references OID values). -Fc is needed to use PostgreSQL's custom dump format and compression.  
+    **Note:** -Fc is needed to use PostgreSQL's custom dump format and compression. (Use the -o option only if your application explicitly references OID values)  
 
 2. 	Move the output file to the new server. For example:
 
@@ -112,7 +112,7 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 
 4. Import the output file to the new PostgreSQL 9 database. For example:
 
-    `pg_restore -U deploy -d dbname dumpfile` 
+    `pg_restore -d dbname dumpfile` 
 
 5. Test the application running in the new environment before deleting your original environment.
 
@@ -134,7 +134,7 @@ See the [[Database Home|database_home.html]] documentation (Many of the tasks ap
 
 3. Connect to your database
 
-    `psql -U deploy -W eQlmeEqGxv -h localhost -d dbname`
+    `psql -U deploy -h localhost -d dbname`
 
 
 ---
