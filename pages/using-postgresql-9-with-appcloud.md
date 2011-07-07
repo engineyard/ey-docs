@@ -113,6 +113,8 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 4. Import the output file to the new PostgreSQL 9 database. For example:
 
     `pg_restore -d dbname dumpfile` 
+	
+	**Note:** the dbname should correspond to the database name of your application
 
 5. Test the application running in the new environment before deleting your original environment.
 
