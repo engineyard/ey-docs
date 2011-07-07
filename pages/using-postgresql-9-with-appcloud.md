@@ -97,9 +97,9 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 
 1.  Dump the database. For example:  
 
-      `pg_dump -oFc -U deploy dbname > dumpfile`
+      `pg_dump -o -Fc -U deploy dbname > dumpfile`
 
-    **Note:** -o is needed to dump OIDs (such as foreign keys). -Fc is needed to use PostgreSQL's custom dump format and compression.  
+    **Note:** -o is needed to dump OIDs (use this option only if your application explicitly references OID values). -Fc is needed to use PostgreSQL's custom dump format and compression.  
 
 2. 	Move the output file to the new server. For example:
 
