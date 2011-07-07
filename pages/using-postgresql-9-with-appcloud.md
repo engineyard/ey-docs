@@ -95,31 +95,25 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 
 1.  Dump the database. For example:  
 
-      <pre>pg_dump -o dbname > dumpfile`</pre>
+      <pre>pg_dump -o dbname -Fc > dumpfile`</pre>
 
-    **Note:** -o is needed to dump OIDs (such as foreign keys).
+    **Note:** -o is needed to dump OIDs (such as foreign keys). -Fc is needed to use PostgreSQL's custom dump format and compression.
 
-2. 	Compress the output file and move it to the new server. For example:
+2. 	Move the output file to the new server. For example:
 
-      <pre>
-gzip -v dumpfile
-scp dumpfile newserver:/path/to/file/dumpfile</pre>
+      <pre>scp dumpfile newserver:/path/to/file/dumpfile</pre>
 	
-	In this case, the new server is the database server assigned for your AppCloud environment.
+	In this case, the new server is the database server assigned for your PostgreSQL 9 Alpha AppCloud environment.
 	
 	**Note:** To use the scp command, you need keys and scp setup.
 	 
-2. SSH to the database server.
+3. SSH to the database server.
 
-2. Decompress the output file. For example:
-
-    `gunzip -v dumpfile`
-
-3. Import the output file to the new PostgreSQL 9 database. For example:
+4. Import the output file to the new PostgreSQL 9 database. For example:
 
     `psql dbname < dumpfile` 
 
-4. Test the application running in the new environment before deleting your original environment.
+5. Test the application running in the new environment before deleting your original environment.
 
 ---
 
