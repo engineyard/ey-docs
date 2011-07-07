@@ -91,17 +91,18 @@ You can perform these tasks yourself (as outlined below) or ask [[Engine Yard Pr
 
 ####To dump and restore the PostgreSQL database
 
-See the PostgreSQL documentation for full details on dumping and restoring a database.
+See the PostgreSQL documentation for full details on dumping and restoring a database. 
+** Note:** The following commands assume you are logged into the db_master instance.  
 
 1.  Dump the database. For example:  
 
-      `pg_dump -o dbname -Fc > dumpfile`
+      `pg_dump -oFc dbname > dumpfile`
 
-    **Note:** -o is needed to dump OIDs (such as foreign keys). -Fc is needed to use PostgreSQL's custom dump format and compression. This command assumes you are logged into the db_master instance. 
+    **Note:** -o is needed to dump OIDs (such as foreign keys). -Fc is needed to use PostgreSQL's custom dump format and compression.  
 
 2. 	Move the output file to the new server. For example:
 
-      <pre>scp dumpfile newserver:/path/to/file/dumpfile</pre>
+      `scp dumpfile newserver:/path/to/file/dumpfile`
 	
 	In this case, the new server is the database server assigned for your PostgreSQL 9 Alpha AppCloud environment.
 	
