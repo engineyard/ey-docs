@@ -162,7 +162,7 @@ The primary difference you may notice after tinkering with your first setup is t
 
 After upgrading to Bundler 1.0 you may notice that Unicorn no longer gracefully deploys.  In order to resolve this problem you need to add the `unicorn` gem to your Gemfile like below and re-deploy.
 
-    gem 'unicorn', '1.1.5'
+    gem 'unicorn', '1.0.1'
 
 Then restart unicorn like below:
 
