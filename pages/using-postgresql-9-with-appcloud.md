@@ -94,13 +94,13 @@ You can perform these tasks yourself (as outlined below) or ask [[Engine Yard Pr
 See the PostgreSQL documentation for full details on dumping and restoring a database. 
 **Note:** The following commands assume you are logged into the db_master instance.  
 
-1.  Dump the database. For example:  
+1.  Dump the database.  
 
       `pg_dump -Fc dbname > dumpfile`
 
     **Note:** -Fc is needed to use PostgreSQL's custom dump format and compression (use the -o option only if your application explicitly references OID values).  
 
-2. 	Move the output file to the new server. For example:
+2. 	Move the output file to the new server. 
 
       `scp dumpfile newserver:/path/to/file/dumpfile`
 	
@@ -110,7 +110,7 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 	 
 3. SSH to the database server.
 
-4. Import the output file to the new PostgreSQL 9 database. For example:
+4. Import the output file to the new PostgreSQL 9 database. 
 
     `pg_restore -d dbname dumpfile` 
 	
