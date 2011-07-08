@@ -126,9 +126,9 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 Follow this procedure to connect to your newly created PostgreSQL 9 database. 
 
 #### To connect to your PosgreSQL 9 database
-See the [[Database Home|database_home.html]] documentation (Many of the tasks apply to PostgreSQL as well as MySQL.)
+See the [[Database Home|database_home]] documentation (Many of the tasks apply to PostgreSQL as well as MySQL.)
 
-1. Find your generated PostgreSQL password (the [[MySQL instructions on passwords|find-your-generated-mysql-password-and-connect-to-your-db.html]] describe this step)
+1. Find your generated PostgreSQL password (the [[MySQL instructions on passwords|find-your-generated-mysql-password-and-connect-to-your-db]] describe this step)
 
 2. Extract list of databases
 
@@ -161,7 +161,7 @@ Known issues associated with PostgresSQL 9 on AppCloud are:
     <td>about setting up and deploying an AppCloud application in general</td><td>[[docs.engineyard.com|http://docs.engineyard.com]] </td>
   </tr>
 <tr>
-    <td>database tasks in AppCloud</td><td>[[Database Home|database_home.html]] (Many of the tasks apply to PostgreSQL as well as MySQL.)</td>
+    <td>database tasks in AppCloud</td><td>[[Database Home|database_home]] (Many of the tasks apply to PostgreSQL as well as MySQL.)</td>
   </tr>
 <tr>
     <td>PostgreSQL</td><td>[[PostgreSQL|http://www.postgresql.org/docs]] documentation </td>
