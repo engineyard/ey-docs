@@ -15,9 +15,8 @@ Support for users of Rubinius is provided via the dedicated [[Rubinius forum|sig
 ###New Environment
 
   - Create a new environment using the **Create New Environment** link on the dashboard.
-  - On the new environment page, click on **Show Advanced Options**.
+  - Right now Rubinius works with **Passenger 3** so make sure to choose that as the web server. Passenger 3 is currently in beta as well so make sure to [[request access|signup-passenger3]] for it.
   - In the Ruby Runtime section, pick **Rubinius**.
-  - Right now Rubinius works with Passenger 3 so make sure to choose that as the web server. Passenger 3 is currently in beta as well so make sure to [[request access|signup-passenger3]] for it.
 
 ![Figure 1](images/rubinius_environment.jpg)
 
