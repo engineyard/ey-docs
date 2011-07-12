@@ -1,4 +1,3 @@
-
 # Using PostgreSQL 9 with AppCloud
 
 #### Introduction
@@ -47,7 +46,7 @@ Follow this procedure to gain access to the Alpha program and access to the Beta
 
 ####To use PostgreSQL 9 with AppCloud in Alpha
 
-1. [[Request access to the PostgreSQL Alpha program|request-access-to-postgresql-alpha]].
+1. [[Request access to the PostgreSQL Alpha program|signup-postgresql]].
 
 2. Subscribe to Beta Conversations Google group under the Beta Conversations heading on the [[Beta Program page|beta_home]].     
 	If you have participated in other Engine Yard Alpha and Beta programs, you might already be group member.
@@ -75,8 +74,9 @@ If you are migrating an existing PostgreSQL database, you'll to perform a dump a
 
     * Add the pg gem to your Gemfile for Rails 3 (or via the dashboard for Rails 2).
 
-            source "http://rubygems.org"
-            gem 'pg'
+      <pre>
+source "http://rubygems.org"
+gem "pg"</pre>
 	
 3. Deploy the application.
 
@@ -91,37 +91,55 @@ You can perform these tasks yourself (as outlined below) or ask [[Engine Yard Pr
 
 ####To dump and restore the PostgreSQL database
 
-See the PostgreSQL documentation for full details on dumping and restoring a database.
+See the PostgreSQL documentation for full details on dumping and restoring a database. 
+**Note:** The following commands assume you are logged into the db_master instance.  
 
-1.  Dump the database. For example:  
+1.  Dump the database.  
 
-    `pg_dump -o dbname > dumpfile`  
+      `pg_dump -Fc dbname > dumpfile`
 
-    **Note:** -o is needed to dump OIDs (such as foreign keys).
+    **Note:** -Fc is needed to use PostgreSQL's custom dump format and compression (use the -o option only if your application explicitly references OID values).  
 
-2. 	Compress the output file and move it to the new server. For example:
+2. 	Move the output file to the new server. 
 
-        gzip -v dumpfile
-        scp dumpfile newserver:/path/to/file/dumpfile
+      `scp dumpfile newserver:/path/to/file/dumpfile`
 	
-	In this case, the new server is the database server assigned for your AppCloud environment.
+	In this case, the new server is the database server assigned for your PostgreSQL 9 Alpha AppCloud environment.
 	
 	**Note:** To use the scp command, you need keys and scp setup.
 	 
-2. SSH to the database server.
+3. SSH to the database server.
 
-2. Decompress the output file. For example:
+4. Import the output file to the new PostgreSQL 9 database. 
 
-    `gunzip -v dumpfile`
+    `pg_restore -d dbname dumpfile` 
+	
+	**Note:** the dbname should correspond to the database name of your application
 
-3. Import the output file to the new PostgreSQL 9 database. For example:
-
-    `psql dbname < dumpfile` 
-
-4. Test the application running in the new environment before deleting your original environment.
+5. Test the application running in the new environment before deleting your original environment.
 
 ---
 
+<h2 id="topic8">Connect to your PostgreSQL 9 Database </h2>
+
+#### Introduction
+Follow this procedure to connect to your newly created PostgreSQL 9 database. 
+
+#### To connect to your PosgreSQL 9 database
+See the [[Database Home|database_home]] documentation (Many of the tasks apply to PostgreSQL as well as MySQL.)
+
+1. Find your generated PostgreSQL password (the [[MySQL instructions on passwords|find-your-generated-mysql-password-and-connect-to-your-db]] describe this step)
+
+2. Extract list of databases
+
+    `psql -l -U deploy`
+
+3. Connect to your database
+
+    `psql -U deploy -h localhost -d dbname`
+
+
+---
 <h2 id="topic7"> Known issues</h2>
 
 Known issues associated with PostgresSQL 9 on AppCloud are:
@@ -143,7 +161,7 @@ Known issues associated with PostgresSQL 9 on AppCloud are:
     <td>about setting up and deploying an AppCloud application in general</td><td>[[docs.engineyard.com|http://docs.engineyard.com]] </td>
   </tr>
 <tr>
-    <td>database tasks in AppCloud</td><td>[[Database Home|database_home.html]] (Many of the tasks apply to PostgreSQL as well as MySQL.)</td>
+    <td>database tasks in AppCloud</td><td>[[Database Home|database_home]] (Many of the tasks apply to PostgreSQL as well as MySQL.)</td>
   </tr>
 <tr>
     <td>PostgreSQL</td><td>[[PostgreSQL|http://www.postgresql.org/docs]] documentation </td>
