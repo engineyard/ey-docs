@@ -65,6 +65,7 @@
   * [[Passenger 3|using-passenger-with-engine-yard-appcloud]]
   * [[Rubinius|rubinius]]
   * [[Trinidad/JRuby|jruby]]
+  * [[PostgreSQL|postgresql]]
 * [[FAQs|faq_home]]
   * [[AppCloud FAQ|appcloud_faq]]
   * [[CLI Deployment FAQ|deployment_faq]]
