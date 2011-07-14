@@ -91,4 +91,4 @@ If you are not using RVM, do this in `$RAILS_ROOT` to update `Gemfile`:
 
 ## Known Issues
 
-  - `engingeyard` gem is not supported on JRuby. There is a dependency on `ruby-termios` gem which depends on native C extension. This appears to have problems, even with the announced C extension support on JRuby.
+  - `engineyard` gem is not supported on JRuby. There is a dependency on `ruby-termios` gem which depends on native C extension. This appears to have problems, even with the announced C extension support on JRuby.
