@@ -1,6 +1,16 @@
 # Release Notes
 <a href="http://feed43.com/1082485410203701.xml" class="rss">Release Notes RSS Feed</a>
 
+### [[July 2011|appcloud_updates_july_2011]]
+
+* [[<b>Action Req'd:</b> Upgrade to Ruby 1.8.7-p352|appcloud_updates_july_2011#update4]]  *July 22th, 2011*  
+
+* [[Minor: Increased maximum connections for HAProxy|appcloud_updates_july_2011#update3]]  *July 8th, 2011*  
+
+* [[Minor: Upgrade to Redis 2.2.11 |appcloud_updates_july_2011#update2]]  *July 8th, 2011*  
+
+* [[Minor: Nginx Upload Progress module upgraded|appcloud_updates_july_2011#update1]]  *July 1st, 2011*  
+
 ### [[June 2011|appcloud_updates_june_2011]]
 
 * [[<b>Major:</b> Passenger 3 is now available with Beta support|appcloud_updates_june_2011#update16]]  *June 29th, 2011*  
