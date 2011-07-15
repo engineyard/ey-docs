@@ -3,7 +3,9 @@
 
 ### [[July 2011|appcloud_updates_july_2011]]
 
-* [[<b>Action Req'd:</b> Upgrade to Ruby 1.8.7-p352|appcloud_updates_july_2011#update4]]  *July 22th, 2011*  
+* [[<b>Action Req'd:</b> Upgrade to Ruby 1.8.7-p352|appcloud_updates_july_2011#update4]]  *July 22th, 2011*
+
+* [[<b>Major:</b> JRuby is now available in Beta for all customers|appcloud_updates_july_2011#update5]]  *July 15th, 2011*    
 
 * [[Minor: Increased maximum connections for HAProxy|appcloud_updates_july_2011#update3]]  *July 8th, 2011*  
 
