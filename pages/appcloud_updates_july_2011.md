@@ -19,7 +19,7 @@ If you are using Ruby 1.8.7 and Passenger, we recommend that you redeploy after 
 
 <a href=#update5><h2 id="update5"> **Major:** JRuby is now available in Beta for all customers </h2></a>
 
-July 15th, 2011
+July 18th, 2011
 
 JRuby is available with Beta support in AppCloud. (No sign-up required.)
 
