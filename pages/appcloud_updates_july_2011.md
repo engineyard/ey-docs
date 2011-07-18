@@ -15,6 +15,18 @@ If you are using Ruby 1.8.7 and Unicorn, you must redeploy after updating.
 
 If you are using Ruby 1.8.7 and Passenger, we recommend that you redeploy after updating. This is to make sure that your code runs under the latest version of the MRI interpreter.
 
+---
+
+<a href=#update5><h2 id="update5"> **Major:** JRuby is now available in Beta for all customers </h2></a>
+
+July 18th, 2011
+
+JRuby is available with Beta support in AppCloud. (No sign-up required.)
+
+Run production-quality Ruby on Rails applications on AppCloud via [[JRuby|http://jruby.org/]], [[Trinidad|https://github.com/trinidad/trinidad]] and [[Tomcat|http://tomcat.apache.org/]].
+
+For more information, see [[Getting Started with JRuby|jruby-beta]] and [[JRuby on AppCloud available through Beta program|http://www.engineyard.com/blog/2011/jruby-on-appcloud-available-through-beta-program/]].
+
 
 ---
 

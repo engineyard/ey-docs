@@ -73,8 +73,6 @@ Current Alpha Features (and how to request access):
 
 * [[PostgreSQL 9|postgresql]] - [[Request access|signup-postgresql]]
 * [[Rubinius]] - [[Request access|signup-rubinius]]
-* [[Trinidad/JRuby|jruby]] - [[Request access|signup-jruby]]
-
 
 ## Beta Features
 
@@ -87,3 +85,4 @@ For each Beta feature there is the [[Beta Conversations|http://groups.google.com
 Current Beta feature:
 
   * [[Passenger 3|using-passenger-with-engine-yard-appcloud]]
+  * [[JRuby/Trinidad|jruby-beta]]
