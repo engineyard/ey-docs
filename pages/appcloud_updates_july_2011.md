@@ -17,6 +17,19 @@ If you are using Ruby 1.8.7 and Passenger, we recommend that you redeploy after 
 
 ---
 
+<a href=#update6><h2 id="update6"> **Major:** Improvements to the app-centric UI: more details and easier deploys </h2></a>
+
+July 19th, 2011
+
+In response to user feedback, we made some modifications to our application-centric UI. Some of these modifications are:
+
+*  Expanded views
+*  Fewer-click deploys
+*  More detailed instance lists
+*  Flags to clearly indicate whether an environment is production, staging, or development 
+
+---
+
 <a href=#update5><h2 id="update5"> **Major:** JRuby is now available in Beta for all customers </h2></a>
 
 July 18th, 2011
