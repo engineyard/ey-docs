@@ -58,7 +58,7 @@
   * [[Use Collaboration|collaboration_info]]
   * [[Monitor Applications with New Relic|use-new-relic-rpm-with-engine-yard-cloud]]
   * [[Upgrade Free Trial to Full Account|upgrading-free-trial-to-full-account]]
-  * [[How to Load Testing your Application with em-proxy|em-proxy]]
+  * [[How to Load Testing your Application with em-proxy|em-proxy]] 
   * [[How to use Carrier Wave|use-carrierwave-and-optionally-fog-to-upload-and-store-files]]
   * [[How to implement full text searching with Sphinx| full-text-search-with-thinking-sphinx]]
 * [[Beta|beta_home]]
