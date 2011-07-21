@@ -19,7 +19,6 @@ This is the process for deploying the Fat Free CRM application:
 *  [Complete the process][12]
 
 
----
 
 <h2 id="topic1"> Sign up for a trial account </h2>
 
@@ -32,7 +31,6 @@ If you have already signed up for and started your trial account, skip to [Get t
 3. Agree to the terms of service and select the check box.
 4. Click Create Account.
 
----
 
 <h2 id="topic2"> Validate and start your a trial account</h2>
 
@@ -56,7 +54,6 @@ After signing up for a trial account, you get an email from Engine Yard. In this
     ![Start Trial](images/tutorials/start_trial.png)
 
 
----
 
 <h2 id="topic4"> Get the sample application from GitHub </h2>
 
@@ -94,7 +91,6 @@ In general, you can use any git server with your AppCloud account. However, in t
 
     You need it again [later][6].
 
----
 
 <h2 id="topic5"> Create the application </h2>
 
@@ -114,7 +110,6 @@ Because the readme for Fat Free CRM says that this is a Rails 2.3.8 application;
 
 4. Click Create Application.
 
----
 
 <h2 id="topic6"> Create a trusted relationship between your GitHub and Engine Yard accounts </h2>
 
@@ -144,7 +139,6 @@ In this procedure, you set a Git deploy key so that you can deploy the Fat Free 
 
     The instance boots and deploys the Fat Free CRM application. This may take 10 minutes or so.
 
----
 
 <h2 id="topic7"> Try running the Fat Free CRM application </h2>
 
@@ -164,7 +158,6 @@ In this procedure, you try running the application—and see what happens when a
 
     Expect to see a 404 Not Found error. The application failed to deploy because it is missing the Rails 2.3.8 gem. 
 
----
 
 <h2 id="topic8"> Add gems </h2>
 
@@ -188,7 +181,6 @@ Because Fat Free CRM doesn't have a Gemfile to manage its gems, you add them man
 
     After adding the gem, message about updating your environment appears. You update the environment in [Update your environment][10] below.
 
----
  
 <h2 id="topic9">Configure for SSH </h2>
 
@@ -220,7 +212,6 @@ In this procedure, you create an SSH key so that you can log into the instance f
 
 8. Click Add Key.
 
----
 
 <h2 id="topic10"> Update your environment </h2>
 
@@ -238,7 +229,6 @@ In this procedure, you update your AppCloud environment for the Rails gem and th
 
 	![The exclamation point indicates an update is needed.](images/tutorials/update_button.png)
 
----
     
 
 <h2 id="topic11"> Deploy the Fat Free CRM application </h2>
@@ -276,7 +266,6 @@ In this procedure, you deploy the Fat Free CRM application and discover that the
 
 4. Leave this window open; you refresh it in the procedure below.
 
----
 
 <h2 id="topic12"> Complete the process </h2>
 
@@ -316,7 +305,6 @@ The Fat Free CRM application is now up and running.
 
 ![Refresh Fat Free CRM](images/tutorials/fat_free_crm_loaded.png)
 
----
 
 <h2 id="topic13"> What next? </h2>
 
