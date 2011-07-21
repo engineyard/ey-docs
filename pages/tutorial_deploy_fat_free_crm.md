@@ -2,31 +2,21 @@
 
 In this tutorial, you deploy a Ruby application (named Fat Free CRM) to the Engine Yard cloud. 
 
-This tutorial is illustrated in the [[Learn to Deploy Rails Apps on Engine Yard in under 5 Mins!|http://vimeo.com/17825326]] video. 
+This tutorial is illustrated in [[Learn to Deploy Rails Apps on Engine Yard in under 5 Mins!|http://vimeo.com/17825326]] video. 
 
 This is the process for deploying the Fat Free CRM application:
 
-* [Sign up for a trial account][1]
-
-* [Validate and start your trial account][2]
-
-* [Get the sample application from GitHub][4]
-
-* [Create the application][5]
-
-* [Create a trusted relationship between the GitHub and Engine Yard accounts][6]
-
-* [Try running the Fat Free CRM application][7]
-
-* [Add gems][8]
-
-* [Configure for SSH][9]
-
-* [Update your environment][10]
-
-* [Deploy the Fat Free CRM application][11]
-
-* [Complete the process][12]
+*  [Sign up for a trial account][1]
+*  [Validate and start your trial account][2]
+*  [Get the sample application from GitHub][4]
+*  [Create the application][5]
+*  [Create a trusted relationship between the GitHub and Engine Yard accounts][6]
+*  [Try running the Fat Free CRM application][7]
+*  [Add gems][8]
+*  [Configure for SSH][9]
+*  [Update your environment][10]
+*  [Deploy the Fat Free CRM application][11]
+*  [Complete the process][12]
 
 
 ---
@@ -242,11 +232,11 @@ In this procedure, you update your AppCloud environment for the Rails gem and th
 
 2. Click Please Update.
 
-    ![Please update links to the Environment page.](images/tutorials/please_update_.png)
+    ![Please update links to the Environment page.](images/tutorials/please_update.png)
 
 3. On the Environment page, click Update.
 
-	    ![The ! indicates an update is needed.](images/tutorials/update_button.png)
+	![The exclamation point indicates an update is needed.](images/tutorials/update_button.png)
 
 ---
     
@@ -274,13 +264,13 @@ In this procedure, you deploy the Fat Free CRM application and discover that the
 
     a. Click the Environment name.
 
-        ![deploy button](images/tutorials/environment_name_link.png)
+    ![deploy button](images/tutorials/environment_name_link.png)
 
-    b. Click HTTP.
+    b. Click Visit your application.
 
-    ![http_button](images/tutorials/http_button.png)
+    ![Visit your application link](images/tutorials/visit_application.png)
 
-    Fat Free CRM should now be running. However, this (somewhat misleading) error message appears. To get the application running correctly you will need to run some rake commands, as described [below][12].
+    Fat Free CRM should now be running. However, this (somewhat misleading) error message appears. To get the application running correctly you need to run some rake commands, as described [below][12].
 
     ![Message tells you to run rake commands](images/tutorials/need_to_run_rake.png)
 
