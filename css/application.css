@@ -2479,7 +2479,7 @@ p {margin:1em 0 .5em 0; line-height:1.4em;}
 
 pre { padding:4px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; margin-bottom:1.75em; margin-top:1em;}
 code { border:none; }
-p code {display:block-inline; padding:1px 4px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; border:1px solid #ddd;}
+p code {display:inline-block; padding:0 4px; margin-bottom:1px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; border:1px solid #ddd;}
 
 #content .wrapper {margin-top:15px;}
 #content .wrapper section {margin-bottom:2em; float:left; width:540px; clear:none;}
