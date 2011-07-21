@@ -2501,7 +2501,7 @@ a:hover, a:active { text-decoration: none; }
 
 
 #content nav#sidebar li {
-  		list-style-image: url("../images/arrow-spacer.png"); padding: 5px 5px 5px 0; border-bottom: 1px solid #f4f4f4; margin-left: 20px;
+  		list-style-image: url("../images/arrow-spacer.png"); padding: 7px 7px 7px 0; border-bottom: 1px solid #f4f4f4; margin-left: 20px;
 	}
 	#content nav#sidebar li.collapsed {
   		list-style-image: url("../images/collapsed-arrow.png");
@@ -2510,8 +2510,9 @@ a:hover, a:active { text-decoration: none; }
   		list-style-image: url("../images/expanded-arrow.png");
 	}
 
-	#content nav#sidebar ul ul {padding-left:0;}
-	#content nav#sidebar ul li {margin-left:0;}
+	#content nav#sidebar ul li {margin-left:0; margin:0;}
+	#content nav#sidebar ul ul {padding-left:0; margin:0;}
+	#content nav#sidebar ul ul li:last-child {border-bottom:0;}
 
 	#content nav#sidebar ul li a { font-weight: bold; color: #595c61; padding: 0; border: none; display: inline; text-decoration: none; }
 
