@@ -166,7 +166,7 @@ In this procedure, you try running the application—and see what happens when a
 
     ![Green indicator shows that the instance is loaded](images/tutorials/instance_loaded.png)
 
-    A red indicator means a problem configuring the instance. {Can you suggest troubleshooting?}
+    A red indicator means a problem configuring the instance.
 
 2. Click HTTP.
 
@@ -180,11 +180,13 @@ In this procedure, you try running the application—and see what happens when a
 
 In the procedure above, the application failed to deploy because it needed the Rails 2.3.8 gem. This procedure describes how to add the gem.
 
-Because Fat Free CRM doesn't have a Gemfile to manage its gems, you add them manually. If the application used Bundler or Rails 3, this procedure would not be needed.
+Because Fat Free CRM doesn't have a Gemfile to manage its gems, you add them manually. If the application used bundler or Rails 3, this procedure would not be needed.
  
 #### To add gems
 
-1. In your AppCloud Environments page, click the Applications *tab*.
+1. In your AppCloud Environments page, click the application name: fat_free_crm.
+
+    ![application name link](images/tutorials/applicationlink.png)
 
 2. Click the Add Rubygems icon. 
 
@@ -210,27 +212,23 @@ In this procedure, you create an SSH key so that you can log into the instance f
 
 3. Accept the default path and use an empty password. 
 
-    `Generating public/private rsa key pair.`
+        Generating public/private rsa key pair.  
+        Enter file in which to save the key (/Users/cephalopod/.ssh/id_rsa):  
+        Created directory '/Users/cephalopod/.ssh'.   
+        Enter passphrase (empty for no passphrase): 
+        Enter same passphrase again:   
 
-    `Enter file in which to save the key (/Users/cephalopod/.ssh/id_rsa):`
+4. Copy the key: display the file (`cat .ssh/id_rsa.pub`) and copy the contents.
 
-    `Created directory '/Users/cephalopod/.ssh'.`
-
-    `Enter passphrase (empty for no passphrase):`
-
-    `Enter same passphrase again:`  
-
-3. Copy the key: display the file (`cat .ssh/id_rsa.pub`) and copy the contents.
-
-4. In your AppCloud account page, click SSH Public Keys.
+5. In your AppCloud account page, click SSH Public Keys.
 
     ![SSH Public Keys under the Server Tools heading](images/tutorials/ssh_public_keys.png)
 
-5. Enter a name for the key.
+6. Enter a name for the key.
 
-5. Paste the key (from step 3) into the Public Key field.
+7. Paste the key (from step 3) into the Public Key field.
 
-6. Click Add Key.
+8. Click Add Key.
 
 ---
 
@@ -242,9 +240,13 @@ In this procedure, you update your AppCloud environment for the Rails gem and th
 
 1. In your AppCloud account page, click Dashboard.
 
-2. Click Update.
+2. Click Please Update.
 
-    ![The ! indicates an update is needed.](images/tutorials/update_button.png)
+    ![Please update links to the Environment page.](images/tutorials/please_update_.png)
+
+3. On the Environment page, click Update.
+
+	    ![The ! indicates an update is needed.](images/tutorials/update_button.png)
 
 ---
     
@@ -255,7 +257,7 @@ In this procedure, you deploy the Fat Free CRM application and discover that the
 
 #### To deploy and verify deployment of the application
 
-1. In the Dashboard of the AppCloud account page, click the Applications *tab*.
+1. In your AppCloud account page, click Dashboard.
 
 2. Select Migrate to automatically run your db:migrate during deployment.
 
@@ -270,7 +272,9 @@ In this procedure, you deploy the Fat Free CRM application and discover that the
 
 3. Verify deployment:
 
-    a. Click the Instances tab.
+    a. Click the Environment name.
+
+        ![deploy button](images/tutorials/environment_name_link.png)
 
     b. Click HTTP.
 
