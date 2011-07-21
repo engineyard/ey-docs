@@ -24,7 +24,7 @@ This is the process for deploying the Fat Free CRM application:
 
 If you have already signed up for and started your trial account, skip to [Get the Fat Free CRM application from GitHub][4] below.
 
-#### To sign up for your trial account
+### To sign up for your trial account
  
 1. Navigate to [[login.engineyard.com/signup|http://cloud.engineyard.com/signup]]
 2. Enter your name, email address, and a password.
@@ -36,7 +36,7 @@ If you have already signed up for and started your trial account, skip to [Get t
 
 After signing up for a trial account, you get an email from Engine Yard. In this procedure, you validate and name the account and start your free trial.
 
-#### To validate and start your trial account
+### To validate and start your trial account
  
 1. Find the email "Welcome to Engine Yard. Please verify your email." 
     This email from Engine Yard (sso@engineyard.com) should appear in your inbox a few minutes after you create your account. 
@@ -63,7 +63,7 @@ You need a GitHub account for this procedure. If you don't have a GitHub account
 
 In general, you can use any git server with your AppCloud account. However, in this tutorial, you use GitHub because the Fat Free CRM repository is on GitHub.  
 
-#### To get the Fat Free CRM application from GitHub
+### To get the Fat Free CRM application from GitHub
 
 1. In a new browser window, navigate to [[github.com|http://github.com]].
 
@@ -96,7 +96,7 @@ In general, you can use any git server with your AppCloud account. However, in t
 
 Because the readme for Fat Free CRM says that this is a Rails 2.3.8 application; you set the application type to Rails 2. This procedure describes how.
 
-#### To set the Rails type and create the application
+### To set the Rails type and create the application
 
 1. If you are not already signed in to your AppCloud account, log in now. [[cloud.engineyard.com/accounts|https://cloud.engineyard.com/accounts]]
 
@@ -115,7 +115,7 @@ Because the readme for Fat Free CRM says that this is a Rails 2.3.8 application;
 
 In this procedure, you set a Git deploy key so that you can deploy the Fat Free CRM code from GitHub to your Engine Yard account.  
 
-#### To create the trusted relationship between GitHub and Engine Yard
+### To create the trusted relationship between GitHub and Engine Yard
 
 1. Copy the Git Deploy Key from the AppCloud application.
 
@@ -144,7 +144,7 @@ In this procedure, you set a Git deploy key so that you can deploy the Fat Free 
 
 In this procedure, you try running the application—and see what happens when a gem is missing.
 
-#### To try running the Fat Free CRM application
+### To try running the Fat Free CRM application
 
 1. Make sure that the instance is loaded (that the indicator is green).
 
@@ -165,7 +165,7 @@ In the procedure above, the application failed to deploy because it needed the R
 
 Because Fat Free CRM doesn't have a Gemfile to manage its gems, you add them manually. If the application used bundler or Rails 3, this procedure would not be needed.
  
-#### To add gems
+### To add gems
 
 1. In your AppCloud Environments page, click the application name: fat_free_crm.
 
@@ -186,7 +186,7 @@ Because Fat Free CRM doesn't have a Gemfile to manage its gems, you add them man
 
 In this procedure, you create an SSH key so that you can log into the instance from the command line. You do this later when you run the rake commands to [complete the Fat Free CRM application][12]. 
 
-#### To configure for SSH
+### To configure for SSH
 
 1. Open a terminal window.
 
@@ -217,7 +217,7 @@ In this procedure, you create an SSH key so that you can log into the instance f
 
 In this procedure, you update your AppCloud environment for the Rails gem and the SSH key.
 
-#### To update your environment
+### To update your environment
 
 1. In your AppCloud account page, click Dashboard.
 
@@ -235,7 +235,7 @@ In this procedure, you update your AppCloud environment for the Rails gem and th
 
 In this procedure, you deploy the Fat Free CRM application and discover that there are more tasks needed to get the application running.
 
-#### To deploy and verify deployment of the application
+### To deploy and verify deployment of the application
 
 1. In your AppCloud account page, click Dashboard.
 
@@ -275,7 +275,7 @@ In this procedure, you:
 * Log into the Fat Free CRM application.
 
 
-#### To run two rake commands and log into Fat Free CRM
+### To run two rake commands and log into Fat Free CRM
 
 1. Click SSH in the Instances tab.
 
