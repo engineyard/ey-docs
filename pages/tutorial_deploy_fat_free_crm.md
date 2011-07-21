@@ -2,34 +2,23 @@
 
 In this tutorial, you deploy a Ruby application (named Fat Free CRM) to the Engine Yard cloud. 
 
-This tutorial is illustrated in the [[Learn to Deploy Rails Apps on Engine Yard in under 5 Mins!|http://vimeo.com/17825326]] video. 
+This tutorial is illustrated in [[Learn to Deploy Rails Apps on Engine Yard in under 5 Mins!|http://vimeo.com/17825326]] video. 
 
 This is the process for deploying the Fat Free CRM application:
 
-* [Sign up for a trial account][1]
-
-* [Validate and start your trial account][2]
-
-* [Get the sample application from GitHub][4]
-
-* [Create the application][5]
-
-* [Create a trusted relationship between the GitHub and Engine Yard accounts][6]
-
-* [Try running the Fat Free CRM application][7]
-
-* [Add gems][8]
-
-* [Configure for SSH][9]
-
-* [Update your environment][10]
-
-* [Deploy the Fat Free CRM application][11]
-
-* [Complete the process][12]
+*  [Sign up for a trial account][1]
+*  [Validate and start your trial account][2]
+*  [Get the sample application from GitHub][4]
+*  [Create the application][5]
+*  [Create a trusted relationship between the GitHub and Engine Yard accounts][6]
+*  [Try running the Fat Free CRM application][7]
+*  [Add gems][8]
+*  [Configure for SSH][9]
+*  [Update your environment][10]
+*  [Deploy the Fat Free CRM application][11]
+*  [Complete the process][12]
 
 
----
 
 <h2 id="topic1"> Sign up for a trial account </h2>
 
@@ -42,7 +31,6 @@ If you have already signed up for and started your trial account, skip to [Get t
 3. Agree to the terms of service and select the check box.
 4. Click Create Account.
 
----
 
 <h2 id="topic2"> Validate and start your a trial account</h2>
 
@@ -66,7 +54,6 @@ After signing up for a trial account, you get an email from Engine Yard. In this
     ![Start Trial](images/tutorials/start_trial.png)
 
 
----
 
 <h2 id="topic4"> Get the sample application from GitHub </h2>
 
@@ -104,7 +91,6 @@ In general, you can use any git server with your AppCloud account. However, in t
 
     You need it again [later][6].
 
----
 
 <h2 id="topic5"> Create the application </h2>
 
@@ -124,7 +110,6 @@ Because the readme for Fat Free CRM says that this is a Rails 2.3.8 application;
 
 4. Click Create Application.
 
----
 
 <h2 id="topic6"> Create a trusted relationship between your GitHub and Engine Yard accounts </h2>
 
@@ -154,7 +139,6 @@ In this procedure, you set a Git deploy key so that you can deploy the Fat Free 
 
     The instance boots and deploys the Fat Free CRM application. This may take 10 minutes or so.
 
----
 
 <h2 id="topic7"> Try running the Fat Free CRM application </h2>
 
@@ -166,7 +150,7 @@ In this procedure, you try running the application—and see what happens when a
 
     ![Green indicator shows that the instance is loaded](images/tutorials/instance_loaded.png)
 
-    A red indicator means a problem configuring the instance. {Can you suggest troubleshooting?}
+    A red indicator means a problem configuring the instance.
 
 2. Click HTTP.
 
@@ -174,17 +158,18 @@ In this procedure, you try running the application—and see what happens when a
 
     Expect to see a 404 Not Found error. The application failed to deploy because it is missing the Rails 2.3.8 gem. 
 
----
 
 <h2 id="topic8"> Add gems </h2>
 
 In the procedure above, the application failed to deploy because it needed the Rails 2.3.8 gem. This procedure describes how to add the gem.
 
-Because Fat Free CRM doesn't have a Gemfile to manage its gems, you add them manually. If the application used Bundler or Rails 3, this procedure would not be needed.
+Because Fat Free CRM doesn't have a Gemfile to manage its gems, you add them manually. If the application used bundler or Rails 3, this procedure would not be needed.
  
 #### To add gems
 
-1. In your AppCloud Environments page, click the Applications *tab*.
+1. In your AppCloud Environments page, click the application name: fat_free_crm.
+
+    ![application name link](images/tutorials/applicationlink.png)
 
 2. Click the Add Rubygems icon. 
 
@@ -196,7 +181,6 @@ Because Fat Free CRM doesn't have a Gemfile to manage its gems, you add them man
 
     After adding the gem, message about updating your environment appears. You update the environment in [Update your environment][10] below.
 
----
  
 <h2 id="topic9">Configure for SSH </h2>
 
@@ -210,29 +194,24 @@ In this procedure, you create an SSH key so that you can log into the instance f
 
 3. Accept the default path and use an empty password. 
 
-    `Generating public/private rsa key pair.`
+        Generating public/private rsa key pair.  
+        Enter file in which to save the key (/Users/cephalopod/.ssh/id_rsa):  
+        Created directory '/Users/cephalopod/.ssh'.   
+        Enter passphrase (empty for no passphrase): 
+        Enter same passphrase again:   
 
-    `Enter file in which to save the key (/Users/cephalopod/.ssh/id_rsa):`
+4. Copy the key: display the file (`cat .ssh/id_rsa.pub`) and copy the contents.
 
-    `Created directory '/Users/cephalopod/.ssh'.`
-
-    `Enter passphrase (empty for no passphrase):`
-
-    `Enter same passphrase again:`  
-
-3. Copy the key: display the file (`cat .ssh/id_rsa.pub`) and copy the contents.
-
-4. In your AppCloud account page, click SSH Public Keys.
+5. In your AppCloud account page, click SSH Public Keys.
 
     ![SSH Public Keys under the Server Tools heading](images/tutorials/ssh_public_keys.png)
 
-5. Enter a name for the key.
+6. Enter a name for the key.
 
-5. Paste the key (from step 3) into the Public Key field.
+7. Paste the key (from step 3) into the Public Key field.
 
-6. Click Add Key.
+8. Click Add Key.
 
----
 
 <h2 id="topic10"> Update your environment </h2>
 
@@ -242,11 +221,14 @@ In this procedure, you update your AppCloud environment for the Rails gem and th
 
 1. In your AppCloud account page, click Dashboard.
 
-2. Click Update.
+2. Click Please Update.
 
-    ![The ! indicates an update is needed.](images/tutorials/update_button.png)
+    ![Please update links to the Environment page.](images/tutorials/please_update.png)
 
----
+3. On the Environment page, click Update.
+
+	![The exclamation point indicates an update is needed.](images/tutorials/update_button.png)
+
     
 
 <h2 id="topic11"> Deploy the Fat Free CRM application </h2>
@@ -255,7 +237,7 @@ In this procedure, you deploy the Fat Free CRM application and discover that the
 
 #### To deploy and verify deployment of the application
 
-1. In the Dashboard of the AppCloud account page, click the Applications *tab*.
+1. In your AppCloud account page, click Dashboard.
 
 2. Select Migrate to automatically run your db:migrate during deployment.
 
@@ -270,19 +252,20 @@ In this procedure, you deploy the Fat Free CRM application and discover that the
 
 3. Verify deployment:
 
-    a. Click the Instances tab.
+    a. Click the Environment name.
 
-    b. Click HTTP.
+    ![deploy button](images/tutorials/environment_name_link.png)
 
-    ![http_button](images/tutorials/http_button.png)
+    b. Click Visit your application.
 
-    Fat Free CRM should now be running. However, this (somewhat misleading) error message appears. To get the application running correctly you will need to run some rake commands, as described [below][12].
+    ![Visit your application link](images/tutorials/visit_application.png)
+
+    Fat Free CRM should now be running. However, this (somewhat misleading) error message appears. To get the application running correctly you need to run some rake commands, as described [below][12].
 
     ![Message tells you to run rake commands](images/tutorials/need_to_run_rake.png)
 
 4. Leave this window open; you refresh it in the procedure below.
 
----
 
 <h2 id="topic12"> Complete the process </h2>
 
@@ -322,7 +305,6 @@ The Fat Free CRM application is now up and running.
 
 ![Refresh Fat Free CRM](images/tutorials/fat_free_crm_loaded.png)
 
----
 
 <h2 id="topic13"> What next? </h2>
 
