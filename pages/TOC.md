@@ -1,6 +1,7 @@
 * [[Docs Home|Home]]
 * [[Intro to Engine Yard AppCloud|appcloud_home]]  
 * [[Getting Started|getting_started_home]]
+  * [[Tutorial on trial account and sample app deployment|tutorial_deploy_fat_free_crm]]
   * [[Sign Up for Engine Yard AppCloud|sign-up-for-engine-yard-appcloud]]
   * [[Setup Environment|setup-environment]]
   * [[Host Your Code on GitHub|host-your-code-on-github]]
