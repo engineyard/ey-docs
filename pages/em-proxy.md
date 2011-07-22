@@ -82,24 +82,12 @@ An example of `proxy.rb`
 
 Let's step through this script and describe what it does.
 
-This starts the proxy up on port `80`, and listens for any incoming requests.
-
-
-    Proxy.start(:host => "0.0.0.0", :port => 80) do |conn|
-
-
-This proxies the traffic to the servers you define. Your production server proxies locally to nginx and listens on port `8080`. 
-
-**NOTE**: Replace `192.0.32.10` with the IP of your EY AppCloud environment.
-
-
-    conn.server :production, :host => '127.0.0.1', :port => 8080
-    conn.server :ey_cloud, :host => '192.0.32.10', :port => 80
-
-
-This sends the response back to the user if the traffic came from the production server.
-
-
-    conn.on_response do |server, resp|
-      resp if server == :production
-    end
+1. This starts the proxy up on port `80`, and listens for any incoming requests.
+        Proxy.start(:host => "0.0.0.0", :port => 80) do |conn|
+2. This proxies the traffic to the servers you define. Your production server proxies locally to nginx and listens on port `8080`. **NOTE**: Replace `192.0.32.10` with the IP of your EY AppCloud environment.
+        conn.server :production, :host => '127.0.0.1', :port => 8080
+        conn.server :ey_cloud, :host => '192.0.32.10', :port => 80
+3. This sends the response back to the user if the traffic came from the production server.
+        conn.on_response do |server, resp|
+          resp if server == :production
+        end
