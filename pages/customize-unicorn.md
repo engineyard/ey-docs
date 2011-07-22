@@ -25,11 +25,8 @@ UNICORN_CONF="/data/myapp/shared/config/custom_unicorn.rb"
 
 Then copy `/data/myapp/shared/config/unicorn.rb` to `/data/myapp/shared/config/custom_unicorn.rb` and customize it as you see fit.  
 
-To restart unicorn run:
+To restart unicorn run: `/engineyard/bin/app_myapp reload`
 
-<code>
-/engineyard/bin/app_myapp reload
-</code>
 
 ### Unicorn in Bundler
 
@@ -40,12 +37,7 @@ First in order to run Unicorn under bundler you must add unicorn to the Gemfile 
     UNICORN_EXEC="exec unicorn"
 
 
-Then restart unicorn like below:
+Then restart unicorn like below: `/engineyard/bin/app_myapp reload`
 
-<code>
-/engineyard/bin/app_myapp reload
-</code>
 
-Provided Unicorn restarted properly your unicorn should now be running under bundler.  If it does not please check out the unicorn log files in:
-
-    /data/myapp/shared/log
+Provided Unicorn restarted properly your unicorn should now be running under bundler.  If it does not please check out the unicorn log files in: `/data/myapp/shared/log`

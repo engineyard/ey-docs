@@ -29,13 +29,13 @@ If you just want to get going, and work the rest out later, here's the quick ver
 
   - Be familiar with our docs on:
       -  [[using chef recipes|custom-chef-recipes]]
-      -  and [[deploy hooks|deploy_hooks_api]]
-  - Check you have these gems installed\\ 
+      -  [[deploy hooks|deploy_hooks_api]]
+  - Check you have these gems installed:
       - [[resque|http://rubygems.org/gems/resque]]
       - [[redis|http://rubygems.org/gems/redis]]
       - [[redis-namespace|http://rubygems.org/gems/redis-namespace]]
       - [[yajl-ruby|http://rubygems.org/gems/yajl-ruby]]
-  - Add `config/resque.yml` as per the Resque `README`
+  - Add `config/resque.yml` as per the Resque README
       - Typically this will be in `/data/{app_name}/shared/config/resque.yml` and you will use a deploy hook to symlink this into `current/config`.
   - For each worker you wish to have create a `resque_{x}.conf`
       - (where x is a number for the worker counting from 0) IF you want to use this mechanism to prioritize. Otherwise you can simply skip this step.
@@ -78,7 +78,7 @@ If they receive a `SIGQUIT`, they will allow an already running job to finish be
 
 So, the two things that need consideration then are how long your job will run for, and what are the consequences of a job being terminated during processing.
 
-#### To TERM or to QUIT
+### To TERM or to QUIT
 
 If terminating your job mid process leaves you databases in a consistent state, doesn't result in half drawn thumbnails, or cause other embarrassing mishaps, then `SIGTERM` is the  simplest way forward. 
 
@@ -94,7 +94,7 @@ If however your job can't be interrupted, you'll need to ask it to stop with QUI
 
 This will allow your script 60 seconds to try and finish its job, before the wrapper script will ensure that it has in fact died. Note, that for the sake of following conventions used in other monit wrapper scripts, `quit` and `stop` are synonyms.
 
-#### Time to Die
+### Time to Die
 
 However we have customers with jobs that 5, 10, and 30 minutes, and even up to 12 hours.
 
@@ -151,7 +151,7 @@ On top of that the monit resque script logs its handling of resque to
 ## Frequent Small Jobs
 If you have a queue thats servicing frequent small jobs, we've experienced bottle neck that you may need to grapple with.
 
-#### Class Caching
+### Class Caching
 So, you're in production, you've followed the `README` and loaded the environment in your rake file, and you've got `config.cache_classes = true` (which is the default).
 
 In case you're not aware, this setting in `config/environments/production.rb` is why you don't see all those pesky `SHOW FIELDS` (assuming MySQL) statements in your production.log, like you do while you're developing. Its also why you need to restart your app server when you deploy code, unlike in development. In development, the appropriate models are loaded on each request (complete with changes), in production they're loaded on demand, the first time their called.
