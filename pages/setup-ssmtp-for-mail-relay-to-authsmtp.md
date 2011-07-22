@@ -13,52 +13,46 @@ Once you have your account set up, take note of your username/password and come 
 
 **NOTE**: If using AuthSMTP, go into the control panel and enable SSL access to your mail relay.
 
-## Configure Your Instance
+## Steps to configure your instance
 
-Now you can configure ssmtp on your instance.
+1. Edit `/etc/ssmtp/ssmtp.conf` (a config file for ssmtp sendmail) and make it look like the following:
+        mailhub=mail.authsmtp.com:2525
+        mailhub=smtp.gmail.com:587  -- used for google apps
 
-Edit `/etc/ssmtp/ssmtp.conf` (a config file for ssmtp sendmail) and make it look like the following:
+2. Replace this with the hostname you want email to come from:
+        rewriteDomain=example.com
 
-    mailhub=mail.authsmtp.com:2525
-    mailhub=smtp.gmail.com:587  -- used for google apps
+3. Set `FromLineOverride` to make the the **From:** use the from line from the envelope.  The only exception is if no *from line* is given.
+        FromLineOverride=YES
 
-Replace this with the hostname you want email to come from:
-
-    rewriteDomain=example.com
-
-Set `FromLineOverride` to make the the **From:** use the from line from the envelope.  The only exception is if no *from line* is given.
-
-    FromLineOverride=YES
-
-Use SSL/TLS to send secure messages to server:
-
-    UseSTARTTLS=YES
+4. Use SSL/TLS to send secure messages to server:
+        UseSTARTTLS=YES
   
-Make sure that this isn't `UseTLS=YES`. If you're getting errors like:
+5. Make sure that this isn't `UseTLS=YES`.
+        
+        SSL connection to host = Success, Cannot open mail.authsmtp.com:2525
 
-    SSL connection to host = Success, Cannot open mail.authsmtp.com:2525
+     If you're getting errors like the one above then you have the wrong variable. `UseTLS` doesn't work with authsmtp, only `UseSTARTTLS` does.
 
-then you have the wrong variable. `UseTLS` doesn't work with authsmtp, only `UseSTARTTLS` does.
+6. Add your own user/pass here:
 
-Add your own user/pass here:
+        AuthUser=username
+        AuthPass=password
+        AuthMethod=DIGEST-MD5 #Comment this out if you are using gmail or google apps
 
-    AuthUser=username
-    AuthPass=password
-    AuthMethod=DIGEST-MD5 #Comment this out if you are using gmail or google apps
+7. Set your action mailer setting in `RAILS_ROOT/config/environment.rb` (or an env specific env file if you prefer) 
+        
+        ActionMailer::Base.delivery_method = :sendmail
 
-Set your action mailer setting in `RAILS_ROOT/config/environment.rb` (or an env specific env file if you prefer) 
+8. Or for newer versions of Rails
 
-    ActionMailer::Base.delivery_method = :sendmail
+        config.action_mailer.delivery_method = :sendmail
 
-Or for newer versions of Rails
+9. Ensure permissions on the three files above `/etc/ssmtp/ssmtp.conf`, `/usr/sbin/ssmtp`, `/usr/bin/sendmail`  are properly set:
 
-    config.action_mailer.delivery_method = :sendmail
+        $ sudo chmod +x /usr/sbin/ssmtp /usr/bin/sendmail
+        $ sudo chown deploy:deploy /etc/ssmtp/ssmtp.conf
 
-Ensure permissions on the three files above(`/etc/ssmtp/ssmtp.conf`, `/usr/sbin/ssmtp`, `/usr/bin/sendmail`) are properly set:
+    Where `deploy` is the name of your SSH user you logged into your instance with.
 
-    $ sudo chmod +x /usr/sbin/ssmtp /usr/bin/sendmail
-    $ sudo chown deploy:deploy /etc/ssmtp/ssmtp.conf</code></pre>
-
-Where `deploy` is the name of your SSH user you logged into your instance with.
-
-And that's it! You can now send emails from your app via your SMTP relay.
+10. That's it! You should now be able to send emails from your app via your SMTP relay.
