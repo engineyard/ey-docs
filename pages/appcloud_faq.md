@@ -1,5 +1,39 @@
 # Engine Yard AppCloud FAQs
 
+* <a href=#FAQ1>Which SCMs (Source Code Management) do you support?</a>
+* <a href=#FAQ2>Is there any shared storage on EY AppCloud?</a>
+* <a href=#FAQ3>Do you offer Email services on EY AppCloud?</a>
+* <a href=#FAQ4> Can EY AppCloud host my DNS?</a>
+* <a href=#FAQ5> Can I have more than one IP address for my application?</a>
+* <a href=#FAQ6> Can I failover to a Database Slave?</a>
+* <a href=#FAQ7> Do you offer Ruby version 1.8.7?</a>
+* <a href=#FAQ8> Do you support Bundler?</a>
+* <a href=#FAQ9> Is PostgreSQL Supported on Engine Yard AppCloud?</a>
+* <a href=#FAQ10> Are You Going to Support PostgreSQL?</a>
+* <a href=#FAQ11> What scale of apps are appropriate for Engine Yard AppCloud?</a>
+* <a href=#FAQ12> What types of applications will run on Engine Yard AppCloud?</a>
+* <a href=#FAQ13> Does Engine Yard manage my Domain Name or does my Company?</a>
+* <a href=#FAQ14> Do I need an IP address? </a>
+* <a href=#FAQ15> Do I have sudo access? </a>
+* <a href=#FAQ16> Can I use my own SSH key? </a>
+* <a href=#FAQ17> Can I reboot my instance without worrying about losing data? </a>
+* <a href=#FAQ18> If I shutdown and create an instance with the same volumes, will I lose data? </a>
+* <a href=#FAQ19> How do I migrate from SVN to Git? </a>
+* <a href=#FAQ20> Are there reserved names in Engine Yard AppCloud? </a>
+* <a href=#FAQ21> What are availability zones? </a>
+* <a href=#FAQ22> How do I change my Credit Card information? </a>
+* <a href=#FAQ23> How do EY AppCloud instances differ from xCloud slices? </a>
+* <a href=#FAQ24> Unicorn failing to reload after Bundler </a>
+* <a href=#FAQ25> Do you offer any DDoS Protection on EY AppCloud? </a>
+* <a href=#FAQ26> 400 Bad Request While Updating Chef Recipes </a>
+* <a href=#FAQ27> Error: "missing activerecord-mysql2-adapter gem" </a>
+* <a href=#FAQ28> Bundler 1.0 Will Not Install Compiled Gems in UNIX When bundle install is Run in Windows </a>
+* <a href=#FAQ29> One of my instances is not responding. What can I do? </a>
+* <a href=#FAQ30> Can I open a custom port for my application? </a>
+
+
+
+
 <a href=#FAQ1><h2 id="FAQ1"> Which SCMs (Source Code Management) do you support? </h2></a>
 
 Only git is supported at this time. Your repository will need to be ported to git before your application can be deployed on EY AppCloud. [[GitHub|http://github.com/guides/import-from-subversion]] has a great doc on porting an SVN repository to git. 
@@ -196,7 +230,7 @@ Also you may see the error:
 
 To fix this, you just need to include the `mysql2` gem in your Gemfile.
 
-<a href=#FAQ28><h2 id="FAQ28"> Bundler 1.0 Will Not Install Compiled Gems in UNIX When `bundle install` is Run in Windows </h2></a>
+<a href=#FAQ28><h2 id="FAQ28"> Bundler 1.0 Will Not Install Compiled Gems in UNIX When bundle install is Run in Windows </h2></a>
 
 When developing on Windows you'll find when you deploy your Applications on EY that it will not find certain gems such as MySQL2 no matter what you do.  Please review this open [[Bug report #646|https://github.com/carlhuda/bundler/issues#issue/646]] for more information on it.
 
@@ -207,6 +241,8 @@ If one of your instances stops responding, it may have crashed or frozen. You wi
 <a href=#FAQ30><h2 id="FAQ30"> Can I open a custom port for my application? </h2></a>
 
 No. Turning on a custom port can create security risks and incite problems difficult to diagnose. 
+
+
 
 
 
