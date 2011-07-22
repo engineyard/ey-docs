@@ -1,13 +1,11 @@
 # Using PostgreSQL 9 with AppCloud
 
-#### Introduction
+## Introduction
 
-AppCloud with the PostgreSQL 9 database is now a candidate for testing.
-
-Read this page if you want to participate in the AppCloud PostgreSQL 9 Alpha program.
+The PostgreSQL 9 database is now a candidate for testing on Engine Yard AppCloud. Read this page if you want to participate in the AppCloud PostgreSQL 9 Alpha program.
 
 
-#### Process
+### Process
 
 The process for setting up and running your AppCloud application on PostgreSQL 9 depends on your current environment.
 
@@ -35,16 +33,16 @@ The process for setting up and running your AppCloud application on PostgreSQL 9
 
 **Important!** PostgreSQL 9 on AppCloud is an Alpha feature. Always test in a development or staging environment. 
 
----
+
 
 <h2 id="topic2"> Get access to the Alpha program and ey-beta-talk group </h2>
 
-#### Introduction
+### Introduction
 
 Follow this procedure to gain access to the Alpha program and access to the Beta Conversations Google group (ey-beta-talk). Use ey-beta-talk for issues or questions with this Alpha program.
 
 
-####To use PostgreSQL 9 with AppCloud in Alpha
+### To use PostgreSQL 9 with AppCloud in Alpha
 
 1. [[Request access to the PostgreSQL Alpha program|signup-postgresql]].
 
@@ -52,17 +50,17 @@ Follow this procedure to gain access to the Alpha program and access to the Beta
 	If you have participated in other Engine Yard Alpha and Beta programs, you might already be group member.
 
 
----
+
 
 <h2 id="topic3"> Set up an AppCloud application to use PostgreSQL 9 in Alpha </h2>
 
-#### Introduction
+### Introduction
 
 Follow this procedure to set up a new environment that uses a PostgreSQL 9 database. You can create new application and a new environment or create a new environment for an existing application. 
 
 If you are migrating an existing PostgreSQL database, you'll to perform a dump and restore _after_ creating a new environment ([Dump and restore an existing PostgreSQL database][3]).
 
-####To use PostgreSQL 9 with AppCloud in Alpha
+### To use PostgreSQL 9 with AppCloud in Alpha
 
 1. **Important!** If you have applied any custom chef recipes for PostgreSQL, delete them from your ey-cloud-recipes repository. Do not apply them to this instance.  
     For general information about custom chef recipes, see [[Custom Chef Recipes|custom-chef-recipes]].
@@ -80,29 +78,29 @@ gem "pg"</pre>
 	
 3. Deploy the application.
 
----
+
 
 <h2 id="topic4"> Dump and restore an existing PostgreSQL database</h2>
 
-####Introduction
+### Introduction
 If you are currently running a PostgreSQL database (8.x or 9), you need to dump the database, create a new PostgreSQL environment in AppCloud, move the database dump file to the database server, and finally load the file into the PostgreSQL database.  
 
 You can perform these tasks yourself (as outlined below) or ask [[Engine Yard Professional Services|http://www.engineyard.com/services]] to do the migration for you.
 
-####To dump and restore the PostgreSQL database
+### To dump and restore the PostgreSQL database
 
 See the PostgreSQL documentation for full details on dumping and restoring a database. 
 **Note:** The following commands assume you are logged into the db_master instance.  
 
-1.  Dump the database.  
-
-      `pg_dump -Fc dbname > dumpfile`
+1.  Dump the database. 
+		
+		pg_dump -Fc dbname > dumpfile
 
     **Note:** -Fc is needed to use PostgreSQL's custom dump format and compression (use the -o option only if your application explicitly references OID values).  
 
 2. 	Move the output file to the new server. 
-
-      `scp dumpfile newserver:/path/to/file/dumpfile`
+	
+		scp dumpfile newserver:/path/to/file/dumpfile
 	
 	In this case, the new server is the database server assigned for your PostgreSQL 9 Alpha AppCloud environment.
 	
@@ -112,34 +110,31 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 
 4. Import the output file to the new PostgreSQL 9 database. 
 
-    `pg_restore -d dbname dumpfile` 
+		pg_restore -d dbname dumpfile
 	
 	**Note:** the dbname should correspond to the database name of your application
 
 5. Test the application running in the new environment before deleting your original environment.
 
----
+
 
 <h2 id="topic8">Connect to your PostgreSQL 9 Database </h2>
 
-#### Introduction
-Follow this procedure to connect to your newly created PostgreSQL 9 database. 
-
-#### To connect to your PosgreSQL 9 database
+### To connect to your PosgreSQL 9 database
 See the [[Database Home|database_home]] documentation (Many of the tasks apply to PostgreSQL as well as MySQL.)
 
 1. Find your generated PostgreSQL password (the [[MySQL instructions on passwords|find-your-generated-mysql-password-and-connect-to-your-db]] describe this step)
 
 2. Extract list of databases
+				
+		psql -l -U deploy
 
-    `psql -l -U deploy`
-
-3. Connect to your database
-
-    `psql -U deploy -h localhost -d dbname`
+3. Connect to your database 
+		
+		psql -U deploy -h localhost -d dbname
 
 
----
+
 <h2 id="topic7"> Known issues</h2>
 
 Known issues associated with PostgresSQL 9 on AppCloud are:
@@ -149,7 +144,7 @@ Known issues associated with PostgresSQL 9 on AppCloud are:
 * Extensions for the PostgreSQL 9 server are not yet available in custom recipes (but they are coming soon).
 
 
----
+
 
 <h2 id="topic5"> More information</h2>
 
@@ -168,7 +163,7 @@ Known issues associated with PostgresSQL 9 on AppCloud are:
   </tr>
 </table>
 
----
+
 
 <h2 id="topic6"> Troubleshooting</h2>
 
