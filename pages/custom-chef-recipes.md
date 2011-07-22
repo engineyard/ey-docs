@@ -199,22 +199,18 @@ The first part of this is included in the **ey-cloud-recipes** repository.  The 
 
 This code can be found in the **ey-cloud-recipes** repository under ''cookbooks/main/definitions/ey_cloud_report.rb'':
 
-<code RUBY>
-define :ey_cloud_report do
-  execute "reporting for #{params[:name]}" do
-    command "ey-enzyme --report '#{params[:message]}'"
-    epic_fail true
-  end
-end
-</code>
+    define :ey_cloud_report do
+      execute "reporting for #{params[:name]}" do
+        command "ey-enzyme --report '#{params[:message]}'"
+        epic_fail true
+      end
+    end
 
 Then inside your cookbook in the **recipe/default.rb** file, you can use the code like this example: 
 
-<code RUBY>
-ey_cloud_report "nginx" do
-  message "custom logrotate for nginx"
-end
-</code>
+    ey_cloud_report "nginx" do
+      message "custom logrotate for nginx"
+    end
 
 There are further examples of how the ''ey_cloud_report'' method is used in the [sphinx recipe](http://github.com/engineyard/ey-cloud-recipes/blob/master/cookbooks/sphinx/recipes/default.rb).
 
