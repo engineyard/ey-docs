@@ -173,7 +173,7 @@ to something like this:
     end
 
 
-Or perhaps as away to hit all your models at once:    
+Or perhaps as a way to hit all your models at once:    
 
 
     task resque:setup => :environment do    
