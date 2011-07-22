@@ -1,6 +1,6 @@
 # How to use CarrierWave (and optionally fog) to upload and store files #
 
-#### Introduction
+## Introduction
 
 CarrierWave is used to upload and store files (typically images and documents) for Ruby applications. For example, you might use CarrierWave to associate and store photos with user identities. (CarrierWave is an alternative to Paperclip.)
 
@@ -10,9 +10,9 @@ CarrierWave without fog is good for testing and for small applications: files ar
 
 However, for larger applications in production, consider using CarrierWave with fog to upload files to a specialized storage service, such as Amazon S3. See [Setting up CarrierWave for online storage with a web service][3] below. 
 
-<a href=#update2><h2 id="update2">Setting up CarrierWave for local storage in AppCloud</h2></a>
+<h2 id="update2">Setting up CarrierWave for local storage in AppCloud</h2>
 
-#### Introduction
+### Introduction
 
 Use CarrierWave to store files locally on your AppCloud instance if:  
 
@@ -21,7 +21,7 @@ Use CarrierWave to store files locally on your AppCloud instance if:
 
 Do not use CarrierWave locally if you are using a cluster because files uploaded to one instance are inaccessible from another. 
 
-#### To install and use CarrierWave for testing and small applications
+### To install and use CarrierWave for testing and small applications
 
 (For Rails 3.0.X and CarrierWave 0.5.4)
 
@@ -47,19 +47,21 @@ Do not use CarrierWave locally if you are using a cluster because files uploaded
             ...
         end
 
-**Note:** You must set the form to be multipart for file uploads to work:<br> `<%= form_for @user, :html => {:multipart => true} do |f| %>`
+**Note:** You must set the form to be multipart for file uploads to work:
+    
+    <%= form_for @user, :html => {:multipart => true} do |f| %>
 
 For more information, see [[github.com/jnicklas/carrierwave|http://github.com/jnicklas/carrierwave]].
 
-<a href=#update3><h2 id="update3">Setting up CarrierWave for online storage with a web service</h2></a>
+<h2 id="update3">Setting up CarrierWave for online storage with a web service</h2>
 
-#### Introduction
+### Introduction
 
 Using CarrierWave with fog gives you flexibility to store your files on any cloud service supported by fog and to switch between them as needed. This also keeps your uploaded files separated from your AppCloud instance — making a cleaner application.
 	
 This example uses Amazon S3, which is a popular online storage web service. However, you can use any fog-supported service to store your files for retrieval with CarrierWave.
 
-#### To setup and use CarrierWave with fog
+### To setup and use CarrierWave with fog
 
 1. Follow the instructions in the [above][2] to install CarrierWave and implement CarrierWave.
 
