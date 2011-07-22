@@ -14,15 +14,15 @@ The basic syntax for the connection is:
 
 So lets start filling in the pieces:
 
-  * [local port] -> This is the local port that you will connect you application to.  If you have a local MySQL installation on your local system it will be running on port 3306 by default, so we recommend using 3307 for this value.
+  * __[local port]__ This is the local port that you will connect you application to.  If you have a local MySQL installation on your local system it will be running on port 3306 by default, so we recommend using 3307 for this value.
   
-  * [dbhost] -> This is the hostname or IP address of the database host relative to the [remote host] which you connected to.  If the [remote host] is the database instance you will want to set this to 127.0.0.1 (so it refers to itself).  If you used an application instance as [remote host] then you can use the value of "host:" from your database.yml instead.
+  * __[dbhost]__ This is the hostname or IP address of the database host relative to the [remote host] which you connected to.  If the [remote host] is the database instance you will want to set this to 127.0.0.1 (so it refers to itself).  If you used an application instance as [remote host] then you can use the value of "host:" from your database.yml instead.
   
-  * [remote port] -> This is the port that your remote database listens for connections on; by default this is 3306.
+  * __[remote port]__ This is the port that your remote database listens for connections on; by default this is 3306.
   
-  * [username] -> This is your username for connecting to the [remote host], the default is "deploy".
+  * __[username]__ This is your username for connecting to the [remote host], the default is "deploy".
   
-  * [remote host] -> This is the host your tunnel will connect to and can be the database instance itself or one of your application instances.
+  * __[remote host]__ This is the host your tunnel will connect to and can be the database instance itself or one of your application instances.
 
 ## Putting it Together
 

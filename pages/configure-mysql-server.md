@@ -9,18 +9,17 @@ However, that default MySQL configuration file also contains an `!includedir` di
 
 Let's say you want to have `mysqld` (the MySQL server program, itself) start up with a non-default value for it's `innodb_buffer_pool_size` value, in this case `1536M (1.5G)`.  Place this in a file:
 
-  [mysqld]
-  innodb_buffer_pool_size = 1536M
+    [mysqld] innodb_buffer_pool_size = 1536M
 
 Then save your file read-able, or owned by the mysql system user, with a `.cnf` extension; `my_custom.cnf` is a good idea
 
-**Option A**
-
-Have Chef render a file to the include folder.
+* **Option A**
+  
+  Have Chef render a file to the include folder.
                                      
-**Option B**
-
-Place the file on `/db` volume (such as `/db/mysql.d/`) and then create a symlink with a [[deploy hook|deploy_hooks_api]].
+* **Option B**
+  
+  Place the file on `/db` volume (such as `/db/mysql.d/`) and then create a symlink with a [[deploy hook|deploy_hooks_api]].
 
 ## Dynamic Change
 
@@ -32,14 +31,14 @@ Follow these steps to add your configuration change to the system dynamically.
 
   - SSH into your MySQL instance.
   - Log into the MySQL console.
-
-      `mysql -u root -ppassword`
+        
+        mysql -u root -p password
 
 Your root MySQL password is the same as your deploy user password.
 
   - From the MySQL prompt type:
-
-      `mysql> SET GLOBAL <varname> = '<varvalue>';`
+  
+            mysql> SET GLOBAL <varname> = '<varvalue>';
 
 Where you'd enter the dynamic variable your wanting to set as `<varname>` and the new value as `<varvalue>`.  
 
