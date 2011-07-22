@@ -20,8 +20,7 @@ Fork and clone the [ey-cloud-recipes](http://github.com/engineyard/ey-cloud-reci
   - Click on the **clipboard icon** to copy the URL of your forked repository to your clipboard.
   - Clone the repository to your local development machine. Be sure you do **not** put this inside of your app repository as nested repositories aren't supported in git.
 
-
-    `git clone git@github.com:<github username>/ey-cloud-recipes.git`
+        git clone git@github.com:<github username>/ey-cloud-recipes.git
 
 This local copy of your **ey-cloud-recipes** repository will be the folder you work in when writing custom recipes for your environment.
 
@@ -40,7 +39,7 @@ This local copy of your **ey-cloud-recipes** repository will be the folder you w
 
 These folders and files were original to the **ey-cloud-recipes** repository before any other cookbooks were added.
 
-### The Cookbooks
+### Cookbooks Directory
 
 Under `cookbooks/` you will see a folder for each of the self-contained recipes for various components you can choose to enable.
 
@@ -56,11 +55,11 @@ Each folder under a cookbook has a number of sub-folders.  For this example the 
         sphinx.monitrc.erb
         sphinx.yml.erb
 
-#### Recipes Folder
+### Recipes Directory
 
 For each cookbook the `recipes/default.rb` is the main definition file that will prescribe how chef will perform each of its actions to achieve the goal.  View the [sphinx example](http://github.com/engineyard/ey-cloud-recipes/blob/master/cookbooks/sphinx/recipes/default.rb).
 
-#### Files Folder
+### Files Directory
 
 In the sphinx cookbook the `recipes/default.rb` creates a `remote_file` *resource* (that's a chef term).  And that *resource* is found in the `files/default/sphinx.logrotate` location.  Which corresponds to the *source* value in the code block below.
 
@@ -77,7 +76,7 @@ In the sphinx cookbook the `recipes/default.rb` creates a `remote_file` *resourc
 
 Why have a flat file?  Well the `sphinx.logrotate` is a file that has no variables.  That's what the *templates* are for and that's what you can use standard ERB to inject variable data.
 
-#### Templates Folder
+### Templates Directory
 
 Once again in the `recipes/default.rb` of the sphinx cookbook a *resource* is created.  This time it is passing variables to a template.
 
@@ -199,22 +198,19 @@ The first part of this is included in the **ey-cloud-recipes** repository.  The 
 
 This code can be found in the **ey-cloud-recipes** repository under ''cookbooks/main/definitions/ey_cloud_report.rb'':
 
-<code RUBY>
-define :ey_cloud_report do
-  execute "reporting for #{params[:name]}" do
-    command "ey-enzyme --report '#{params[:message]}'"
-    epic_fail true
-  end
-end
-</code>
+    define :ey_cloud_report do
+      execute "reporting for #{params[:name]}" do
+        command "ey-enzyme --report '#{params[:message]}'"
+        epic_fail true
+      end
+    end
+
 
 Then inside your cookbook in the **recipe/default.rb** file, you can use the code like this example: 
 
-<code RUBY>
-ey_cloud_report "nginx" do
-  message "custom logrotate for nginx"
-end
-</code>
+    ey_cloud_report "nginx" do
+      message "custom logrotate for nginx"
+    end
 
 There are further examples of how the ''ey_cloud_report'' method is used in the [sphinx recipe](http://github.com/engineyard/ey-cloud-recipes/blob/master/cookbooks/sphinx/recipes/default.rb).
 

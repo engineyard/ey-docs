@@ -2479,7 +2479,7 @@ p {margin:1em 0 .5em 0; line-height:1.4em;}
 li p {margin:0;}
 ol li {margin-bottom:1em;}
 
-pre { padding:4px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; margin-bottom:1.75em; margin-top:1em;}
+pre { padding:4px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; margin-bottom:1.75em; margin-top:.25em;}
 pre code { border:none !important; }
 ol li pre {margin-bottom:.5em; margin-top:.5em;}
 p code,
