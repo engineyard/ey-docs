@@ -21,10 +21,24 @@ version. If you have a current running application, you may need to
 actually restart the Redis server to apply the changes. Just SSH into
 your instance and run `/etc/init.d/redis restart`.
 
+    solo i-dd3970b3 ~ # /etc/init.d/redis restart
+      * Starting Redis server ...                      [ ok ]
+    solo i-dd3970b3 ~ # 
+
 To check your Redis version, the easiest way is SSH into your instance
 and view the info from the command line. From your instance, run
 `redis-cli` which will startup the Redis prompt and then type in `info`
 to see all of the information about Redis on your instance.
+
+    solo i-dd3970b3 ~ # redis-cli
+      redis 127.0.0.1:6379> info
+      redis_version:2.2.10
+      redis_git_sha1:00000000
+      redis_git_dirty:0
+      .
+      .
+      .
+      redis 127.0.0.1:6379>
 
 ## Enjoy Redis
 
