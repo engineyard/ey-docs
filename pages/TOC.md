@@ -49,7 +49,7 @@
   * [[Use Collaboration|collaboration_info]]
   * [[Upgrade Free Trial to Full Account|upgrading-free-trial-to-full-account]]
   * [[Custom Chef Recipes|custom-chef-recipes]]
-  * [[Make Changes to Nginx or Monit Configuration|make-changes-to-nginx-or-monit-configuration]]
+  * [[Update Nginx or Monit Configuration|make-changes-to-nginx-or-monit-configuration]]
   * [[Customize Unicorn|customize-unicorn]]
   * [[Configure and Deploy Resque|configure-and-deploy-resque]]
   * [[Setup SSMTP for Mail Relay to AuthSMTP|setup-ssmtp-for-mail-relay-to-authsmtp]]
