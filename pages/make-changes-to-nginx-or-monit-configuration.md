@@ -31,8 +31,6 @@ Changing the `nginx.conf` file requires an additional step because it's a file r
 
 ## Monit 
 
-You can also edit and keep any monit configs inside of:
-
-    /etc/monit.d/*
+You can keep any monit configs inside of: `/etc/monit.d/*`
 
 This can be useful if you're trying to increase the memory limit for mongrels or background processes, etc.
