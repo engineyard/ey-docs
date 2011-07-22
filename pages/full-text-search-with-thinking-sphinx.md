@@ -1,6 +1,6 @@
-# How to implement full text searching with Sphinx #
+# Implement full text search with Sphinx on AppCloud
 
-#### Introduction
+## Introduction
 
 Full text searching is a technique for searching all the words in every stored document in a database or other collection. This is done through a process of indexing the words and then searching through the indexes. Although it is possible to search documents for words using SQL, it is not efficient when dealing with a large number of files. Instead, specific full text tools such as [[Sphinx|http://sphinxsearch.com/]] are generally used.
 
@@ -8,15 +8,15 @@ This page describes how to implement Sphinx (full text search) in a Rails 3 appl
 
 Thinking Sphinx connects ActiveRecord and the Sphinx search daemon, allowing your application to communicate with a Sphinx server.
 	
-#### To use Sphinx with your application
+## Using Sphinx with your application
 
 1. Add the Thinking Sphinx gem to your Gemfile for Rails 3 ([[Thinking Sphinx|http://freelancing-god.github.com/ts/en/]]).
 
-    `gem 'thinking-sphinx', '2.0.3'`
+        gem 'thinking-sphinx', '2.0.3'
 	
 2. Read the page on using [[Custom Chef|custom-chef-recipes]] with AppCloud.
 
-3. Make the following edits to the [[sphinx default recipe|http://github.com/engineyard/ey-cloud-recipes/tree/master/cookbooks/sphinx]] in cookbooks/sphinx/recipes/default.rb
+3. Make the following edits to the [[sphinx default recipe|http://github.com/engineyard/ey-cloud-recipes/tree/master/cookbooks/sphinx]] in `cookbooks/sphinx/recipes/default.rb`
 
     * Set your application name.  
 
@@ -37,13 +37,12 @@ Thinking Sphinx connects ActiveRecord and the Sphinx search daemon, allowing you
 
 5. Use the ey gem to upload the cookbook: 
 
-    `ey recipes upload -e environment_name`
+        ey recipes upload -e environment_name
 
 5. After the cookbook is uploaded, update your environment from the AppCloud dashboard.
 
 	![Update environment](images/sphinx_update.jpg)
 	
----
 
 <h2 id="topic6"> Troubleshooting</h2>
 
