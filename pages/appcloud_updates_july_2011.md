@@ -3,19 +3,15 @@
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
 
----
-
 <a href=#update4><h2 id="update4"> **Action Req'd:** Upgrade to Ruby 1.8.7-p352 </h2></a>
 
-July 22nd, 2011 (scheduled)
+July 22nd, 2011
 
 AppCloud will be upgraded to Ruby 1.8.7-p352 on or around July 22nd. 
 
 If you are using Ruby 1.8.7 and Unicorn, you must redeploy after updating.
 
 If you are using Ruby 1.8.7 and Passenger, we recommend that you redeploy after updating. This is to make sure that your code runs under the latest version of the MRI interpreter.
-
----
 
 <a href=#update6><h2 id="update6"> **Major:** Improvements to the app-centric UI: more details and easier deploys </h2></a>
 
@@ -28,8 +24,6 @@ In response to user feedback, we made some modifications to our application-cent
 *  More detailed instance lists
 *  Flags to clearly indicate whether an environment is production, staging, or development 
 
----
-
 <a href=#update5><h2 id="update5"> **Major:** JRuby is now available in Beta for all customers </h2></a>
 
 July 18th, 2011
@@ -41,23 +35,17 @@ Run production-quality Ruby on Rails applications on AppCloud via [[JRuby|http:/
 For more information, see [[Getting Started with JRuby|jruby-beta]] and [[JRuby on AppCloud available through Beta program|http://www.engineyard.com/blog/2011/jruby-on-appcloud-available-through-beta-program/]].
 
 
----
-
 <a href=#update3><h2 id="update3"> Minor: Increased maximum connections for HAProxy </h2></a>
 
 July 8th, 2011
 
 The maximum number of connections for HAProxy increased to 65,535 from 15,000.
 
----
-
 <a href=#update2><h2 id="update2"> Minor: Upgrade to Redis 2.2.11</h2></a>
 
 July 8th, 2011
 
 For more information, see the [[Redis 2.2 release notes|https://github.com/antirez/redis/blob/2.2.11/00-RELEASENOTES]].
-
----
 
 <a href=#update1> <h2 id="update1"> Minor: Nginx Upload Progress module upgraded </h2></a>
 
