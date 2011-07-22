@@ -6,7 +6,7 @@ The updates described are either important (where you need to take action) or of
 
 July 22nd, 2011
 
-AppCloud will be upgraded to Ruby 1.8.7-p352 on or around July 22nd. 
+AppCloud has been upgraded to Ruby 1.8.7-p352. 
 
 If you are using Ruby 1.8.7 and Unicorn, you must redeploy after updating.
 
