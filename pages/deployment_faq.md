@@ -1,6 +1,6 @@
 # Frequently Asked Questions for the Engine Yard CLI:
 
-### Can I use the CLI with multiple accounts?
+## Can I use the CLI with multiple accounts?
 
 Yes, though it requires a little bit of work to set up.
 
@@ -17,7 +17,7 @@ Then have Bob do the same, but save his credentials in `~/.eyrc-bob`.
 
 With a bit of shell aliasing, you can have `alice-ey` and `bob-ey` commands that operate as Alice and Bob, respectively.
 
-### How do I 'bundle lock' before doing a deploy?
+## How do I 'bundle lock' before doing a deploy?
 
 The best way to do it is to check in `Gemfile.lock` with your application. There are many good reasons to do this.
 
@@ -25,7 +25,7 @@ The best way to do it is to check in `Gemfile.lock` with your application. There
   - It speeds up your deploys. Taking your `Gemfile` and figuring out which gem versions to use is a (NP-)hard problem. Checking in the `Gemfile.lock` lets `bundle install` skip all that expensive computation and get right to fetching and installing your gems.
   - It ensures that the gems on each of your application servers are the same. While unlikely, if the author were to release a new version of a gem just in the middle of your deploy, you could wind up with some of your application servers running `version 1.2.0` of some gem and the rest running `version 1.2.1`. 
 
-### How do I use the CLI with separate SSH keys for each project?
+## How do I use the CLI with separate SSH keys for each project?
 
   - You can simply set an entry in your SSH config with the key you want set as the identity file for the correct hostname. 
   - Copy the SSH url for the App Master of your cluster from the AppCloud web interface and just take the hostname from it. 
@@ -38,7 +38,7 @@ The best way to do it is to check in `Gemfile.lock` with your application. There
 
 If you are using an elastic IP for your cluster, this hostname will not change and will continue to work across cluster reboots. 
 
-### How do I avoid copying my large .git directory with every deploy?
+## How do I avoid copying my large .git directory with every deploy?
 
 If you have a large `.git` directory and you do not want it copied over on every deploy, add a `config/ey.yml` to your application's repository with the following contents:
 
@@ -49,7 +49,7 @@ If you have a large `.git` directory and you do not want it copied over on every
          - 
          - 
 
-### Where is the deploy log?
+## Where is the deploy log?
 
 If there is a problem deploying your application, the dashboard will tell you to view the deploy log. This is currently viewable via the dashboard or by logging in over SSH.
 
