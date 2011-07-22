@@ -12,20 +12,17 @@ Using this example configuration, requests returning from Engine Yard AppCloud w
 
 You perform the proxy setup and configuration on your current production servers.  It resides between your load balancer and your web server.  As a few adjustments will need to be made, we'll describe those in detail in a moment.
 
-#### Install The Gem and Create Your Config File
-
-<code>
- sudo gem install em-proxy --no-ri --no-rdoc
-</code>
+### Install The Gem and Create Your Config File
+    sudo gem install em-proxy --no-ri --no-rdoc
 
 Create a `proxy.rb` file to the root users home directory.
 
 
-#### Update Nginx
+### Update Nginx
 
 Since em-proxy will be running on port `80`, nginx will have to run on port `8080`.  Change your nginx vhost listening on port `80` to port `8080`, then restart nginx using `/etc/init.d/nginx restart` command.
 
-#### Start The Proxy
+### Start The Proxy
 
 Start the proxy up on one server at a time, if you run into issues along the way it will be much easier to back out any changes.
 
@@ -40,13 +37,12 @@ To detach from the screen session simply hit `ctrl+a+d` and you will detach.
 
 To later resume the screen session:
 
-
     $screen -x
 
 
-The proxy will start up and start taking traffic on port `80`. It will proxy traffic to nginx, locally, on port `8080`. 
+The proxy will start up and start taking traffic on port `80`. It will proxy traffic to nginx, locally, on port `8080` 
 
-#### Test The Setup
+### Test The Setup
 
 Make sure you can curl your app and receive the response you expect.
 
@@ -66,7 +62,7 @@ Now you are back to your default configuration.
 
 ## Example Code
 
-An example of `proxy.rb`:
+An example of `proxy.rb`
 
 
     `#` proxy.rb
