@@ -1,17 +1,21 @@
 # Adding Redis to your Application
 
-Redis is an open source, advanced key-value store. It is often referred to
+[Redis](http://redis.io) is an open source, advanced key-value store. It is often referred to
 as a data structure server since keys can contain strings, hashes, lists,
 sets and sorted sets.
 
 Getting Redis working on AppCloud is not as daunting a task as it may
-seem. It's as easy as bundling the `redis` gem into your application.
+seem. It's as easy as bundling the [Redis gem](http://rubygems.org/gems/redis) gem into your application.
 
 ## Install the Redis Gem
 
-The easiest way to add Redis to your Ruby application is to add `gem
-'redis'` to your Gemfile. Then just run `bundle install` from your
-development machine and deploy the application to AppCloud.
+The easiest way to add Redis to your Ruby application on AppCloud is to:
+
+* Add the Redis gem to your gemfile
+        gem 'redis'
+* Install the Redis gem using bundler from your development machine
+        bundle install
+* Deploy your application to AppCloud
 
 ## Redis Version
 
@@ -25,7 +29,7 @@ your instance and run `/etc/init.d/redis restart`.
       * Starting Redis server ...                      [ ok ]
     solo i-dd3970b3 ~ # 
 
-To check your Redis version, the easiest way is SSH into your instance
+To check your Redis version, the easiest way is to SSH into your instance
 and view the info from the command line. From your instance, run
 `redis-cli` which will startup the Redis prompt and then type in `info`
 to see all of the information about Redis on your instance.
