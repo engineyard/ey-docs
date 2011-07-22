@@ -60,3 +60,19 @@ have to call out to [rubygems.org](http://rubygems.org) to install the gems. Thi
 is where `bundle pack` comes in handy. Just run that command from your development
 machine which will pack the gems into `vendor/cache`. When you deploy, run
 `bundle install --local` to install the gems from the `vendor/cache` directory.
+
+## Installation Groups
+
+Currently, the only way to configure the groups passed to `bundle
+install --without` is by creating an `eydeploy.rb` in the root of your
+application. Then put the following in it and modify as needed:
+
+    def bundler_10_installer(version)
+      opts = [
+        "--deployment",
+        "--path #{c.shared_path}/bundled_gems",
+        "--binstubs #{c.binstubs_path}",
+        "--without development test other groups etc"
+      ]
+      BundleInstaller.new(version, opts.join(" "))
+    end
