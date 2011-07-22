@@ -4,7 +4,7 @@ The updates described are either important (where you need to take action) or of
 
 <a href=#update4><h2 id="update4"> **Action Req'd:** Upgrade to Ruby 1.8.7-p352 </h2></a>
 
-July 22nd, 2011 (scheduled)
+July 22nd, 2011
 
 AppCloud will be upgraded to Ruby 1.8.7-p352 on or around July 22nd. 
 
