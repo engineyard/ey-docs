@@ -4,18 +4,19 @@ Welcome to the deployment guide for deploying to Engine Yard AppCloud with the `
 
 ## Getting Started
 
-  - Install the `engineyard` gem: `gem install engineyard`
-  - Switch to your local app directory that contains your git repo: `cd ~/my_application`
-  - Deploy your app: `ey deploy`
-    - You will be prompted for your EY AppCloud login (email address) and password. You'll only have to enter these once. 
-    - If your application is running in multiple environments, tack on `-e ENV_NAME` to disambiguate.
-  - Congratulations! Your application is now deployed.
+1. Install the `engineyard` gem: 
+        gem install engineyard
 
-## Useful Links
+2. Switch to your local app directory that contains your git repo:
+        cd ~/my_application
 
-[[Deployment Frequently Asked Questions|deployment_faq]]
+3. Deploy your app:
+        ey deploy
+      
+4. You will be prompted for your EY AppCloud login (email address) and password. You'll only have to enter these once. 
+    If your application is running in multiple environments, tack on `-e ENV_NAME` to disambiguate.
+- Congratulations! Your application is now deployed.
 
-[[Customizing with ey.yml|ey_yml]]
 
 ## Command Reference
 
@@ -143,21 +144,18 @@ Welcome to the deployment guide for deploying to Engine Yard AppCloud with the `
 ## Environment Variables
 
 
-### `CLOUD_URL`
-
+* ### CLOUD_URL
 Location of Engine Yard AppCloud. Mainly used in development. Default is https://cloud.engineyard.com/
 
-### `DEBUG`
-
+* ### DEBUG
 Debug the engineyard gem (print a lot of stuff). Default is off.
 
-### `EYRC`
-
+* ### EYRC
 Specifies the location of the `.eyrc` file to use. The `.eyrc` file is where the API token is stored. Default is `~/.eyrc`.
 
-### `NO_SSH`
-
+* ### NO_SSH
 If set, all commands (e.g. `ey deploy`, `ey rollback`) that require an SSH connection will short-circuit. Mainly used in the engineyard gem's integration tests.
+
 
 ## Deploy Hooks
 
@@ -226,3 +224,8 @@ If you have a large .git directory and you do not want it copied over on every d
    YOUR-ENVIRONMENT-NAME-GOES-HERE:
      copy_exclude:
        - .git
+
+## Useful Links
+
+* [[Deployment Frequently Asked Questions|deployment_faq]]
+* [[Customizing with ey.yml|ey_yml]]
