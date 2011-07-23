@@ -142,7 +142,6 @@ any of your instances, uploading and applying custom chef recipes, and more.
   - For more information, see [[Maintenance Pages|maintenance_pages]].
 
 
-- - - 
 ## Environment Variables
 
 
