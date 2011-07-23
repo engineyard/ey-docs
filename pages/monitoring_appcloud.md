@@ -1,4 +1,4 @@
-# Monitoring
+# Monitoring Your Instances on AppCloud
 
 AppCloud can monitor your instances for CPU usage, free space, etc. so that you're aware of extreme resource usage when it happens. 
 
