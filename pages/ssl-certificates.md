@@ -71,12 +71,12 @@ The **Create New SSL Certificate** page appears.
 
 ![SSL Cert](images/appcloudsslcertificates.png)
 
-  - Give your SSL cert a name.  Use the **SSL Certificate Name** field.
-  - Click on **Upload SSL Certificate** radio button.
-  - Paste in your certificate in the **SSL Certificate** text area.
-  - Paste in your key in the **SSL Certificate Key** text area.
-  - Optionally you may need to add a **SSL Certificated Chain**.
-  - Click **Add Certificate** button.
+  1. Give your SSL cert a name.  Use the **SSL Certificate Name** field.
+  2. Click on **Upload SSL Certificate** radio button.
+  3. Paste in your certificate in the **SSL Certificate** text area.
+  4. Paste in your key in the **SSL Certificate Key** text area.
+  5. Optionally you may need to add a **SSL Certificated Chain**.
+  6. Click **Add Certificate** button.
 
 ### Intermediate Certificates
 

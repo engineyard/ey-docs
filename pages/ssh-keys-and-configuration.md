@@ -38,19 +38,17 @@ From the Dashboard tab you'll be able to see an SSH link for your instance.  Cli
 
 Otherwise you can SSH into the slice by using your IP or amazon hostname and your username.  By default your username is *depoy*.
 
-  `ssh deploy@123.123.123.123`
-  
-  or 
-  
-  `ssh deploy@ec2-123-123-123-123.compute-1.amazonaws.com`
+    ssh deploy@123.123.123.123
+  or
+    ssh deploy@ec2-123-123-123-123.compute-1.amazonaws.com
 
 ## SSH Configuration Tips
 
 ### SSH Hostname Alias
 
 Setup an SSH hostname alias and you'll be able to save your fingers some walking.  Once you've setup the alias you can access your instance by typing:
-
-  `ssh myapp`
+    
+    ssh myapp
 
 On your local computer open the `~/.ssh/config` file in your favorite text-editor.  And add an entry like this:
 
@@ -99,9 +97,9 @@ When you create a new instance, it is a new virtualized computer.  So when you r
 
 ### Solution
 
-The best solution is to remove the line from your 'known_hosts' file (`~/.ssh/known_hosts`) or delete the file altogether. You will then be re-prompted to save the secure keys the next time you SSH into the server.
+The best solution is to remove the line from your 'known_hosts' file `~/.ssh/known_hosts` or delete the file altogether. You will then be re-prompted to save the secure keys the next time you SSH into the server.
 
 (DUE TO SECURITY RISKS, THIS METHOD IS NO LONGER RECOMMENDED) Another solution is to add the following directive to your ''~/.ssh/config'':
 
-`StrictHostKeyChecking no`
+    StrictHostKeyChecking no
 
