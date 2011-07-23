@@ -2,13 +2,32 @@
 
 ## Introduction
 
-Our deployment system mimics Capistrano's filesystem layout so it will be familiar to you if you have ever used Capistrano. In fact it is still backwards compatible with Capistrano so you can use both at the same time if so desired.
+Deploy hooks are Ruby scripts that you write which are executed at 
+designated points in the deployment process. This allows you to customize
+the deployment of your application to meet its particular needs.
 
-We also know that you may have some Capistrano hooks that you may need to emulate such as symlinking a shared/assets directory into the public directory on each deploy or symlinking certain config files. Our system supports these types of hooks in a slightly different way than Capistrano does.
+For example, if your application uses Resque, then deploy hooks provide 
+a way for you to restart your Resque workers when you deploy a new version 
+of your application. Hoptoad users can use deploy hooks to notify Hoptoad 
+of a deploy.
+
+Deploy hooks live in the `APP_ROOT/deploy` directory of your application. The order 
+in which they run is specified in the documentation for the `ey deploy` command.
+
+
+## Capistrano Similarities
+
+Our deployment system mimics Capistrano's filesystem layout so it will 
+be familiar to you if you have ever used Capistrano. In fact it is still 
+backwards compatible with Capistrano so you can use both at the same time 
+if so desired.
+
 
 ## Structure
 
-To use the hooks, create an `APP_ROOT/deploy` directory in your app and place named hook files in there that will be triggered at the appropriate times during the deploy. The hooks are defined as follows:
+To use deploy hooks on AppCloud, create an `APP_ROOT/deploy` directory in your application 
+and save named hook files in this directory which will be triggered at the appropriate 
+times during the deployment process. The files are defined as follows:
 
     APP_ROOT/
       deploy/
@@ -17,7 +36,12 @@ To use the hooks, create an `APP_ROOT/deploy` directory in your app and place na
         before_restart.rb
         after_restart.rb
 
-Remember that, in order for migrations to run, your entire environment will be loaded. So if you have any symlinks that need to be created in order for the application to start properly you will want to put them in `before_migrate.rb` instead of `before_symlink.rb`, since `before_symlink.rb` runs **after** the migration. These scripts will be instance_eval'd in the context of the chef-deploy resource. This means that you will have certain commands and variables available to you in these hooks. For example:
+Remember that, in order for migrations to run, your entire environment 
+will be loaded. So if you have any symlinks that need to be created in 
+order for the application to start properly you will want to put them 
+in `before_migrate.rb` instead of `before_symlink.rb`, since 
+`before_symlink.rb` runs **after** the migration.
+
 
 ## Shell Commands
 
@@ -29,7 +53,7 @@ For example:
     sudo "echo 'sudo works' >> /root/sudo.log"
 
 
-## Calling Git Commands
+### Calling Git Commands
 
 Here's an example where you can call a git command from a deploy hook:
 
@@ -39,7 +63,9 @@ Replace `<app>` with the name of your app and change the path for your git repo.
 
 ## Deploy Hook Variables
 
-You will have some of the same variables you are used to from Capistrano:
+These scripts will be instance_eval'd in the context of the chef-deploy 
+resource. This means that you will have certain commands and variables 
+available to you in these hooks. For example:
 
 * ### release_path
 this is the full path to the current release: e.g. `/data/appname/releases/12345678`
@@ -140,3 +166,8 @@ Here is an example JSON document that shows you what kind of info is inside the 
     
       ]
     }
+
+
+## More Information
+* [[Deploy Hooks API|deploy_hooks_api]].<br />
+  Learn more about additional methods available to your deploy hooks.

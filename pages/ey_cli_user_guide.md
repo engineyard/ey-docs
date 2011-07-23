@@ -159,15 +159,6 @@ Specifies the location of the `.eyrc` file to use. The `.eyrc` file is where the
 If set, all commands (e.g. `ey deploy`, `ey rollback`) that require an SSH connection will short-circuit. Mainly used in the engineyard gem's integration tests.
 
 
-## Deploy Hooks
-
-Deploy hooks are Ruby scripts that you write and that get run at designated points in the deployment process.
-
-They live in the `deploy/` directory of your repository. The order in which they run is specified in the documentation for the `ey deploy` command.
-
-Deploy hooks allow you to customize the deployment of your application to meet its particular needs. For example, if your application uses Resque, then deploy hooks provide a way for you to restart your Resque workers when you deploy a new version of your application; Hoptoad users can use them to notify Hoptoad of a deploy.
-
-For more information, see [[Deploy Hooks API|deploy_hooks_api]].
 
 ## Advanced Customization
 

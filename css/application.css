@@ -2478,7 +2478,6 @@ h4, .h4 {font-size:.9em; font-weight:bold;}
 
 p {margin:1em 0 .5em 0; line-height:1.4em;}
 li p {margin:0;}
-ol li {margin-bottom:1em;}
 
 pre { padding:4px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; margin-bottom:1.75em; margin-top:.25em;}
 pre code { border:none !important; }
@@ -2491,6 +2490,9 @@ li code {display:inline-block; padding:0 4px; margin-bottom:1px; border-radius:4
 #content .wrapper {margin-top:15px;}
 #content .wrapper section {margin-bottom:2em; float:left; width:540px; clear:none;}
 #content .wrapper section img {border:3px solid #ddd;}
+#content .wrapper section ol li,
+#content .wrapper section ul li {margin-bottom:1em;}
+
 
 a { text-decoration:underline; }
 a:visited { color:#369; text-decoration:none; }

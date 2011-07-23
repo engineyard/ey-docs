@@ -1,15 +1,16 @@
 # Convert Capistrano Symlinks to AppCloud Symlinks
 
-Many people use Capistrano to configure symlinks to shared folders.  Ideally you'd be able to fully deploy your app from the Engine Yard AppCloud UI without Capistrano.
+Many people use Capistrano to configure symlinks to shared folders.  
+Ideally you'd be able to fully deploy your app from the Engine Yard AppCloud Dashboard without Capistrano.
 
-## For Example
+## Example Capistrano recipe
 
 Here's an example of a common Capistrano recipes for symlinking folders:
 
-<code ruby>
+
     after "deploy:update_code", "symlink_files"
     after "deploy:update_code", "symlink_geo_ip"
-
+    
     task :symlink_files do
       %w(photo card).each do |folder|
         path  = "#{release_path}/../../shared/files/#{folder}"
@@ -28,26 +29,30 @@ Here's an example of a common Capistrano recipes for symlinking folders:
       run "rm -rf #{symlink_path}"
       run "ln -sf #{path} #{symlink_path}"
     end
-</code>
 
-## Using Deploy Hooks
+## Using deploy hooks
 
-Instead we suggest you use our new method of deploy hooks that will run the commands for you when you deploy your application using Engine Yard AppCloud's User Interface.
+To replace the above Capistrano recipes, we suggest using our deploy hooks to customize your
+application deployment when using the AppCloud Dashboard or the CLI to deploy your code.
+
+### Before Symlink deploy hook
 
 Create a file `$RAILS_ROOT/deploy/before_symlink.rb` with these contents:
 
-<code ruby>
+
     %w(photo card).each do |folder|
         run "echo 'release_path: #{release_path}/public/#{folder}' >> #{shared_path}/logs.log"
         run "ln -nfs #{shared_path}/files/#{folder} #{release_path}/public/#{folder}"
     end
-
     run "echo 'release_path: #{release_path}/db/GeoIPCity.dat' >> #{shared_path}/logs.log"
     run "ln -nfs #{shared_path}/shared/GeoIPCity.dat #{release_path}/db/GeoIPCity.dat"
-</code>
 
-Please note we are using the "Release" path instead of "Current" as it hasn't been symlinked yet.
+
+**Note** we are using the "Release" path instead of "Current" as it hasn't been symlinked yet.
+
+Learn more about our [[Custom Deploy Hooks|use-deploy-hooks-with-engine-yard-appcloud]] or our [[Deploy Hooks API|deploy_hooks_api]]
 
 ## Conclusion
 
-By converting to deploy hooks, your app can now be deployed from the Engine Yard AppCloud UI without having to use Capistrano.
+By converting to deploy hooks, your application can now be deployed from the Engine Yard AppCloud 
+Dashboard without having to use Capistrano.

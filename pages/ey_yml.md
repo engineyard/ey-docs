@@ -1,4 +1,4 @@
-# Configuring ey.yml
+# Customize your deployment with ey.yml
 
 ## Structure
 
@@ -10,45 +10,42 @@
 
 All these examples assume your environment is **myapp_staging**. Replace that with your environment's actual name.
 
-### Example 1: 
+* **Don't copy .git directory to each release**
 
-***Don't copy .git directory to each release***
+      environments:
+        myapp_staging:
+          copy_exclude:
+            - .git
 
+* **Set a default branch**
 
-    environments:
-     myapp_staging:
-       copy_exclude:
-         - .git
-
-
-### Example 2: 
-
-***Set a default branch***
-
-    environments:
-     myapp_staging:
-       branch: master
+      environments:
+        myapp_staging:
+          branch: master
 
 
-### Example 3: 
-
-***Use thor to run migrations, but only run them when --migrate is specified***
+* **Use thor to run migrations, but only run them when --migrate is specified**
 
 
-    environments:
-      myapp_staging:
-        migration_command: thor db:migrate
-        migrate: false
+      environments:
+        myapp_staging:
+          migration_command: thor db:migrate
+          migrate: false
+
 
 
 ## Fields of Note
 
 The engineyard gem pays attention to four keys in the per-environment hash. They are:
 
-  * `copy_exclude (array)`: items that will be excluded when copying from your repository to each release. See rsync(1), in particular the `--exclude` option, for more details. Default is empty.
+  * `copy_exclude (array)` <br />
+    items that will be excluded when copying from your repository to each release. See rsync(1), in particular the `--exclude` option, for more details. Default is empty.
 
-  * `branch (string)`: the branch to deploy by default. Default is `master`.
+  * `branch (string)` <br />
+    the branch to deploy by default. Default is `master`.
 
-  * `migration_command (string)`: the command to invoke in order to run migrations. Default is `rake db:migrate`.
+  * `migration_command (string)` <br />
+    the command to invoke in order to run migrations. Default is `rake db:migrate`.
 
-  * `migrate (boolean)`: whether or not to run migrations. Default is `true`.
+  * `migrate (boolean)` <br />
+    whether or not to run migrations. Default is `true`.
