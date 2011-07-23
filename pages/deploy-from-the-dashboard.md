@@ -15,8 +15,8 @@ or deploy code from another branch in your Git repository.
 ## Deploy Your Application
 
 After you have completed the prerequisites you are ready to deploy your
-application from the Dashboard.  You should have new code comitted to your
-Git repository that is ready to be deployed.  You have a few simple options when 
+application.  You should have new code comitted to your Git repository 
+that is ready to be deployed.  You have a few simple options when 
 deploying your code:
 
 ### Deploy code from your master branch

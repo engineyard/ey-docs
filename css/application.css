@@ -2491,7 +2491,7 @@ li code {display:inline-block; padding:0 4px; margin-bottom:1px; border-radius:4
 #content .wrapper section {margin-bottom:2em; float:left; width:540px; clear:none;}
 #content .wrapper section img {border:3px solid #ddd;}
 #content .wrapper section ol li,
-#content .wrapper section ul li {margin-bottom:1em;}
+#content .wrapper section ul li {margin-bottom:.5em;}
 
 
 a { text-decoration:underline; }

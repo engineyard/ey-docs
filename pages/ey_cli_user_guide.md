@@ -159,43 +159,6 @@ If set, all commands (e.g. `ey deploy`, `ey rollback`) that require an SSH conne
 
 
 
-## Advanced Customization
-
-In addition to deploy hooks, we also provide a more advanced level of customization via an overrides file.  This file is instance_eval'd into the main deploy class so that you can over ride core functionality of the deploy.  You should not use this for simple modifications around a deploy (deploy hooks are a better choice for those tasks). 
-
-To use deploy overrides, create a file in your code repository at either `config/eydeploy.rb` or `eydeploy.rb`.  This file should contain a list of methods, and will be instance_eval'd into the main `EY::Deploy` class.  You will be able to super into any of the methods that you override. You can see the source of the class that your customization will be instance_eval'd into on GitHub at [[https://github.com/engineyard/engineyard-serverside/blob/master/lib/engineyard-serverside/deploy.rb]] We guarantee the top level tasks (bundle, symlink_configs, enable_maintenance_page, migrate, symlink, restart, disable_maintenance_page, and cleanup_old_releases) will remain consistent and in a consistent order.  All other methods in the class are subject (but unlikely) to change.
-
-### Example: GitHub style deploy
-
-    # This is an overrides file for ey deploy that uses git to do all
-    # moving around, rather than using multiple directories and symlinks
-    
-    
-    class ::EY::Serverside::Deploy::Configuration
-      # no separate releases directories
-      def release_path(*args)
-        current_path
-      end
-    
-      def all_releases(*args)
-        [current_path]
-      end
-    end
-      
-    def copy_repository_cache
-      # Don't need to do this, just make sure current is linked to
-      # cached-copy
-      run "ln -nfs #{c.repository_cache} #{c.current_path}"
-    end
-    
-    def symlink(*args)
-      # do nothing
-    end
-    
-    def cleanup_old_releases(*args)
-      # do nothing
-    end
-
 ### `ey.yml` Customizations
 
 Extra customization can be accomplished with an `ey.yml` file. [[More about the ey.yml file.|ey_yml]]
