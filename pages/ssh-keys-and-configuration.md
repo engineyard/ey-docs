@@ -58,7 +58,8 @@ On your local computer open the `~/.ssh/config` file in your favorite text-edito
 
 Where the *Hostname* is the IP Address you've assigned to your instance and the *User* is the one you have configured in your environment.
 
-### Warning: Remote host identification has changed!
+
+## Warning: Remote host identification has changed!
 
 You may find that you receive this message when you SSH into your instance:
 
