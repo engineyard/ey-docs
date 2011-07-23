@@ -49,12 +49,12 @@ tell you to view the deploy log for the failed deployment.  You can
 view the deploy log two ways:
 
   * ### On your dashboard
-    Your dashboard will have a **View Log** hyperlink next to the deployment status message
-    that will allow you to view your log file on the web.
+    Your dashboard will display a **View Log** hyperlink next to the deployment status message.
+    Clicking on this link will open the log file in a separate browser window for viewing.
     
   * ### On your instances
-    You can view your log file by connecting to your instances
-    via SSH. Once you are connected to your instance, you can locate the log file in your
+    View your log file by connecting to your instances via SSH. 
+    Once you are connected to your instance, you can locate the log file in your
     home directory with a filename like the following: `yourapp-deploy.log`, where
     'yourapp' is the name of your application deployed on this instance.
 
