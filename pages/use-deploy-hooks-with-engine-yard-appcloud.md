@@ -1,4 +1,4 @@
-# How To Use Deploy Hooks with Engine Yard AppCloud
+# How To Use Deploy Hooks with AppCloud
 
 ## Introduction
 
