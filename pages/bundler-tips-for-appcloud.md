@@ -13,12 +13,10 @@ As discussed in Evan's post, specifying a version of Bundler in your Gemfile
 solves an issue described at [[Bundler Gemfile Version|bundler-gemfile-version]]
 
 1. Specify the version in your Gemfile
-
-    `gem 'bundler', '~> 1.0.15'`
+        gem 'bundler', '~> 1.0.15'
 
 2. Update the Gemfile.lock from your development machine terminal
-
-    `bundle update bundler`
+        bundle update bundler
     
 ## Use Bundle Exec
 
@@ -29,12 +27,10 @@ the command `bundle exec`
 Below are a couple of commands that take advantage of `bundle exec`
 
 * Migrate the database using the specified Rake version
-
-    `bundle exec rake db:migrate`
+        bundle exec rake db:migrate
     
 * Check the versions of gems that Bundler is using for your application
-
-    `bundle exec gem list`
+        bundle exec gem list
 
 ## Use Binstubs
 
