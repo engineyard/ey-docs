@@ -1,6 +1,8 @@
 # Engine Yard CLI User Guide
 
-Welcome to the deployment guide for deploying to Engine Yard AppCloud with the `engineyard` gem using a command line interface.
+Welcome to the user guide for deploying to Engine Yard AppCloud with the `engineyard` gem.  The `engineyard` gem provides a command line
+interface to perform tasks such as deploying your application, rebuilding your applications environment, opening an ssh session to 
+any of your instances, uploading and applying custom chef recipes, and more.
 
 ## Getting Started
 
