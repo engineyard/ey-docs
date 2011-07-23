@@ -1,8 +1,8 @@
-# How to monitor your Engine Yard applications with New Relic
+# Monitor your Engine Yard applications with New Relic
 
-### Introduction
+## Introduction
 
-New Relic is a tool for monitoring web application performance — from the end-user experience down to a line of application code. 
+[New Relic](http://newrelic.com/) is a tool for monitoring real-time web application performance — from the end-user experience down to a line of application code. 
 
 You get real data about your users. For example, you can see what countries your users are in, what browsers they use, how long they wait for pages to download. You get trending data; is your application is faster or slower this week than last week? When problems occur, you can get a transaction response performance breakdown and view a detailed timeline of an individual request.    
 
