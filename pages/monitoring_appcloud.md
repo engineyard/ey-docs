@@ -12,14 +12,13 @@ This page describes:
   * [The alert thresholds] [2]
   * [External monitoring for a Rails app] [3]
 
----
-<h2><a id="topic1"> Instance monitoring </a></h2>
+<h2 id="topic1">Instance monitoring</h2>
 
-With **Instance Monitoring**, Engine Yard keeps an eye on your instance, records the alerts, and (optionally) emails you.
+With Instance Monitoring, Engine Yard keeps an eye on your instance, records the alerts, and (optionally) emails you. **Important!** By default, email alerts are disabled.
 
-#### To enable email alerts
+### To enable email alerts
 
-**Important!** By default, email alerts are disabled.
+
 
 1. In AppCloud, click Dashboard.
 2. Click **Alerts**.
@@ -31,7 +30,7 @@ With **Instance Monitoring**, Engine Yard keeps an eye on your instance, records
 
 Follow the above steps for each environment that you'd like to receive alerts for.  For instance you may not need to receive alerts for your "staging" environment, but rather you do want alerts for your "production" environment.
 
-#### To view alerts
+### To view alerts
 
 **Note:** You can view the alerts, even if you have not enabled email alerts.
 
@@ -44,10 +43,10 @@ Follow the above steps for each environment that you'd like to receive alerts fo
 
     ![All Alerts](images/all_alerts.jpg)
 
----
-<h2><a id="topic2">Understand alerts</a></h2>
 
-#### Load Average
+<h2 id="topic2">Understand alerts</h2>
+
+### Load Average
 
 Something is consuming system resources.  If this is sustained for a long period it can warrant getting on the instance and troubleshooting. 
 
@@ -58,7 +57,7 @@ Current Thresholds:
 
 For example: a 1 VCPU, the load would be 4.00 but a 5 VCPU, it would be 20.00.  
 
-#### IO-Wait
+### IO-Wait
 
 The instance is waiting for disk writes to complete before it can move to other operations.
 
@@ -68,7 +67,7 @@ Current Thresholds:
   * Fail: 80% iowait
 
 
-#### Swap Used
+### Swap Used
 
 This alerts when the swap space is getting low.  
 
@@ -77,7 +76,7 @@ Current Thresholds:
   * Warn: 128 MB Swap Used
   * Fail: 384 MB Swap Used
 
-#### Free Space
+### Free Space
 
 Free space is monitored on these mount points: `/`, `/data`, `/db`, and `/mnt`.
 
@@ -88,8 +87,8 @@ Current Thresholds:
 * Warn: If the disk space for a particular mount point is 10 GB or less, then the warning threshold is 70% full. If the disk space is greater than 10 GB, then the warning threshold is 80% full. 
 * Fail: 90% of disk space is full.
 
----
-<h2><a id="topic3">External monitoring for a Rails app</a></h2>
+
+<h2 id="topic3">External monitoring for a Rails app</h2>
 
 Monitoring your site’s uptime is an important for keeping your site online and your visitors happy.
 
