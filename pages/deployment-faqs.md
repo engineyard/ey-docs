@@ -1,14 +1,28 @@
 # Engine Yard Deployment FAQs
 
 
-* <a href="#FAQ1"> Can I use the CLI with multiple accounts? </a>
-* <a href="#FAQ2"> How do I use the CLI with separate SSH keys for each project? </a>
-* <a href="#FAQ3"> Where is the deploy log? </a>
-* <a href="#FAQ4"> How do I 'bundle lock' before doing a deploy? </a>
-* <a href="#FAQ5"> How do I avoid copying my large .git directory with every deploy? </a>
+* <a href="#appcloud-svn">Does AppCloud support deploying from an SVN repository?</a>
+* <a href="#cli-multiple"> Can I use the CLI with multiple accounts? </a>
+* <a href="#cli-ssh"> How do I use the CLI with separate SSH keys for each project? </a>
+* <a href="#deploy-log"> Where is the deploy log? </a>
+* <a href="#bundle-lock"> How do I 'bundle lock' before doing a deploy? </a>
+* <a href="#avoid-copy"> How do I avoid copying my large .git directory with every deploy? </a>
 
 
-<h2 id="FAQ1"><a href="#FAQ1"> Can I use the CLI with multiple accounts? </a></h2>
+
+<h2 id="appcloud-svn"><a href="#appcloud-svn">Does AppCloud support deploying from an SVN repository?</a></h2>
+
+SVN is not supported at this time. Git is the only supported 
+version control system for deployment on AppCloud. Your repository 
+will need to be ported to Git before your application can be 
+deployed on EY AppCloud. GitHub has a great article on porting 
+an existing SVN repository to Git.
+
+
+
+
+
+<h2 id="cli-multiple"><a href="#cli-multiple"> Can I use the CLI with multiple accounts? </a></h2>
 
 
 Yes, though it requires a little bit of work to set up.
@@ -26,7 +40,7 @@ Then have Bob do the same, but save his credentials in `~/.eyrc-bob`.
 
 With a bit of shell aliasing, you can have `alice-ey` and `bob-ey` commands that operate as Alice and Bob, respectively.
 
-<h2 id="FAQ2"><a href="#FAQ2"> How do I use the CLI with separate SSH keys for each project? </a></h2>
+<h2 id="cli-ssh"><a href="#cli-ssh"> How do I use the CLI with separate SSH keys for each project? </a></h2>
 
 
   - You can simply set an entry in your SSH config with the key you want set as the identity file for the correct hostname. 
@@ -42,7 +56,7 @@ If you are using an elastic IP for your cluster, this hostname will not change a
 
 
 
-<h2 id="FAQ3"><a href="#FAQ3"> Where is the deploy log? </a></h2>
+<h2 id="deploy-log"><a href="#deploy-log"> Where is the deploy log? </a></h2>
 
 If there is a problem deploying your application, the dashboard will 
 tell you to view the deploy log for the failed deployment.  You can 
@@ -63,7 +77,7 @@ view the deploy log two ways:
 
 
 
-<h2 id="FAQ4"><a href="#FAQ4"> How do I 'bundle lock' before doing a deploy? </a></h2>
+<h2 id="bundle-lock"><a href="#bundle-lock"> How do I 'bundle lock' before doing a deploy? </a></h2>
 
 
 The best way to do it is to check in `Gemfile.lock` with your application. There are many good reasons to do this.
@@ -74,7 +88,7 @@ The best way to do it is to check in `Gemfile.lock` with your application. There
 
 
 
-<h2 id="FAQ5"><a href="#FAQ5"> How do I avoid copying my large .git directory with every deploy? </a></h2>
+<h2 id="avoid-copy"><a href="#avoid-copy"> How do I avoid copying my large .git directory with every deploy? </a></h2>
 
 If you have a large `.git` directory and you do not want it copied over on every deploy, add a `config/ey.yml` to your application's repository with the following contents:
 

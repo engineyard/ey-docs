@@ -180,7 +180,3 @@ If you have a large .git directory and you do not want it copied over on every d
      copy_exclude:
        - .git
 
-## Useful Links
-
-* [[Deployment Frequently Asked Questions|deployment_faq]]
-* [[Customizing with ey.yml|ey_yml]]
