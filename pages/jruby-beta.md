@@ -88,7 +88,3 @@ If you are not using RVM, do this in `$RAILS_ROOT` to update `Gemfile`:
   - Choose your server configuration as usual, and click on **Boot This Configuration**.
   - After the instance(s) have booted, your application code will be deployed!
   - Back in the Instances tab, click on "HTTP" link to view your application.
-
-## Known Issues
-
-  - `engineyard` gem is not supported on JRuby. There is a dependency on `ruby-termios` gem which depends on native C extension. This appears to have problems, even with the announced C extension support on JRuby.
