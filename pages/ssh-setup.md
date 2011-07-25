@@ -1,15 +1,22 @@
-# Generating SSH Keys
+# Setup SSH keys on AppCloud
 
-In order to SSH into an Engine Yard AppCloud slice, you'll need to create an SSH keypair.
+Engine Yard enables login access to application instances via SSH.  We have standardized
+on the secure practice of using key based authentication.  This protects our customers' instances
+from brute force attacks against a user/password based authentication.  An added benefit
+of key based authentication is the ability to login to an instance without a password.
 
-We use this to authenticate you on the system, it has the additional benefit of logging you in without a password.
+
+## Create a local SSH keypair
+
+In order to SSH into an Engine Yard AppCloud slice, you'll need to create an SSH keypair on your
+local machine.
+
 
 The command you run from a *nix based command line terminal is this:
 
     $ ssh-keygen -t rsa
 
-The output will come back like this:
-
+You should see a similar output to the following:
 
     Generating public/private rsa key pair.
     Enter file in which to save the key (/Users/tbird/.ssh/id_rsa): 
@@ -33,11 +40,15 @@ The output will come back like this:
     +-----------------+
 
 
-  - When it prompts you where to save the key, the default path is fine.
+  - The command prompt should ask you where to save the key, the default path is fine.
   - Entering a passphrase is more secure.  You can use an ssh-agent so that you won't have to type your passphrase every time you connect.
   - The rest of the output will automatically be generated.
 
-Then two files are generated in your home directory.
+### Outcome
+
+After the key generation command finished, two files have been generated in the location
+you specified to save the key.  The default location is in a `.ssh` directory in your home 
+directory.  You should see the following files in `~/.ssh`:
 
     id_rsa
     id_rsa.pub

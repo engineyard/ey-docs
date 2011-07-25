@@ -8,10 +8,11 @@ articles will help you with each of these processes.
 
 ## Articles
 
-* ### Setup SSH Keys
-  Learn how to generate a ssh key pair on your local machine and install on AppCloud.
+* ### [[Setup SSH Keys|ssh-setup]]
+  Learn how to generate ssh keys on your local machine and install your key on AppCloud.
   
-* ### Manage SSH Keys
+* ### [[Manage SSH Keys|ssh-management]]
   Learn how to manage your ssh keys on AppCloud.
   
-* ### Troubleshooting
+* ### [[Troubleshooting|ssh-troubleshooting]]
+  Tips to help you troubleshoot issues related to SSH on AppCloud.
