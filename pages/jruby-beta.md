@@ -10,29 +10,16 @@
 - An example snippet to your Gemfile:
 
 <pre>
-  source 'http://rubygems.org'
-  
   platforms :jruby do
-    gem 'activerecord-jdbc-adapter'
     gem 'jruby-openssl'
+    gem 'trinidad'
+
+    gem 'activerecord-jdbc-adapter'
+
+    # Choose the jdbc driver according to your database engine
     gem 'jdbc-mysql', :require => false
     gem 'jdbc-sqlite3', :require => false
-    gem 'trinidad'
   end
-  platforms :ruby do
-    gem 'mysql2'
-  end
-</pre>
-
-or, equivalently:
-
-<pre>
-  gem 'activerecord-jdbc-adapter', :platforms => :jruby
-  gem 'jruby-openssl', :platforms => :jruby
-  gem 'jdbc-mysql', :require => false, :platforms => :jruby
-  gem 'jdbc-sqlite3', :require => false, :platforms => :jruby
-  gem 'trinidad', :platforms => :jruby
-  gem 'mysql2', :platforms => :ruby
 </pre>
 
 Then run these commands to update your Gemfile.lock:
@@ -41,50 +28,21 @@ Then run these commands to update your Gemfile.lock:
   rvm install jruby
   rvm jruby
   bundle install
-  
-  git commit -a -m "Gemfile updated for jruby/trinidad"
+
+  git commit -a -m "Gemfile updated for JRuby/Trinidad"
   git push origin
 </pre>
 
 To use the `ey deploy` CLI tool:
 
-<pre>  
-  rvm --create 1.9.2@ey exec gem install engineyard
-  rvm wrapper 1.9.2@ey --no-prefix ey
-</pre>
-
-If you are not using RVM, do this in `$RAILS_ROOT` to update `Gemfile`:
-
 <pre>
-  jruby -S bundle install
-  git add Gemfile*
-  git commit -m 'Update Gemfile* for JRuby'
-  git push
-</pre>
-
-(Use branch of your choice.)
-
-- `config.ru` needs to be modified to `require 'bundler/setup'` correctly before the first use of `Bundler`, like so:
-
-<pre>
-  # This file is used by Rack-based servers to start the application.
-  # Find the latest bundler and get started                          
-  
-  require 'rbconfig'
-  $:.unshift(Dir[RbConfig::CONFIG["libdir"] + "/ruby/gems/1.8/gems/bundler-*/lib"].sort.last)
-  require 'bundler/setup'
-  
-  require ::File.expand_path('../config/environment',  __FILE__)
-  run CloudstockDemo::Application
+  rvm --create jruby@ey exec gem install engineyard
+  rvm wrapper jruby@ey --no-prefix ey
 </pre>
 
 ## Steps
 
-  - Press **Create New Environment** in the upper right corner of the AppCloud Dashboard page.
-  - Choose an application to deploy, and press **Add Environment**.
-    - If you're deploying a new application, press **Create New Application**, fill in the repository URI, choose the application type and version, and press **Create Application**.
-  - On the **Create New Environment** screen, enter the **Environment Name**, select the **Framework Environment**, and select **Trinidad** as your application server stack.
-  - Press **Create Environment** to finish creating the environment.
-  - Choose your server configuration as usual, and click on **Boot This Configuration**.
-  - After the instance(s) have booted, your application code will be deployed!
+  - Create a new application in the AppCloud Dashboard page.
+  - Create a new environment and choose **Trinidad** as your application server stack.
+  - Boot the environment configuration.
   - Back in the Instances tab, click on "HTTP" link to view your application.
