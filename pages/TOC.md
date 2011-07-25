@@ -28,6 +28,12 @@
   * [[Troubleshooting|deployment-troubleshooting]]
   * [[FAQs|deployment-faqs]]
 * [[Application & Environment|environment_home]]
+  * [[SSH|ssh-intro]]
+    * [[Introduction|ssh-intro]]
+    * [[Setup SSH keys|ssh-intro]]
+    * [[Manage SSH keys|ssh-intro]]
+    
+    * [[Troubleshooting|ssh-intro]]
   * [[IP Addresses|ip-addresses]]
   * [[Upgrading to Ruby 1.9|upgrading-to-ruby19]]
   * [[Change an Instance Size|change-an-instance-size]]
