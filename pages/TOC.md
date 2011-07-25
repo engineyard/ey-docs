@@ -28,6 +28,7 @@
   * [[Troubleshooting|deployment-troubleshooting]]
   * [[FAQs|deployment-faqs]]
 * [[Application & Environment|environment_home]]
+  * [[IP Addresses|ip-addresses]]
   * [[Upgrading to Ruby 1.9|upgrading-to-ruby19]]
   * [[Change an Instance Size|change-an-instance-size]]
   * [[IP Addresses|ip-addresses]]
