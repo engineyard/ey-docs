@@ -2499,8 +2499,11 @@ div.footnotes p {font-size:11px;}
 
 /* Sidebar Nav */
 #content nav { float: left; width:260px; margin-right: 20px; }
-   #content nav ul li a { font-weight: bold; color: #595c61; padding: 10px 10px 10px 25px; border-bottom: 1px solid #f4f4f4; display: block; text-decoration: none; }
-     #content nav ul li:last-child a { border: none; }
+	#content nav ul li a {text-decoration:none;}
+	#content nav ul li ul li a { font-weight: bold; color: #595c61; padding: 10px 10px 10px 25px; border-bottom: 1px solid #f4f4f4; display: block; text-decoration:underline; }
+	#content nav ul li ul li a.active,
+	#content nav ul li ul li a:hover {text-decoration:none;}
+		#content nav ul li:last-child a { border: none; }
 
 
 
@@ -2521,7 +2524,7 @@ div.footnotes p {font-size:11px;}
 	#content nav#sidebar ul ul {padding-left:0; margin:0;}
 	#content nav#sidebar ul ul li:last-child {border-bottom:0;}
 
-	#content nav#sidebar ul li a { font-weight: bold; color: #595c61; padding: 0; border: none; display: inline; text-decoration: none; }
+	#content nav#sidebar ul li a { font-weight: bold; color: #595c61; padding: 0; border: none; display: inline;}
 
 				#content nav#sidebar ul li ul li a { font-weight: normal; }
 

@@ -6,17 +6,17 @@
                     {
 
                       jQuery("#sidebar").find("li").each(function(){
-                        var item = jQuery(this);
-                        if ( item.has("ul").length ) {
-                          var hide = item.has("a[href=\"" + document.location.pathname + "\"]").length == 0;
+                        var li = jQuery(this);
+                        if ( li.has("ul").length ) {
+                          var hide = li.has("a[href=\"" + document.location.pathname + "\"]").length == 0;
 
-                          if ( hide ) {
-                            item.addClass("collapsed");
-                          } else {
-                            item.addClass("expanded");
-                          }
+                          	if ( hide ) { li.addClass("collapsed"); }
+						  	else 		{ li.addClass("expanded"); }
+							
+							// Add active class to link on currently active page.
+							li.find("a[href=\"" + document.location.pathname + "\"]").addClass("active");
 
-                          item.click(function(event){
+                          li.click(function(event){
                             if ( this == event.target ) {
                               item1 = jQuery(this);
                               var collapsed = item1.hasClass("collapsed");
@@ -28,7 +28,7 @@
                           });
 
                           if ( hide ) {
-                            item.find("ul").hide();
+                            li.find("ul").hide();
                           }
 
                         }
