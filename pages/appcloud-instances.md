@@ -112,7 +112,7 @@ Below you will find the the instance sizes that are available to boot on AppClou
     
   * **High CPU Extra Large** is 64-bit with 7 GB RAM, 20 ECU
   
-    * This instance size is great for those applications that are very CPU intensive.
+    This instance size is great for those applications that are very CPU intensive.
 
 
 

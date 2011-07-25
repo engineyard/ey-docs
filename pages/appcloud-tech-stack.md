@@ -14,7 +14,9 @@ component update to provide reliability, security, and compatibility within the 
 
 As a result of all the work we do, you can confidently deploy and manage your application with any Engine Yard cloud product. Read about the many [[benefits|http://www.engineyard.com/products/appcloud/benefits]] of using our Platform-as-a-Service.
 
-### This version is correct as of May 18, 2011.
+<p class="note">
+  <strong>This version is correct as of May 18, 2011.</strong>
+</p>
 
 <br /><br />
 

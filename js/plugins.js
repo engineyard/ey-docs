@@ -8,6 +8,9 @@
                       jQuery("#sidebar").find("li").each(function(){
                         var li = jQuery(this);
                         if ( li.has("ul").length ) {
+							 li.addClass("menu");
+							
+	
                           var hide = li.has("a[href=\"" + document.location.pathname + "\"]").length == 0;
 
                           	if ( hide ) { li.addClass("collapsed"); }
