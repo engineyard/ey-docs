@@ -9,7 +9,6 @@
 * <a href=#FAQ7> Do you offer Ruby version 1.8.7?</a>
 * <a href=#FAQ8> Do you support Bundler?</a>
 * <a href=#FAQ9> Is PostgreSQL Supported on Engine Yard AppCloud?</a>
-* <a href=#FAQ10> Are You Going to Support PostgreSQL?</a>
 * <a href=#FAQ11> What scale of apps are appropriate for Engine Yard AppCloud?</a>
 * <a href=#FAQ12> What types of applications will run on Engine Yard AppCloud?</a>
 * <a href=#FAQ13> Does Engine Yard manage my Domain Name or does my Company?</a>
@@ -76,13 +75,9 @@ Yes. You can choose either Ruby 1.8.7 or 1.8.6 when you are creating or editing 
 
 Yes. If you have a Gemfile in your application directory when you deploy your application we will detect it and then bundle your gems. This means you can skip the gems page during the setup of your environment.
 
-<a href=#FAQ9><h2 id="FAQ9"> Is PostgreSQL Supported on Engine Yard AppCloud? </h2></a>
+<a href=#FAQ9><h2 id="FAQ9"> Is PostgreSQL supported on AppCloud? </h2></a>
 
-Not at this time.  You can use our Chef recipe hosted at [[ey-cloud-recipes|http://github.com/engineyard/ey-cloud-recipes/tree/master/cookbooks/postgres/]] to run PostgreSQL on an instance.
-
-<a href=#FAQ10><h2 id="FAQ10"> Are You Going to Support PostgreSQL? </h2></a>
-
-We don't have a timetable for developing support for PostgreSQL at this time.
+AppCloud support for PostgreSQL 9 is an Alpha feature. For more information, see [[Engine Yard Beta Program|beta_home]].  
 
 <a href=#FAQ11><h2 id="FAQ11"> What scale of apps are appropriate for Engine Yard AppCloud? </h2></a>
 
