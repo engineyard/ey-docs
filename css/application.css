@@ -1770,15 +1770,6 @@ header {
   .product a:hover {
     text-decoration: none; }
 
-.note {
-  font-size: 1.2em;
-  line-height: 1.4em;
-  color: #999999;
-  border-top: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
-  padding: 1em 0;
-  margin: 2em 0; }
-
 .warning, .message {
   background: #fff2bf;
   background: -webkit-gradient(linear, left top, left bottom, from(#fff2bf), to(#fff8de));
@@ -2497,6 +2488,13 @@ li code {display:inline-block; padding:0 4px; margin-bottom:1px; border-radius:4
 a { text-decoration:underline; }
 a:visited { color:#369; text-decoration:none; }
 a:hover, a:active { text-decoration: none; }
+
+
+/* Custom .note class */
+.note {background:#eee; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px;  border:1px solid #FD0; padding:8px; background:#FFC; color:#963;}
+
+/* Tech stack footnotes */
+div.footnotes p {font-size:11px;}
 
 
 /* Sidebar Nav */
