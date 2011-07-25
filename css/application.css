@@ -2505,7 +2505,8 @@ div.footnotes p {font-size:11px;}
 	#content nav ul li ul li a:hover {text-decoration:none;}
 		#content nav ul li:last-child a { border: none; }
 
-
+#content #sidebar li.menu li.menu { margin-left:15px;}
+#content #sidebar li.menu > a { font-weight:bold !important; text-decoration:none;}
 
 /* Wiki Sidebar */
 
