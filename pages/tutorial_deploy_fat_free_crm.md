@@ -245,9 +245,6 @@ In this procedure, you deploy the Fat Free CRM application and discover that the
 
 3. Click Deploy.
 
-    ![deploy button](images/tutorials/deploy_button_alone.png)
-
-
     A message that you successfully deployed HEAD... should appear and you can view the deployment log.
 
 3. Verify deployment:
@@ -257,8 +254,6 @@ In this procedure, you deploy the Fat Free CRM application and discover that the
     ![deploy button](images/tutorials/environment_name_link.png)
 
     b. Click Visit your application.
-
-    ![Visit your application link](images/tutorials/visit_application.png)
 
     Fat Free CRM should now be running. However, this (somewhat misleading) error message appears. To get the application running correctly you need to run some rake commands, as described [below][12].
 
