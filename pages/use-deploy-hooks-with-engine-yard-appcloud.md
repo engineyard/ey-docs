@@ -169,5 +169,5 @@ Here is an example JSON document that shows you what kind of info is inside the 
 
 
 ## More Information
-* [[Deploy Hooks API|deploy_hooks_api]].<br />
+* [[Deploy Hooks API|deploy-hooks-api]].<br />
   Learn more about additional methods available to your deploy hooks.
