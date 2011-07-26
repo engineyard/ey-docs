@@ -46,11 +46,16 @@ You should see a similar output to the following:
 
 ### Outcome
 
-After the key generation command finished, two files have been generated in the location
+Upon completion of the key generation command, two files have been generated in the location
 you specified to save the key.  The default location is in a `.ssh` directory in your home 
 directory.  You should see the following files in `~/.ssh`:
 
     id_rsa
     id_rsa.pub
 
-The `id_rsa.pub` file is the public key file that you'll use to push to Engine Yard AppCloud.
+The `id_rsa.pub` file is the public key file that you'll upload to Engine Yard AppCloud.
+
+
+## Next Steps
+
+[[Add your public key|ssh-add-to-appcloud]] to AppCloud.
