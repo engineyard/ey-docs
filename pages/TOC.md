@@ -90,5 +90,4 @@
   * [[Trial FAQ|http://www.engineyard.com/products/appcloud/trial-faq]]
 * [[Release Notes|release_notes]]
 * [[Known Issues|known_issues]]
-* [[Technology Stack|technology_stack]]
 * [[AppCloud Glossary|appcloud_glossary]]
