@@ -1,4 +1,4 @@
-# Change an Instance Size
+# Change an instance size
 
 ## Overview
 
@@ -14,20 +14,37 @@ If your instance volumes are fairly small (e.g., less than 30GB), then the snaps
 
 ## Considerations
 
-Since resizing your instances will require terminating the whole environment, it's a good idea to also consider resizing your volume sizes during this process as well. The default volume size of 5GB (15GB for the database) is a good start, but at a cost of $0.10 per GB per month, it's cheap to switch to a larger volume size and give yourself room to grow later. A good amount to go with generally is 15GB for your application instances and maybe 30GB for your database master. It's best to give yourself a lot of growing room since it requires full termination to increase your volume size.
+Since resizing your instances will require stopping the whole environment, it's a 
+good idea to also consider resizing your volume sizes during this process as 
+well. The default volume size of 5GB (15GB for the database) is a good start, but 
+at a cost of $0.10 per GB per month, it's cheap to switch to a larger volume size 
+and give yourself room to grow later. A good amount to go with generally is 15GB 
+for your application instances and maybe 30GB for your database master. It's best 
+to give yourself a lot of growing room since it requires full termination to increase 
+your volume size.
 
-## Resizing
+## Steps to resize an instance
 
 To resize your instances properly, take the following steps.
 
-  - Make a note of the current instance sizes being used, their volume sizes, and any utility instance names you're using.
-  - Click the **Stop** button for the environment you want to change. This is when you would want to change your application stack if you're going to do so.
-  - Click the **Boot** button for the environment you terminated and now want to restart.
-  - Choose the **Custom** option.
-  - Choose the number of application instances you want, set the new size you'd like and then choose the snapshot you want to restore from.
-  - Check **Use separate database instance** (this will already be checked if you chose more than one application server). Choose the size you want for your database instance (add the number of slaves you want or had setup previously) and choose the snapshot you want to restore from.
-  - Scroll down a bit and setup your Utility Instances (if you had any) choosing the new instance size and snapshot you want to use.
-  - Click the **Boot this Configuration** button at the bottom of the page once you're finished.
+  1. Make a note of the current instance sizes being used, their volume sizes, and any utility instance names you're using.
+  2. Click the **Stop** button for the environment you want to change.
+  3. Click the **Boot** button for the environment you terminated and now want to restart.
+  4. Choose the **Custom** option.
+  5. Configure application instances:
+      1. Choose the number of instances to boot.
+      2. Choose the appropriate size for each instance.
+      3. Choose the snapshot used to restore these instances.
+  6. Configure database instances:
+      1. Select the **Use separate database instance** checkbox. <br />
+         (this will already be checked if you chose more than one application server)
+      2. Choose the size you want for your database instance. <br />
+         (add the number of slaves you want or had setup previously)
+      3. Choose the snapshot used to restore these instances.
+  7. Configure utility instances: (if you had any)
+      1. Choose the appropriate size for each instance.
+      2. Choose the snapshot used to restore these instances.
+  8. Click the **Boot this Configuration** button.
 
 In some cases, you may run into problems where Amazon has run out of capacity for the instance size you're using (this happens most frequently with Small instances or the extremely large ones). If this happens it would show up on your main dashboard as an instance's status turning red and "Amazon is currently out of capacity" will show as the error. If you get that error, [[read here|amazon-out-of-capacity]] to fix the problem.
 
