@@ -2491,7 +2491,7 @@ a:hover, a:active { text-decoration: none; }
 
 
 /* Custom .note class */
-.note {background:#eee; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px;  border:1px solid #FD0; padding:8px; background:#FFC; color:#963;}
+.note {background:#eee; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px;  border:1px solid #FE6; padding:8px; background:#FFE; color:#963;}
 
 /* Tech stack footnotes */
 div.footnotes p {font-size:11px;}

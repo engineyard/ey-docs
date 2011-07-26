@@ -4,9 +4,7 @@ Currently Engine Yard AppCloud is built on top of Amazon's AWS services. When yo
 an instance with Engine Yard you are booting up an [[EC2|http://aws.amazon.com/ec2/]] instance. 
 We boot this instance for you and automatically configure it with the needed 
 [[Engine Yard Stack|appcloud-tech-stack]] components for your 
-environment.
-
-### Learn more about instances on AppCloud
+environment. Learn more about instances on AppCloud:
 
 * [[Instance Roles & Types|appcloud-instances#role-types]]
 * [[Instance Sizes|appcloud-instances#sizes]]
