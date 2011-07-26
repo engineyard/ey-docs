@@ -103,13 +103,14 @@ The goal is to monitor your application through the New Relic dashboard. When yo
   
 2. Click the account name.
 
-3. Under the Services section, click the New Relic logo.
+3. Under the Services section, New Relic logo, click Access your app metrics.
 
     ![New Relic logo under Services now activated](images/new_relic_logo_activated.png)
 
 4. Click the link to login and view your performance data.
 
-    This links to New Relic website where you can review your data.
+    This links to New Relic website where you can review your data.  
+    **Tip:** Bookmark this New Relic page.  
 
 
   [1]: #topic1        "topic1"
