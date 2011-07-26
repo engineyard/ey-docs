@@ -15,28 +15,6 @@ At the 'environment' level you'll be able to manage the following:
   * [[Using Snapshots|using-snapshots]]
   * [[Rebuilding an Environment|rebuilding-an-environment]]
 
-## Create an Environment
-
-**NOTE**: In order to use this article you must have first setup at least one environment with the Quick Start method.
-
-### Create an Environment
-
-  - Click on the **Dashboard** section under SERVER TOOLS.
-  - In the top right corner, click on the **Create New Environment** link.
-  - Enter your data, make your selections, and press the **Create environment** button.
-
-### Environment Options
-
-  * When creating your "Environment Name", use underscores to separate words instead of spaces.  Common environment names are: myapp_production, myapp_staging, myapp_testing, myapp_qa, myapp_ci, etc.
-  * The "SSH Username" is used to create a user on the system.  Your application runs under this user.  Also, this user has sudo rights.
-
-**NOTE**: Your user account name cannot be root.
-
-  * Usually leaving the default "Availability Zone" selected is fine.
-  * Choose your preferred "Web Server Stack".
-  * The default 10 backups is recommended for the "Number of database backups to keep".  You may alter this to your taste.
-  * If you need more frequent database backups, change the "How often to run database backups in hours" value.
-
 ## Delete an Environment
 
 ### Before You Begin
@@ -75,29 +53,6 @@ You can choose from three options:
 
 Click the **Add to Instances** button to add the type of instance to your cluster.
 
-## Clone an Environment
-
-####Introduction
-
-You can clone your AppCloud environment. For example, clone your existing production environment and use it as a testing environment before deploying changes to production.  
-
-Because you can terminate a testing environment when your tests are done, you don't have to maintain a staging environment and keep it in sync with your production environment.
-
-When you clone an environment, it clones *nearly* everything including the volumes that your original environment uses but *excluding* any custom files.  
-
-#### To clone an environment
-
-1. In AppCloud, click Dashboard.
-2. Click Clone for the environment to clone.  
-    The "Clone your production environment" page appears.  
-3. Specify Name, Framework Environment, IP Address, and Domain Name(s) for each application.  
-4. Click Clone Environment.  
-    When your cloned environment has booted, it displays as ready in your Dashboard.
-5. If you use custom files, copy them to your cloned environment. 
-
-Now, you're ready to do your tests.
-
-**Tip:** If this is a test environment, remember to stop it when your tests are done.
 
 ## Cluster Architechture
 
