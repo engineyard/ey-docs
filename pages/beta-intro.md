@@ -1,18 +1,30 @@
 # Engine Yard Beta Program
 
-Deploying, automating and managing a Rails application is always changing - new stack elements, new features in AppCloud and xCloud, and new tools to help development. We think many of these features will be interesting to our customers whilst they are still in development. So welcome to the Engine Yard Beta Program!  
-![Beta](images/ey-beta-logo.png)
 
-In advance, we want to thank you for your participation and we appreciate your feedback!
+<p >
+  <img id="beta-logo" src="images/ey-beta-logo.png" >
+  Deploying, automating and managing a Rails application is constantly
+  changing. New stack elements, new features in AppCloud and xCloud, 
+  and new tools to help development are released often. We think many of 
+  these features will be interesting to our customers whilst they are still 
+  in development.  If you are interested in testing out beta features on
+  AppCloud, read on for more information!
+</p>
 
-There are four parts to our Beta Program:
+**There are four parts to our Beta Program:**
 
   * Beta Announcements
   * Beta Conversations
   * Alpha features and improvements
   * Beta features and improvements
 
-Access to the Beta program **does not** require an Engine Yard Support agreement. Each new feature or improvement has its own support channel (see below), and is not part of the standard Support channels of IRC, the Ticket system, the Community site, etc. If you help us to help you with new features we are extremely grateful.
+Access to the Beta program **does not** require an Engine Yard Support 
+agreement. Each new beta feature has its own support channel 
+(see below).  We appreciate any feedback received during the beta program.
+Feedback received helps us refine our beta technology to provide a better 
+experience for our customers.
+
+In advance, we want to thank you for your participation and we appreciate your feedback!
 
 ## Beta Announcements
 

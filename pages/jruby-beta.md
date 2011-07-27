@@ -1,6 +1,6 @@
 # Getting Started with JRuby
 
-## Before starting
+## Prerequisites
 
   * Your application should use Bundler 1.0.10 or later to manage gems.
   * Gemfile must include `trinidad`.
@@ -45,4 +45,3 @@ To use the `ey deploy` CLI tool:
   - Create a new application in the AppCloud Dashboard page.
   - Create a new environment and choose **Trinidad** as your application server stack.
   - Boot the environment configuration.
-  - Back in the Instances tab, click on "HTTP" link to view your application.
