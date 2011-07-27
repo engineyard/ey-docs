@@ -8,8 +8,6 @@ Phusion Passenger 3 is currently in Beta support on Engine Yard AppCloud. This v
 
 Each environment can choose to change from **Passenger** to **Passenger 3** independently. All applications on that environment will use the Passenger 3 web server.
 
-See below for **Getting Started** instructions for New Environments or updating Existing Environments.
-
 ### Support
 
 Support for users of Passenger 3 is provided through ey-beta-talk. For information, see "Beta Conversations" on the [[Beta Program page|beta_home]].
