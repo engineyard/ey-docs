@@ -3,7 +3,11 @@
 
 ### [[July 2011|appcloud_updates_july_2011]]
 
-* [[<b>Action Req'd:</b> Upgrade to Ruby 1.8.7-p352|appcloud_updates_july_2011#update4]]  *July 22th, 2011*
+* [[Minor: Improved UI messaging for updates|appcloud_updates_july_2011#update6]]  *July 27th, 2011*
+
+* [[Fix: New Relic plan upgrades|appcloud_updates_july_2011#update5]]  *July 27th, 2011*
+
+* [[<b>Action Req'd:</b> Upgrade to Ruby 1.8.7-p352|appcloud_updates_july_2011#update4]]  *July 22nd, 2011*
 
 * [[<b>Major:</b> Improvements to the app-centric UI: more details and easier deploys|appcloud_updates_july_2011#update6]]  *July 19th, 2011*
 
