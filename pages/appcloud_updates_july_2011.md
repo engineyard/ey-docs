@@ -2,6 +2,21 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update6><h2 id="update6"> Minor: Improved UI messaging for updates</h2></a>
+
+July 27th, 2011
+
+Instead of "Environment X has changes, click the ‘Update’ button on the Dashboard to apply them", we now provide additional messaging about what in the environment has changed. 
+
+This is one step towards our goal of transparency in stack updates.
+
+
+<a href=#update5><h2 id="update5"> Fix: New Relic plan upgrades</h2></a>
+
+July 27th, 2011
+
+Fixed an issue that prevented upgrading New Relic plans from within the dashboard.
+
 <a href=#update4><h2 id="update4"> **Action Req'd:** Upgrade to Ruby 1.8.7-p352 </h2></a>
 
 July 22nd, 2011
