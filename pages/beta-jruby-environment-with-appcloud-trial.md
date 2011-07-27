@@ -5,17 +5,17 @@
 
 JRuby is a Beta feature on AppCloud. To deploy a JRuby application on a trial account, follow this process: 
 
-*	[Get started and create an application and environment.][2]
+*	[Create an application and environment.][2]
 *	[Reconfigure the environment for JRuby.][3]
 
-<h2 id="topic2"> Get started and create an application and environment  </h2>
+<h2 id="topic2"> Create an application and environment </h2>
 
 ### Introduction  
 
 For detailed help with these steps, see [[docs.engineyard.com|home]], for example, [[Setting up a trial account and deploying a sample application|tutorial_deploy_fat_free_crm]]. These steps are the same for any trial account setup. 
 
 
-###To get started and create an application and environment  
+###To create an application and environment  
 1. Sign up for a trial account.  
 2. Validate and start the trial account.  
 3. Create your (JRuby) application.  
