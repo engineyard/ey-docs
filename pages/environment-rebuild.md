@@ -5,8 +5,12 @@ steps necessary to ensure minimal downtime.
 
 ## Why would an environment need to be rebuilt?
 
-When upgrading a Database Instance there is no way to "terminate" and re-provision 
-the DB instance separately.  You will need to rebuild the complete environment.
+* You need to attach a new or different ip address to the environment.
+
+* When upgrading a Database Instance there is no way to "terminate" and re-provision 
+  the DB instance separately.  You will need to rebuild the complete environment.
+
+
 
 ## Taking snapshots
 
