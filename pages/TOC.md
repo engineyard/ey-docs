@@ -95,7 +95,7 @@
   * [[Rubinius|rubinius]]
   * [[PostgreSQL|postgresql]]
   * [[JRuby/Trinidad|jruby-beta]]
-  * [[JRuby and trial|beta_jruby_environment_with_appcloud-trial]]
+  * [[JRuby and trial|beta-jruby-environment-with-appcloud-trial]]
 * [[FAQs|faq_home]]
   * [[AppCloud FAQ|appcloud_faq]]
   * [[Trial FAQ|http://www.engineyard.com/products/appcloud/trial-faq]]
