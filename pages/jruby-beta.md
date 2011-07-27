@@ -1,9 +1,13 @@
-# Getting Started with JRuby
+# Using JRuby on AppCloud
+
+<p class="note">
+  JRuby support is currently a beta feature on AppCloud.
+</p>
 
 ## Prerequisites
 
   * Your application should use Bundler 1.0.10 or later to manage gems.
-  * Gemfile must include `trinidad`.
+  * Your Gemfile must include `trinidad`.
 
 ## Preparing an existing Rails app
 

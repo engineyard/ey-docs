@@ -1,4 +1,4 @@
-# Using Passenger 3 with Engine Yard AppCloud
+# Using Passenger 3 on AppCloud
 
 ## Introduction
 

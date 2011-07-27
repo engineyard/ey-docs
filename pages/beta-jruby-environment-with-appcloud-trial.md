@@ -1,9 +1,6 @@
-# Using a JRuby environment with a trial account
+# Using a JRuby with a trial account
 
-
-### Introduction
-
-JRuby is a Beta feature on AppCloud. To deploy a JRuby application on a trial account, follow this process: 
+JRuby is currently a Beta feature on AppCloud. To deploy a JRuby application on a trial account, follow this process: 
 
 *	[Create an application and environment.][2]
 *	[Reconfigure the environment for JRuby.][3]
