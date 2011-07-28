@@ -2,8 +2,6 @@
 
 Resque is a Ruby job queue. You can find it, and all you need to know about coding for it [[here|http://github.com/defunkt/resque]]. This is the Readme for resque, it's quite comprehensive and worth reading more than once.
 
-***Important Caveat: A lot of the configuration options are dependent on our portage package ey_monit_scripts at version 0.18.3. At the time of writing, this version isn't available on either xCloud or AppCloud, so to work with this please contact EY support staff who can provide you with a copy.***
-
 ## Anatomy of our Resque Configuration
 
 The files used to configure Resque in your application are:
