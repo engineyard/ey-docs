@@ -6,7 +6,6 @@
 * <a href=#FAQ4> Can EY AppCloud host my DNS?</a>
 * <a href=#FAQ5> Can I have more than one IP address for my application?</a>
 * <a href=#FAQ6> Can I failover to a Database Slave?</a>
-* <a href=#FAQ7> Do you offer Ruby version 1.8.7?</a>
 * <a href=#FAQ8> Do you support Bundler?</a>
 * <a href=#FAQ9> Is PostgreSQL Supported on Engine Yard AppCloud?</a>
 * <a href=#FAQ11> What scale of apps are appropriate for Engine Yard AppCloud?</a>
@@ -66,10 +65,6 @@ If you have multiple domains pointed at your application and they all need to ru
 No, failover to a database slave is not currently an option on EY AppCloud. If you do ever run into issues with your Database Master we suggest you can recreate your Master Database Instance from a snapshot. This is quicker than failing over and does not pose the risk of any data loss should replication be out-of-sync.
 
 We take fresh snapshots of your `/db` volume when you terminate an instance. If you have to rebuild your DB instance you can terminate it and recreate it from the most recent snapshots.
-
-<a href=#FAQ7><h2 id="FAQ7"> Do you offer Ruby version 1.8.7? </h2></a>
-
-Yes. You can choose either Ruby 1.8.7 or 1.8.6 when you are creating or editing an environment.
 
 <a href=#FAQ8><h2 id="FAQ8"> Do you support Bundler? </h2></a>
 
