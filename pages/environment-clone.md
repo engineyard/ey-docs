@@ -17,12 +17,12 @@ of spinning up an environment on-demand within a matter of minutes.
 
 1. Login to your AppCloud account.
 2. Click the **Dashboard** menu item.
-3. Navigate to an environment by clicking on the environment name.
-4. Click the **More Options** tab.
-5. Click the **Clone Environment** link.<br />
+3. Navigate to the environment you want to clone by clicking on the environment name.
+4. Click **More Options** on the environment tabs.
+5. Click **Clone Environment**.<br />
    You should be redirected to the "Create a clone" page.
 6. Enter the information necessary for your cloned environment. (See [[Clone options|environment-clone#options]] below)
-7. Click the **Clone Environment** submit button. <br />
+7. Click **Clone Environment**. <br />
    You should be redirected to your new environment clone that is being provisioned.
 
 **Tip:** Remember to shut down this environment when you are finished.

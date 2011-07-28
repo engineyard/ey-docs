@@ -24,6 +24,12 @@ taken at the time of termination runs faster because of the recent prior snapsho
 
 ## Steps to rebuild an environment
 
+<p class="note">
+  <strong>Note:</strong> It is highly recommended to perform a test rebuild using a 
+  <a href="/environment-clone.html">cloned environment</a> first.
+</p>
+
+
   1. Put your site into [[maintenance mode|deployment-maintenance-pages]] using the Engine Yard gem:
     
           ey web disable
@@ -36,9 +42,7 @@ taken at the time of termination runs faster because of the recent prior snapsho
   7. Ensure that the most recent snapshots from the **Application snapshot** and **Database snapshot** drop-downs are selected.
   8. Click **Boot This Configuration** to start rebuilding your environment.
 
-<p class="note">
-  <strong>Note:</strong> Engine Yard recommends using the maintenance mode at 
-  the beginning of the rebuild process as it effectively stops traffic 
-  (especially database writes) for the period of time between finishing 
-  snapshots and stopping the environment.
-</p>
+Engine Yard recommends using the maintenance mode at 
+the beginning of the rebuild process as it effectively stops traffic 
+(especially database writes) for the period of time between finishing 
+snapshots and stopping the environment.
