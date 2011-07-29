@@ -1,14 +1,18 @@
-#Using Keep Files to edit Configurations on AppCloud
+#Use keep files to customize and maintain configurations on AppCloud
 
-A **keep file** gives you the flexibility to modify configuration settings on your `/data` EBS volume.
+###Introduction
 
-When our Chef scripts go to write out these templates, it will check the filesystem for a file with *keep* in the filename. If that file exists, then the Chef script won't write out the template and leave the one currently there.
+A **keep file** gives you the flexibility to modify configuration settings in specific files within the /data and /etc directories of your EBS (Amazon Elastic Block Storage) volume.
 
-For example, if the template was to write out `/data/myservice.conf`, it would look for `/data/keep.myservice.conf`. If its found, it skips writing out this template.
+When Engine Yard's Chef goes to create configuration files from its recipe templates, it checks the filesystem for certain files prefaced with _keep_.  If such files exist, then the Chef recipe doesn't create new configuration files; instead it leaves the keep files in place.
 
-To manually change these files and keep them, rename the default file from `file.name` to `keep.file.name`.
+For example, if the template is about to write out a configuration file called /data/myservice.conf, Chef first looks for /data/keep.myservice.conf. If this file is found, then Chef skips writing out the template-base configuration file. And, the keep.myservice.conf file is used instead.
 
-##Available Files to Change
+###Files that can be keep files
+
+These are the files that can be made into keep files. 
+
+**Note:** Only this subset of files in the /etc or /data directories can be made into keep files. Other files in these directories might be overwritten or ignored even if they have been prefaced with "keep".  
 
 * /etc/engineyard/collectd.conf
 * /data/#{appname}/shared/config/database.yml
@@ -26,43 +30,46 @@ To manually change these files and keep them, rename the default file from `file
 * /etc/redis/redis.conf
 * /etc/monit.d/unicorn_#{app.name}.monitrc
 
-## Nginx
+*Question for reviewers* The doc originally also said: " This also works for other files in the folder:   /data/nginx/servers/\*"  
+Is this true? If so can we/should we change the "data/nginx/servers/#" bullets to /data/nginx/servers/\*?
 
-Your application named **myapp** you'd take your standard:
-
-    /data/nginx/servers/myapp.conf
-
-And you need to rename that file to:    
-
-    /data/nginx/servers/keep.myapp.conf
-
-Then make all your changes and they will be used in your nginx server.
-
-This also works for other files in the folder:
-
-    /data/nginx/servers/*    
+*Question for reviewers* Similar to the above: The doc originally also said: "You can keep any monit configs inside of: "/etc/monit.d/\*" 
+Is this true? If so can we/should we change the last bullet to "/etc/monit.d/\*"
 
 
-### Extra Step for nginx.conf
+### To use keep files to customize and maintain AppCloud configurations
 
-Changing the `/data/nginx/nginx.conf` file requires an additional step because it's a file required by nginx itself.
+1. Connect to your instance via SSH
 
-  - Rename the file from `/data/nginx.conf` to `/data/nginx/keep.nginx.conf`
-  - Add a deploy hook to create a symlink:
-        
+2. Edit and rename (to keep._file.name_) any of the files listed above.
+  
+    For example, for an application name "myapp", configure the nginx server by renaming `/data/nginx/servers/myapp.conf` to `/data/nginx/servers/keep.myapp.conf` and then editing this file.
+
+3. If you make nginx.conf or database.yml into keep files, add a deploy hook to create a symlink. 
+
         ln -nfs /data/nginx/keep.nginx.conf /data/nginx/nginx.conf
+  or
+        ln /data/#{appname}/shared/config/database.yml /data/#{appname}/shared/config/keep.database.yml
+
+     *Question for reviewers* What happens if this symlink is not created? Is the Chef recipe default file used? or Some other fall thru configuration settings are used? or Is there error message? 
+
+4. **Important!** If you make any changes to your environment that affect your keep files, update them before rebooting your environment. 
 
 
-## Monit 
+*Question for reviewers:* Should we rewrite and keep this? Is there a specific especially useful example for monit? "This can be useful if you're trying to increase the memory limit for mongrels or background processes, etc. 
 
-You can keep any monit configs inside of: `/etc/monit.d/*`
 
-This can be useful if you're trying to increase the memory limit for mongrels or background processes, etc.
+<h3 id="topic5"> More information</h2>
 
-##database.yml
-
-Once you've changed the `database.yml` to use a keep file, you'll need to use a [[deploy hook|use-deploy-hooks-with-engine-yard-appcloud]] to symlink `/data/#{appname}/shared/config/database.yml` to `/data/#{appname}/shared/config/keep.database.yml`.
-
-##Problems with Keep Files
-
-* Keep files won't be updated if a new instance is added/deleted. This can be a problem when you stop an instance and boot a new instance up since the hostname may have been replaced.
+The table contains links to related information in the Engine Yard doc pages. 
+<table>
+  <tr>
+    <th>For more information about…</th><th>See…</th>
+  </tr>
+  <tr>
+    <td>SSH in AppCloud</td><td>[[Connect to your instance via SSH|ssh-connect]] </td>
+  </tr>
+  <tr>
+    <td>Deploy hooks</td><td>[[How To Use Deploy Hooks with AppCloud|use-deploy-hooks-with-engine-yard-appcloud]]</td>
+  </tr>
+</table>
