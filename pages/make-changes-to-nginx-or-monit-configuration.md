@@ -36,7 +36,7 @@ These are the files that can be made into keep files.
 
 ## To use keep files to customize and maintain AppCloud configurations
 
-1. Connect to your instance via SSH
+1. Connect to your instance via SSH.
 
 2. Edit and rename (to keep._file.name_) any of the files listed above.
   
