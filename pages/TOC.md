@@ -42,6 +42,7 @@
     * [[Introduction|ips-intro]]
     * [[Manage IP addresses|ips-manage]]
     * [[Delete IP addresses|ips-delete]]
+    * [[DNS Configuration|ips-setup-dns]]
   * [[SSH - Secure Shell|ssh-intro]]
     * [[Introduction|ssh-intro]]
     * [[Setup local keys|ssh-setup]]
