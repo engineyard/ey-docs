@@ -1,6 +1,14 @@
 # Release Notes
 <a href="http://feed43.com/1082485410203701.xml" class="rss">Release Notes RSS Feed</a>
 
+### [[August 2011|appcloud_updates_august_2011]]
+
+* [[<b>Major:</b> Passenger 3 is now generally available in AppCloud|appcloud_updates_august_2011#update3]]  *August 2nd, 2011*
+
+* [[Minor: Context-sensitive help added to UI pages|appcloud_updates_august_2011#update2]]  *August 1st, 2011*
+
+* [[Fix: Database exec plugins|appcloud_updates_august_2011#update1]]  *August 1st, 2011*
+
 ### [[July 2011|appcloud_updates_july_2011]]
 
 * [[Minor: Improved UI messaging for updates|appcloud_updates_july_2011#update6]]  *July 27th, 2011*

@@ -52,6 +52,8 @@ Your slice environment likely came bundled with Mailtrust (now Rackspace) and if
 
 Domain Name System (DNS) services are not offered on EY AppCloud. If you are currently using Engine Yard's name servers you'll need to register with a DNS service provider and update your registrar to use that provider's name servers. Check with your registrar; they may also offer control of your DNS zone records.
 
+For more information, see [[How to set up AppCloud to work with your domain name.|ips-setup-dns]]
+
 <a href=#FAQ5><h2 id="FAQ5"> Can I have more than one IP address for my application? </h2></a>
 
 No. Amazon only allows us to attach a single IP address to any one instance. 
@@ -157,7 +159,9 @@ If you plan on using GitHub, the first option to automatically import your SVN r
 
 Each availability zone runs on its own physically distinct, independent infrastructure, and is engineered to be highly reliable. Common points of failures like generators and cooling equipment are not shared across availability zones, and availability zones are designed to be independent with failure modes like fires and flooding."
 
-Source: [[Feature Guide: Amazon EC2 Availability Zones|http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1347&categoryID=174]]
+Source: Feature Guide, Amazon EC2 Availability Zones (developer.amazonwebservices.com)
+
+For information about setting availability zones in AppCloud, see [[Using multi-region on AppCloud|using-multi-region-with-engine-yard-appcloud]].
 
 <a href=#FAQ22><h2 id="FAQ22"> How do I change my Credit Card information? </h2></a>
 

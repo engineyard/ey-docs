@@ -92,7 +92,6 @@
   * [[Add Redis to your application|add-redis-to-your-application]]
 * [[Beta Program|beta-intro]]
   * [[Introduction|beta-intro]]
-  * [[Passenger 3|using-passenger-with-engine-yard-appcloud]]
   * [[Rubinius|rubinius]]
   * [[PostgreSQL|postgresql]]
   * [[JRuby/Trinidad|jruby-beta]]

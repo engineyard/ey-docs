@@ -42,7 +42,7 @@ Second, we need to name this environment. By default we will choose a name of **
 
 Next, we need to know what application server you would like to use. We recommend Passenger for production environments.  Mongrel will not work with Rails applications newer than Rails 2.3.8.
 
-Finally, we need to configure the virtual host for this application in this environment. This should be the domain you intend to use for this application. If you are only adding one application to this environment, you can use the wildcard **_** (underscore) virtual host. 
+Finally, we need to configure the virtual host for this application in this environment. This should be the domain you intend to use for this application. If you are only adding one application to this environment, leave the Domain field blank (not set). 
 
 There are also a few advanced options. In most cases the defaults are fine.
 
