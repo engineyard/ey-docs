@@ -1,5 +1,5 @@
 # Engine Yard FAQs
 
-* [[AppCloud FAQ|appcloud_faq]]
-* [[Deployment using CLI FAQ|deployment_faq]]
-* [[Trial FAQ|http://www.engineyard.com/products/appcloud/trial-faq]]
+* [[AppCloud FAQs|appcloud_faq]]
+* [[Deployment FAQs|deployment-faqs]]
+* [[Trial FAQs|http://www.engineyard.com/products/appcloud/trial-faq]]

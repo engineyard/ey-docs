@@ -5,6 +5,8 @@ steps necessary to ensure minimal downtime.
 
 ## Why would an environment need to be rebuilt?
 
+* An instance in an environment has become [[frozen|frozen-instances]].
+
 * You need to attach a new or different ip address to the environment.
 
 * When upgrading a Database Instance there is no way to "terminate" and re-provision 
@@ -34,13 +36,13 @@ taken at the time of termination runs faster because of the recent prior snapsho
     
           ey web disable
     
-  2. Click the **Snapshot** button in your environment to take a snapshot.
-  3. Click the **Stop** button to shutdown your environment *after snapshots have completed*.
-  4. Click the **Boot** button once all instances are terminated.
-  5. Choose the **Custom** option from the configuration screen.
+  2. Click Snapshot in your environment to start a snapshot.
+  3. *After snapshots have completed*, click Stop to shutdown your environment.
+  4. Click Boot once all instances are terminated.
+  5. Choose the Custom option from the configuration screen.
   6. Configure new instances using previous settings or select new options if desired.
-  7. Ensure that the most recent snapshots from the **Application snapshot** and **Database snapshot** drop-downs are selected.
-  8. Click **Boot This Configuration** to start rebuilding your environment.
+  7. Ensure that the most recent snapshots from the Application snapshot and Database snapshot drop-downs are selected.
+  8. Click Boot This Configuration to start rebuilding your environment.
 
 Engine Yard recommends using the maintenance mode at 
 the beginning of the rebuild process as it effectively stops traffic 

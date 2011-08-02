@@ -15,6 +15,8 @@ To edit an existing environment to use Passenger 3:
 3. Under Web Stack Server, choose Passenger 3.
 4. Update and boot the environment.
 
+
+
 <a href=#update2><h2 id="update2"> Minor: Context-sensitive help added to UI pages</h2></a>
 
 August 1st, 2011
@@ -22,6 +24,8 @@ August 1st, 2011
 Context-sensitive help now appears on Application and Environment pages in the UI. 
 
 ![Context-sensitive help closed and open](images/help_scnshot.png)
+
+
 
 <a href=#update1><h2 id="update1"> Fix: Database exec plugins </h2></a>
 
