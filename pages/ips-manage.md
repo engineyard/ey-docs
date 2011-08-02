@@ -1,11 +1,27 @@
 # Manage your IP addresses on AppCloud
 
-This article will provide guidance on how manage IP addresses within an AppCloud
-account.
+This article provides guidance on how to manage adding, detaching and 
+attaching IP addresses within an AppCloud environment.
 
-  * [[Add an address|ips-manage#add]]
-  * [[Detach an address|ips-manage#detach]]
-  * [[Attach an address|ips-manage#attach]]
+Topics discussed in this article:
+
+  * [[Environments & IP addresses|ips-manage#info]]
+  * [[Adding an address|ips-manage#add]]
+  * [[Detaching an address|ips-manage#detach]]
+  * [[Attaching an address|ips-manage#attach]]
+
+
+<h2 id="info">Environments &amp; IP addresses</h2>
+
+IP addresses are assigned when configuring an environments instances.
+
+  * In the case of a Single Instance environment, the address is assigned to 
+    this instance.  All incoming internet traffic is routed to this instance.
+  * When deploying a clustered architecture, the IP address is assigned to the
+    Application Master instance.  All incoming internet traffic is routed to this
+    instance which is then load balanced to your application slave instances with
+    HAProxy.
+
 
 
 <h2 id="add">Add an address</h2>
