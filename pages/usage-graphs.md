@@ -1,9 +1,12 @@
-# Usage Graphs
+# Viewing usage graphs on AppCloud
 
 Engine Yard AppCloud provides usage data gathered by the [[rrdtool|http://oss.oetiker.ch/rrdtool/]] for you to be able to review and analyze.
 
-![Find Usage Graphs](images/find_usage_graphs.jpg)
+## To view usage graphs:
 
-Using this information you can determine where the performance bottlenecks exist and this data can help educate your decision to upgrade your instances from one size to the next.
-
-![Stats Example](images/df_stats.jpg)
+  1. Login to your account.
+  2. Click an environment name from your Dashboard.
+  3. Click Graphs under the Instances tab.
+  4. Click any metric link to view usage graphs for that metric.
+      
+      ![Stats Example](images/df_stats.jpg)
