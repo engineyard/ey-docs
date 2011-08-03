@@ -90,8 +90,6 @@
   * [[Set Time Zone for an AppCloud Instance|set-time-zone-for-an-appcloud-instance]]
   * [[Hibernate Your Account|hibernate-your-account]]
   * [[Review Usage Charges|review-usage-charges]]
-  * [[Monitoring AppCloud|monitoring_appcloud]]  
-  * [[Monitor Applications with New Relic|use-new-relic-rpm-with-engine-yard-cloud]]
   * [[Load Testing your Application with em-proxy|em-proxy]] 
   * [[Implement file uploads with Carrier Wave|use-carrierwave-and-optionally-fog-to-upload-and-store-files]]
   * [[Implement full text search with Sphinx| full-text-search-with-thinking-sphinx]]
