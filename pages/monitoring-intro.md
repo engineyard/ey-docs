@@ -22,15 +22,11 @@ Used and Free Space.
 * ### [[Uptime monitoring for your application|monitoring-uptime]]
   Learn how to monitor your applications uptime with AppCloud.
 
-* ### [[Using New Relic for monitoring performance|monitoring-new-relic]]
+* ### [[Using New Relic to monitor an application|monitoring-new-relic]]
   Learn how to setup monitoring on AppCloud with New Relic.
 
-* ### [[Using AirBrake for monitoring exceptions|monitoring-intro]]
-  Learn how to setup monitoring on AppCloud with AirBrake (formerly HopToad)
-  
 
 ## Paid support & monitoring
-
 
 If you have signed up for a paid support plan, having alerts and monitoring enabled
 for your environments allows our support team to proactively monitor your
