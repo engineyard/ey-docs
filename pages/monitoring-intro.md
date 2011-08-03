@@ -7,9 +7,12 @@ email when abnormal resource usage occurs. Some of the resources AppCloud
 can monitor on a per environment basis include: CPU usage, IO-Wait, Swap 
 Used and Free Space. 
 
-**Please note:** Monitoring and email alerts are disabled by default.
+**Important:** If you are a paid support customer, having alerts and monitoring enabled
+for your environments allows our support team to proactively monitor your
+environments for abnormal activity. Be sure to enable monitoring for your 
+environments as monitoring is disabled by default.
 
-
+**Important:** Monitoring and email alerts are disabled by default.
 
 ## Topics
 
@@ -27,11 +30,3 @@ Used and Free Space.
 
 * ### [[Using New Relic to monitor an application|monitoring-new-relic]]
   Learn how to setup monitoring on AppCloud with New Relic.
-
-
-## Paid support & monitoring
-
-If you have signed up for a paid support plan, having alerts and monitoring enabled
-for your environments allows our support team to proactively monitor your
-environments for abnormal activity. Be sure to enable monitoring for your 
-environments as monitoring is disabled by default.
