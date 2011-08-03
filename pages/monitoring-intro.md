@@ -22,6 +22,9 @@ Used and Free Space.
 * ### [[Uptime monitoring for your application|monitoring-uptime]]
   Learn how to monitor your applications uptime with AppCloud.
 
+* ### [[Viewing usage graphs for your application|usage-graphs]]
+  Learn how to monitor your applications uptime with AppCloud.
+
 * ### [[Using New Relic to monitor an application|monitoring-new-relic]]
   Learn how to setup monitoring on AppCloud with New Relic.
 
