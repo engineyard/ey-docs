@@ -2,6 +2,23 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update3><h2 id="update3"> <b>Major:</b> Passenger 3 is now generally available in AppCloud</h2></a>
+
+August 3rd, 2011
+
+Phusion Passenger 3 brings substantial performance improvements over Passenger 2. 
+For new environments, Passenger 3 is the default web stack server in AppCloud, replacing Passenger 2 as the default. 
+
+To edit an existing environment to use Passenger 3:
+
+1. Stop the environment.
+2. On the environment, click the More Options tab. 
+3. Click Edit Environments.
+4. Under Web Stack Server, choose Passenger 3.
+5. Update and boot the environment.
+
+
+
 <a href=#update2><h2 id="update2"> Minor: Context-sensitive help added to UI pages</h2></a>
 
 August 1st, 2011
@@ -9,6 +26,8 @@ August 1st, 2011
 Context-sensitive help now appears on Application and Environment pages in the UI. 
 
 ![Context-sensitive help closed and open](images/help_scnshot.png)
+
+
 
 <a href=#update1><h2 id="update1"> Fix: Database exec plugins </h2></a>
 
