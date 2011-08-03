@@ -4,7 +4,7 @@ The updates described are either important (where you need to take action) or of
 
 <a href=#update3><h2 id="update3"> <b>Major:</b> Passenger 3 is now generally available in AppCloud</h2></a>
 
-August 2nd, 2011
+August 3rd, 2011
 
 Phusion Passenger 3 brings substantial performance improvements over Passenger 2. 
 For new environments, Passenger 3 is the default web stack server in AppCloud, replacing Passenger 2 as the default. 
@@ -12,9 +12,10 @@ For new environments, Passenger 3 is the default web stack server in AppCloud, r
 To edit an existing environment to use Passenger 3:
 
 1. Stop the environment.
-2. Click More Options > Edit Environment.
-3. Under Web Stack Server, choose Passenger 3.
-4. Update and boot the environment.
+2. On the environment, click the More Options tab. 
+3. Click Edit Environments.
+4. Under Web Stack Server, choose Passenger 3.
+5. Update and boot the environment.
 
 
 

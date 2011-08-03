@@ -3,11 +3,8 @@
 
 ### [[August 2011|appcloud_updates_august_2011]]
 
-<<<<<<< HEAD
-* [[<b>Major:</b> Passenger 3 is now generally available in AppCloud|appcloud_updates_august_2011#update3]]  *August 2nd, 2011*
+* [[<b>Major:</b> Passenger 3 is now generally available in AppCloud|appcloud_updates_august_2011#update3]]  *August 3rd, 2011*
 
-=======
->>>>>>> master
 * [[Minor: Context-sensitive help added to UI pages|appcloud_updates_august_2011#update2]]  *August 1st, 2011*
 
 * [[Fix: Database exec plugins|appcloud_updates_august_2011#update1]]  *August 1st, 2011*
