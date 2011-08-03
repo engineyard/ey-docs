@@ -22,7 +22,7 @@ Used and Free Space.
 * ### [[Uptime monitoring for your application|monitoring-uptime]]
   Learn how to monitor your applications uptime with AppCloud.
 
-* ### [[Using New Relic for monitoring performance|monitoring-intro]]
+* ### [[Using New Relic for monitoring performance|monitoring-new-relic]]
   Learn how to setup monitoring on AppCloud with New Relic.
 
 * ### [[Using AirBrake for monitoring exceptions|monitoring-intro]]

@@ -1,6 +1,4 @@
-# Monitor your Engine Yard applications with New Relic
-
-## Introduction
+# Monitor applications with New Relic on AppCloud
 
 [New Relic](http://newrelic.com/) is a tool for monitoring real-time web application performance — from the end-user experience down to a line of application code. 
 

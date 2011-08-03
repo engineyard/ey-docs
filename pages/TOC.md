@@ -63,7 +63,7 @@
     * [[Setup monitoring|monitoring-setup]]
     * [[Understanding alerts|monitoring-alerts]]
     * [[Uptime monitoring|monitoring-uptime]]
-    * [[Monitor with New Relic|monitoring-intro]]
+    * [[Monitor with New Relic|monitoring-new-relic]]
     * [[Monitor with AirBrake|monitoring-intro]]
 * [[Database|database_home]]
   * [[Find Your Generated MySQL Password and Connect to Your DB|find-your-generated-mysql-password-and-connect-to-your-db]]
