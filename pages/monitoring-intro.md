@@ -23,7 +23,7 @@ Used and Free Space.
   Learn how to monitor your applications uptime with AppCloud.
 
 * ### [[Viewing usage graphs for your application|usage-graphs]]
-  Learn how to monitor your applications uptime with AppCloud.
+  Learn how to view your usage metrics on AppCloud with our usage graphs.
 
 * ### [[Using New Relic to monitor an application|monitoring-new-relic]]
   Learn how to setup monitoring on AppCloud with New Relic.
@@ -35,4 +35,3 @@ If you have signed up for a paid support plan, having alerts and monitoring enab
 for your environments allows our support team to proactively monitor your
 environments for abnormal activity. Be sure to enable monitoring for your 
 environments as monitoring is disabled by default.
-
