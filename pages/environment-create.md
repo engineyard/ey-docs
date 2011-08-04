@@ -1,16 +1,16 @@
 # Create an environment on AppCloud
 
-**NOTE**: In order to follow this article you must have at least one
+<b>Note:</b> In order to follow this procedure you must have at least one
 application setup within your AppCloud account.
 
 ## Create an Environment
 
   1. Login to your AppCloud account.
-  2. Click the **Dashboard** menu item.
+  2. Click Dashboard.
   3. Navigate to an application by clicking on the application name.
-  4. Click the **Create New Environment** button.
+  4. Click Create New Environment.
   5. Enter the information necessary for your environment. (See [[Environment options|environment-create#options]] below)
-  6. Click the **Create Environment** button.
+  6. Click Create Environment.
 
 <h2 id="options"> Environment options</h2>
 
