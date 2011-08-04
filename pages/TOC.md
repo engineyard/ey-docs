@@ -4,7 +4,7 @@
   * [[Platform Architecture|appcloud-architecture]]
   * [[Technology Stack|appcloud-tech-stack]]
   * [[Instances on AppCloud|appcloud-instances]]
-  * [[Platform Support|appcloud-support]]
+  * [[Support Options|appcloud-support]]
   * [[Release Notes|release_notes]]
 * [[Get Started with AppCloud|getting_started_home]]
   * [[Tutorial on trial account and sample app deployment|tutorial_deploy_fat_free_crm]]
