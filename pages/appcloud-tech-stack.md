@@ -57,17 +57,17 @@ As a result of all the work we do, you can confidently deploy and manage your ap
       </td>
       <td>
         <ul>
-          <li class="full">1.8.7.p174
+          <li class="full">1.9.2.p180
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="experimental" title='Experimental'>1.9.2.p0 <sup>1</sup>
+          <li class="full">1.9.2.p180
           </li>
         </ul>
         <ul>
-          <li class="full">1.8.7.p174
+          <li class="full">1.8.7.p352
           </li>
         </ul>
         <ul>
@@ -77,11 +77,11 @@ As a result of all the work we do, you can confidently deploy and manage your ap
       </td>
       <td>
         <ul>
-          <li class="experimental" title='Experimental'>1.9.2.p0 <sup>1</sup>
+          <li class="full">1.9.2.p180
           </li>
         </ul>
         <ul>
-          <li class="full">1.8.7.p174
+          <li class="full">1.8.7.p352
           </li>
         </ul>
         <ul>
@@ -94,6 +94,8 @@ As a result of all the work we do, you can confidently deploy and manage your ap
           1.8.5 and below, 1.8.6.p369 and below, 1.8.7.p171 and below, (multiple vulnerabilities)<br>
           <a href="http://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=ruby">http://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=ruby</a><br>
           1.9.1 is not supported
+			<br>
+		  1.8.6 is not available for new environments
         </p>
       </td>
     </tr>
@@ -143,6 +145,29 @@ As a result of all the work we do, you can confidently deploy and manage your ap
       </td>
     </tr>
     <tr>
+      <td>
+        Rubinius
+      </td>
+      <td></td>
+      <td>
+        <ul>
+          <li class="experimental" title='Experimental'>1.2.4 <sup>1</sup>
+          </li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li class="experimental" title='Experimental'>1.2.4 <sup>1</sup>
+          </li>
+        </ul>
+      </td>
+      <td>
+        <p>
+          <span class="caps">Rubinius</span> support in Alpha1 status
+        </p>
+      </td>
+    </tr>
+	<tr>
       <th colspan="5">
         Frameworks
       </th>
