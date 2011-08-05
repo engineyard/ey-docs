@@ -2,6 +2,14 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update4><h2 id="update4"> Minor: Ruby 1.9.2 is now the default Ruby runtime for new environments</h2></a>
+
+August 4th, 2011
+
+Ruby 1.9.2 has been available in AppCloud for a while. However, until now, Ruby 1.8.7 has been the default Ruby runtime.
+
+For more information, see [[Upgrading to Ruby 1.9|upgrading-to-ruby19]]. 
+
 <a href=#update3><h2 id="update3"> <b>Major:</b> Passenger 3 is now generally available in AppCloud</h2></a>
 
 August 3rd, 2011

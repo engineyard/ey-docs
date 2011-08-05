@@ -3,6 +3,8 @@
 
 ### [[August 2011|appcloud_updates_august_2011]]
 
+* [[Minor: Ruby 1.9.2 is now the default Ruby runtime for new environments|appcloud_updates_august_2011#update4]] *August 4th, 2011*
+
 * [[<b>Major:</b> Passenger 3 is now generally available in AppCloud|appcloud_updates_august_2011#update3]]  *August 3rd, 2011*
 
 * [[Minor: Context-sensitive help added to UI pages|appcloud_updates_august_2011#update2]]  *August 1st, 2011*
