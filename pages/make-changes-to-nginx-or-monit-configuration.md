@@ -1,7 +1,5 @@
 #Use keep files to customize and maintain configurations on AppCloud
 
-##Introduction
-
 A **keep file** gives you the flexibility to modify configuration settings in specific files within the /data and /etc directories of your EBS (Amazon Elastic Block Storage) volume.
 
 When Engine Yard's Chef goes to create configuration files from its recipe templates, it checks the filesystem for certain files prefaced with _keep_.  If such files exist, then the Chef recipe doesn't create new configuration files; instead it leaves the keep files in place.
