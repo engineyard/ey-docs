@@ -7,7 +7,7 @@
 ## Customizations
   * [[Customize Unicorn|customize-unicorn]]
   * [[Setup SSMTP for Mail Relay to AuthSMTP|setup-ssmtp-for-mail-relay-to-authsmtp]]
-  * [[Make Changes to Nginx or Monit Configuration|make-changes-to-nginx-or-monit-configuration]]
+  * [[Make Changes to Nginx or Monit Configuration|configuration-keep-files]]
   * [[Custom Chef Recipes|custom-chef-recipes]]
   * [[Set Time Zone for an AppCloud Instance|set-time-zone-for-an-appcloud-instance]]
 
