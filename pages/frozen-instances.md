@@ -1,4 +1,4 @@
-# Dealing with a Frozen/Crashed Instance
+# Dealing with frozen or crashed Instances
 
 From time to time, an instance can freeze or crash and become unresponsive. When this happens you will find that you are unable to access the instance over SSH (the connection will time out, or you might see *no route to host* messages).
 
