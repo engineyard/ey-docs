@@ -2,6 +2,16 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update5><h2 id="update5">Fix: Resque workers failing</h2></a>
+
+August 8th, 2011
+
+Fixed a rake version issue in script/engineyard/bin/resque that caused
+Resque workers to fail.
+
+This issue applied only if bundler was used in older AppCloud environments
+(or in xCloud environments).
+
 <a href=#update4><h2 id="update4"> Minor: Ruby 1.9.2 is now the default Ruby runtime for new environments</h2></a>
 
 August 4th, 2011
