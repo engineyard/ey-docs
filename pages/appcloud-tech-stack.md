@@ -15,7 +15,7 @@ component update to provide reliability, security, and compatibility within the 
 As a result, you can confidently deploy and manage your application with any Engine Yard cloud product. Read about the many [[benefits|http://www.engineyard.com/products/appcloud/benefits]] of using our Platform-as-a-Service.
 
 <p class="note">
-  <strong>Note: </strong>This version is correct as of August 4, 2011.
+  <strong>Note: </strong>This version is correct as of August 8, 2011.
 </p>
 
 <br /><br />
@@ -48,7 +48,7 @@ As a result, you can confidently deploy and manage your application with any Eng
   <tbody>
     <tr>
       <th colspan="5">
-        Ruby Interpreters
+        Ruby interpreters
       </th>
     </tr>
     <tr>
@@ -139,11 +139,7 @@ As a result, you can confidently deploy and manage your application with any Eng
           </li>
         </ul>
       </td>
-      <td>
-        <p>
-          <span class="caps">REE</span> support is in Beta status.
-        </p>
-      </td>
+      <td></td>
     </tr>
     <tr>
       <td>
@@ -321,7 +317,7 @@ As a result, you can confidently deploy and manage your application with any Eng
     </tr>
     <tr>
       <td>
-        unicorn
+        Unicorn
       </td>
       <td>
         <ul>
@@ -444,7 +440,7 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="full">5.1.53
+          <li class="full">5.1.55
           </li>
         </ul>
       </td>
@@ -456,6 +452,10 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
+          <li class="full">5.1.55
+          </li>
+        </ul>
+		<ul>
           <li class="full">5.1.53
           </li>
         </ul>
@@ -523,7 +523,7 @@ As a result, you can confidently deploy and manage your application with any Eng
     </tr>
     <tr>
       <th colspan="5">
-        Caches and Stores
+        Caches and stores
       </th>
     </tr>
     <tr>
@@ -582,7 +582,7 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <p>
-          Recommend against the use of very large data sets with Redis 1.0.
+          Avoid using very large data sets with Redis 1.0.
         </p>
       </td>
     </tr>
@@ -617,7 +617,7 @@ As a result, you can confidently deploy and manage your application with any Eng
     </tr>
     <tr>
       <th colspan="5">
-        Background Job Processor
+        Background job processor
       </th>
     </tr>
     <tr>
@@ -645,34 +645,6 @@ As a result, you can confidently deploy and manage your application with any Eng
       <td>
         <p>
           We recommend use of the latest versions.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        BackgroundJob
-      </td>
-      <td>
-        <ul>
-          <li class="full">1.0.1
-          </li>
-        </ul>
-      </td>
-      <td>
-        <ul>
-          <li class="full">1.0.1
-          </li>
-        </ul>
-      </td>
-      <td>
-        <ul>
-          <li class="full">1.0.1
-          </li>
-        </ul>
-      </td>
-      <td>
-        <p>
-          We recommend against use of BackgroundRB.
         </p>
       </td>
     </tr>
