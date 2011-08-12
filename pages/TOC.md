@@ -49,6 +49,7 @@
     * [[Add a key to AppCloud|ssh-add-to-appcloud]]
     * [[Install keys to environment|ssh-install]]
     * [[Connect to an instance|ssh-connect]]
+    * [[Windows & SSH keys|ssh-windows]]
     * [[Troubleshooting|ssh-troubleshooting]]
   * [[How Tos|environment_home]]
     * [[Upgrading to Ruby 1.9|upgrading-to-ruby19]]

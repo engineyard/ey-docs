@@ -20,5 +20,8 @@ articles will help you with each of these processes.
 * ### [[Connect to an instance via SSH|ssh-connect]]
   Learn how to connect to your instance via SSH.
   
+* ### [[Windows & SSH keys|ssh-windows]]
+  Learn how to generate SSH keys and add them to AppCloud on Windows.
+  
 * ### [[Troubleshooting|ssh-troubleshooting]]
   Tips to help you troubleshoot issues related to SSH on AppCloud.
