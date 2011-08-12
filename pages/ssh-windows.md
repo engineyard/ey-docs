@@ -7,8 +7,8 @@ is out of the scope of this document.
 
 This is a two step process:
 
-* [[Create keys|windows-ssh-keys#create]]
-* [[Add keys to AppCloud|windows-ssh-keys#add]]
+* [[Create keys|ssh-windows#create]]
+* [[Add keys to AppCloud|ssh-windows#add]]
 
 <h2 id="create"> To create keys</h2>
 
