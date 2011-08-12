@@ -6,7 +6,7 @@ to setup SSH keys on your local development machine, add the keys to your
 AppCloud account, and install the keys in any of your environments.  The following
 articles will help you with each of these processes.
 
-## Articles
+## Topics
 
 * ### [[Setup local SSH keys|ssh-setup]]
   Learn how to generate an ssh keypair on your local machine.
