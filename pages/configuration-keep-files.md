@@ -32,13 +32,13 @@ These are the files that can be made into keep files.
 <!-- Keep files can be especially useful for monit if you're trying to increase the memory limit for mongrels or background processes, etc. -->
 
 
-## To use keep files to customize and maintain AppCloud configurations
+## To use keep files for configuration
 
 1. Connect to your instance via SSH.
 
-2. Edit and rename (to keep._file.name_) any of the files listed above.
+2. Edit the file and rename (to **keep**._filename.extension_) any of the files listed above.
   
-    For example, for an application name "myapp", configure the nginx server by renaming `/data/nginx/servers/myapp.conf` to `/data/nginx/servers/keep.myapp.conf` and then editing this file.
+    For example, for an application name "myapp", configure the nginx server by renaming `/data/nginx/servers/myapp.conf` to `/data/nginx/servers/keep.myapp.conf`
 
 3. If you make nginx.conf or database.yml into keep files, add a deploy hook to create a symlink. 
 
@@ -50,9 +50,6 @@ These are the files that can be made into keep files.
 
 
 <h2 id="topic5"> More information </h2>  
-
-The table contains links to related information in the Engine Yard doc pages.   
-
 <table>
   <tr>
     <th>For more information about…</th><th>See…</th>
