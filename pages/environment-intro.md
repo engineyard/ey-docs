@@ -8,7 +8,7 @@ An environment includes Application Instance(s), Database Instance(s), and possi
 one or more Utility Instances. Check out this article if you want to know more about 
 the various instances types: [[AppCloud Instances|appcloud-instances]].
 
-## Articles
+## Topics
 
 * ### [[Create an environment|environment-create]]
   Learn how to create a new environment to deploy your instance(s).
