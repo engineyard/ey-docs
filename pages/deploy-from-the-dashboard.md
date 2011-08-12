@@ -9,7 +9,6 @@ or deploy code from another branch in your Git repository.
 * You have created an AppCloud account.
 * You have created an application in your account.
 * Your application environment is currently running.
-* You have logged in to your Dashboard from [https://login.engineyard.com](https://login.engineyard.com/)
 
 
 ## Deploy Your Application
@@ -21,13 +20,13 @@ deploying your code:
 
 ### Deploy code from your master branch
 
-* Click the **Deploy** button.
+* Click the Deploy button.
    <img src="images/deploy-from-dashboard.png" width="600" alt="Click the deploy button for your application" />
        
 ### Deploy code with migrations
 
-1. Click the **Migrate?** checkbox and enter your migration command.
-2. Click the **Deploy** button.
+1. Click the Migrate? checkbox and enter your migration command.
+2. Click Deploy.
    <img src="images/deploy-from-dashboard-migrations.png" width="600" alt="Enter your migration command and click the deploy button for your application" />
 
 ### Deploy code from another branch

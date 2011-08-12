@@ -1,25 +1,28 @@
 # How to use CarrierWave (and optionally fog) to upload and store files #
 
-## Introduction
+CarrierWave is a Ruby gem used to upload and store files (typically images and documents) for 
+Ruby applications. For example, you might use CarrierWave to associate and store 
+photos with user identities. (CarrierWave is an alternative to the Paperclip gem.)
 
-CarrierWave is used to upload and store files (typically images and documents) for Ruby applications. For example, you might use CarrierWave to associate and store photos with user identities. (CarrierWave is an alternative to Paperclip.)
+Topics covered in this article:
 
-For a general introduction to CarrierWave, see this [[Railscast 253|http://railscasts.com/episodes/253-carrierwave-file-uploads]].
+* [Setting up CarrierWave for local storage in AppCloud][2]
+* [Setting up CarrierWave for online storage with a web service][3]
 
-CarrierWave without fog is good for testing and for small applications: files are stored "locally" in AppCloud. See [Setting up CarrierWave for local storage in AppCloud][2] below. 
-
-However, for larger applications in production, consider using CarrierWave with fog to upload files to a specialized storage service, such as Amazon S3. See [Setting up CarrierWave for online storage with a web service][3] below. 
 
 <h2 id="update2">Setting up CarrierWave for local storage in AppCloud</h2>
 
-### Introduction
+Uploading files using CarrierWave _without fog_ is a good choice for testing 
+and for small applications as files are stored locally on your instances.
 
 Use CarrierWave to store files locally on your AppCloud instance if:  
 
 * You want to try out CarrierWave with your application. 
-* You have a small number of files. (The files take up space on your instance.)
+* You have a small number of files. (The files take up disk space on your instance)
 
-Do not use CarrierWave locally if you are using a cluster because files uploaded to one instance are inaccessible from another. 
+**Note**: Do not use CarrierWave locally if you are using a cluster of application
+servers. Files uploaded to one instance are inaccessible from another without writing a custom replication process
+to ensure files are replicated across all instances.  Instead, see [Setting up CarrierWave for online storage with a web service][3].
 
 ### To install and use CarrierWave for testing and small applications
 
@@ -55,7 +58,6 @@ For more information, see [[github.com/jnicklas/carrierwave|http://github.com/jn
 
 <h2 id="update3">Setting up CarrierWave for online storage with a web service</h2>
 
-### Introduction
 
 Using CarrierWave with fog gives you flexibility to store your files on any cloud service supported by fog and to switch between them as needed. This also keeps your uploaded files separated from your AppCloud instance — making a cleaner application.
 	
@@ -63,15 +65,15 @@ This example uses Amazon S3, which is a popular online storage web service. Howe
 
 ### To setup and use CarrierWave with fog
 
-1. Follow the instructions in the [above][2] to install CarrierWave and implement CarrierWave.
+1. Follow steps 1-4 in the [example above][2] to install and implement CarrierWave.
 
-2. Add the fog gem to your Gemfile for Rails 3.
+2. In your generated uploader file, edit the file (in the app/uploaders directory) to set storage to fog:
 
-3. After generating an uploader file, edit the file (in the app/uploaders directory) to set storage to fog:
+        class AvatarUploader < CarrierWave::Uploader::Base
+          storage :fog
+        end
 
-        storage :fog
-
-4. In the config/initializers directory, create fog.rb to store the service provider name and credentials.    
+3. In the config/initializers directory, create fog.rb to store the service provider name and credentials.    
     For example, if the service is Amazon S3, the fog.rb might look like this:   
 
         CarrierWave.configure do |config|
@@ -83,6 +85,12 @@ This example uses Amazon S3, which is a popular online storage web service. Howe
 	      config.fog_directory  = 'my_uploads'
 	      config.fog_public     = false        
 	    end
+
+
+## More Information
+
+For a general introduction to CarrierWave, see this [[Railscast 253|http://railscasts.com/episodes/253-carrierwave-file-uploads]].
+
 
 [1]: #update1        "update1"
 [2]: #update2        "update2"
