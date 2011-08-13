@@ -1,4 +1,4 @@
-# Using a JRuby with a trial account
+# Using JRuby with a trial account
 
 JRuby is currently a Beta feature on AppCloud. To deploy a JRuby application on a trial account, follow this process: 
 
@@ -6,8 +6,6 @@ JRuby is currently a Beta feature on AppCloud. To deploy a JRuby application on 
 *	[Reconfigure the environment for JRuby.][3]
 
 <h2 id="topic2"> Create an application and environment </h2>
-
-### Introduction  
 
 For detailed help with these steps, see [[docs.engineyard.com|home]], for example, [[Setting up a trial account and deploying a sample application|tutorial_deploy_fat_free_crm]]. These steps are the same for any trial account setup. 
 
@@ -20,7 +18,6 @@ For detailed help with these steps, see [[docs.engineyard.com|home]], for exampl
 
 <h2 id="topic3"> Reconfigure the environment for JRuby </h2>
 
-###Introduction  
 This procedure applies only to the JRuby Beta on the trial account. 
 
 The trial was set up with a streamlined workflow that automatically creates a Ruby-based environment. To work around this, you stop the environment, reconfigure it as a JRuby one, and then boot the JRuby environment.
@@ -28,14 +25,14 @@ The trial was set up with a streamlined workflow that automatically creates a Ru
 ###To reconfigure the environment for JRuby
 
 1. Make sure that the instance is loaded (that the indicator light is green).  
-2. Click **Stop** to stop the environment.  
-3. On the Environment page, click **More Options** > **Edit Environment**.  
-4. On the Edit the Environment page, set **Application Server** Stack to Trinidad.  
-    The Ruby Runtime changes to JRuby 1.6.2 (beta).  **Note:** If you can’t edit the 
-    Application Server Stack, make sure that you have stopped the environment. Only 
-    stopped environments can be edited.
-5. Click **Update Environment**.  
-6. On the Environment page, click **Boot**.  
+2. Click Stop to stop the environment.  
+3. On the Environment, click the More Options tab.
+4. Click Edit Environment.    
+4. On the Edit the Environment page, set Application Server Stack to Trinidad.  
+    The Ruby Runtime changes to JRuby 1.6.2 (beta).  
+    **Note:** If you can’t edit the Application Server Stack, make sure that you have stopped the environment. Only stopped environments can be edited.
+5. Click Update Environment.  
+6. On the Environment page, click Boot.  
     This boots the JRuby environment for your application.  
 
 
@@ -43,7 +40,7 @@ The trial was set up with a streamlined workflow that automatically creates a Ru
 
 You can:
 
-* Click **HTTP** to visit the application.
+* Click HTTP to visit the application.
 
 * Modify and redeploy your application.
 
