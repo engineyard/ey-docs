@@ -60,10 +60,6 @@ This table contains troubleshooting tips related to the AppCloud trial account w
   <tr>
     <th>Symptom</th><th>Solution</th>
   </tr>
-  
-  <tr>
-    <td>I can't edit the Ruby Runtime field.</td><td>Make sure that you have stopped the environment. Only stopped environments can be edited.</td>
-   </tr>
    
    <tr>
     <td>I don't have the Rubinius option for the Ruby Runtime.</td><td>You don't yet have access to the Rubinius Alpha program. <br> Try submitting the request again, noting in the comments field that you are unable to see the Rubinius option. </td>
