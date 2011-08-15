@@ -98,6 +98,7 @@
 * [[Beta Program|beta-intro]]
   * [[Introduction|beta-intro]]
   * [[Rubinius|rubinius]]
+  * [[Rubinius and trial|beta-rubinius-environment-with-appcloud-trial]]
   * [[PostgreSQL|postgresql]]
   * [[JRuby/Trinidad|jruby-beta]]
   * [[JRuby and trial|beta-jruby-environment-with-appcloud-trial]]
