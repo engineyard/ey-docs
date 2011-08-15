@@ -3,6 +3,8 @@
 
 ### [[August 2011|appcloud_updates_august_2011]]
 
+* [[<b>Major</b>: Link an AppCloud to a GitHub account to make deploy keys automatic. (Beta support)|appcloud_updates_august_2011#update6]] *August 16th, 2011*
+
 * [[Fix: Resque workers failing|appcloud_updates_august_2011#update5]]  *August 8th, 2011*
 
 * [[Minor: Ruby 1.9.2 is now the default Ruby runtime for new environments|appcloud_updates_august_2011#update4]] *August 4th, 2011*

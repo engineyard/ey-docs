@@ -2,6 +2,16 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update6><h2 id="update6"><b>Major</b>: Link an AppCloud to a GitHub account to make deploy keys automatic. (Beta support)</h2></a>
+
+August 16th, 2011
+
+No more cutting-and-pasting of deploy keys from AppCloud to GitHub. 
+
+You can choose to link your AppCloud account to a GitHub account. After linking accounts, when you create an AppCloud application using a GitHub application, the deploy key is automatically created. 
+
+For more information, see [[Linking an AppCloud account to a GitHub account|linking-github-to-appcloud]].
+
 <a href=#update5><h2 id="update5">Fix: Resque workers failing</h2></a>
 
 August 8th, 2011
