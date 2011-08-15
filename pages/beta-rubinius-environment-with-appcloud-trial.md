@@ -8,7 +8,7 @@ Rubinius is currently an Alpha feature on AppCloud. To deploy a Rubinius applica
 
 <h2 id="topic1"> Sign up for the Rubinius Alpha program </h2>
 
-Signup is required access to AppCloud Alpha features. 
+Signup is required to access AppCloud Alpha features. 
 
 ###To sign up for the Rubinius Alpha program
 
@@ -18,20 +18,20 @@ Signup is required access to AppCloud Alpha features.
 
 <h2 id="topic2"> Create an application and environment </h2>
 
-For detailed help with these steps, see [[docs.engineyard.com|home]], for example, [[Setting up a trial account and deploying a sample application|tutorial_deploy_fat_free_crm]]. These steps are the same for any trial account setup. 
+The following procedure _outlines_ how to create an application and environment with a trial account. (For a detailed procedure, see [[Setting up a trial account and deploying a sample application|tutorial_deploy_fat_free_crm]].)    
 
 
 ###To create an application and environment  
 1. Sign up for a trial account.  
 2. Validate and start the trial account.  
 3. Create your (Rubinius) application.  
-    If you don’t have a Rubinius application, choose our ToDo application located at: `git://github.com/engineyard/todo.git`
+    If you don’t have a Rubinius application, choose our ToDo application, located at: `git://github.com/engineyard/todo.git`
 
 <h2 id="topic3"> Reconfigure the environment for Rubinius </h2>
 
 This procedure applies only to the Rubinius Alpha on the trial account. 
 
-The trial was set up with a streamlined workflow that automatically creates a Ruby-based environment. To work around this, you stop the environment, reconfigure it as a Rubinius one, and then boot the Rubinius environment.
+The trial is setup with a streamlined workflow that automatically creates a Ruby-based environment. To work around this, you reconfigure the environment as a Rubinius one.
 
 ###To reconfigure the environment for Rubinius
 
@@ -41,7 +41,7 @@ The trial was set up with a streamlined workflow that automatically creates a Ru
 4. On the Edit the Environment page, set the Ruby Runtime to Rubinius 1.2.4 (beta). 
 5. Click Update Environment.  
 6. On the Environment page, click !Update.  
-    This reboots the Rubinius environment, changing the ruby runtime to Rubinus the environment.  
+    This reboots the Rubinius environment, changing the ruby runtime to Rubinus.  
 
 <h2 id="topic4"> What next? </h2>
 
