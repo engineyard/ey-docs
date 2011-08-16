@@ -2,7 +2,7 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
-<a href=#update6><h2 id="update6"><b>Major</b>: Link your AppCloud to a GitHub account to make deploy keys automatic. (Beta support)</h2></a>
+<a href=#update6><h2 id="update6"><b>Major</b>: Link your AppCloud account to a GitHub account to make deploy keys automatic. (Beta support)</h2></a>
 
 August 18th, 2011
 
