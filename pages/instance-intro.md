@@ -8,10 +8,10 @@
 * ### [[Instance sizes available for your environments|instance-sizes]]
   Learn more about the varying instance sizes available on AppCloud.
   
-* ### [[Change an Instance size|change-an-instance-size]]
+* ### [[Change an Instance size|instance-change-size]]
   Learn how to change an instances size within your AppCloud environment.
   
-* ### [[Frozen instances on AppCloud|frozen-instances]]
+* ### [[Frozen instances on AppCloud|instance-frozen]]
   Learn how to deal with frozen or crashed instances on AppCloud.
 
 ## Persistent Storage
