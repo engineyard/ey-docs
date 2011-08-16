@@ -5,7 +5,7 @@ steps necessary to ensure minimal downtime.
 
 ## Why would an environment need to be rebuilt?
 
-* An instance in an environment has become [[frozen|frozen-instances]].
+* An instance in an environment has become [[frozen|instance-frozen]].
 
 * You need to attach a new or different ip address to the environment.
 
