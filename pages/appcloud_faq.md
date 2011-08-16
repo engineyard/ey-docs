@@ -74,7 +74,7 @@ Yes. If you have a Gemfile in your application directory when you deploy your ap
 
 <a href=#FAQ9><h2 id="FAQ9"> Is PostgreSQL supported on AppCloud? </h2></a>
 
-AppCloud support for PostgreSQL 9 is an Alpha feature. For more information, see [[Engine Yard Beta Program|beta_home]].  
+AppCloud support for PostgreSQL 9 is an Alpha feature. For more information, see [[Engine Yard Beta Program|beta-intro]].  
 
 <a href=#FAQ11><h2 id="FAQ11"> What scale of apps are appropriate for Engine Yard AppCloud? </h2></a>
 

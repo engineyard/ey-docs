@@ -46,7 +46,7 @@ Follow this procedure to gain access to the Alpha program and access to the Beta
 
 1. [[Request access to the PostgreSQL Alpha program|signup-postgresql]].
 
-2. Subscribe to Beta Conversations Google group under the Beta Conversations heading on the [[Beta Program page|beta_home]].     
+2. Subscribe to Beta Conversations Google group under the Beta Conversations heading on the [[Beta Program page|beta-intro]].     
 	If you have participated in other Engine Yard Alpha and Beta programs, you might already be group member.
 
 
@@ -177,7 +177,7 @@ This table contains troubleshooting tips related to the AppCloud PostgreSQL Alph
     <td>I don't have the Database Stack option on my new environment page.</td><td>You don't yet have access to the PostgreSQL Alpha program. <br> Try submitting the request again, noting in the comments field that you are unable to see the Database Stack option. </td>
   </tr>
   <tr>
-    <td>My application doesn't run in the new PostgreSQL environment.</td><td>Post to the [[Beta Conversations Google group|http://groups.google.com/group/ey-beta-talk]]. To subscribe to the group, see [[Beta Conversations|beta_home]]. <br> <br>
+    <td>My application doesn't run in the new PostgreSQL environment.</td><td>Post to the [[Beta Conversations Google group|http://groups.google.com/group/ey-beta-talk]]. To subscribe to the group, see [[Beta Conversations|beta-intro]]. <br> <br>
 </td>
   </tr>
 </table>
