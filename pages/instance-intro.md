@@ -3,7 +3,7 @@
 Instances on AppCloud comprise of the compute resources that are dedicated to running
 your Ruby application in the cloud.  Instances can be configured to serve your 
 application tier, database tier, cache tier, background processing and utilities, 
-and more.  On AppCloud, instances are available in a handful of size configuration to 
+and more.  On AppCloud, instances are available in a handful of size configurations to 
 meet your cpu, memory, and disk space needs.  
 
 
