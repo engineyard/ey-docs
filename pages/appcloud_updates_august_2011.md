@@ -2,7 +2,7 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
-<a href=#update6><h2 id="update6"><b>Major</b>: Link your AppCloud account to a GitHub account to make deploy keys automatic. (Beta support)</h2></a>
+<a href=#update7><h2 id="update7"><b>Major</b>: Link your AppCloud account to a GitHub account to make deploy keys automatic. (Beta support)</h2></a>
 
 August 18th, 2011
 
@@ -11,6 +11,16 @@ No more cutting-and-pasting of deploy keys from AppCloud to GitHub.
 You can choose to link your AppCloud account to a GitHub account. After linking accounts, when you create an AppCloud application using a GitHub application, the deploy key is automatically created. 
 
 For more information, see [[Linking an AppCloud account to a GitHub account|linking-github-to-appcloud]].
+
+<a href=#update6><h2 id="update6">Minor: Update and fixes to the AppCloud stack</h2></a>
+
+August 16th, 2011
+
+The following minor update and fixes have been released to the AppCloud stack:  
+
+* Improved deployment for Rails 3 applications.  
+* Fix for PostgreSQL Alpha users: now only bad queries are logged; previously, all queries were logged.  
+* Fix: ActiveRecord reconnection for Rack and Rails applications.
 
 <a href=#update5><h2 id="update5">Fix: Resque workers failing</h2></a>
 
