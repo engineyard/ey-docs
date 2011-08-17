@@ -42,6 +42,7 @@
     * [[Instance sizes|instance-sizes]]
     * [[Change instance size|instance-change-size]]
     * [[Frozen Instances|instance-frozen]]
+    * [[Degraded Instances|instance-degraded]]
   * [[IP Addresses|ips-intro]]  
     * [[Introduction|ips-intro]]
     * [[Manage IP addresses|ips-manage]]

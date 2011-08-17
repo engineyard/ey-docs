@@ -21,6 +21,9 @@ meet your cpu, memory, and disk space needs.
 * ### [[Frozen instances on AppCloud|instance-frozen]]
   Learn how to deal with frozen or crashed instances on AppCloud.
 
+* ### [[Degraded instances on AppCloud|instance-degraded]]
+  Learn how to replace a degraded instance on AppCloud.
+
 ## Persistent Storage
 Your application code and database are written out to **persistent storage** 
 volumes on AppCloud. We automatically mount these volumes and take backups for you.
