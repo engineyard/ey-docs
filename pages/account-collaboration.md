@@ -1,4 +1,4 @@
-# Collaboration
+# Collaboration features on AppCloud
 
 The collaboration features in Engine Yard AppCloud enable multiple members of a team to access multiple AppCloud environments. This is particularly useful for teams that need to maintain individual access to their AppCloud dashboard for each team member, and to enable and disable this access as required.
 

@@ -1,7 +1,7 @@
 # How To's:
 
 ## Billing
-  * [[Review Usage Charges|review-usage-charges]]
+  * [[Review Usage Charges|account-usage-charges]]
   * [[Hibernate Your Account|hibernate-your-account]]
 
 ## Customizations
