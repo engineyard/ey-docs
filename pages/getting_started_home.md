@@ -64,4 +64,4 @@ You can set up various Internet and networking technologies.
   * [[SSH Keys and Configuration|ssh-intro]]
   * [[SSL Certificates|ssl-certificates]]
 
-Learn more about the different types of [[instances|appcloud-instances]] available to you, including Application, Utility, and Database instances.
+Learn more about the different types of [[instances|instance-types]] available to you, including Application, Utility, and Database instances.

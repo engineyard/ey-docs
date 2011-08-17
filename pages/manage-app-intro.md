@@ -28,7 +28,7 @@
 
 ## Instances
 
-* ### [[Instance types & roles on AppCloud|appcloud-instances]]
+* ### [[Instance types & roles on AppCloud|instance-types]]
   Learn more about the different types of instances and their roles on AppCloud.
 
 * ### [[Instance sizes available for your environments|instance-sizes]]

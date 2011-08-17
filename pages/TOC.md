@@ -38,7 +38,7 @@
     * [[Using Snapshots|using-snapshots]]
   * [[Instances|instance-intro]]
     * [[Introduction|instance-intro]]
-    * [[Instance types|appcloud-instances]]
+    * [[Instance types|instance-types]]
     * [[Instance sizes|instance-sizes]]
     * [[Change instance size|instance-change-size]]
     * [[Frozen Instances|instance-frozen]]

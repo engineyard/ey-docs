@@ -138,7 +138,7 @@ No.  Turning off your instance destroys the virtual instance on Amazon EC2.  But
 
 It's worth noting that snapshot of the `/data` volume is only taken off of the Application Master instance.  The same is true for the `/db` volume and the Database Master.
 
-Read [[Instance Overview|appcloud-instances|]] for more information.
+Read [[Instance Overview|instance-types|]] for more information.
 
 <a href=#FAQ19><h2 id="FAQ19"> How do I migrate from SVN to Git? </h2></a>
 

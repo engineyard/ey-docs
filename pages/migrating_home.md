@@ -39,7 +39,7 @@ During the final cut-over one of our DBAs will be able to work with you to promo
 
 ### Heavy Traffic Applications
 
-If you have a heavy traffic pattern it's very important to make sure you properly [[size your new environment|appcloud-instances]] before migrating your users to your new environment. To give you peace of mind you can setup a load test. Using [[em-proxy|http://www.igvita.com/2009/04/20/ruby-proxies-for-scale-and-monitoring]] you can setup a load test with live traffic. Coupling this with [[New Relic|http://rpm.newrelic.com]] will allow you to review your cloud performance during your heaviest traffic times and make any needed adjustments. 
+If you have a heavy traffic pattern it's very important to make sure you properly [[size your new environment|instance-types]] before migrating your users to your new environment. To give you peace of mind you can setup a load test. Using [[em-proxy|http://www.igvita.com/2009/04/20/ruby-proxies-for-scale-and-monitoring]] you can setup a load test with live traffic. Coupling this with [[New Relic|http://rpm.newrelic.com]] will allow you to review your cloud performance during your heaviest traffic times and make any needed adjustments. 
 
 Read more on how to [[load test with real production traffic|em-proxy]].
 
