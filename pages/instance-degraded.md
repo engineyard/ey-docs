@@ -2,7 +2,7 @@
 
 Read this page if you have received notification from Engine Yard that one of your instances is degraded and that you need to terminate the instance and boot another. 
 
-Engine Yard gets notification of degrade instances from Amazon and forwards the message so that you can take action.
+Engine Yard gets notification of degraded instances from Amazon and forwards the message so that you can take action.
 
 When you get one of these notifications, it might state the time that the underlying hardware will be taken offline. If there is no time specified, replace the degraded instance as soon as you can.
 
