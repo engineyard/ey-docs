@@ -61,7 +61,7 @@ If you have larger needs right now, please select **Custom** and configure your 
 You can set up various Internet and networking technologies.
 
   * [[IP Addressess|ip-addresses]]
-  * [[SSH Keys and Configuration|ssh-keys-and-configuration]]
+  * [[SSH Keys and Configuration|ssh-intro]]
   * [[SSL Certificates|ssl-certificates]]
 
 Learn more about the different types of [[instances|appcloud-instances]] available to you, including Application, Utility, and Database instances.
