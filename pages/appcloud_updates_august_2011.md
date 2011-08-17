@@ -2,6 +2,16 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update6><h2 id="update6">Minor: Update and fixes to the AppCloud stack</h2></a>
+
+August 16th, 2011
+
+The following minor update and fixes have been released to the AppCloud stack:  
+
+* Improved deployment for Rails 3 applications.  
+* Fix for PostgreSQL Alpha users: now only bad queries are logged; previously, all queries were logged.  
+* Fix: ActiveRecord reconnection for Rack and Rails applications.
+
 <a href=#update5><h2 id="update5">Fix: Resque workers failing</h2></a>
 
 August 8th, 2011
