@@ -4,11 +4,11 @@ The updates described are either important (where you need to take action) or of
 
 <a href=#update7><h2 id="update7"><b>Major</b>: Link your AppCloud account to a GitHub account to make deploy keys automatic. (Beta support)</h2></a>
 
-August 17th, 2011
+August 18th, 2011
 
 No more cutting-and-pasting of deploy keys from AppCloud to GitHub. 
 
-You can choose to link your AppCloud account to a GitHub account. After linking accounts, when you create an AppCloud application using a GitHub application, the deploy key is automatically created. 
+You can choose to link your AppCloud account to a GitHub account. After linking accounts, when you create an AppCloud application using a GitHub repository, the deploy key is automatically created. 
 
 For more information, see [[Linking an AppCloud account to a GitHub account|linking-github-to-appcloud]].
 
