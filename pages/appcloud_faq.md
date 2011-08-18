@@ -1,15 +1,15 @@
 # Engine Yard AppCloud FAQs
 
 * <a href=#FAQ1>Which SCMs (Source Code Management) do you support?</a>
-* <a href=#FAQ2>Is there any shared storage on EY AppCloud?</a>
-* <a href=#FAQ3>Do you offer Email services on EY AppCloud?</a>
-* <a href=#FAQ4> Can EY AppCloud host my DNS?</a>
+* <a href=#FAQ2>Is there any shared storage on AppCloud?</a>
+* <a href=#FAQ3>Do you offer Email services on AppCloud?</a>
+* <a href=#FAQ4> Can AppCloud host my DNS?</a>
 * <a href=#FAQ5> Can I have more than one IP address for my application?</a>
 * <a href=#FAQ6> Can I failover to a Database Slave?</a>
 * <a href=#FAQ8> Do you support Bundler?</a>
-* <a href=#FAQ9> Is PostgreSQL Supported on Engine Yard AppCloud?</a>
-* <a href=#FAQ11> What scale of apps are appropriate for Engine Yard AppCloud?</a>
-* <a href=#FAQ12> What types of applications will run on Engine Yard AppCloud?</a>
+* <a href=#FAQ9> Is PostgreSQL Supported on AppCloud?</a>
+* <a href=#FAQ11> What scale of apps are appropriate for AppCloud?</a>
+* <a href=#FAQ12> What types of applications run on AppCloud?</a>
 * <a href=#FAQ13> Does Engine Yard manage my Domain Name or does my Company?</a>
 * <a href=#FAQ14> Do I need an IP address? </a>
 * <a href=#FAQ15> Do I have sudo access? </a>
@@ -17,12 +17,12 @@
 * <a href=#FAQ17> Can I reboot my instance without worrying about losing data? </a>
 * <a href=#FAQ18> If I shutdown and create an instance with the same volumes, will I lose data? </a>
 * <a href=#FAQ19> How do I migrate from SVN to Git? </a>
-* <a href=#FAQ20> Are there reserved names in Engine Yard AppCloud? </a>
+* <a href=#FAQ20> Are there reserved names in AppCloud? </a>
 * <a href=#FAQ21> What are availability zones? </a>
 * <a href=#FAQ22> How do I change my Credit Card information? </a>
-* <a href=#FAQ23> How do EY AppCloud instances differ from xCloud slices? </a>
+* <a href=#FAQ23> How do AppCloud instances differ from xCloud slices? </a>
 * <a href=#FAQ24> Unicorn failing to reload after Bundler </a>
-* <a href=#FAQ25> Do you offer any DDoS Protection on EY AppCloud? </a>
+* <a href=#FAQ25> Do you offer any DDoS Protection on AppCloud? </a>
 * <a href=#FAQ26> 400 Bad Request While Updating Chef Recipes </a>
 * <a href=#FAQ27> Error: "missing activerecord-mysql2-adapter gem" </a>
 * <a href=#FAQ28> Bundler 1.0 Will Not Install Compiled Gems in UNIX When bundle install is Run in Windows </a>
@@ -34,23 +34,23 @@
 
 <a href=#FAQ1><h2 id="FAQ1"> Which SCMs (Source Code Management) do you support? </h2></a>
 
-Only git is supported at this time. Your repository will need to be ported to git before your application can be deployed on EY AppCloud. [[GitHub|http://github.com/guides/import-from-subversion]] has a great doc on porting an SVN repository to git. 
+Only git is supported at this time. Your repository needs to be ported to git before your application can be deployed on AppCloud. [[GitHub|http://github.com/guides/import-from-subversion]] has a great doc on porting an SVN repository to git. 
 
-<a href=#FAQ2><h2 id="FAQ2"> Is there any shared storage on EY AppCloud? </h2></a>
+<a href=#FAQ2><h2 id="FAQ2"> Is there any shared storage on AppCloud? </h2></a>
 
-No. Shared storage (GFS) is not supported on EY AppCloud. If your application stores dynamic assets in `/data`, you'll need to move these assets to a content delivery network (CDN) such as S3.
+No. Shared storage (GFS) is not supported on AppCloud. If your application stores dynamic assets in `/data`, you'll need to move these assets to a content delivery network (CDN) such as S3.
 
-We currently do not have any plans to support a shared storage on EY AppCloud. 
+We currently do not have any plans to support a shared storage on AppCloud. 
 
-<a href=#FAQ3><h2 id="FAQ3"> Do you offer Email services on EY AppCloud? </h2></a>
+<a href=#FAQ3><h2 id="FAQ3"> Do you offer Email services on AppCloud? </h2></a>
 
-Email services are not offered on EY AppCloud. If your application uses Engine Yard for email either inbound or outbound, you will need to sign up with an external service provider. For applications which send a lot of mail we recommend SendGrid or authSMTP. For incoming, try Rackspace mail hosting. For lower volumes in either direction we recommend Google.
+Email services are not offered on AppCloud. If your application uses Engine Yard for email either inbound or outbound, you need to sign up with an external service provider. For applications which send a lot of mail we recommend SendGrid or authSMTP. For incoming, try Rackspace mail hosting. For lower volumes in either direction we recommend Google.
 
-Your slice environment likely came bundled with Mailtrust (now Rackspace) and if you would like to continue using that service you should submit a request to Rackspace to take over that account. They will send us an email to approve release of that domain. 
+Your slice environment likely came bundled with Mailtrust (now Rackspace) and if you would like to continue using that service you should submit a request to Rackspace to take over that account. They send us an email to approve release of that domain. 
 
-<a href=#FAQ4><h2 id="FAQ4"> Can EY AppCloud host my DNS? </h2></a>
+<a href=#FAQ4><h2 id="FAQ4"> Can AppCloud host my DNS? </h2></a>
 
-Domain Name System (DNS) services are not offered on EY AppCloud. If you are currently using Engine Yard's name servers you'll need to register with a DNS service provider and update your registrar to use that provider's name servers. Check with your registrar; they may also offer control of your DNS zone records.
+Domain Name System (DNS) services are not offered on AppCloud. If you are currently using Engine Yard's name servers you'll need to register with a DNS service provider and update your registrar to use that provider's name servers. Check with your registrar; they may also offer control of your DNS zone records.
 
 For more information, see [[How to set up AppCloud to work with your domain name.|ips-setup-dns]]
 
@@ -58,27 +58,27 @@ For more information, see [[How to set up AppCloud to work with your domain name
 
 No. Amazon only allows us to attach a single IP address to any one instance. 
 
-On our Classic Cloud it has been possible to have multiple domains, each with their own SSL certificate and IP address, all accessing the same application. This setup isn't supported on Engine Yard AppCloud because Amazon EC2 instances can have only one IP address. 
+On our Classic Cloud it has been possible to have multiple domains, each with their own SSL certificate and IP address, all accessing the same application. This setup isn't supported on AppCloud because Amazon EC2 instances can have only one IP address. 
 
 If you have multiple domains pointed at your application and they all need to run under SSL you need to purchase a multi-domain cert.
 
 <a href=#FAQ6><h2 id="FAQ6"> Can I failover to a Database Slave? </h2></a>
 
-No, failover to a database slave is not currently an option on EY AppCloud. If you do ever run into issues with your Database Master we suggest you can recreate your Master Database Instance from a snapshot. This is quicker than failing over and does not pose the risk of any data loss should replication be out-of-sync.
+No, failover to a database slave is not currently an option on AppCloud. If you do ever run into issues with your Database Master we suggest you can recreate your Master Database Instance from a snapshot. This is quicker than failing over and does not pose the risk of any data loss should replication be out-of-sync.
 
 We take fresh snapshots of your `/db` volume when you terminate an instance. If you have to rebuild your DB instance you can terminate it and recreate it from the most recent snapshots.
 
 <a href=#FAQ8><h2 id="FAQ8"> Do you support Bundler? </h2></a>
 
-Yes. If you have a Gemfile in your application directory when you deploy your application we will detect it and then bundle your gems. This means you can skip the gems page during the setup of your environment.
+Yes. If you have a Gemfile in your application directory when you deploy your application, we detect it and then bundle your gems. This means you can skip the gems page during the setup of your environment.
 
 <a href=#FAQ9><h2 id="FAQ9"> Is PostgreSQL supported on AppCloud? </h2></a>
 
 AppCloud support for PostgreSQL 9 is an Alpha feature. For more information, see [[Engine Yard Beta Program|beta-intro]].  
 
-<a href=#FAQ11><h2 id="FAQ11"> What scale of apps are appropriate for Engine Yard AppCloud? </h2></a>
+<a href=#FAQ11><h2 id="FAQ11"> What scale of apps are appropriate for AppCloud? </h2></a>
 
-Engine Yard AppCloud is our recommended deployment platform for users who want to scale from small to large scale web applications. It provides metered billing and advanced provisioning, monitoring and management workflows that make it ideal for:
+AppCloud is our recommended deployment platform for users who want to scale from small to large scale web applications. It provides metered billing and advanced provisioning, monitoring and management workflows that make it ideal for:
 
   * Production environments that need to rapidly scale up or down with the demand of your application.
   * Temporary demonstration environments.
@@ -89,7 +89,7 @@ Engine Yard AppCloud is our recommended deployment platform for users who want t
 
 Users who need specific compliance needs, such as SAS 70, should consider our dedicated [[private cloud offerings|http://www.engineyard.com/]].
 
-<a href=#FAQ12><h2 id="FAQ12"> What types of applications will run on Engine Yard AppCloud? </h2></a>
+<a href=#FAQ12><h2 id="FAQ12"> What types of applications run on AppCloud? </h2></a>
 
 If you've got an app that runs with:
 
@@ -98,7 +98,7 @@ If you've got an app that runs with:
   * Sinatra
   * Rack
 
-Then it runs on Engine Yard AppCloud.  Check our [[Stack Page|http://www.engineyard.com/technology/stack]] for the latest version we support.
+Then it runs on AppCloud.  Check our [[Stack Page|http://www.engineyard.com/technology/stack]] for the latest version we support.
 
 <a href=#FAQ13><h2 id="FAQ13"> Does Engine Yard manage my Domain Name or does my Company? </h2></a>
 
@@ -108,7 +108,7 @@ You setup and control the DNS records for your domain name of your website. You'
 
 If you're just doing staging or testing, no.  If you're ready for production then yes, because you'll need the IP address to point your DNS entries to your IP address.
 
-Read the [[IP Address Overview|ip-addresses]] article for more in-depth information about IP addresses and how they are used with Engine Yard AppCloud.
+Read the [[IP Address Overview|ip-addresses]] article for more in-depth information about IP addresses and how they are used with AppCloud.
 
 <a href=#FAQ15><h2 id="FAQ15"> Do I have sudo access? </h2></a>
 
@@ -116,15 +116,15 @@ Yes.  Via sudo you have complete control over your instances.  We have sudo conf
 
 <a href=#FAQ16><h2 id="FAQ16"> Can I use my own SSH key? </h2></a>
 
-Yes you can upload your own SSH key to Engine Yard AppCloud.  You can even specify keys which keys are used on which environments.
+Yes, you can upload your own SSH key to AppCloud.  You can even specify keys which keys are used on which environments.
 
-For more information read the [[Manage Keys|ssh-keys-and-configuration]] section.
+For more information read the [[Manage Keys|ssh-intro]] section.
 
 <a href=#FAQ17><h2 id="FAQ17"> Can I reboot my instance without worrying about losing data? </h2></a>
 
-Yes.  An explicit *reboot* of an instance from the command line will not affect your data on your root partition. You can *reboot* the instance at will.
+Yes.  An explicit *reboot* of an instance from the command line does not affect your data on your root partition. You can *reboot* the instance at will.
 
-NOTE: Destroying an instance from the web interface and/or a crash of the instance will not preserve the data on the instance's root partition.
+NOTE: Destroying an instance from the web interface and/or a crash of the instance does not preserve the data on the instance's root partition.
 
 The distinction is between *rebooting* an instance and *terminating* an instance.  When you terminate an instance, the data on the root partition **is** lost. 
 
@@ -134,11 +134,11 @@ Therefore we recommend you keep all vital data on the persistent EBS storage vol
 
 <a href=#FAQ18><h2 id="FAQ18"> If I shutdown and create an instance with the same volumes, will I lose data? </h2></a>
 
-No.  Turning off your instance will destroy the virtual instance on Amazon EC2.  But your files and data stored on the `/data` and `/db` volumes are saved to snapshots.  When you boot your instance again, select a custom configuration so you can choose the most recent snapshot. Your instance will then be restored to the state before shutdown.
+No.  Turning off your instance destroys the virtual instance on Amazon EC2.  But, your files and data stored on the `/data` and `/db` volumes are saved to snapshots.  When you boot your instance again, select a custom configuration so you can choose the most recent snapshot. Your instance is then restored to the state before shutdown.
 
 It's worth noting that snapshot of the `/data` volume is only taken off of the Application Master instance.  The same is true for the `/db` volume and the Database Master.
 
-Read [[Instance Overview|appcloud-instances|]] for more information.
+Read [[Instance Overview|instance-types|]] for more information.
 
 <a href=#FAQ19><h2 id="FAQ19"> How do I migrate from SVN to Git? </h2></a>
 
@@ -148,7 +148,7 @@ Github has written a guide that outlines many options you have when you would li
 
 If you plan on using GitHub, the first option to automatically import your SVN repo is very easy to use.  The other manual options give you more control over reconfiguring your authors or the ability to import Tags.
 
-<a href=#FAQ20><h2 id="FAQ20"> Are there reserved names in Engine Yard AppCloud? </h2></a>
+<a href=#FAQ20><h2 id="FAQ20"> Are there reserved names in AppCloud? </h2></a>
 
   * An environment cannot be named **test**.
   * A user account cannot be named **root**.
@@ -170,13 +170,13 @@ For information about setting availability zones in AppCloud, see [[Using multi-
 
 Once you've added a new card you can change the current credit card.  There is not a way to delete a credit card.
 
-<a href=#FAQ23><h2 id="FAQ23"> How do EY AppCloud instances differ from xCloud slices? </h2></a>
+<a href=#FAQ23><h2 id="FAQ23"> How do AppCloud instances differ from xCloud slices? </h2></a>
 
 ### What Instances and Slices Have in Common
 
-Right now, your EY AppCloud instance closely resembles the xCloud slices.
+Right now, your AppCloud instance closely resembles the xCloud slices.
 
-All of the hard work, detailed configuration and battle-tested setup that have gone into building and perfecting the [[Engine Yard Stack|http://www.engineyard.com/technology/stack]] serves as the foundation for each EY AppCloud instance. 
+All of the hard work, detailed configuration and battle-tested setup that have gone into building and perfecting the [[Engine Yard Stack|http://www.engineyard.com/technology/stack]] serves as the foundation for each AppCloud instance. 
 
 ### Convention over Configuration
 
@@ -196,7 +196,7 @@ Then restart unicorn like below:
 
     /engineyard/bin/app_myapp reload
 
-<a href=#FAQ25><h2 id="FAQ25"> Do you offer any DDoS Protection on EY AppCloud? </h2></a>
+<a href=#FAQ25><h2 id="FAQ25"> Do you offer any DDoS Protection on AppCloud? </h2></a>
 
 Due to the nature of DDoS attacks and how difficult it can be successfully protect a site against the various DDoS attacks Engine Yard does not offer any services to help in the event of a DDoS attack.
 
@@ -209,12 +209,12 @@ If you need assistance in Protecting your site against a DDoS attacks we provide
 
 <a href=#FAQ26><h2 id="FAQ26"> 400 Bad Request While Updating Chef Recipes </h2></a>
 
-While trying to update your custom chef scripts, if you run into the error "400 Bad Request" you will need to do two things.
+While trying to update your custom chef scripts, if you run into the error "400 Bad Request" you need to do two things.
 
   - Click on **Update Instance** on the environment you're trying to apply scripts to.
   - Then run `sudo gem update engineyard` to make sure your `engineyard` gem is on the latest version.
 
-This should make sure all API endpoints line up between the gem and the EY AppCloud application.
+This should make sure all API endpoints line up between the gem and the AppCloud application.
 
 Also you may see the error:
 
@@ -226,11 +226,11 @@ To fix this, you just need to include the `mysql2` gem in your Gemfile.
 
 <a href=#FAQ28><h2 id="FAQ28"> Bundler 1.0 Will Not Install Compiled Gems in UNIX When bundle install is Run in Windows </h2></a>
 
-When developing on Windows you'll find when you deploy your Applications on EY that it will not find certain gems such as MySQL2 no matter what you do.  Please review this open [[Bug report #646|https://github.com/carlhuda/bundler/issues#issue/646]] for more information on it.
+When developing on Windows, you'll find when you deploy your applications that it will not find certain gems such as MySQL2 no matter what you do.  For more information, see [[Bug report #646|https://github.com/carlhuda/bundler/issues#issue/646]].
 
 <a href=#FAQ29><h2 id="FAQ29"> One of my instances is not responding. What can I do? </h2></a>
 
-If one of your instances stops responding, it may have crashed or frozen. You will need to terminate and rebuild the instance or environment, depending on which instance is problematic. Please read [[Dealing with a Frozen/Crashed Instance|frozen-instances]]
+If one of your instances stops responding, it may have crashed or frozen. You need to terminate and rebuild the instance or environment, depending on which instance is problematic. For more information, see [[Dealing with a Frozen/Crashed Instance|frozen-instances]].
 
 <a href=#FAQ30><h2 id="FAQ30"> Can I open a custom port for my application? </h2></a>
 

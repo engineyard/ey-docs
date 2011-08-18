@@ -6,7 +6,7 @@ an application or set of applications.
 
 An environment includes Application Instance(s), Database Instance(s), and possibly
 one or more Utility Instances. Check out this article if you want to know more about 
-the various instances types: [[AppCloud Instances|appcloud-instances]].
+the various instances types: [[AppCloud Instances|instances-types]].
 
 ## Topics
 
