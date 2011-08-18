@@ -2,6 +2,20 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update9><h2 id="update9">Action Req'd</b>: Passenger 2 and Passenger 3 security updates 
+	
+August 18th, 2011
+
+We patched an availability vulnerability in Passenger 2 and 3. Although, there have been no known attacks targeting this vulnerability, if you use Passenger 2 or 3, **we strongly recommend that you update your environments.**  
+
+Unpatched sites are vulnerable to DDOS attacks. 
+
+<a href=#update8><h2 id="update8">Fix: Production.log permissions were being changed back to root
+	
+August 18th, 2011
+
+Updated the delayed_job script to fix an issue where it was not running as the deploy user.
+
 <a href=#update7><h2 id="update7"><b>Major</b>: Link your AppCloud account to a GitHub account to make deploy keys automatic. (Beta support)</h2></a>
 
 August 18th, 2011
