@@ -107,7 +107,7 @@
   * [[PostgreSQL|postgresql]]
   * [[JRuby/Trinidad|jruby-beta]]
   * [[JRuby and trial|beta-jruby-environment-with-appcloud-trial]]  
-  * [[GitHub/AppCloud account linking|linking-github-to-appcloud]]
+  * [[Link a Github account|linking-github-to-appcloud]]
 * [[FAQs|faq_home]]
   * [[AppCloud FAQ|appcloud_faq]]
   * [[Trial FAQ|http://www.engineyard.com/products/appcloud/trial-faq]]
