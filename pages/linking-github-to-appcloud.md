@@ -1,4 +1,4 @@
-<h1>Linking an AppCloud account to a GitHub account</h1>
+# Linking a GitHub account to AppCloud
 
 You can link your AppCloud account to a GitHub account. 
 
@@ -6,10 +6,11 @@ The _advantage_ of linking your AppCloud account to a GitHub account is that you
 
 The _disadvantage_ of linking your AppCloud account to a GitHub account is that it gives your AppCloud collaborators read access to **all** repositories in that GitHub account. 
 
-This page contains the following procedures:  
-* [To link your AppCloud account to a GitHub account] [2]  
-* [To create an application from a repository in a linked GitHub account] [3]  
-* [To unlink your AppCloud account from a GitHub account] [4] 
+This page contains the following procedures:
+
+  * [Link your AppCloud account to a GitHub account] [2]  
+  * [Create an application from a repository in a linked GitHub account] [3]  
+  * [Unlink your AppCloud account from a GitHub account] [4] 
 
 <h2 id="topic1">Which GitHub account to link to?</h2>
 
