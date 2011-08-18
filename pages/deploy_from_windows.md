@@ -36,3 +36,33 @@ to Engine Yard's AppCloud platform.
     3. Click 'Boot This Configuration'
 12. After everything is finished, click on 'Visit your application' to
     check that everthing worked.
+    
+## Notes
+
+* RailsInstaller installs Ruby 1.8.7 and Rails 3.0.7. You can update the
+  Rails version by running `gem update rails` from the command prompt. If
+  you want to run multiple Ruby versions on Windows, check out
+  [pik](https://github.com/vertiginous/pik) on Github.
+
+* Make sure to add `gem 'bundler', '~> <version>` to your Gemfile so that your instance
+  uses the correct version of bundler
+
+* If you have deployed your code and the instance is using the wrong
+  version of Bundler, click 'Update' on the application to update the
+  instance
+
+* Default location for SSH key is `C:\Users\<name>/.ssh/id_rsa.pub`
+
+* If it's a public repository, use the 'Git Read-Only' address from
+  Github
+
+* If it's a private repository, you'll need to add a deploy key to the
+  Github repository
+
+* If using the defaults from RailsInstaller 1.x, select the Ruby 1.8.7
+  version when creating your environment (Ruby 1.9.2 for RailsInstaller version 2.x)
+
+* The first time you deploy, the 'Migrate?' button should be checked and
+  migrations should run.
+
+* Booting the application normally takes about five minutes
