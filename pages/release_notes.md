@@ -3,6 +3,10 @@
 
 ### [[August 2011|appcloud_updates_august_2011]]
 
+* [[<b>Action Req'd</b>: Passenger 2 and Passenger 3 security updates|appcloud_updates_august_2011#update9]] *August 18th, 2011*
+
+* [[Fix: Production.log permissions were being changed back to root
+|appcloud_updates_august_2011#update8]] *August 18th, 2011*
 
 * [[<b>Major</b>: Link your AppCloud account to a GitHub account to make deploy keys automatic. (Beta support)|appcloud_updates_august_2011#update7]] *August 18th, 2011*
 
