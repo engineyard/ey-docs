@@ -4,7 +4,7 @@ The updates described are either important (where you need to take action) or of
 
 <a href=#update7><h2 id="update7"><b>Major</b>: Link your AppCloud account to a GitHub account to make deploy keys automatic. (Beta support)</h2></a>
 
-August 18th, 2011
+August 17th, 2011
 
 No more cutting-and-pasting of deploy keys from AppCloud to GitHub. 
 
