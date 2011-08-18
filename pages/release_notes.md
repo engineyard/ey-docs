@@ -4,7 +4,7 @@
 ### [[August 2011|appcloud_updates_august_2011]]
 
 
-* [[<b>Major</b>: Link your AppCloud account to a GitHub account to make deploy keys automatic. (Beta support)|appcloud_updates_august_2011#update7]] *August 17th, 2011*
+* [[<b>Major</b>: Link your AppCloud account to a GitHub account to make deploy keys automatic. (Beta support)|appcloud_updates_august_2011#update7]] *August 18th, 2011*
 
 * [[Minor: Update and fixes to the AppCloud stack|appcloud_updates_august_2011#update6]] *August 16th, 2011*
 
