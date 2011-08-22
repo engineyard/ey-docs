@@ -21,6 +21,7 @@
   * [[Customize your deployment|customize-your-deployment]]
   * [[Custom deploy hooks|use-deploy-hooks-with-engine-yard-appcloud]]
   * [[Deploy hooks API|deploy-hooks-api]]
+  * [[Deploy from Windows|deployment-windows]]
   * [[Maintenance pages|deployment-maintenance-pages]]
   * [[Change your Git repo location|change-your-repo-location]]
   * [[Convert Capistrano symlinks|convert-capistrano-symlinks-to-appcloud-symlinks]]
