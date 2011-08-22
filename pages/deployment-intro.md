@@ -6,7 +6,7 @@ pioneer for years in deployment automation for technologies like
 Rails as well as other Ruby application frameworks.
 
 This section provides information on how Engine Yard facilitates 
-deploying your applications to the cloud with AppCloud.
+deploying your applications to the cloud with our AppCloud platform.
 
 ## Topics
 
