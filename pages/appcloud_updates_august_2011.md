@@ -2,6 +2,12 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update10><h2 id="update10">Minor: Update to the collectd web interface 
+	
+August 19th, 2011
+
+Updated the collectd web interface to use a unique password dynamically generated for your environment. Previously, a static password was used.
+
 <a href=#update9><h2 id="update9">Action Req'd</b>: Passenger 2 and Passenger 3 security updates 
 	
 August 18th, 2011
