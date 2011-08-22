@@ -14,3 +14,6 @@
   
 * ### [[Bundler tips for AppCloud|bundler-tips-for-appcloud]]
   A handful of helpful Bundler tips for use on AppCloud.
+  
+* ### [[Asset Pipeline tips for Rails 3.1|asset-pipeline]]
+  Helpful tips on using the new Asset Pipeline in Rails 3.1 on AppCloud.
