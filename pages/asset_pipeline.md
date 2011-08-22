@@ -19,17 +19,36 @@ them as static files.
 
 ## Asset path
 
-With the Asset Pipeline, static assets are served from a flat file system in `public/assets`. Because of this, the recommended practice is to use the new `asset_path` helpers.
+With the Asset Pipeline, static assets are served from a flat file system in `public/assets`. Because of this, the recommended practice is to use the new `asset_path` helpers. This can either be done using a preprocessor or by
+using [sass-rails](https://github.com/rails/sass-rails) built in helpers.
 
-To do this, you can take advantage of Sprockets pre-processors and add a
-`.erb` extension to your stylesheets. You can then use Ruby code in the
-stylesheets just like you would in the view files.
+To use Sprockets pre-processors, add a `.erb` extension to your stylesheets. 
+You can then use Ruby code in the stylesheets just like you would in the view 
+files.
 
     url('../images/rails.png')
 
 becomes
 
     url(<%= asset_path 'rails.png' %>)
+    
+There are also helper methods built into sass-rails. They resemble the `.erb`
+ones except use a hyphen instead of an underscore.
+
+    url('../images/rails.png')
+    
+becomes
+
+    url(asset-path('rails.png', image))
+    
+You can also use the `-url` helper and paired with the type of asset, this
+makes for very intuitive code
+
+    url('../images/rails.png')
+    
+becomes
+
+    image-url('rails.png')
     
 For more information, check out the 
 [Rails Guides](http://edgeguides.rubyonrails.org/)
