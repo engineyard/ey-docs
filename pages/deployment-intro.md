@@ -29,6 +29,9 @@ deploying your applications to the cloud with AppCloud.
 6. ### [[Deploy hooks API|deploy-hooks-api]]
    Learn more about the deploy hooks API.
 
+6. ### [[Windows deployment for AppCloud|deploy-hooks-api]]
+   Learn more about the deploy you application to AppCloud from a Windows environment.
+
 7. ### [[Maintenance pages|deployment-maintenance-pages]]
    Learn how to display maintenance pages while your application is deployed.
 
