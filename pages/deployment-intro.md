@@ -8,7 +8,7 @@ Rails as well as other Ruby application frameworks.
 This section provides information on how Engine Yard facilitates 
 deploying your applications to the cloud with AppCloud.
 
-## Articles
+## Topics
 
 
 1. ### [[How your code is deployed|deployment_steps]]
