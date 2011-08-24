@@ -40,3 +40,7 @@ Although you could check the uptime of your homepage, it is generally not a good
 Once FitterHappier has been successfully installed, commit the changes to your git repository 
 and redeploy your application. Ensure deployment was successful by testing the same URIs from above.
 
+## Add check to Pingdom
+
+Now that you have a URI for testing uptime, log back into pingdom and create a new check. Set the resolution (how often they ping the URI) to whatever meets your needs, the 5 minute default is likely a good option. Enter the URI in the URL/IP field. Finally select how you wish to be notified if the ping fails. 
+
