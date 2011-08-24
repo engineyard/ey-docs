@@ -20,7 +20,7 @@ to your application.
 
 2. Add the following command to your deploy hook file:
       
-        run "cd #{release_path}; RAILS_ENV=#{rails_env} bundle exec rake assets:precompile"
+        run "cd #{release_path}; RAILS_ENV=#{framework_env} bundle exec rake assets:precompile"
     
 This command compiles the assets to the `public/assets` directory anytime you deploy your application
 to AppCloud. This directory is used as a location to store and serve store your application assets.
