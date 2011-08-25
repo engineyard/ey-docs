@@ -1,41 +1,33 @@
-
-// remap jQuery to $
+// Navigation Shinanigans
 (function($){
 
-  $(document).ready(function()
-                    {
-
-                      jQuery("#sidebar").find("li").each(function(){
-                        var li = jQuery(this);
-                        if ( li.has("ul").length ) {
-							 li.addClass("menu");
-							
-	
-                          var hide = li.has("a[href=\"" + document.location.pathname + "\"]").length == 0;
-
-                          	if ( hide ) { li.addClass("collapsed"); }
-						  	else 		{ li.addClass("expanded"); }
-							
-							// Add active class to link on currently active page.
-							li.find("a[href=\"" + document.location.pathname + "\"]").addClass("active");
-
-                          li.click(function(event){
-                            if ( this == event.target ) {
-                              item1 = jQuery(this);
-                              var collapsed = item1.hasClass("collapsed");
-                              item1.removeClass("expanded collapsed")
-                                .addClass(collapsed ? "expanded" : "collapsed")
-                                .children("ul").toggle();
-                              return false;
-                            }
-                          });
-
-                          if ( hide ) {
-                            li.find("ul").hide();
-                          }
-
-                        }
-                      });
-                    });
-
+  $(document).ready(function(){
+    $(".subnav > ul > li").each(function(){
+      
+      var li = $(this);
+      var firstlink = $(this).find('> a');
+      
+      if (li.has("ul").length) {
+        firstlink.addClass('arrow');
+        $(this).find('> ul > li').each(function() {
+          var deepli = $(this);
+          if (deepli.has("a[href=\"" + document.location.pathname + "\"]").length != 0) {
+            deepli.addClass('selected');
+          }
+        });
+      }
+      
+      if (firstlink.attr('href') == document.location.pathname) {
+        li.addClass('selected expanded');
+        firstlink.addClass('selected');
+      } else if (li.has("a[href=\"" + document.location.pathname + "\"]").length != 0) {
+        li.addClass('selected parent expanded');
+        firstlink.addClass('selected');
+      } else {
+        li.addClass("collapsed"); 
+        li.find("ul").hide();
+      }
+      
+    });
+  });                                            
 })(this.jQuery);
