@@ -43,42 +43,19 @@ account bill. You will not get a separate bill from New Relic.
 
 <h2 id="topic2"> Configure your application for monitoring</h2>
 
-There are three parts to configuring your application:  
+In order to montior your application with New Relic, you need to add the New Relic gem to the environment and enable New Relic monitoring for the application.
 
-  * [Install the newrelic gem.] [A]  
-  * [Edit your environment.rb file or your Gemfile.] [B]  
-  * [Enable New Relic monitoring in AppCloud.] [C]
+<h3 id="topicC"> To configure your environment and application for New Relic monitoring</h3>
 
-<h3 id="topicA"> To install the newrelic_rpm gem</h3> 
+1. Do one of the following to add the newrelic_rpm gem:  
+    * For Rails 3 and installations using bundler, add the gem to your Gemfile.
+    * For Rails 2.0 and Rails 2.1 to 2.3 without bundler, edit your environment.rb file.  
 
-1. In AppCloud, click Dashboard.
-2. Click the Applications *tab*.
-3. Click the Add Rubygems icon. 
-
-    ![add rubygems icon](images/add_ruby_gem.png)
-
-4. Search for the newrelic_rpm gem and add it to your selected gem list.
-
-    ![newrelic rpm 3.0.1 gem selected](images/newrelic_rpm_gem_selected.png)
-
-<!-- 2011.06.03 JD says: at some later date replace the above with a cross-reference to the generic process of adding a gem -->
-
-<h3 id="topicA"> To edit environment.rb or Gemfile</h3> 
-
-1. Do one of the following to add the newrelic_rpm gem:
-
-    * For Rails 3 and installations using Bundler, add the gem to your Gemfile.
-
-    * For Rails 2.0 and Rails 2.1 to 2.3 without Bundler, edit your environment.rb file.
-
-    For details, see the [[New Relic Knowledge Base about installing the gem.|  http://support.newrelic.com/kb/ruby/ruby-agent-installation-gem]]
-
-<h3 id="topicC"> To enable your application for New Relic monitoring</h3>
-
+    For details, see the [[New Relic Knowledge Base about installing the gem.|  http://support.newrelic.com/kb/ruby/ruby-agent-installation-gem]]  
 1. In AppCloud, click Dashboard.
 2. Click the application name that needs monitoring.
 3. Click the pencil icon to edit this application.
-4. Select Enable New Relic Monitoring at the bottom of this page.
+4. Select Enable New Relic Monitoring at the bottom of this page.  
     ![Enable New Relic Monitoring check box](images/enable_new_relic_monitoring.png)
 4. Click Update Application to enable New Relic monitoring.
 
