@@ -14,4 +14,4 @@ Occasionally, Amazon cannot shut down an instance when a termination request is 
 
 *  Click <b>Force</b> to force-terminate the instance. 
 
-<b>Important!</b> If you select Force, the termination snapshot might not be good. If you later boot a cluster and use a "force-terminated" snapshot for the application instance, make sure to test the instance.
+<!--<b>Important!</b> If you select Force, the termination snapshot might not be good. If you later boot a cluster and use a "force-terminated" snapshot for the application instance, make sure to test the instance.-->
