@@ -3,6 +3,8 @@
 
 ### [[August 2011|appcloud_updates_august_2011]]
 
+* [[Minor: Force terminate for instances|appcloud_updates_august_2011#update11]] *August 25th, 2011*
+
 * [[Minor: Update to the collectd web interface|appcloud_updates_august_2011#update10]] *August 19th, 2011*
 
 * [[<b>Action Req'd</b>: Passenger 2 and Passenger 3 security updates|appcloud_updates_august_2011#update9]] *August 18th, 2011*
