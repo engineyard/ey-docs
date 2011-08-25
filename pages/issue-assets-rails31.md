@@ -1,9 +1,9 @@
 # 404 errors when using AssetsController
 
 Our AppCloud Nginx configuration is now standardized on Rails 3.1; this configuration 
-is set to serve static asset files from the `public/assets` directory. If a pre Rails 3.1 
-application makes use of an AssetsController, the application will not receive the request 
-as Nginx is configured to handle them.  Subsequently the application will return 404 errors 
+is set to serve static asset files from the `public/assets` directory. If a pre-Rails 3.1 
+application makes use of an AssetsController, the application does not receive the request 
+because Nginx is configured to handle them. Subsequently, the application returns 404 errors 
 for these types of requests.
 
 ## To reconfigure nginx.conf so AssetsController receives requests
@@ -12,7 +12,7 @@ for these types of requests.
 
         keep.nginx.conf  
 
-    See [[Using keep files|configuration-keep-files]] for information about keep files on AppCloud.
+    For information about keep files on AppCloud, see [[Using keep files|configuration-keep-files]].
 
 2. Edit the keep.nginx.conf file:  
     Replace
