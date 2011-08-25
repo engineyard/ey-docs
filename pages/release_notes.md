@@ -3,7 +3,7 @@
 
 ### [[August 2011|appcloud_updates_august_2011]]
 
-* [[Minor: Force terminate for instances|appcloud_updates_august_2011#update11]] *August 25th, 2011*
+* [[Minor: Force-terminate for instances|appcloud_updates_august_2011#update11]] *August 25th, 2011*
 
 * [[Minor: Update to the collectd web interface|appcloud_updates_august_2011#update10]] *August 19th, 2011*
 

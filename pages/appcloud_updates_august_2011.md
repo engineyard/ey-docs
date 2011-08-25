@@ -2,11 +2,11 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
-<a href=#update11><h2 id="update11"> Minor: Force terminate for instances</h2></a>
+<a href=#update11><h2 id="update11"> Minor: Force-terminate for instances</h2></a>
 	
 August 25th, 2011
 
-Occasionally, Amazon cannot shut down an instance when a termination request is made. If this happens, you get a "Termination Failed" message. You can then choose to force the instance to terminate or to try again to terminate the instance normally.
+Occasionally, Amazon cannot shut down an instance when a termination request is made. If this happens, you get a "Termination Failed" message. You can then choose to <b>force</b> the instance to terminate or to <b>retry</b> to terminate the instance normally.
 
 For more information, see [[Termination failed|trouble-termination-failed]].
 
