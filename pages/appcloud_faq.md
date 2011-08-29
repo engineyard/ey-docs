@@ -196,16 +196,17 @@ Then restart unicorn like below:
 
     /engineyard/bin/app_myapp reload
 
-<a href=#FAQ25><h2 id="FAQ25"> Do you offer any DDoS Protection on AppCloud? </h2></a>
+<a href=#FAQ25><h2 id="FAQ25"> Do you offer any DDoS protection on AppCloud? </h2></a>
 
-Due to the nature of DDoS attacks and how difficult it can be successfully protect a site against the various DDoS attacks Engine Yard does not offer any services to help in the event of a DDoS attack.
+Due to the nature of DDoS attacks and how difficult it can be to protect a site against the various DDoS attacks, Engine Yard does not offer any services to help in the event of a DDoS attack.
 
-If you need assistance in Protecting your site against a DDoS attacks we provide a list of several companies below for you to review and contact for assistance.
+If you need assistance protecting your site against DDoS attacks, here are some companies to consider.
 
-  * [[Prolexic Technologies|http://www.prolexic.com]]
-  * [[Secure Works|http://www.secureworks.com]]
-  * [[Verisign|http://www.verisigninc.com/en_US/products-and-services/network-intelligence-availability/ddos/index.xhtml]]
-  * [[Serverorigin|http://serverorigin.com]]
+* [[Prolexic Technologies|http://www.prolexic.com]]
+* [[Verisign|http://www.verisigninc.com/en_US/products-and-services/network-intelligence-availability/ddos/index.xhtml]]
+* [[Serverorigin|http://serverorigin.com]]
+* [[Black Lotus| http://www.blacklotus.net/]]
+* [[CloudFlare| http://www.cloudflare.com/]]
 
 <a href=#FAQ26><h2 id="FAQ26"> 400 Bad Request While Updating Chef Recipes </h2></a>
 
