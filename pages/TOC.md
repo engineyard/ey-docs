@@ -31,6 +31,7 @@
   * [[Environments|environment-intro]]
     * [[Introduction|environment-intro]]
     * [[Create an environment|environment-create]]
+    * [[Upgrade an environment|environment-upgrade]]
     * [[Clone an environment|environment-clone]]
     * [[Rebuild an environment|environment-rebuild]]
     * [[Delete an environment|environment-delete]]
