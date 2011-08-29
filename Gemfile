@@ -6,3 +6,4 @@ gem 'rdiscount'
 gem 'pygmentize'
 gem 'rake'
 gem "engineyard", :group => :development
+gem "directory_watcher", :group => :development
