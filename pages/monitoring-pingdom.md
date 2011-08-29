@@ -1,32 +1,34 @@
 # Monitoring with Pingdom
 
-Pingdom is a great external tool for monitoring your application uptime. Pingdom can send you phone and email alerts if your site goes down. Pingdom also provides uptime and response time reports.
+Pingdom is an external tool for monitoring your application uptime. Pingdom can send you phone and email alerts if your site goes down. Pingdom also provides uptime and response time reports.
 
-This page describes how to setup Pingdom to monitor your AppCloud application, using FitterHappier to xxxx.
+This page describes how to setup Pingdom to monitor your AppCloud application. This page also describes how to use FitterHappier to create a unique URI for your application specifically to be monitored by Pingdom.
 
-## What pages should I monitor with Pingdom?
-In general, do not monitor your home page. This is because your home page may have external dependencies that make page loading slow and thus not accurately reflect your site response time. Moreover, if one of these dependencies goes down, it brings down your home page even when the rest of your application is still functioning correctly. Also, pinging your homepage creates more load on an already heavily trafficked page.
+### What pages should I monitor with Pingdom?
+In general, do not monitor your home page. This is because your home page might have external dependencies that make page loading slow and thus not accurately reflect your site response time. Moreover, if one of these dependencies goes down, it brings down your home page even when the rest of your application is still functioning correctly. Also, pinging your homepage creates more load on an already heavily trafficked page.
 
-Better practice is to ping a less commonly visited page or, as described here, to use a tool like the FitterHappier plugin to create a page specifically for tracking uptime. 
+Better practice is to ping a less commonly visited page or to use a tool like the FitterHappier plugin to create a page specifically to be monitored. 
 
-##Process
+###Process
+
+This is the process for setting up Pingdom to monitor uptime on your AppCloud application:
 
 * [Get a Pingdom account.][1]
-* [Install the FitterHappier plugin.][2]
-* [Update and verify your environment.][3]
+* [(Optional) Install the FitterHappier plugin.][2]
+* [(Optional) Update and verify FitterHappier in your environment.][3]
 * [Add a check to Pingdom.][4]
 
 <h2 id="topic1">Get a Pingdom account</h2>
 
-With Pingdom, you can try before you buy: you can choose for a free trial or a free account, as well as basic and business accounts.
+With Pingdom, you can try before you buy: you can choose a free trial or a free account, as well as basic and business accounts.
 
 ###To get a Pingdom account
 1. Navigate to [[www.pingdom.com|http://www.pingdom.com]].
 2. Sign up for an account.
 
-<h2 id="topic2"> Install the FitterHappier plugin</h2>
+<h2 id="topic2"> (Optional) Install the FitterHappier plugin</h2>
 
-FitterHappier is a Rails plugin that provides actions for monitoring the availability of websites and databases. The FitterHappier monitoring controller disables unnecessary Rails features, such as sessions, layouts, and logging. This allows very fast monitoring of URIs.
+FitterHappier is a Rails plugin that provides actions for monitoring the availability of websites and databases. The FitterHappier monitoring controller disables unnecessary Rails features, such as sessions, layouts, and logging. It creates URIs that can be monitored fast and efficiently.
 
 For information about the FitterHappier plugin, see [[github.com/atmos/fitter_happier|http://github.com/atmos/fitter_happier]]. 
 
@@ -50,28 +52,27 @@ For information about the FitterHappier plugin, see [[github.com/atmos/fitter_ha
         Schema Version: 20081217141904
 
 
-<h2 id="topic3"> Update and verify your environment</h2>
+<h2 id="topic3"> (Optional) Update and verify FitterHappier in your environment</h2>
 
-After you install FitterHappier, ________ and deploy. . . 
-You will then have a URI testing your application's uptime, .... Is it only uptime or response time and other stuff too? 
+After you install FitterHappier, redeploy your application and confirm that the FitterHappier URIs have been added to your deployed application. 
 
-### To update and verify your environment
-1. Commit the changes to your git repository.   
-    Q: What are the changes?
+### To update and verify FitterHappier in your environment
+1. Commit the changes to your git repository so that the FitterHappier plugin is added to your application.   
 2. Redeploy your application.
-3. Verify that the deployment was successful by testing the same URIs as [above][5].  
+3. Verify that the deployment was successful by testing the same URIs as [above][5], replacing "localhost:3000" with your application's hostname.
 
 <h2 id="topic4"> Add a check to Pingdom</h2>
 
-Q: I need to get more info about what a check is. How many checks would I typically add?  Is check the word that Pingdom uses? 
+The final task is to add the check to Pingdom. You tell Pingdom what URI to check, how often, and where to send an alert if the URI goes down.
 
 ###To add a check 
 1. Log into your Pingdom account.
-2. Create a new check.
-3. Set the resolution.   
-    Pinging the URI every 5 minutes is a good default.
-4. Enter the URI in the URL/IP field.
-5. Select notification method. 
+2. Click Add new check.
+3. Complete the fields on the Add new check page:  
+    * Resolution — Pinging the URI every 5 minutes is a good default.
+    * Check type — HTTP
+    * URL/IP — For example, `www.mysite.com/fitter_happier/site_check` or `www.mysite.com/about.html`
+4. Test and add the check.
 
 
 [1]: #topic1        "topic1"
