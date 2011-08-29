@@ -64,6 +64,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.0.12)
+  directory_watcher
   engineyard
   gollum-site
   pygmentize
