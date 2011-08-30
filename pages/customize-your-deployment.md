@@ -1,7 +1,6 @@
 # Customize your deployment on AppCloud
 
-If your application has special deployment requirements, this article will
-walk you through the available methods to customize the deployment process 
+If your application has special deployment requirements, read this page about methods to customize the deployment process 
 of your application on AppCloud.
 
 The following methods can help you customize your deployment:
@@ -27,25 +26,24 @@ with your environment's actual name.
 
 * **Don't copy .git directory to each release**
 
-      environments:
-        myapp_staging:
-          copy_exclude:
+        environments:
+          myapp_staging:
+            copy_exclude:
             - .git
 
 * **Set a default branch**
 
-      environments:
-        myapp_staging:
-          branch: master
+        environments:
+          myapp_staging:
+            branch: master
 
 
 * **Use thor to run migrations, but only run them when --migrate is specified**
 
-
-      environments:
-        myapp_staging:
-          migration_command: thor db:migrate
-          migrate: false
+        environments:
+          myapp_staging:
+            migration_command: thor db:migrate
+              migrate: false
 
 
 
@@ -54,7 +52,7 @@ with your environment's actual name.
 The engineyard gem pays attention to four keys in the per-environment hash. They are:
 
   * `copy_exclude (array)` <br />
-    items that will be excluded when copying from your repository to each release. See rsync(1), in particular the `--exclude` option, for more details. Default is empty.
+    items that are excluded when copying from your repository to each release. See rsync(1), in particular the `--exclude` option, for more details. Default is empty.
 
   * `branch (string)` <br />
     the branch to deploy by default. Default is `master`.
@@ -77,8 +75,8 @@ around a deploy (<a href="#third">deploy hooks</a> are a better choice for those
 
 To use deploy overrides, create a file in your code repository at either 
 `config/eydeploy.rb` or `eydeploy.rb`.  This file should contain a list 
-of methods, and will be instance_eval'd into the main `EY::Deploy` class.  You 
-will be able to super into any of the methods that you override. You 
+of methods, and is instance_eval'd into the main `EY::Deploy` class.  You 
+can super into any of the methods that you override. You 
 can see the source of the class that your customization will be instance_eval'd 
 into on GitHub at [[https://github.com/engineyard/engineyard-serverside/blob/master/lib/engineyard-serverside/deploy.rb]] 
 We guarantee the top level tasks (bundle, symlink_configs, enable_maintenance_page, migrate, symlink, restart, disable_maintenance_page, and cleanup_old_releases) 

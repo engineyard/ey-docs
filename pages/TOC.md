@@ -4,7 +4,6 @@
   * [[Platform Architecture|appcloud-architecture]]
   * [[Technology Stack|appcloud-tech-stack]]
   * [[Support Options|appcloud-support]]
-  * [[Release Notes|release_notes]]
 * [[Get Started with AppCloud|getting_started_home]]
   * [[Tutorial on trial account and sample app deployment|tutorial_deploy_fat_free_crm]]
   * [[Sign Up for Engine Yard AppCloud|sign-up-for-engine-yard-appcloud]]
