@@ -2,6 +2,26 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update12><h2 id="update12"><b>Major:</b> Stack Change Management</h2></a>
+
+August 29th, 2011
+
+Upgrading environments has changed. The Update button is replaced by two buttons: an Apply button and an Upgrade button.
+
+![The old Update button and the new Apply and Upgrade buttons](images/stack-version-ux.png)
+
+* The **Apply** button appears when you make changes to your environment settings or other settings, such as cron jobs, SSL certificates, or New Relic plan. Click to apply your changes to the environment.  
+
+* The **Upgrade** button appears when a newer version of the Engine Yard stack is available. Click to upgrade your environment to the current Engine Yard version. Before upgrading, review the change list for Engine Yard stack version. For more information, see [[Upgrade an environment|environment-upgrade]].
+
+As always, we recommend:   
+
+* Using the latest version of the Engine Yard stack.  
+* Testing in a cloned environment before applying changes or upgrading.
+
+<b>Important!</b> If your stack is very out-of-date, you see this message: "Upgrading will enable Stack Change Management." You will not see the Apply button until after upgrading. Remember, when updating a very out-of-date stack for a production environment, always test in a cloned environment first. 
+
+
 <a href=#update11><h2 id="update11"> Minor: Force-terminate for instances</h2></a>
 	
 August 25th, 2011
