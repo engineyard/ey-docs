@@ -27,25 +27,24 @@ with your environment's actual name.
 
 * **Don't copy .git directory to each release**
 
-      environments:
-        myapp_staging:
-          copy_exclude:
+        environments:
+          myapp_staging:
+            copy_exclude:
             - .git
 
 * **Set a default branch**
 
-      environments:
-        myapp_staging:
-          branch: master
+        environments:
+          myapp_staging:
+            branch: master
 
 
 * **Use thor to run migrations, but only run them when --migrate is specified**
 
-
-      environments:
-        myapp_staging:
-          migration_command: thor db:migrate
-          migrate: false
+        environments:
+          myapp_staging:
+            migration_command: thor db:migrate
+              migrate: false
 
 
 
