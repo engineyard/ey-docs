@@ -29,7 +29,7 @@ To use deploy hooks on AppCloud, create an `APP_ROOT/deploy` directory in your a
 and save named hook files in this directory which will be triggered at the appropriate 
 times during the deployment process. The files are defined as follows:
 
-    APP_ROOT/
+    APP_ROOT/  
       deploy/
         before_migrate.rb
         before_symlink.rb
