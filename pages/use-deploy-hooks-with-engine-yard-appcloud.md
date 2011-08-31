@@ -30,7 +30,7 @@ and save named hook files in this directory which will be triggered at the appro
 times during the deployment process. The files are defined as follows:
 
     APP_ROOT/  
-      deploy/
+    deploy/
         before_migrate.rb
         before_symlink.rb
         before_restart.rb
