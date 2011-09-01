@@ -51,7 +51,6 @@ For information about the FitterHappier plugin, see [[github.com/atmos/fitter_ha
         FitterHappier Site and Database Check Passed @ Wed, 17 Dec 2008 14:27:57 -0800
         Schema Version: 20081217141904
 
-
 <h2 id="topic3"> (Optional) Update and verify FitterHappier in your environment</h2>
 
 After you install FitterHappier, redeploy your application and confirm that the FitterHappier URIs have been added to your deployed application. 
