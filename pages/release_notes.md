@@ -1,6 +1,12 @@
 # Release Notes
 <a href="http://feed43.com/1082485410203701.xml" class="rss">Release Notes RSS Feed</a>
 
+### [[September 2011|appcloud_updates_september_2011]]
+
+* [[Minor: NTP is multi-region aware|appcloud_updates_september_2011#update2]] *September 1st, 2011*
+
+* [[Minor: The nbproc parameter removed from HAProxy|appcloud_updates_september_2011#update1]] *September 1st, 2011*
+
 ### [[August 2011|appcloud_updates_august_2011]]
 
 * [[<b>Major:</b> Stack Change Management|appcloud_updates_august_2011#update12]] *August 29th, 2011*
