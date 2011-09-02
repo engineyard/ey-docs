@@ -1,7 +1,28 @@
 # Release Notes
 <a href="http://feed43.com/1082485410203701.xml" class="rss">Release Notes RSS Feed</a>
 
+### [[September 2011|appcloud_updates_september_2011]]
+
+* [[Minor: NTP is multi-region aware|appcloud_updates_september_2011#update2]] *September 1st, 2011*
+
+* [[Minor: The nbproc parameter removed from HAProxy|appcloud_updates_september_2011#update1]] *September 1st, 2011*
+
 ### [[August 2011|appcloud_updates_august_2011]]
+
+* [[<b>Major:</b> Stack Change Management|appcloud_updates_august_2011#update12]] *August 29th, 2011*
+
+* [[Minor: Force-terminate for instances|appcloud_updates_august_2011#update11]] *August 25th, 2011*
+
+* [[Minor: Update to the collectd web interface|appcloud_updates_august_2011#update10]] *August 19th, 2011*
+
+* [[<b>Action Req'd</b>: Passenger 2 and Passenger 3 security updates|appcloud_updates_august_2011#update9]] *August 18th, 2011*
+
+* [[Fix: Production.log permissions were being changed back to root
+|appcloud_updates_august_2011#update8]] *August 18th, 2011*
+
+* [[<b>Major</b>: Link your AppCloud account to a GitHub account to make deploy keys automatic. (Beta support)|appcloud_updates_august_2011#update7]] *August 18th, 2011*
+
+* [[Minor: Update and fixes to the AppCloud stack|appcloud_updates_august_2011#update6]] *August 16th, 2011*
 
 * [[Fix: Resque workers failing|appcloud_updates_august_2011#update5]]  *August 8th, 2011*
 

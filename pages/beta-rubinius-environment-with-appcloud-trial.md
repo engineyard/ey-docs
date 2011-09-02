@@ -66,7 +66,7 @@ This table contains troubleshooting tips related to the AppCloud trial account w
 </td>
 
 <tr>
-	<td> Other problems? <td>Post to the [[Beta Conversations Google group|http://groups.google.com/group/ey-beta-talk]]. To subscribe to the group, see [[Beta Conversations|beta_home]]. <br> <br>
+	<td> Other problems? <td>Post to the [[Beta Conversations Google group|http://groups.google.com/group/ey-beta-talk]]. To subscribe to the group, see [[Beta Conversations|beta-intro]]. <br> <br>
    </tr>
 
   </tr>

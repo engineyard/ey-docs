@@ -6,9 +6,9 @@ pioneer for years in deployment automation for technologies like
 Rails as well as other Ruby application frameworks.
 
 This section provides information on how Engine Yard facilitates 
-deploying your applications to the cloud with AppCloud.
+deploying your applications to the cloud with our AppCloud platform.
 
-## Articles
+## Topics
 
 
 1. ### [[How your code is deployed|deployment_steps]]
@@ -28,6 +28,9 @@ deploying your applications to the cloud with AppCloud.
 
 6. ### [[Deploy hooks API|deploy-hooks-api]]
    Learn more about the deploy hooks API.
+
+6. ### [[Windows deployment for AppCloud|deploy-hooks-api]]
+   Learn more about the deploy you application to AppCloud from a Windows environment.
 
 7. ### [[Maintenance pages|deployment-maintenance-pages]]
    Learn how to display maintenance pages while your application is deployed.
