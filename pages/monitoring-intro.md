@@ -30,3 +30,6 @@ environments as monitoring is disabled by default.
 
 * ### [[Using New Relic to monitor an application|monitoring-new-relic]]
   Learn how to setup monitoring on AppCloud with New Relic.
+
+* ### [[Using Pingdom to monitor an application|monitoring-pingdom]]
+  Learn how to set up Pingdom to monitor uptime for an application.

@@ -58,8 +58,8 @@ are sure it is no longer needed.
   
 <h2 id="attach">Attach an address</h2>
 
-Once you detach an IP address you can move it to a different environment. 
-You will need to shut down the environment before attaching it.  We recommend 
+Once you detach an IP address you can move it to a different environment (in the same region). 
+You need to shut down the environment before attaching it.  We recommend 
 taking a manual snapshot of your data to help speed the termination of the 
 environment.
 
