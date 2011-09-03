@@ -3,6 +3,8 @@
 
 ### [[September 2011|appcloud_updates_september_2011]]
 
+* [[Fix: Multiple accounts during trial signup|appcloud_updates_september_2011#update3]] *September 2nd, 2011*
+
 * [[Minor: NTP is multi-region aware|appcloud_updates_september_2011#update2]] *September 1st, 2011*
 
 * [[Minor: The nbproc parameter removed from HAProxy|appcloud_updates_september_2011#update1]] *September 1st, 2011*
