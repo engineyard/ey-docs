@@ -655,13 +655,13 @@ As a result, you can confidently deploy and manage your application with any Eng
       <td></td>
       <td>
         <ul>
-          <li class="experimental" title='Experimental'>1.5.0
+          <li class="full" title='Full'>1.5.0
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="experimental" title='Experimental'>1.5.0 
+          <li class="full" title='Full'>1.5.0 
           </li>
         </ul>
       </td>
