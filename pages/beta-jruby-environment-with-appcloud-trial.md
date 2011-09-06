@@ -14,7 +14,7 @@ For detailed help with these steps, see [[docs.engineyard.com|home]], for exampl
 1. Sign up for a trial account.  
 2. Validate and start the trial account.  
 3. Create your (JRuby) application.  
-    If you don’t have a JRuby application, choose our ToDo application located at: `git://github.com/engineyard/todo.git`
+    If you don't have a JRuby application, choose our ToDo application located at: `git://github.com/engineyard/todo.git`
 
 <h2 id="topic3"> Reconfigure the environment for JRuby </h2>
 
@@ -30,7 +30,7 @@ The trial was set up with a streamlined workflow that automatically creates a Ru
 4. Click Edit Environment.    
 4. On the Edit the Environment page, set Application Server Stack to Trinidad.  
     The Ruby Runtime changes to JRuby 1.6.2 (beta).  
-    **Note:** If you can’t edit the Application Server Stack, make sure that you have stopped the environment. Only stopped environments can be edited.
+    **Note:** If you can't edit the Application Server Stack, make sure that you have stopped the environment. Only stopped environments can be edited.
 5. Click Update Environment.  
 6. On the Environment page, click Boot.  
     This boots the JRuby environment for your application.  
