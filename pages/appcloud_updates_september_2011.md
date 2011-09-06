@@ -3,9 +3,16 @@
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
 
+<a href=#update3><h2 id="update3"> Fix: Multiple accounts during trial signup</h2></a>
+
+September 2nd, 2011
+
+Fixed an issue where clicking reload or submit could accidentally create multiple accounts when signing up for a single trial account.
+  
+
 <a href=#update2><h2 id="update2"> Minor: NTP is multi-region aware</h2></a>
 
-August 1st, 2011
+September 1st, 2011
 
 NTP (network time protocol) is now multi-region aware; it will use an NTP server local to your region.  
 
