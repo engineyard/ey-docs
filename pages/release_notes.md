@@ -3,7 +3,7 @@
 
 ### [[September 2011|appcloud_updates_september_2011]]
 
-* [[Fix: Multiple accounts during trial signup|appcloud_updates_september_2011#update3]] *September 2nd, 2011*
+* [[Minor: The Deploy user can create and load SQL stored procedures|appcloud_updates_september_2011#update3]] *September 7th, 2011*
 
 * [[Minor: NTP is multi-region aware|appcloud_updates_september_2011#update2]] *September 1st, 2011*
 
