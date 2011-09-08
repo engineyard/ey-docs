@@ -3,12 +3,12 @@
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
 
-<a href=#update3><h2 id="update3"> Fix: Multiple accounts during trial signup</h2></a>
+<a href=#update3><h2 id="update3"> Minor: The Deploy user can create and load SQL stored procedures</h2></a>
 
-September 2nd, 2011
+September 7th, 2011
 
-Fixed an issue where clicking reload or submit could accidentally create multiple accounts when signing up for a single trial account.
-  
+Added log-bin-trust-function-creators to allow deploy users to create and upload SQL stored procedures. After this upgrade, you no longer have to add the Super privilege for the deploy user to create and load SQL stored procedures.
+    
 
 <a href=#update2><h2 id="update2"> Minor: NTP is multi-region aware</h2></a>
 
