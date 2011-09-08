@@ -10,7 +10,7 @@ June 29th, 2011
 
 Phusion Passenger 3 is available with Beta support in AppCloud. (No sign-up required.)
 
-Passenger 3 brings substantial performance improvements over Passenger 2. For more information, see [[Using Passenger 3 with Engine Yard AppCloud|using-passenger-with-engine-yard-appcloud]].
+Passenger 3 brings substantial performance improvements over Passenger 2.
 
 
 
