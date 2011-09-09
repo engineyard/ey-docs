@@ -1,10 +1,8 @@
-# Rails 3.1 Asset Pipeline tips for AppCloud
+# Rails 3.1 Asset pipeline tips for AppCloud
 
-The Asset Pipeline is arguably the biggest new feature in Rails 3.1. It's also a bit 
-confusing and there are some things to know when deploying applications using the asset
-pipeline to AppCloud.
+The asset pipeline is arguably the biggest new feature in Rails 3.1. There are some important things to know when deploying applications using the asset pipeline to AppCloud.
 
-Topics covered in this document:
+Topics covered on this page:
 
 * [[Precompile your assets|asset-pipeline#precompile]]
 * [[Asset paths|asset-pipeline#paths]]
@@ -12,9 +10,9 @@ Topics covered in this document:
 <h2 id="precompile">Precompiling assets</h2>
 
 When deploying your Rails 3.1 application, you may notice that there is no
-styling or your javascript behavior is not working. The fix for this is easy 
-and simply requires adding a [[deploy hook|use-deploy-hooks-with-engine-yard-appcloud]] 
-to your application.
+styling or your javascript behavior is not working. The fix for this is requires adding a [[deploy hook|use-deploy-hooks-with-engine-yard-appcloud]] to your application.
+
+###To precompile assets
 
 1. Create a `/deploy/before_symlink.rb` file in your application.
 
@@ -27,7 +25,7 @@ to AppCloud. This directory is used as a location to store and serve store your 
 
 <h2 id="paths">Asset paths</h2>
 
-With the Asset Pipeline, static assets are served from a flat file 
+With the asset pipeline, static assets are served from a flat file 
 system in the `public/assets` directory. Because of this, the recommended 
 practice is to use the new `asset_path` helpers. This can either be done 
 using a preprocessor or by using [sass-rails](https://github.com/rails/sass-rails) 
@@ -62,5 +60,5 @@ becomes
     image-url('rails.png')
     
 For more information, check out the 
-[Rails Guides](http://edgeguides.rubyonrails.org/)
+[Rails Guides](http://edgeguides.rubyonrails.org/).
     
