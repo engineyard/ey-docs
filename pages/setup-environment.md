@@ -1,6 +1,6 @@
-# Setup Environment
+# Setup your local environment
 
-We will start this tutorial off by getting your local environment ready for Ruby on Rails development.
+This page describes getting your local environment ready for Ruby on Rails development.
 
 ## Windows
 
