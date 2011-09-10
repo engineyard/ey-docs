@@ -2,6 +2,12 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update4><h2 id="update4"> Fix: collectd has been updated to use rrdtool 1.4.5</h2></a>
+
+September 9th, 2011
+
+This upgrade fixes problems with AppCloud dashboard graphs, false low memory alerts, and elevated memory usage for collectd. After upgrading, you might notice that the font for the dashboard graphs has changed.
+
 
 <a href=#update3><h2 id="update3"> Minor: The Deploy user can create and load SQL stored procedures</h2></a>
 
