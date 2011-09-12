@@ -63,7 +63,7 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="full">1.9.2.p180
+          <li class="full">1.9.2.p290
           </li>
         </ul>
         <ul>
@@ -77,7 +77,7 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="full">1.9.2.p180
+          <li class="full">1.9.2.p290
           </li>
         </ul>
         <ul>
