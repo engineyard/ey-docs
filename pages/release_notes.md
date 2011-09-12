@@ -3,7 +3,13 @@
 
 ### [[September 2011|appcloud_updates_september_2011]]
 
-* [[Fix: collectd has been updated to use rrdtool 1.4.5|appcloud_updates_september_2011#update4]] *September 9th, 2011*
+* [[Fix: Access log file rotation|appcloud_updates_september_2011#update7]] *September 12th, 2011*
+
+* [[Minor: Upgrades for JRuby and Ruby|appcloud_updates_september_2011#update6]] *September 12th, 2011* 
+
+* [[Fix: MySQL open files limit increased||appcloud_updates_september_2011#update5]] *September 12th, 2011*
+
+* [[Fix: collectd has been updated to use rrdtool 1.4.5|appcloud_updates_september_2011#update4]] *September 12th, 2011*
 
 * [[Minor: The Deploy user can create and load SQL stored procedures|appcloud_updates_september_2011#update3]] *September 7th, 2011*
 
