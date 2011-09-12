@@ -30,3 +30,5 @@ for these types of requests.
 3. Restart ngnix: 
  
         /etc/init.d/nginx restart
+
+For information about assets in Rails 3.1, see [[Rails 3.1 Asset Pipeline tips for AppCloud|asset-pipeline]] and the [[Rails Guide for asset pipeline|http://guides.rubyonrails.org/asset_pipeline.html]].
