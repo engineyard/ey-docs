@@ -2,6 +2,32 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update7><h2 id="update7">Fix: Access log file rotation</h2></a>
+
+September 12th, 2011
+
+Fixed a problem where, under certain conditions, access log files fail to rotate, resulting in excessively large files.
+
+<a href=#update6><h2 id="update6"> Minor: Upgrades for JRuby and Ruby  </h2></a>
+
+September 12th, 2011
+
+JRuby was upgraded to 1.6.4.
+
+Ruby 1.9.2 was upgraded to patch 290.
+
+<a href=#update5><h2 id="update5">Fix: MySQL open files limit increased.</h2></a>
+
+September 12th, 2011
+
+This fix sets the MySQL open files limit to 65535. This allows more simultaneous connections to the database. (If connections were being denied by the low open file limit, this fix might result in increased database usage.)
+
+<a href=#update4><h2 id="update4"> Fix: collectd has been updated to use rrdtool 1.4.5</h2></a>
+
+September 12th, 2011
+
+This upgrade fixes problems with AppCloud dashboard graphs, false low memory alerts, and elevated memory usage and rogue processes for collectd. After upgrading, you might notice that the font for the dashboard graphs has changed.
+
 
 <a href=#update3><h2 id="update3"> Minor: The Deploy user can create and load SQL stored procedures</h2></a>
 

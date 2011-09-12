@@ -15,7 +15,7 @@ component update to provide reliability, security, and compatibility within the 
 As a result, you can confidently deploy and manage your application with any Engine Yard cloud product. Read about the many [[benefits|http://www.engineyard.com/products/appcloud/benefits]] of using our Platform-as-a-Service.
 
 <p class="note">
-  <strong>Note: </strong>This version is correct as of August 8, 2011.
+  <strong>Note: </strong>This version is correct as of September 12, 2011.
 </p>
 
 <br /><br />
@@ -57,13 +57,13 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="full">1.9.2.p180
+          <li class="full">1.9.2.p290
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="full">1.9.2.p180
+          <li class="full">1.9.2.p290
           </li>
         </ul>
         <ul>
@@ -77,7 +77,7 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="full">1.9.2.p180
+          <li class="full">1.9.2.p290
           </li>
         </ul>
         <ul>
@@ -106,19 +106,19 @@ As a result, you can confidently deploy and manage your application with any Eng
       <td></td>
       <td> 
 	    <ul>
-		  <li class="beta" title='Beta'>1.6.2/1.6u26 
+		  <li class="beta" title='Beta'>1.6.4/1.6u26 
 		  </li>
 		</ul>
 	  </td>
       <td>
         <ul>
-          	<li class="beta" title='Beta'>1.6.2/1.6u26 
+          	<li class="beta" title='Beta'>1.6.4/1.6u26 
 			  </li>
         </ul>
       </td>
       <td>
         <p>
-          JRuby support is in beta status for AppCloud.
+          JRuby support is in beta status.
         </p>
       </td>
     </tr>

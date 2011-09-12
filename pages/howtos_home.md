@@ -21,6 +21,3 @@
 ## Troubleshooting
   * [[Find Important Log Files|find-important-log-files]]
   * [[Diagnose Errors on Engine Yard AppCloud|diagnose-errors-on-engine-yard-cloud]]    
-
-## Windows
-  * [[Setup Cygwin to Run Linux Commands in Windows|setup-cygwin-to-run-nix-commands-in-windows]]
