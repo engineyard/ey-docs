@@ -12,11 +12,11 @@ Fixed a problem where, under certain conditions, access log files fail to rotate
 
 September 12th, 2011
 
-JRuby was upgraded to 1.6.4.
+* JRuby was upgraded to 1.6.4.
 
-Ruby 1.9.2 was upgraded to patch 290.
+* Ruby 1.9.2 was upgraded to patch 290.
 
-<a href=#update5><h2 id="update5">Fix: MySQL open files limit increased.</h2></a>
+<a href=#update5><h2 id="update5">Fix: MySQL open files limit increased </h2></a>
 
 September 12th, 2011
 
