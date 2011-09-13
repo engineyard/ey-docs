@@ -94,27 +94,24 @@ For example:
 
 * Slow (with embedded if's):
 
-```bash
-if ($host != 'your_domain.com') {
-	rewrite ^/(.*)$ http://your_domain.com/$1 permanent;
-}
+        if ($host != 'your_domain.com') {
+        	rewrite ^/(.*)$ http://your_domain.com/$1 permanent;
+        }
+        
+        if ($host ~* "www") {
+        	rewrite ^(.*)$ http://www.domain.com;
+        	break;
+        }
 
-if ($host ~* "www") {
-	rewrite ^(.*)$ http://www.domain.com;
-	break;
-}
-```
 	
 * Fast (with a new server block for all rewrites):
 
-```bash	
-server {
-	listen 80 default;
-	server_name _;
-	rewrite ^ http://www.domain.com;
-	...other rewrites...
-}
-```
+        server {
+        	listen 80 default;
+        	server_name _;
+        	rewrite ^ http://www.domain.com;
+        	...other rewrites...
+        }
 
 For help understanding if, see [How if works](http://agentzh.blogspot.com/2011/03/how-nginx-location-if-works.html) and the [nginx docs](http://wiki.nginx.org/NginxHttpRewriteModule#if).
 
