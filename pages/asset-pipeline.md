@@ -23,6 +23,9 @@ styling or your javascript behavior is not working. The fix for this is requires
 This command compiles the assets to the `public/assets` directory anytime you deploy your application
 to AppCloud. This directory is used as a location to store and serve store your application assets.
 
+The configuration setting: config.assets.compile forced to be false and cannot be overridden at this time.
+Only pre-compiled assets currently supported on AppCloud.
+
 <h2 id="paths">Asset paths</h2>
 
 With the asset pipeline, static assets are served from a flat file 
