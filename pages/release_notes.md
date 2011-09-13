@@ -86,7 +86,7 @@
 
 * [[Fix: Rubygems 1.5.2|appcloud_updates_june_2011#update6]]  *June 3rd, 2011*  
 
-* [[<b>Major:</b> High memory XL VM’s available|appcloud_updates_june_2011#update5]] *June 3rd, 2011*  
+* [[<b>Major:</b> High memory XL VM's available|appcloud_updates_june_2011#update5]] *June 3rd, 2011*  
 
 * [[Minor: Environment variables for custom scripts|appcloud_updates_june_2011#update4]] *June 2nd, 2011*  
 

@@ -98,7 +98,7 @@ If you already have a free trial, you might want to upgrade to a full account be
 
 <table>
 	  <tr>
-	    <th>For more information about…</th><th>See…</th>
+	    <th>For more information about...</th><th>See...</th>
 	  </tr>
 	  <tr>
 	    <td>Learning how to deploy on AppCloud by following a tutorial</td><td>[[Tutorial: How to deploy a sample application on a trial account|tutorial_deploy_fat_free_crm]] </td>

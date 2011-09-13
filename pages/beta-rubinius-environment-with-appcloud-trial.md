@@ -25,7 +25,7 @@ The following procedure _outlines_ how to create an application and environment 
 1. Sign up for a trial account.  
 2. Validate and start the trial account.  
 3. Create your (Rubinius) application.  
-    If you don’t have a Rubinius application, choose our ToDo application, located at: `git://github.com/engineyard/todo.git`
+    If you don't have a Rubinius application, choose our ToDo application, located at: `git://github.com/engineyard/todo.git`
 
 <h2 id="topic3"> Reconfigure the environment for Rubinius </h2>
 

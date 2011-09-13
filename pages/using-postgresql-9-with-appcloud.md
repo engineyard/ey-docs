@@ -150,7 +150,7 @@ Known issues associated with PostgresSQL 9 on AppCloud are:
 
 <table>
   <tr>
-    <th>For more information about…</th><th>See…</th>
+    <th>For more information about...</th><th>See...</th>
   </tr>
   <tr>
     <td>about setting up and deploying an AppCloud application in general</td><td>[[docs.engineyard.com|http://docs.engineyard.com]] </td>

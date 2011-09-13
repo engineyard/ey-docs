@@ -6,7 +6,7 @@ The updates described are either important (where you need to take action) or of
 
 July 27th, 2011
 
-Instead of "Environment X has changes, click the ‘Update’ button on the Dashboard to apply them", we now provide additional messaging about what in the environment has changed. 
+Instead of "Environment X has changes, click the Update button on the Dashboard to apply them", we now provide additional messaging about what in the environment has changed. 
 
 This is one step towards our goal of transparency in stack updates.
 
