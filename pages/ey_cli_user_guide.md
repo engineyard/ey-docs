@@ -128,7 +128,7 @@ any of your instances, uploading and applying custom chef recipes, and more.
     - `--account/-c ACCOUNT` (optional): the account that the environment belongs to.
       - This argument may be specified by unambiguous substring.
 
-  - Use download on instances where you have previously uploaded recipes. For example, you might want to download custom chef recipes when troubleshooting—to review the recipes that you are running on your instance. 
+  - Use download on instances where you have previously uploaded recipes. For example, you might want to download custom chef recipes when troubleshooting--to review the recipes that you are running on your instance. 
 
   - The recipes are unpacked into a directory called "cookbooks" in the current directory. If the cookbooks directory already exists, you get an error.
 

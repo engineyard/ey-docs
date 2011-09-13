@@ -12,7 +12,7 @@ Trial accounts provide users with a single High-CPU Medium instance (single serv
 
 ###Using Cluster-based Architectures to Improve Scalability
 
-We recommend that most customers who are going into production move to a cluster—designating separate instances for your application and database will lead to improved performance and stability. To utilize a cluster for your application, you can either select **Basic Cluster** which will provide you with a pre-configured environment or you can choose **Custom** to have fine-grained control over the instances in your environment. Custom environments provide you with the greatest flexibility, and after you've upgraded to a custom environment, adding additional application, database and utility instances is easy and will not require additional down time.
+We recommend that most customers who are going into production move to a cluster--designating separate instances for your application and database will lead to improved performance and stability. To utilize a cluster for your application, you can either select **Basic Cluster** which will provide you with a pre-configured environment or you can choose **Custom** to have fine-grained control over the instances in your environment. Custom environments provide you with the greatest flexibility, and after you've upgraded to a custom environment, adding additional application, database and utility instances is easy and will not require additional down time.
 
 ###Configuring Your New Environment
 
