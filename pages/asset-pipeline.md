@@ -24,7 +24,7 @@ This command compiles the assets to the `public/assets` directory anytime you de
 to AppCloud. This directory is used as a location to store and serve store your application assets.
 
 The configuration setting: config.assets.compile forced to be false and cannot be overridden at this time.
-Only pre-compiled assets currently supported on AppCloud.
+Only pre-compiled assets are currently supported on AppCloud.
 
 <h2 id="paths">Asset paths</h2>
 
