@@ -22,9 +22,6 @@ any of your instances, uploading and applying custom chef recipes, and more.
 
 ## Command Reference
 
-** Formatting Warning: ** This wiki renders two dashes (- -) as an em-dash (--). All single-letter options start with a single dash (e.g. -e), but all long options start with two dashes (- - environment). We are working on making this wiki not screw up the formatting. Until then, watch out for missing dashes.
-
-- - -
 #### `ey help`
 
    - Print a short help message.
@@ -52,7 +49,7 @@ any of your instances, uploading and applying custom chef recipes, and more.
       - `--ref/-r GIT-REF` (optional): the reference to deploy 
         - You can specify a branch, a tag, or a SHA. 
         - This argument defaults to the current branch. 
-        - Note: the deployment process pulls the code from the git remote that was previously entered into the EY AppCloud web application. Thus, the named branch must exist in that git remote for your deployment to succeed.
+        - **Note:** the deployment process pulls the code from the git remote that was previously entered into the EY AppCloud web application. Thus, the named branch must exist in that git remote for your deployment to succeed.
     - `--branch`: alias for `--ref`
     - `--tag`: alias for `--ref`
     - `--app/-a NAME` (optional): the application to deploy. If the current working directory is inside the application's Git repository and `--app` is omitted, `ey` will infer the application from the configured Git remotes.
