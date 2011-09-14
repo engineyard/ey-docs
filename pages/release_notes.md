@@ -46,15 +46,15 @@
 
 ### [[July 2011|appcloud_updates_july_2011]]
 
-* [[Minor: Improved UI messaging for updates|appcloud_updates_july_2011#update6]]  *July 27th, 2011*
+* [[Minor: Improved UI messaging for updates|appcloud_updates_july_2011#update8]]  *July 27th, 2011*
 
-* [[Fix: New Relic plan upgrades|appcloud_updates_july_2011#update5]]  *July 27th, 2011*
+* [[Fix: New Relic plan upgrades|appcloud_updates_july_2011#update7]]  *July 27th, 2011*
 
-* [[<b>Action Req'd:</b> Upgrade to Ruby 1.8.7-p352|appcloud_updates_july_2011#update4]]  *July 22nd, 2011*
+* [[<b>Action Req'd:</b> Upgrade to Ruby 1.8.7-p352|appcloud_updates_july_2011#update6]]  *July 22nd, 2011*
 
-* [[<b>Major:</b> Improvements to the app-centric UI: more details and easier deploys|appcloud_updates_july_2011#update6]]  *July 19th, 2011*
+* [[<b>Major:</b> Improvements to the app-centric UI: more details and easier deploys|appcloud_updates_july_2011#update5]]  *July 19th, 2011*
 
-* [[<b>Major:</b> JRuby is now available in Beta for all customers|appcloud_updates_july_2011#update5]]  *July 18th, 2011*    
+* [[<b>Major:</b> JRuby is now available in Beta for all customers|appcloud_updates_july_2011#update4]]  *July 18th, 2011*    
 
 * [[Minor: Increased maximum connections for HAProxy|appcloud_updates_july_2011#update3]]  *July 8th, 2011*  
 
@@ -86,7 +86,7 @@
 
 * [[Fix: Rubygems 1.5.2|appcloud_updates_june_2011#update6]]  *June 3rd, 2011*  
 
-* [[<b>Major:</b> High memory XL VM’s available|appcloud_updates_june_2011#update5]] *June 3rd, 2011*  
+* [[<b>Major:</b> High memory XL VM's available|appcloud_updates_june_2011#update5]] *June 3rd, 2011*  
 
 * [[Minor: Environment variables for custom scripts|appcloud_updates_june_2011#update4]] *June 2nd, 2011*  
 

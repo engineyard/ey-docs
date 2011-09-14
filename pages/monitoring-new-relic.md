@@ -1,6 +1,6 @@
 # Monitor applications with New Relic on AppCloud
 
-[New Relic](http://newrelic.com/) is a tool for monitoring real-time web application performance — from the end-user experience down to a line of application code. 
+[New Relic](http://newrelic.com/) is a tool for monitoring real-time web application performance -- from the end-user experience down to a line of application code. 
 
 You get real data about your users. For example, you can see what countries your 
 users are in, what browsers they use, how long they wait for pages to download. You 

@@ -2,22 +2,22 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
-<a href=#update6><h2 id="update6"> Minor: Improved UI messaging for updates</h2></a>
+<a href=#update8><h2 id="update8"> Minor: Improved UI messaging for updates</h2></a>
 
 July 27th, 2011
 
-Instead of "Environment X has changes, click the ‘Update’ button on the Dashboard to apply them", we now provide additional messaging about what in the environment has changed. 
+Instead of "Environment X has changes, click the Update button on the Dashboard to apply them", we now provide additional messaging about what in the environment has changed. 
 
 This is one step towards our goal of transparency in stack updates.
 
 
-<a href=#update5><h2 id="update5"> Fix: New Relic plan upgrades</h2></a>
+<a href=#update7><h2 id="update7"> Fix: New Relic plan upgrades</h2></a>
 
 July 27th, 2011
 
 Fixed an issue that prevented upgrading New Relic plans from within the dashboard.
 
-<a href=#update4><h2 id="update4"> **Action Req'd:** Upgrade to Ruby 1.8.7-p352 </h2></a>
+<a href=#update6><h2 id="update6"> **Action Req'd:** Upgrade to Ruby 1.8.7-p352 </h2></a>
 
 July 22nd, 2011
 
@@ -28,7 +28,7 @@ If you are using Ruby 1.8.7 and Unicorn, you must redeploy after updating.
 If you are using Ruby 1.8.7 and Passenger, we recommend that you redeploy after updating. This is to make sure that your code runs under the latest version of the MRI interpreter.
 
 
-<a href=#update6><h2 id="update6"> **Major:** Improvements to the app-centric UI: more details and easier deploys </h2></a>
+<a href=#update5><h2 id="update5"> **Major:** Improvements to the app-centric UI: more details and easier deploys </h2></a>
 
 July 19th, 2011
 
@@ -40,7 +40,7 @@ In response to user feedback, we made some modifications to our application-cent
 *  Flags to clearly indicate whether an environment is production, staging, or development 
 
 
-<a href=#update5><h2 id="update5"> **Major:** JRuby is now available in Beta for all customers </h2></a>
+<a href=#update4><h2 id="update4"> **Major:** JRuby is now available in Beta for all customers </h2></a>
 
 July 18th, 2011
 
@@ -77,19 +77,3 @@ The nginx_uploadprogress_module was upgraded to address a vulnerability in certa
 
 For information, see [[nginx package in Lucid Lynx allows null byte vulnerability|https://bugs.launchpad.net/ubuntu/+source/nginx/+bug/783508]].
 
-
-
-[1]: #update1        "update1"
-[2]: #update2        "update2"
-[3]: #update3        "update3"
-[4]: #update4        "update4"
-[5]: #update5        "update5"
-[6]: #update6        "update6"
-[7]: #update7        "update7"
-[8]: #update8        "update8"
-[9]: #update9        "update9"
-[10]: #update10        "update10"
-[11]: #update11        "update11"
-[12]: #update12        "update12"
-[13]: #update13        "update13"
-[14]: #update14        "update14"

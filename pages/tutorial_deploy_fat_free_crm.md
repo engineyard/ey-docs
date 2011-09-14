@@ -142,7 +142,7 @@ In this procedure, you set a Git deploy key so that you can deploy the Fat Free 
 
 <h2 id="topic7"> Try running the Fat Free CRM application </h2>
 
-In this procedure, you try running the application—and see what happens when a gem is missing.
+In this procedure, you try running the application -- and see what happens when a gem is missing.
 
 ### To try running the Fat Free CRM application
 
