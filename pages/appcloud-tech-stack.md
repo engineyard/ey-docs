@@ -678,14 +678,14 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="full">0.9.9
+          <li class="full">0.9.8.1
           </li>
         </ul>
       </td>
       <td></td>
       <td>
         <ul>
-          <li class="full">0.9.9
+          <li class="full">0.9.8.1
           </li>
         </ul>
       </td>
