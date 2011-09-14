@@ -1,7 +1,6 @@
 # Rebuilding an environment
 
-This article will walk you through how to rebuild an environment and advise you on the 
-steps necessary to ensure minimal downtime.
+This page describes how to rebuild an environment and how to minimize downtime.
 
 ## Why would an environment need to be rebuilt?
 
@@ -26,10 +25,8 @@ taken at the time of termination runs faster because of the recent prior snapsho
 
 ## Steps to rebuild an environment
 
-<p class="note">
-  <strong>Note:</strong> It is highly recommended to perform a test rebuild using a 
+**Note:** It is highly recommended to perform a test rebuild using a 
   <a href="/environment-clone.html">cloned environment</a> first.
-</p>
 
 
   1. Put your site into [[maintenance mode|deployment-maintenance-pages]] using the Engine Yard gem:

@@ -77,7 +77,7 @@ Tell Pingdom what URI to check, how often, and where to send an alert if the URI
     * URL/IP - For example, `www.mysite.com/about.html`
 4. Test and add the check.
 
-<!--    * URL/IP — For example, <!-- `www.mysite.com/fitter_happier/site_check` or `www.mysite.com/about.html` -->
+<!--    * URL/IP For example, `www.mysite.com/fitter_happier/site_check` or `www.mysite.com/about.html` -->
 
 [1]: #topic1        "topic1"
 [2]: #topic2        "topic2"

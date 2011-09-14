@@ -58,21 +58,18 @@ If you are using an elastic IP for your cluster, this hostname will not change a
 
 <h2 id="deploy-log"><a href="#deploy-log"> Where is the deploy log? </a></h2>
 
-If there is a problem deploying your application, the dashboard will 
-tell you to view the deploy log for the failed deployment.  You can 
+If there is a problem deploying your application, the dashboard
+tells you to view the deploy log for the failed deployment.  You can 
 view the deploy log two ways:
 
-  * ### On your dashboard
-    Your dashboard will display a **View Log** hyperlink next to the deployment status message.
-    Clicking on this link will open the log file in a separate browser window for viewing.
+  * **On your dashboard**. Your dashboard displays a View Log link next to the deployment status message.  
+    Click this link to open the log file in a separate browser window.
     
-  * ### On your instances
-    View your log file by connecting to your instances via SSH. 
-    Once you are connected to your instance, you can locate the log file in your
+  * **On your instances**. View your log file by connecting to your instances via SSH. 
+    After you are connected to your instance, locate the log file in your
     home directory with a filename like the following: `yourapp-deploy.log`, where
     'yourapp' is the name of your application deployed on this instance.
 
-    <br />
     You can view the log using the UNIX commands `cat`, `more` or `less`.
 
 

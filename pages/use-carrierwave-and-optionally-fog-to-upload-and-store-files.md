@@ -59,7 +59,7 @@ For more information, see [[github.com/jnicklas/carrierwave|http://github.com/jn
 <h2 id="update3">Setting up CarrierWave for online storage with a web service</h2>
 
 
-Using CarrierWave with fog gives you flexibility to store your files on any cloud service supported by fog and to switch between them as needed. This also keeps your uploaded files separated from your AppCloud instance — making a cleaner application.
+Using CarrierWave with fog gives you flexibility to store your files on any cloud service supported by fog and to switch between them as needed. This also keeps your uploaded files separated from your AppCloud instance -- making a cleaner application.
 	
 This example uses Amazon S3, which is a popular online storage web service. However, you can use any fog-supported service to store your files for retrieval with CarrierWave.
 
