@@ -3,6 +3,12 @@
 
 ### [[September 2011|appcloud_updates_september_2011]]
 
+* [[Minor: Node.js installed by default|appcloud_updates_september_2011#update10]] *September 14th, 2011*
+
+* [[Fix: LANG=C|appcloud_updates_september_2011#update9]] *September 14th, 2011*
+
+* [[Minor: Nginx retrieving assets|appcloud_updates_september_2011#update8]] *September 14th, 2011*
+
 * [[Fix: Access log file rotation|appcloud_updates_september_2011#update7]] *September 12th, 2011*
 
 * [[Minor: Upgrades for JRuby and Ruby|appcloud_updates_september_2011#update6]] *September 12th, 2011* 
