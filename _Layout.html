@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
   <head>
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
     <title>Engine Yard Docs: {{ page.title }}</title>
     <meta name="description" content="Learn why Engine Yard\'s managed Rails hosting, Rails deployment &amp; 24/7/365 live service is the best">
     <meta name="keywords" content="Ruby on Rails Fully-Managed Hosting, Scaling, Scaled, Cluster Slices, Cloud Computing, On-Demand Deployment, Merb, Rubinius, Open-Source Software">
@@ -9,6 +10,7 @@
     <script src="http://use.typekit.com/cra4agv.js"></script> 
     <script>try{Typekit.load();}catch(e){}</script> 
     <link href="http://ec2-184-72-238-14.compute-1.amazonaws.com/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/css/application.css" media="screen" rel="stylesheet" type="text/css" />  
   </head>
   <body id='devcenter'> 
     <div id='container'> 
@@ -91,6 +93,10 @@
       <div class='wrapper'> 
         <div id='content'> 
           <h2 class="header">Documentation</h2> 
+          <form action="/search" method="get" class="search"> 
+            <input type="text" name="q" id="searchbox" placeholder="Search" /> 
+            <!--input type="submit" value="" class="gsc-search-button" /--> 
+          </form>
           <div class="subnav">
             {{ site.pages["toc"].content }}
           </div> 
@@ -214,7 +220,7 @@
           </div> 
           <div class='hidden'></div> 
           <script src="http://ec2-184-72-238-14.compute-1.amazonaws.com/engineyard-theme/javascripts/application.min.js?1314226652" type="text/javascript"></script> 
-          <script src="{{ wiki.base_path }}js/plugins.js"></script>
+          <script src="{{ wiki.base_path }}js/plugins.js"></script>          
         </div> 
       </div> 
     </div> 
