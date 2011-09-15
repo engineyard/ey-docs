@@ -4,5 +4,7 @@
 
 section.main h2 {
   margin-top: 2.5em;
+  margin-bottom: .25em;
+  padding-bottom: .25em;
   border-bottom: 1px solid #DFDFDF;
 }
