@@ -82,8 +82,7 @@ AppCloud is our recommended deployment platform for users who want to scale from
 
   * Production environments that need to rapidly scale up or down with the demand of your application.
   * Temporary demonstration environments.
-  * Utility instances for any use you can imagine and
-  * [[program with chef|custom-chef-recipes]].
+  * Utility instances for any use you can imagine and [[program with chef|custom-chef-recipes]].
   * Staging environments.  Use our cloning feature to quickly clone your current production environment.
   * Experimentation and exploration with Engine Yard's [[battle-ready stack|http://www.engineyard.com/technology/stack]].
 
@@ -98,7 +97,7 @@ If you've got an app that runs with:
   * Sinatra
   * Rack
 
-Then it runs on AppCloud.  Check our [[Stack Page|http://www.engineyard.com/technology/stack]] for the latest version we support.
+Then it runs on AppCloud.  See our [[Stack Page|http://www.engineyard.com/technology/stack]] for the latest version we support.
 
 <a href=#FAQ13><h2 id="FAQ13"> Does Engine Yard manage my Domain Name or does my Company? </h2></a>
 
@@ -142,11 +141,11 @@ Read [[Instance Overview|instance-types|]] for more information.
 
 <a href=#FAQ19><h2 id="FAQ19"> How do I migrate from SVN to Git? </h2></a>
 
-Github has written a guide that outlines many options you have when you would like to import your SVN repository into GIT.
+Github has a guide that outlines many options for importing your SVN repository into GIT.
 
 [[GitHub - Import from Subversion|http://github.com/guides/import-from-subversion|]]
 
-If you plan on using GitHub, the first option to automatically import your SVN repo is very easy to use.  The other manual options give you more control over reconfiguring your authors or the ability to import Tags.
+If you plan on using GitHub, the first option to automatically import your SVN repo is straightforward.  The other manual options give you more control over reconfiguring your authors or the ability to import Tags.
 
 <a href=#FAQ20><h2 id="FAQ20"> Are there reserved names in AppCloud? </h2></a>
 
@@ -163,32 +162,32 @@ Source: Feature Guide, Amazon EC2 Availability Zones (developer.amazonwebservice
 
 For information about setting availability zones in AppCloud, see [[Using multi-region on AppCloud|using-multi-region-with-engine-yard-appcloud]].
 
-<a href=#FAQ22><h2 id="FAQ22"> How do I change my Credit Card information? </h2></a>
+<a href=#FAQ22><h2 id="FAQ22"> How do I change my credit card information? </h2></a>
 
-  - Click on **Payment Information** under ACCOUNT MANAGEMENT in the bottom left.
-  - Then enter in new Credit Card information and click on the **Add a Credit Card** link.
+  - Click Payment Information under Account Management in the bottom left.
+  - Enter in new credit card information and click Add a Credit Card.
 
-Once you've added a new card you can change the current credit card.  There is not a way to delete a credit card.
+After you've added a new card, you can change the current credit card. There is not a way to delete a credit card.
 
 <a href=#FAQ23><h2 id="FAQ23"> How do AppCloud instances differ from xCloud slices? </h2></a>
 
 ### What Instances and Slices Have in Common
 
-Right now, your AppCloud instance closely resembles the xCloud slices.
+Your AppCloud instance closely resembles the xCloud slices.
 
-All of the hard work, detailed configuration and battle-tested setup that have gone into building and perfecting the [[Engine Yard Stack|http://www.engineyard.com/technology/stack]] serves as the foundation for each AppCloud instance. 
+The hard work, detailed configuration, and battle-tested setup that have gone into building the [[Engine Yard Stack|http://www.engineyard.com/technology/stack]] serve as the foundation for each AppCloud instance. 
 
 ### Convention over Configuration
 
-We continue to use conventions developed on the xCloud.  If you know your way around an Engine Yard slice, you should feel right at home.
+We continue to use conventions developed on the xCloud.  If you are familiar with an Engine Yard slice, you should feel at home.
 
 ### No GFS or Shared Volume
 
-The primary difference you may notice after tinkering with your first setup is that there is no shared volume between instances.  If you need shared assets, look to use a service like [[Amazon S3|http://aws.amazon.com/s3/]] or [[Amazon Cloudfront CDN|http://aws.amazon.com/cloudfront/]].
+The primary difference you may notice is that there is no shared volume between instances.  If you need shared assets, use a service like [[Amazon S3|http://aws.amazon.com/s3/]] or [[Amazon Cloudfront CDN|http://aws.amazon.com/cloudfront/]].
 
 <a href=#FAQ24><h2 id="FAQ24"> Unicorn failing to reload after Bundler </h2></a>
 
-After upgrading to Bundler 1.0 you may notice that Unicorn no longer gracefully deploys.  In order to resolve this problem you need to add the `unicorn` gem to your Gemfile like below and re-deploy.
+After upgrading to Bundler 1.0 you may notice that Unicorn no longer gracefully deploys.  In order to resolve this problem, you need to add the `unicorn` gem to your Gemfile like below and re-deploy.
 
     gem 'unicorn', '1.0.1'
 
@@ -212,8 +211,8 @@ If you need assistance protecting your site against DDoS attacks, here are some 
 
 While trying to update your custom chef scripts, if you run into the error "400 Bad Request" you need to do two things.
 
-  - Click on **Update Instance** on the environment you're trying to apply scripts to.
-  - Then run `sudo gem update engineyard` to make sure your `engineyard` gem is on the latest version.
+  - Click Update Instance on the environment that you're trying to apply scripts to.
+  - Run `sudo gem update engineyard` to make sure your `engineyard` gem is on the latest version.
 
 This should make sure all API endpoints line up between the gem and the AppCloud application.
 
@@ -223,9 +222,9 @@ Also you may see the error:
     
 <a href=#FAQ27><h2 id="FAQ27"> Error: "missing activerecord-mysql2-adapter gem" </h2></a>
 
-To fix this, you just need to include the `mysql2` gem in your Gemfile.
+To fix this, include the `mysql2` gem in your Gemfile.
 
-<a href=#FAQ28><h2 id="FAQ28"> Bundler 1.0 Will Not Install Compiled Gems in UNIX When bundle install is Run in Windows </h2></a>
+<a href=#FAQ28><h2 id="FAQ28"> Bundler 1.0 will not install compiled gems in UNIX when bundle install is run in Windows </h2></a>
 
 When developing on Windows, you'll find when you deploy your applications that it will not find certain gems such as MySQL2 no matter what you do.  For more information, see [[Bug report #646|https://github.com/carlhuda/bundler/issues#issue/646]].
 
