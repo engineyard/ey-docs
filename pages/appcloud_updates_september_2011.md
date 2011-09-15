@@ -2,7 +2,7 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
-<a href=#update10><h2 id="update10">Minor: Node.js installed by default</h2></a>
+<a href=#update10><h2 id="update10">Minor: Node.js pre-installed under /opt/node</h2></a>
 
 September 14th, 2011
 
