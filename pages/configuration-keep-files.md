@@ -31,6 +31,15 @@ These are the files that can be made into keep files.
 <!-- All files in the folders: /data/nginx/servers/ /etc/monit.d/ can be keep files -->
 <!-- Keep files can be especially useful for monit if you're trying to increase the memory limit for mongrels or background processes, etc. -->
 
+## <b>Important!</b> Risks associated with keep files
+
+There are risks associated with keep files. Use keep files with caution.
+
+Making a keep file effectively "freezes" the file. If your environment changes, either through changes that you apply yourself or when you upgrade to the latest Engine Yard stack, your keep files can become out-of-date and thus compromise your application. 
+
+Before making changes to a production environment, review your keep files. 
+
+<b>Tip:</b> Where possible, consider using an include file instead of a keep file.
 
 ## To use keep files for configuration
 
@@ -52,7 +61,7 @@ These are the files that can be made into keep files.
 <h2 id="topic5"> More information </h2>  
 <table>
   <tr>
-    <th>For more information about…</th><th>See…</th>
+    <th>For more information about...</th><th>See...</th>
   </tr>
   <tr>
     <td>SSH in AppCloud</td><td>[[Connect to your instance via SSH|ssh-connect]] </td>

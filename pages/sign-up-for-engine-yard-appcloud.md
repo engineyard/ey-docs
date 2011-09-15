@@ -110,7 +110,7 @@ If you already have a free trial, you might want to upgrade to a full account be
 	    <td>Participating in Alpha and Beta testing</td><td>[[Beta program|beta-intro]]</td>
 	  </tr>
 	<tr>
-	    <td>Environments and clusters</td><td>[[Compute instances on AppCloud|appcloud-instances]]</td>
+	    <td>Environments and clusters</td><td>[[Compute instances on AppCloud|instance-types]]</td>
 	  </tr>
 	 <tr>
 	    <td>New Relic</td><td>[[Monitor applications with New Relic on AppCloud|monitoring-new-relic]]</td>

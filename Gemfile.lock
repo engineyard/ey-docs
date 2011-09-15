@@ -1,14 +1,3 @@
-GIT
-  remote: https://github.com/francois2metz/gollum-site.git
-  revision: 5eb54862a93ca56bd77de5c645be72e65ed01757
-  branch: custom_sanitization
-  specs:
-    gollum-site (0.1.9)
-      directory_watcher
-      gollum (>= 1.2.0)
-      liquid (>= 2.2.2)
-      mixlib-log (>= 1.1.0)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -33,13 +22,18 @@ GEM
     github-markup (0.5.3)
     gollum (1.3.1)
       albino (~> 1.3.2)
-      github-markup (>= 0.4.0, < 1.0.0)
+      github-markup (< 1.0.0, >= 0.4.0)
       grit (~> 2.4.1)
-      mustache (>= 0.11.2, < 1.0.0)
+      mustache (< 1.0.0, >= 0.11.2)
       nokogiri (~> 1.4)
       redcarpet
       sanitize (~> 2.0.0)
       sinatra (~> 1.0)
+    gollum-site (0.1.10)
+      directory_watcher
+      gollum (>= 1.2.0)
+      liquid (>= 2.2.2)
+      mixlib-log (>= 1.1.0)
     grit (2.4.1)
       diff-lcs (~> 1.1)
       mime-types (~> 1.15)
@@ -62,7 +56,7 @@ GEM
     rest-client (1.6.7)
       mime-types (>= 1.16)
     sanitize (2.0.3)
-      nokogiri (>= 1.4.4, < 1.6)
+      nokogiri (< 1.6, >= 1.4.4)
     sinatra (1.2.6)
       rack (~> 1.1)
       tilt (< 2.0, >= 1.2.2)
@@ -74,8 +68,9 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.0.12)
+  directory_watcher
   engineyard
-  gollum-site!
+  gollum-site
   pygmentize
   rake
   rdiscount

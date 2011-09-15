@@ -12,16 +12,16 @@ environment.
 There are various roles that an instance can play in your application's environment on AppCloud. These
 roles include the following:
 
-* ### [[Application Instances|appcloud-instances#app-instance]]
+* ### [[Application Instances|instance-types#app-instance]]
   Instances configured to run your application tier.
   
-* ### [[Database Instances|appcloud-instances#db-instance]]
+* ### [[Database Instances|instance-types#db-instance]]
   Instances configured to run your database tier.
 
-* ### [[Utility Instances|appcloud-instances#util-instance]]
+* ### [[Utility Instances|instance-types#util-instance]]
   Instances configured for utility & background work.
   
-* ### [[Single Instance Environment|appcloud-instances#single-instance]]
+* ### [[Single Instance Environment|instance-types#single-instance]]
   A single instance configured to combine multiple roles into one environment.
 
 
