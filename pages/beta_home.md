@@ -81,8 +81,9 @@ Alpha features are currently available to test on an as requested basis for cust
 
 Alpha features carry a **warning: do not request support via the normal support channels**.
 
-Current Alpha Features (and how to request access):
+Current Alpha features (and how to request access):
 
+* [[MySQL 5.1 and 5.5|database-mysql-upgrade]] - [[Request access|signup-mysql]]
 * [[PostgreSQL 9|postgresql]] - [[Request access|signup-postgresql]]
 * [[Rubinius]] - [[Request access|signup-rubinius]]
 
@@ -94,7 +95,8 @@ Beta features are visible and usable by all Engine Yard customers (as applicable
 
 For each Beta feature there is the [[Beta Conversations|http://groups.google.com/group/ey-beta-talk]] group to discuss bugs, issues, and feature requests with Engine Yard staff and other Engine Yard customers.
 
-Current Beta feature:
+Current Beta features:
 
   * [[Passenger 3|using-passenger-with-engine-yard-appcloud]]
   * [[JRuby/Trinidad|jruby-beta]]
+  * [[Link to a Github account|linking-github-to-appcloud]]
