@@ -2,6 +2,12 @@
   padding: 6px 20px 6px 50px;
 }
 
+section.main h1 {
+  font-size: 2em;
+}
+section.main h1:first-child {
+  color: #000;
+}
 section.main h2 {
   margin-bottom: .25em;
   margin-top: 2.5em;
@@ -10,7 +16,6 @@ section.main h2 {
   font-weight: bold;
   border-bottom: 1px solid #DFDFDF;
 }
-
 section.main h3 {
   margin-bottom: 0;
   margin-top: 1.8em;
