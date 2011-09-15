@@ -2,3 +2,7 @@
   padding: 6px 20px 6px 50px;
 }
 
+section.main h2 {
+  margin-top: 2.5em;
+  border-bottom: 1px solid #DFDFDF;
+}
