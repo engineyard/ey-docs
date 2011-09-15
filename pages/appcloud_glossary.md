@@ -40,6 +40,10 @@ In the file system we refer to the root partition as the primary volume that the
 
 SSH Keys are a means of secure, passwordless authentication.  The "public" key will be installed on your instance.  The "private" key will be on your local computer, and grant you access to the instance when you SSH in.
 
+## Takeover
+
+Takeover is the Engine Yard failover process for recovering from an AppCloud application master failure. For more information about takeovers, see [[AppCloud application master takeover|instance-takeover]].
+
 ## Volumes
 
 These are the virtual disks which will be mounted at /data and /db on your instance.  These are used to store data that needs to be persistent.
