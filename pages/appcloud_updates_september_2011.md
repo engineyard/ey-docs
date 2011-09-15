@@ -2,6 +2,24 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update10><h2 id="update10">Minor: Node.js pre-installed under /opt/node</h2></a>
+
+September 14th, 2011
+
+Node.js is now installed by default under /opt/node. This change makes asset complication faster.
+
+<a href=#update9><h2 id="update9">Fix: LANG=C</h2></a>
+
+September 14th, 2011
+
+The unix environment variable LANG is now set to C by default. Previously, LANG was unspecified by default. This fix resolves some gem installation problems.
+
+<a href=#update8><h2 id="update8">Minor: Nginx retrieving assets</h2></a>
+
+September 14th, 2011
+
+Nginx now supports retrieving assets from the local file system (the `assets` directory and the `last_assets` directory) or upstream from Passenger or Unicorn. This change is in preparation for full Rails 3.1 support.
+
 <a href=#update7><h2 id="update7">Fix: Access log file rotation</h2></a>
 
 September 12th, 2011
