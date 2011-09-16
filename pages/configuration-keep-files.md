@@ -12,21 +12,23 @@ These are the files that can be made into keep files.
 
 **Note:** Only this subset of files in the /etc or /data directories can be made into keep files. Other files in these directories might be overwritten or ignored even if they have been prefaced with "keep".  
 
-* /etc/engineyard/collectd.conf
+
 * /data/#{appname}/shared/config/database.yml
-* /etc/haproxy.cfg
-* /etc/monit.d/#{name}#{appname}.monitrc
-* /etc/mysql/my.cnf
+* /data/nginx/nginx.conf
 * /data/nginx/common/proxy.conf
 * /data/nginx/common/servers.conf
 * /data/nginx/common/fcgi.conf
-* /data/nginx/nginx.conf
 * /data/nginx/servers/#{appname}.rewrites
 * /data/nginx/servers/#{appname}.conf
 * /data/nginx/servers/#{appname}.ssl.conf
+* /etc/haproxy.cfg
+* /etc/mysql/my.cnf
 * /etc/conf.d/nginx
+* /etc/engineyard/collectd.conf
 * /etc/redis/redis.conf
-* /etc/monit.d/unicorn_#{app.name}.monitrc
+* /etc/monit.d/unicorn_#{appname}.monitrc
+* /etc/monit.d/#{name}.#{appname}.monitrc
+
 
 <!-- All files in the folders: /data/nginx/servers/ /etc/monit.d/ can be keep files -->
 <!-- Keep files can be especially useful for monit if you're trying to increase the memory limit for mongrels or background processes, etc. -->
