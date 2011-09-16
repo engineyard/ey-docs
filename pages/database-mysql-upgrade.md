@@ -103,11 +103,11 @@ See the MySQL documentation for full details on dumping and restoring a database
 
 2. 	Move the output file to the new environment. 
 	
-		scp dumpfile.sql _newserver_:/_path_/_to_/_file_/dumpfile.sql
+		scp dumpfile.sql username@newserver:/_path_/_to_/_file_/dumpfile.sql
 		
 	For example,  
 	
-	    scp dumpfile.sql ec2-174-129-17-196.compute-1.amazonaws.com:/nice/path/to/dumpfile.sql		
+	    scp dumpfile.sql deploy@ec2-174-129-17-196.compute-1.amazonaws.com:/tmp/mysql		
 	
 	**Note** The new server is the database instance assigned for your MySQL 5.1/5.5 Alpha AppCloud environment that you created [above][3].
 					 
