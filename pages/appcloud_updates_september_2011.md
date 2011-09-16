@@ -2,6 +2,12 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update11><h2 id="update11">Fix: Multiple accounts during signup</h2></a>
+
+September 14th, 2011
+
+Fixed an issue where clicking reload or submit could accidentally create multiple accounts when signing up for a single account.
+
 <a href=#update10><h2 id="update10">Minor: Node.js pre-installed under /opt/node</h2></a>
 
 September 14th, 2011
