@@ -12,7 +12,7 @@ See [[What are availability zones?|amazon_faq]] in the Cloud FAQ section.
 
 ## Ebuilds
 
-The gentoo linux distribution uses ebuilds to specify instructions on how to "built" from source a specific library or binary.  So if your application requires the "ImageMagick" library you'll need to install the library.  See [[Manage Unix Packages|application_home]] for more detailed instructions.
+The Gentoo linux distribution uses ebuilds to specify instructions on how to "built" from source a specific library or binary.  So if your application requires the "ImageMagick" library you'll need to install the library.  See [[Manage Unix Packages|application_home]] for more detailed instructions.
 
 ## Environments
 
@@ -30,7 +30,7 @@ These are the virtualized servers that your applications will run on.
 
 ## IP Addresses
 
-IP Addresses are a means of identifying a specific entity on a computer network.  Specifically you will use the IP address to connect to your instance via SSH, and to point your domain's DNS' records to.
+IP Addresses are a means of identifying a specific entity on a TCP/IP network.  Specifically, you use the IP address to connect to your instance via SSH and to point your domain DNS records to.
 
 ## Root Partition
 
@@ -42,7 +42,7 @@ SSH Keys are a means of secure, passwordless authentication.  The "public" key w
 
 ## Takeover
 
-Takeover is the Engine Yard failover process for recovering from an AppCloud application master failure. For more information about takeovers, see [[AppCloud application master takeover|instance-takeover]].
+Takeover is the Engine Yard process for recovering from an AppCloud application master failure. For more information about takeovers, see [[AppCloud application master takeover|instance-takeover]].
 
 ## Volumes
 
