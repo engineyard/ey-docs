@@ -1,4 +1,4 @@
-# How To Use Deploy Hooks with AppCloud
+# Using deploy hooks with AppCloud
 
 ## Introduction
 
@@ -15,10 +15,10 @@ Deploy hooks live in the `APP_ROOT/deploy` directory of your application. The or
 in which they run is specified in the documentation for the `ey deploy` command.
 
 
-## Capistrano Similarities
+## Capistrano similarities
 
 Our deployment system mimics Capistrano's filesystem layout so it will 
-be familiar to you if you have ever used Capistrano. In fact it is still 
+be familiar to you if you have ever used Capistrano. In fact, it is still 
 backwards compatible with Capistrano so you can use both at the same time 
 if so desired.
 
@@ -41,15 +41,15 @@ times during the deployment process. The files are defined as follows:
 		after_restart.rb
 		
 Remember that, in order for migrations to run, your entire environment 
-will be loaded. So if you have any symlinks that need to be created in 
-order for the application to start properly you will want to put them 
-in `before_migrate.rb` instead of `before_symlink.rb`, since 
+is loaded. So if you have any symlinks that need to be created in 
+order for the application to start properly, put them 
+in `before_migrate.rb` instead of `before_symlink.rb`, because 
 `before_symlink.rb` runs **after** the migration.
 
 
-## Shell Commands
+## Shell commands
 
-You have access to a `run` command and a `sudo` command. Both of these will run shell commands. `run` will run as your normal Unix user that the app is deployed as and `sudo` will run as root for when you need more permissions.
+You have access to a `run` command and a `sudo` command. Both of these run shell commands. `run` runs as your normal unix user that the application is deployed as and `sudo` runs as root for when you need more permissions.
 
 For example:
     run "echo 'release_path: #{release_path}' >> #{shared_path}/logs.log"
@@ -57,7 +57,7 @@ For example:
     sudo "echo 'sudo works' >> /root/sudo.log"
 
 
-### Calling Git Commands
+### Calling git commands
 
 Here's an example where you can call a git command from a deploy hook:
 
@@ -65,10 +65,10 @@ Here's an example where you can call a git command from a deploy hook:
 
 Replace `<app>` with the name of your app and change the path for your git repo.
 
-## Deploy Hook Variables
+## Deploy hook variables
 
-These scripts will be instance_eval'd in the context of the chef-deploy 
-resource. This means that you will have certain commands and variables 
+These scripts are instance_eval'd in the context of the chef-deploy 
+resource. This means that you have certain commands and variables 
 available to you in these hooks. For example:
 
 * ### release_path
@@ -172,7 +172,7 @@ Here is an example JSON document that shows you what kind of info is inside the 
     }
 
 
-<h2 id="api"> Deploy hooks API</h2>
+<h2 id="api">Deploy hooks API</h2>
 
 Deploy hooks are plain old Ruby code. However, the engineyard gem does make 
 some additional methods available within deploy hooks in order to simplify 
