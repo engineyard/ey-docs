@@ -1,4 +1,4 @@
-# Setup your domain and DNS for AppCloud
+# Set up your domain and DNS for AppCloud
 
 Anyone can access your web application on AppCloud by the generic http://ec2-xxx-xx-xxx-xxx.compute-1.amazonaws.com/. However, most users would rather have www.myapp.com to be the point of access. How can we accomplish that with AppCloud?
 
