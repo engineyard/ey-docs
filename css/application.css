@@ -1,5 +1,17 @@
+.subnav ul li.selected.expanded {
+  background: transparent;
+}
+
+.subnav ul li ul li.selected.expanded {
+  background: #2886BB;
+}
+
 .subnav ul li ul li ul li a {
   padding: 6px 20px 6px 50px;
+}
+
+.subnav ul li.selected.expanded a.selected.arrow::after {
+  background-position: -14px -138px;
 }
 
 section.main h1 {
