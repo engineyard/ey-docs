@@ -81,8 +81,9 @@ Alpha features are currently available to test on an as requested basis for cust
 
 Alpha features carry a **warning: do not request support via the normal support channels**.
 
-Current Alpha Features (and how to request access):
+Current Alpha features (and how to request access):
 
+* [[MySQL 5.1 and 5.5|database-mysql-upgrade]] - [[Request access|signup-mysql]]
 * [[PostgreSQL 9|postgresql]] - [[Request access|signup-postgresql]]
 * [[Rubinius]] - [[Request access|signup-rubinius]]
 
