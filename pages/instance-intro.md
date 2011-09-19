@@ -24,6 +24,9 @@ meet your cpu, memory, and disk space needs.
 * ### [[Degraded instances on AppCloud|instance-degraded]]
   Learn how to replace a degraded instance on AppCloud.
 
+* ### [[Instance takeovers|instance-takeover]]
+  Learn what happens when an application master fails and what actions you need to take (i) to prepare for takeover and (ii) if a takeover occurs.
+
 ## Persistent Storage
 Your application code and database are written out to **persistent storage** 
 volumes on AppCloud. We automatically mount these volumes and take backups for you.
