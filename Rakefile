@@ -19,6 +19,11 @@ task :stage do
   sh "ey deploy --no-migrate -e EY_Documentation_clone"
 end
 
+desc "Deploy to poppy environment"
+task :poppy do
+  sh "ey deploy --no-migrate -e EY_Documentation_redesign"
+end
+
 desc "Deploy to production environment"
 task :production do
   sh "ey deploy --no-migrate -e EY_Documentation"
