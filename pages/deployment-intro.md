@@ -23,13 +23,10 @@ deploying your applications to the cloud with our AppCloud platform.
 4. ### [[Customize your deployment|customize-your-deployment]]
    Learn how to customize your applications deployment strategy on AppCloud.
 
-5. ### [[Custom deploy hooks|use-deploy-hooks-with-engine-yard-appcloud]]
+5. ### [[Deploy hooks|use-deploy-hooks-with-engine-yard-appcloud]]
    Learn about the basics of using deploy hooks to customize your deployment on AppCloud.
 
-6. ### [[Deploy hooks API|use-deploy-hooks-with-engine-yard-appcloud#api]]
-   Learn more about the deploy hooks API.
-
-6. ### [[Windows deployment for AppCloud|use-deploy-hooks-with-engine-yard-appcloud#api]]
+6. ### [[Windows deployment for AppCloud|deployment-windows]]
    Learn more about the deploy you application to AppCloud from a Windows environment.
 
 7. ### [[Maintenance pages|deployment-maintenance-pages]]
