@@ -2,6 +2,18 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update13><h2 id="update13">Fix: Large PostgreSQL instances start</h2></a>
+
+September 19th, 2011
+
+PostgreSQL instances that are configured to use more than 8 GB of memory now start because SHMALL is set correctly.
+
+<a href=#update12><h2 id="update12">Minor: eix no longer rebuilds its database for every Chef run </h2></a>
+
+September 19th, 2011
+
+Because eix no longer rebuilds its database for every Chef run, you might notice that Chef runs are shorter.
+
 <a href=#update11><h2 id="update11">Fix: Multiple accounts during signup</h2></a>
 
 September 14th, 2011
@@ -90,3 +102,6 @@ HAProxy configuration was modified to remove the nbproc parameter. Use of nbproc
 [12]: #update12        "update12"
 [13]: #update13        "update13"
 [14]: #update14        "update14"
+[12]: #update15        "update15"
+[13]: #update16        "update16"
+[14]: #update17        "update17"

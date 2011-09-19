@@ -151,7 +151,7 @@ any of your instances, uploading and applying custom chef recipes, and more.
 
   - This command has to be invoked from the application's Git repository so it can figure out which application gets its maintenance page taken down.
 
-  - For more information, see [[Maintenance Pages|maintenance_pages]].
+  - For more information, see [[Application maintenance pages|deployment-maintenance-pages]].
 
 
 ## Environment Variables
@@ -173,7 +173,7 @@ If set, all commands (e.g. `ey deploy`, `ey rollback`) that require an SSH conne
 
 ### `ey.yml` Customizations
 
-Extra customization can be accomplished with an `ey.yml` file. [[More about the ey.yml file.|ey_yml]]
+Extra customization can be accomplished with an `ey.yml` file. [[More about the ey.yml file.|customize-your-deployment#first]]
 
 #### Disable migrations
 
