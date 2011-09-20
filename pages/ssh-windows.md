@@ -52,3 +52,7 @@ You should now have a private and public key, `~/.ssh/id_rsa` and `~/.ssh/id_rsa
 have any environments, this key is automatically added to the ones you create.
 
 8. Click Add Key and your new key is setup in AppCloud.
+
+## Next Steps
+
+[[Install your public key|ssh-install]] to your application environment(s).

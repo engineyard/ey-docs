@@ -14,7 +14,9 @@ To successfully install a ssh key you will need to:
 
   1. Login to your AppCloud account.
   2. Click the **Dashboard** menu item.
-  3. Click the environment name you want to add the key to.
+  3. Click the specific Environment for the Application you want to add the key to. <br />
+     For example the "production" environment of the "MyApp" application.
+  4. Click on the Environment name link, ex. "production".
   4. Click the **More Options** tab.
   5. Click the **Edit Environment** link.
   6. Locate the SSH Keys section and select the keys you want to install.
@@ -32,10 +34,9 @@ After an environment has been updated with one or more new keys they will need t
 
   1. Go to your **Dashboard**.
   2. Click the environment name you want to deploy your key(s) to.
-  3. Click the **Update** button.
+  3. Click the **Apply** button.
 
-Clicking the update button rebuilds your environment instances and installs your key(s).
-When this process completes, you are now ready to connect to your instances via ssh.
+Clicking the apply button will install your key(s).  When this process completes, you are now ready to connect to your instances via ssh.
 
 ## Next Steps
 
