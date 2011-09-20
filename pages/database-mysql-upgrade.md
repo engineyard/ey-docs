@@ -4,6 +4,8 @@
 
 The MySQL 5.1 and MySQL 5.5 databases are now candidates for testing on Engine Yard AppCloud. Read this page if you want to participate in the AppCloud MySQL 5.1/5.5 Alpha program.
 
+**Important!** MySQL 5.1/5.5 on AppCloud are Alpha features. Always test in a development or staging environment.
+
 
 ### Process
 
@@ -20,7 +22,7 @@ The process for setting up and running your AppCloud application on MySQL 5.1 or
     * [Set up an AppCloud application to use MySQL 5.1/5.5 in Alpha][3]  
     * [Dump and restore an existing MySQL 5.0.x database][4]
  
-* _Are you running with MySQL on a platform other than AppCloud?_ Then, do these tasks:  
+* _Are you migrating a MySQL-based application to AppCloud from another platform?_ Then, do these tasks:  
 
     * [Get access to the Alpha program and ey-beta-talk group][2]  
     * [Set up an AppCloud application to use MySQL 5.1/5.5 in Alpha][3]  
@@ -31,7 +33,6 @@ The process for setting up and running your AppCloud application on MySQL 5.1 or
     Please consult [[Engine Yard Professional Services|http://www.engineyard.com/services]] for assistance migrating your database to MySQL 5.1/5.5. 
 
 
-**Important!** MySQL 5.1/5.5 on AppCloud are Alpha features. Always test in a development or staging environment. 
 
 
 
@@ -95,11 +96,11 @@ See the MySQL documentation for full details on dumping and restoring a database
 		mysqldump -u _user_ -p_password_ -h _hostname_ _dbname_ > dumpfile.sql  
 		gzip -v dumpfile.sql 
 	
-	**Note:** _dbname_ is the name of the database used by your application. _hostname_ is the name of the server or instance hosting your MySQL 5.0.x database.
+	**Note:** _dbname_ is the name of the database used by your application. _hostname_ is the name of the server or instance hosting your MySQL 5.0.x database. For more information, see [[Find your generated MySQL password and connect to your DB|find-your-generated-mysql-password-and-connect-to-your-db]].
 				
 	For example, 
 	
-        mysqldump -u jdoe -pmysecret -h ec2-172-72-33-150.us-west-1.compute.amazonaws.com mydatabase > dumpfile.sql	
+        mysqldump -u deploy -pmysecret -h ec2-172-72-33-150.us-west-1.compute.amazonaws.com mydatabase > dumpfile.sql	
 
 2. 	Move the output file to the new environment. 
 	
@@ -128,7 +129,7 @@ See the MySQL documentation for full details on dumping and restoring a database
 
 ### To connect to your MySQL 5.1/5.5 database
 
-* See [[Access Your MySQL Database Remotely|access-your-mysql-database-remotely]] and [[Find Your Generated MySQL Password and Connect to Your DB|find-your-generated-mysql-password-and-connect-to-your-db.html]].
+* See [[Access Your MySQL Database Remotely|access-your-mysql-database-remotely]] and [[Find your generated MySQL password and connect to your DB|find-your-generated-mysql-password-and-connect-to-your-db]].
 
 
 <h2 id="topic5"> More information</h2>
@@ -141,7 +142,7 @@ See the MySQL documentation for full details on dumping and restoring a database
     <td>database tasks in AppCloud</td><td>[[Database Home|database_home]] (Many of the tasks apply to MySQL 5.1 and 5.5 as well as to MySQL 5.0.)</td>
   </tr>
 <tr>
-    <td>MySQL</td><td>[[MySQL|http://www.MySQL.org/docs]] documentation </td>
+    <td>MySQL</td><td>[[MySQL|http://dev.mysql.com/doc]] documentation </td>
   </tr>
 <tr>
     <td>SSHing to your database</td><td>[[Access your MySQL database remotely|access-your-mysql-database-remotely]] </td>
@@ -151,9 +152,6 @@ See the MySQL documentation for full details on dumping and restoring a database
   </tr>
 <tr>
     <td>Deleting an environment</td><td>[[Delete an environment on AppCloud|environment-delete]] documentation </td>
-  </tr>
-<tr>
-    <td>MySQL</td><td>[[MySQL|http://www.MySQL.org/docs]] documentation </td>
   </tr>
 </table>
 
