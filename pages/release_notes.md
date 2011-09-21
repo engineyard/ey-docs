@@ -3,6 +3,8 @@
 
 ### [[September 2011|appcloud_updates_september_2011]]
 
+* [[Fix: GitHub/AppCloud account linking (Beta) more robust|appcloud_updates_september_2011#update14]] *September 21st, 2011*
+
 * [[ Fix: Large PostgreSQL instances start|appcloud_updates_september_2011#update13]] *September 19th, 2011*
 
 * [[Minor: eix no longer rebuilds its database for every Chef run|appcloud_updates_september_2011#update12]] *September 19th, 2011*
