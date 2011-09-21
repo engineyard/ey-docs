@@ -25,12 +25,25 @@ Steps to create and deploy your application from Windows:
 
 1. Open the `Gemfile.lock` file in your application.
 2. Under Platforms, add `ruby` if it doesn't exist.
-2. If there are any gems with `x86-minw32`, make sure to explicitly add them to the Gemfile (`gem 'bcrypt-ruby'`).
+2. If there are any gems with `-x86-minwg32`, make sure to remove the
+  `-x86-mingw32` and add specify it explicitly in the Gemfile with the
+  platform.
+        
+      bcrypt-ruby (3.0.1-x86-mingw32)
+
+  becomes
+
+      bcrypt-ruby (3.0.1)
+      
+  in Gemfile
+  
+      gem 'bcrypt-ruby', '~> 3.0.1', :platform => 'ruby'
+        
 3. Specify the bundler version in the Gemfile 
 
         gem 'bundler', '~> 1.0.17'
     
-3. Bundle the application again from the command prompt
+4. Bundle the application again from the command prompt
     
         bundle install
     
