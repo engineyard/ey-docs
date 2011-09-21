@@ -2,6 +2,14 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update14><h2 id="update14">Fix: GitHub/AppCloud account linking (Beta) more robust</h2></a>
+
+September 21st, 2011
+
+Fixed an issue where GitHub/AppCloud account linking did not work for multiple repositories. (The GitHub Repository URI field appeared blank.) 
+
+For information about GitHub/AppCloud account linking (Beta) , see [[Linking a GitHub account to AppCloud|linking-github-to-appcloud]].
+
 <a href=#update13><h2 id="update13">Fix: Large PostgreSQL instances start</h2></a>
 
 September 19th, 2011
@@ -102,6 +110,6 @@ HAProxy configuration was modified to remove the nbproc parameter. Use of nbproc
 [12]: #update12        "update12"
 [13]: #update13        "update13"
 [14]: #update14        "update14"
-[12]: #update15        "update15"
-[13]: #update16        "update16"
-[14]: #update17        "update17"
+[15]: #update15        "update15"
+[16]: #update16        "update16"
+[17]: #update17        "update17"
