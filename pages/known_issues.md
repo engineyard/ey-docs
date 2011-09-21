@@ -5,3 +5,4 @@
 * [[Bundler version issue "unitialized contant Gem::SilentUI (NameError)"|bundler-gemfile-version]]
 * [[Possible DNS spoofing detected|dns-spoofing-error]]
 * [[SystemTimer gem is not supported in Ruby 1.9.2|systemtimer-gem-ki]]
+* [[Error message: "Please install the mysql2 adapter"|mysql2-adapter.md]]
