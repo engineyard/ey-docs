@@ -1,7 +1,5 @@
 # Using MySQL 5.1 or MySQL 5.5 with AppCloud
 
-<!-- Includes mutual changes from meeting Sept 7th. -->
-
 The MySQL 5.1 and MySQL 5.5 databases are now candidates for testing on Engine Yard AppCloud. Read this page if you want to participate in the AppCloud MySQL 5.1/5.5 Alpha program.
 
 **Important!** MySQL 5.1/5.5 on AppCloud are Alpha features. Always test in a development or staging environment.
