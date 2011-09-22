@@ -20,4 +20,4 @@ You can view the log using the UNIX commands `cat`, `more` or `less`.
 
 ##  "Please install the mysql2 adapter" error
 
-If you see the "Please install the mysql2 adapter" error in the deployment log file, follow these instructions to resolve it: [[500 errors after deploying / "Please install the mysql2 adapter" error"|issue-mysql2-adapter]]. 
+If you see the "Please install the mysql2 adapter" error in the deployment log file, follow these instructions to resolve it: [[500 errors after deploying / "Please install the mysql2 adapter" error|issue-mysql2-adapter]]. 
