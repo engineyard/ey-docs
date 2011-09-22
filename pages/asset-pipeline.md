@@ -6,6 +6,7 @@ Topics covered on this page:
 
 * [[Precompile your assets|asset-pipeline#precompile]]
 * [[Asset paths|asset-pipeline#paths]]
+* [[Staging Environment|asset-pipeline#staging]]
 
 <h2 id="precompile">Precompiling assets</h2>
 
@@ -20,7 +21,7 @@ styling or your javascript behavior is not working. The fix for this is requires
 
 2. Add the following command to your deploy hook file:
       
-        run "cd #{release_path}; RAILS_ENV=#{framework_env} bundle exec rake assets:precompile"
+    run "cd #{release_path}; RAILS_ENV=#{framework_env} bundle exec rake assets:precompile"
     
 This command compiles the assets to the `public/assets` directory anytime you deploy your application
 to AppCloud. This directory is used as a location to store and serve store your application assets.
@@ -63,7 +64,22 @@ makes for very intuitive code
 becomes
 
     image-url('rails.png')
+
+<h2 id="staging">Staging environment</h2>
+
+If you're experiencing an issue where the staging environment doesn't show the latest fingerprinted 
+version of your CSS or javascript files, that is because you'll need to explicitly set the following 
+variable in your `environments/staging.rb` file:
+
+    config.assets.digest = true
+
+Which will generate something like:
+
+    <script src="/assets/application-908e25f4bf641868d8683022a5b62f54.js" type="text/javascript"></script>
+    <link href="/assets/application-4dd5b109ee3439da54f5bdfd78a80473.css" media="screen" rel="stylesheet" type="text/css" />
+
+###More information
     
-For more information, check out the 
+For more about the asset pipeline, check out the 
 [Rails Guides](http://edgeguides.rubyonrails.org/).
     
