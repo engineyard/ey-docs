@@ -1,20 +1,19 @@
-# Add SSH keypair to AppCloud
+# Add an SSH keypair to AppCloud
 
-To use a public key generated for your development machine on AppCloud it will
-need to be uploaded through our web interface.  Follow these steps:
+To use a public key generated for your development machine on AppCloud, the key must be uploaded through the AppCloud dashboard. 
 
-1. Login to your AppCloud account.
-2. Click on the **SSH Public Keys** menu item.
-3. Click the button **Add a new SSH public key**.
-    * Locate the public key on your local machine. <br />
-      The default location of this file is `~/.ssh/id_rsa.pub`
-    * Give your key a name.
-    * Paste your public key in the text area.
-    * Click the **Add Key** submit button to save your key.
+##To add an SSH key to AppCloud
 
-You should receive a confirmation that your ssh public key has been created and added to your
+1. Locate and copy the public key on your local machine.  
+    The default location of this file is `~/.ssh/id_rsa.pub` 
+2. In your AppCloud dashboard, click SSH Public Keys.
+3. Click Add a new SSH public key.
+4. Enter a name for the key.
+5. Paste the key (from step 1) into the Public Key field.
+6. Click Add Key.  
+  You receive a confirmation that your ssh public key has been created and added to your
 AppCloud account.
 
-## Next Steps
+## Next step
 
 [[Install your public key|ssh-install]] to your application environment(s).

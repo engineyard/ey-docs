@@ -9,6 +9,8 @@ Topics covered on this page:
 
 <h2 id="precompile">Precompiling assets</h2>
 
+**NOTE: Only try this fix if styles are not displayed correctly**
+
 When deploying your Rails 3.1 application, you may notice that there is no
 styling or your javascript behavior is not working. The fix for this is requires adding a [[deploy hook|use-deploy-hooks-with-engine-yard-appcloud]] to your application.
 

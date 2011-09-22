@@ -1,41 +1,57 @@
-
-// remap jQuery to $
+// Navigation Shinanigans
 (function($){
 
-  $(document).ready(function()
-                    {
-
-                      jQuery("#sidebar").find("li").each(function(){
-                        var li = jQuery(this);
-                        if ( li.has("ul").length ) {
-							 li.addClass("menu");
-							
-	
-                          var hide = li.has("a[href=\"" + document.location.pathname + "\"]").length == 0;
-
-                          	if ( hide ) { li.addClass("collapsed"); }
-						  	else 		{ li.addClass("expanded"); }
-							
-							// Add active class to link on currently active page.
-							li.find("a[href=\"" + document.location.pathname + "\"]").addClass("active");
-
-                          li.click(function(event){
-                            if ( this == event.target ) {
-                              item1 = jQuery(this);
-                              var collapsed = item1.hasClass("collapsed");
-                              item1.removeClass("expanded collapsed")
-                                .addClass(collapsed ? "expanded" : "collapsed")
-                                .children("ul").toggle();
-                              return false;
-                            }
-                          });
-
-                          if ( hide ) {
-                            li.find("ul").hide();
-                          }
-
-                        }
-                      });
-                    });
-
+  $(document).ready(function(){
+    
+    var setselected = function($obj) {
+      $obj.find('> ul > li').each(function() {
+        var $deepli = $(this);
+        if ($deepli.has("a[href=\"" + document.location.pathname + "\"]").length != 0) {
+          $deepli.addClass('selected');
+          initnav($deepli);
+        }
+      });
+    };
+    
+    var showchildren = function($obj) {
+      $obj.removeClass('collapsed');
+      $obj.find("ul").show();
+    }
+    
+    var initnav = function($obj) {
+      // collapse and hide children
+      $obj.addClass("collapsed"); 
+      $obj.find("ul").hide();
+      addarrow($obj);
+      expandnav($obj);
+    }
+    
+    var addarrow = function($obj) {
+      // Add arrow if li has children
+      if ($obj.has("ul").length) { $obj.find('> a').addClass('arrow'); }
+    }
+    
+    var expandnav = function($obj) {
+      $link = $obj.find('> a');
+      // expand and select if link is active
+      if ($link.attr('href') == document.location.pathname) {
+        $obj.addClass('selected expanded');
+        selectandshowchildren($obj,$link)
+      // expand if child link is active
+      } else if ($obj.has("a[href=\"" + document.location.pathname + "\"]").length != 0) {
+        $obj.addClass('selected parent expanded');
+        selectandshowchildren($obj,$link)
+      }
+    }
+    
+    var selectandshowchildren = function($obj,$link) {
+      $link.addClass('selected');
+      showchildren($obj);
+      setselected($obj);
+    }
+    
+    $(".subnav > ul > li").each(function(){
+      initnav($(this));
+    });
+  });                                            
 })(this.jQuery);

@@ -321,19 +321,19 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="full">1.0.1
+          <li class="full">1.1.5
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="full">1.0.1
+          <li class="full">1.1.5
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="full">1.0.1
+          <li class="full">1.1.5
           </li>
         </ul>
       </td>

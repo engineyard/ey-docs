@@ -1,30 +1,31 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    addressable (2.2.6)
     albino (1.3.3)
       posix-spawn (>= 0.3.6)
     diff-lcs (1.1.3)
-    directory_watcher (1.4.0)
-    engineyard (1.3.20)
-      engineyard-serverside-adapter (= 1.4.1)
+    directory_watcher (1.4.1)
+    engineyard (1.3.30)
+      engineyard-serverside-adapter (= 1.4.12)
       escape (~> 0.0.4)
       highline (~> 1.6.1)
       json_pure
+      launchy (= 2.0.5)
       net-ssh (~> 2.1.0)
       rest-client (~> 1.6.0)
       thor (~> 0.14.6)
-    engineyard-serverside-adapter (1.4.1)
+    engineyard-serverside-adapter (1.4.12)
       escape (~> 0.0.4)
       json_pure
     escape (0.0.4)
     github-markup (0.5.3)
-    gollum (1.3.1)
+    gollum (1.3.0)
       albino (~> 1.3.2)
-      github-markup (>= 0.4.0, < 1.0.0)
+      github-markup (< 1.0.0, >= 0.4.0)
       grit (~> 2.4.1)
-      mustache (>= 0.11.2, < 1.0.0)
+      mustache (< 1.0.0, >= 0.11.2)
       nokogiri (~> 1.4)
-      redcarpet
       sanitize (~> 2.0.0)
       sinatra (~> 1.0)
     gollum-site (0.1.10)
@@ -36,7 +37,9 @@ GEM
       diff-lcs (~> 1.1)
       mime-types (~> 1.15)
     highline (1.6.2)
-    json_pure (1.5.1)
+    json_pure (1.6.1)
+    launchy (2.0.5)
+      addressable (~> 2.2.6)
     liquid (2.2.2)
     mime-types (1.16)
     mixlib-log (1.3.0)
@@ -45,14 +48,13 @@ GEM
     nokogiri (1.5.0)
     posix-spawn (0.3.6)
     pygmentize (0.0.3)
-    rack (1.3.2)
-    rake (0.9.0)
+    rack (1.3.3)
+    rake (0.9.2)
     rdiscount (1.6.8)
-    redcarpet (1.17.2)
-    rest-client (1.6.3)
+    rest-client (1.6.7)
       mime-types (>= 1.16)
     sanitize (2.0.3)
-      nokogiri (>= 1.4.4, < 1.6)
+      nokogiri (< 1.6, >= 1.4.4)
     sinatra (1.2.6)
       rack (~> 1.1)
       tilt (< 2.0, >= 1.2.2)
@@ -66,6 +68,7 @@ DEPENDENCIES
   bundler (~> 1.0.12)
   directory_watcher
   engineyard
+  gollum (= 1.3.0)
   gollum-site
   pygmentize
   rake
