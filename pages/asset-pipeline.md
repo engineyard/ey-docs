@@ -6,7 +6,7 @@ Topics covered on this page:
 
 * [[Precompile your assets|asset-pipeline#precompile]]
 * [[Asset paths|asset-pipeline#paths]]
-* [[Staging Environment|asset-pipeline#staging]]
+* [[Staging environment|asset-pipeline#staging]]
 
 <h2 id="precompile">Precompiling assets</h2>
 
@@ -81,5 +81,5 @@ Which will generate something like:
 ###More information
     
 For more about the asset pipeline, check out the 
-[Rails Guides](http://edgeguides.rubyonrails.org/).
+[Rails Guides](http://guides.rubyonrails.org/asset_pipeline.html).
     
