@@ -11,7 +11,7 @@ If you get a 500 error after deploying your application, you might be missing th
         Please install the mysql2 adapter: `gem install activerecord-mysql2-adapter`
 	    (no such file to load -- active_record/connection_adapters/mysql2_adapter)
 	
-If you find this message, install the mysql2 as described below [To install the mysql2 gem for a Rails 3.0.x application][1] or [To install the mysql2 gem for a Rails 3.1.x application][2].
+If you find this message, install the mysql2 as described below ([To install the mysql2 gem for a Rails 3.0.x application][1] or [To install the mysql2 gem for a Rails 3.1.x application][2]).
 
 <h2 id="rails30"> To install the mysql2 gem for a Rails 3.0.x application</h2>
 
@@ -23,7 +23,7 @@ If you find this message, install the mysql2 as described below [To install the 
 
         bundle install
 
-    **Note:** If you get the error message "extconf.rb failed", see [To resolve the "extconf.rb failed" error][3] below.
+3. If you get the error message "extconf.rb failed", see [To resolve the "extconf.rb failed" error][3] below.
 
 <h2 id="rails31"> To install the mysql2 gem for a Rails 3.1.x application </h2>
 
@@ -35,7 +35,7 @@ If you find this message, install the mysql2 as described below [To install the 
 
 	    bundle install
 
-	**Note:** If you get the error message "extconf.rb failed", see [To resolve the "extconf.rb failed" error][3] below.
+3. If you get the error message "extconf.rb failed", see [To resolve the "extconf.rb failed" error][3] below.
 
 <h2 id="extconf">To resolve the "extconf.rb failed" error</h2>
 
@@ -53,7 +53,7 @@ If you find this message, install the mysql2 as described below [To install the 
 	            bundle install --without production  
 	        When you deploy to AppCloud, `mysql2` is installed if Framework Environment is set to production in your AppCloud environment.
 	
-	*About Bundler groups. *Bundler groups are for managing dependencies on different environments. By default, running bundle install installs dependencies for all of the groups. In Step 2 above, when you run bundle install locally, you skip the dependencies for the production group (which includes the mysql2 gem).
+        *About Bundler groups. *Bundler groups are for managing dependencies on different environments. By default, running `bundle install` installs dependencies for all of the groups. In Step 2 above, when you run bundle install locally, you skip the dependencies for the production group (which includes the mysql2 gem).
 	
 [1]: #rails30        "rails30"
 [2]: #rails31        "rails31"
