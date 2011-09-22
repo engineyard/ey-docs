@@ -111,7 +111,7 @@
 * [[Beta Program|beta-intro]]
   * [[Introduction|beta-intro]]
   * [[MySQL 5.1 and 5.5|database-mysql-upgrade]]
-  * [[PostgreSQL|postgresql]]
+  * [[PostgreSQL 9|postgresql]]
   * [[Rubinius|rubinius]]
   * [[Rubinius and trial|beta-rubinius-environment-with-appcloud-trial]]
   * [[JRuby/Trinidad|jruby-beta]]
