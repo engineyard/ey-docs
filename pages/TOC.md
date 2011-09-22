@@ -110,7 +110,7 @@
   * [[Add Redis to your application|add-redis-to-your-application]]
 * [[Beta Program|beta-intro]]
   * [[Introduction|beta-intro]]
-  * [[MySQL|database-mysql-upgrade]]
+  * [[MySQL 5.1 and 5.5|database-mysql-upgrade]]
   * [[PostgreSQL|postgresql]]
   * [[Rubinius|rubinius]]
   * [[Rubinius and trial|beta-rubinius-environment-with-appcloud-trial]]
