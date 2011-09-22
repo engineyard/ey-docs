@@ -13,6 +13,9 @@ the various instances types: [[AppCloud Instances|instance-types]].
 * ### [[Create an environment|environment-create]]
   Learn how to create a new environment to deploy your instance(s).
   
+* ### [[Upgrade an environment|environment-upgrade]]
+  Learn how to upgrade an environment to the latest version of the AppCloud stack.
+
 * ### [[Clone an environment|environment-clone]]
   Learn how to make a copy of an existing environment.
 

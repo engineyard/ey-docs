@@ -2,6 +2,15 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update15><h2 id="update15">**Major:** MySQL 5.1 and 5.5 are now available with Alpha support</h2></a>
+
+September 22nd, 2011
+
+MySQL 5.1 and 5.5 are available in AppCloud with Alpha support. ([[Sign up|signup-mysql]] to participate in the program.)
+MySQL 5.1 and 5.5 bring substantial feature and performance improvements over MySQL 5.0.
+
+For more information, see [[Using MySQL 5.1 or MySQL 5.5 with AppCloud|database-mysql-upgrade]].
+
 <a href=#update14><h2 id="update14">Fix: GitHub/AppCloud account linking (Beta) more robust</h2></a>
 
 September 21st, 2011
