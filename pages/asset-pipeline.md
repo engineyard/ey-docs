@@ -86,10 +86,6 @@ There are two ways to use `asset_path` helpers:
 * [With a preprocessor such as Sprockets][1]
 * [With built-in helpers in sass-rails gem][2]
 
-This can either be done 
-using a preprocessor or by using [sass-rails](https://github.com/rails/sass-rails) 
-built in helpers.
-
 
 <h3 id="sprockets"> To precompile assets with the Sprockets pre-processor</h3>
 
