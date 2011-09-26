@@ -3,6 +3,10 @@
 
 ### [[September 2011|appcloud_updates_september_2011]]
 
+* [[Fix: "Server not available" errors with force_ssl|appcloud_updates_september_2011#update16]] *September 22nd, 2011*
+
+* [[<b>Major:</b> MySQL 5.1 and 5.5 are now available in AppCloud with Alpha support|appcloud_updates_september_2011#update15]] *September 22nd, 2011*
+
 * [[Fix: GitHub/AppCloud account linking (Beta) more robust|appcloud_updates_september_2011#update14]] *September 21st, 2011*
 
 * [[ Fix: Large PostgreSQL instances start|appcloud_updates_september_2011#update13]] *September 19th, 2011*

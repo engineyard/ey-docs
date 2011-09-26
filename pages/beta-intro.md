@@ -83,6 +83,7 @@ Alpha features carry a **warning: do not request support via the normal support 
 
 Current Alpha features (and how to request access):
 
+* [[MySQL 5.1 and 5.5|database-mysql-upgrade]] - [[Request access|signup-mysql]]
 * [[PostgreSQL 9|postgresql]] - [[Request access|signup-postgresql]]
 * [[Rubinius]] - [[Request access|signup-rubinius]]
 

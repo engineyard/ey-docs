@@ -39,7 +39,7 @@ If you find this message, install the mysql2 as described below ([To install the
 
 <h2 id="extconf">To resolve the "extconf.rb failed" error</h2>
 
-* If you see this error after running `bundle install` above, do one of the following:  
+* If you see the "extconf.rb failed" error after running `bundle install` above, do one of the following:  
 
     * Install MySQL.  
         If you want to do development on your local machine and test your applications on a MySQL database before deploying AppCloud, then install MySQL. On Mac OS X, consider using [Homebrew](http://mxcl.github.com/homebrew/) or [MacPorts](http://www.macports.org) to install and configure MySQL.
