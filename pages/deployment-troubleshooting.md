@@ -7,7 +7,7 @@ Topics on this page:
 * [View the deployment log file][1] 
 * [500 errors after deploying and the deployment log shows "Please install the mysql2 adapter" error][2]
 * [Rails 3.1 application not displaying correctly in the staging environment][3]
-* [Application fails to deploy and the deployment log shows "Malformed or pre bundler-1.0.0 Gemfile.lock:"][4]
+* [Application fails to deploy and the deployment log shows "Malformed or pre bundler-1.0.0 Gemfile.lock"][4]
 
 
 <h2 id="topic1"> View the deployment log file</h2>
