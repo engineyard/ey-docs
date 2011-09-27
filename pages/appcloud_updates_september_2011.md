@@ -2,6 +2,14 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update17><h2 id="update17">Major:JRuby is now generally available in Engine Yard Cloud</h2></a>
+
+September 28th, 2011
+
+JRuby is ideal for those who want to use Ruby and Rails and have existing libraries written in Java. JRuby also offers some efficiency and performance improvements over Ruby.
+
+For more information, see [[Using JRuby on Engine Yard Cloud|deploy-jruby]] and [[the Engine Yard blog|http://www.engineyard.com/blog/2011/jruby-ga-on-an-engine-yard-cloud-near-you/]].
+
 <a href=#update16><h2 id="update16">Fix: "Server not available" errors with force_ssl</h2></a>
 
 September 22nd, 2011

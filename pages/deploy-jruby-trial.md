@@ -1,6 +1,6 @@
 # Using JRuby with a trial account
 
-JRuby is currently a Beta feature on AppCloud. To deploy a JRuby application on a trial account, follow this process: 
+To deploy a JRuby application on a trial account, follow this process: 
 
 *	[Create an application and environment.][2]
 *	[Reconfigure the environment for JRuby.][3]
@@ -18,7 +18,7 @@ For detailed help with these steps, see [[docs.engineyard.com|home]], for exampl
 
 <h2 id="topic3"> Reconfigure the environment for JRuby </h2>
 
-This procedure applies only to the JRuby Beta on the trial account. 
+This procedure applies only to using _JRuby_ on the trial account. 
 
 The trial was set up with a streamlined workflow that automatically creates a Ruby-based environment. To work around this, you stop the environment, reconfigure it as a JRuby one, and then boot the JRuby environment.
 
@@ -29,7 +29,7 @@ The trial was set up with a streamlined workflow that automatically creates a Ru
 3. On the Environment, click the More Options tab.
 4. Click Edit Environment.    
 4. On the Edit the Environment page, set Application Server Stack to Trinidad.  
-    The Ruby Runtime changes to JRuby 1.6.2 (beta).  
+    The Ruby Runtime changes to JRuby 1.6.2.  
     **Note:** If you can't edit the Application Server Stack, make sure that you have stopped the environment. Only stopped environments can be edited.
 5. Click Update Environment.  
 6. On the Environment page, click Boot.  

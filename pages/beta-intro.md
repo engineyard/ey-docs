@@ -95,7 +95,6 @@ Beta features are visible and usable by all Engine Yard customers (as applicable
 
 For each Beta feature there is the [[Beta Conversations|http://groups.google.com/group/ey-beta-talk]] group to discuss bugs, issues, and feature requests with Engine Yard staff and other Engine Yard customers.
 
-Current Beta features:
+Current Beta feature:
 
-  * [[JRuby/Trinidad|jruby-beta]]  
   * [[GitHub/AppCloud account linking|linking-github-to-appcloud]]
