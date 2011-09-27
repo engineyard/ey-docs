@@ -7,6 +7,8 @@
 
 ### [[September 2011|appcloud_updates_september_2011]]
 
+* [[<b>Major:</b> JRuby is now generally available in Engine Yard Cloud|appcloud_updates_september_2011#update17]] *September 28th, 2011*
+
 * [[Fix: "Server not available" errors with force_ssl|appcloud_updates_september_2011#update16]] *September 22nd, 2011*
 
 * [[<b>Major:</b> MySQL 5.1 and 5.5 are now available in AppCloud with Alpha support|appcloud_updates_september_2011#update15]] *September 22nd, 2011*
