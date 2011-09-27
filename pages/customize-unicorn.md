@@ -2,18 +2,16 @@
 
 ## Introduction
 
-Unicorn does not employ **keep files** for its configuration file.  Because of this, we wanted to show you how you can enable Unicorn customization without the use of a keep file.
-
-As we were re-writing the control scripts for Passenger, we wanted a simple way to set things in the *environment*.  The file `env.custom` was created to solve this problem.
+Unicorn does not employ **keep files** for its configuration file. This page describes how to customize Unicorn without a keep file.
 
 By updating the file `/data/myapp/shared/config/env.custom` we can do the following:
 
   - Create an alternate Unicorn configuration file.
-  - Start Unicorn with bundler versus running the system Unicorn.
+  - Start Unicorn with Bundler versus running the system Unicorn.
 
 ## Unicorn env.custom file
 
-If your application is named myapp, you would update the following file:
+Update the following file, where myapp is the name of your application:
 
     /data/myapp/shared/config/env.custom
 
@@ -31,8 +29,8 @@ To restart a Unicorn run:
 
 ## Unicorn in bundler
 
-You do want to add the Unicorn gem to your `Gemfile`.
+Add the Unicorn gem to your `Gemfile`:
 
     gem 'unicorn'
     
-Then also run `bundle install` to add it to your `Gemfile.lock` for deployment.  Check it all into your repo and you're ready to deploy.
+Run `bundle install` to add it to your `Gemfile.lock` for deployment.  Check it all into your repo and you're ready to deploy.
