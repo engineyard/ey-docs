@@ -71,4 +71,7 @@ Before making changes to a production environment, review your keep files.
   <tr>
     <td>Deploy hooks</td><td>[[How To Use Deploy Hooks with AppCloud|use-deploy-hooks-with-engine-yard-appcloud]]</td>
   </tr>
+  <tr>
+    <td>Customizing Unicorn configuration (without keep files)</td><td>[[Customize Unicorn|customize-unicorn]]</td>
+  </tr>
 </table>
