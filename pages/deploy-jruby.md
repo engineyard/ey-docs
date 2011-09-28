@@ -1,4 +1,3 @@
-<!-- this should be a redirect to deploy-jruby -->
 # Using JRuby on Engine Yard Cloud
 
 This page provides some information about running a JRuby application on Engine Yard Cloud.

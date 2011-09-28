@@ -5,14 +5,16 @@ The asset pipeline is arguably the biggest new feature in Rails 3.1. There are s
 Topics covered on this page:
 
 * [[Precompile your assets|asset-pipeline#precompile]]
-* [[Asset paths|asset-pipeline#paths]]
+* [[Using asset path helper methods|asset-pipeline#paths]]
+* [[Resolving CSS or JavaScript file problems in a staging environment|asset-pipeline#staging]]
 
 <h2 id="precompile">Precompiling assets</h2>
 
-**NOTE: Only try this fix if styles are not displayed correctly**
+Rails 3.1 introduced the asset pipeline. It is enabled by default. This means that unless you specifically disable the asset pipeline, you must precompile your assets in order for them to display properly in your deployed application. 
 
-When deploying your Rails 3.1 application, you may notice that there is no
-styling or your javascript behavior is not working. The fix for this is requires adding a [[deploy hook|use-deploy-hooks-with-engine-yard-appcloud]] to your application.
+If you don't precompile your assets, you might notice that there is no CSS styling or that your JavaScript behavior is not working. 
+
+To precompile assets, you add a deploy hook to your application, as outlined in the procedure below. (For more information about deploy hooks, see [[Using deploy hooks|use-deploy-hooks-with-engine-yard-appcloud]].)
 
 ###To precompile assets
 
@@ -20,50 +22,80 @@ styling or your javascript behavior is not working. The fix for this is requires
 
 2. Add the following command to your deploy hook file:
       
-        run "cd #{release_path}; RAILS_ENV=#{framework_env} bundle exec rake assets:precompile"
+    run "cd #{release_path}; RAILS_ENV=#{framework_env} bundle exec rake assets:precompile"
     
-This command compiles the assets to the `public/assets` directory anytime you deploy your application
-to AppCloud. This directory is used as a location to store and serve store your application assets.
+This command compiles the assets to the `public/assets` directory when you deploy your application
+to AppCloud. This directory is used as a location to store and serve your application assets.
 
-The configuration setting: config.assets.compile forced to be false and cannot be overridden at this time.
-Only pre-compiled assets are currently supported on AppCloud.
+Assets cannot be compiled on an AppCloud instance (even if the config.assets.compile is set to true in `config/environment/production.rb`).
 
-<h2 id="paths">Asset paths</h2>
+<h2 id="paths">Using asset path helper methods</h2>
 
-With the asset pipeline, static assets are served from a flat file 
-system in the `public/assets` directory. Because of this, the recommended 
-practice is to use the new `asset_path` helpers. This can either be done 
-using a preprocessor or by using [sass-rails](https://github.com/rails/sass-rails) 
-built in helpers.
+With the asset pipeline, static assets are served from a flat file system in the `public/assets` directory. 
 
-To use Sprockets pre-processors, add a `.erb` extension to your stylesheets. 
-You can then use Ruby code in the stylesheets just like you would in the view 
-files.
+Sprockets is integrated with Rails 3.1. Sprockets makes it easier to manage your asset files. Using Sprockets and its asset path helper methods can make ERB more readable.
 
-    url('../images/rails.png')
+This section shows two ways to use `asset_path` helper methods:
 
-becomes
+* [With the Sprockets preprocessor for (regular) CSS][1]
+* [With the Sprockets preprocessor and the sass-rails gem][2]
 
-    url(<%= asset_path 'rails.png' %>)
+
+<h3 id="sprockets"> To use the Sprockets preprocessor and helper methods to manage assets</h3>
+
+1. Add an `.erb` extension to your stylesheets.
+
+2. Use Ruby code in the stylesheets in the same way as in the view files. For example, 
+
+        url('../images/rails.png')
+
+    becomes
+
+        url(<%= asset_path 'rails.png' %>)
     
-There are also helper methods built into sass-rails. They resemble the `.erb`
-ones except use a hyphen instead of an underscore.
+<br>
+You can also use Sprockets helper methods with the sass-rails gem.
 
-    url('../images/rails.png')
-    
-becomes
+<h3 id="sass">To use the Sprockets preprocessor and helper methods with the sass-rails </h3>
 
-    url(asset-path('rails.png', image))
-    
-You can also use the `-url` helper and paired with the type of asset, this
-makes for very intuitive code
+1. Install the [sass-rails](https://github.com/rails/sass-rails) gem.
 
-    url('../images/rails.png')
-    
-becomes
+2. Use Ruby code in the stylesheets in the same way as in the view files. For example, 
 
-    image-url('rails.png')
+        url('../images/rails.png')
     
-For more information, check out the 
-[Rails Guides](http://edgeguides.rubyonrails.org/).
+    becomes
+
+       url(asset-path('rails.png', image))
+
+	**Note:** Use a hyphen instead of an underscore.
+
+<h2 id="staging">Using the correct CSS or JavaScript files in the staging environment</h2>
+
+By default in Rails 3.1, config.assets.digest is set to true for production environments but to false for staging and development environments. If you deploy to your staging environment and your application looks like it has no CSS applied or is using the wrong JavaScript files even though you are precompiling assets (as described above), then you might need to set config.assets.digest to true. 
+
+###To use the correct CSS and JavaScript files in staging
+
+* In your `environments/staging.rb` file, add this line:
+
+        config.assets.digest = true
+
+    When config.assets.digest is true, when you view a source page for your deployed application, asset names appear with a unique fingerprint. For example:
+
+        <script src="/assets/application-908e25f4bf641868d8683022a5b62f54.js" type="text/javascript"></script>
+        <link href="/assets/application-4dd5b109ee3439da54f5bdfd78a80473.css" media="screen" rel="stylesheet" type="text/css" />
+
+	 instead of:
+
+	        <script src="/assets/application.js" type="text/javascript"></script>
+	        <link href="/assets/application.css" media="screen" rel="stylesheet" type="text/css" />
+
+The config.assets.digest option turns on "fingerprinting" for each asset. For information about fingerprinting, see the Rails Guides. 
+
+##More information
     
+For more information about the asset pipeline, see the 
+[Rails Guides](http://guides.rubyonrails.org/asset_pipeline.html).
+
+[1]: #sprockets        "sprockets"
+[2]: #sass        "saas"

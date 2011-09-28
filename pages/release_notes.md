@@ -1,7 +1,13 @@
 # Release Notes
 <a href="http://feed43.com/1082485410203701.xml" class="rss">Release Notes RSS Feed</a>
 
+### [[October 2011|appcloud-updates-october-2011]]
+
+* [[<b>Action Req'd:</b> Bundler 0.9 is being deprecated on October 3rd, 2011|appcloud-updates-october-2011#update1]]
+
 ### [[September 2011|appcloud_updates_september_2011]]
+
+* [[<b>Major:</b> JRuby is now generally available in Engine Yard Cloud|appcloud_updates_september_2011#update17]] *September 28th, 2011*
 
 * [[Fix: "Server not available" errors with force_ssl|appcloud_updates_september_2011#update16]] *September 22nd, 2011*
 
