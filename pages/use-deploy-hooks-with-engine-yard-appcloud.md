@@ -23,11 +23,11 @@ backwards compatible with Capistrano so you can use both at the same time
 if so desired.
 
 
-## Structure
+## Structure and sequence
 
 To use deploy hooks on AppCloud, create an `APP_ROOT/deploy` directory in your application 
 and save named hook files in this directory which will be triggered at the appropriate 
-times during the deployment process. The files are defined as follows:
+times during the deployment process. The files are defined as follows and run in the order listed:
 
     APP_ROOT/  
        deploy/
@@ -35,6 +35,8 @@ times during the deployment process. The files are defined as follows:
 		after_bundle.rb
 		before_migrate.rb
         after_migrate.rb
+		before_compile_assets
+		after_compile_assets
 		before_symlink.rb
 		after_symlink.rb
 		before_restart.rb
@@ -46,6 +48,10 @@ order for the application to start properly, put them
 in `before_migrate.rb` instead of `before_symlink.rb`, because 
 `before_symlink.rb` runs **after** the migration.
 
+Any deploy hooks that you have defined are called, even if
+they are hooking into a step that is not necessary for the deployment.
+For example, `after_migrate` is called even if there are no new
+migrations in your deployment.
 
 ## Shell commands
 

@@ -116,8 +116,4 @@ class are subject (but unlikely) to change.
 <h2 id="third">Deploy Hooks</h2>
 Deploy hooks are Ruby scripts that you write which are executed at designated 
 points in the deployment process. This allows you to customize the deployment 
-of your application to meet its particular needs. We discuss deploy hooks in the
-following sections:
-
-  * [[Custom Deploy Hooks|use-deploy-hooks-with-engine-yard-appcloud]]
-  * [[Deploy Hooks API|deploy_hooks_api]]
+of your application to meet its particular needs. We discuss deploy hooks in [[Using deploy hooks|use-deploy-hooks-with-engine-yard-appcloud]].
