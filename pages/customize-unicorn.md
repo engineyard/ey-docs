@@ -1,38 +1,41 @@
 # Customize Unicorn
 
-## Introduction
+Unicorn does not employ keep files for its configuration file. This page describes how to customize Unicorn without a keep file.
 
-Unicorn does not employ **keep files** for its configuration and monitrc files.  Because of this, we wanted to enable Unicorn customization without using keep files.
+The process is:
 
-As we were re-writing the Control Scripts for Passenger, we wanted a simple way to set things in the *environment*.  The file `env.custom` was created to solve this problem.
+1. [Create an alternate Unicorn configuration file.][1]
+2. [Start Unicorn with Bundler instead of running the system Unicorn.][2]
 
-By updating the file `/data/myapp/shared/config/env.custom` we can do the following and more:
+<h2 id="topic1">To create the customized Unicorn configuration file and restart Unicorn</h2>
 
-  - Create an alternate Unicorn configuration file.
-  - Starting Unicorn with bundler versus running the system Unicorn.
+1. Add this line to the file `/data/_myapp_/shared/config/env.custom` (where _myapp_ is the name of your application):
 
-## Unicorn env.custom file
+        UNICORN_CONF="/data/_myapp_/shared/config/custom_unicorn.rb"
 
-If your application is named myapp, you would update the following file:
+    This specifies an alternate configuration file for Unicorn.
 
-    /data/myapp/shared/config/env.custom
+2. Copy `/data/_myapp_/shared/config/unicorn.rb` to `/data/_myapp_/shared/config/custom_unicorn.rb`.
 
-## Alternate configuration file
+3. Edit the `/data/_myapp_/shared/config/custom_unicorn.rb` with the customizations that you want.
 
-To specify an alternate configuration file, do the following in the `env.custom` file:
+4. Restart Unicorn so that the customizations take effect:
 
-    UNICORN_CONF="/data/myapp/shared/config/custom_unicorn.rb"
-
-
-Then copy `/data/myapp/shared/config/unicorn.rb` to `/data/myapp/shared/config/custom_unicorn.rb` and customize it as you see fit.  
+        /engineyard/bin/app_myapp reload 
 
 
-To restart a Unicorn run:
+<h2 id="topic2"> To start Unicorn in Bundler</h2>
 
-    /engineyard/bin/app_myapp reload
+1. Add the Unicorn gem to your Gemfile:
 
-## Unicorn in bundler
+        gem 'unicorn'
+    
+3. Run these commands to update your Gemfile.lock:
 
-No modifications are needed to use Unicorn with bundler. Just add the Unicorn gem to your Gemfile.
+        bundle install
 
-    gem 'unicorn'
+        git commit -a -m "Gemfile updated for Unicorn"
+        git push origin
+		
+[1]: #topic1        "topic1"
+[2]: #topic2        "topic2"
