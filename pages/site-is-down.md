@@ -24,7 +24,7 @@ Check the deployment log to make sure the most recent deployment log was success
 If none of these have alerted to the problem, then SSH into your instance and check these items:
 
 ---
-Go to `/data/<appname>/current/log` and view your application log. This will indicate if there are any problems with your application specifically.
+Go to `/data/<appname>/current/log` and view your application log. This will indicate if there are any problems with your running application specifically.
     
     $ cd /data/myapp/current/log
     $ tail production.log
