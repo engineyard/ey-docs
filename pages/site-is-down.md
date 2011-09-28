@@ -39,10 +39,10 @@ If you have a cluster of instances, check to see if HAProxy is running:
 ---
 On your application instances, make sure Nginx is running:
 
-    $ /etc/init.d/nginx status
+    $ sudo /etc/init.d/nginx status
      * status:  started
   
-  If not, you can run `/etc/init.d/nginx start`.
+  If not, you can run `sudo /etc/init.d/nginx start`.
 
 ---  
 On your application instances, if using Passenger, check to see if Passenger is running:
@@ -51,13 +51,13 @@ On your application instances, if using Passenger, check to see if Passenger is 
     
   If Passenger is not running, you need to restart Nginx:
     
-    $ /etc/init.d/nginx restart
+    $ sudo /etc/init.d/nginx restart
     
 ---
 On your Solo instance or DB instance, check to see that MySQL is running:
    
-    $ /etc/init.d/mysql status
+    $ sudo /etc/init.d/mysql status
   
   If MySQL is not running, then restart MySQL:
   
-    $ /etc/init.d/mysql start
+    $ sudo /etc/init.d/mysql start
