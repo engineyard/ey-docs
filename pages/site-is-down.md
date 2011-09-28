@@ -18,7 +18,7 @@ Once you have logged in, does your Application have any red status circles?
       * SOLUTION: If your application is using too many resources and causing alerts, you can [[move to a larger instance size|instance-change-size]] or reconfigure your environment to not use so many resources on one instance.
 
 ---
-Check the deployment log to make sure the most recent deployment log was successful.
+Check the deployment log by clicking **View Log** to make sure the most recent deployment log was successful.
 
 
 If none of these have alerted to the problem, then SSH into your instance and check these items:
