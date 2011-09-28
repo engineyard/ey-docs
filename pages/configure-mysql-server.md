@@ -19,7 +19,7 @@ Then save your file read-able, or owned by the mysql system user, with a `.cnf` 
                                      
 * **Option B**
   
-  Place the file on `/db` volume (such as `/db/mysql.d/`) and then create a symlink with a [[deploy hook|deploy_hooks_api]].
+  Place the file on `/db` volume (such as `/db/mysql.d/`) and then create a symlink with a [[deploy hook|use-deploy-hooks-with-engine-yard-appcloud]].
 
 ## Dynamic Change
 
