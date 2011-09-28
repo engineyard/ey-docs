@@ -22,8 +22,10 @@ To precompile assets, you add a deploy hook to your application, as outlined in 
 
 2. Add the following command to your deploy hook file:
       
-    run "cd #{release_path}; RAILS_ENV=#{framework_env} bundle exec rake assets:precompile"
-    
+		if node[:instance_role] =~ /^app/ || node[:instance_role] == 'solo'
+		 run "cd #{release_path}; RAILS_ENV=#{framework_env} bundle exec rake assets:precompile"
+		end
+		    
 This command compiles the assets to the `public/assets` directory when you deploy your application
 to AppCloud. This directory is used as a location to store and serve your application assets.
 
