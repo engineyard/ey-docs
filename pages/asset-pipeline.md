@@ -1,35 +1,13 @@
-# Rails 3.1 Asset pipeline tips for AppCloud
+# Rails 3.1 Asset pipeline tips for Engine Yard Cloud
 
-The asset pipeline is arguably the biggest new feature in Rails 3.1. There are some important things to know when deploying applications using the asset pipeline to AppCloud.
+The asset pipeline is arguably the biggest new feature in Rails 3.1. There are some important things to know when deploying applications using the asset pipeline.
+
+Rails 3.1 introduced the asset pipeline. It is enabled by default. This means that unless you specifically disable the asset pipeline, assets are precompiled for you.
 
 Topics covered on this page:
 
-* [[Precompile your assets|asset-pipeline#precompile]]
 * [[Using asset path helper methods|asset-pipeline#paths]]
 * [[Resolving CSS or JavaScript file problems in a staging environment|asset-pipeline#staging]]
-
-<h2 id="precompile">Precompiling assets</h2>
-
-Rails 3.1 introduced the asset pipeline. It is enabled by default. This means that unless you specifically disable the asset pipeline, you must precompile your assets in order for them to display properly in your deployed application. 
-
-If you don't precompile your assets, you might notice that there is no CSS styling or that your JavaScript behavior is not working. 
-
-To precompile assets, you add a deploy hook to your application, as outlined in the procedure below. (For more information about deploy hooks, see [[Using deploy hooks|use-deploy-hooks-with-engine-yard-appcloud]].)
-
-###To precompile assets
-
-1. Create a `/deploy/before_symlink.rb` file in your application.
-
-2. Add the following command to your deploy hook file:
-      
-		if node[:instance_role] =~ /^app/ || node[:instance_role] == 'solo'
-		 run "cd #{release_path}; RAILS_ENV=#{framework_env} bundle exec rake assets:precompile"
-		end
-		    
-This command compiles the assets to the `public/assets` directory when you deploy your application
-to AppCloud. This directory is used as a location to store and serve your application assets.
-
-Assets cannot be compiled on an AppCloud instance (even if the config.assets.compile is set to true in `config/environment/production.rb`).
 
 <h2 id="paths">Using asset path helper methods</h2>
 
