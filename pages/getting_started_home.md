@@ -10,7 +10,7 @@ When you first sign up for AppCloud you will need to configure your first applic
 
 We need to have your **Git repository URI** to checkout your code and deploy it to the instance. If you are using GitHub, you can find your Git repository URI here:
 
-![Where to find your Github repository URL](images/2sm.png)
+![Where to find your GitHub repository URL](images/2sm.png)
 
 We will try to guess a good name for your application from the Git URI. If we choose poorly, please enter a better name. 
 

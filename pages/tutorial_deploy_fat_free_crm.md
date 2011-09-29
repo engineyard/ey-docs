@@ -2,7 +2,7 @@
 
 In this tutorial, you deploy a Ruby application (named Fat Free CRM) to the Engine Yard cloud. 
 
-This tutorial is illustrated in [[Learn to Deploy Rails Apps on Engine Yard in under 5 Mins!|http://vimeo.com/17825326]] video. 
+<!--This tutorial is illustrated in [[Learn to Deploy Rails Apps on Engine Yard in under 5 Mins!|http://vimeo.com/17825326]] video. -->
 
 This is the process for deploying the Fat Free CRM application:
 
@@ -69,7 +69,7 @@ In general, you can use any git server with your AppCloud account. However, in t
 
 2. In the search box, enter `crm` 
 
-    ![The Github search box](images/tutorials/github_search_box.png) 
+    ![The GitHub search box](images/tutorials/github_search_box.png) 
 
     A list of repositories appears.
 
@@ -79,7 +79,7 @@ In general, you can use any git server with your AppCloud account. However, in t
 
 4. Click Fork.
 
-    ![The Github fork button](images/tutorials/github_fork_button.png)
+    ![The GitHub fork button](images/tutorials/github_fork_button.png)
 
 5. Copy the SSH URL.
 
