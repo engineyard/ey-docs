@@ -66,7 +66,7 @@ Once you have lockrun installed on your instance(s), you can then use it in your
     /usr/bin/lockrun --lockfile=/tmp/jobname.lockrun -- sh -c "cd /data/appname/current && rake RAILS_ENV=production some:task"
 
 
-## Troubleshooting cron issues
+<h2 id="trouble"> Troubleshooting cron issues</h2>
 
 ### Is cron running?
 

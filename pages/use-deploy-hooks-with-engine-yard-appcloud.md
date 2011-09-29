@@ -35,8 +35,8 @@ times during the deployment process. The files are defined as follows and run in
 		after_bundle.rb
 		before_migrate.rb
         after_migrate.rb
-		before_compile_assets
-		after_compile_assets
+		before_compile_assets.rb
+		after_compile_assets.rb
 		before_symlink.rb
 		after_symlink.rb
 		before_restart.rb
