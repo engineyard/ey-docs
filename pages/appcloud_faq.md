@@ -141,7 +141,7 @@ Read [[Instance Overview|instance-types|]] for more information.
 
 <a href=#FAQ19><h2 id="FAQ19"> How do I migrate from SVN to Git? </h2></a>
 
-Github has a guide that outlines many options for importing your SVN repository into GIT.
+GitHub has a guide that outlines many options for importing your SVN repository into GIT.
 
 [[GitHub - Import from Subversion|http://github.com/guides/import-from-subversion|]]
 

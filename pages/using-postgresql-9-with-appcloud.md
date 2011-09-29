@@ -121,7 +121,7 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 <h2 id="topic8">Connect to your PostgreSQL 9 Database </h2>
 
 ### To connect to your PosgreSQL 9 database
-See the [[Database Home|database_home]] documentation (Many of the tasks apply to PostgreSQL as well as MySQL.)
+See the [[Managing your database|database-intro]] documentation (Many of the tasks apply to PostgreSQL as well as MySQL.)
 
 1. Find your generated PostgreSQL password (the [[MySQL instructions on passwords|find-your-generated-mysql-password-and-connect-to-your-db]] describe this step)
 
@@ -156,7 +156,8 @@ Known issues associated with PostgresSQL 9 on Cloud are:
     <td>about setting up and deploying an Cloud application in general</td><td>[[docs.engineyard.com|http://docs.engineyard.com]] </td>
   </tr>
 <tr>
-    <td>database tasks in Cloud</td><td>[[Database Home|database_home]] (Many of the tasks apply to PostgreSQL as well as MySQL.)</td>
+    <td>database tasks in AppCloud</td><td>[[Managing your Database|database-intro]] (Many of the tasks apply to PostgreSQL as well as MySQL.)</td>
+>>>>>>> master
   </tr>
 <tr>
     <td>PostgreSQL</td><td>[[PostgreSQL|http://www.postgresql.org/docs]] documentation </td>

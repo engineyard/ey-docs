@@ -14,13 +14,13 @@
   background-position: -14px -138px;
 }
 
-section.main h1 {
+section.main h1, div.section.main h1 {
   font-size: 2em;
 }
-section.main h1:first-child {
+section.main h1:first-child, div.section.main h1:first-child {
   color: #000;
 }
-section.main h2 {
+section.main h2, div.section.main h2 {
   margin-bottom: .25em;
   margin-top: 2.5em;
   padding-bottom: .25em;
@@ -28,14 +28,14 @@ section.main h2 {
   font-weight: bold;
   border-bottom: 1px solid #DFDFDF;
 }
-section.main h3 {
+section.main h3, div.section.main h3 {
   margin-bottom: 0;
   margin-top: 1.8em;
   font-size: 1em;
   font-weight: bold;
 }
 
-section.main .note {
+section.main .note, section.main .note {
   background: #EEE;
   border-radius: 4px;
   -webkit-border-radius: 4px;
