@@ -72,3 +72,14 @@ application. Then put the following in it and modify as needed:
       ]
       BundleInstaller.new(version, opts.join(" "))
     end
+
+## Lock For Deployment
+
+In order to use the `engineyard` gem to deploy with bundler you'll also want to confirm
+that you've checked in your `Gemfile.lock` file into your repository.  This lock file ensures
+code run on each environment is running the same versions of each gem you've configured
+for your application.
+
+	bundle install                              # to generate the Gemfile.lock
+	git add Gemfile.lock -m "add Gemfile.lock"  # Commit your changes.
+	git push                                    # publish them to your repo
