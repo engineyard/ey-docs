@@ -18,7 +18,7 @@ Signup is required to access AppCloud Alpha features.
 
 <h2 id="topic2"> Create an application and environment </h2>
 
-The following procedure _outlines_ how to create an application and environment with a trial account. (For a detailed procedure, see [[Setting up a trial account and deploying a sample application|tutorial_deploy_fat_free_crm]].)    
+The following procedure _outlines_ how to create an application and environment with a trial account. (For a detailed procedure, see [[Get Started|getting-started-intro]].)    
 
 
 ###To create an application and environment  

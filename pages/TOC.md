@@ -6,6 +6,7 @@
   * [[Support Options|appcloud-support]]
 * [[Get Started with AppCloud|getting-started-intro]]
   * [[Introduction|getting-started-intro]]
+  * [[Getting Started Video Tutorial|getting-started-video-tutorial]]
   * [[Sign Up for Engine Yard AppCloud|sign-up-for-engine-yard-appcloud]]
   * [[Setting up your Application and Environment|getting_started_home]]
   * [[Setup your Local Environment|setup-environment]]
