@@ -42,7 +42,7 @@ SSH Keys are a means of secure, passwordless authentication.  The "public" key w
 
 ## Takeover
 
-Takeover is the Engine Yard process for recovering from an AppCloud application master failure. For more information about takeovers, see [[AppCloud application master takeover|instance-takeover]].
+Takeover is the Engine Yard process for recovering from an Cloud application master failure. For more information about takeovers, see [[Cloud application master takeover|instance-takeover]].
 
 ## Volumes
 

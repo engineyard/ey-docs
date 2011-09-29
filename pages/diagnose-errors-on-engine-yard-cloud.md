@@ -1,6 +1,6 @@
-# Diagnosing Errors on Engine Yard AppCloud
+# Diagnosing Errors on Engine Yard Cloud
 
-This document describes some common error conditions you might see while setting up your Engine Yard AppCloud environment.
+This document describes some common error conditions you might see while setting up your Engine Yard Cloud environment.
 
 ## Common Error Conditions
 

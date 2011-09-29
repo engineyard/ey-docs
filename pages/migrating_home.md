@@ -1,13 +1,13 @@
-# Migrating to the Engine Yard AppCloud
+# Migrating to the Engine Yard Cloud
 
-This guide will help you migrate your application from your current environment to the Engine Yard AppCloud. While many applications will run without any changes, some applications may require some configuration changes or customizations to take advantage of the Engine Yard AppCloud service.  
+This guide will help you migrate your application from your current environment to the Engine Yard Cloud. While many applications will run without any changes, some applications may require some configuration changes or customizations to take advantage of the Engine Yard Cloud service.  
 
 To ensure you have as quick and smooth a migration as possible, it is important to plan each step of the process - and to test.
 
 ## Prerequisites 
   - Lower the TTL on your DNS to 5.
   - Create an initial migration plan.  Use our [[migration template|migration-steps-template]] as a starting point, which you can then adjust.
-  - Review our [[FAQs|faq_home]] to learn what is supported in the Engine Yard AppCloud.
+  - Review our [[FAQs|faq_home]] to learn what is supported in the Engine Yard Cloud.
 
 
 ## Prepare Your Application

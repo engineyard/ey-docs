@@ -1,4 +1,4 @@
-# Environments on AppCloud
+# Environments on Cloud
 
 **Environment** is an overloaded term. Here at Engine Yard when we refer to your 
 'environment' we are talking about the cluster of instances that collectively run 
@@ -6,7 +6,7 @@ an application or set of applications.
 
 An environment includes Application Instance(s), Database Instance(s), and possibly
 one or more Utility Instances. Check out this article if you want to know more about 
-the various instances types: [[AppCloud Instances|instances-types]].
+the various instances types: [[Cloud Instances|instances-types]].
 
 ## Topics
 
@@ -20,10 +20,10 @@ the various instances types: [[AppCloud Instances|instances-types]].
   Learn how to rebuild an environment with minimal downtime.
 
 * ### [[Delete an environment|environment-delete]]
-  Learn how to delete an environment on AppCloud.
+  Learn how to delete an environment on Cloud.
 
 * ### [[Clustered Environments|environment-cluster]]
-  Learn about our clustered architecture and managing clusters on AppCloud.
+  Learn about our clustered architecture and managing clusters on Cloud.
 
 * ### [[Change an instance size|change-an-instance-size]]
   Learn how to change the size of an instance in an environment.

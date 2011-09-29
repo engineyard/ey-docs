@@ -1,6 +1,6 @@
-# Hibernate your AppCloud Account
+# Hibernate your Cloud Account
 
-If you don't need to use your AppCloud account, you don't have to cancel, you can instead
+If you don't need to use your Cloud account, you don't have to cancel, you can instead
 hibernate your account. You can hibernate your account simply by stopping all running 
 instances, delete all environments and removing any Elastic IP addresses.
 
@@ -9,7 +9,7 @@ instances, delete all environments and removing any Elastic IP addresses.
 Your account is hibernating when all instances have been stopped, all environments have 
 been removed, and all IP addresses have been deleted.
 
-  1. Login to your AppCloud account.
+  1. Login to your Cloud account.
   2. For each environment in your account, click Stop.
   3. Then click Delete for each Environment.
   4. Click the IP Addresses menu item in your Dashboard.
@@ -25,5 +25,5 @@ They charge $0.01 per hour.  For a 30 day month, that would be $7.20 to keep the
 
 ## Reactivate your account
 
-When you're ready to use EY AppCloud again, just log in to your account, re-create your 
+When you're ready to use EY Cloud again, just log in to your account, re-create your 
 environments and start up an instance.

@@ -1,4 +1,4 @@
-# Clustered environments on AppCloud
+# Clustered environments on Cloud
 
 ## Cluster architecture
 

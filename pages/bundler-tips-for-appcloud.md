@@ -1,4 +1,4 @@
-# Bundler Tips for AppCloud
+# Bundler Tips for Cloud
 
 At Engine Yard, we advocate for the use of Bundler in users' applications, mainly
 because it makes dependency management very easy. Avrohom Katz wrote a

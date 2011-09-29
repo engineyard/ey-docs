@@ -1,10 +1,10 @@
 # Applications
 
-This section outlines how to manage your application on EY AppCloud. If you're looking to add SSL to your application please see this article: [[SSL Certs|ssl-certificates]].
+This section outlines how to manage your application on EY Cloud. If you're looking to add SSL to your application please see this article: [[SSL Certs|ssl-certificates]].
 
 ## Add an Application
 
-You can configure many different applications and their corresponding repository URL and framework under Engine Yard AppCloud.
+You can configure many different applications and their corresponding repository URL and framework under Engine Yard Cloud.
 
   - In the top right corner, click on the **Create New Application** link.
 
@@ -102,7 +102,7 @@ Just click on the **x Remove** link and the gem is removed.  This will remove th
 
 ## Manage Unix Packages
 
-Configure additional software packages for your application within Engine Yard AppCloud.
+Configure additional software packages for your application within Engine Yard Cloud.
 
   - Under SERVER TOOLS, click on **Dashboard** to view your list of applications.
   - Click on name of the application you want to modify

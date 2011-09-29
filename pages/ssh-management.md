@@ -4,11 +4,11 @@ If you need help generating an SSH keypair please see: [[Generating SSH Keys|gen
 
 ## Manage Keys
 
-In order to access your slice via command line interface like Terminal on Mac OS X, you'll need to upload your SSH public key to Engine Yard AppCloud, then attach it to an environment.
+In order to access your slice via command line interface like Terminal on Mac OS X, you'll need to upload your SSH public key to Engine Yard Cloud, then attach it to an environment.
 
 ### Add a SSH Keypair
 
-  - Under SERVER TOOLS in Engine Yard AppCloud, click on **SSH Public Keys** menu item.
+  - Under SERVER TOOLS in Engine Yard Cloud, click on **SSH Public Keys** menu item.
   - Then click on **Add a new SSH public key** link in the top right.
   - Give your Keypair a **name**.
   - Click **Upload** button to save this keypair.

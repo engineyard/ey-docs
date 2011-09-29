@@ -1,6 +1,6 @@
-#Sign up for an AppCloud account
+#Sign up for an Cloud account
 
-This page describes how to sign up for a full AppCloud account. 
+This page describes how to sign up for a full Cloud account. 
 
 The full account includes the following features that are not available in the trial account:
 
@@ -15,21 +15,21 @@ The full account includes the following features that are not available in the t
 
 ### Process
 
-This is the process for signing up for a full account on AppCloud:
+This is the process for signing up for a full account on Cloud:
 
 1.	[Initiate signup.][1]
-2.	[Validate and start your AppCloud account.][2]
+2.	[Validate and start your Cloud account.][2]
 
-Or, if you already have a trial account on AppCloud:
+Or, if you already have a trial account on Cloud:
 
 *	[Upgrade to a full account from a trial account.][3]
 
 
-<h2 id="topic1"> Initiate signup for an AppCloud account </h2>
+<h2 id="topic1"> Initiate signup for an Cloud account </h2>
 
 The first step in the process is for you to provide your name and email address and to agree to the terms and conditions. Then, we send you a welcome email. 
 
-### To initiate signup for your AppCloud account
+### To initiate signup for your Cloud account
  
 1. Navigate to [[login.engineyard.com/signup|http://cloud.engineyard.com/signup]]
 2. Enter your name, email address, and a password.
@@ -37,9 +37,9 @@ The first step in the process is for you to provide your name and email address 
 4. Click Create Account.
 
 
-<h2 id="topic2"> Validate and start your AppCloud account</h2>
+<h2 id="topic2"> Validate and start your Cloud account</h2>
 
-After initial signup for an AppCloud account, you get an email from Engine Yard. In this procedure, you validate and name the account and provide your credit card details.
+After initial signup for an Cloud account, you get an email from Engine Yard. In this procedure, you validate and name the account and provide your credit card details.
 
 ### To validate and start your account
  
@@ -85,7 +85,7 @@ If you already have a free trial, you might want to upgrade to a full account be
 
 1. Sign in to your trial account.
 
-2. In the AppCloud Dashboard, click Upgrade Account (in the top right corner).
+2. In the Cloud Dashboard, click Upgrade Account (in the top right corner).
 
     ![Upgrade account](images/upgrade_account.png)
 
@@ -101,22 +101,22 @@ If you already have a free trial, you might want to upgrade to a full account be
 	    <th>For more information about...</th><th>See...</th>
 	  </tr>
 	  <tr>
-	    <td>Learning how to deploy on AppCloud by following a tutorial</td><td>[[Tutorial: How to deploy a sample application on a trial account|tutorial_deploy_fat_free_crm]] </td>
+	    <td>Learning how to deploy on Cloud by following a tutorial</td><td>[[Tutorial: How to deploy a sample application on a trial account|tutorial_deploy_fat_free_crm]] </td>
 	  </tr>
 	  <tr>
-	    <td>Support plans available</td><td>[[AppCloud support|appcloud-support]]</td>
+	    <td>Support plans available</td><td>[[Cloud support|appcloud-support]]</td>
 	  </tr>
 	<tr>
 	    <td>Participating in Alpha and Beta testing</td><td>[[Beta program|beta-intro]]</td>
 	  </tr>
 	<tr>
-	    <td>Environments and clusters</td><td>[[Compute instances on AppCloud|instance-types]]</td>
+	    <td>Environments and clusters</td><td>[[Compute instances on Cloud|instance-types]]</td>
 	  </tr>
 	 <tr>
-	    <td>New Relic</td><td>[[Monitor applications with New Relic on AppCloud|monitoring-new-relic]]</td>
+	    <td>New Relic</td><td>[[Monitor applications with New Relic on Cloud|monitoring-new-relic]]</td>
 	  </tr>
 	<tr>
-	    <td>Hibernating an AppCloud account to avoid monthly charges</td><td>[[Hibernate your account|hibernate-your-account]] </td>
+	    <td>Hibernating an Cloud account to avoid monthly charges</td><td>[[Hibernate your account|hibernate-your-account]] </td>
 	  </tr>
 </table>
 

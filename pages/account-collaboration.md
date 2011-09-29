@@ -1,10 +1,10 @@
-# Collaboration features on AppCloud
+# Collaboration features on Cloud
 
-The collaboration features in Engine Yard AppCloud enable multiple members of a team to access multiple AppCloud environments. This is particularly useful for teams that need to maintain individual access to their AppCloud dashboard for each team member and to enable and disable this access as required.
+The collaboration features in Engine Yard Cloud enable multiple members of a team to access multiple Cloud environments. This is particularly useful for teams that need to maintain individual access to their Cloud dashboard for each team member and to enable and disable this access as required.
 
 ## New concepts
 
-The collaboration feature introduces three new concepts to Engine Yard AppCloud. These are:
+The collaboration feature introduces three new concepts to Engine Yard Cloud. These are:
 
   * Accounts
   * Users
@@ -12,13 +12,13 @@ The collaboration feature introduces three new concepts to Engine Yard AppCloud.
 
 ### Accounts
 
-An account is a container for a group of environments and users. If you are a current user of AppCloud and are not using the collaboration feature, your current set of environments is your account. Customers using the collaboration feature may be part of multiple accounts.
+An account is a container for a group of environments and users. If you are a current user of Cloud and are not using the collaboration feature, your current set of environments is your account. Customers using the collaboration feature may be part of multiple accounts.
 
-Your account now has a name that is unique across all of AppCloud. This allows you to clearly identify the account you want to work with. You can edit the name of your account from your account settings page.
+Your account now has a name that is unique across all of Cloud. This allows you to clearly identify the account you want to work with. You can edit the name of your account from your account settings page.
 
 ### Users
 
-A user is a person with login credentials into Engine Yard AppCloud and is currently identified by the login email address for that person. If you are a current user of Engine Yard AppCloud, your user entity already exists and the identifier of that user is the email address.
+A user is a person with login credentials into Engine Yard Cloud and is currently identified by the login email address for that person. If you are a current user of Engine Yard Cloud, your user entity already exists and the identifier of that user is the email address.
 
 Each user can be a part of multiple accounts and can invite other users to an account. Similarly, each account contains multiple users, and each user has access to all the environments in that account.
 
@@ -41,7 +41,7 @@ Click on the account settings link on the top bar to see the list of accounts th
 
 The accounts page lists each account, the creator for that account and some other summary information. You can manage each account by clicking on the account name to get to the account management screen.
 
-<img src="/images/collaboration/collab-account-list.jpg" alt="AppCloud List of Accounts" width="700" />
+<img src="/images/collaboration/collab-account-list.jpg" alt="Cloud List of Accounts" width="700" />
 
 On the account management screen for each account, you can edit the name of the account, change support level for the account, or add new users to this account.
 
@@ -75,7 +75,7 @@ Many Engine Yard customers develop applications for multiple consumers simultane
   - In the new account, go to the accounts section and add developers to the account. If the developers already have Engine Yard credentials, they can accept the invitation under whatever account they are signed in as. You can also add new users to each account. Add their email information and they receive an invitation to open a new account.
   - If you want to hand off the project to your customer, give them credentials for the creator account and remove any members who no longer need access from the Accounts page.
 
-The email invitation sent to a user can be accepted only once. However, we do not bind the invitation link to the email address it was originally sent to. This enables users who have existing AppCloud accounts to accept invitations sent to other email addresses that they own. Any member of an account can also rescind an invitation by removing it on the Account Management page.
+The email invitation sent to a user can be accepted only once. However, we do not bind the invitation link to the email address it was originally sent to. This enables users who have existing Cloud accounts to accept invitations sent to other email addresses that they own. Any member of an account can also rescind an invitation by removing it on the Account Management page.
 
 ### Maintaining multiple developers
 
@@ -87,7 +87,7 @@ Learn more about [[managing your ssh keys|env_ssh_keys]] on our docs site.
 
 ### Can we assign specific permissions to individual users in each account?
 
-Currently there are no per-user permissions in Engine Yard AppCloud.  Each user for an account has access to all environments on that account. The only special permissions are the ability to change payment information and cancel the account, which is granted to the creator user.
+Currently there are no per-user permissions in Engine Yard Cloud.  Each user for an account has access to all environments on that account. The only special permissions are the ability to change payment information and cancel the account, which is granted to the creator user.
 
 ### Can we change the creator user for an account?
 

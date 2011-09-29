@@ -9,7 +9,7 @@
   * [[Setup SSMTP for Mail Relay to AuthSMTP|setup-ssmtp-for-mail-relay-to-authsmtp]]
   * [[Make Changes to Nginx or Monit Configuration|configuration-keep-files]]
   * [[Custom Chef Recipes|custom-chef-recipes]]
-  * [[Set Time Zone for an AppCloud Instance|set-time-zone-for-an-appcloud-instance]]
+  * [[Set Time Zone for an Cloud Instance|set-time-zone-for-an-appcloud-instance]]
 
 ## Queues
 
@@ -20,4 +20,4 @@
 
 ## Troubleshooting
   * [[Find Important Log Files|find-important-log-files]]
-  * [[Diagnose Errors on Engine Yard AppCloud|diagnose-errors-on-engine-yard-cloud]]    
+  * [[Diagnose Errors on Engine Yard Cloud|diagnose-errors-on-engine-yard-cloud]]    

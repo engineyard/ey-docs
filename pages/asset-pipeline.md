@@ -1,6 +1,6 @@
-# Rails 3.1 Asset pipeline tips for AppCloud
+# Rails 3.1 Asset pipeline tips for Cloud
 
-The asset pipeline is arguably the biggest new feature in Rails 3.1. There are some important things to know when deploying applications using the asset pipeline to AppCloud.
+The asset pipeline is arguably the biggest new feature in Rails 3.1. There are some important things to know when deploying applications using the asset pipeline to Cloud.
 
 Topics covered on this page:
 
@@ -27,9 +27,9 @@ To precompile assets, you add a deploy hook to your application, as outlined in 
 		end
 		    
 This command compiles the assets to the `public/assets` directory when you deploy your application
-to AppCloud. This directory is used as a location to store and serve your application assets.
+to Cloud. This directory is used as a location to store and serve your application assets.
 
-Assets cannot be compiled on an AppCloud instance (even if the config.assets.compile is set to true in `config/environment/production.rb`).
+Assets cannot be compiled on an Cloud instance (even if the config.assets.compile is set to true in `config/environment/production.rb`).
 
 <h2 id="paths">Using asset path helper methods</h2>
 

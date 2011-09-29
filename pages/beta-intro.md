@@ -4,11 +4,11 @@
 <p >
   <img id="beta-logo" src="images/ey-beta-logo.png" >
   Deploying, automating and managing a Rails application is constantly
-  changing. New stack elements, new features in AppCloud and xCloud, 
+  changing. New stack elements, new features in EY Cloud and EY Managed, 
   and new tools to help development are released often. We think many of 
   these features will be interesting to our customers whilst they are still 
   in development.  If you are interested in testing out beta features on
-  AppCloud, read on for more information!
+  Cloud, read on for more information!
 </p>
 
 **There are four parts to our Beta Program:**
@@ -91,10 +91,10 @@ Current Alpha features (and how to request access):
 
 When we feel a feature is close to being ready for Production applications, has been used and verified by a handful of Engine Yard customers, has a set of documentation and our Support team is being trained on the feature/technology, we can promote the feature from "Alpha" to "Beta".
 
-Beta features are visible and usable by all Engine Yard customers (as applicable AppCloud and xCloud) but carry a **warning: do not request support via the normal support channels**. 
+Beta features are visible and usable by all Engine Yard customers (as applicable Cloud and Managed) but carry a **warning: do not request support via the normal support channels**. 
 
 For each Beta feature there is the [[Beta Conversations|http://groups.google.com/group/ey-beta-talk]] group to discuss bugs, issues, and feature requests with Engine Yard staff and other Engine Yard customers.
 
 Current Beta feature:
 
-  * [[GitHub/AppCloud account linking|linking-github-to-appcloud]]
+  * [[GitHub/Cloud account linking|linking-github-to-appcloud]]

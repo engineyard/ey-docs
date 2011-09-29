@@ -1,6 +1,6 @@
-# Compute Instances on AppCloud
+# Compute Instances on Cloud
 
-Currently Engine Yard AppCloud is built on top of Amazon's AWS services. When you create 
+Currently Engine Yard Cloud is built on top of Amazon's AWS services. When you create 
 an instance with Engine Yard you are booting up an [[EC2|http://aws.amazon.com/ec2/]] instance. 
 We boot this instance for you and automatically configure it with the appropriate
 [[Engine Yard Stack|appcloud-tech-stack]] components for your 
@@ -9,7 +9,7 @@ environment.
 
 ## Instance types & roles
 
-There are various roles that an instance can play in your application's environment on AppCloud. These
+There are various roles that an instance can play in your application's environment on Cloud. These
 roles include the following:
 
 * ### [[Application Instances|instance-types#app-instance]]
@@ -39,7 +39,7 @@ You can run [[crons|adding-cron-jobs]] on your Application instances and you can
 
 This instance is configured to run your database. Running your database on a separate server prevents your database and application from contending for the same resources. 
 
-MySQL is currently the only supported database on Engine Yard AppCloud. If you need to run a postgres DB you'll have to set it up via a custom chef recipe. Here's a template to get you started: http://github.com/engineyard/ey-cloud-recipes/tree/master/cookbooks/postgres/
+MySQL is currently the only supported database on Engine Yard Cloud. If you need to run a postgres DB you'll have to set it up via a custom chef recipe. Here's a template to get you started: http://github.com/engineyard/ey-cloud-recipes/tree/master/cookbooks/postgres/
 
 Your database resides on the `/db` mount. This mount point is persistent and can be used to restore your database later. We take regular snapshots and backups of your database by default.
 

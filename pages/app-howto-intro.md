@@ -4,16 +4,16 @@
 ## Topics
 
 * ### [[Upgrading to Ruby 1.9|upgrading-to-ruby19]]
-  Learn how to upgrade an AppCloud environment to run Ruby 1.9.
+  Learn how to upgrade an Cloud environment to run Ruby 1.9.
   
 * ### [[Managing SSL certificates|ssl-certificates]]
-  Learn how to manage SSL certificates on AppCloud.
+  Learn how to manage SSL certificates on Cloud.
   
 * ### [[Creating cron jobs|adding-cron-jobs]]
-  Learn how to create scheduled tasks via cron jobs in your AppCloud environments.
+  Learn how to create scheduled tasks via cron jobs in your Cloud environments.
   
-* ### [[Bundler tips for AppCloud|bundler-tips-for-appcloud]]
-  A handful of helpful Bundler tips for use on AppCloud.
+* ### [[Bundler tips for Cloud|bundler-tips-for-appcloud]]
+  A handful of helpful Bundler tips for use on Cloud.
   
 * ### [[Asset Pipeline tips for Rails 3.1|asset-pipeline]]
-  Helpful tips on using the new Asset Pipeline in Rails 3.1 on AppCloud.
+  Helpful tips on using the new Asset Pipeline in Rails 3.1 on Cloud.

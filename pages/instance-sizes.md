@@ -1,6 +1,6 @@
-# Instance sizes on AppCloud
+# Instance sizes on Cloud
 
-Below you will find the instance sizes that are available to boot on AppCloud.  You have access to
+Below you will find the instance sizes that are available to boot on Cloud.  You have access to
 7 different instance sizes broken down into 3 categories.
 
 **Note:** Engine Yard recommends the High CPU Medium instances when your application starts
@@ -39,7 +39,7 @@ Learn more about the following instance sizes:
     
   * **High Memory Quadruple Extra Large** is 64-bit with 68.4 GB RAM, 26 ECU
     
-    These are the largest instances you can boot on AppCloud. With a massive amount of RAM, these are best used
+    These are the largest instances you can boot on Cloud. With a massive amount of RAM, these are best used
     for your database tier or in-memory caches.
 
 <h2 id="cpu">High CPU instances</h2>

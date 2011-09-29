@@ -1,7 +1,7 @@
-# Customize your deployment on AppCloud
+# Customize your deployment on Cloud
 
 If your application has special deployment requirements, read this page about methods to customize the deployment process 
-of your application on AppCloud.
+of your application on Cloud.
 
 The following methods can help you customize your deployment:
 

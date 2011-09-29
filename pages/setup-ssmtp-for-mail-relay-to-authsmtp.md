@@ -1,6 +1,6 @@
 # Setup SSMTP for Mail Relay to AuthSMTP
 
-We do not provide SMTP email services from Engine Yard AppCloud because the entire EC2 IP space is black-listed by many spam services.
+We do not provide SMTP email services from Engine Yard Cloud because the entire EC2 IP space is black-listed by many spam services.
 
 Our recommendation is to get an account with one of the following providers:
 

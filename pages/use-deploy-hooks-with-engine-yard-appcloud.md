@@ -1,4 +1,4 @@
-# Using deploy hooks with AppCloud
+# Using deploy hooks with Cloud
 
 ## Introduction
 
@@ -25,7 +25,7 @@ if so desired.
 
 ## Structure and sequence
 
-To use deploy hooks on AppCloud, create an `APP_ROOT/deploy` directory in your application 
+To use deploy hooks on Cloud, create an `APP_ROOT/deploy` directory in your application 
 and save named hook files in this directory which will be triggered at the appropriate 
 times during the deployment process. The files are defined as follows and run in the order listed:
 

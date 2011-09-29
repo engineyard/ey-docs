@@ -1,4 +1,4 @@
-# Setup application monitoring on AppCloud
+# Setup application monitoring on Cloud
 
 With Instance Monitoring, Engine Yard keeps an eye on your instance, 
 records the alerts, and (optionally) emails you. **Please note:** Email
@@ -11,7 +11,7 @@ The following steps will help you setup monitoring for your account:
 
 <h2 id="enable">Enable alerts</h2>
 
-1. In AppCloud, click **Dashboard**.
+1. In Cloud, click **Dashboard**.
 2. Select an environment by clicking the environment name.
 3. On the environment tabs, click **Alerts**.
 4. Select **Enable email alerts**.
@@ -26,7 +26,7 @@ environment, but rather you would want alerts for your production environment.
 
 **Note:** You can view the alerts, even if you have not enabled email alerts.
 
-1. In AppCloud, click **Dashboard**.
+1. In Cloud, click **Dashboard**.
 2. Select an environment by clicking the environment name.
 3. On the environment tabs, click **Alerts** to view the three most current alerts.
 3. Click  **View All Alerts** to view all recorded alerts for this environment.

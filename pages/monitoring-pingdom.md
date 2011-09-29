@@ -2,7 +2,7 @@
 
 Pingdom is a great external tool for monitoring your application uptime. Pingdom can send you phone and email alerts if your site goes down. Pingdom also provides uptime and response time reports.
 
-This page describes how to setup Pingdom to monitor your AppCloud application. 
+This page describes how to setup Pingdom to monitor your Cloud application. 
 <!--This page also describes how to use FitterHappier to create a unique URI for your application specifically to be monitored by Pingdom.-->
 
 ## What pages should I monitor with Pingdom?

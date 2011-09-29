@@ -4,9 +4,9 @@ This section contains (almost) everything you need to get your SSL certificate. 
 
 But it doesn't show you how to purchase the certificate from [Godaddy](http://www.godaddy.com) or [Verisign](http://www.verisign.com), etc.  You'll need to assess your company's needs and make that decision on your own.
 
-Then, we pick up after you've purchased you're certificate and are ready to install your SSL certificate to your application on Engine Yard AppCloud.
+Then, we pick up after you've purchased you're certificate and are ready to install your SSL certificate to your application on Engine Yard Cloud.
 
-Here's the information **you need** to get SSL working on Engine Yard AppCloud.
+Here's the information **you need** to get SSL working on Engine Yard Cloud.
 
 ## Generate Your SSL Certificate Key and Signing Request
 
@@ -17,7 +17,7 @@ This process will help you to generate the two files you need to purchase a SSL 
 
 ### Generate Your Private Key
 
-<html><span style="color:red;">You cannot use a passphrase for your SSL certificate on Engine Yard AppCloud.</span></html>
+<html><span style="color:red;">You cannot use a passphrase for your SSL certificate on Engine Yard Cloud.</span></html>
 
 Generate a key file with no passphrase.
 
@@ -63,7 +63,7 @@ You can either use an SSL certificate you've purchased or have us generate a Sel
 
 ### Add A Certificate
 
-If you've already got your certificate and you're ready to install it log into EY AppCloud. From the dashboard under SERVER TOOLS on the left, click **SSL Certificates** button.  The page will list any certs you have stored.
+If you've already got your certificate and you're ready to install it log into EY Cloud. From the dashboard under SERVER TOOLS on the left, click **SSL Certificates** button.  The page will list any certs you have stored.
 
 If you don't haven any SSL certificates configured click on the link in the top right: **Add SSL Certificate**
 
@@ -96,7 +96,7 @@ What is a Self-Signed Certificate?  See what [WikiPedia](http://en.wikipedia.org
 
 ### Link SSL Certificate to Application
 
-After you've configured your SSL Certificate (either a purchased SSL cert or a self-signed cert) you'll want to let EY AppCloud know what application can use it.
+After you've configured your SSL Certificate (either a purchased SSL cert or a self-signed cert) you'll want to let EY Cloud know what application can use it.
 
 Get back to your **Dashboard**, then click on the **SSL** tab for your environment.
 

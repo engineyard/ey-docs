@@ -1,4 +1,4 @@
-# Adding SSH keys to AppCloud from Windows
+# Adding SSH keys to Cloud from Windows
 
 On Windows there are a number of ways to create an SSH keypair, including
 RailsInstaller, PuTTY, and Cygwin. Engine Yard supports the RailsInstaller
@@ -7,7 +7,7 @@ method because it is straight-forward.
 This is a two step process:
 
 * [[Create keys.|ssh-windows#create]]
-* [[Add keys to AppCloud.|ssh-windows#add]]
+* [[Add keys to Cloud.|ssh-windows#add]]
 
 <h2 id="create"> To create keys</h2>
 
@@ -20,7 +20,7 @@ RailsInstaller automatically creates SSH keys in `~/.ssh`
 
         cd ~
 
-2. Generate the SSH keys: (make sure to use a strong password or AppCloud will
+2. Generate the SSH keys: (make sure to use a strong password or Cloud will
 reject it)
 
         ssh-keygen -t rsa
@@ -31,7 +31,7 @@ reject it)
 
 You now have a private and public key: `~/.ssh/id_rsa` and `~/.ssh/id_rsa.pub`.
 
-<h2 id="add"> To add keys to AppCloud </h2>
+<h2 id="add"> To add keys to Cloud </h2>
 
 1. Locate and copy the public key on your local machine:
   
@@ -41,7 +41,7 @@ You now have a private and public key: `~/.ssh/id_rsa` and `~/.ssh/id_rsa.pub`.
 
     b. Copy the key to the clipboard.  
 
-1. In your AppCloud Dashboard, click SSH Public Keys.
+1. In your Cloud Dashboard, click SSH Public Keys.
 
 2. Click Add new SSH public key.
 
@@ -58,7 +58,7 @@ have any environments, this key is automatically added to the ones you create.
 
 6. Click Add Key.  
   You receive a confirmation that your ssh public key has been created and added to your
-AppCloud account.
+Cloud account.
 
 ## Next step
 

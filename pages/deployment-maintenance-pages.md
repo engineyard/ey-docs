@@ -10,7 +10,7 @@ contained in the latest deploy.  This prevents showing users a message from
 an old deploy.
 
 ## Priority
-When a maintenance page is requested to be displayed, AppCloud looks for
+When a maintenance page is requested to be displayed, Cloud looks for
 html files and displays them in the following priority:
 
 1. `public/maintenance.html.custom`

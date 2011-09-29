@@ -11,9 +11,9 @@
 
 * [[Fix: "Server not available" errors with force_ssl|appcloud_updates_september_2011#update16]] *September 22nd, 2011*
 
-* [[<b>Major:</b> MySQL 5.1 and 5.5 are now available in AppCloud with Alpha support|appcloud_updates_september_2011#update15]] *September 22nd, 2011*
+* [[<b>Major:</b> MySQL 5.1 and 5.5 are now available in Cloud with Alpha support|appcloud_updates_september_2011#update15]] *September 22nd, 2011*
 
-* [[Fix: GitHub/AppCloud account linking (Beta) more robust|appcloud_updates_september_2011#update14]] *September 21st, 2011*
+* [[Fix: GitHub/Cloud account linking (Beta) more robust|appcloud_updates_september_2011#update14]] *September 21st, 2011*
 
 * [[ Fix: Large PostgreSQL instances start|appcloud_updates_september_2011#update13]] *September 19th, 2011*
 
@@ -54,15 +54,15 @@
 * [[Fix: Production.log permissions were being changed back to root
 |appcloud_updates_august_2011#update8]] *August 18th, 2011*
 
-* [[<b>Major</b>: Link your AppCloud account to a GitHub account to make deploy keys automatic. (Beta support)|appcloud_updates_august_2011#update7]] *August 18th, 2011*
+* [[<b>Major</b>: Link your Cloud account to a GitHub account to make deploy keys automatic. (Beta support)|appcloud_updates_august_2011#update7]] *August 18th, 2011*
 
-* [[Minor: Update and fixes to the AppCloud stack|appcloud_updates_august_2011#update6]] *August 16th, 2011*
+* [[Minor: Update and fixes to the Cloud stack|appcloud_updates_august_2011#update6]] *August 16th, 2011*
 
 * [[Fix: Resque workers failing|appcloud_updates_august_2011#update5]]  *August 8th, 2011*
 
 * [[Minor: Ruby 1.9.2 is now the default Ruby runtime for new environments|appcloud_updates_august_2011#update4]] *August 4th, 2011*
 
-* [[<b>Major:</b> Passenger 3 is now generally available in AppCloud|appcloud_updates_august_2011#update3]]  *August 3rd, 2011*
+* [[<b>Major:</b> Passenger 3 is now generally available in Cloud|appcloud_updates_august_2011#update3]]  *August 3rd, 2011*
 
 * [[Minor: Context-sensitive help added to UI pages|appcloud_updates_august_2011#update2]]  *August 1st, 2011*
 

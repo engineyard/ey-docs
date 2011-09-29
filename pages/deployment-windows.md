@@ -1,15 +1,15 @@
-# Deploy to AppCloud from Windows
+# Deploy to Cloud from Windows
 
 Working with Rails on Windows used to be a relatively difficult task.
-RailsInstaller and AppCloud have made creating and deploying Rails applications easier. 
-Below is the process for deploying your application to Engine Yard's AppCloud platform.
+RailsInstaller and Cloud have made creating and deploying Rails applications easier. 
+Below is the process for deploying your application to Engine Yard's Cloud platform.
 
 Steps to create and deploy your application from Windows:
 
   * [[Create a Rails application|deployment-windows#rails]]
   * [[Adjust your Gemfile|deployment-windows#adjust]]
   * [[Setup Git and SSH|deployment-windows#git-ssh]]
-  * [[Create an AppCloud application|deployment-windows#application]]
+  * [[Create an Cloud application|deployment-windows#application]]
   * [[Create an Environment|deployment-windows#environment]]
   * [[Configure instances|deployment-windows#instances]]
   * [[Considerations when deploying from Windows|deployment-windows#consider]]        
@@ -57,12 +57,12 @@ can add your ssh public key to the service hosting your git repository.
 1. Create and/or login to your [[GitHub|http://www.github.com]] account.
 2. Create a new repository on Github and follow the setup directions.
 3. Add your SSH public key to Github.
-4. Add your SSH public key to AppCloud.
+4. Add your SSH public key to Cloud.
 
 
-<h2 id="application">Create your application on AppCloud</h2>
+<h2 id="application">Create your application on Cloud</h2>
 
-1. Login to your AppCloud account.
+1. Login to your Cloud account.
 2. Click Create New Application from the Dashboard.
 3. Enter your git repository information.
 4. Enter your Application Name.

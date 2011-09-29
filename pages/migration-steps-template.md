@@ -9,11 +9,11 @@
   - Stop all background jobs, cron jobs, etc that update data
   - Ensure that there are no longer any connections to the database
   - Dump and compress the database
-  - `scp` it to your AppCloud database instance
-  - `rsync` any assets over to your new EY AppCloud instance(s)
+  - `scp` it to your Cloud database instance
+  - `rsync` any assets over to your new EY Cloud instance(s)
   - Load your the DB dump into the database
-  - **Test** the new setup on EY AppCloud (this is the final step before sending your users over to the new setup)
-  - Update DNS to point to your EY AppCloud IP
+  - **Test** the new setup on EY Cloud (this is the final step before sending your users over to the new setup)
+  - Update DNS to point to your EY Cloud IP
   - Update your nginx config to redirect any traffic hitting your old IP to the new IP
   - Congrats you're done!
 

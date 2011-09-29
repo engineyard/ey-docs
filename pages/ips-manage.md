@@ -1,7 +1,7 @@
-# Manage your IP addresses on AppCloud
+# Manage your IP addresses on Cloud
 
 This article provides guidance on how to manage adding, detaching and 
-attaching IP addresses within an AppCloud environment.
+attaching IP addresses within an Cloud environment.
 
 Topics discussed in this article:
 
@@ -45,7 +45,7 @@ IP addresses are assigned when configuring an environments instances.
 
 <h2 id="detach">Detach an address</h2>
 
-  * Login to your AppCloud account.
+  * Login to your Cloud account.
   * Click the **IP Addresses** menu item.
   * Locate the ip address you want to detach.
   * Click on the **Detach** link.
@@ -75,4 +75,4 @@ environment.
 
 ## Delete an address
 There are special considerations to take when deleting an ip address from your account.
-Learn how to [[delete an ip address|ips-delete]] from your AppCloud account.
+Learn how to [[delete an ip address|ips-delete]] from your Cloud account.

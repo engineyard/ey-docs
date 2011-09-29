@@ -8,7 +8,7 @@ Each environment is associated with a specific version of the runtime that is us
 
 ## To create a Ruby 1.9 environment for your application
 
-1. In the AppCloud dashboard, click the name of your application.
+1. In the Cloud dashboard, click the name of your application.
 
 2. On the Environment, click Create New Environment.
 

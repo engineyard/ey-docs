@@ -1,4 +1,4 @@
-# Implement full text search with Sphinx on AppCloud
+# Implement full text search with Sphinx on Cloud
 
 ## Introduction
 
@@ -14,7 +14,7 @@ Thinking Sphinx connects ActiveRecord and the Sphinx search daemon, allowing you
 
         gem 'thinking-sphinx', '2.0.3'
 	
-2. Read the page on using [[Custom Chef|custom-chef-recipes]] with AppCloud.
+2. Read the page on using [[Custom Chef|custom-chef-recipes]] with Cloud.
 
 3. Make the following edits to the [[sphinx default recipe|http://github.com/engineyard/ey-cloud-recipes/tree/master/cookbooks/sphinx]] in `cookbooks/sphinx/recipes/default.rb`
 
@@ -30,7 +30,7 @@ Thinking Sphinx connects ActiveRecord and the Sphinx search daemon, allowing you
 
         ![Cron interval](images/sphinx_cron.png)
 
-4. 	Add deploy hooks by adding these lines to before_migrate.rb. For information about deploy hooks, see [How To Use Deploy Hooks with Engine Yard AppCloud](http://docs.engineyard.com/appcloud/howtos/deployment/use-deploy-hooks-with-engine-yard-appcloud):  
+4. 	Add deploy hooks by adding these lines to before_migrate.rb. For information about deploy hooks, see [How To Use Deploy Hooks with Engine Yard Cloud](http://docs.engineyard.com/appcloud/howtos/deployment/use-deploy-hooks-with-engine-yard-appcloud):  
 
         run "ln -nfs #{shared_path}/config/sphinx #{release_path}/config/sphinx"  
         run "ln -nfs #{shared_path}/config/sphinx.yml #{release_path}/config/sphinx.yml"  
@@ -39,7 +39,7 @@ Thinking Sphinx connects ActiveRecord and the Sphinx search daemon, allowing you
 
         ey recipes upload -e environment_name
 
-5. After the cookbook is uploaded, update your environment from the AppCloud dashboard.
+5. After the cookbook is uploaded, update your environment from the Cloud dashboard.
 
 	![Update environment](images/sphinx_update.jpg)
 	
@@ -58,7 +58,7 @@ This table contains troubleshooting tips related to setting up Sphinx with your 
 	  </tr>
 	  <tr>
 	    <td>I set up Sphinx without using chef recipes. It worked fine at first but then stopped working.</td>
-		<td>If you do not use chef recipes to set up Sphinx, Sphinx configuration is lost whenever your AppCloud instance is restarted.</td>
+		<td>If you do not use chef recipes to set up Sphinx, Sphinx configuration is lost whenever your Cloud instance is restarted.</td>
 	</tr>
 	<tr>
 		<td>I can't connect to the Sphinx server / Sphinx server not found.</td>

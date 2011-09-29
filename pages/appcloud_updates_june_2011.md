@@ -1,4 +1,4 @@
-# AppCloud updates June 2011
+# Cloud updates June 2011
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
@@ -8,7 +8,7 @@ The updates described are either important (where you need to take action) or of
 
 June 29th, 2011
 
-Phusion Passenger 3 is available with Beta support in AppCloud. (No sign-up required.)
+Phusion Passenger 3 is available with Beta support in Cloud. (No sign-up required.)
 
 Passenger 3 brings substantial performance improvements over Passenger 2.
 
@@ -39,7 +39,7 @@ Fixed an issue where changes to the Domain Name field were not saved. Domain nam
 
 June 24th, 2011
 
-If you are new to AppCloud, test our sample repository and get the ToDo application up and running in your AppCloud account. 
+If you are new to Cloud, test our sample repository and get the ToDo application up and running in your Cloud account. 
 
 Click Try our sample... to populate the Git Repository URI with the source code for the ToDo application.
 

@@ -1,4 +1,4 @@
-# Delete an environment on AppCloud
+# Delete an environment on Cloud
 
 ## Before You Begin
 

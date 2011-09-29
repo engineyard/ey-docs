@@ -1,10 +1,10 @@
-# Set up your domain and DNS for AppCloud
+# Set up your domain and DNS for Cloud
 
-Anyone can access your web application on AppCloud by the generic http://ec2-xxx-xx-xxx-xxx.compute-1.amazonaws.com/. However, most users would rather have www.myapp.com to be the point of access. How can we accomplish that with AppCloud?
+Anyone can access your web application on Cloud by the generic http://ec2-xxx-xx-xxx-xxx.compute-1.amazonaws.com/. However, most users would rather have www.myapp.com to be the point of access. How can we accomplish that with Cloud?
 
-Domain Name System (DNS) services are not offered on AppCloud. If you are currently using Engine Yard name servers, you need to register with a DNS service provider and update your registrar to use that provider's name servers. Check with your registrar; they may also offer control of your DNS zone records.
+Domain Name System (DNS) services are not offered on Cloud. If you are currently using Engine Yard name servers, you need to register with a DNS service provider and update your registrar to use that provider's name servers. Check with your registrar; they may also offer control of your DNS zone records.
 
-## Setup AppCloud to work with a DNS provider
+## Setup Cloud to work with a DNS provider
 
 This procedure uses the specific example of [[DNSimple|http://www.dnsimple.com]] as the service provider. Other service providers require similar steps.
 

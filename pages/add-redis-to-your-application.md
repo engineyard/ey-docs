@@ -4,18 +4,18 @@
 as a data structure server since keys can contain strings, hashes, lists,
 sets and sorted sets.
 
-Getting Redis working on AppCloud is not as daunting a task as it may
+Getting Redis working on Cloud is not as daunting a task as it may
 seem. It's as easy as bundling the [Redis gem](http://rubygems.org/gems/redis) gem into your application.
 
 ## Install the Redis Gem
 
-The easiest way to add Redis to your Ruby application on AppCloud is to:
+The easiest way to add Redis to your Ruby application on Cloud is to:
 
 * Add the Redis gem to your gemfile
         gem 'redis'
 * Install the Redis gem using bundler from your development machine
         bundle install
-* Deploy your application to AppCloud
+* Deploy your application to Cloud
 
 ## Redis Version
 

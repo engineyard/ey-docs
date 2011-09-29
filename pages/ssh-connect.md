@@ -1,7 +1,7 @@
 # Connect to your instance via SSH
 
 Once you have [[setup your keys|ssh-setup]] locally, [[added your keys|ssh-add-to-appcloud]]
-to AppCloud and [[installed the keys|ssh-install]] to your applications environment, you 
+to Cloud and [[installed the keys|ssh-install]] to your applications environment, you 
 are now ready to connect to your instance(s) via an SSH client.
 
 There are two methods to start an ssh session:

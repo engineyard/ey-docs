@@ -10,7 +10,7 @@ The Instances tab shows "Termination Failed" for one or more instances.
 
 1. Do one of the following:  
 
-    *  Click <b>Retry</b> to try again to terminate the instance. If AppCloud cannot terminate the instance within 10 minutes, it returns another "Termination Failed" message.
+    *  Click <b>Retry</b> to try again to terminate the instance. If Cloud cannot terminate the instance within 10 minutes, it returns another "Termination Failed" message.
 
     *  Click <b>Force</b> to force-terminate the instance. 
 

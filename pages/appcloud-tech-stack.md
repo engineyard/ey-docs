@@ -34,10 +34,10 @@ As a result, you can confidently deploy and manage your application with any Eng
         We recommend
       </th>
       <th>
-        AppCloud support
+        Cloud support
       </th>
       <th>
-        xCloud support
+        Managed support
       </th>
       <th>
         Versions to avoid<br>
@@ -297,7 +297,7 @@ As a result, you can confidently deploy and manage your application with any Eng
       <td>
         <p>
           0.6.38 and below must apply several security patches.<br>
-          0.7.65-r2 support is in Beta status for xCloud.
+          0.7.65-r2 support is in Beta status for EY Managed.
         </p>
       </td>
     </tr>

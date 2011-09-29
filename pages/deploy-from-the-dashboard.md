@@ -1,10 +1,10 @@
-# Deploy from your AppCloud Dashboard
+# Deploy from your Cloud Dashboard
 
 You can run a simple code deployment from your master branch, deploy your code and run migrations, or deploy code from another branch in your Git repository.
 
 ## Prequisites
 
-* You have created an AppCloud account.
+* You have created an Cloud account.
 * You have created an application in your account.
 * Your application environment is currently running.
 

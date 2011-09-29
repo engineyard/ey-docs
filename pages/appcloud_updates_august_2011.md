@@ -1,4 +1,4 @@
-# AppCloud updates August 2011
+# Cloud updates August 2011
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
@@ -50,21 +50,21 @@ August 18th, 2011
 
 Updated the delayed_job script to fix an issue where it was not running as the deploy user.
 
-<a href=#update7><h2 id="update7"><b>Major</b>: Link your AppCloud account to a GitHub account to make deploy keys automatic. (Beta support)</h2></a>
+<a href=#update7><h2 id="update7"><b>Major</b>: Link your Cloud account to a GitHub account to make deploy keys automatic. (Beta support)</h2></a>
 
 August 18th, 2011
 
-No more cutting-and-pasting of deploy keys from AppCloud to GitHub. 
+No more cutting-and-pasting of deploy keys from Cloud to GitHub. 
 
-You can choose to link your AppCloud account to a GitHub account. After linking accounts, when you create an AppCloud application using a GitHub repository, the deploy key is automatically created. 
+You can choose to link your Cloud account to a GitHub account. After linking accounts, when you create an Cloud application using a GitHub repository, the deploy key is automatically created. 
 
-For more information, see [[Linking an AppCloud account to a GitHub account|linking-github-to-appcloud]].
+For more information, see [[Linking an Cloud account to a GitHub account|linking-github-to-appcloud]].
 
-<a href=#update6><h2 id="update6">Minor: Update and fixes to the AppCloud stack</h2></a>
+<a href=#update6><h2 id="update6">Minor: Update and fixes to the Cloud stack</h2></a>
 
 August 16th, 2011
 
-The following minor update and fixes have been released to the AppCloud stack:  
+The following minor update and fixes have been released to the Cloud stack:  
 
 * Improved deployment for Rails 3 applications.  
 * Fix for PostgreSQL Alpha users: now only bad queries are logged; previously, all queries were logged.  
@@ -77,23 +77,23 @@ August 8th, 2011
 Fixed a rake version issue in script/engineyard/bin/resque that caused
 Resque workers to fail.
 
-This issue applied only if bundler was used in older AppCloud environments
-(or in xCloud environments).
+This issue applied only if bundler was used in older Cloud environments
+(or in EY Managed environments).
 
 <a href=#update4><h2 id="update4"> Minor: Ruby 1.9.2 is now the default Ruby runtime for new environments</h2></a>
 
 August 4th, 2011
 
-Ruby 1.9.2 has been available in AppCloud for a while. However, until now, Ruby 1.8.7 has been the default Ruby runtime.
+Ruby 1.9.2 has been available in Cloud for a while. However, until now, Ruby 1.8.7 has been the default Ruby runtime.
 
 For more information, see [[Upgrading to Ruby 1.9|upgrading-to-ruby19]]. 
 
-<a href=#update3><h2 id="update3"> <b>Major:</b> Passenger 3 is now generally available in AppCloud</h2></a>
+<a href=#update3><h2 id="update3"> <b>Major:</b> Passenger 3 is now generally available in Cloud</h2></a>
 
 August 3rd, 2011
 
 Phusion Passenger 3 brings substantial performance improvements over Passenger 2. 
-For new environments, Passenger 3 is the default web stack server in AppCloud, replacing Passenger 2 as the default. 
+For new environments, Passenger 3 is the default web stack server in Cloud, replacing Passenger 2 as the default. 
 
 To edit an existing environment to use Passenger 3:
 

@@ -1,7 +1,7 @@
-# Convert Capistrano Symlinks to AppCloud Symlinks
+# Convert Capistrano Symlinks to Cloud Symlinks
 
 Many people use Capistrano to configure symlinks to shared folders.  
-Ideally you'd be able to fully deploy your app from the Engine Yard AppCloud Dashboard without Capistrano.
+Ideally you'd be able to fully deploy your app from the Engine Yard Cloud Dashboard without Capistrano.
 
 ## Example Capistrano recipe
 
@@ -33,7 +33,7 @@ Here's an example of a common Capistrano recipes for symlinking folders:
 ## Using deploy hooks
 
 To replace the above Capistrano recipes, we suggest using our deploy hooks to customize your
-application deployment when using the AppCloud Dashboard or the CLI to deploy your code.
+application deployment when using the Cloud Dashboard or the CLI to deploy your code.
 
 ### Before Symlink deploy hook
 
@@ -54,5 +54,5 @@ Learn more about our [[Custom Deploy Hooks|use-deploy-hooks-with-engine-yard-app
 
 ## Conclusion
 
-By converting to deploy hooks, your application can now be deployed from the Engine Yard AppCloud 
+By converting to deploy hooks, your application can now be deployed from the Engine Yard Cloud 
 Dashboard without having to use Capistrano.

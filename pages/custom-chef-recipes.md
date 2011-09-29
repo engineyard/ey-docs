@@ -2,7 +2,7 @@
 
 ## Setup Chef Environment
 
-In order to be able to develop chef recipes that build (and rebuild each time you start an instance) dependencies of your application, you need to install a few gems and set up API credentials for your AppCloud account.
+In order to be able to develop chef recipes that build (and rebuild each time you start an instance) dependencies of your application, you need to install a few gems and set up API credentials for your Cloud account.
 
 ### Install The Engineyard Gem
 

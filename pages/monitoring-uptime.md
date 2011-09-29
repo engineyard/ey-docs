@@ -1,15 +1,15 @@
-# Monitoring application uptime on AppCloud
+# Monitoring application uptime on Cloud
 
 Monitoring your applications uptime is important for keeping your 
 application highly available and knowing about application outages when they happen.
-AppCloud provides the ability to monitor an applications external
+Cloud provides the ability to monitor an applications external
 urls to determine if your application is accessible.
 
 To enable uptime monitoring for an environment:
 
 1. [[Install the FitterHappier plugin|]]
 2. [[Update your environment|]]
-3. [[Add the monitored URL to AppCloud|]]
+3. [[Add the monitored URL to Cloud|]]
 
 ## Install the FitterHappier plugin
 
@@ -40,20 +40,20 @@ To enable uptime monitoring for an environment:
 Once FitterHappier has been successfully installed, commit the changes to your git repository 
 and redeploy your application. Ensure deployment was successful by testing the same URIs from above.
 
-## Add the monitored URL to AppCloud
+## Add the monitored URL to Cloud
 
-You can monitor a single URL per environment with AppCloud.  We suggest monitoring the 
+You can monitor a single URL per environment with Cloud.  We suggest monitoring the 
 URL `http://yoursite.com/fitter_happier/site_and_database_check` for optimal coverage.
 
 ### Steps
 
-  1. Login to your AppCloud account.
+  1. Login to your Cloud account.
   2. Select an environment by clicking the environment name.
   3. Click the More Options tab in your environment.
   4. Click HTTP Monitoring.
   5. Add the url you wish to monitor in the URL to monitor text field.
   6. Click Add URL.
 
-AppCloud will ping the URL you provided approximately every 2 minutes.  If the application does not return a
+Cloud will ping the URL you provided approximately every 2 minutes.  If the application does not return a
 200 OK HTTP response, an alert will be created and an email will be sent to the configured email address.
 When the application comes back online, an email will be sent to confirm availability.

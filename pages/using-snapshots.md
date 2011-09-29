@@ -1,4 +1,4 @@
-# Using snapshots on AppCloud
+# Using snapshots on Cloud
 
 ## Single Instance
 

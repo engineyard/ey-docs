@@ -1,4 +1,4 @@
-# AppCloud updates May 2011
+# Cloud updates May 2011 
 
 This page describes the action-required update of May 18th, 2011. (This is not a complete listing of updates in May.)
 
@@ -8,7 +8,7 @@ This page describes the action-required update of May 18th, 2011. (This is not a
 
 General Changes
 
-* Ruby 1.8.6 upgraded to p420
+* Ruby 1.8.6 upgraded to p420Cloud
 * "reconnect:true" added to database.yml
 * Passenger 3 Beta environments upgraded to 3.0.7
 * Added systat, lsof, and strace cookbooks
