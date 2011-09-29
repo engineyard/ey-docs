@@ -55,8 +55,8 @@ can add your ssh public key to the service hosting your git repository.
 
 
 1. Create and/or login to your [[GitHub|http://www.github.com]] account.
-2. Create a new repository on Github and follow the setup directions.
-3. Add your SSH public key to Github.
+2. Create a new repository on GitHub and follow the setup directions.
+3. Add your SSH public key to GitHub.
 4. Add your SSH public key to AppCloud.
 
 
@@ -110,7 +110,7 @@ and other resources.
 * RailsInstaller installs Ruby 1.8.7 and Rails 3.0.7. You can update the
   Rails version by running `gem update rails` from the command prompt. If
   you want to run multiple Ruby versions on Windows, check out
-  [pik](https://github.com/vertiginous/pik) on Github.
+  [pik](https://github.com/vertiginous/pik) on GitHub.
 
 * If you have deployed your code and the instance is using the wrong
   version of Bundler, click 'Update' on the application to update the
@@ -119,10 +119,10 @@ and other resources.
 * Default location for SSH key is `C:\Users\<name>/.ssh/id_rsa.pub`
 
 * If using a public git repository, use the 'Git Read-Only' address from
-  Github.
+  GitHub.
 
 * If it's a private repository, you'll need to add a deploy key to the
-  Github repository.
+  GitHub repository.
 
 * If using the defaults from RailsInstaller 1.x, select the Ruby 1.8.7
   version when creating your environment. (Ruby 1.9.2 for RailsInstaller version 2.x)
