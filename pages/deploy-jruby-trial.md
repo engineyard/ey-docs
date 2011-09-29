@@ -7,7 +7,7 @@ To deploy a JRuby application on a trial account, follow this process:
 
 <h2 id="topic2"> Create an application and environment </h2>
 
-For detailed help with these steps, see [[docs.engineyard.com|home]]. These steps are the same for any trial account setup. 
+For detailed help with these steps, see [[Get started|getting-started-intro]]. These steps are the same for any trial account setup. 
 
 
 ###To create an application and environment  

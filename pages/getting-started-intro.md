@@ -1,4 +1,4 @@
-#Getting started with Engine Yard Cloud
+#Get started with Engine Yard Cloud
 
 ##Topics
 
