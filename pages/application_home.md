@@ -1,12 +1,12 @@
 # Applications
 
-This section outlines how to manage your application on EY Cloud. If you're looking to add SSL to your application please see this article: [[SSL Certs|ssl-certificates]].
+This section outlines how to manage your application on Engine Yard Cloud. If you're looking to add SSL to your application please see this article: [[SSL Certs|ssl-certificates]].
 
 ## Add an Application
 
 You can configure many different applications and their corresponding repository URL and framework under Engine Yard Cloud.
 
-  - In the top right corner, click on the **Create New Application** link.
+  - In the top right corner, click the Create New Application link.
 
 On the new application page
 
@@ -19,7 +19,7 @@ A new screen with the git deploy key for your application will appear.
 
   - Copy the git deploy key.
   - Paste it to deploy keep section of your GitHub Account.
-  - Click **My Deploy Key is in Place** when ready.
+  - Click My Deploy Key is in Place when ready.
 
 Once you've setup the deploy key, you're ready to fine tune your environment. Often the defaults are fine but you should still look over them. 
 
@@ -44,20 +44,20 @@ Finally, select the external address of your application and click "Boot this Co
 
 There is more than one way to get to the edit an application screen.
 
-  * The **Applications** tab under SERVER TOOLS will list your applications.
-  * You can then click on the name of your application to edit.
+  * The Applications tab under SERVER TOOLS will list your applications.
+  * You can then click the name of your application to edit.
 
 Alternatively you can go from the Dashboard.
 
-  * In your environment, under the Applications tab there is an **Edit** link.
+  * In your environment, under the Applications tab there is an Edit link.
 
-Once you're on the **Edit Application** screen you'll be able to modify the following options.
+Once you're on the Edit Application screen you'll be able to modify the following options.
 
   * Git Repository URI
   * Application Type
   * Domain Name
 
-Save the settings by clicking **Update application** button.
+Save the settings by clicking Update application button.
 
 NOTE: You can't change your Git Deploy Key, but you can copy it if needed.
 
@@ -67,9 +67,9 @@ NOTE: You can't change your Git Deploy Key, but you can copy it if needed.
 
 If you need to configure gems for your application now or anytime, just navigate to the gems page.
 
-  - Under SERVER TOOLS, click on **Dashboard**.
-  - Click on the name of your application.
-  - Then click the **Add RubyGems** icon, in the upper right.
+  - Under SERVER TOOLS, click Dashboard.
+  - Click the name of your application.
+  - Then click the Add RubyGems icon, in the upper right.
 
 
 ### Search for a Gem
@@ -79,11 +79,11 @@ If you need to configure gems for your application now or anytime, just navigate
 
 Results returned under the heading "Available Gems" can be configured to install when you boot an instance.
 
-  * Click on the **Add Gem -> link** to add your gem.
+  * Click the Add Gem -> link to add your gem.
 
 Now your gem moves to the "Selected Gems" on the right. Boot your instance and the gem will be installed.
 
-To remove a gem, click on the **x Remove link** and the gem is removed. Re-start your instance to effect the change.
+To remove a gem, click the x Remove link and the gem is removed. Re-start your instance to effect the change.
 
 ### Add a Gem from a Custom Server
 
@@ -91,22 +91,22 @@ To remove a gem, click on the **x Remove link** and the gem is removed. Re-start
 Use the section "Or Add a Gem From a Custom Gem Server".
 
   - Complete the exact "Name", "Version" and gem repository URL in the "Source" field.
-  - With your information accurate and complete, click the **Add Gem** button.
+  - With your information accurate and complete, click the Add Gem button.
 
 The gem appears on the "Selected Gems" list below. Boot your instance and the gem will be installed.
 
 ### Remove a Gem
 
-Just click on the **x Remove** link and the gem is removed.  This will remove the gem from the UI but will not remove the gem from any currently running instances.
+Just click the x Remove link and the gem is removed.  This will remove the gem from the UI but will not remove the gem from any currently running instances.
 
 
 ## Manage Unix Packages
 
 Configure additional software packages for your application within Engine Yard Cloud.
 
-  - Under SERVER TOOLS, click on **Dashboard** to view your list of applications.
-  - Click on name of the application you want to modify
-  - Then click on the **Add Unix Packages** icon in the upper right.
+  - Under SERVER TOOLS, click Dashboard to view your list of applications.
+  - Click name of the application you want to modify
+  - Then click the Add Unix Packages icon in the upper right.
 
 ### Add a Software Package
 
@@ -114,10 +114,10 @@ Configure additional software packages for your application within Engine Yard C
 
 Results returned under the heading "Available Unix Packages" can be configured to install when you boot an instance.
 
-  * Click on the **Add ->** link to add your package.
+  * Click the Add -> link to add your package.
 
 Now your package moves to the "Selected Unix Packages" on the right.  Boot your instance and the package will be installed.
 
 ### Remove a Software Package
 
-Just click on the **x Remove** link and the package is removed.  This will remove the package from the UI but will not remove the package from any currently running instances.
+Click the x Remove link and the package is removed.  This will remove the package from the UI but will not remove the package from any currently running instances.

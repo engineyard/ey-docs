@@ -1,4 +1,4 @@
-# Cloud updates May 2011 
+# Engine Yard AppCloud updates May 2011 
 
 This page describes the action-required update of May 18th, 2011. (This is not a complete listing of updates in May.)
 
@@ -118,7 +118,7 @@ For help understanding if, see [How if works](http://agentzh.blogspot.com/2011/0
 **To refactor your rewrite directives:**
 
 1. Review your rewrite directives.
-2. Using the dashboard, make sure you have specified a domain name for all applications running in your environment.
+2. Using the Dashboard, make sure you have specified a domain name for all applications running in your environment.
 3. Refactor your rewrites into a default server block based on the above example.
 4. Test on a staging environment before deploying to production.
 

@@ -8,8 +8,8 @@ This page describes how to rebuild an environment and how to minimize downtime.
 
 * You need to attach a new or different ip address to the environment.
 
-* When upgrading a Database Instance there is no way to "terminate" and re-provision 
-  the DB instance separately.  You will need to rebuild the complete environment.
+* When upgrading a database instance there is no way to "terminate" and re-provision 
+  the DB instance separately.  You need to rebuild the complete environment.
 
 
 

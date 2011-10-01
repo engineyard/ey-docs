@@ -7,7 +7,7 @@ smaller-scale web applications that run within a single compute instance, to pro
 that require the elasticity, scalability and reliability of multiple instances 
 running at "full-tilt", Engine Yard's Cloud can scale with your needs.
 
-## Benefits of using Cloud
+## Benefits of using Engine Yard Cloud
 
 With Engine Yard Cloud you only pay for what you use. There are no setup or 
 environment fees, and you don't need your own separate Amazon AWS account. Automated load balancing 
@@ -49,7 +49,7 @@ customer-handoff ready application stored on Engine Yard Cloud, ready to be spun
 into a live environment. Best of all, when your environment isn't running, you only pay 
 minimal data costs to store your data.
 
-## Cloud Platform Architecture
-[[Learn more|appcloud-architecture]] about the technology components used in Engine Yards
+## Platform Architecture
+[[Learn more|appcloud-architecture]] about the technology components used in Engine Yard
 Cloud architecture.
 

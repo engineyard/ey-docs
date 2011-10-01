@@ -1,4 +1,4 @@
-# Using deploy hooks with Cloud
+# Using deploy hooks
 
 ## Introduction
 

@@ -18,6 +18,6 @@ When you are booting up your instance sometimes you run into this message: "Amaz
 
 * Now you are presented with a list of advanced option that includes changing the Ruby runtime and the most important for this error, the Availability Zone. Change the availability zone from what it currently is to another area. After you have done this, make sure to click the Update Instances button.
 
-* You are then be redirected to the dashboard. Here you want to click the Boot Instance button. Then choose what type of configuration you want to have and boot up again.
+* You are then be redirected to the Dashboard. Here you want to click the Boot Instance button. Then choose what type of configuration you want to have and boot up again.
 
 When you boot up again the error should disappear and your application and master server are setup and ready to go.  Repeat (if at all necessary).

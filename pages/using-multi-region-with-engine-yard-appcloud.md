@@ -1,4 +1,4 @@
-# Using Multi-Region on Cloud
+# Using Multi-Region on Engine Yard Cloud
 
 
 With Multi-Region in Cloud an entire environment and its instances 
@@ -21,7 +21,7 @@ All Cloud features are supported in each of the following AWS regions:
 
 
 
-![EY Regions](images/ey-regions_sm.png)
+![Engine Yard Regions](images/ey-regions_sm.png)
 
 
 ## Current Limitations

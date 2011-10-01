@@ -1,4 +1,4 @@
-# Monitor applications with New Relic on Cloud
+# Monitor applications with New Relic on Engine Yard Cloud
 
 [New Relic](http://newrelic.com/) is a tool for monitoring real-time web application performance -- from the end-user experience down to a line of application code. 
 
@@ -8,7 +8,7 @@ also get trending data; is your application faster or slower this week than last
 week? When problems occur, you can get a transaction response performance breakdown 
 and view a detailed timeline of an individual request.    
 
-**Note:** New Relic Standard is free for Cloud customers.
+**Note:** New Relic Standard is free for Engine Yard accounts.
 
 ### Steps to setup New Relic:
 
@@ -38,7 +38,7 @@ that the Professional plan better suits you needs.
 
 Your New Relic account is created automatically using your Engine Yard account and password. 
 
-If you selected the Professional plan, the New Relic charge appears on your Cloud 
+If you selected the Professional plan, the New Relic charge appears on your Engine Yard Cloud 
 account bill. You will not get a separate bill from New Relic.
 
 <h2 id="topic2"> Configure your application for monitoring</h2>
@@ -52,7 +52,7 @@ In order to montior your application with New Relic, you need to add the New Rel
     * For Rails 2.0 and Rails 2.1 to 2.3 without bundler, edit your environment.rb file.  
 
     For details, see the [[New Relic Knowledge Base about installing the gem.|  http://support.newrelic.com/kb/ruby/ruby-agent-installation-gem]]  
-1. In Cloud, click Dashboard.
+1. In Engine Yard Cloud, click Dashboard.
 2. Click the application name that needs monitoring.
 3. Click the pencil icon to edit this application.
 4. Select Enable New Relic Monitoring at the bottom of this page.  
@@ -63,7 +63,7 @@ In order to montior your application with New Relic, you need to add the New Rel
 <h2 id="topic3"> View New Relic performance data for your application</h2>
 
 Once an environment has been configured and updated with New Relic support, you can
-access your New Relic account directly from Cloud to view monitoring details about 
+access your New Relic account directly from Engine Yard Cloud to view monitoring details about 
 your application.
 
 ### To view New Relic data for your application

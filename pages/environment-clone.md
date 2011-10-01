@@ -1,8 +1,8 @@
-# Clone an environment on Cloud
+# Clone an environment
 
 ## Introduction
 
-Cloud provides a clone feature that takes an environment and creates a new standalone copy.
+Engine Yard Cloud provides a clone feature that takes an environment and creates a new standalone copy.
 When an environment is cloned, *nearly* everything including the volumes that your 
 original environment uses are copied, *excluding* any custom files.
 
@@ -15,7 +15,7 @@ of spinning up an environment on-demand within a matter of minutes.
 
 ## Create a clone
 
-1. Login to your Cloud account.
+1. Login to your Engine Yard account.
 2. Click the Dashboard menu item.
 3. Navigate to the environment you want to clone by clicking on the environment name.
 4. Click More Options on the environment tabs.

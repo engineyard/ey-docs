@@ -12,7 +12,7 @@ expert cluster engineers, and seasoned DBAs for web server performance, database
 and long-term scalability. We meticulously test and fully integrate each new component and 
 component update to provide reliability, security, and compatibility within the stack.
 
-As a result, you can confidently deploy and manage your application with any Engine Yard cloud product. Read about the many [[benefits|http://www.engineyard.com/products/appcloud/benefits]] of using our Platform-as-a-Service.
+As a result, you can confidently deploy and manage your application with any Engine Yard product. Read about the many [[benefits|http://www.engineyard.com/products/appcloud/benefits]] of using our Platform-as-a-Service.
 
 <p class="note">
   <strong>Note: </strong>This version is correct as of September 22, 2011.
@@ -34,10 +34,10 @@ As a result, you can confidently deploy and manage your application with any Eng
         We recommend
       </th>
       <th>
-        Cloud support
+        Engine Yard Cloud support
       </th>
       <th>
-        Managed support
+        Engine Yard Managed support
       </th>
       <th>
         Versions to avoid<br>
@@ -297,7 +297,7 @@ As a result, you can confidently deploy and manage your application with any Eng
       <td>
         <p>
           0.6.38 and below must apply several security patches.<br>
-          0.7.65-r2 support is in Beta status for EY Managed.
+          0.7.65-r2 support is in Beta status for Engine Yard Managed.
         </p>
       </td>
     </tr>

@@ -1,8 +1,8 @@
-# Find Your Generated MySQL Password and Connect to Your DB
+# Find your generated MySQL password and connect to your database
 
-Before you begin, you must be running at least one application instance. When you configure your application on Cloud we generate a random password for you and render it on your instance. Your database password can be obtained by connecting over SSH into your instance and viewing your `database.yml` file.
+Before you begin, you must be running at least one application instance. When you configure your application on Engine Yard Cloud, we generate a random password for you and render it on your instance. Your database password can be obtained by connecting over SSH into your instance and viewing your `database.yml` file.
 
-## Access Your database.yml File
+## Access your database.yml file
 
 SSH into an application slice and run this command:
 
@@ -18,7 +18,7 @@ For example:
       host:      localhost
 
 
-## Login to a MySQL Database
+## Login to a MySQL database
 
 Now you're ready to log into mysql from the command line:
 

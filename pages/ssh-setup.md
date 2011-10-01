@@ -1,4 +1,4 @@
-# Setup SSH keys on Cloud
+# Setup SSH keys on Engine Yard Cloud
 
 Engine Yard enables login access to application instances via SSH.  We have standardized
 on the secure practice of using key based authentication.  This protects our customers' instances
@@ -58,4 +58,4 @@ The `id_rsa.pub` file is the public key file that you'll upload to Engine Yard C
 
 ## Next Steps
 
-[[Add your public key|ssh-add-to-appcloud]] to Cloud.
+[[Add your public key|ssh-add-to-appcloud]] to Engine Yard Cloud.

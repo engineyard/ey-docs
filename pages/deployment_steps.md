@@ -1,8 +1,8 @@
-# How your code is deployed on Cloud
+# How your code is deployed on Engine Yard Cloud
 
 ## General concepts
 
-There are two components that facilitate code deployment on Cloud:
+There are two components that facilitate code deployment:
 
 * **Client-side component**. 
 This component connects (via SSH) to the application master of your environment and ensures that the server-side component is installed and is the correct version.  The client-side

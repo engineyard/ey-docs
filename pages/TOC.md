@@ -18,7 +18,7 @@
 * [[Deploy your Application|deployment-intro]]
   * [[Introduction|deployment-intro]]
   * [[How your code is deployed|deployment_steps]]
-  * [[Deploy from the dashboard|deploy-from-the-dashboard]]
+  * [[Deploy from the Dashboard|deploy-from-the-dashboard]]
   * [[Deploy JRuby applications in trial accounts|deploy-jruby-trial]]  
   * [[Deploy from the CLI|ey_cli_user_guide]]
   * [[Customize your deployment|customize-your-deployment]]

@@ -1,4 +1,4 @@
-# Clustered environments on Cloud
+# Clustered environments
 
 ## Cluster architecture
 

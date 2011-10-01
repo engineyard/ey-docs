@@ -25,13 +25,13 @@ MySQL 5.1 and 5.5 bring substantial feature and performance improvements over My
 
 For more information, see [[Using MySQL 5.1 or MySQL 5.5 with Cloud|database-mysql-upgrade]].
 
-<a href=#update14><h2 id="update14">Fix: GitHub/Cloud account linking (Beta) more robust</h2></a>
+<a href=#update14><h2 id="update14">Fix: GitHub/Engine Yard account linking (Beta) more robust</h2></a>
 
 September 21st, 2011
 
-Fixed an issue where GitHub/Cloud account linking did not work for multiple repositories. (The GitHub Repository URI field appeared blank.) 
+Fixed an issue where GitHub/Engine Yard account linking did not work for multiple repositories. (The GitHub Repository URI field appeared blank.) 
 
-For information about GitHub/Cloud account linking (Beta) , see [[Linking a GitHub account to Cloud|linking-github-to-appcloud]].
+For information about GitHub/Engine Yard account linking (Beta) , see [[Linking a GitHub account to Engine Yard Cloud|linking-github-to-appcloud]].
 
 <a href=#update13><h2 id="update13">Fix: Large PostgreSQL instances start</h2></a>
 
@@ -93,7 +93,7 @@ This fix sets the MySQL open files limit to 65535. This allows more simultaneous
 
 September 12th, 2011
 
-This upgrade fixes problems with Cloud dashboard graphs, false low memory alerts, and elevated memory usage and rogue processes for collectd. After upgrading, you might notice that the font for the dashboard graphs has changed.
+This upgrade fixes problems with Dashboard graphs, false low memory alerts, and elevated memory usage and rogue processes for collectd. After upgrading, you might notice that the font for the Dashboard graphs has changed.
 
 
 <a href=#update3><h2 id="update3"> Minor: The Deploy user can create and load SQL stored procedures</h2></a>

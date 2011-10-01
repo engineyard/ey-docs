@@ -1,35 +1,35 @@
-# Introduction to Instances on Cloud
+# Introduction to Instances on Engine Yard Cloud
 
-Instances on Cloud comprise of the compute resources that are dedicated to running
+Instances on Engine Yard Cloud comprise of the compute resources that are dedicated to running
 your Ruby application in the cloud.  Instances can be configured to serve your 
 application tier, database tier, cache tier, background processing and utilities, 
-and more.  On Cloud, instances are available in a handful of size configurations to 
-meet your cpu, memory, and disk space needs.  
+and more.  Instances are available in various configurations to 
+meet your CPU, memory, and disk space needs.  
 
 
 ## Topics
 
-* ### [[Instance types & roles on Cloud|instance-types]]
-  Learn more about the different types of instances and their roles on Cloud.
+* ### [[Instance types & roles|instance-types]]
+  Learn more about the different types of instances and their roles on Engine Yard Cloud.
 
 * ### [[Instance sizes available for your environments|instance-sizes]]
-  Learn more about the varying instance sizes available on Cloud.
+  Learn more about the varying instance sizes available on Engine Yard Cloud.
   
 * ### [[Change an Instance size|instance-change-size]]
-  Learn how to change an instances size within your Cloud environment.
+  Learn how to change an instances size within your Engine Yard Cloud environment.
   
-* ### [[Frozen instances on Cloud|instance-frozen]]
-  Learn how to deal with frozen or crashed instances on Cloud.
+* ### [[Frozen instances|instance-frozen]]
+  Learn how to deal with frozen or crashed instances on Engine Yard Cloud.
 
-* ### [[Degraded instances on Cloud|instance-degraded]]
-  Learn how to replace a degraded instance on Cloud.
+* ### [[Degraded instances|instance-degraded]]
+  Learn how to replace a degraded instance on Engine Yard Cloud.
 
 * ### [[Application master takeovers|instance-takeover]]
   Learn what happens when an application master fails and what actions you need to take both to prepare for takeover and if a takeover occurs.
 
-## Persistent Storage
+## Persistent storage
 Your application code and database are written out to **persistent storage** 
-volumes on Cloud. We automatically mount these volumes and take backups for you.
+volumes. We automatically mount these volumes and take backups for you.
 
 Both the `/data` mount on the application master instance and the `/db` mount on the database 
 master instance(s) are persistent. We take advantage of Amazon's EBS storage allowing us to 

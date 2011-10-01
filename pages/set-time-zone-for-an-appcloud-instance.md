@@ -1,4 +1,4 @@
-# Set the Time Zone for an Cloud Instance
+# Set the time zone for an instance
 
 ## Steps to change the time zone:
 
@@ -10,10 +10,10 @@
     one identified above: `ln -sf /usr/share/zoneinfo/Australia/Sydney /etc/localtime`
 
 Newly created processes will now respect the new time zone. It is also a 
-good idea to "Update instances" in your Cloud dashboard.
+good idea to "Update instances" in your Dashboard.
 
 To make this change persist when a new instance is created, we suggest 
 putting the command to create a symbolic link in Step 2 above in a deploy 
 hook (anything **except for** ''after_restart'' hook will do). 
-See [[HOWTO Use Deploy Hooks with Engine Yard Cloud|use-deploy-hooks-with-engine-yard-appcloud]] for 
+See [[How To Use Deploy Hooks|use-deploy-hooks-with-engine-yard-appcloud]] for 
 help with deploy hooks.

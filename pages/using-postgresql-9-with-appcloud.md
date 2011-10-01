@@ -70,7 +70,7 @@ If you are migrating an existing PostgreSQL database, you'll to perform a dump a
     * Set the Database Stack to PostgreSQL 9.  
       If this option is not available, see [Troubleshooting][6].
 
-    * Add the pg gem to your Gemfile for Rails 3 (or via the dashboard for Rails 2).
+    * Add the pg gem to your Gemfile for Rails 3 (or via the Dashboard for Rails 2).
 
       <pre>
 source "http://rubygems.org"
@@ -156,7 +156,7 @@ Known issues associated with PostgresSQL 9 on Cloud are:
     <td>about setting up and deploying an Cloud application in general</td><td>[[docs.engineyard.com|http://docs.engineyard.com]] </td>
   </tr>
 <tr>
-    <td>database tasks in AppCloud</td><td>[[Managing your Database|database-intro]] (Many of the tasks apply to PostgreSQL as well as MySQL.)</td>
+    <td>database tasks</td><td>[[Managing your Database|database-intro]] (Many of the tasks apply to PostgreSQL as well as MySQL.)</td>
 >>>>>>> master
   </tr>
 <tr>

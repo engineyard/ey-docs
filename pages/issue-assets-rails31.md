@@ -1,6 +1,6 @@
 # 404 errors when using AssetsController
 
-Our Cloud Nginx configuration is now standardized on Rails 3.1; this configuration 
+Our Nginx configuration is now standardized on Rails 3.1; this configuration 
 is set to serve static asset files from the `public/assets` directory. If a pre-Rails 3.1 
 application makes use of an AssetsController, the application does not receive the request 
 because Nginx is configured to handle them. Subsequently, the application returns 404 errors 
@@ -12,7 +12,7 @@ for these types of requests.
 
         keep.nginx.conf  
 
-    For information about keep files on Cloud, see [[Using keep files|configuration-keep-files]].
+    For information about keep files, see [[Using keep files|configuration-keep-files]].
 
 2. Edit the keep.nginx.conf file:  
     Replace
@@ -31,4 +31,4 @@ for these types of requests.
  
         /etc/init.d/nginx restart
 
-For information about assets in Rails 3.1, see [[Rails 3.1 Asset Pipeline tips for Cloud|asset-pipeline]] and the [[Rails Guide for asset pipeline|http://guides.rubyonrails.org/asset_pipeline.html]].
+For information about assets in Rails 3.1, see [[Rails 3.1 Asset Pipeline tips for Engine Yard Cloud|asset-pipeline]] and the [[Rails Guide for asset pipeline|http://guides.rubyonrails.org/asset_pipeline.html]].

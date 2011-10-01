@@ -1,6 +1,6 @@
 # Install a public key to an environment
 
-After a key is uploaded your Cloud account, it needs to be associated with one or more
+After a key is uploaded your Engine Yard account, it needs to be associated with one or more
 environments. This ensures that instances contained within the environment
 have the ssh key installed and are accessible via an SSH client. 
 
@@ -12,7 +12,7 @@ The process to install an ssh key:
 
 <h2 id="update">To update an environment with an ssh key</h2>
 
-1. In your Cloud dashboard, click the environment name.  
+1. In your Dashboard, click the environment name.  
     For example, the "production" environment of the "MyApp" application.
 3. On the environment, click the More Options tab. 
 4. Click Edit Environment.
@@ -29,7 +29,7 @@ The process to install an ssh key:
 After an environment has been updated with one or more new keys, the keys need to be
 deployed to the environment instances.
 
-1. In your Cloud dashboard, click the environment that you want to deploy your key(s) to.
+1. In your Dashboard, click the environment that you want to deploy your key(s) to.
 2. Click Apply to install the keys.
 
 After the keys are deployed, you can connect to your instances via ssh.

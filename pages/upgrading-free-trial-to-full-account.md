@@ -2,7 +2,7 @@
 
 Whether you're upgrading your free trial account to add additional capacity or to extend your usage beyond your first 500 hours, Engine Yard makes it easy to add as much computing power as you need for your application.
 
-Before adding capacity, you need to upgrade to a full account. At any point during your free trial, click the **Upgrade Account** button to submit your billing information and gain access to the full options and features of Engine Yard Cloud. After you've provided the requested information and arrived back at the dashboard, you notice that a number of buttons are now available that were previously disabled.
+Before adding capacity, you need to upgrade to a full account. At any point during your free trial, click the **Upgrade Account** button to submit your billing information and gain access to the full options and features of Engine Yard Cloud. After you've provided the requested information and arrived back at the Dashboard, you notice that a number of buttons are now available that were previously disabled.
 
 Unless you stopped your environment before upgrading, the instance that your Free Trial began with is still running and your application is still deployed. You will not be billed for any usage that occurred prior to upgrading, but billing does begin as soon as you unlock Cloud's full feature range.
 
@@ -16,7 +16,7 @@ We recommend that most customers who are going into production move to a cluster
 
 ###Configuring Your New Environment
 
-When you are ready, go to your dashboard and click the **Stop** button associated with the environment you are planning to upgrade.
+When you are ready, go to your Dashboard and click the **Stop** button associated with the environment you are planning to upgrade.
 
 ![Stop Instance](images/01_stop_instance.png)
 
@@ -40,4 +40,4 @@ After you've specified your instance requirements, the next step is to choose wh
 
 ###Booting and Verifying your Environment
 
-Click **Boot This Configuration** and your instances will begin to boot. Your browser will return you to the dashboard and you will see status messages about the progress of the boot process.  After this is done, you can click the HTTP button associated with your new environment to verify your application is up and running.
+Click **Boot This Configuration** and your instances will begin to boot. Your browser will return you to the Dashboard and you will see status messages about the progress of the boot process.  After this is done, you can click the HTTP button associated with your new environment to verify your application is up and running.

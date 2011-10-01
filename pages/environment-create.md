@@ -1,11 +1,11 @@
-# Create an environment on Cloud
+# Create an environment
 
 <b>Note:</b> In order to follow this procedure you must have at least one
-application setup within your Cloud account.
+application setup within your Engine Yard account.
 
 ## Create an Environment
 
-  1. Login to your Cloud account.
+  1. Login to your Engine Yard account.
   2. Click Dashboard.
   3. Navigate to an application by clicking on the application name.
   4. Click Create New Environment.

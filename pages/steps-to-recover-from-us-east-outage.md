@@ -1,4 +1,4 @@
-# Steps to Recover from a US-East Outage
+# Steps to recover from a US-East outage
 
 **If data retention is more important to you at this time, we are recommending that you wait it out now until full operation is restored. Looking at the AWS status page now (http://status.aws.amazon.com), it doesn't sound like this can be too much further away.**
 

@@ -18,5 +18,5 @@ The easiest way to use Bundler is to include the Bundler gem (with the appropria
 
 ### 4. Deploy Failed Error
 
-If your deploy fails for other reasons,  you can check the deploy logs for information to help debug the problem. You can locate the "Deploy Logs" tab on your environment in the dashboard. You can scroll down to the bottom of the logs section to see output from the process that caused the deploy failure. If you have multiple instances in the environment, make sure to check the logs of the instance that failed.
+If your deploy fails for other reasons,  you can check the deploy logs for information to help debug the problem. You can locate the "Deploy Logs" tab on your environment in the Dashboard. You can scroll down to the bottom of the logs section to see output from the process that caused the deploy failure. If you have multiple instances in the environment, make sure to check the logs of the instance that failed.
 

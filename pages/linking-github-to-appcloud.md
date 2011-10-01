@@ -1,32 +1,32 @@
-# Linking a GitHub account to Cloud
+# Linking a GitHub account to an Engine Yard account
 
-You can link your Cloud account to a GitHub account. 
+You can link your Engine Yard account to a GitHub account. 
 
-The _advantage_ of linking your Cloud account to a GitHub account is that you don't need to cut-and-paste deploy keys if the accounts are linked. 
+The _advantage_ of linking your Engine Yard account to a GitHub account is that you don't need to cut-and-paste deploy keys if the accounts are linked. 
 
-The _disadvantage_ of linking your Cloud account to a GitHub account is that it gives your Cloud collaborators read access to **all** repositories in that GitHub account. 
+The _disadvantage_ of linking your Engine Yard account to a GitHub account is that it gives your Engine Yard Cloud collaborators read access to **all** repositories in that GitHub account. 
 
 This page contains the following procedures:
 
-  * [Link your Cloud account to a GitHub account] [2]  
+  * [Link your Engine Yard account to a GitHub account] [2]  
   * [Create an application from a repository in a linked GitHub account] [3]  
-  * [Unlink your Cloud account from a GitHub account] [4] 
+  * [Unlink your Engine Yard account from a GitHub account] [4] 
 
 <h2 id="topic1">Which GitHub account to link to?</h2>
 
-You can link your Cloud account to only one GitHub account. Make sure that you choose the GitHub account that contains:
+You can link your Engine Yard account to only one GitHub account. Make sure that you choose the GitHub account that contains:
 
-*  The repositories for the applications that you want to host on Cloud. 
+*  The repositories for the applications that you want to host on Engine Yard Cloud. 
 
 *  Only repositories that you want your collaborators to see.
 
-For example, you might have two GitHub accounts: a personal GitHub account for early phase and private projects and a group account that contains the mainline versions of your company's applications and that your colleagues/collaborators already have access to. You choose the group account to link your Cloud account to.
+For example, you might have two GitHub accounts: a personal GitHub account for early phase and private projects and a group account that contains the mainline versions of your company's applications and that your colleagues/collaborators already have access to. You choose the group account to link your Engine Yard account to.
 
-<h2 id="topic2">To link your Cloud account to a GitHub account</h2>
+<h2 id="topic2">To link your Engine Yard account to a GitHub account</h2>
 
 1. Log into the GitHub account that you want to link to. 
 
-2. In your Cloud account, go to Account > Account Settings.
+2. In your Engine Yard account, go to Account > Account Settings.
 
 2. Click on the account you want to link to a GitHub account.
 
@@ -38,13 +38,13 @@ For example, you might have two GitHub accounts: a personal GitHub account for e
 
 5. Click Allow to authorize.
 
-6. On your Cloud Accounts page, verify that the account is linked to the GitHub account.
+6. On your Accounts page, verify that the account is linked to the GitHub account.
 
      ![confirm the link](images/confirm_github_link.png)
 
 <h2 id="topic3">To create an application from a repository in a linked GitHub account</h2>
 
-Create an application as you normally do for Cloud with the following exceptions:
+Create an application as you normally do for Engine Yard Cloud with the following exceptions:
 
 1. In the Git Repository URI, select the name of the application from the dropdown menu or begin typing the name of application.
 
@@ -53,11 +53,11 @@ Create an application as you normally do for Cloud with the following exceptions
 
      The deploy key is named "Engine Yard Deploy Key (_application name_)".
 
-<h2 id="topic4">To unlink your Cloud account from a GitHub account</h2>
+<h2 id="topic4">To unlink your Engine Yard account from a GitHub account</h2>
 
-1. Log into the GitHub account that you want to unlink your Cloud account from. 
+1. Log into the GitHub account that you want to unlink your Engine Yard account from. 
 
-2. In your Cloud account, go to Account > Account Settings.
+2. In your Engine Yard account, go to Account > Account Settings.
 
 2. Click on the account that you want to unlink from GitHub account.
 

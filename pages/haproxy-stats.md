@@ -1,8 +1,8 @@
-# View Your HAProxy Stats
+# View your HAProxy stats
 
 In order to gain a better picture of the current availability of your application, we generate a password so you can securely review your HAProxy stats for your application cluster.
 
-**NOTE:** You must be running at least two application instances to view HAProxy stats.
+**Note:** You must be running at least two application instances to view HAProxy stats.
 
 Your password is generated for each environment you've got running.
 
