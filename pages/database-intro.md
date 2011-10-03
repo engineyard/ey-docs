@@ -6,7 +6,7 @@ This section provides information about configuring and using the MySQL database
 
 1. ### [[Find your generated MySQL password and connect to your database|find-your-generated-mysql-password-and-connect-to-your-db]]
 
-2. ### [[Access Your MySQL Database Remotely|access-your-mysql-database-remotely]]
+2. ### [[Access your MySQL database remotely|access-your-mysql-database-remotely]]
 
 3. ### [[Configure the MySQL server|configure-mysql-server]]
 
