@@ -1,16 +1,16 @@
-# Migrating to the Engine Yard AppCloud
+# Migrating to the Engine Yard Cloud
 
-This guide will help you migrate your application from your current environment to the Engine Yard AppCloud. While many applications will run without any changes, some applications may require some configuration changes or customizations to take advantage of the Engine Yard AppCloud service.  
+This guide will help you migrate your application from your current environment to the Engine Yard Cloud. While many applications will run without any changes, some applications may require some configuration changes or customizations to take advantage of the Engine Yard Cloud service.  
 
 To ensure you have as quick and smooth a migration as possible, it is important to plan each step of the process - and to test.
 
 ## Prerequisites 
   - Lower the TTL on your DNS to 5.
   - Create an initial migration plan.  Use our [[migration template|migration-steps-template]] as a starting point, which you can then adjust.
-  - Review our [[FAQs|faq_home]] to learn what is supported in the Engine Yard AppCloud.
+  - Review our [[FAQs|faq_home]] to learn what is supported in the Engine Yard Cloud.
 
 
-## Prepare Your Application
+## Prepare your application
   - [[Deploy your app|application_home]]
     * Load a dump of your current DB so you have some data to test against. Read our [[How To|dump-and-load-your-mysql-database]] for instructions.
     * Setup any [[customizations|custom-chef-recipes]] you might need.
@@ -20,31 +20,31 @@ To ensure you have as quick and smooth a migration as possible, it is important 
     * Assets are being served properly.
     * Check that your app can properly connect to the database.
 
-## Finalize Your Migration
+## Finalize your migration
 
    * Iterate through your migration plan skipping any steps that will affect your current production environment.
    * Update or add any steps as needed.
    * Continue to iterate until you can run through the migration without any issues.
    * Schedule the final cut-over and communicate the maintenance to your users. 
 
-## Special Requirements
+## Special requirements
   
 Some applications have special considerations when migrating such as very large databases or very large traffic volumes. If you feel that your application falls into either of these categories please read on.
 
-### Large Data Sets
+### Large data sets
 
 If you have a large database, say over 2 GB, then you may not want to wait while you dump, compress, move, uncompress, and load your database. If this is the case we suggest that you contact our [[support organization|http://www.engineyard.com/support]] for an assisted data move.  Through our [[Professional Services Program|http://www.engineyard.com/support/services]] we can setup a replication stream from your current DB to your cloud DB.  
 
 During the final cut-over one of our DBAs will be able to work with you to promote the new cloud DB to a master DB, ensuring that replication is completely caught up. This can take the move from a few hours to a few minutes.
 
-### Heavy Traffic Applications
+### Heavy traffic applications
 
 If you have a heavy traffic pattern it's very important to make sure you properly [[size your new environment|instance-types]] before migrating your users to your new environment. To give you peace of mind you can setup a load test. Using [[em-proxy|http://www.igvita.com/2009/04/20/ruby-proxies-for-scale-and-monitoring]] you can setup a load test with live traffic. Coupling this with [[New Relic|http://rpm.newrelic.com]] will allow you to review your cloud performance during your heaviest traffic times and make any needed adjustments. 
 
 Read more on how to [[load test with real production traffic|em-proxy]].
 
 
-## The Final Cutover
+## The Final cutover
 
 When it's time for the final cutover you should have a nice migration guide that was fleshed out by walking through the steps above. You'll want to make sure you start the migration inside of a maintenance window that has been set with your end users. Here are some things to be aware of during the final cutover. 
 

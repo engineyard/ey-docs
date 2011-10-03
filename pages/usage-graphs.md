@@ -1,6 +1,6 @@
-# Viewing usage graphs on AppCloud
+# Viewing usage graphs on Engine Yard Cloud
 
-Engine Yard AppCloud provides usage data gathered by the [[rrdtool|http://oss.oetiker.ch/rrdtool/]] for you to be able to review and analyze.
+Engine Yard Cloud provides usage data gathered by the [[rrdtool|http://oss.oetiker.ch/rrdtool/]] for you to be able to review and analyze.
 
 ## To view usage graphs:
 

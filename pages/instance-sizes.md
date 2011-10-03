@@ -1,7 +1,7 @@
-# Instance sizes on AppCloud
+# Instance sizes
 
-Below you will find the instance sizes that are available to boot on AppCloud.  You have access to
-7 different instance sizes broken down into 3 categories.
+Below are the instance sizes that are available to boot on Engine Yard Cloud.  You have access to
+seven different instance sizes broken down into three categories.
 
 **Note:** Engine Yard recommends the High CPU Medium instances when your application starts
 taking on heavier traffic or load.
@@ -13,7 +13,7 @@ Learn more about the following instance sizes:
 * [[High CPU Instances|instance-sizes#cpu]]
 
   
-<h2 id="normal">Normal Instances</h2>
+<h2 id="normal">Normal instances</h2>
   
   * **Small** is 32-bit with 1.7 GB RAM, 1 ECU
       
@@ -30,7 +30,7 @@ Learn more about the following instance sizes:
     With extra RAM and CPU these instances are still affordable for those who need the extra horsepower.
     
 
-<h2 id="memory">High Memory instances</h2>
+<h2 id="memory">High memory instances</h2>
   
   * **High Memory Double Extra Large** is 64-bit with 34.2 GB RAM
     
@@ -39,7 +39,7 @@ Learn more about the following instance sizes:
     
   * **High Memory Quadruple Extra Large** is 64-bit with 68.4 GB RAM, 26 ECU
     
-    These are the largest instances you can boot on AppCloud. With a massive amount of RAM, these are best used
+    These are the largest instances you can boot on Engine Yard Cloud. With a massive amount of RAM, these are best used
     for your database tier or in-memory caches.
 
 <h2 id="cpu">High CPU instances</h2>
