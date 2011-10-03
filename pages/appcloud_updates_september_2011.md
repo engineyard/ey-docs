@@ -1,4 +1,4 @@
-# AppCloud updates September 2011
+# Cloud updates September 2011
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
@@ -14,24 +14,24 @@ For more information, see [[Using JRuby on Engine Yard Cloud|deploy-jruby]] and 
 
 September 22nd, 2011
 
-In some cases, AppCloud applications on Passenger 3 with config.force_ssl=true were sending redirects that erroneously specified a port number. This resulted in "Server not available" errors. This problem is now fixed.
+In some cases, Engine Yard Cloud applications on Passenger 3 with config.force_ssl=true were sending redirects that erroneously specified a port number. This resulted in "Server not available" errors. This problem is now fixed.
 
 <a href=#update15><h2 id="update15">**Major:** MySQL 5.1 and 5.5 are now available with Alpha support</h2></a>
 
 September 22nd, 2011
 
-MySQL 5.1 and 5.5 are available in AppCloud with Alpha support. ([[Sign up|signup-mysql]] to participate in the program.)
+MySQL 5.1 and 5.5 are available in Engine Yard Cloud with Alpha support. ([[Sign up|signup-mysql]] to participate in the program.)
 MySQL 5.1 and 5.5 bring substantial feature and performance improvements over MySQL 5.0.
 
-For more information, see [[Using MySQL 5.1 or MySQL 5.5 with AppCloud|database-mysql-upgrade]].
+For more information, see [[Using MySQL 5.1 or MySQL 5.5 with Engine Yard Cloud|database-mysql-upgrade]].
 
-<a href=#update14><h2 id="update14">Fix: GitHub/AppCloud account linking (Beta) more robust</h2></a>
+<a href=#update14><h2 id="update14">Fix: GitHub/Engine Yard account linking (Beta) more robust</h2></a>
 
 September 21st, 2011
 
-Fixed an issue where GitHub/AppCloud account linking did not work for multiple repositories. (The GitHub Repository URI field appeared blank.) 
+Fixed an issue where GitHub/Engine Yard account linking did not work for multiple repositories. (The GitHub Repository URI field appeared blank.) 
 
-For information about GitHub/AppCloud account linking (Beta) , see [[Linking a GitHub account to AppCloud|linking-github-to-appcloud]].
+For information about GitHub/Engine Yard account linking (Beta) , see [[Linking a GitHub account to Engine Yard Cloud|linking-github-to-appcloud]].
 
 <a href=#update13><h2 id="update13">Fix: Large PostgreSQL instances start</h2></a>
 
@@ -93,7 +93,7 @@ This fix sets the MySQL open files limit to 65535. This allows more simultaneous
 
 September 12th, 2011
 
-This upgrade fixes problems with AppCloud dashboard graphs, false low memory alerts, and elevated memory usage and rogue processes for collectd. After upgrading, you might notice that the font for the dashboard graphs has changed.
+This upgrade fixes problems with Dashboard graphs, false low memory alerts, and elevated memory usage and rogue processes for collectd. After upgrading, you might notice that the font for the Dashboard graphs has changed.
 
 
 <a href=#update3><h2 id="update3"> Minor: The Deploy user can create and load SQL stored procedures</h2></a>
@@ -114,7 +114,7 @@ NTP (network time protocol) is now multi-region aware; it will use an NTP server
 
 September 1st, 2011
 
-HAProxy configuration was modified to remove the nbproc parameter. Use of nbproc is not best practice. Within in AppCloud, it can cause restart problems and the HAProxy stats url to show only the stats for the worker in question (not for all). 
+HAProxy configuration was modified to remove the nbproc parameter. Use of nbproc is not best practice. It can cause restart problems and the HAProxy stats url to show only the stats for the worker in question (not for all). 
 
 
 

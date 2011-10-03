@@ -1,17 +1,17 @@
-#Site is Down Diagnostic Checklist
+#Site is down: diagnostic checklist
 
 If your site is down, here are a few things to try out. If these don't work for you, please [[open a ticket|http://support.cloud.engineyard.com]].
 
 ---
-Can you access the AppCloud Dashboard via [[http://cloud.engineyard.com]]?
+Can you access the Dashboard via [[http://cloud.engineyard.com]]?
 
-  * If NO, check [[@eycloud|http://twitter.com/#/eycloud]] to see if AppCloud is having any problems.
+  * If NO, check [[@eycloud|http://twitter.com/#/eycloud]] to see if Engine Yard Cloud is having any problems.
 
 ---
 Once you have logged in, does your Application have any red status circles?
 
   * If YES, these red circles usually indicate problems with the instance.
-    * Check the **Base Log** (log output for EY's Chef scripts) and the **Custom Log** (log output for your custom Chef scripts). You can find any configuration problems here.
+    * Check the **Base Log** (log output for Engine Yard's Chef scripts) and the **Custom Log** (log output for your custom Chef scripts). You can find any configuration problems here.
       * SOLUTION: Fix these and click the **Update** button to re-run these scripts.
     * Check the **Alerts** tab. This will indicate if the instance had any issues with its resources.
       * NOTE: Alerts are enabled by default but to receive email notification please enable email alerts.

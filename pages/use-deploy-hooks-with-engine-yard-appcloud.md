@@ -1,6 +1,4 @@
-# Using deploy hooks with AppCloud
-
-## Introduction
+# Using deploy hooks
 
 Deploy hooks are Ruby scripts that you write which are executed at 
 designated points in the deployment process. This allows you to customize
@@ -25,7 +23,7 @@ if so desired.
 
 ## Structure and sequence
 
-To use deploy hooks on AppCloud, create an `APP_ROOT/deploy` directory in your application 
+To use deploy hooks, create an `APP_ROOT/deploy` directory in your application 
 and save named hook files in this directory which will be triggered at the appropriate 
 times during the deployment process. The files are defined as follows and run in the order listed:
 

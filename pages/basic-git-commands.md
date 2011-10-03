@@ -54,4 +54,4 @@ A great tool to use is a git history viewer. Git comes in with a built in viewer
   * [[Git Reference Site|http://gitref.org/]]
   * [[VIDEO: Railscasts on Git|http://railscasts.com/episodes/96-git-on-rails]]
   * [[VIDEO: PeepCode on Git|http://peepcode.com/products/git]]
-  * [[BOOK & VIDEO: Getting Good with Git|http://rockablepress.com/books/getting-good-with-git/]]
+  * [[BOOK and VIDEO: Getting Good with Git|http://rockablepress.com/books/getting-good-with-git/]]

@@ -1,4 +1,4 @@
-# Manage your AppCloud Account
+# Manage your Engine Yard Account
 
 ## Topics
 
@@ -6,10 +6,10 @@
   Learn how to upgrade your Free Trial account to a Full account.
   
 * ### [[Using Collaboration|account-collaboration]]
-  Learn how to collaborate with other developers within AppCloud.
+  Learn how to collaborate with other developers within Engine Yard Cloud.
   
 * ### [[Review Usage Charges|account-usage-charges]]
-  Learn how to review usage charges for your AppCloud account.
+  Learn how to review usage charges for your Engine Yard account.
   
 * ### [[Hibernate Your Account|account-hibernation]]
   Learn how to hibernate your account to avoid charges and to use at a later time.

@@ -10,8 +10,8 @@ contained in the latest deploy.  This prevents showing users a message from
 an old deploy.
 
 ## Priority
-When a maintenance page is requested to be displayed, AppCloud looks for
-html files and displays them in the following priority:
+When a maintenance page is requested to be displayed, Engine Yard Cloud looks for
+HTML files and displays them in the following priority:
 
 1. `public/maintenance.html.custom`
 2. `public/maintenance.html.tmp`

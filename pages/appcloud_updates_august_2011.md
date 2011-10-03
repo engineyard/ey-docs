@@ -50,15 +50,15 @@ August 18th, 2011
 
 Updated the delayed_job script to fix an issue where it was not running as the deploy user.
 
-<a href=#update7><h2 id="update7"><b>Major</b>: Link your AppCloud account to a GitHub account to make deploy keys automatic. (Beta support)</h2></a>
+<a href=#update7><h2 id="update7"><b>Major</b>: Link your Engine Yard account to a GitHub account to make deploy keys automatic. (Beta support)</h2></a>
 
 August 18th, 2011
 
 No more cutting-and-pasting of deploy keys from AppCloud to GitHub. 
 
-You can choose to link your AppCloud account to a GitHub account. After linking accounts, when you create an AppCloud application using a GitHub repository, the deploy key is automatically created. 
+You can choose to link your Engine Yard account to a GitHub account. After linking accounts, when you create an AppCloud application using a GitHub repository, the deploy key is automatically created. 
 
-For more information, see [[Linking an AppCloud account to a GitHub account|linking-github-to-appcloud]].
+For more information, see [[Linking an Engine Yard account to a GitHub account|linking-github-to-appcloud]].
 
 <a href=#update6><h2 id="update6">Minor: Update and fixes to the AppCloud stack</h2></a>
 
@@ -78,7 +78,7 @@ Fixed a rake version issue in script/engineyard/bin/resque that caused
 Resque workers to fail.
 
 This issue applied only if bundler was used in older AppCloud environments
-(or in xCloud environments).
+(or in Engine Yard xCloud environments).
 
 <a href=#update4><h2 id="update4"> Minor: Ruby 1.9.2 is now the default Ruby runtime for new environments</h2></a>
 

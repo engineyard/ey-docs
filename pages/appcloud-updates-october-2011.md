@@ -1,4 +1,4 @@
-# AppCloud updates October 2011
+# Engine Yard Cloud updates October 2011
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 

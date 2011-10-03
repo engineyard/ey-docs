@@ -1,10 +1,10 @@
-# Deploy from your AppCloud Dashboard
+# Deploy from your Dashboard
 
 You can run a simple code deployment from your master branch, deploy your code and run migrations, or deploy code from another branch in your Git repository.
 
 ## Prequisites
 
-* You have created an AppCloud account.
+* You have created an Engine Yard account.
 * You have created an application in your account.
 * Your application environment is currently running.
 
@@ -48,7 +48,7 @@ two possible outcomes when a deployment has finished:
     deployment and where it has failed.
     
 ## Other deployment options
-The dashboard provides a nice user interface to manage your deployments,
+The Dashboard provides a nice user interface to manage your deployments,
 however sometimes it's easier or more efficient to deploy your application from 
 a command line.  Engine Yard has created a command line interface (CLI) for this
 purpose.  Read our [[Deploy from the CLI|ey_cli_user_guide]] documentation for more

@@ -3,7 +3,7 @@
 ##Topics
 
 1. ### [[Video tutorial: set up an account and deploy an application|getting-started-video-tutorial]]
-   Watch a screencast that shows how to set up an Engine Yard Cloud account and deploy an application.
+   Watch a screencast that shows how to set up an Engine Yard account and deploy an application.
 
 2. ### [[Sign up for an Engine Yard account|sign-up-for-engine-yard-appcloud]]
    Learn how to sign up for a full Engine Yard account.

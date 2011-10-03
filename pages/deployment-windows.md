@@ -1,16 +1,16 @@
-# Deploy to AppCloud from Windows
+# Deploy to Engine Yard Cloud from Windows
 
 Working with Rails on Windows used to be a relatively difficult task.
-RailsInstaller and AppCloud have made creating and deploying Rails applications easier. 
-Below is the process for deploying your application to Engine Yard's AppCloud platform.
+RailsInstaller and Engine Yard Cloud have made creating and deploying Rails applications easier. 
+Below is the process for deploying your application to the Engine Yard platform.
 
 Steps to create and deploy your application from Windows:
 
   * [[Create a Rails application|deployment-windows#rails]]
   * [[Adjust your Gemfile|deployment-windows#adjust]]
   * [[Setup Git and SSH|deployment-windows#git-ssh]]
-  * [[Create an AppCloud application|deployment-windows#application]]
-  * [[Create an Environment|deployment-windows#environment]]
+  * [[Create an application|deployment-windows#application]]
+  * [[Create an environment|deployment-windows#environment]]
   * [[Configure instances|deployment-windows#instances]]
   * [[Considerations when deploying from Windows|deployment-windows#consider]]        
   
@@ -50,19 +50,19 @@ Steps to create and deploy your application from Windows:
 <h2 id="git-ssh">Setup a git repository and SSH</h2>
 
 **Note**: This section presents using GitHub as a choice to host your git repository.
-You can however choose to host your git repository anywhere.  You will need to ensure you
+You can however choose to host your git repository anywhere.  You need to ensure you
 can add your ssh public key to the service hosting your git repository.
 
 
 1. Create and/or login to your [[GitHub|http://www.github.com]] account.
 2. Create a new repository on GitHub and follow the setup directions.
 3. Add your SSH public key to GitHub.
-4. Add your SSH public key to AppCloud.
+4. Add your SSH public key to your Engine Yard account.
 
 
-<h2 id="application">Create your application on AppCloud</h2>
+<h2 id="application">Create your application</h2>
 
-1. Login to your AppCloud account.
+1. Login to your Engine Yard account.
 2. Click Create New Application from the Dashboard.
 3. Enter your git repository information.
 4. Enter your Application Name.
@@ -72,7 +72,7 @@ can add your ssh public key to the service hosting your git repository.
     
 6. Click Create Application.
     
-    On the next page you will create an Environment for this application.
+    On the next page you create an Environment for this application.
     
 <h2 id="environment">Create an Environment</h2>
 
@@ -87,7 +87,7 @@ can add your ssh public key to the service hosting your git repository.
 6. Configure the database backup frequency if desired.
 7. Click Create Environment.
   
-    On the next page you will configure and boot compute instances.
+    On the next page you configure and boot compute instances.
   
 <h2 id="instances">Configure your compute instances</h2>
 

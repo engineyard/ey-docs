@@ -1,25 +1,25 @@
-# Adding Redis to your Application
+# Adding Redis to your application
 
 [Redis](http://redis.io) is an open source, advanced key-value store. It is often referred to
 as a data structure server since keys can contain strings, hashes, lists,
 sets and sorted sets.
 
-Getting Redis working on AppCloud is not as daunting a task as it may
-seem. It's as easy as bundling the [Redis gem](http://rubygems.org/gems/redis) gem into your application.
+Getting Redis working on Engine Yard Cloud is not as daunting a task as it may
+seem. It is as easy as bundling the [Redis gem](http://rubygems.org/gems/redis) gem into your application.
 
 ## Install the Redis Gem
 
-The easiest way to add Redis to your Ruby application on AppCloud is to:
+The one way to add Redis to your Ruby application on Engine Yard Cloud is to:
 
 * Add the Redis gem to your gemfile
         gem 'redis'
 * Install the Redis gem using bundler from your development machine
         bundle install
-* Deploy your application to AppCloud
+* Deploy your application
 
 ## Redis Version
 
-The Redis version on the Engine Yard Platform was recently updated to
+The Redis version on the Engine Yard platform was recently updated to
 v2.2.10. For new instances, you won't have to do anything to use this
 version. If you have a current running application, you may need to
 actually restart the Redis server to apply the changes. Just SSH into

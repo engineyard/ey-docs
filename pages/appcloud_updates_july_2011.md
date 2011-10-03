@@ -15,7 +15,7 @@ This is one step towards our goal of transparency in stack updates.
 
 July 27th, 2011
 
-Fixed an issue that prevented upgrading New Relic plans from within the dashboard.
+Fixed an issue that prevented upgrading New Relic plans from within the Dashboard.
 
 <a href=#update6><h2 id="update6"> **Action Req'd:** Upgrade to Ruby 1.8.7-p352 </h2></a>
 

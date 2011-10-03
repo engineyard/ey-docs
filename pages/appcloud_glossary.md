@@ -6,9 +6,9 @@ The following terminology is used in the web interface.
 
 An application is your web application that you are deploying to the cloud.  Specifically this will be a definition of the various details regarding your application, such as where the code repository is, any gem or package requirements it has, etc.
 
-## Availability Zone
+## Availability Zones
 
-See [[What are availability zones?|amazon_faq]] in the Cloud FAQ section.
+See [[What are availability zones?|appcloud_faq#FAQ21]]
 
 ## Ebuilds
 
@@ -42,7 +42,7 @@ SSH Keys are a means of secure, passwordless authentication.  The "public" key w
 
 ## Takeover
 
-Takeover is the Engine Yard process for recovering from an AppCloud application master failure. For more information about takeovers, see [[AppCloud application master takeover|instance-takeover]].
+Takeover is the Engine Yard process for recovering from an application master failure. For more information about takeovers, see [[Cloud application master takeover|instance-takeover]].
 
 ## Volumes
 
