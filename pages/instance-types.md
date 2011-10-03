@@ -19,7 +19,7 @@ roles include the following:
   Instances configured to run your database tier.
 
 * ### [[Utility instances|instance-types#util-instance]]
-  Instances configured for utility & background work.
+  Instances configured for utility and background work.
   
 * ### [[Single instance environment|instance-types#single-instance]]
   A single instance configured to combine multiple roles into one environment.

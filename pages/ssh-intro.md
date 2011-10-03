@@ -20,7 +20,7 @@ articles will help you with each of these processes.
 * ### [[Connect to an instance via SSH|ssh-connect]]
   Learn how to connect to your instance via SSH.
   
-* ### [[Windows & SSH keys|ssh-windows]]
+* ### [[Windows and SSH keys|ssh-windows]]
   Learn how to generate SSH keys and add them to Engine Yard Cloud on Windows.
   
 * ### [[Troubleshooting|ssh-troubleshooting]]

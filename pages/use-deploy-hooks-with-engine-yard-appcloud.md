@@ -1,7 +1,5 @@
 # Using deploy hooks
 
-## Introduction
-
 Deploy hooks are Ruby scripts that you write which are executed at 
 designated points in the deployment process. This allows you to customize
 the deployment of your application to meet its particular needs.
@@ -25,7 +23,7 @@ if so desired.
 
 ## Structure and sequence
 
-To use deploy hooks on Cloud, create an `APP_ROOT/deploy` directory in your application 
+To use deploy hooks, create an `APP_ROOT/deploy` directory in your application 
 and save named hook files in this directory which will be triggered at the appropriate 
 times during the deployment process. The files are defined as follows and run in the order listed:
 

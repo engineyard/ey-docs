@@ -10,7 +10,7 @@ Each environment is associated with a specific version of the runtime that is us
 
 ##Support
 
-Support for users of Rubinius is provided via the dedicated [[Rubinius forum|signup-rubinius]]. All Cloud customers can access support for Rubinius via this forum until it is promoted from the [[Engine Yard Beta Program|beta-intro]].
+Support for users of Rubinius is provided via the dedicated [[Rubinius forum|signup-rubinius]]. All Engine Yard users can access support for Rubinius via this forum until it is promoted from the [[Engine Yard Beta Program|beta-intro]].
 
 ##To use Rubinius for a new environment
 

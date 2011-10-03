@@ -1,6 +1,6 @@
 # Tutorial: How to deploy a sample application on a trial account
 
-In this tutorial, you deploy a Ruby application (named Fat Free CRM) to the Engine Yard cloud. 
+In this tutorial, you deploy a Ruby application (named Fat Free CRM) to the Engine Yard Cloud. 
 
 <!--This tutorial is illustrated in [[Learn to Deploy Rails Apps on Engine Yard in under 5 Mins!|http://vimeo.com/17825326]] video. -->
 
@@ -117,7 +117,7 @@ In this procedure, you set a Git deploy key so that you can deploy the Fat Free 
 
 ### To create the trusted relationship between GitHub and Engine Yard
 
-1. Copy the Git Deploy Key from the Cloud application.
+1. Copy the Git Deploy Key from the application.
 
     ![Git deploy key selected](images/tutorials/git_deploy_key.png)
 
@@ -167,7 +167,7 @@ Because Fat Free CRM doesn't have a Gemfile to manage its gems, you add them man
  
 ### To add gems
 
-1. In your Cloud Environments page, click the application name: fat_free_crm.
+1. In your Environments page, click the application name: fat_free_crm.
 
     ![application name link](images/tutorials/applicationlink.png)
 

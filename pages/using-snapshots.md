@@ -1,4 +1,4 @@
-# Using snapshots on Cloud
+# Using snapshots on Engine Yard Cloud
 
 ## Single Instance
 
@@ -17,7 +17,7 @@ database master server.
 When you are adding an instance to an existing cluster, then you'll need follow 
 these practices:
 
-### Application Master & Slaves
+### Application Master and Slaves
 
 The idea behind application servers is for the entire ring of servers 
 (app master + slaves) to be equivalent as much as possible. This supports 

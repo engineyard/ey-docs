@@ -1,29 +1,29 @@
-# Using PostgreSQL 9 with Cloud
+# Using PostgreSQL 9 with Engine Yard Cloud
 
 ## Introduction
 
-The PostgreSQL 9 database is now a candidate for testing on Engine Yard Cloud. Read this page if you want to participate in the Cloud PostgreSQL 9 Alpha program.
+The PostgreSQL 9 database is now a candidate for testing on Engine Yard Cloud. Read this page if you want to participate in the PostgreSQL 9 Alpha program.
 
 
 ### Process
 
-The process for setting up and running your Cloud application on PostgreSQL 9 depends on your current environment.
+The process for setting up and running your application on PostgreSQL 9 depends on your current environment.
 
 * _Is this a new application?_ Then do these tasks:
 
    * [Get access to the Alpha program and ey-beta-talk group][2]  
-   * [Set up an Cloud application to use PostgreSQL 9 in Alpha][3]  
+   * [Set up an application to use PostgreSQL 9 in Alpha][3]  
 
-* _Are you running Cloud with PostgreSQL now (with a custom chef recipe from ey-cloud-recipes or 2010 PostgreSQL 8.x Alpha program)?_ Then, do these tasks:  
+* _Are you running Engine Yard Cloud with PostgreSQL now (with a custom chef recipe from ey-cloud-recipes or 2010 PostgreSQL 8.x Alpha program)?_ Then, do these tasks:  
 
     * [Get access to the Alpha program and ey-beta-talk group][2]  
-    * [Set up an Cloud application to use PostgreSQL 9 in Alpha][3]  
+    * [Set up an application to use PostgreSQL 9 in Alpha][3]  
     * [Dump and restore an existing PostgreSQL database][4]
  
-* _Are you running with PostgreSQL on a platform other than Cloud?_ Then, do these tasks:  
+* _Are you running with PostgreSQL on a platform other than Engine Yard Cloud?_ Then, do these tasks:  
 
     * [Get access to the Alpha program and ey-beta-talk group][2]  
-    * [Set up an Cloud application to use PostgreSQL 9 in Alpha][3]  
+    * [Set up an application to use PostgreSQL 9 in Alpha][3]  
     * [Dump and restore an existing PostgreSQL database][4]
 
 * _Are you using MySQL?_ Then:  
@@ -31,7 +31,7 @@ The process for setting up and running your Cloud application on PostgreSQL 9 de
     Please consult [[Engine Yard Professional Services|http://www.engineyard.com/services]] for assistance migrating your mySQL database to PostgreSQL 9. 
 
 
-**Important!** PostgreSQL 9 on Cloud is an Alpha feature. Always test in a development or staging environment. 
+**Important!** PostgreSQL 9 on Engine Yard Cloud is an Alpha feature. Always test in a development or staging environment. 
 
 
 
@@ -42,17 +42,15 @@ The process for setting up and running your Cloud application on PostgreSQL 9 de
 Follow this procedure to gain access to the Alpha program and access to the Beta Conversations Google group (ey-beta-talk). Use ey-beta-talk for issues or questions with this Alpha program.
 
 
-### To use PostgreSQL 9 with Cloud in Alpha
+### To get access to the PostgreSQL 9 Alpha program
 
-1. [[Request access to the PostgreSQL Alpha program|signup-postgresql]].
+1. [[Request access to the PostgreSQL 9 Alpha program|signup-postgresql]].
 
 2. Subscribe to Beta Conversations Google group under the Beta Conversations heading on the [[Beta Program page|beta-intro]].     
 	If you have participated in other Engine Yard Alpha and Beta programs, you might already be group member.
 
 
-
-
-<h2 id="topic3"> Set up an Cloud application to use PostgreSQL 9 in Alpha </h2>
+<h2 id="topic3"> Set up an application to use PostgreSQL 9 in Alpha </h2>
 
 ### Introduction
 
@@ -60,7 +58,7 @@ Follow this procedure to set up a new environment that uses a PostgreSQL 9 datab
 
 If you are migrating an existing PostgreSQL database, you'll to perform a dump and restore _after_ creating a new environment ([Dump and restore an existing PostgreSQL database][3]).
 
-### To use PostgreSQL 9 with Cloud in Alpha
+### To use PostgreSQL 9 with Engine Yard Cloud in Alpha
 
 1. **Important!** If you have applied any custom chef recipes for PostgreSQL, delete them from your ey-cloud-recipes repository. Do not apply them to this instance.  
     For general information about custom chef recipes, see [[Custom Chef Recipes|custom-chef-recipes]].
@@ -83,7 +81,7 @@ gem "pg"</pre>
 <h2 id="topic4"> Dump and restore an existing PostgreSQL database</h2>
 
 ### Introduction
-If you are currently running a PostgreSQL database (8.x or 9), you need to dump the database, create a new PostgreSQL environment in Cloud, move the database dump file to the database server, and finally load the file into the PostgreSQL database.  
+If you are currently running a PostgreSQL database (8.x or 9), you need to dump the database, create a new PostgreSQL environment in Engine Yard Cloud, move the database dump file to the database server, and finally load the file into the PostgreSQL database.  
 
 You can perform these tasks yourself (as outlined below) or ask [[Engine Yard Professional Services|http://www.engineyard.com/services]] to do the migration for you.
 
@@ -102,7 +100,7 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 	
 		scp dumpfile newserver:/path/to/file/dumpfile
 	
-	In this case, the new server is the database server assigned for your PostgreSQL 9 Alpha Cloud environment.
+	In this case, the new server is the database server assigned for your PostgreSQL 9 Alpha environment.
 	
 	**Note:** To use the scp command, you need keys and scp setup.
 	 
@@ -118,7 +116,7 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 
 
 
-<h2 id="topic8">Connect to your PostgreSQL 9 Database </h2>
+<h2 id="topic8">Connect to your PostgreSQL 9 database </h2>
 
 ### To connect to your PosgreSQL 9 database
 See the [[Managing your database|database-intro]] documentation (Many of the tasks apply to PostgreSQL as well as MySQL.)
@@ -137,7 +135,7 @@ See the [[Managing your database|database-intro]] documentation (Many of the tas
 
 <h2 id="topic7"> Known issues</h2>
 
-Known issues associated with PostgresSQL 9 on Cloud are:
+Known issues associated with PostgresSQL 9 on Engine Yard Cloud are:
 
 * In the Alpha phase, snapshots cannot be used for upsizing from a 32-bit instance to a 64-bit instance. Workaround: Use dump and restore if you need to move your data from a 32-bit to 64-bit instance.   
 
@@ -153,7 +151,7 @@ Known issues associated with PostgresSQL 9 on Cloud are:
     <th>For more information about...</th><th>See...</th>
   </tr>
   <tr>
-    <td>about setting up and deploying an Cloud application in general</td><td>[[docs.engineyard.com|http://docs.engineyard.com]] </td>
+    <td>about setting up and deploying an Engine Yard Cloud application in general</td><td>[[docs.engineyard.com|http://docs.engineyard.com]] </td>
   </tr>
 <tr>
     <td>database tasks</td><td>[[Managing your Database|database-intro]] (Many of the tasks apply to PostgreSQL as well as MySQL.)</td>
@@ -168,14 +166,14 @@ Known issues associated with PostgresSQL 9 on Cloud are:
 
 <h2 id="topic6"> Troubleshooting</h2>
 
-This table contains troubleshooting tips related to the Cloud PostgreSQL Alpha program.
+This table contains troubleshooting tips related to the PostgreSQL 9 Alpha program.
 
 <table>
   <tr>
     <th>Symptom</th><th>Solution</th>
   </tr>
   <tr>
-    <td>I don't have the Database Stack option on my new environment page.</td><td>You don't yet have access to the PostgreSQL Alpha program. <br> Try submitting the request again, noting in the comments field that you are unable to see the Database Stack option. </td>
+    <td>I don't have the Database Stack option on my new environment page.</td><td>You don't yet have access to the PostgreSQL 9 Alpha program. <br> Try submitting the request again, noting in the comments field that you are unable to see the Database Stack option. </td>
   </tr>
   <tr>
     <td>My application doesn't run in the new PostgreSQL environment.</td><td>Post to the [[Beta Conversations Google group|http://groups.google.com/group/ey-beta-talk]]. To subscribe to the group, see [[Beta Conversations|beta-intro]]. <br> <br>

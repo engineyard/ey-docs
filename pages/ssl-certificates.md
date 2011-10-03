@@ -8,7 +8,7 @@ Then, we pick up after you've purchased you're certificate and are ready to inst
 
 Here's the information **you need** to get SSL working on Engine Yard Cloud.
 
-## Generate Your SSL Certificate Key and Signing Request
+## Generate your SSL certificate key and signing request
 
 This process will help you to generate the two files you need to purchase a SSL certificate.
 

@@ -5,7 +5,7 @@ Easily deploy your Rails and Ruby applications to Amazon's EC2 cloud using the
 Engine Yard [[Cloud|http://www.engineyard.com/products/appcloud]] Platform. From 
 smaller-scale web applications that run within a single compute instance, to production applications 
 that require the elasticity, scalability and reliability of multiple instances 
-running at "full-tilt", Engine Yard's Cloud can scale with your needs.
+running at "full-tilt", Engine Yard Cloud can scale with your needs.
 
 ## Benefits of using Engine Yard Cloud
 
@@ -50,6 +50,5 @@ into a live environment. Best of all, when your environment isn't running, you o
 minimal data costs to store your data.
 
 ## Platform Architecture
-[[Learn more|appcloud-architecture]] about the technology components used in Engine Yard
-Cloud architecture.
+[[Learn more|appcloud-architecture]] about the technology components used in Engine Yard Cloud architecture.
 

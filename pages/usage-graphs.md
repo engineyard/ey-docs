@@ -1,4 +1,4 @@
-# Viewing usage graphs on Cloud
+# Viewing usage graphs on Engine Yard Cloud
 
 Engine Yard Cloud provides usage data gathered by the [[rrdtool|http://oss.oetiker.ch/rrdtool/]] for you to be able to review and analyze.
 

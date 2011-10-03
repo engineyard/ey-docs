@@ -9,7 +9,7 @@ meet your CPU, memory, and disk space needs.
 
 ## Topics
 
-* ### [[Instance types & roles|instance-types]]
+* ### [[Instance types and roles|instance-types]]
   Learn more about the different types of instances and their roles on Engine Yard Cloud.
 
 * ### [[Instance sizes available for your environments|instance-sizes]]
