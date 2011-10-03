@@ -17,13 +17,13 @@
 5. ### [[Host your code on GitHub|host-your-code-on-github]]
    Learn a few GitHub basics.
 
-6. ### [[Introduction to Basic Git Commands|basic-git-commands]]
+6. ### [[Introduction to basic Git commands|basic-git-commands]]
    Learn a few key Git commands.
 
 7. ### [[Create your Bundler Gemfile|create-your-bundler-gemfile]]
    Watch a screencast about using Bundler to manage Ruby gems.
 
-8. ### [[Create your Rails Application|create-your-rails-application]]
+8. ### [[Create your Rails application|create-your-rails-application]]
    Watch a screencast showing how to deploy a Rails 3 application.
 
 9. ### [[Tutorial: How to deploy a sample application on a trial account|tutorial_deploy_fat_free_crm]]
