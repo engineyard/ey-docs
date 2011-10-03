@@ -72,15 +72,19 @@ section.main .note, section.main .note {
 #eystack .unsupported {
   color: #999999; }
 
-
 .copywrap {
-  padding-bottom: 10px;
+  padding-bottom: 50px;
 }
 .issue_question {
   position: absolute;
   bottom: 0;
 }
+.issue_question {
+  font-size: 14px;
+}
 .issue_question a {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 25px;
+  font-size: 15px;
+  padding: 5px 35px;
 }
