@@ -14,7 +14,7 @@
 * ### [[Delete an environment|environment-delete]]
   Learn how to delete an environment on Engine Yard Cloud.
 
-* ### [[Clustered Environments|environment-cluster]]
+* ### [[Clustered environments|environment-cluster]]
   Learn about our clustered architecture and managing clusters on Engine Yard Cloud.
 
 * ### [[Change an instance size|change-an-instance-size]]
@@ -34,7 +34,7 @@
 * ### [[Instance sizes available for your environments|instance-sizes]]
   Learn more about the varying instance sizes available on Engine Yard Cloud.
   
-* ### [[Change an Instance size|instance-change-size]]
+* ### [[Change an instance size|instance-change-size]]
   Learn how to change an instances size within your environment.
   
 * ### [[Frozen instances|instance-frozen]]
