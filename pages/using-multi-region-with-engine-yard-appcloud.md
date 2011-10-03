@@ -1,7 +1,7 @@
-# Using Multi-Region on AppCloud
+# Using Multi-Region on Engine Yard Cloud
 
 
-With Multi-Region in AppCloud an entire environment and its instances 
+With Multi-Region in Engine Yard Cloud, an entire environment and its instances 
 can be located in a particular geographic region around the world. 
 
 An excellent use case for this feature is lowering latency and response
@@ -10,7 +10,7 @@ If a majority of your application users are based in a certain region, its
 best to locate your environment in the availability zone (region) that is closest
 to those users.
 
-All AppCloud features are supported in each of the following AWS regions:
+These AWS regions are supported:
 
 
   * **US East** (Northern Virginia/us-east-1)
@@ -21,7 +21,7 @@ All AppCloud features are supported in each of the following AWS regions:
 
 
 
-![EY Regions](images/ey-regions_sm.png)
+![Engine Yard Regions](images/ey-regions_sm.png)
 
 
 ## Current Limitations
@@ -34,9 +34,9 @@ All AppCloud features are supported in each of the following AWS regions:
 
 ## Boot an environment in any region
 
-When [[creating a new environment|environment-create]] on AppCloud, select the appropriate 
+When [[creating a new environment|environment-create]], select the appropriate 
 Availability Zone this environment should be deployed to. Finish configuring this 
-environment and click the **Create Environment** button.
+environment and click Create Environment.
 
 When the environment has been saved, configure your environment instances on the next page 
 and boot. This environment is now being deployed in the Availability Zone you selected.

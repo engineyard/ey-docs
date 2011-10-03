@@ -6,7 +6,7 @@
   * [[Customize Unicorn|customize-unicorn]]
   * [[Find Important Log Files|find-important-log-files]]
   * [[Setup SSMTP for Mail Relay to AuthSMTP|setup-ssmtp-for-mail-relay-to-authsmtp]]
-  * [[Set Time Zone for an AppCloud Instance|set-time-zone-for-an-appcloud-instance]]
+  * [[Set Time Zone for an Instance|set-time-zone-for-an-appcloud-instance]]
   * [[Load Testing your Application with em-proxy|em-proxy]] 
   * [[Implement file uploads with Carrier Wave|use-carrierwave-and-optionally-fog-to-upload-and-store-files]]
   * [[Implement full text search with Sphinx|full-text-search-with-thinking-sphinx]]
@@ -17,9 +17,9 @@
 
 ## Troubleshooting
   * [[Find Important Log Files|find-important-log-files]]
-  * [[Diagnose Errors on Engine Yard AppCloud|diagnose-errors-on-engine-yard-cloud]]    
+  * [[Diagnose Errors on Engine Yard Cloud|diagnose-errors-on-engine-yard-cloud]]    
   * [[Termination Failed error when shutting down an instance|trouble-termination-failed]]
-  * [[Troubleshoot SSH on AppCloud|ssh-troubleshooting]]
+  * [[Troubleshoot SSH|ssh-troubleshooting]]
   * [[Amazon Out of Capacity Message|amazon-out-of-capacity]]
   * [[Troubleshooting cron issues|adding-cron-jobs#trouble]]
   * [[Troubleshooting your deployment|deployment-troubleshooting]]

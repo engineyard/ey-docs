@@ -1,4 +1,4 @@
-# Open Cloud Application Architecture
+# Open cloud application architecture
 
 Based on our experience deploying and managing thousands of scaled web applications, Engine Yard 
 has developed a reference open source architecture. It comprises of technology components with 
@@ -15,7 +15,7 @@ sharding provides further options for scaling.
 
 <img src="/images/appcloud-architecture.png" />
 
-## Technology Stack
+## Technology stack
 
 For specific components supported in each of these functional areas, please see our current 
 [[Engine Yard Technology Stack|appcloud-tech-stack]].

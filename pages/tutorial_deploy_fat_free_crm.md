@@ -1,6 +1,6 @@
 # Tutorial: How to deploy a sample application on a trial account
 
-In this tutorial, you deploy a Ruby application (named Fat Free CRM) to the Engine Yard cloud. 
+In this tutorial, you deploy a Ruby application (named Fat Free CRM) to the Engine Yard Cloud. 
 
 <!--This tutorial is illustrated in [[Learn to Deploy Rails Apps on Engine Yard in under 5 Mins!|http://vimeo.com/17825326]] video. -->
 
@@ -45,7 +45,7 @@ After signing up for a trial account, you get an email from Engine Yard. In this
  
 3. Enter a name for your account.
 
-    ![Create your AppCloud account](images/tutorials/create_your_account_dash.png)
+    ![Create your Engine Yard account](images/tutorials/create_your_account_dash.png)
 
     The name must be unique and without spaces and punctuation. Hyphens are allowed.
 
@@ -61,7 +61,7 @@ In this procedure, you download the Fat Free CRM application from GitHub.
 
 You need a GitHub account for this procedure. If you don't have a GitHub account, sign up for one [[(www.github.com/plans)|http://www.github.com/plans]]. 
 
-In general, you can use any git server with your AppCloud account. However, in this tutorial, you use GitHub because the Fat Free CRM repository is on GitHub.  
+In general, you can use any git server with your Engine Yard account. However, in this tutorial, you use GitHub because the Fat Free CRM repository is on GitHub.  
 
 ### To get the Fat Free CRM application from GitHub
 
@@ -98,9 +98,9 @@ Because the readme for Fat Free CRM says that this is a Rails 2.3.8 application;
 
 ### To set the Rails type and create the application
 
-1. If you are not already signed in to your AppCloud account, log in now. [[cloud.engineyard.com/accounts|https://cloud.engineyard.com/accounts]]
+1. If you are not already signed in to your Engine Yard account, log in now. [[cloud.engineyard.com/accounts|https://cloud.engineyard.com/accounts]]
 
-2. In your AppCloud account page, paste the URL into the Git Repository URI field.
+2. In your Engine Yard account page, paste the URL into the Git Repository URI field.
 
     ![Paste Git Repository URI](images/tutorials/create_new_application.png)
 
@@ -117,7 +117,7 @@ In this procedure, you set a Git deploy key so that you can deploy the Fat Free 
 
 ### To create the trusted relationship between GitHub and Engine Yard
 
-1. Copy the Git Deploy Key from the AppCloud application.
+1. Copy the Git Deploy Key from the application.
 
     ![Git deploy key selected](images/tutorials/git_deploy_key.png)
 
@@ -133,7 +133,7 @@ In this procedure, you set a Git deploy key so that you can deploy the Fat Free 
 
 6. Click Add Key.
 
-7. In your AppCloud account page, click My Deploy Key is in Place.
+7. In your Engine Yard account page, click My Deploy Key is in Place.
 
     ![My deploy key is in place](images/tutorials/my_deploy_key_is_in_place.png)
 
@@ -167,7 +167,7 @@ Because Fat Free CRM doesn't have a Gemfile to manage its gems, you add them man
  
 ### To add gems
 
-1. In your AppCloud Environments page, click the application name: fat_free_crm.
+1. In your Environments page, click the application name: fat_free_crm.
 
     ![application name link](images/tutorials/applicationlink.png)
 
@@ -202,7 +202,7 @@ In this procedure, you create an SSH key so that you can log into the instance f
 
 4. Copy the key: display the file (`cat .ssh/id_rsa.pub`) and copy the contents.
 
-5. In your AppCloud account page, click SSH Public Keys.
+5. In your Engine Yard account page, click SSH Public Keys.
 
     ![SSH Public Keys under the Server Tools heading](images/tutorials/ssh_public_keys.png)
 
@@ -215,11 +215,11 @@ In this procedure, you create an SSH key so that you can log into the instance f
 
 <h2 id="topic10"> Update your environment </h2>
 
-In this procedure, you update your AppCloud environment for the Rails gem and the SSH key.
+In this procedure, you update your environment for the Rails gem and the SSH key.
 
 ### To update your environment
 
-1. In your AppCloud account page, click Dashboard.
+1. In your Engine Yard account page, click Dashboard.
 
 2. Click Please Update.
 
@@ -237,7 +237,7 @@ In this procedure, you deploy the Fat Free CRM application and discover that the
 
 ### To deploy and verify deployment of the application
 
-1. In your AppCloud account page, click Dashboard.
+1. In your Engine Yard account page, click Dashboard.
 
 2. Select Migrate to automatically run your db:migrate during deployment.
 

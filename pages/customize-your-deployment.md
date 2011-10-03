@@ -1,7 +1,6 @@
-# Customize your deployment on AppCloud
+# Customize your deployment on Engine Yard Cloud
 
-If your application has special deployment requirements, read this page about methods to customize the deployment process 
-of your application on AppCloud.
+If your application has special deployment requirements, read this page about methods to customize the deployment process.
 
 The following methods can help you customize your deployment:
 

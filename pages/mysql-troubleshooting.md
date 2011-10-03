@@ -1,4 +1,4 @@
-# MySQL Error Troubleshooting
+# MySQL error troubleshooting
 
 ## Host '...' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'
 
@@ -21,7 +21,7 @@ There are two ways to run the **FLUSH HOSTS** command, both require you to first
             mysqladmin -u root -p<password> flush-hosts
 
 
-## MySQL Server has gone away
+## MySQL server has gone away
 ### Relevant URL:
 
 [[http://dev.mysql.com/doc/refman/5.0/en/gone-away.html]]

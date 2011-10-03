@@ -1,4 +1,4 @@
-# Find Important Log Files
+# Find important log files
 
 Use the following substitutions for illustration:
 
@@ -6,7 +6,7 @@ Use the following substitutions for illustration:
     Application Name: myapp
     Environment: production
 
-## Home Directory
+## Home directory
 
 A user home directory is created for you:
 
@@ -16,25 +16,25 @@ If you look closely, this is actually a symlink to the persistent /data device. 
 
   `/data/homedirs/deploy`
 
-## System Logger: syslog
+## System logger: syslog
 
 In the `syslog` you will find system messages, monit restart calls, cron job notifications and various other useful bits of information.
 
   `/var/log/syslog`
 
-## Rotate Your Logs with logrotate
+## Rotate your logs with logrotate
 
 By default, all parts of the stack are under `logrotate` to properly rotate and gzip old logs. The individual configuration files are found here:
 
   `/etc/logrotate.d/`
 
-## Mongrel Logs
+## Mongrel logs
 
 If you have mongrels, your logs exist here: 
 
   `/var/log/engineyard/mongrel/myapp/`
 
-## Environment Log File
+## Environment log file
 
 If you need access to the `production.log` you can find it here:
 
@@ -47,7 +47,7 @@ We configure nginx to split access and error into two files:
   `/var/log/engineyard/nginx/myapp/myapp.access.log`
   `/var/log/engineyard/nginx/myapp/myapp.error.log`
 
-## Nginx Configuration
+## Nginx configuration
 
 Nginx configuration is symlinked from `/data/nginx` to `/etc/nginx` to ensure that it persists when the instance is shutdown.
 
@@ -57,7 +57,7 @@ A configuration for your application is automatically generated and you will fin
 
   `/data/nginx/servers/myapp.conf`
 
-## Monit Configuration
+## Monit configuration
 
 Monit configuration files are located here:
 

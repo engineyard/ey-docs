@@ -1,10 +1,10 @@
 # Getting Started
 
-This guide assumes that you have already [[signed up for an EY AppCloud Account|sign-up-for-engine-yard-appcloud]] If you have not yet done so, go ahead and get started now -> [[Engine Yard AppCloud|http://cloud.engineyard.com]]
+This guide assumes that you have already [[signed up for an Engine Yard account|sign-up-for-engine-yard-appcloud]] If you have not yet done so, go ahead and get started now -> [[Engine Yard Cloud|http://cloud.engineyard.com]]
 
 ## Application Information
 
-When you first sign up for AppCloud you will need to configure your first application. 
+When you first sign up, you need to configure your first application. 
 
 ![Entering your application's details](images/1sm.png)
 
@@ -22,9 +22,9 @@ If you use a private repository, set up your git deploy key. Engine Yard automat
 
 #### To set up a git deploy key
 
-1. In the AppCloud Show Deploy Keys page, copy the git deploy key.
+1. In the Show Deploy Keys page, copy the git deploy key.
 
-    ![Where to find your deploy key on AppCloud](images/3sm.png)
+    ![Where to find your deploy key on Engine Yard Cloud](images/3sm.png)
 
 2. Add the git deploy key to your github repository. 
 
