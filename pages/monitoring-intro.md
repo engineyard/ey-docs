@@ -7,12 +7,12 @@ email when abnormal resource usage occurs. Some of the resources Engine Yard Clo
 can monitor on a per environment basis include: CPU usage, IO-Wait, Swap 
 Used and Free Space. 
 
-**Important:** If you are a paid support customer, having alerts and monitoring enabled
+**Important!** If you are a paid support customer, having alerts and monitoring enabled
 for your environments allows our support team to proactively monitor your
 environments for abnormal activity. Be sure to enable monitoring for your 
 environments as monitoring is disabled by default.
 
-**Important:** Monitoring and email alerts are disabled by default.
+**Important!** Monitoring and email alerts are disabled by default.
 
 ## Topics
 
