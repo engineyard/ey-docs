@@ -39,7 +39,7 @@ Fixed an issue where changes to the Domain Name field were not saved. Domain nam
 
 June 24th, 2011
 
-If you are new to AppCloud, test our sample repository and get the ToDo application up and running in your AppCloud account. 
+If you are new to AppCloud, test our sample repository and get the ToDo application up and running in your Engine Yard account. 
 
 Click Try our sample... to populate the Git Repository URI with the source code for the ToDo application.
 
@@ -60,11 +60,11 @@ Click !Update to update the stack. The message persists until the instance is ru
 
 
 
-<a href=#update11><h2 id="update11"> Minor: The dashboard is now application-centric </h2></a>
+<a href=#update11><h2 id="update11"> Minor: The Dashboard is now application-centric </h2></a>
 
 June 21st, 2011
 
-The dashboard has moved from an *environment*-centric user interface to an *application*-centric user interface. For more information about this change, see [[We're Getting Application-centric!|http://www.engineyard.com/blog/2011/were-getting-application-centric/]]
+The Dashboard has moved from an *environment*-centric user interface to an *application*-centric user interface. For more information about this change, see [[We're Getting Application-centric!|http://www.engineyard.com/blog/2011/were-getting-application-centric/]]
 
 
 

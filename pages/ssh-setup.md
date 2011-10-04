@@ -1,4 +1,4 @@
-# Setup SSH keys on AppCloud
+# Setup SSH keys on Engine Yard Cloud
 
 Engine Yard enables login access to application instances via SSH.  We have standardized
 on the secure practice of using key based authentication.  This protects our customers' instances
@@ -8,7 +8,7 @@ of key based authentication is the ability to login to an instance without a pas
 
 ## Create a local SSH keypair
 
-In order to SSH into an Engine Yard AppCloud slice, you'll need to create an SSH keypair on your
+In order to SSH into an Engine Yard Cloud slice, you'll need to create an SSH keypair on your
 local machine.
 
 
@@ -53,9 +53,9 @@ directory.  You should see the following files in `~/.ssh`:
     id_rsa
     id_rsa.pub
 
-The `id_rsa.pub` file is the public key file that you'll upload to Engine Yard AppCloud.
+The `id_rsa.pub` file is the public key file that you'll upload to Engine Yard Cloud.
 
 
 ## Next Steps
 
-[[Add your public key|ssh-add-to-appcloud]] to AppCloud.
+[[Add your public key|ssh-add-to-appcloud]] to Engine Yard Cloud.

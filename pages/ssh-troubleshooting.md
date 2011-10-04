@@ -1,4 +1,4 @@
-# Troubleshoot SSH on AppCloud
+# Troubleshoot SSH on Engine Yard Cloud
 
 
 

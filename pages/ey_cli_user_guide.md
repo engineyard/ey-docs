@@ -1,6 +1,6 @@
 # Engine Yard CLI User Guide
 
-Welcome to the user guide for deploying to Engine Yard AppCloud with the `engineyard` gem.  The `engineyard` gem provides a command line
+Welcome to the user guide for deploying to Engine Yard Cloud with the `engineyard` gem.  The `engineyard` gem provides a command line
 interface to perform tasks such as deploying your application, rebuilding your applications environment, opening an ssh session to 
 any of your instances, uploading and applying custom chef recipes, and more.
 
@@ -15,7 +15,7 @@ any of your instances, uploading and applying custom chef recipes, and more.
 3. Deploy your app:
         ey deploy
       
-4. You will be prompted for your EY AppCloud login (email address) and password. You'll only have to enter these once. 
+4. You will be prompted for your Engine Yard Cloud login (email address) and password. You'll only have to enter these once. 
     If your application is running in multiple environments, tack on `-e ENV_NAME` to disambiguate.
 - Congratulations! Your application is now deployed.
 
@@ -49,7 +49,7 @@ any of your instances, uploading and applying custom chef recipes, and more.
       - `--ref/-r GIT-REF` (optional): the reference to deploy 
         - You can specify a branch, a tag, or a SHA. 
         - This argument defaults to the current branch. 
-        - **Note:** the deployment process pulls the code from the git remote that was previously entered into the EY AppCloud web application. Thus, the named branch must exist in that git remote for your deployment to succeed.
+        - **Note:** the deployment process pulls the code from the git remote that was previously entered into the Engine Yard Cloud web application. Thus, the named branch must exist in that git remote for your deployment to succeed.
     - `--branch`: alias for `--ref`
     - `--tag`: alias for `--ref`
     - `--app/-a NAME` (optional): the application to deploy. If the current working directory is inside the application's Git repository and `--app` is omitted, `ey` will infer the application from the configured Git remotes.
@@ -158,7 +158,7 @@ any of your instances, uploading and applying custom chef recipes, and more.
 
 
 * ### CLOUD_URL
-Location of Engine Yard AppCloud. Mainly used in development. Default is https://cloud.engineyard.com/
+Location of Engine Yard Cloud. Mainly used in development. Default is https://cloud.engineyard.com/
 
 * ### DEBUG
 Debug the engineyard gem (print a lot of stuff). Default is off.

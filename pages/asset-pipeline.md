@@ -1,7 +1,5 @@
 # Rails 3.1 Asset pipeline tips for Engine Yard Cloud
 
-The asset pipeline is arguably the biggest new feature in Rails 3.1. There are some important things to know when deploying applications using the asset pipeline.
-
 Rails 3.1 introduced the asset pipeline. It is enabled by default. This means that unless you specifically disable the asset pipeline, assets are precompiled for you.
 
 Topics covered on this page:

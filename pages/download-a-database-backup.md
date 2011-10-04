@@ -1,4 +1,4 @@
-# Download a Database Backup
+# Download a database backup
 
 If you have downloaded a database backup via the [[ey-backup gem|manage-database-backups]] to your running instance, you can then use `scp` to transfer the backup file to your local computer.
 
@@ -17,7 +17,7 @@ You'll need:
 * The IP Address assigned to the instance  
 * The path to the file on the server  
 
-## Putting it All Together
+## Putting it all together
 
 Where `username` equals the "User account name" you've configured in your environment, and the `IP_address` is one you've generated for the instance currently running.  
 

@@ -1,8 +1,8 @@
-# Managing Database Backups
+# Managing database backups
 
 Each instance comes with the `ey-backup` gem pre-installed.  This tool will allow you create, view, download, and restore your database backups.
 
-## On-Demand Backup
+## On-Demand backup
 
 While your regular database backups will be performed according to the schedule you set for your environment, you can also request a backup to be performed at any time.  This is done with the following command:
 
@@ -10,7 +10,7 @@ While your regular database backups will be performed according to the schedule 
 
 **Tip:** Instead of `--new-backup` you may use the abbreviated flag `-n`.
 
-## List Available Backups
+## List available backups
 
 You may view all available backups at any time.  Assuming that the name of our database is "Tests_production", we would use the following command:
 
@@ -27,7 +27,7 @@ You will see a list like:
 
 **Tip:** Notice that each of the backups has a numeric index.  This is used to identify individual backups for the options that we will describe next.
 
-## Download a Backup
+## Download a backup
 
 You may download a backup file, identified by it's unique index.  For example, if we wished to download the backup file `Tests_production.2009-01-22T08-02-29.sql.gz` shown above, we should note that it has an index of `1:Tests_production`.  The command to download the file would then be:
 
@@ -37,7 +37,7 @@ You may download a backup file, identified by it's unique index.  For example, i
 
 The file will be downloaded into `/mnt/tmp` on your server instance.
 
-## Restore From a Backup
+## Restore from a backup
 
 If you wish to restore your Database from an available backup, assuming we again wished to use the above mentioned backup with an index of `1:Tests_production`, we would use the following command:
 
@@ -45,8 +45,8 @@ If you wish to restore your Database from an available backup, assuming we again
 
 **Tip:** Instead of `--restore` you may use the abbreviated flag `-r`.
 
-**Warning!** This command will result in your current database being completely overwritten with the selected backup.  That being the case you may wish to execute a `--new-backup` immediately prior to the restore.
+**WARNING!** This command will result in your current database being completely overwritten with the selected backup.  That being the case you may wish to execute a `--new-backup` immediately prior to the restore.
 
-## Download a File
+## Download a file
 
 If you want to download the backup file you just created, read the [[Download a Database Backup|download-a-database-backup]] article.

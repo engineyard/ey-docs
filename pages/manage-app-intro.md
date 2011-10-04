@@ -1,4 +1,4 @@
-# Manage your Application on AppCloud
+# Manage your application on Engine Yard Cloud
 
 ## Environments
 
@@ -12,10 +12,10 @@
   Learn how to rebuild an environment with minimal downtime.
 
 * ### [[Delete an environment|environment-delete]]
-  Learn how to delete an environment on AppCloud.
+  Learn how to delete an environment on Engine Yard Cloud.
 
-* ### [[Clustered Environments|environment-cluster]]
-  Learn about our clustered architecture and managing clusters on AppCloud.
+* ### [[Clustered environments|environment-cluster]]
+  Learn about our clustered architecture and managing clusters on Engine Yard Cloud.
 
 * ### [[Change an instance size|change-an-instance-size]]
   Learn how to change the size of an instance in an environment.
@@ -28,36 +28,36 @@
 
 ## Instances
 
-* ### [[Instance types & roles on AppCloud|instance-types]]
-  Learn more about the different types of instances and their roles on AppCloud.
+* ### [[Instance types and roles|instance-types]]
+  Learn more about the different types of instances and their roles on Engine Yard Cloud.
 
 * ### [[Instance sizes available for your environments|instance-sizes]]
-  Learn more about the varying instance sizes available on AppCloud.
+  Learn more about the varying instance sizes available on Engine Yard Cloud.
   
-* ### [[Change an Instance size|instance-change-size]]
-  Learn how to change an instances size within your AppCloud environment.
+* ### [[Change an instance size|instance-change-size]]
+  Learn how to change an instances size within your environment.
   
-* ### [[Frozen instances on AppCloud|instance-frozen]]
-  Learn how to deal with frozen or crashed instances on AppCloud.
+* ### [[Frozen instances|instance-frozen]]
+  Learn how to deal with frozen or crashed instances on Engine Yard Cloud.
 
 ## IP Addresses
 
 * ### [[Manage your IP addresses|ips-manage]]
-  Learn how add, attach and detach IP addresses in your AppCloud environments.
+  Learn how add, attach and detach IP addresses in your environments.
   
 * ### [[Delete your IP addresses|ips-delete]]
-  Learn how to delete IP addresses from your AppCloud account.
+  Learn how to delete IP addresses from your Engine Yard account.
 
-* ### [[Configure your domain and DNS for AppCloud|ips-setup-dns]]
-  Learn how to configure DNS and domain settings for your AppCloud environments.
+* ### [[Configure your domain and DNS for Engine Yard Cloud|ips-setup-dns]]
+  Learn how to configure DNS and domain settings for your environments.
 
 ## SSH - Secure Shell
 
 * ### [[Setup local SSH keys|ssh-setup]]
   Learn how to generate an ssh keypair on your local machine.
   
-* ### [[Add a key to AppCloud|ssh-add-to-appcloud]]
-  Learn how to add your SSH public key to your AppCloud account.
+* ### [[Add a key to Engine Yard Cloud|ssh-add-to-appcloud]]
+  Learn how to add your SSH public key to your Engine Yard account.
   
 * ### [[Install keys to your application environments|ssh-install]]
   Learn how to install your keys to instances in your applications environment.
@@ -65,31 +65,31 @@
 * ### [[Connect to an instance via SSH|ssh-connect]]
   Learn how to connect to your instance via SSH.
   
-* ### [[Windows & SSH keys|ssh-windows]]
-  Learn how to generate SSH keys and add them to AppCloud on Windows.
+* ### [[Windows and SSH keys|ssh-windows]]
+  Learn how to generate SSH keys and add them to Engine Yard Cloud on Windows.
   
 * ### [[Troubleshooting|ssh-troubleshooting]]
-  Tips to help you troubleshoot issues related to SSH on AppCloud.
+  Tips to help you troubleshoot issues related to SSH on Engine Yard Cloud.
 
 ## How Tos
 
 * ### [[Upgrading to Ruby 1.9|upgrading-to-ruby19]]
-  Learn how to upgrade an AppCloud environment to run Ruby 1.9.
+  Learn how to upgrade an environment to run Ruby 1.9.
   
 * ### [[Managing SSL certificates|ssl-certificates]]
-  Learn how to manage SSL certificates on AppCloud.
+  Learn how to manage SSL certificates on Engine Yard Cloud.
   
 * ### [[Creating cron jobs|adding-cron-jobs]]
-  Learn how to create scheduled tasks via cron jobs in your AppCloud environments.
+  Learn how to create scheduled tasks via cron jobs in your environments.
   
-* ### [[Bundler tips for AppCloud|bundler-tips-for-appcloud]]
-  A handful of helpful Bundler tips for use on AppCloud.
+* ### [[Bundler tips|bundler-tips-for-appcloud]]
+  A handful of helpful Bundler tips for use on Engine Yard Cloud.
 
 
 ## Troubleshooting
 
-* ### [[Amazon: Out of Capacity Error|amazon-out-of-capacity]]
-  Learn more about this Amazon error when booting new instances on AppCloud.
+* ### [[Amazon: Out of capacity error|amazon-out-of-capacity]]
+  Learn more about this Amazon error when booting new instances on Engine Yard Cloud.
 
-* ### [[Termination Failed error when shutting down an instance|trouble-termination-failed]]
+* ### [[Termination failed error when shutting down an instance|trouble-termination-failed]]
   Learn more about what to do if an instance does not terminate.

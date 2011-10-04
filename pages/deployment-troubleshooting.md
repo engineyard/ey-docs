@@ -14,8 +14,8 @@ Topics on this page:
 
 If there is a problem deploying your application, the best place to look initially is the deployment log file. There are two ways to locate and view your logfile:
 
-* ### On your dashboard
-  Your dashboard displays a View Log link next to the deployment status message. Click this link to open the log file in a separate browser window for viewing.
+* ### On your Dashboard
+  Your Dashboard displays a View Log link next to the deployment status message. Click this link to open the log file in a separate browser window for viewing.
 
 * ### On your instances
   View your log file by connecting to your instances via SSH. After you are 

@@ -1,6 +1,6 @@
 # Using Rubinius with a trial account
 
-Rubinius is currently an Alpha feature on AppCloud. To deploy a Rubinius application on a trial account, follow this process: 
+Rubinius is currently an Alpha feature on Engine Yard Cloud. To deploy a Rubinius application on a trial account, follow this process: 
 
 *	[Sign up for the Rubinius Alpha program.][1]
 *	[Create an application and environment.][2]
@@ -8,7 +8,7 @@ Rubinius is currently an Alpha feature on AppCloud. To deploy a Rubinius applica
 
 <h2 id="topic1"> Sign up for the Rubinius Alpha program </h2>
 
-Signup is required to access AppCloud Alpha features. 
+Signup is required to access Alpha features. 
 
 ###To sign up for the Rubinius Alpha program
 
@@ -18,7 +18,7 @@ Signup is required to access AppCloud Alpha features.
 
 <h2 id="topic2"> Create an application and environment </h2>
 
-The following procedure _outlines_ how to create an application and environment with a trial account. (For a detailed procedure, see [[Setting up a trial account and deploying a sample application|tutorial_deploy_fat_free_crm]].)    
+The following procedure _outlines_ how to create an application and environment with a trial account. (For a detailed procedure, see [[Get Started|getting-started-intro]].)    
 
 
 ###To create an application and environment  
@@ -53,7 +53,7 @@ You can:
 
 <h2 id="topic5"> Troubleshooting </h2>
 
-This table contains troubleshooting tips related to the AppCloud trial account with the Rubinius Alpha program.
+This table contains troubleshooting tips related to the trial account with the Rubinius Alpha program.
 
 <table>
   <tr>

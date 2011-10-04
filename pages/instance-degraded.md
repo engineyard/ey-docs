@@ -17,6 +17,6 @@ An instance is degraded when the host hardware that the instance is running on f
 If the degraded instance is:  
 
  * An **application master** or **solo instance**, then [[terminate and rebuild the whole environment|environment-rebuild]].  
- * An **application instance**, then terminate the degraded instance via the instance's ![Terminate icon](images/terminate.png) icon on the dashboard, and then add a new instance to the cluster.  
- * A **utility instance**, then terminate the specific instance via the instance's  ![Terminate icon](images/terminate.png) icon on the dashboard, and then add a new instance to the cluster, using the most recent snapshot.  
+ * An **application instance**, then terminate the degraded instance via the instance's ![Terminate icon](images/terminate.png) icon on the Dashboard, and then add a new instance to the cluster.  
+ * A **utility instance**, then terminate the specific instance via the instance's  ![Terminate icon](images/terminate.png) icon on the Dashboard, and then add a new instance to the cluster, using the most recent snapshot.  
  * A **DB master**, then [[rebuild the whole environment|environment-rebuild]]. A DB master cannot be terminated.  

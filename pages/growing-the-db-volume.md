@@ -10,6 +10,6 @@ If your database outgrows the current available space on your `/db` volume you'l
   - Choose the number of app instance, utility instances and database instances. Be sure to select the proper instance size for each.
   - Choose the most recent snapshots from the drop-downs. This will ensure you get your most recent data from when you terminated. If any snapshots are still pending we'll indicate so in the dropdown.
   - Resize any volume that you want to grow. When the environment boots back up this volume will be automatically resized for you.
-  - Click the **Boot This Configuration** button from the bottom of the page.
+  - Click the Boot This Configuration button from the bottom of the page.
 
-Once the environment is back up you'll have your newly sized `/db` and/or `/data` volumes.
+When the environment is back up, you'll have your newly sized `/db` and/or `/data` volumes.

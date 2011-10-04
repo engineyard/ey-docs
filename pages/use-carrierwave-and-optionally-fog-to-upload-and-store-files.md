@@ -6,16 +6,16 @@ photos with user identities. (CarrierWave is an alternative to the Paperclip gem
 
 Topics covered in this article:
 
-* [Setting up CarrierWave for local storage in AppCloud][2]
+* [Setting up CarrierWave for local storage in Engine Yard Cloud][2]
 * [Setting up CarrierWave for online storage with a web service][3]
 
 
-<h2 id="update2">Setting up CarrierWave for local storage in AppCloud</h2>
+<h2 id="update2">Setting up CarrierWave for local storage in Engine Yard Cloud</h2>
 
 Uploading files using CarrierWave _without fog_ is a good choice for testing 
 and for small applications as files are stored locally on your instances.
 
-Use CarrierWave to store files locally on your AppCloud instance if:  
+Use CarrierWave to store files locally on your Engine Yard Cloud instance if:  
 
 * You want to try out CarrierWave with your application. 
 * You have a small number of files. (The files take up disk space on your instance)
@@ -59,7 +59,7 @@ For more information, see [[github.com/jnicklas/carrierwave|http://github.com/jn
 <h2 id="update3">Setting up CarrierWave for online storage with a web service</h2>
 
 
-Using CarrierWave with fog gives you flexibility to store your files on any cloud service supported by fog and to switch between them as needed. This also keeps your uploaded files separated from your AppCloud instance -- making a cleaner application.
+Using CarrierWave with fog gives you flexibility to store your files on any cloud service supported by fog and to switch between them as needed. This also keeps your uploaded files separated from your Engine Yard Cloud instance -- making a cleaner application.
 	
 This example uses Amazon S3, which is a popular online storage web service. However, you can use any fog-supported service to store your files for retrieval with CarrierWave.
 
