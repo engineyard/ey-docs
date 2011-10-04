@@ -1,6 +1,6 @@
 # Engine Yard Beta Program
 
-These features are in Alpha:  
+These features are in **Alpha**:  
 
 * [[MySQL 5.1 and 5.5|database-mysql-upgrade]] - [[Sign up|signup-mysql]]
 * [[PostgreSQL 9|postgresql]] - [[Sign up|signup-postgresql]]
@@ -8,7 +8,7 @@ These features are in Alpha:
 
 Sign up to get access to Alpha features.
 
-This feature is in Beta:
+This feature is in **Beta**:
 
 * [[GitHub/Engine Yard account linking|linking-github-to-appcloud]]
 
