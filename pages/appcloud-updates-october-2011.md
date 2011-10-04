@@ -5,9 +5,9 @@ The updates described are either important (where you need to take action) or of
 
 <a href=#update1><h2 id="update1">Action Required: Bundler 0.9 is being deprecated on October 3rd 2011</h2></a>
 
-October 3rd, 2011
+October 4th, 2011
 
-On or soon after October 3rd, Bundler 0.9 will no longer be supported on Engine Yard Cloud. 
+On or soon after October 4th, Bundler 0.9 will no longer be supported on Engine Yard Cloud. 
 
 Please update your version of Bundler to 1.0 or later.
 
