@@ -3,7 +3,7 @@
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
 
-<a href=#update1><h2 id="update1">Action Required: Bundler 0.9 is being deprecated on October 3rd 2011</h2></a>
+<a href=#update1><h2 id="update1">Action Required: Bundler 0.9 is being deprecated around October 4th, 2011</h2></a>
 
 October 4th, 2011
 
