@@ -1,34 +1,24 @@
 # Engine Yard Beta Program
 
+These features are in **Alpha**:  
 
-<p >
-  <img id="beta-logo" src="images/ey-beta-logo.png" >
-  Deploying, automating and managing a Rails application is constantly
-  changing. New stack elements, new features in Engine Yard Cloud and Engine Yard Managed, 
-  and new tools to help development are released often. We think many of 
-  these features will be interesting to our customers while they are still 
-  in development.  If you are interested in testing out beta features on
-  Engine Yard Cloud, read on for more information!
-</p>
+* [[MySQL 5.1 and 5.5|database-mysql-upgrade]] - [[Sign up|signup-mysql]]
+* [[PostgreSQL 9|postgresql]] - [[Sign up|signup-postgresql]]
+* [[Rubinius]] - [[Sign up|signup-rubinius]]
 
-**There are four parts to our Beta Program:**
+Sign up to get access to Alpha features.
 
-  * Beta Announcements
-  * Beta Conversations
-  * Alpha features and improvements
-  * Beta features and improvements
+This feature is in **Beta**:
 
-Access to the Beta program **does not** require an Engine Yard Support 
-agreement. Each new beta feature has its own support channel 
-(see below).  We appreciate any feedback received during the beta program.
-Feedback received helps us refine our beta technology to provide a better 
-experience for our customers.
+* [[GitHub/Engine Yard account linking|linking-github-to-appcloud]]
 
-In advance, we want to thank you for your participation and we appreciate your feedback!
+Beta features are labelled beta on the UI and are available to all users. 
 
-## Beta Announcements
+**Important!** Always test Alpha and Beta features very carefully in a development or staging environment.
 
-We will only notify people about new features via one mailing list. If you want to be notified please join the [[Beta Announcements|http://groups.google.com/group/ey-beta-announce]] Google group below.
+## Get notified about new Alpha and Beta features
+
+We notify people about new features via one mailing list. If you want to be notified, join the [[Beta Announcements|http://groups.google.com/group/ey-beta-announce]] Google group below.
 
 <html>
 <table border=0 style="background-color: #fff; padding: 5px; width: 300px;" cellspacing=0>
@@ -47,9 +37,10 @@ We will only notify people about new features via one mailing list. If you want 
 </table>
 </html>
 
-## Beta Conversations
+## Get help or provide feedback
 
-If you have any issues or questions about an Alpha or Beta feature please use the [[Beta Conversations|http://groups.google.com/group/ey-beta-talk]] Google group below.
+If you have any issues or questions about an Alpha or Beta feature, use the [[Beta Conversations|http://groups.google.com/group/ey-beta-talk]] Google group below.  
+**Note:** Do not request support for Alpha and Beta features through the normal support channels.
 
 <html>
 <table border=0 style="background-color: #fff; padding: 5px; width: 300px;" cellspacing=0>
@@ -69,32 +60,18 @@ If you have any issues or questions about an Alpha or Beta feature please use th
 </table>
 </html>
 
-## Alpha Features
 
-"Alpha" features have been implemented with the minimum required functionality, they may still be in development, they may use Open Source technology that itself is not qualified as "production-ready"; but hey, some customers want it sooner than later and are happy to help us iron out any missing aspects. 
+##About Alpha features
 
-For this reason we created a way for a small handful of our customers to help us, and for us to help you, on each new feature. We call them Alpha Features.
+Alpha features have been implemented with the minimum required functionality; might still be in development; might use Open Source technology that is not "production-ready". 
 
-For Open Source stack items, the underlying technology might be rock solid but it might be classed as an "Alpha Feature" because it is relatively new to the Engine Yard Technology Stack. Once a few customers have trialled it and given it the green light, and we've finished our documentation and Support training, we'll move it to Beta and beyond.
+For Open Source stack Alpha features, the underlying technology might be solid but the feature is Alpha because it is new to the Engine Yard Technology Stack.
 
-Alpha features are currently available to test on an as requested basis for customers who are willing to help us move these important features forward from Alpha to Beta.
+Alpha features are available on request for users who want to test and help improve the features.
 
-Alpha features carry a **warning: do not request support via the normal support channels**.
+##About Beta features
 
-Current Alpha features (and how to request access):
+When a feature is nearly ready for Production applications; has been used and verified by some Engine Yard Cloud users; has documentation; and a trained Support team, then we promote it from Alpha to Beta.
 
-* [[MySQL 5.1 and 5.5|database-mysql-upgrade]] - [[Request access|signup-mysql]]
-* [[PostgreSQL 9|postgresql]] - [[Request access|signup-postgresql]]
-* [[Rubinius]] - [[Request access|signup-rubinius]]
+Beta features are visible and usable by all Engine Yard users. 
 
-## Beta Features
-
-When we feel a feature is close to being ready for Production applications, has been used and verified by a handful of Engine Yard customers, has a set of documentation and our Support team is being trained on the feature/technology, we can promote the feature from "Alpha" to "Beta".
-
-Beta features are visible and usable by all Engine Yard customers (as applicable Engine Yard Cloud and Engine Yard Managed) but carry a **warning: do not request support via the normal support channels**. 
-
-For each Beta feature there is the [[Beta Conversations|http://groups.google.com/group/ey-beta-talk]] group to discuss bugs, issues, and feature requests with Engine Yard staff and other Engine Yard customers.
-
-Current Beta feature:
-
-  * [[GitHub/Engine Yard account linking|linking-github-to-appcloud]]
