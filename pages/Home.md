@@ -46,7 +46,7 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
         <h3>[[Getting Started Video Tutorial|getting-started-video-tutorial]]</h3>
       </li>
       <li>
-        <h3>[[Error: "Please install the mysql2 adapter"|mysql2-adapter]]</h3>
+        <h3>[[Error: "Please install the mysql2 adapter"|issue-mysql2-adapter]]</h3>
       </li>
       <li>
         <h3>[[Application master takeover process|instance-takeover]]</h3>
