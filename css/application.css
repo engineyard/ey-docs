@@ -73,18 +73,26 @@ section.main .note, section.main .note {
   color: #999999; }
 
 .copywrap {
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 }
 .issue_question {
   position: absolute;
   bottom: 0;
-}
-.issue_question {
+  width: 684px;
+  border:0 solid #cacaca;
+  border-width: 1px 0 0 0;
   font-size: 14px;
+  padding: 10px 0;
 }
 .issue_question a {
   display: inline-block;
   margin-right: 25px;
-  font-size: 15px;
-  padding: 5px 35px;
+  font-size: 14px;
+  padding: 0px 15px;
 }
+
+pre { margin-top:0 !important; margin-bottom:0 !important; overflow: visible; display:block; line-height:1em; }
+
+/* Code block styling. */
+pre code { padding:6px; display:block; background:#eee; border:1px solid #ddd; border-radius:3px; margin-top:0; margin-bottom:0;}
+code { background:#eee; border:1px solid #ddd; border-radius:3px;}
