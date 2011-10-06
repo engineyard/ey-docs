@@ -2,7 +2,7 @@ require 'bundler'
 
 desc "Generate the gollum site. $PORT defaults to 3011"
 task :generate do
-  sh "bundle exec gollum-site generate --allow_elements iframe --allow_attributes src --allow_protocols http,https --working"
+  sh "bundle exec gollum-site generate --allow_elements iframe,div --allow_attributes src --allow_protocols http,https --working"
 end
 
 desc "Run the gollum server"

@@ -2,7 +2,7 @@
 
 Engine Yard is a Ruby on Rails Platform as a Service that provides the ability to scale from hundreds of users to millions. We are a pioneer in automated Rails application deployment and management in the cloud. We've been a part of the Ruby community for a long time and have contributed to Ruby on Rails, JRuby, Rubinius, and fog.
 
-### In Depth On
+## In Depth On
 * [[Engine Yard Cloud Platform|appcloud-intro]]
 * [[Quick Start to Deploying|getting-started-intro]]
 * [[Deployment|deployment-intro]]
@@ -14,3 +14,43 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
 * [[FAQs|faq_home]]
 * [[Release Notes|release_notes]]
 * [[Known Issues|known_issues]]
+
+<div class="split">
+  <div class="col col-first">
+    <h2>Latest Documentation Updates</h2>
+    <ul>
+      <li>
+        <h3>Added [[Tutorial: Deploy Rails 3 on a Trial Account|getting-started-deploy-todo]]</h3>
+      </li>
+      <li>
+        <h3>Added [[Video Tutorial: Getting Started|getting-started-video-tutorial]]</h3>
+      </li>
+      <li>
+        <h3>Updated [[Customize Unicorn|customize-unicorn]]</h3>
+      </li>
+      <li>
+        <h3>Updated [[Using deploy hooks|use-deploy-hooks-with-engine-yard-appcloud]]</h3>
+      </li>
+    </ul>
+
+    
+  </div>
+  
+  <div class="col col-last">
+    <h2>Newest Documentation</h2>
+    <ul>
+      <li>
+        <h3>[[Tutorial: Deploy Rails 3 on a Trial Account|getting-started-deploy-todo]]</h3>
+      </li>
+      <li>
+        <h3>[[Getting Started Video Tutorial|getting-started-video-tutorial]]</h3>
+      </li>
+      <li>
+        <h3>[[Error: "Please install the mysql2 adapter"|mysql2-adapter]]</h3>
+      </li>
+      <li>
+        <h3>[[Application master takeover process|instance-takeover]]</h3>
+      </li>
+    </ul>
+  </div>
+</div>

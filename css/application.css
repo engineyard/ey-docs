@@ -96,3 +96,9 @@ pre { margin-top:0 !important; margin-bottom:0 !important; overflow: visible; di
 /* Code block styling. */
 pre code { padding:6px; display:block; background:#eee; border:1px solid #ddd; border-radius:3px; margin-top:0; margin-bottom:0;}
 code { background:#eee; border:1px solid #ddd; border-radius:3px;}
+
+div.split {overflow:auto;}
+div.split div.col { width:45%;}
+div.split div.col-first {float:left;}
+div.split div.col-last {float:right;}
+div.split div.col h3 {margin-top:1em;}
