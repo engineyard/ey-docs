@@ -102,3 +102,11 @@ div.split div.col { width:45%;}
 div.split div.col-first {float:left;}
 div.split div.col-last {float:right;}
 div.split div.col h3 {margin-top:1em;}
+
+/* RSS Icon */
+.rss { padding: 2px 0 2px 20px; }
+
+.rss {
+  background: url(/images/icn_rss.png) no-repeat left center; }
+  .rss:hover {
+    background: url(/images/icn_rss_color.png) no-repeat left center; }
