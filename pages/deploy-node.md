@@ -62,7 +62,7 @@ app.listen(port, function() {
 
 <a href="#topic3"><h2 id="#topic3">Run a Node application on Engine Yard Cloud</h2></a>
 
-1. Request access to the Node Alpha program on [Engine Yard Node Aplha]('#").
+1. Request access to the Node Alpha program on [Engine Yard Node Alpha]('#").
 
 2. In you Dashboard, create a new application and select "NodeJS" in the applications' type field.
 
