@@ -27,7 +27,7 @@ This is the process:
 
 <a href="#topic2"><h2 id="#topic2">Create your first Node application</h2></a>
 
-1. Specify your application dependencies on `package.json`:
+1. Specify your application dependencies in `package.json`:
 
 This is a simle example of a Npm descriptor that uses the Express framework.
 
@@ -41,9 +41,9 @@ This is a simle example of a Npm descriptor that uses the Express framework.
 }
 ```
 
-2. Write your application on `app.js`:
+2. Write your application in `app.js` or `server.js`:
 
-Using the same web framework we can create straigh forward Node applications.
+Using the same web framework we can create straight forward Node applications.
 
 ```javascript
 var express = require('express');
