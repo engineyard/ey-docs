@@ -75,3 +75,32 @@ app.listen(port, function() {
 [1]: #topic1        "topic1"
 [2]: #topic2        "topic2"
 [3]: #topic3        "topic3"
+
+## Environment variables
+
+By default Engine Yard Cloud exposes some variable environments to applications. These variables can be used to add further configuration for each application.
+
+Here, we list all the available variables:
+
+- PORT: The port number where the Node server is running.
+- NODE_ENV: The environment in which the application is running.
+- NODE_ROOT: The root path of the application.
+- DB_USER: User name to connect to the database.
+- DB_PASSWORD: Password to connect to the database.
+- DB_HOST: Database host server.
+- DB_MASTER: Alias for the database host server.
+- DB_SLAVES: List of slaves host names if there is any.
+
+To use those variables we can easily access to them through the process. For instance, to get the port number we can use this:
+
+```javascript
+var port = process.env.PORT;
+```
+
+## Using Web Sockets on Engine Yard Cloud
+
+We use a reverse tcp proxy for Nginx that allows us to route websocket requests directly to your Node application. You can use framesorks like [Socket IO](http://socket.io/) to work with websockets easily.
+
+This repository includes a completely functional Node application that uses web sockets:
+
+https://github.com/calavera/nodechat
