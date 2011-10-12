@@ -50,7 +50,7 @@ For additional information about the asset pipeline, see [[Rails 3.1 Asset pipel
 
 October 10th, 2011
 
-Bundler 0.9 is no longer be supported on Engine Yard Cloud. 
+Bundler 0.9 is no longer supported on Engine Yard Cloud. 
 
 Please update your version of Bundler to 1.0 or later.
 
