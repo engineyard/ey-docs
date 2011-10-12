@@ -3,7 +3,9 @@
 
 ### [[October 2011|appcloud-updates-october-2011]]
 
-* [[<b>Action Req'd:</b> Bundler 0.9 is being deprecated on October 4th, 2011|appcloud-updates-october-2011#update1]]
+* [[<b>Major:</b> Engine Yard Cloud supports Rails 3.1|appcloud-updates-october-2011#update2]] *October 12th, 2011*
+
+* [[<b>Action Req'd:</b> Bundler 0.9 deprecated|appcloud-updates-october-2011#update1]] *October 10th, 2011*
 
 ### [[September 2011|appcloud_updates_september_2011]]
 
