@@ -2,6 +2,31 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update6><h2 id="update6">Minor: Unicorn changes</h2></a>
+
+October 13th, 2011
+
+<li>Upgraded Unicorn to 4.1.1.</li>
+<li>In Unicorn, increased the <a href="http://unicorn.bogomips.org/Unicorn/Configurator.html#method-i-timeout">timeout</a> from 60 seconds to 180 seconds. Best practice is to consider this timeout as a line of last defense; see <a href="http://unicorn.bogomips.org/Application_Timeouts.html">Application Timeouts.</a></li>
+
+<a href=#update5><h2 id="update5">Minor: Ruby installation order in deployment</h2></a>
+
+October 13th, 2011
+
+Ruby and gems are now installed after the ssh keys in the deploy user.
+
+<a href=#update4><h2 id="update4">Minor: Customizing Nginx configuration</h2></a>
+
+October 13, 2011
+
+To facilitate Nginx configuration, Nginx now reads /data/nginx/http-custom.conf before any server files are sourced.
+
+<a href=#update3><h2 id="update3">Minor: Backups include stored procedures.</h2></a>
+
+October 13, 2011
+
+Backups now include any stored procedures.
+
 <a href=#update2><h2 id="update2">**Major:** Engine Yard Cloud supports Rails 3.1</h2></a>
 
 October 12th, 2011
