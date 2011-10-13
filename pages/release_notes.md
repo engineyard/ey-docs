@@ -3,6 +3,14 @@
 
 ### [[October 2011|appcloud-updates-october-2011]]
 
+* [[Minor: Unicorn changes|appcloud-updates-october-2011#update6]] *October 13th, 2011*
+
+* [[Minor: Ruby installation order in deployment|appcloud-updates-october-2011#update5]] *October 13th, 2011*
+
+* [[Minor: Customizing Nginx configuration|appcloud-updates-october-2011#update4]] *October 13th, 2011*
+
+* [[Minor: Backups include stored procedures|appcloud-updates-october-2011#update3]] *October 13th, 2011*
+
 * [[<b>Major:</b> Engine Yard Cloud supports Rails 3.1|appcloud-updates-october-2011#update2]] *October 12th, 2011*
 
 * [[<b>Action Req'd:</b> Bundler 0.9 deprecated|appcloud-updates-october-2011#update1]] *October 10th, 2011*
