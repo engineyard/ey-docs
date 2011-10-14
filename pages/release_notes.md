@@ -3,7 +3,7 @@
 
 ### [[October 2011|appcloud-updates-october-2011]]
 
-* [[Fix: PostgreSQL database backup|appcloud-updates-october-2011#update7]] *October 13th, 2011*]]
+* [[Fix: PostgreSQL database backup|appcloud-updates-october-2011#update7]] *October 13th, 2011*
 
 * [[Minor: Unicorn changes|appcloud-updates-october-2011#update6]] *October 13th, 2011*
 
