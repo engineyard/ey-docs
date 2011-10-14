@@ -175,13 +175,17 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="full">3.0.3
+          <li class="full">3.10.0
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="full">3.0.3
+          <li class="full">3.10.0
+          </li>
+        </ul>
+		<ul>
+          <li class="full">3.0.x
           </li>
         </ul>
         <ul>
@@ -198,8 +202,12 @@ As a result, you can confidently deploy and manage your application with any Eng
         </ul>
       </td>
       <td>
-        <ul>
-          <li class="full">3.0.3
+         <ul>
+	      <li class="full">3.10.0
+	      </li>
+	        </ul>
+	      <ul>
+          <li class="full">3.0.x
           </li>
         </ul>
         <ul>
@@ -217,6 +225,7 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <p>
+          Use 3.0.9 or lower for Rubinius.<br>
           2.3.8 does not work with Mongrel.<br>
           2.3.3 and below must apply a<br>
           <a href="http://www.engineyard.com/blog/2009/cross-site-scripting-vulnerability-in-rails-2-x-on-ruby-1-8-x/">patch for a cross-site scripting vulnerability</a>.<br>

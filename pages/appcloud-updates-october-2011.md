@@ -2,6 +2,13 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update7><h2 id="update7">Fix: PostgreSQL database backup</h2></a>
+
+October 13th, 2011
+
+If there are two or more PostgreSQL database slaves, backups of the database are now always made from the first database slave.
+
+
 <a href=#update6><h2 id="update6">Minor: Unicorn changes</h2></a>
 
 October 13th, 2011
@@ -37,7 +44,7 @@ When creating a Rails 3.1 application in the Dashboard, set Application Type to 
 
 The asset pipeline is a major feature of Rails 3.1. It is enabled by default: Engine Yard Cloud runs the precompile tasks as needed during deployment. 
 
-**Note:** Streaming response is not yet supported for Rails 3.1 in Engine Yard Cloud. 
+**Note:** Currently, HTTP Streaming response in Rails 3.1 is only available with Unicorn. 
 
 ###Migrating an application from Rails 3.0 to Rails 3.1
 
