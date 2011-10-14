@@ -2,6 +2,12 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update8><h2 id="update8">Fix: passenger_monitor</h2></a>
+
+October 14th, 2011
+
+Updated passenger_monitor to correctly handle the -l (memory limit) parameter.</li>
+
 <a href=#update7><h2 id="update7">Fix: PostgreSQL database backup</h2></a>
 
 October 13th, 2011
