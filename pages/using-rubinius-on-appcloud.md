@@ -12,6 +12,10 @@ Each environment is associated with a specific version of the runtime that is us
 
 Support for users of Rubinius is provided via the dedicated [[Rubinius forum|signup-rubinius]]. All Engine Yard users can access support for Rubinius via this forum until it is promoted from the [[Engine Yard Beta Program|beta-intro]].
 
+##Known Issue with Rails 3.0.10
+
+Use Rails 3.0.9 or _lower_ with Rubinius. Rubinius 1.2.4 is incompatible with Rails 3.0.10.
+
 ##To use Rubinius for a new environment
 
 1. Create a new environment using the Create New Environment link on the Dashboard. 
