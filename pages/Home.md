@@ -17,19 +17,19 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
 
 <div class="split">
   <div class="col col-first">
-    <h2>Latest Documentation Updates</h2>
+    <h2>Updated documentation</h2>
     <ul>
       <li>
-        <h3>Added [[Tutorial: Deploy Rails 3 on a Trial Account|getting-started-deploy-todo]]</h3>
+        <h3>[[Using Rubinius with Engine Yard Cloud|using-rubinius-on-appcloud]]</h3>
+      </li>
+		<li>
+	        <h3>[[Engine Yard Cloud updates October 2011|appcloud-updates-october-2011]]</h3>
+	    </li>
+      <li>
+        <h3>[[Customize Unicorn|customize-unicorn]]</h3>
       </li>
       <li>
-        <h3>Added [[Video Tutorial: Getting Started|getting-started-video-tutorial]]</h3>
-      </li>
-      <li>
-        <h3>Updated [[Customize Unicorn|customize-unicorn]]</h3>
-      </li>
-      <li>
-        <h3>Updated [[Using deploy hooks|use-deploy-hooks-with-engine-yard-appcloud]]</h3>
+        <h3>[[Using deploy hooks|use-deploy-hooks-with-engine-yard-appcloud]]</h3>
       </li>
     </ul>
 
@@ -37,9 +37,10 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
   </div>
   
   <div class="col col-last">
-    <h2>Newest Documentation</h2>
+    <h2>New documentation</h2>
     <ul>
-      <li>
+      
+	    <li>
         <h3>[[Tutorial: Deploy Rails 3 on a Trial Account|getting-started-deploy-todo]]</h3>
       </li>
       <li>
