@@ -8,6 +8,11 @@ This is the process:
 * [Create your first Node application][2]
 * [Run a Node application on Engine Yard Cloud][3]
 
+You can find further configuration information and advanced topics under these other sections:
+
+* [Environment variables][4]
+* [Using Web Sockets][5]
+
 <a href="#topic1"><h2 id="#topic1">Prepare your local machine for Node</h2></a>
 
 1. Install Node.
@@ -17,8 +22,6 @@ This is the process:
 
     brew install node
 
-  Or with the prebuild [OS X packages](https://sites.google.com/site/nodejsmacosx/) (outdated).
-
 2 Install Npm.
 
   [Npm](http://npmjs.org/) is the default package manager for Node. To install it you only need to run this command:
@@ -27,9 +30,11 @@ This is the process:
 
 <a href="#topic2"><h2 id="#topic2">Create your first Node application</h2></a>
 
+This is an example of a simple Node application using the [Express](http://expressjs.com/) web framework.
+
 1. Specify your application dependencies in `package.json`:
 
-This is a simle example of a Npm descriptor that uses the Express framework.
+We use this file to resolve the dependencies that your application needs. You can read more about what's required here in the [Npm documentattion](http://npmjs.org/doc/json.html), but this is how the file looks like for our example:
 
 ```json
 {
@@ -43,26 +48,25 @@ This is a simle example of a Npm descriptor that uses the Express framework.
 
 2. Write your application in `app.js` or `server.js`:
 
-Using the same web framework we can create straight forward Node applications.
+This is the same basic example that you can find in the Express web page but with a slight modification. You have to set the port which the application is running using the environment variable `PORT`. To know more about this environment variable you can check the section about [the variables that we expose](#topic4).
 
 ```javascript
 var express = require('express');
-
-var app = express.createServer(express.logger());
+var app     = express.createServer();
+var port    = process.env.PORT || 3000;
 
 app.get('/', function(request, response) {
-  response.send('Hello World!');
+  response.send('Hello Engine Yard Cloud!');
 });
 
-var port = process.env.PORT || 3000;
-app.listen(port, function() {
-  console.log("Listening on " + port);
-});
+app.listen(port);
 ```
+
+You can find this example completed in this git repository: http://github.com/engineyard/node-basic-app
 
 <a href="#topic3"><h2 id="#topic3">Run a Node application on Engine Yard Cloud</h2></a>
 
-1. Request access to the Node Alpha program on [Engine Yard Node Alpha]('#").
+1. Request access to the Node Alpha program on [Engine Yard Node Alpha](#).
 
 2. In you Dashboard, create a new application and select "NodeJS" in the applications' type field.
 
@@ -72,11 +76,7 @@ app.listen(port, function() {
 
 4. Deploy your application.
 
-[1]: #topic1        "topic1"
-[2]: #topic2        "topic2"
-[3]: #topic3        "topic3"
-
-## Environment variables
+<a href="#topic4"><h2 id="#topic4">Environment variables</h2></a>
 
 By default Engine Yard Cloud exposes some variable environments to applications. These variables can be used to add further configuration for each application.
 
@@ -97,10 +97,16 @@ To use those variables we can easily access to them through the process. For ins
 var port = process.env.PORT;
 ```
 
-## Using Web Sockets on Engine Yard Cloud
+<a href="#topic5"><h2 id="#topic5">Using Web Sockets on Engine Yard Cloud</h2></a>
 
-We use a reverse tcp proxy for Nginx that allows us to route websocket requests directly to your Node application. You can use framesorks like [Socket IO](http://socket.io/) to work with websockets easily.
+We use a reverse tcp proxy for Nginx that allows us to route websocket requests directly to your Node application. You can use frameworks like [Socket IO](http://socket.io/) to use websockets easily.
 
-This repository includes a completely functional Node application that uses web sockets:
+This repository includes an example of a completely functional Node application that uses them to create a chat room:
 
-https://github.com/calavera/nodechat
+https://github.com/engineyard/nodechat
+
+[1]: #topic1        "topic1"
+[2]: #topic2        "topic2"
+[3]: #topic3        "topic3"
+[4]: #topic4        "topic4"
+[5]: #topic5        "topic5"
