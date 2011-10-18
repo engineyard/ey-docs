@@ -1,6 +1,6 @@
-# 500 errors after deploying / "Please install the mysql2 adapter" error
+# 500 errors after deploying / Gemfile.lock missing database adapter
 
-If you get a 500 error after deploying your application, you might be missing the mysql2 gem. This page describes how to find out if you are missing the mysql2 gem and how to install it.
+If you get a 500 error after deploying your application or the environment page of the Dashboard shows a warning about missing a database adapter, then you might be missing the mysql2 gem. This page describes how to find out if you are missing the mysql2 gem and how to install it.
 
 ## To find out if you are missing the mysql2 gem
 

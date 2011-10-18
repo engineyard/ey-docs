@@ -2,11 +2,23 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update9><h2 id="update9">Minor: Warnings about missing database adapters and the Gemfile.lock appear in the Dashboard</h2></a>
+
+October 18th, 2011
+
+Missing database-adapter gems (such as the mysql2 gem) or a missing Gemfile.lock can stop your application from deploying. 
+
+If your application is missing a database-adapter gem or the Gemfile.lock, you now see a warning message on the Environment page of the Dashboard (in addition to the deployment log). 
+
+![Context-sensitive help closed and open](images/gemfile_warning.png)
+
+For information about installing the mysql2 gem, see [[500 errors after deploying|issue-mysql2-adapter]].
+
 <a href=#update8><h2 id="update8">Fix: passenger_monitor</h2></a>
 
 October 14th, 2011
 
-Updated passenger_monitor to correctly handle the -l (memory limit) parameter.</li>
+Updated passenger_monitor to correctly handle the -l (memory limit) parameter.
 
 <a href=#update7><h2 id="update7">Fix: PostgreSQL database backup</h2></a>
 
