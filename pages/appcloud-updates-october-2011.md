@@ -2,7 +2,7 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
-<a href=#update9><h2 id="update9">Minor: Warnings about missing database adapters and the Gemfile.lock appear in the Dashboard</h2></a>
+<a href=#update9><h2 id="update9">Minor: Warnings about missing database adapters or Gemfile.lock appear in the Dashboard</h2></a>
 
 October 18th, 2011
 

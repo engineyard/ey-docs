@@ -1,4 +1,4 @@
-# 500 errors after deploying / Gemfile.lock missing database adapter
+# 500 errors after deploying / Gemfile missing database adapter
 
 If you get a 500 error after deploying your application or the environment page of the Dashboard shows a warning about missing a database adapter, then you might be missing the mysql2 gem. This page describes how to find out if you are missing the mysql2 gem and how to install it.
 
