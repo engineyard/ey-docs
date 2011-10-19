@@ -6,7 +6,7 @@ This document describes some common error conditions you might see while setting
 
 ### 1. Insufficient Capacity Error
 
-This message is displayed when EC2 is unable to provision servers for your environment due to transient overcapacity in your selected availability zone. To get around this, we recommend waiting a few minutes and retrying. If the error persists, you can try a different instance size or availability zone. You can choose a new one from the edit environment page, which is available from the "more options" tab.
+This message is displayed when EC2 is unable to provision servers for your environment due to transient overcapacity in your selected availability zone. To get around this, we recommend waiting a few minutes and retrying. If the error persists, you can try a different instance size or availability zone. You can choose a new one from the Edit Environment page.
 
 ### 2. Gem Not Found Error
 

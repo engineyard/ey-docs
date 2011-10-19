@@ -7,7 +7,7 @@ The task will be added to your application master instance under the crontab of 
 
 To add a new cron job
 
-  - Click More Options then click Crontabs 
+  - On the Environment page, click Crontabs 
   - You will then be presented with the Scheduled Jobs page
   - Give the job a name for reference
   - Enter the command to run (see notes on commands)

@@ -272,9 +272,9 @@ In this procedure, you:
 
 ### To run two rake commands and log into Fat Free CRM
 
-1. Click SSH in the Instances tab.
+1. Click SSH for the Instance.
 
-    ![The SSH link in the Instances tab](images/tutorials/ssh_in_instances.png)
+    ![The SSH link for the Instance](images/tutorials/ssh_in_instances.png)
 
     A terminal window opens. 
 

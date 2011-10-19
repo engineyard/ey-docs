@@ -29,8 +29,7 @@ Use Rails 3.0.9 or _below_ with Rubinius. Rubinius 1.2.4 is incompatible with Ra
 
 ##To edit an existing environment to use Rubinius
 
-1. On the environment, click the More Options tab.  
-2. Click Edit Environment.  
+1. On the Environment page, click Edit Environment.  
 2. Select Passenger 3 for the web server.  
 	Rubinius works only with Passenger 3.
 

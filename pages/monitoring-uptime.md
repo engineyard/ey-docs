@@ -49,8 +49,7 @@ URL `http://yoursite.com/fitter_happier/site_and_database_check` for optimal cov
 
   1. Login to your Engine Yard account.
   2. Select an environment by clicking the environment name.
-  3. Click the More Options tab in your environment.
-  4. Click HTTP Monitoring.
+  3. In the Environment page, click HTTP Monitoring.
   5. Add the url you wish to monitor in the URL to monitor text field.
   6. Click Add URL.
 

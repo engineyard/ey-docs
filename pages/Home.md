@@ -20,11 +20,12 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
     <h2>Updated documentation</h2>
     <ul>
       <li>
+		<h3>[[Engine Yard Cloud updates October 2011|appcloud-updates-october-2011]]</h3>
+	  </li>
+	  <li>
         <h3>[[Using Rubinius with Engine Yard Cloud|using-rubinius-on-appcloud]]</h3>
       </li>
-		<li>
-	        <h3>[[Engine Yard Cloud updates October 2011|appcloud-updates-october-2011]]</h3>
-	    </li>
+	  
       <li>
         <h3>[[Customize Unicorn|customize-unicorn]]</h3>
       </li>
@@ -39,16 +40,16 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
   <div class="col col-last">
     <h2>New documentation</h2>
     <ul>
-      
-	    <li>
+      <li>
+	    <h3>[[500 errors after deploying|issue-mysql2-adapter]]</h3>
+	  </li>
+	  <li>
         <h3>[[Tutorial: Deploy Rails 3 on a Trial Account|getting-started-deploy-todo]]</h3>
       </li>
       <li>
         <h3>[[Getting Started Video Tutorial|getting-started-video-tutorial]]</h3>
       </li>
-      <li>
-        <h3>[[Error: "Please install the mysql2 adapter"|issue-mysql2-adapter]]</h3>
-      </li>
+      
       <li>
         <h3>[[Application master takeover process|instance-takeover]]</h3>
       </li>

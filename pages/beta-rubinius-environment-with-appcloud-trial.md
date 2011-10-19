@@ -36,8 +36,7 @@ The trial is setup with a streamlined workflow that automatically creates a Ruby
 ###To reconfigure the environment for Rubinius
 
 1. Make sure that the instance is loaded (that the indicator light is green).  
-3. On the Environment, click the More Options tab.
-4. Click Edit Environment.    
+3. On the Environment, click Edit Environment.    
 4. On the Edit the Environment page, set the Ruby Runtime to Rubinius 1.2.4 (beta). 
 5. Click Update Environment.  
 6. On the Environment page, click !Update.  
