@@ -14,9 +14,8 @@ The following steps will help you setup monitoring for your account:
 
 1. In Engine Yard Cloud, click Dashboard.
 2. Select an environment by clicking the environment name.
-3. On the environment tabs, click Alerts.
-4. Select Enable email alerts.
-5. Specify an email address to receive aalerts.
+3. On the Environment page, click Enable email alerts.
+5. Specify an email address to receive alerts.
 6. Click Update Alert Settings.
 
 Follow the above steps for each environment that you would like to receive 
@@ -29,5 +28,4 @@ environment, but rather you would want alerts for your production environment.
 
 1. In Engine Yard Cloud, click Dashboard.
 2. Select an environment by clicking the environment name.
-3. On the environment tabs, click Alerts to view the three most current alerts.
-3. Click  View All Alerts to view all recorded alerts for this environment.
+3. On the Environment page, click View All Alerts.

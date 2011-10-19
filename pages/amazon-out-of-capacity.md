@@ -8,11 +8,11 @@
 
 When you are booting up your instance sometimes you run into this message: "Amazon is currently out of capacity".
 
-* Wait for about a minute and then you  see an Acknowledge link right next to the Custom log link appear. If you have an application master and master database running the link appears for each of them.
+* Wait for about a minute and then you see an Acknowledge link right next to the Custom log link appear. If you have an application master and master database running the link appears for each of them.
 
-* After the links appear, click on them until you have no running instances in your environment. Then click the More Options tab.
+* After the links appear, click on them until you have no running instances in your environment.
 
-* In the more options section, you see many options to choose from. For this particular case, click Edit Environment link.
+* Under More Options, you see many options to choose from. For this particular case, click Edit Environment.
 
 * You are then be presented with the Edit the Environment page that you had during the quick start process. Here click the (show advanced options) link.
 

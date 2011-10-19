@@ -14,8 +14,7 @@ The process to install an ssh key:
 
 1. In your Dashboard, click the environment name.  
     For example, the "production" environment of the "MyApp" application.
-3. On the environment, click the More Options tab. 
-4. Click Edit Environment.
+3. On the Environment page, click Edit Environment.
 6. Locate the SSH Keys section and select the keys you want to install.  
   
     ![Adding SSH Keys](images/manage_ssh_keys.jpg)

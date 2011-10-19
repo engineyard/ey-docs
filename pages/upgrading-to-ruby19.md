@@ -4,7 +4,7 @@ Ruby 1.9 is version of MRI which brings substantial performance improvements. En
 
 Each environment is associated with a specific version of the runtime that is used to run all applications contained in that environment.
 
-<b>Important!</b> It is highly recommended that you first test Ruby 1.9 in a new staging environment with your existing application.
+**Important!** It is highly recommended that you first test Ruby 1.9 in a new staging environment with your existing application.
 
 ## To create a Ruby 1.9 environment for your application
 
@@ -22,7 +22,6 @@ Each environment is associated with a specific version of the runtime that is us
 After you test Ruby 1.9 with your application(s), you can switch your production environment to Ruby 1.9.
 
 1. Stop the environment.
-2. On the environment, click the More Options tab. 
-3. Click Edit Environments.
+2. On the Environment page, click Edit Environments.
 4. Under Ruby Runtime, select Ruby 1.9.2.
 5. Update and boot the environment.
