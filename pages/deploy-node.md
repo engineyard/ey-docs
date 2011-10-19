@@ -1,88 +1,97 @@
-# Using Node on Engine Yard Cloud
+# Using Node.js on Engine Yard Cloud
 
-This page provides some information about running a Node application on Engine Yard Cloud.
+Node.js is now available for testing on Engine Yard Cloud. Read this page if you want to participate in the Engine Yard Node Alpha program.
+
+This page describes how to run a Node.js application on Engine Yard Cloud.
 
 This is the process:
 
-* [Set up your local environment for Node development][1]
-* [Create your first Node application][2]
-* [Run a Node application on Engine Yard Cloud][3]
+* [Set up your local environment for Node.js development][1]
+* [Create your Node.js application][2]
+* [Run your Node.js application on Engine Yard Cloud][3]
 
-You can find further configuration information and advanced topics under these other sections:
+Additional information at the bottom of this page about: 
 
 * [Environment variables][4]
-* [Using Web Sockets][5]
+* [Using WebSocket][5]
 
-<a href="#topic1"><h2 id="#topic1">Prepare your local machine for Node</h2></a>
 
-1. Install Node.
+<h2 id="topic1">To prepare your local machine for Node.js</h2>
 
-  To build Node from source you can follow the step provided int [the project's wiki](https://github.com/joyent/node/wiki/Installation).
-  Alternatively, if you're using Mac OS X you can install it using [Homebrew](http://mxcl.github.com/homebrew/) with this command:
+1. Install Node.js.  
 
-    brew install node
+    To build Node.js from source follow the steps in [the project wiki](https://github.com/joyent/node/wiki/Installation).  
+    Alternatively, if you are using Mac OS X, install Node.js using [Homebrew](http://mxcl.github.com/homebrew/) with this command: 
 
-2 Install Npm.
+        brew install node
 
-  [Npm](http://npmjs.org/) is the default package manager for Node. To install it you only need to run this command:
+2. Install [npm](http://npmjs.org/).
 
-    curl http://npmjs.org/install.sh | sh
+    Npm is the default package manager for Node.js.
 
-<a href="#topic2"><h2 id="#topic2">Create your first Node application</h2></a>
+        curl http://npmjs.org/install.sh | sh
 
-This is an example of a simple Node application using the [Express](http://expressjs.com/) web framework.
+<h2 id="topic2">To create your Node.js application</h2>
 
-1. Specify your application dependencies in `package.json`:
+1. Specify your application dependencies in `package.json`:  
 
-We use this file to resolve the dependencies that your application needs. You can read more about what's required here in the [Npm documentattion](http://npmjs.org/doc/json.html), but this is how the file looks like for our example:
+    This file is used to resolve the dependencies that your application needs. For more information about the package.json file, see [Specifics of npm's package.json handling](http://npmjs.org/doc/json.html). This is the package.json file for the node-basic-app application [below][6]:
 
-```json
-{
-  "name": "node-hello-world",
-  "version": "0.0.1",
-  "dependencies": {
-    "express": "2.2.0"
-  }
-}
-```
+  	json
+		{
+		  "name": "node-hello-world",
+		  "version": "0.0.1",
+		  "dependencies": {
+		    "express": "2.2.0"
+		  }
+		}
 
-2. Write your application in `app.js` or `server.js`:
+2. Write your application in `app.js` or `server.js`. 
+    If you don't have an application, try the "node-basic-app" example application.
 
-This is the same basic example that you can find in the Express web page but with a slight modification. You have to set the port which the application is running using the environment variable `PORT`. To know more about this environment variable you can check the section about [the variables that we expose](#topic4).
+<h3 id="topic6">Example application (node-basic-app)</h3>
 
-```javascript
-var express = require('express');
-var app     = express.createServer();
-var port    = process.env.PORT || 3000;
+The example application here is the same as the [express one](http://expressjs.com/), except for a modification: the port that the application is running on is set using the environment variable `PORT`. 
 
-app.get('/', function(request, response) {
-  response.send('Hello Engine Yard Cloud!');
-});
+    javascript
+    var express = require('express');
+    var app     = express.createServer();
+    var port    = process.env.PORT || 3000;
 
-app.listen(port);
-```
+    app.get('/', function(request, response) {
+      response.send('Hello Engine Yard Cloud!');
+    });
 
-You can find this example completed in this git repository: http://github.com/engineyard/node-basic-app
+    app.listen(port);
 
-<a href="#topic3"><h2 id="#topic3">Run a Node application on Engine Yard Cloud</h2></a>
 
-1. Request access to the Node Alpha program on [Engine Yard Node Alpha](#).
+You can find this example in the git repository: [github.com/engineyard/node-basic-app](http://github.com/engineyard/node-basic-app)
 
-2. In you Dashboard, create a new application and select "NodeJS" in the applications' type field.
+<h2 id="topic3">To run a Node.js application on Engine Yard Cloud</h2>
 
-3. Create the environment. The required runtime and servers are already selected for you.
+1. Request access to the Node.js Alpha program ([[Request access to Node.js Alpha|signup-node]]).
 
-    - Create a custom cluster and choose "Large" as the size for your App Instances. This step is required due to Node is limited to work on 64bit instances for now, but it will be removed before launching Beta.
+2. In the Dashboard, create a new application and set Application Type to Node.js.
 
-4. Deploy your application.
+3. Create the environment.  
 
-<a href="#topic4"><h2 id="#topic4">Environment variables</h2></a>
+    The application server stack and runtime are set automatically to Nginx and Node.js.
 
-By default Engine Yard Cloud exposes some variable environments to applications. These variables can be used to add further configuration for each application.
+4. Create a custom cluster.  
+    Make sure to choose Large for your Application Instances.  
+    The application instance must be large because (for Alpha test period) Node.js is restricted to 64-bit instances.  
 
-Here, we list all the available variables:
+5. Deploy your application.
 
-- PORT: The port number where the Node server is running.
+
+
+## Environment variables
+
+By default, Engine Yard Cloud exposes some environment variables to Node.js applications. These variables can be used to configure applications.
+
+The variables are:
+
+- PORT: The port number where the Node.js server is running.
 - NODE_ENV: The environment in which the application is running.
 - NODE_ROOT: The root path of the application.
 - DB_USER: User name to connect to the database.
@@ -91,22 +100,23 @@ Here, we list all the available variables:
 - DB_MASTER: Alias for the database host server.
 - DB_SLAVES: List of slaves host names if there is any.
 
-To use those variables we can easily access to them through the process. For instance, to get the port number we can use this:
+These variables can be accessed through the process. For example, to get the port number:
 
-```javascript
-var port = process.env.PORT;
-```
+    javascript
+    var port = process.env.PORT;
 
-<a href="#topic5"><h2 id="#topic5">Using Web Sockets on Engine Yard Cloud</h2></a>
+<h2 id="topic4">Using WebSocket on Engine Yard Cloud</h2>
 
-We use a reverse tcp proxy for Nginx that allows us to route websocket requests directly to your Node application. You can use frameworks like [Socket IO](http://socket.io/) to use websockets easily.
+Engine Yard Cloud uses a reverse TCP proxy for Nginx that routes WebSocket requests directly to your Node.js application. You can use frameworks like [Socket IO](http://socket.io/) to work with WebSocket.
 
-This repository includes an example of a completely functional Node application that uses them to create a chat room:
+This repository contains an example Node.js application that uses Socket IO to create a chat room:
 
-https://github.com/engineyard/nodechat
+[https://github.com/engineyard/nodechat](https://github.com/engineyard/nodechat)
+
 
 [1]: #topic1        "topic1"
 [2]: #topic2        "topic2"
 [3]: #topic3        "topic3"
 [4]: #topic4        "topic4"
 [5]: #topic5        "topic5"
+[6]: #topic6        "topic6"
