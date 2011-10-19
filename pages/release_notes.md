@@ -3,6 +3,8 @@
 
 ### [[October 2011|appcloud-updates-october-2011]]
 
+* [[Minor: Warnings about missing database adapters or Gemfile.lock appear in the Dashboard|appcloud-updates-october-2011#update9]] *October 18th, 2011*
+
 * [[Fix: passenger_monitor|appcloud-updates-october-2011#update8]] *October 14th, 2011*
 
 * [[Fix: PostgreSQL database backup|appcloud-updates-october-2011#update7]] *October 13th, 2011*
