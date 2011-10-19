@@ -5,7 +5,6 @@ These features are in **Alpha**:
 * [[MySQL 5.1 and 5.5|database-mysql-upgrade]] - [[Sign up|signup-mysql]]
 * [[PostgreSQL 9|postgresql]] - [[Sign up|signup-postgresql]]
 * [[Rubinius]] - [[Sign up|signup-rubinius]]
-* [[Node]] - [[Sign up|signup-node]]
 
 If you have a full Engine Yard Cloud account, sign up to get access to Alpha features. (If you have a trial account, upgrade to a [[full account|http://docs.engineyard.com/upgrading-free-trial-to-full-account]] before signing up.)
 
