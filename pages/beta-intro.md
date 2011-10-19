@@ -6,7 +6,7 @@ These features are in **Alpha**:
 * [[PostgreSQL 9|postgresql]] - [[Sign up|signup-postgresql]]
 * [[Rubinius]] - [[Sign up|signup-rubinius]]
 
-Sign up to get access to Alpha features.
+If you have a full Engine Yard Cloud account, sign up to get access to Alpha features. (If you have a trial account, upgrade to a [[full account|http://docs.engineyard.com/upgrading-free-trial-to-full-account]] before signing up.)
 
 This feature is in **Beta**:
 
@@ -72,6 +72,3 @@ Alpha features are available on request for users who want to test and help impr
 ##About Beta features
 
 When a feature is nearly ready for Production applications; has been used and verified by some Engine Yard Cloud users; has documentation; and a trained Support team, then we promote it from Alpha to Beta.
-
-Beta features are visible and usable by all Engine Yard users. 
-
