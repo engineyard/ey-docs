@@ -2,6 +2,14 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update10><h2 id="update10">Minor: No more tabs on the Environment page</h2></a>
+
+October 18th, 2011
+
+Fewer clicks to access the Environment tools and information: The tabs on the Environment page have been permanently expanded. 
+
+![Headings replace tabs on the Environment page](images/no_more_tabs.png)
+
 <a href=#update9><h2 id="update9">Minor: Warnings about missing database adapters or Gemfile.lock appear in the Dashboard</h2></a>
 
 October 18th, 2011

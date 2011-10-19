@@ -13,8 +13,8 @@ Once you have logged in, does your Application have any red status circles?
   * If YES, these red circles usually indicate problems with the instance.
     * Check the **Base Log** (log output for Engine Yard's Chef scripts) and the **Custom Log** (log output for your custom Chef scripts). You can find any configuration problems here.
       * SOLUTION: Fix these and click the **Update** button to re-run these scripts.
-    * Check the **Alerts** tab. This will indicate if the instance had any issues with its resources.
-      * NOTE: Alerts are enabled by default but to receive email notification please enable email alerts.
+    * Review the Alerts on the Environment page. These indicate if the instance has issues with its resources.
+      * **Note:** Alerts are enabled by default but, to receive email notification, enable email alerts.
       * SOLUTION: If your application is using too many resources and causing alerts, you can [[move to a larger instance size|instance-change-size]] or reconfigure your environment to not use so many resources on one instance.
 
 ---

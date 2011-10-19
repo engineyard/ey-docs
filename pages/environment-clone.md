@@ -18,7 +18,6 @@ of spinning up an environment on-demand within a matter of minutes.
 1. Login to your Engine Yard account.
 2. Click the Dashboard menu item.
 3. Navigate to the environment you want to clone by clicking on the environment name.
-4. Click More Options on the environment tabs.
 5. Click Clone Environment.<br />
    You should be redirected to the "Create a clone" page.
 6. Enter the information necessary for your cloned environment. (See [[Clone options|environment-clone#options]] below)

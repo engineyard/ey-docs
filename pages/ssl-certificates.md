@@ -102,7 +102,7 @@ Get back to your Dashboard, then click the SSL tab for your environment.
 
 ![SSL Tab](images/ssl_tab.jpg)
 
-  - Click on Assign SSL Certifiicate to ...  for the application you want.
+  - Click on Assign SSL Certificate to ...  for the application you want.
   - Choose the certificate you want from the SSL Certificate drop-down.
   - Click on Update SSL Settings button to save changes.
 
