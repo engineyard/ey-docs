@@ -179,16 +179,16 @@ Extra customization can be accomplished with an `ey.yml` file. [[More about the 
 
 To prevent the `rake db:migrate` for certain environments, add `migrate: false` to the environment section ey.yml:
 
-  environments:
-    YOUR-ENVIRONMENT-NAME-GOES-HERE:
-      migrate: false
+   environments:
+     YOUR-ENVIRONMENT-NAME-GOES-HERE:
+       migrate: false
 
 #### Exclude the .git directory
 
 If you have a large .git directory and you do not want it copied over on every deploy, add a `config/ey.yml` to your application's repository with the following contents:
 
-  environments:
-   YOUR-ENVIRONMENT-NAME-GOES-HERE:
-     copy_exclude:
-       - .git
+   environments:
+     YOUR-ENVIRONMENT-NAME-GOES-HERE:
+       copy_exclude:
+         - .git
 
