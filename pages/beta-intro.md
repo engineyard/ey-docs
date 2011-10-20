@@ -6,7 +6,7 @@ These features are in **Alpha**:
 * [[PostgreSQL 9|postgresql]] - [[Sign up|signup-postgresql]]
 * [[Rubinius]] - [[Sign up|signup-rubinius]]
 
-Sign up to get access to Alpha features. The MySQL and PostgreSQL features require full accounts. If you have a trial account and want to upgrade to a full account, see [[Upgrading free trial account|http://docs.engineyard.com/upgrading-free-trial-to-full-account]].
+Sign up to get access to Alpha features. The MySQL and PostgreSQL features require full accounts. If you have a trial account and want to upgrade to a full account, see [[Upgrading free trial account|upgrading-free-trial-to-full-account]].
 
 This feature is in **Beta**:
 
