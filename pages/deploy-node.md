@@ -78,8 +78,8 @@ You can find this example in the git repository: [github.com/engineyard/node-bas
     The application server stack and runtime are set automatically to Nginx and Node.js.
 
 4. Create a custom cluster.  
-    Make sure to choose Large for your Application Instances.  
-    The application instance must be large because (for Alpha test period) Node.js is restricted to 64-bit instances.  
+    Set the Server Size to Large for the application instances.  
+    The application servers must be large because (for Alpha test period) Node.js is restricted to 64-bit instances.  
 
 5. Deploy your application.
 
