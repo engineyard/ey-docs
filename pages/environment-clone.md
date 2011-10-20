@@ -19,7 +19,7 @@ of spinning up an environment on-demand within a matter of minutes.
 3. Navigate to the environment you want to clone by clicking on the environment name.
 5. Click Clone Environment.<br />
    You should be redirected to the "Create a clone" page.
-6. Enter the information necessary for your cloned environment. (See [[Clone options|environment-clone#options]] below)
+6. Enter the information necessary for your cloned environment. (See [[Clone options|environment-clone#options]] below.)
 7. Click Clone Environment. <br />
    You should be redirected to your new environment clone that is being provisioned.
 7. If needed, add cron jobs or custom chef recipes to the cloned environment.  
