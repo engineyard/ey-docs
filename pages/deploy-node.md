@@ -31,9 +31,26 @@ Additional information at the bottom of this page about:
 
         curl http://npmjs.org/install.sh | sh
 
+3. Install the [Express framework](http://expressjs.com).
+	
+	To install Express globally:
+	
+		npm install -g express
+
 <h2 id="topic2">To create your Node.js application</h2>
 
-1. Specify your application dependencies in `package.json`:  
+1. Use Express to create an application:
+	
+		express /tmp/foo && cd /tmp/foo
+	
+	Two files and two directories are created:
+	
+		app.js
+		package.json
+		public/
+		views/
+
+2. Specify your application dependencies in `package.json`:  
 
     This file is used to resolve the dependencies that your application needs. For more information about the package.json file, see [Specifics of npm's package.json handling](http://npmjs.org/doc/json.html). This is the package.json file for the node-basic-app application [below][6]:
 
