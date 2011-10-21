@@ -23,7 +23,7 @@ Use Rails 3.0.9 or _below_ with Rubinius. Rubinius 1.2.4 is incompatible with Ra
 2. Select Passenger 3 for the web server.  
     Rubinius works only with Passenger 3.
   
-3. In the Ruby Runtime section, select Rubinius.  
+3. In the Runtime section, select Rubinius.  
 
 ![Figure 1](images/rubinius_environment.png)
 
@@ -33,5 +33,5 @@ Use Rails 3.0.9 or _below_ with Rubinius. Rubinius 1.2.4 is incompatible with Ra
 2. Select Passenger 3 for the web server.  
 	Rubinius works only with Passenger 3.
 
-3. In the Ruby Runtime section, select Rubinius.  
+3. In the Runtime section, select Rubinius.  
     If you have existing applications running in the environment, the Dashboard prompts you to rebuild the environment, which will re-run chef recipes and update the runtime to use Rubinius.

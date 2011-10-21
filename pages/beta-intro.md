@@ -4,7 +4,7 @@ These features are in **Alpha**:
 
 * [[MySQL 5.1 and 5.5|database-mysql-upgrade]] - [[Sign up|signup-mysql]]
 * [[PostgreSQL 9|postgresql]] - [[Sign up|signup-postgresql]]
-* [[Rubinius]] - [[Sign up|signup-rubinius]]
+* [[Rubinius|rubinius]] - [[Sign up|signup-rubinius]]
 
 Sign up to get access to Alpha features. The MySQL and PostgreSQL features require full accounts. If you have a trial account and want to upgrade to a full account, see [[Upgrading free trial account|upgrading-free-trial-to-full-account]].
 
