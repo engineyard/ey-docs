@@ -12,7 +12,7 @@ Each environment is associated with a specific version of the runtime that is us
 
 2. On the Environment, click Create New Environment.
 
-3. Complete the fields for the environment. Make sure to select Ruby 1.9.2 for the Ruby Runtime.
+3. Complete the fields for the environment. Make sure to select Ruby 1.9.2 for the Runtime.
 
 ![Figure 1](images/ruby_192.png)
 
@@ -23,5 +23,5 @@ After you test Ruby 1.9 with your application(s), you can switch your production
 
 1. Stop the environment.
 2. On the Environment page, click Edit Environments.
-4. Under Ruby Runtime, select Ruby 1.9.2.
+4. Under Runtime, select Ruby 1.9.2.
 5. Update and boot the environment.

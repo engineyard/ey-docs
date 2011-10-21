@@ -16,7 +16,7 @@ When you are booting up your instance sometimes you run into this message: "Amaz
 
 * You are then be presented with the Edit the Environment page that you had during the quick start process. Here click the (show advanced options) link.
 
-* Now you are presented with a list of advanced option that includes changing the Ruby runtime and the most important for this error, the Availability Zone. Change the availability zone from what it currently is to another area. After you have done this, make sure to click the Update Instances button.
+* Now you are presented with a list of advanced option that includes changing the Runtime and the most important for this error, the Availability Zone. Change the availability zone from what it currently is to another area. After you have done this, make sure to click the Update Instances button.
 
 * You are then be redirected to the Dashboard. Here you want to click the Boot Instance button. Then choose what type of configuration you want to have and boot up again.
 

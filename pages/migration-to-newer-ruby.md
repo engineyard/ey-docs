@@ -19,11 +19,11 @@ Ruby 1.9 is a version of MRI which brings substantial performance improvements. 
     b. Reinstall the gems required for application.  
     c. Test the application in your local environment; make fixes if needed.
 4. Run your application in a staging environment:  
-    a. Clone a staging environment and edit the Ruby Runtime to Ruby 1.9.2. (Alternatively, create a new staging environment.)  
+    a. Clone a staging environment and edit the Runtime to Ruby 1.9.2. (Alternatively, create a new staging environment.)  
     c. Deploy the application to the staging environment.  
     d. Test the application in the staging environment; make fixes if needed.
 7. Run your application in a production environment:  
-    a. Clone a production environment and edit the Ruby Runtime to Ruby 1.9.2. (Alternatively, create a new production environment.)  
+    a. Clone a production environment and edit the Runtime to Ruby 1.9.2. (Alternatively, create a new production environment.)  
     b. Deploy the application to the staging environment.  
 
 <h2 id="topic5"> More information</h2>
