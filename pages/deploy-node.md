@@ -1,16 +1,18 @@
-# Using Node.js on Engine Yard Cloud
+# Deploying Node.js applications on Engine Yard Cloud
 
 Node.js is now available for testing on Engine Yard Cloud. Read this page if you want to participate in the Engine Yard Node Alpha program.
 
-This page describes how to run a Node.js application on Engine Yard Cloud.
+This page describes how to create Node.js application and deploy it on Engine Yard Cloud.
 
 This is the process:
 
 * [Set up your local environment for Node.js development][1]
 * [Create your Node.js application][2]
-* [Run your Node.js application on Engine Yard Cloud][3]
+* [Deploy your Node.js application on Engine Yard Cloud][3]
 
-Additional information at the bottom of this page about: 
+**Note:** If you already have a Node.js application in a git repo or if you want to deploy one of the Engine Yard test applications for Node.js, skip to [Run your Node.js application on Engine Yard Cloud][3].
+
+Additional information at the bottom of this page: 
 
 * [Environment variables][4]
 * [Using WebSocket][5]
@@ -18,9 +20,11 @@ Additional information at the bottom of this page about:
 
 <h2 id="topic1">To prepare your local machine for Node.js</h2>
 
+If you haven't written Node.js applications before, follow these steps to set up your local machine for Node.js development. 
+
 1. Install Node.js.  
 
-    To build Node.js from source follow the steps in [the project wiki](https://github.com/joyent/node/wiki/Installation).  
+    To build Node.js from source, follow the steps in [the project wiki](https://github.com/joyent/node/wiki/Installation).  
     Alternatively, if you are using Mac OS X, install Node.js using [Homebrew](http://mxcl.github.com/homebrew/) with this command: 
 
         brew install node
@@ -31,28 +35,16 @@ Additional information at the bottom of this page about:
 
         curl http://npmjs.org/install.sh | sh
 
-3. Install the [Express framework](http://expressjs.com).
-	
-	To install Express globally:
-	
-		npm install -g express
+3. (Optional) Install a development framework (such as [Express](http://expressjs.com)) for Node.js.
 
 <h2 id="topic2">To create your Node.js application</h2>
 
-1. Use Express to create an application:
-	
-		express /tmp/foo && cd /tmp/foo
-	
-	Two files and two directories are created:
-	
-		app.js
-		package.json
-		public/
-		views/
+Write and test your Node.js application on your local machine. The two important files are the package.json file and the app.js or server.js file.
+<!-- Anthony to confirm our understanding of this -->
 
-2. Specify your application dependencies in `package.json`:  
+1. Specify your application dependencies in `package.json`.  
 
-    This file is used to resolve the dependencies that your application needs. For more information about the package.json file, see [Specifics of npm's package.json handling](http://npmjs.org/doc/json.html). This is the package.json file for the node-basic-app application [below][6]:
+    This file is used to resolve the dependencies that your application needs. For more information about the package.json file, see [Specifics of npm's package.json handling](http://npmjs.org/doc/json.html). This is a sample package.json file (for the node-basic-app application [below][6]:
 
 		json
 		{
@@ -63,12 +55,16 @@ Additional information at the bottom of this page about:
 		  }
 		}
 
-2. Write your application in `app.js` or `server.js`. 
+2. Write your application in `app.js` or `server.js`.  
     If you don't have an application, try the "node-basic-app" example application.
 
-<h3 id="topic6">Example application (node-basic-app)</h3>
+3. Test your application locally.
 
-The example application here is the same as the [express one](http://expressjs.com/), except for a modification: the port that the application is running on is set using the environment variable `PORT`. 
+4. Push your application files to a git repository.
+
+<h3 id="topic6">The node-basic-app example application</h3>
+
+This is the example application for the node-basic-app. This application is very similar to the [Express](http://expressjs.com/) example. One modification is that the port that the application is running on is set using the environment variable `PORT`. 
 
     javascript
     var express = require('express');
@@ -81,14 +77,27 @@ The example application here is the same as the [express one](http://expressjs.c
 
     app.listen(port);
 
+This is the example package.json file for the node-basic-app application:
 
-You can find this example in the git repository: [github.com/engineyard/node-basic-app](http://github.com/engineyard/node-basic-app)
+		json
+		{
+		  "name": "node-hello-world",
+		  "version": "0.0.1",
+		  "dependencies": {
+		    "express": "2.2.0"
+		  }
+		}
+
+You can also find this example in the git repository: [github.com/engineyard/node-basic-app](http://github.com/engineyard/node-basic-app)
 
 <h2 id="topic3">To run a Node.js application on Engine Yard Cloud</h2>
 
+These steps describe how to deploy a Node.js application (from a git repository) on Engine Yard Cloud.
+
 1. Request access to the Node.js Alpha program ([[Request access to Node.js Alpha|signup-node]]).
 
-2. In the Dashboard, create a new application and set Application Type to Node.js.
+2. In the Dashboard, create a new application and set Application Type to Node.js.  
+    If you do not have a Node.js application in a git repository, try one of our example applications: http://github.com/engineyard/node-basic-app or https://github.com/engineyard/nodechat
 
 3. Create the environment.  
 
