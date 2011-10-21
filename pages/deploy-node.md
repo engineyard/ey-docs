@@ -54,7 +54,7 @@ Additional information at the bottom of this page about:
 
     This file is used to resolve the dependencies that your application needs. For more information about the package.json file, see [Specifics of npm's package.json handling](http://npmjs.org/doc/json.html). This is the package.json file for the node-basic-app application [below][6]:
 
-  	json
+		json
 		{
 		  "name": "node-hello-world",
 		  "version": "0.0.1",
