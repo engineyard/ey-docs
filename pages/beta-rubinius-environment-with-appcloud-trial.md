@@ -37,10 +37,10 @@ The trial is setup with a streamlined workflow that automatically creates a Ruby
 
 1. Make sure that the instance is loaded (that the indicator light is green).  
 3. On the Environment, click Edit Environment.    
-4. On the Edit the Environment page, set the Ruby Runtime to Rubinius 1.2.4 (beta). 
+4. On the Edit the Environment page, set the Runtime to Rubinius 1.2.4 (beta). 
 5. Click Update Environment.  
 6. On the Environment page, click !Update.  
-    This reboots the Rubinius environment, changing the ruby runtime to Rubinus.  
+    This reboots the Rubinius environment, changing the Runtime to Rubinus.  
 
 <h2 id="topic4"> What next? </h2>
 
@@ -60,7 +60,7 @@ This table contains troubleshooting tips related to the trial account with the R
   </tr>
    
    <tr>
-    <td>I don't have the Rubinius option for the Ruby Runtime.</td><td>You don't yet have access to the Rubinius Alpha program. <br> Try submitting the request again, noting in the comments field that you are unable to see the Rubinius option. </td>
+    <td>I don't have the Rubinius option for the Runtime.</td><td>You don't yet have access to the Rubinius Alpha program. <br> Try submitting the request again, noting in the comments field that you are unable to see the Rubinius option. </td>
    </tr>
 </td>
 

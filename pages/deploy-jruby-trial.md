@@ -28,7 +28,7 @@ The trial was set up with a streamlined workflow that automatically creates a Ru
 2. Click Stop to stop the environment.  
 3. On the Environment, click Edit Environment.    
 4. On the Edit the Environment page, set Application Server Stack to Trinidad.  
-    The Ruby Runtime changes to JRuby 1.6.2.  
+    The Runtime changes to JRuby 1.6.2.  
     **Note:** If you can't edit the Application Server Stack, make sure that you have stopped the environment. Only stopped environments can be edited.
 5. Click Update Environment.  
 6. On the Environment page, click Boot.  

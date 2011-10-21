@@ -80,11 +80,11 @@ Resque workers to fail.
 This issue applied only if bundler was used in older AppCloud environments
 (or in Engine Yard xCloud environments).
 
-<a href=#update4><h2 id="update4"> Minor: Ruby 1.9.2 is now the default Ruby runtime for new environments</h2></a>
+<a href=#update4><h2 id="update4"> Minor: Ruby 1.9.2 is now the default Runtime for new environments</h2></a>
 
 August 4th, 2011
 
-Ruby 1.9.2 has been available in AppCloud for a while. However, until now, Ruby 1.8.7 has been the default Ruby runtime.
+Ruby 1.9.2 has been available in AppCloud for a while. However, until now, Ruby 1.8.7 has been the default Runtime.
 
 For more information, see [[Upgrading to Ruby 1.9|upgrading-to-ruby19]]. 
 
