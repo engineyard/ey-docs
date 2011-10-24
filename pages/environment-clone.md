@@ -30,17 +30,17 @@ of spinning up an environment on-demand within a matter of minutes.
 
 <h2 id="options">Clone options</h2>
 
-* ### Cloned Environment Name
+* ### Name for new cloned environment
   Use underscores to separate words instead of spaces.  Common environment names are: myapp_staging, myapp_testing, myapp_qa, myapp_ci, etc.
 
 * ### Rails/Rack Environment
   Enter the RAILS_ENV or RACK_ENV environment name. Example: production, development, etc.
 
-* ### Chose IP Address
+* ### Choose IP address
   Select the IP address you want to use or optionally opt to use a public Amazon hostname.
   
 * ### Availability Zone
   Select an AWS Availability Zone for your environment. The default option is usually fine.  
 
-* ### Domain Name
+* ### Domain name for ...
   Enter the domain name to associate with this environment. Leave this blank if using an Amazon hostname.
