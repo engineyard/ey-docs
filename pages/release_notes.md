@@ -3,6 +3,8 @@
 
 ### [[October 2011|appcloud-updates-october-2011]]
 
+* [[Minor: Assorted improvements and fixes to the Engine Yard Stack|appcloud-updates-october-2011#update11]] *October 22nd, 2011*
+
 * [[Minor: No more tabs on the Environment page|appcloud-updates-october-2011#update10]] *October 18th, 2011*
 
 * [[Minor: Warnings about missing database adapters or Gemfile.lock appear in the Dashboard|appcloud-updates-october-2011#update9]] *October 18th, 2011*
