@@ -2,6 +2,16 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update11><h2 id="update11">Minor: Assorted improvements and fixes to the Engine Yard Stack</h2></a>
+
+October 22nd, 2011
+
+* /engineyard/bin/resque updated to fix a regression in which the Resque workers could run as root.
+* GNU Wget upgraded to 1.12-r3 to address Gentoo Bug 329941 / Common Vulnerability Exposure: CVE-2010-2252.
+* sshd is now configured with a "Pluggable Authentication Model". This allows more processes by default.
+* Unicorn now uses "Signal -6" to ensure that log files are flushed.
+
+
 <a href=#update10><h2 id="update10">Minor: No more tabs on the Environment page</h2></a>
 
 October 18th, 2011
