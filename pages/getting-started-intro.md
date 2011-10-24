@@ -8,7 +8,7 @@
 2. ### [[Tutorial: set up a trial account and deploy a sample application|getting-started-deploy-todo]]
    Learn how to sign up for a free Engine Yard account and deploy a Rails 3 application on it.
 
-3. ### [[Sign up for an Engine Yard account|sign-up-for-engine-yard-appcloud]]
+3. ### [[Sign up for an Engine Yard account|sign-up-for-engine-yard-cloud]]
    Learn how to sign up for a full Engine Yard account.
 
 4. ### [[Get started|getting_started_home]]

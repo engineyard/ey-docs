@@ -94,7 +94,7 @@ To migrate your current Rails 3.0 application to Rails 3.1, follow this process:
 
 ###New deploy hooks
 
-However, if you have special asset-compilation needs, you can edit the assets:precompile rake task or use the new deploy hooks, 'before_compile_assets.rb' and 'after_compile_assets.rb'. (For general information about deploy hooks, see [[Using deploy hooks|use-deploy-hooks-with-engine-yard-appcloud]].)
+However, if you have special asset-compilation needs, you can edit the assets:precompile rake task or use the new deploy hooks, 'before_compile_assets.rb' and 'after_compile_assets.rb'. (For general information about deploy hooks, see [[Using deploy hooks|use-deploy-hooks-with-engine-yard-cloud]].)
 
 ###The last_assets directory for zero downtime deployments
 

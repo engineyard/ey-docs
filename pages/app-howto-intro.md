@@ -12,7 +12,7 @@
 * ### [[Creating cron jobs|adding-cron-jobs]]
   Learn how to create scheduled tasks via cron jobs in your environments.
   
-* ### [[Bundler tips|bundler-tips-for-appcloud]]
+* ### [[Bundler tips|bundler-tips-for-cloud]]
   A handful of helpful Bundler tips.
   
 * ### [[Asset Pipeline tips for Rails 3.1|asset-pipeline]]

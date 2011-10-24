@@ -31,7 +31,7 @@ September 21st, 2011
 
 Fixed an issue where GitHub/Engine Yard account linking did not work for multiple repositories. (The GitHub Repository URI field appeared blank.) 
 
-For information about GitHub/Engine Yard account linking (Beta) , see [[Linking a GitHub account to Engine Yard Cloud|linking-github-to-appcloud]].
+For information about GitHub/Engine Yard account linking (Beta) , see [[Linking a GitHub account to Engine Yard Cloud|linking-github-to-cloud]].
 
 <a href=#update13><h2 id="update13">Fix: Large PostgreSQL instances start</h2></a>
 

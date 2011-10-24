@@ -58,7 +58,7 @@ No more cutting-and-pasting of deploy keys from AppCloud to GitHub.
 
 You can choose to link your Engine Yard account to a GitHub account. After linking accounts, when you create an AppCloud application using a GitHub repository, the deploy key is automatically created. 
 
-For more information, see [[Linking an Engine Yard account to a GitHub account|linking-github-to-appcloud]].
+For more information, see [[Linking an Engine Yard account to a GitHub account|linking-github-to-cloud]].
 
 <a href=#update6><h2 id="update6">Minor: Update and fixes to the AppCloud stack</h2></a>
 

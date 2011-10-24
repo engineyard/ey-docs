@@ -11,7 +11,7 @@ articles will help you with each of these processes.
 * ### [[Setup local SSH keys|ssh-setup]]
   Learn how to generate an ssh keypair on your local machine.
   
-* ### [[Add a key to Engine Yard Cloud|ssh-add-to-appcloud]]
+* ### [[Add a key to Engine Yard Cloud|ssh-add-to-cloud]]
   Learn how to add your SSH public key to your Engine Yard account.
   
 * ### [[Install keys to your application environments|ssh-install]]

@@ -23,7 +23,7 @@ deploying your applications to the cloud with our platform.
 4. ### [[Customize your deployment|customize-your-deployment]]
    Learn how to customize your applications deployment strategy.
 
-5. ### [[Deploy hooks|use-deploy-hooks-with-engine-yard-appcloud]]
+5. ### [[Deploy hooks|use-deploy-hooks-with-engine-yard-cloud]]
    Learn about using deploy hooks to customize your deployment.
 
 6. ### [[Deploy to Engine Yard Cloud from Windows|deployment-windows]]
@@ -41,7 +41,7 @@ deploying your applications to the cloud with our platform.
 10. ### [[Change your Git repo location|change-your-repo-location]]
    Learn how to update the location of your Git repository.
 
-11. ### [[Convert Capistrano symlinks to Engine Yard Cloud symlinks|convert-capistrano-symlinks-to-appcloud-symlinks]]
+11. ### [[Convert Capistrano symlinks to Engine Yard Cloud symlinks|convert-capistrano-symlinks-to-cloud-symlinks]]
    Learn how to convert Capistrano symlinks to Engine Yard Cloud symlinks for deployment.
    
 12. ### [[Troubleshooting|deployment-troubleshooting]]

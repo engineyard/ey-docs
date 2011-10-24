@@ -69,7 +69,7 @@ Before making changes to a production environment, review your keep files.
     <td>SSH</td><td>[[Connect to your instance via SSH|ssh-connect]] </td>
   </tr>
   <tr>
-    <td>Deploy hooks</td><td>[[How To Use Deploy Hooks|use-deploy-hooks-with-engine-yard-appcloud]]</td>
+    <td>Deploy hooks</td><td>[[How To Use Deploy Hooks|use-deploy-hooks-with-engine-yard-cloud]]</td>
   </tr>
   <tr>
     <td>Customizing Unicorn configuration (without keep files)</td><td>[[Customize Unicorn|customize-unicorn]]</td>

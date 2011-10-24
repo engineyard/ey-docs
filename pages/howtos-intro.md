@@ -6,7 +6,7 @@
   * [[Customize Unicorn|customize-unicorn]]
   * [[Find important log files|find-important-log-files]]
   * [[Setup SSMTP for mail relay to AuthSMTP|setup-ssmtp-for-mail-relay-to-authsmtp]]
-  * [[Set time zone for an instance|set-time-zone-for-an-appcloud-instance]]
+  * [[Set time zone for an instance|set-time-zone-for-an-cloud-instance]]
   * [[Load testing your application with em-proxy|em-proxy]] 
   * [[Implement file uploads with Carrier Wave|use-carrierwave-and-optionally-fog-to-upload-and-store-files]]
   * [[Implement full text search with Sphinx|full-text-search-with-thinking-sphinx]]

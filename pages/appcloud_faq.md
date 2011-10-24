@@ -160,7 +160,7 @@ Each availability zone runs on its own physically distinct, independent infrastr
 
 Source: Feature Guide, Amazon EC2 Availability Zones (developer.amazonwebservices.com)
 
-For information about setting availability zones, see [[Using multi-region on Engine Yard Cloud|using-multi-region-with-engine-yard-appcloud]].
+For information about setting availability zones, see [[Using multi-region on Engine Yard Cloud|using-multi-region-with-engine-yard-cloud]].
 
 <a href=#FAQ22><h2 id="FAQ22"> How do I change my credit card information? </h2></a>
 

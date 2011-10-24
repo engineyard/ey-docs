@@ -20,7 +20,7 @@
 * ### [[Change an instance size|change-an-instance-size]]
   Learn how to change the size of an instance in an environment.
 
-* ### [[Multi-Region support|using-multi-region-with-engine-yard-appcloud]]
+* ### [[Multi-Region support|using-multi-region-with-engine-yard-cloud]]
   Learn how to deploy your application in different geographic regions.
 
 * ### [[Using snapshots|using-snapshots]]
@@ -56,7 +56,7 @@
 * ### [[Setup local SSH keys|ssh-setup]]
   Learn how to generate an ssh keypair on your local machine.
   
-* ### [[Add a key to Engine Yard Cloud|ssh-add-to-appcloud]]
+* ### [[Add a key to Engine Yard Cloud|ssh-add-to-cloud]]
   Learn how to add your SSH public key to your Engine Yard account.
   
 * ### [[Install keys to your application environments|ssh-install]]
@@ -82,7 +82,7 @@
 * ### [[Creating cron jobs|adding-cron-jobs]]
   Learn how to create scheduled tasks via cron jobs in your environments.
   
-* ### [[Bundler tips|bundler-tips-for-appcloud]]
+* ### [[Bundler tips|bundler-tips-for-cloud]]
   A handful of helpful Bundler tips for use on Engine Yard Cloud.
 
 

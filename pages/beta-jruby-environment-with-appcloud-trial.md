@@ -87,7 +87,7 @@ Running a JRuby application is similar to running any Ruby application. The main
     <td>the Engine Yard CLI</td><td>[[Engine Yard CLI User Guide|ey_cli_user_guide]] </td>
   </tr>
   <tr>
-    <td>Bundler</td><td>[[Bundler tips|bundler-tips-for-appcloud]]</td>
+    <td>Bundler</td><td>[[Bundler tips|bundler-tips-for-cloud]]</td>
   </tr>
 </table>
 

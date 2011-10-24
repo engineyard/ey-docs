@@ -58,4 +58,4 @@ The `id_rsa.pub` file is the public key file that you'll upload to Engine Yard C
 
 ## Next Steps
 
-[[Add your public key|ssh-add-to-appcloud]] to Engine Yard Cloud.
+[[Add your public key|ssh-add-to-cloud]] to Engine Yard Cloud.

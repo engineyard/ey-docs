@@ -29,7 +29,7 @@ If you want to get going and work the rest out later, here's the quick version.
 
 1. Be familiar with Engine Yard docs about:
     -  [[Using chef recipes|custom-chef-recipes]]
-    -  [[Deploy hooks|use-deploy-hooks-with-engine-yard-appcloud]]
+    -  [[Deploy hooks|use-deploy-hooks-with-engine-yard-cloud]]
 2. Make sure you have these gems installed:
     - [[resque|http://rubygems.org/gems/resque]]
     - [[redis|http://rubygems.org/gems/redis]]

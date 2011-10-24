@@ -104,7 +104,7 @@ If you already have a free trial, you might want to upgrade to a full account be
 	    <td>Learning how to deploy by following a tutorial</td><td>[[Tutorial: How to deploy a sample application on a trial account|tutorial_deploy_fat_free_crm]] </td>
 	  </tr>
 	  <tr>
-	    <td>Support plans available</td><td>[[Engine Yard Cloud support|appcloud-support]]</td>
+	    <td>Support plans available</td><td>[[Engine Yard Cloud support|cloud-support]]</td>
 	  </tr>
 	<tr>
 	    <td>Participating in Alpha and Beta testing</td><td>[[Beta program|beta-intro]]</td>

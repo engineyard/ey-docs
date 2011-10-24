@@ -10,7 +10,7 @@ Sign up to get access to Alpha features. The MySQL and PostgreSQL features requi
 
 This feature is in **Beta**:
 
-* [[GitHub/Engine Yard account linking|linking-github-to-appcloud]]
+* [[GitHub/Engine Yard account linking|linking-github-to-cloud]]
 
 Beta features are labelled beta on the UI and are available to all users. 
 

@@ -15,5 +15,5 @@ good idea to "Update instances" in your Dashboard.
 To make this change persist when a new instance is created, we suggest 
 putting the command to create a symbolic link in Step 2 above in a deploy 
 hook (anything **except for** ''after_restart'' hook will do). 
-See [[How To Use Deploy Hooks|use-deploy-hooks-with-engine-yard-appcloud]] for 
+See [[How To Use Deploy Hooks|use-deploy-hooks-with-engine-yard-cloud]] for 
 help with deploy hooks.

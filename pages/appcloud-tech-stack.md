@@ -12,7 +12,7 @@ expert cluster engineers, and seasoned DBAs for web server performance, database
 and long-term scalability. We meticulously test and fully integrate each new component and 
 component update to provide reliability, security, and compatibility within the stack.
 
-As a result, you can confidently deploy and manage your application with any Engine Yard product. Read about the many [[benefits|http://www.engineyard.com/products/appcloud/benefits]] of using our Platform-as-a-Service.
+As a result, you can confidently deploy and manage your application with any Engine Yard product. Read about the many [[benefits|http://www.engineyard.com/products/cloud/benefits]] of using our Platform-as-a-Service.
 
 <p class="note">
   <strong>Note: </strong>This version is correct as of October 14, 2011.
