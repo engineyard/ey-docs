@@ -30,7 +30,7 @@ Thinking Sphinx connects ActiveRecord and the Sphinx search daemon, allowing you
 
         ![Cron interval](images/sphinx_cron.png)
 
-4. 	Add deploy hooks by adding these lines to before_migrate.rb. For information about deploy hooks, see [How To Use Deploy Hooks](http://docs.engineyard.com/cloud/howtos/deployment/use-deploy-hooks-with-engine-yard-cloud):  
+4. 	Add deploy hooks by adding these lines to before_migrate.rb. For information about deploy hooks, see [[How To Use Deploy Hooks|use-deploy-hooks-with-engine-yard-cloud]]:  
 
         run "ln -nfs #{shared_path}/config/sphinx #{release_path}/config/sphinx"  
         run "ln -nfs #{shared_path}/config/sphinx.yml #{release_path}/config/sphinx.yml"  

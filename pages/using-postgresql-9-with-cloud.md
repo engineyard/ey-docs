@@ -155,7 +155,6 @@ Known issues associated with PostgresSQL 9 on Engine Yard Cloud are:
   </tr>
 <tr>
     <td>database tasks</td><td>[[Managing your Database|database-intro]] (Many of the tasks apply to PostgreSQL as well as MySQL.)</td>
->>>>>>> master
   </tr>
 <tr>
     <td>PostgreSQL</td><td>[[PostgreSQL|http://www.postgresql.org/docs]] documentation </td>
