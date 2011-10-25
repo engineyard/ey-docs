@@ -42,9 +42,13 @@ with your environment's actual name.
         environments:
           myapp_staging:
             migration_command: thor db:migrate
-              migrate: false
+            migrate: false
 
+* **Skip gems for specific Bundler groups**
 
+		environments:
+		  myapp_staging:
+			bundle_without: test development custom other
 
 ### Fields to note
 
@@ -80,7 +84,7 @@ can see the source of the class that your customization will be instance_eval'd
 into on GitHub at [[https://github.com/engineyard/engineyard-serverside/blob/master/lib/engineyard-serverside/deploy.rb]] 
 We guarantee the top level tasks (bundle, symlink_configs, enable_maintenance_page, migrate, symlink, restart, disable_maintenance_page, and cleanup_old_releases) 
 will remain consistent and in a consistent order.  All other methods in the 
-class are subject (but unlikely) to change.
+class are subject to change.
 
 ### Example: GitHub style deploy
 

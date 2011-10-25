@@ -59,9 +59,13 @@ machine which will pack the gems into `vendor/cache`. When you deploy, run
 
 ## Installation groups
 
-Currently, the only way to configure the groups passed to `bundle
+Previously, if you wanted to configure the groups passed to `bundle install --without`, you created an `eydeploy.rb` in the root of your application and added code like the following. 
+
+**Important!** This eydeploy.rb method no longer works for gem grouping. Now, to use `bundle install --without` functionality, you edit the ey.yml file. For more information, see [[ey.yml customizations|ey_cli_user_guide#eyyml]].
+
+<!-- Currently, the only way to configure the groups passed to `bundle
 install --without` is by creating an `eydeploy.rb` in the root of your
-application. Then put the following in it and modify as needed:
+application. Then put the following in it and modify as needed: -->
 
     def bundler_10_installer(version)
       opts = [
@@ -71,4 +75,4 @@ application. Then put the following in it and modify as needed:
         "--without development test other groups etc"
       ]
       BundleInstaller.new(version, opts.join(" "))
-    end
+    end -->

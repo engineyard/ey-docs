@@ -171,7 +171,7 @@ If set, all commands (e.g. `ey deploy`, `ey rollback`) that require an SSH conne
 
 
 
-### ey.yml Customizations
+<h3 id="eyyml"> ey.yml Customizations</h3>
 
 Extra customization can be accomplished with an `ey.yml` file. [[More about the ey.yml file.|customize-your-deployment#first]]
 
@@ -192,3 +192,10 @@ If you have a large .git directory and you do not want it copied over on every d
        copy_exclude:
          - .git
 
+#### Exclude some gems with `bundle install --without`
+
+By creating groups in your Gemfile, you can specify groups of gems that you do not want to be installed in a particular environment. For example, you might want the sqlite3-ruby gem in your development environment and the mysql gem in your staging and productions environments. To exclude groups of gems, add a `bundle_without: GROUP-NAME` section to ey.yml:
+
+	environments:
+	  YOUR-ENVIRONMENT-NAME-GOES-HERE:
+		bundle_without: test development custom other
