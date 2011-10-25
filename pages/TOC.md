@@ -73,6 +73,7 @@
     * [[Asset Pipeline tips for Rails 3.1|asset-pipeline]]    
   * [[Troubleshooting|app-troubleshooting]]  
     * [[Introduction|app-troubleshooting]]
+    * [[Site is down: Diagnostic checklist|site-is-down]] 
     * [[Amazon out of capacity error | amazon-out-of-capacity]]  
     * [[Termination failed error | trouble-termination-failed]]  
 * [[Monitor your Application|monitoring-intro]]
