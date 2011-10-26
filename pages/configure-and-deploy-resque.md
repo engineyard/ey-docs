@@ -38,7 +38,7 @@ If you want to get going and work the rest out later, here's the quick version.
 3. Add `config/resque.yml` as per the Resque readme
     - Typically this is in `/data/app_name/shared/config/resque.yml` and you use a deploy hook to symlink this into `current/config`.
 4. For each worker you want to have, create a `resque_x.conf`
-    - (where x is a number for the worker counting from 0) IF you want to use this mechanism to prioritize. Otherwise, you can skip this step.
+    - (where x is a number for the worker counting from 0) If you want to use this mechanism to prioritize. Otherwise, you can skip this step.
 5. Enable the Resque recipe in chef (read `/etc/chef-custom/recipes/cookbooks/resque/README.rdoc`), and upload your recipes.
 6. Add deploy hooks to your code to ensure that the workers are restarted during deploys.
 

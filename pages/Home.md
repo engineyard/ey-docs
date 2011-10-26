@@ -19,18 +19,18 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
   <div class="col col-first">
     <h2>Updated documentation</h2>
     <ul>
-      	<li>
+	   <li>
+	      [[Engine Yard Cloud updates October 2011|appcloud-updates-october-2011]]
+	   </li>
+      <li>
+	      [[Site is down: Diagnostic checklist|site-is-down]]
+	  </li>
+	  <li>
         [[Clone an environment|environment-clone]]
       </li>
-      <li>
-      [[Engine Yard Cloud updates October 2011|appcloud-updates-october-2011]]
-      </li>
+      
       <li>
         [[Using Rubinius with Engine Yard Cloud|using-rubinius-on-appcloud]]
-      </li>
-	  
-      <li>
-        [[Customize Unicorn|customize-unicorn]]
       </li>
     </ul>
 
