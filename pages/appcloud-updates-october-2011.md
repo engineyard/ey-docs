@@ -2,6 +2,20 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update13><h2 id="update13">Fix: Two database-related issues</h2></a>
+
+October 26th, 2011
+
+* Fixed an issue with PostgreSQL 9.0 Alpha backups. (In some cases, database slaves were not getting backed up.)
+
+* Fixed an issue where a MySQL slave server could not be added to a cluster if the master database had master.info or relay-log.info files on it.
+
+<a href=#update12><h2 id="update12">Fix: ZSH installation</h2></a>
+
+October 26th, 2011
+
+ZSH is now installed.
+
 <a href=#update11><h2 id="update11">Minor: Assorted improvements and fixes to the Engine Yard Stack</h2></a>
 
 October 22nd, 2011
