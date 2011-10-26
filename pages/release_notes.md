@@ -3,6 +3,10 @@
 
 ### [[October 2011|appcloud-updates-october-2011]]
 
+* [[Fix: Database-related issues|appcloud-updates-october-2011#update13]] *October 26th, 2011*
+
+* [[Fix: ZSH installation|appcloud-updates-october-2011#update12]] *October 26th, 2011*
+
 * [[Minor: Assorted improvements and fixes to the Engine Yard Stack|appcloud-updates-october-2011#update11]] *October 22nd, 2011*
 
 * [[Minor: No more tabs on the Environment page|appcloud-updates-october-2011#update10]] *October 18th, 2011*
