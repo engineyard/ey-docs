@@ -88,7 +88,7 @@ This is the example package.json file for the node-basic-app application:
 		  }
 		}
 
-You can also find this example in the git repository: [github.com/engineyard/node-basic-app](http://github.com/engineyard/node-basic-app)
+You can also find this example in the git repository: [github.com/engineyard/node-simple-example](http://github.com/engineyard/node-simple-example)
 
 <h2 id="topic3">To run a Node.js application on Engine Yard Cloud</h2>
 
@@ -137,7 +137,7 @@ Engine Yard Cloud uses a reverse TCP proxy for Nginx that routes WebSocket reque
 
 This repository contains an example Node.js application that uses Socket IO to create a chat room:
 
-[https://github.com/engineyard/nodechat](https://github.com/engineyard/nodechat)
+[https://github.com/engineyard/node-websockets-example](https://github.com/engineyard/node-websockets-example)
 
 
 [1]: #topic1        "topic1"
