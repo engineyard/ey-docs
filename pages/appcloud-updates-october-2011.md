@@ -4,7 +4,7 @@ The updates described are either important (where you need to take action) or of
 
 <a href=#update14><h2 id="update14">Fix: An issue with the Apply button </h2></a>
 
-October 26th, 2011
+October 27th, 2011
 
 Fixed an issue where, on rare occasions, clicking the Apply button to apply changes to the environment removed the application.
 
