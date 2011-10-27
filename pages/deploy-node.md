@@ -44,49 +44,57 @@ Write and test your Node.js application on your local machine. The two important
 
 1. Specify your application dependencies in `package.json`.  
 
-    This file is used to resolve the dependencies that your application needs. For more information about the package.json file, see [Specifics of npm's package.json handling](http://npmjs.org/doc/json.html). This is a sample package.json file (for the node-basic-app application [below][6]:
+    This file is used to resolve the dependencies that your application needs. For more information about the package.json file, see [Specifics of npm's package.json handling](http://npmjs.org/doc/json.html). This is a sample package.json file (for the node-simple-example application [below][6]:
 
-		json
-		{
-		  "name": "node-hello-world",
-		  "version": "0.0.1",
-		  "dependencies": {
-		    "express": "2.2.0"
-		  }
-		}
+    ```json
+    {
+      "name": "node-hello-world",
+      "version": "0.0.1",
+      "dependencies": {
+        "express": "2.5.0"
+      }
+    }
+    ```
 
 2. Write your application in `app.js` or `server.js`.  
-    If you don't have an application, try the "node-basic-app" example application.
+    If you don't have an application, try the "node-simple-example" example application.
 
 3. Test your application locally.
 
 4. Push your application files to a git repository.
 
-<h3 id="topic6">The node-basic-app example application</h3>
+<h3 id="topic6">The node-simple-example application</h3>
 
-This is the example application for the node-basic-app. This application is very similar to the [Express](http://expressjs.com/) example. One modification is that the port that the application is running on is set using the environment variable `PORT`. 
+This is the application for the node-simple-example. This application is very similar to the [Express](http://expressjs.com/) example. One modification is that the port that the application is running on is set using the environment variable `PORT`. 
 
-    javascript
-    var express = require('express');
-    var app     = express.createServer();
-    var port    = process.env.PORT || 3000;
+```javascript
+var express = require('express');
+var app     = express.createServer();
+var port    = process.env.PORT || 3000;
 
-    app.get('/', function(request, response) {
-      response.send('Hello Engine Yard Cloud!');
-    });
+app.get('/', function(request, response) {
+  response.send('Hello Engine Yard Cloud!');
+});
 
-    app.listen(port);
+app.listen(port);
+```
+This is the example package.json file for the node-simple-example application:
 
-This is the example package.json file for the node-basic-app application:
+```json
+{
+  "name": "node-hello-world",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "2.5.0"
+  }
+}
+```
 
-		json
-		{
-		  "name": "node-hello-world",
-		  "version": "0.0.1",
-		  "dependencies": {
-		    "express": "2.2.0"
-		  }
-		}
+To install Express and its dependencies you only need to run this command from the application directory:
+
+```
+npm install
+```
 
 You can also find this example in the git repository: [github.com/engineyard/node-simple-example](http://github.com/engineyard/node-simple-example)
 
@@ -104,11 +112,9 @@ These steps describe how to deploy a Node.js application (from a git repository)
     The application server stack and runtime are set automatically to Nginx and Node.js.
 
 4. Create a custom cluster.  
-    Set the Server Size to Large for the application instances.  
-    The application servers must be large because (for Alpha test period) Node.js is restricted to 64-bit instances.  
+    Set the Server Size to Large for the application instances.
 
 5. Deploy your application.
-
 
 
 ## Environment variables
