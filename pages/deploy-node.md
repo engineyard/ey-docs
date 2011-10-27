@@ -35,8 +35,6 @@ If you haven't written Node.js applications before, follow these steps to set up
 
         curl http://npmjs.org/install.sh | sh
 
-3. (Optional) Install a development framework (such as [Express](http://expressjs.com)) for Node.js.
-
 <h2 id="topic2">To create your Node.js application</h2>
 
 Write and test your Node.js application on your local machine. The two important files are the package.json file and the app.js or server.js file.
@@ -44,7 +42,7 @@ Write and test your Node.js application on your local machine. The two important
 
 1. Specify your application dependencies in `package.json`.  
 
-    This file is used to resolve the dependencies that your application needs. For more information about the package.json file, see [Specifics of npm's package.json handling](http://npmjs.org/doc/json.html). This is a sample package.json file (for the node-simple-example application [below][6]:
+    This file is used to resolve the dependencies that your application needs. For more information about the package.json file, see [Specifics of npm's package.json handling](http://npmjs.org/doc/json.html). This is a sample package.json file for the node-simple-example application [below][6]:
 
     ```json
     {
@@ -59,9 +57,15 @@ Write and test your Node.js application on your local machine. The two important
 2. Write your application in `app.js` or `server.js`.  
     If you don't have an application, try the "node-simple-example" application.
 
-3. Test your application locally.
+3. Install the dependencies for your application by running npm install:  
 
-4. Push your application files to a git repository.
+        npm install
+
+    For example, this installs [Express](http://expressjs.com) if you are using the code shown in step 1.
+
+4. Test your application locally.
+
+5. Push your application files to a git repository.
 
 <h3 id="topic6">The node-simple-example application</h3>
 
@@ -90,11 +94,6 @@ This is the example package.json file for the node-simple-example application:
 }
 ```
 
-To install Express and its dependencies you only need to run this command from the application directory:
-
-```
-npm install
-```
 
 You can also find this example in the git repository: [github.com/engineyard/node-simple-example](http://github.com/engineyard/node-simple-example)
 
