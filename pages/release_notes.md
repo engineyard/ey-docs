@@ -3,6 +3,8 @@
 
 ### [[October 2011|appcloud-updates-october-2011]]
 
+* [[Fix: An issue with the Apply button|appcloud-updates-october-2011#update14]] *October 27th, 2011*
+
 * [[Fix: Database-related issues|appcloud-updates-october-2011#update13]] *October 26th, 2011*
 
 * [[Fix: ZSH installation|appcloud-updates-october-2011#update12]] *October 26th, 2011*
