@@ -57,7 +57,7 @@ Write and test your Node.js application on your local machine. The two important
     ```
 
 2. Write your application in `app.js` or `server.js`.  
-    If you don't have an application, try the "node-simple-example" example application.
+    If you don't have an application, try the "node-simple-example" application.
 
 3. Test your application locally.
 
@@ -105,7 +105,7 @@ These steps describe how to deploy a Node.js application (from a git repository)
 1. Request access to the Node.js Alpha program ([[Request access to Node.js Alpha|signup-node]]).
 
 2. In the Dashboard, create a new application and set Application Type to Node.js.  
-    If you do not have a Node.js application in a git repository, try one of our example applications: http://github.com/engineyard/node-basic-app or https://github.com/engineyard/nodechat
+    If you do not have a Node.js application in a git repository, try one of our example applications: http://github.com/engineyard/node-simple-example or https://github.com/engineyard/nodechat
 
 3. Create the environment.  
 
