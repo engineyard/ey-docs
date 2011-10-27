@@ -42,17 +42,7 @@ Write and test your Node.js application on your local machine. The two important
 
 1. Specify your application dependencies in `package.json`.  
 
-    This file is used to resolve the dependencies that your application needs. For more information about the package.json file, see [Specifics of npm's package.json handling](http://npmjs.org/doc/json.html). This is a sample package.json file for the node-simple-example application [below][6]:
-
-    ```json
-    {
-      "name": "node-hello-world",
-      "version": "0.0.1",
-      "dependencies": {
-        "express": "2.5.0"
-      }
-    }
-    ```
+    This file is used to resolve the dependencies that your application needs. For more information about the package.json file, see [Specifics of npm's package.json handling](http://npmjs.org/doc/json.html). The sample package.json file for the node-simple-example application is shown [below][6].
 
 2. Write your application in `app.js` or `server.js`.  
     If you don't have an application, try the "node-simple-example" application.
@@ -61,7 +51,7 @@ Write and test your Node.js application on your local machine. The two important
 
         npm install
 
-    For example, this installs [Express](http://expressjs.com) if you are using the code shown in step 1.
+    For example, this installs [Express](http://expressjs.com) if you are using the node-simple-example shown [below][6].
 
 4. Test your application locally.
 
