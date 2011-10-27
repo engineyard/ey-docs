@@ -775,7 +775,7 @@ As a result, you can confidently deploy and manage your application with any Eng
 			Are available to all accounts (some restrictions may apply to trial accounts)
 		</li>
 		<li>
-			Associated issues (bugs) may be forwarded to the developper community
+			Associated issues (bugs) may be forwarded to the developer community
 		</li>
 		<li>
 			Installation and configuration support issues are addressed, but may be given low priority  
