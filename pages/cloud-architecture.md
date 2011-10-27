@@ -13,7 +13,7 @@ as content indexing to a specialist indexing and search component, and by levera
 for functional specific storage tasks. Functional partitioning and (if required) application level 
 sharding provides further options for scaling.
 
-<img src="/images/appcloud-architecture.png" />
+<img src="/images/cloud-architecture.png" />
 
 ## Technology stack
 

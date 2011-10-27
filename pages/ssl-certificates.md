@@ -69,7 +69,7 @@ If you don't haven any SSL certificates configured click the link in the top rig
 
 The Create New SSL Certificate page appears.
 
-![SSL Cert](images/appcloudsslcertificates.png)
+![SSL Cert](images/cloudsslcertificates.png)
 
   1. Give your SSL cert a name.  Use the SSL Certificate Name field.
   2. Click on Upload SSL Certificate radio button.
