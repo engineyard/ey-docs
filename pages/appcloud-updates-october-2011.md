@@ -2,6 +2,19 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update16><h2 id="update16">Minor: JRuby upgrade </h2></a>
+
+October 28th, 2011
+
+Upgraded JRuby to 1.6.5 from 1.6.4. This upgrades RubyGems to 1.8.9 from 1.5.1.
+
+
+<a href=#update15><h2 id="update15">Minor: Security update </h2></a>
+
+October 28th, 2011
+
+Nginx SSL ciphers now configured to protect against the BEAST SSL attack. 
+
 <a href=#update14><h2 id="update14">Fix: An issue with the Apply button </h2></a>
 
 October 27th, 2011
