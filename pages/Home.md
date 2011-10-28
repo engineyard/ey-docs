@@ -22,6 +22,8 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
 	   <li>
 	      [[Engine Yard Cloud updates October 2011|appcloud-updates-october-2011]]
 	   </li>
+	  <li>
+		  [[Engine Yard Technology Stack|cloud-tech-stack]]
       <li>
 	      [[Site is down: Diagnostic checklist|site-is-down]]
 	  </li>
@@ -29,9 +31,7 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
         [[Clone an environment|environment-clone]]
       </li>
       
-      <li>
-        [[Using Rubinius with Engine Yard Cloud|using-rubinius-on-appcloud]]
-      </li>
+      
     </ul>
 
     
