@@ -19,11 +19,15 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
   <div class="col col-first">
     <h2>Updated documentation</h2>
     <ul>
-	   <li>
-	      [[Engine Yard Cloud updates October 2011|appcloud-updates-october-2011]]
-	   </li>
-	  <li>
-		  [[Engine Yard Technology Stack|cloud-tech-stack]]
+     <li>
+	 [[Engine Yard Beta Program|beta-intro]]
+     </li>
+	   
+     <li>
+	  [[Engine Yard Cloud updates October 2011|appcloud-updates-october-2011]]
+     </li>
+     <li>
+           [[Engine Yard Technology Stack|cloud-tech-stack]]
       <li>
 	      [[Site is down: Diagnostic checklist|site-is-down]]
 	  </li>
@@ -41,9 +45,12 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
     <h2>New documentation</h2>
     <ul>
       <li>
-	    [[500 errors after deploying|issue-mysql2-adapter]]
-	  </li>
-	  <li>
+         [[Using Ruby 1.9.3 with Engine Yard Cloud|ruby-193]]
+      </li>
+      <li>
+	 [[500 errors after deploying|issue-mysql2-adapter]]
+      </li>
+      <li>
         [[Tutorial: Deploy Rails 3 on a Trial Account|getting-started-deploy-todo]]
       </li>
       <li>
