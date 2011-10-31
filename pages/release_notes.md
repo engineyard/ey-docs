@@ -3,6 +3,10 @@
 
 ### [[October 2011|appcloud-updates-october-2011]]
 
+* [[<b>Major:</b> Ruby 1.9.3 is available with Alpha support|appcloud-updates-october-2011#update18]] *October 31st, 2011*
+
+* [[Minor: vi is now the default editor|appcloud-updates-october-2011#update17]] *October 31st, 2011*
+
 * [[Minor: JRuby upgrade |appcloud-updates-october-2011#update16]] *October 28th, 2011*
 
 * [[Minor: Security update|appcloud-updates-october-2011#update15]] *October 28th, 2011*
