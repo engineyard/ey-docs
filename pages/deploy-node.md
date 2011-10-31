@@ -16,6 +16,7 @@ Additional information at the bottom of this page:
 
 * [Environment variables][4]
 * [Using WebSocket][5]
+* [About CoffeeScript and Node.js][6]
 
 
 <h2 id="topic1">To prepare your local machine for Node.js</h2>
@@ -106,7 +107,7 @@ These steps describe how to deploy a Node.js application (from a git repository)
 5. Deploy your application.
 
 
-## Environment variables
+<h2 id="topic4"> Environment variables </h2>
 
 By default, Engine Yard Cloud exposes some environment variables to Node.js applications. These variables can be used to configure applications.
 
@@ -126,13 +127,19 @@ These variables can be accessed through the process. For example, to get the por
     javascript
     var port = process.env.PORT;
 
-<h2 id="topic4">Using WebSocket on Engine Yard Cloud</h2>
+<h2 id="topic5">Using WebSocket on Engine Yard Cloud</h2>
 
 Engine Yard Cloud uses a reverse TCP proxy for Nginx that routes WebSocket requests directly to your Node.js application. You can use frameworks like [Socket IO](http://socket.io/) to work with WebSocket.
 
 This repository contains an example Node.js application that uses Socket IO to create a chat room:
 
 [https://github.com/engineyard/node-websockets-example](https://github.com/engineyard/node-websockets-example)
+
+<h2 id="topic6">About CoffeeScript and Node.js</h2>
+
+You can write your Node.js application in CoffeeScript instead of JavaScript. 
+Name your application app.js or server.js (the same as for a JavaScript application). 
+Node.js automatically detects CoffeeScript. 
 
 
 [1]: #topic1        "topic1"
