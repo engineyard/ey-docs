@@ -2,6 +2,22 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update18><h2 id="update18"><b>Major:</b> Ruby 1.9.3 is available with Alpha support </h2></a>
+
+October 31st, 2011
+
+Ruby 1.9.3.p0 is available in Engine Yard Cloud with Alpha support. ([[Sign up|signup-ruby193]] to participate in the program.)
+
+This is the first stable release of Ruby 1.9.3. 
+
+Ruby 1.9.3 offers faster loading times for Rails 3.x applications. For more information about this release, see [[Ruby 1.9.3 p0 is released|http://www.ruby-lang.org/en/news/2011/10/31/ruby-1-9-3-p0-is-released/]]. 
+
+<a href=#update17><h2 id="update17">Minor: vi is now the default editor </h2></a>
+
+October 31st, 2011
+
+vi now replaces GNU nano as the default editor on Engine Yard instances.
+
 <a href=#update16><h2 id="update16">Minor: JRuby upgrade </h2></a>
 
 October 28th, 2011
@@ -177,3 +193,5 @@ Applications that use Bundler 0.9 will continue to run but cannot be re-deployed
 [15]: #update15        "update15"
 [16]: #update16        "update16"
 [17]: #update17        "update17"
+[18]: #update18        "update18"
+
