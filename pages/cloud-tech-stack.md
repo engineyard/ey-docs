@@ -106,19 +106,18 @@ As a result, you can confidently deploy and manage your application with any Eng
       <td></td>
       <td> 
 	    <ul>
-		  <li class="beta" title='Beta'>1.6.5/1.6u26 
+		  <li>1.6.5/1.6u26 
 		  </li>
 		</ul>
 	  </td>
       <td>
         <ul>
-          	<li class="beta" title='Beta'>1.6.5/1.6u26 
+          	<li>1.6.5/1.6u26 
 			  </li>
         </ul>
       </td>
       <td>
         <p>
-          JRuby support is in beta status.
         </p>
       </td>
     </tr>
