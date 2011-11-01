@@ -138,7 +138,7 @@ This repository contains an example Node.js application that uses Socket IO to c
 <h2 id="topic6">About CoffeeScript and Node.js</h2>
 
 You can write your Node.js application in CoffeeScript instead of JavaScript. 
-Note that a file named *filename*.coffee is ignored if there is a corresponding *filename*.js file.
+Note that files named *app*.coffee and *server*.coffee are ignored if there are corresponding *app*.js and *server*.js files.
 
 
 [1]: #topic1        "topic1"
