@@ -1,6 +1,6 @@
 # Deploying Node.js applications on Engine Yard Cloud
 
-Node.js is now available for testing on Engine Yard Cloud. Read this page if you want to participate in the Engine Yard Node Alpha program.
+Node.js is now available for testing as part of the Engine Yard Labs program. Read this page if you want to try Node.js with Engine Yard Cloud.
 
 This page describes how to create Node.js application and deploy it on Engine Yard Cloud.
 
@@ -98,7 +98,7 @@ These steps describe how to deploy a Node.js application (from a git repository)
 
 <h3>To run a Node.js application on Engine Yard Cloud</h3>
 
-1. Request access to the Node.js Alpha program ([[Request access to Node.js Alpha|signup-node]]).
+1. Request access to the Node.js Labs program ([[Request access to Node.js Labs|signup-node]]).
 
 2. In the Dashboard, create a new application and set Application Type to Node.js.  
     If you do not have a Node.js application in a git repository, try one of our example applications: http://github.com/engineyard/node-simple-example or https://github.com/engineyard/node-websockets-example
