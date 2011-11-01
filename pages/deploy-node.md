@@ -19,9 +19,11 @@ Additional information at the bottom of this page:
 * [About CoffeeScript and Node.js][6]
 
 
-<h2 id="topic1">To prepare your local machine for Node.js</h2>
+<h2 id="topic1">Prepare your local machine for Node.js</h2>
 
 If you haven't written Node.js applications before, follow these steps to set up your local machine for Node.js development. 
+
+<h3>To prepare your local machine for Node.js</h3>
 
 1. Install Node.js.  
 
@@ -36,10 +38,12 @@ If you haven't written Node.js applications before, follow these steps to set up
 
         curl http://npmjs.org/install.sh | sh
 
-<h2 id="topic2">To create your Node.js application</h2>
+<h2 id="topic2">Create your Node.js application</h2>
 
 Write and test your Node.js application on your local machine. The two important files are the package.json file and the app.js or server.js file.
-<!-- Anthony to confirm our understanding of this -->
+
+
+<h3>To create your Node.js application</h3>
 
 1. Specify your application dependencies in `package.json`.  
 
@@ -88,9 +92,11 @@ This is the example package.json file for the node-simple-example application:
 
 You can also find this example in the git repository: [github.com/engineyard/node-simple-example](http://github.com/engineyard/node-simple-example)
 
-<h2 id="topic3">To run a Node.js application on Engine Yard Cloud</h2>
+<h2 id="topic3">Run your Node.js application on Engine Yard Cloud</h2>
 
 These steps describe how to deploy a Node.js application (from a git repository) on Engine Yard Cloud.
+
+<h3>To run a Node.js application on Engine Yard Cloud</h3>
 
 1. Request access to the Node.js Alpha program ([[Request access to Node.js Alpha|signup-node]]).
 
