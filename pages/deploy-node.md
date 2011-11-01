@@ -16,7 +16,7 @@ Additional information at the bottom of this page:
 
 * [Environment variables][4]
 * [Using WebSocket][5]
-* [About CoffeeScript and Node.js][6]
+* [About CoffeeScript and Node.js][7]
 
 
 <h2 id="topic1">Prepare your local machine for Node.js</h2>
@@ -138,11 +138,9 @@ var port = process.env.PORT;
 
 Engine Yard Cloud uses a reverse TCP proxy for Nginx that routes WebSocket requests directly to your Node.js application. You can use frameworks like [Socket IO](http://socket.io/) to work with WebSocket.
 
-This repository contains an example Node.js application that uses Socket IO to create a chat room:
+This repository contains an example Node.js application that uses Socket IO to create a chat room: [https://github.com/engineyard/node-websockets-example](https://github.com/engineyard/node-websockets-example)
 
-[https://github.com/engineyard/node-websockets-example](https://github.com/engineyard/node-websockets-example)
-
-<h2 id="topic6">About CoffeeScript and Node.js</h2>
+<h2 id="topic7">About CoffeeScript and Node.js</h2>
 
 You can write your Node.js application in CoffeeScript instead of JavaScript. 
 Note that files named *app*.coffee and *server*.coffee are ignored if there are corresponding *app*.js and *server*.js files.
@@ -154,3 +152,5 @@ Note that files named *app*.coffee and *server*.coffee are ignored if there are 
 [4]: #topic4        "topic4"
 [5]: #topic5        "topic5"
 [6]: #topic6        "topic6"
+[7]: #topic7        "topic7"
+
