@@ -15,10 +15,9 @@ In order to access your slice via command line interface like Terminal on Mac OS
 
 ### Select keypairs
 
-  - Click on the Dashboard link under *Server Tools* on the left, then select the More Options tab for the environment you want to edit.
-  - Click on Edit Environment and the *Edit the Environment* page will appear.
+  - Click on the Dashboard link under *Server Tools* on the left, then select on the Environment page, click Edit Environment and the *Edit the Environment* page appears.
   - You then need to click the show advanced options link under which you'll find a checkbox for each key you have entered in the system.  Check the box next to the keys you want in the environment.
-  - Click the Update environment button to save your changes.
+  - Click Update Environment to save your changes.
 
 ![Adding SSH Keys](images/manage_ssh_keys.jpg)
 
@@ -34,7 +33,7 @@ You deploy your keys to push them to your instance.
 
 ### Connect to your instance
 
-From the Dashboard tab, you'll be able to see an SSH link for your instance.  Click on that, then click Allow to connect to your instance via SSH.
+On the Environment page, there is an SSH link for your instance.  Click on that, then click Allow to connect to your instance via SSH.
 
 Otherwise you can SSH into the slice by using your IP or amazon hostname and your username.  By default your username is *depoy*.
 

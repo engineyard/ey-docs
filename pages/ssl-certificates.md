@@ -69,7 +69,7 @@ If you don't haven any SSL certificates configured click the link in the top rig
 
 The Create New SSL Certificate page appears.
 
-![SSL Cert](images/appcloudsslcertificates.png)
+![SSL Cert](images/cloudsslcertificates.png)
 
   1. Give your SSL cert a name.  Use the SSL Certificate Name field.
   2. Click on Upload SSL Certificate radio button.
@@ -102,7 +102,7 @@ Get back to your Dashboard, then click the SSL tab for your environment.
 
 ![SSL Tab](images/ssl_tab.jpg)
 
-  - Click on Assign SSL Certifiicate to ...  for the application you want.
+  - Click on Assign SSL Certificate to ...  for the application you want.
   - Choose the certificate you want from the SSL Certificate drop-down.
   - Click on Update SSL Settings button to save changes.
 

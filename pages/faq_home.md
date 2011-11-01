@@ -1,5 +1,5 @@
 # Engine Yard FAQs
 
-* [[Engine Yard Cloud FAQs|appcloud_faq]]
+* [[Engine Yard Cloud FAQs|cloud_faq]]
 * [[Deployment FAQs|deployment-faqs]]
-* [[Trial FAQs|http://www.engineyard.com/products/appcloud/trial-faq]]
+* [[Trial FAQs|http://www.engineyard.com/products/cloud/trial-faq]]

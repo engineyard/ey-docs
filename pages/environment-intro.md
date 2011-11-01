@@ -31,7 +31,7 @@ the various instances types: [[Compute instances on Engine Yard Cloud|instance-t
 * ### [[Change an instance size|change-an-instance-size]]
   Learn how to change the size of an instance in an environment.
 
-* ### [[Multi-Region support|using-multi-region-with-engine-yard-appcloud]]
+* ### [[Multi-Region support|using-multi-region-with-engine-yard-cloud]]
   Learn how to deploy your application in different geographic regions.
 
 * ### [[Using snapshots|using-snapshots]]

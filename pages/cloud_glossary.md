@@ -8,7 +8,7 @@ An application is your web application that you are deploying to the cloud.  Spe
 
 ## availability zones
 
-See [[What are availability zones?|appcloud_faq#FAQ21]]
+See [[What are availability zones?|cloud_faq#FAQ21]]
 
 ## ebuilds
 

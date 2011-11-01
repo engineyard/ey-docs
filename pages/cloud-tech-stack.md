@@ -12,10 +12,10 @@ expert cluster engineers, and seasoned DBAs for web server performance, database
 and long-term scalability. We meticulously test and fully integrate each new component and 
 component update to provide reliability, security, and compatibility within the stack.
 
-As a result, you can confidently deploy and manage your application with any Engine Yard product. Read about the many [[benefits|http://www.engineyard.com/products/appcloud/benefits]] of using our Platform-as-a-Service.
+As a result, you can confidently deploy and manage your application with any Engine Yard product. Read about the many [[benefits|http://www.engineyard.com/products/cloud/benefits]] of using our Platform-as-a-Service.
 
 <p class="note">
-  <strong>Note: </strong>This version is correct as of September 22, 2011.
+  <strong>Note: </strong>This version is correct as of October 31, 2011.
 </p>
 
 <br /><br />
@@ -62,6 +62,9 @@ As a result, you can confidently deploy and manage your application with any Eng
         </ul>
       </td>
       <td>
+		<ul>
+          <li class="experimental" title='Experimental'>1.9.3.p0
+          </li>        
         <ul>
           <li class="full">1.9.2.p290
           </li>
@@ -76,6 +79,9 @@ As a result, you can confidently deploy and manage your application with any Eng
         </ul>
       </td>
       <td>
+        <ul>
+          <li class="experimental" title='Experimental'>1.9.3.p0
+          </li>
         <ul>
           <li class="full">1.9.2.p290
           </li>
@@ -106,19 +112,18 @@ As a result, you can confidently deploy and manage your application with any Eng
       <td></td>
       <td> 
 	    <ul>
-		  <li class="beta" title='Beta'>1.6.4/1.6u26 
+		  <li>1.6.5/1.6u26 
 		  </li>
 		</ul>
 	  </td>
       <td>
         <ul>
-          	<li class="beta" title='Beta'>1.6.4/1.6u26 
+          	<li>1.6.5/1.6u26 
 			  </li>
         </ul>
       </td>
       <td>
         <p>
-          JRuby support is in beta status.
         </p>
       </td>
     </tr>
@@ -175,13 +180,17 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="full">3.0.3
+          <li class="full">3.1.0
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="full">3.0.3
+          <li class="full">3.1.0
+          </li>
+        </ul>
+		<ul>
+          <li class="full">3.0.x
           </li>
         </ul>
         <ul>
@@ -198,8 +207,12 @@ As a result, you can confidently deploy and manage your application with any Eng
         </ul>
       </td>
       <td>
-        <ul>
-          <li class="full">3.0.3
+         <ul>
+	      <li class="full">3.1.0
+	      </li>
+	        </ul>
+	      <ul>
+          <li class="full">3.0.x
           </li>
         </ul>
         <ul>
@@ -568,27 +581,23 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="beta" title='Beta'>1.2.6
+          <li class="beta" title='Beta'>2.2.11
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="beta" title='Beta'>1.2.6
+          <li class="beta" title='Beta'>2.2.11
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="beta" title='Beta'>1.2.6
+          <li class="beta" title='Beta'>2.2.11
           </li>
         </ul>
       </td>
-      <td>
-        <p>
-          Avoid using very large data sets with Redis 1.0.
-        </p>
-      </td>
+      <td></td>
     </tr>
     <tr>
       <th colspan="5">
@@ -767,7 +776,7 @@ As a result, you can confidently deploy and manage your application with any Eng
 			Are available to all accounts (some restrictions may apply to trial accounts)
 		</li>
 		<li>
-			Associated issues (bugs) may be forwarded to the developper community
+			Associated issues (bugs) may be forwarded to the developer community
 		</li>
 		<li>
 			Installation and configuration support issues are addressed, but may be given low priority  

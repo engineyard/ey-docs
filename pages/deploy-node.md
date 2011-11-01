@@ -153,4 +153,3 @@ Note that files named *app*.coffee and *server*.coffee are ignored if there are 
 [5]: #topic5        "topic5"
 [6]: #topic6        "topic6"
 [7]: #topic7        "topic7"
-

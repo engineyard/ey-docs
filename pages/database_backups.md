@@ -25,7 +25,7 @@ When creating or editing an environment you can change the default settings for 
 
 ## Locate Backups
 
-Your database backups are located under the **More Options** tab of your environment. Once you click on this tab, you will see the **Database Backups** link. Clicking on this will give you download links for the last 10 days worth of backups.
+Your database backups are located on the Environment page under the More Options heading. Click Database Backups to see download links for the last 10 days of backups.
 
 Download the backup you are interested in restoring and you can continue with the next step.
 

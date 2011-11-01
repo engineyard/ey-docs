@@ -23,8 +23,8 @@ application setup within your Engine Yard account.
   * ### Application Server Stack
     Select an application server to serve your Rails or Ruby application in this environment.
     
-  * ### Ruby Runtime
-    Select a Ruby runtime to run your applications in this environment.
+  * ### Runtime
+    Select a runtime to run your applications in this environment.
     
   * ### Domain Name
     Set your domain name for this environment.

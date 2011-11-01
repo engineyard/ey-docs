@@ -1,6 +1,6 @@
 # Getting Started
 
-This guide assumes that you have already [[signed up for an Engine Yard account|sign-up-for-engine-yard-appcloud]] If you have not yet done so, go ahead and get started now -> [[Engine Yard Cloud|http://cloud.engineyard.com]]
+This guide assumes that you have already [[signed up for an Engine Yard account|sign-up-for-engine-yard-cloud]] If you have not yet done so, go ahead and get started now -> [[Engine Yard Cloud|http://cloud.engineyard.com]]
 
 ## Application Information
 

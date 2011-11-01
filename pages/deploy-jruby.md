@@ -65,7 +65,7 @@ Running a JRuby application is similar to running any Ruby application. The main
 1. In your Dashboard, create an application.  
 
 3. Create the environment.  
-	Set the Application Server to Trinidad. When the Application Server is set to Trinidad the Ruby Runtime defaults to JRuby.
+	Set the Application Server to Trinidad. When the Application Server is set to Trinidad the Runtime defaults to JRuby.
 	
 4. Deploy the application.
 
@@ -86,7 +86,7 @@ Running a JRuby application is similar to running any Ruby application. The main
     <td>the Engine Yard CLI</td><td>[[Engine Yard CLI User Guide|ey_cli_user_guide]] </td>
   </tr>
   <tr>
-    <td>Bundler</td><td>[[Bundler tips|bundler-tips-for-appcloud]]</td>
+    <td>Bundler</td><td>[[Bundler tips|bundler-tips-for-cloud]]</td>
   </tr>
 </table>
 

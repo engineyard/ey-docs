@@ -50,7 +50,7 @@ Create a file `$RAILS_ROOT/deploy/before_symlink.rb` with these contents:
 
 **Note** we are using the "Release" path instead of "Current" as it hasn't been symlinked yet.
 
-Learn more about our [[Custom Deploy Hooks|use-deploy-hooks-with-engine-yard-appcloud]].
+Learn more about our [[Custom Deploy Hooks|use-deploy-hooks-with-engine-yard-cloud]].
 
 ## Conclusion
 

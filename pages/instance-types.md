@@ -3,7 +3,7 @@
 Currently Engine Yard Cloud is built on top of Amazon's AWS services. When you create 
 an instance with Engine Yard you are booting up an [[EC2|http://aws.amazon.com/ec2/]] instance. 
 We boot this instance for you and automatically configure it with the appropriate
-[[Engine Yard Stack|appcloud-tech-stack]] components for your 
+[[Engine Yard Stack|cloud-tech-stack]] components for your 
 environment. 
 
 

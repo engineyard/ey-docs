@@ -82,7 +82,7 @@ can add your ssh public key to the service hosting your git repository.
 
 2. Select Framework Environment. (default is production)
 3. Choose Application Server. (default is Passenger 3)
-4. Select a Ruby Runtime. (default is Ruby 1.9.2)
+4. Select a Runtime. (default is Ruby 1.9.2)
 5. Select the Database Stack (default is MySQL 5.0.x)
 6. Configure the database backup frequency if desired.
 7. Click Create Environment.

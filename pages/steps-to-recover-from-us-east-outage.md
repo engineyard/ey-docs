@@ -6,7 +6,7 @@
 
 *Trying a different subzone*
 
-Some customers have been able to utilize our multi-region beta feature to move to another availability zone. However, it may be best to first try and create on East in a different sub zone since this would be the simplest option. Amazon is stating that all but one subzone in the US East region is operating properly. Unfortunately, the zone labels are assigned differently on a per-client basis to aid in load balancing -- so we recommend using trial and error by selecting a specific zone in the “Edit Environment” link under more options.
+Some customers have been able to utilize our multi-region beta feature to move to another availability zone. However, it may be best to first try and create on East in a different sub zone since this would be the simplest option. Amazon is stating that all but one subzone in the US East region is operating properly. Unfortunately, the zone labels are assigned differently on a per-client basis to aid in load balancing -- so we recommend using trial-and-error by selecting a specific zone in the “Edit Environment” link on the Environment page.
 
 *Note about snapshots*
 

@@ -3,7 +3,41 @@
 
 ### [[October 2011|appcloud-updates-october-2011]]
 
-* [[<b>Action Req'd:</b> Bundler 0.9 is being deprecated on October 4th, 2011|appcloud-updates-october-2011#update1]]
+* [[<b>Major:</b> Ruby 1.9.3 is available with Alpha support|appcloud-updates-october-2011#update18]] *October 31st, 2011*
+
+* [[Minor: vi is now the default editor|appcloud-updates-october-2011#update17]] *October 31st, 2011*
+
+* [[Minor: JRuby upgrade |appcloud-updates-october-2011#update16]] *October 28th, 2011*
+
+* [[Minor: Security update|appcloud-updates-october-2011#update15]] *October 28th, 2011*
+
+* [[Fix: An issue with the Apply button|appcloud-updates-october-2011#update14]] *October 27th, 2011*
+
+* [[Fix: Database-related issues|appcloud-updates-october-2011#update13]] *October 26th, 2011*
+
+* [[Fix: ZSH installation|appcloud-updates-october-2011#update12]] *October 26th, 2011*
+
+* [[Minor: Assorted improvements and fixes to the Engine Yard Stack|appcloud-updates-october-2011#update11]] *October 22nd, 2011*
+
+* [[Minor: No more tabs on the Environment page|appcloud-updates-october-2011#update10]] *October 18th, 2011*
+
+* [[Minor: Warnings about missing database adapters or Gemfile.lock appear in the Dashboard|appcloud-updates-october-2011#update9]] *October 18th, 2011*
+
+* [[Fix: passenger_monitor|appcloud-updates-october-2011#update8]] *October 14th, 2011*
+
+* [[Fix: PostgreSQL database backup|appcloud-updates-october-2011#update7]] *October 13th, 2011*
+
+* [[Minor: Unicorn changes|appcloud-updates-october-2011#update6]] *October 13th, 2011*
+
+* [[Minor: Ruby installation order in deployment|appcloud-updates-october-2011#update5]] *October 13th, 2011*
+
+* [[Minor: Customizing Nginx configuration|appcloud-updates-october-2011#update4]] *October 13th, 2011*
+
+* [[Minor: Backups include stored procedures|appcloud-updates-october-2011#update3]] *October 13th, 2011*
+
+* [[<b>Major:</b> Engine Yard Cloud supports Rails 3.1|appcloud-updates-october-2011#update2]] *October 12th, 2011*
+
+* [[<b>Action Req'd:</b> Bundler 0.9 deprecated|appcloud-updates-october-2011#update1]] *October 10th, 2011*
 
 ### [[September 2011|appcloud_updates_september_2011]]
 
@@ -60,7 +94,7 @@
 
 * [[Fix: Resque workers failing|appcloud_updates_august_2011#update5]]  *August 8th, 2011*
 
-* [[Minor: Ruby 1.9.2 is now the default Ruby runtime for new environments|appcloud_updates_august_2011#update4]] *August 4th, 2011*
+* [[Minor: Ruby 1.9.2 is now the default Runtime for new environments|appcloud_updates_august_2011#update4]] *August 4th, 2011*
 
 * [[<b>Major:</b> Passenger 3 is now generally available in AppCloud|appcloud_updates_august_2011#update3]]  *August 3rd, 2011*
 

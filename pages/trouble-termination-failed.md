@@ -2,7 +2,7 @@
 
 Occasionally, Amazon cannot shut down an instance when a termination request is made. If this happens, you get a "Termination Failed" message. 
 
-The Instances tab shows "Termination Failed" for one or more instances.  
+The Instances list on the Environment page shows "Termination Failed" for one or more instances.  
 
 ![termination failed message](images/termination_failed.png)
 
