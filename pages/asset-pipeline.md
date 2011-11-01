@@ -6,6 +6,7 @@ Topics covered on this page:
 
 * [[Using asset path helper methods|asset-pipeline#paths]]
 * [[Resolving CSS or JavaScript file problems in a staging environment|asset-pipeline#staging]]
+* [[Disabling the asset pipeline|asset-pipeline#disabling]]
 
 <h2 id="paths">Using asset path helper methods</h2>
 
@@ -70,6 +71,36 @@ By default in Rails 3.1, config.assets.digest is set to true for production envi
 
 The config.assets.digest option turns on "fingerprinting" for each asset. For information about fingerprinting, see the Rails Guides. 
 
+<h2 id="disabling">Disabling the asset pipeline</h2>
+
+Here are some reasons that you might want to disable precompilation of assets:  
+
+* You are compiling your assets locally and using Amazon CloudFront to serve the assets.  
+* Other reasons
+
+!-- Question:  
+Is the first bullet correct?  
+What other reasons can you think of?
+
+Question:   
+!-- Ask Wilson to explain what he means by "That's currently the only place we look, unfortunately. You can actually set this pretty much anywhere, including in a plugin."  If we only look in one place, how is it that you can set it anywhere? --
+
+###To disable the asset pipeline
+
+1. Open the config/application.rb file for editing.
+
+2. Add the line `config.assets.enabled = false` to the config/application.rb file.  
+    For example:
+        module Listr
+		  class Application < Rails::Application
+		    # Disable the asset pipeline  
+		    config.assets.enabled = false  
+
+3. Save and commit the change.  
+
+Question:  
+!-- Should I delete step 1 and step 3 and just have step 2? --	
+        
 ##More information
     
 For more information about the asset pipeline, see the 
