@@ -124,8 +124,9 @@ The variables are:
 
 These variables can be accessed through the process. For example, to get the port number:
 
-    javascript
-    var port = process.env.PORT;
+```javascript
+var port = process.env.PORT;
+```
 
 <h2 id="topic5">Using WebSocket on Engine Yard Cloud</h2>
 
