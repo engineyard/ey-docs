@@ -45,7 +45,14 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
   <div class="col col-last">
     <h2>New documentation</h2>
     <ul>
-      <li>
+ 	  <li>
+	     [[Engine Yard Cloud updates November 2011|cloud-updates-november-2011]]
+	  </li>
+	
+	  <li>
+	     [[Using Ruby 1.9.3 with Engine Yard Cloud|ruby-193]]
+	  </li>
+	  <li>
          [[Using Ruby 1.9.3 with Engine Yard Cloud|ruby-193]]
       </li>
       <li>
@@ -58,9 +65,7 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
         [[Getting Started Video Tutorial|getting-started-video-tutorial]]
       </li>
       
-      <li>
-        [[Application master takeover process|instance-takeover]]
-      </li>
+    
     </ul>
   </div>
 </div>

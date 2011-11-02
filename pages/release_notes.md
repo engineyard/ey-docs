@@ -1,6 +1,12 @@
 # Release Notes
 <a href="http://feed43.com/1082485410203701.xml" class="rss">Release Notes RSS Feed</a>
 
+### [[November 2011|cloud-updates-november-2011]]
+
+* [[Minor: Faster MySQL database backups|cloud-updates-november-2011#update2]] *November 2nd, 2011*
+
+* [[Minor: Debugging script for the Trinidad application server|cloud-updates-november-2011#update1]] *November 2nd, 2011*
+
 ### [[October 2011|appcloud-updates-october-2011]]
 
 * [[<b>Major:</b> Ruby 1.9.3 is available with Alpha support|appcloud-updates-october-2011#update18]] *October 31st, 2011*
