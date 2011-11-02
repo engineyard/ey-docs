@@ -1,4 +1,4 @@
-# Rails 3.1 Asset pipeline tips for Engine Yard Cloud
+# Rails 3.1 asset pipeline tips for Engine Yard Cloud
 
 Rails 3.1 introduced the asset pipeline. It is enabled by default. This means that unless you specifically disable the asset pipeline, assets are precompiled for you.
 
@@ -73,24 +73,13 @@ The config.assets.digest option turns on "fingerprinting" for each asset. For in
 
 <h2 id="disabling">Disabling the asset pipeline</h2>
 
-Here are some reasons that you might want to disable precompilation of assets:  
-
-* You are compiling your assets locally and using Amazon CloudFront to serve the assets.  
-* Other reasons
-
-!-- Question:  
-Is the first bullet correct?  
-What other reasons can you think of?
-
-Question:   
-!-- Ask Wilson to explain what he means by "That's currently the only place we look, unfortunately. You can actually set this pretty much anywhere, including in a plugin."  If we only look in one place, how is it that you can set it anywhere? --
+There are specific cases where you need to disable precompliation of assets; for example, if your assets are not in the same git repository as your application. 
 
 ###To disable the asset pipeline
 
-1. Open the config/application.rb file for editing.
+1. Add the line `config.assets.enabled = false` to the `config/application.rb` file.   
+    For example:  
 
-2. Add the line `config.assets.enabled = false` to the config/application.rb file.  
-    For example:
         module Listr
 		  class Application < Rails::Application
 		    # Disable the asset pipeline  
@@ -98,8 +87,7 @@ Question:
 
 3. Save and commit the change.  
 
-Question:  
-!-- Should I delete step 1 and step 3 and just have step 2? --	
+<!-- Coming soon: The config.assets.enabled = false line can be added to other application files, for example to the environment declarations or to plugins. -->
         
 ##More information
     

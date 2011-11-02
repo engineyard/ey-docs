@@ -20,6 +20,9 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
     <h2>Updated documentation</h2>
     <ul>
      <li>
+		 [[Rails 3.1 asset pipeline tips|asset-pipeline]]
+	 </li>
+	 <li>
 	 [[Engine Yard Beta Program|beta-intro]]
      </li>
 	   
@@ -31,9 +34,7 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
       <li>
 	      [[Site is down: Diagnostic checklist|site-is-down]]
 	  </li>
-	  <li>
-        [[Clone an environment|environment-clone]]
-      </li>
+	  
       
       
     </ul>
