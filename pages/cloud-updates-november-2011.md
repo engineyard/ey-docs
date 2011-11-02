@@ -8,7 +8,7 @@ November 2nd, 2011
 
 Engine Yard Cloud is the new name for Engine Yard AppCloud. Engine Yard Managed is the new name for Engine Yard xCloud.
 
-We have completed the renaming. You now see "Engine Yard Cloud" and "Engine Yard Managed" on our product and website [[www.engineyard.com|http://www.engineyard.com]] and in our docs ([[docs.engineyard.com|http://docs.engineyard.com]]) and promotional material.
+We have completed the renaming. You now see "Engine Yard Cloud" and "Engine Yard Managed" on our product and website ([[www.engineyard.com|http://www.engineyard.com]]) and in our docs ([[docs.engineyard.com|http://docs.engineyard.com]]) and promotional material.
 
 <a href=#update2><h2 id="update2">Minor: Faster MySQL database backups</h2></a>
 
