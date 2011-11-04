@@ -1,6 +1,6 @@
 # Engine Yard Early Access and Labs
 
-**Important!** Always test Early Access (Alpha or Beta) and Labs features very carefully in a development or staging environment.
+**Important!** Always test Early Access (Alpha or Beta) and Engine Yard Labs features very carefully in a development or staging environment.
 
 This feature is in **Beta**:
 
