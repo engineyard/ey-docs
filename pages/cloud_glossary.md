@@ -10,6 +10,10 @@ An application is your web application that you are deploying to the cloud.  Spe
 
 See [[What are availability zones?|cloud_faq#FAQ21]]
 
+## CLI
+
+Command Line Interface. For information about using the Engine Yard CLI, see [[Engine Yard CLI User Guide|ey_cli_user_guide]].
+
 ## ebuilds
 
 The Gentoo linux distribution uses ebuilds to specify instructions on how to "built" from source a specific library or binary.  So if your application requires the "ImageMagick" library you'll need to install the library.  See [[Manage Unix Packages|application_home]] for more detailed instructions.
