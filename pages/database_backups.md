@@ -20,7 +20,7 @@ LEGEND: M=Monday, T=Tuesday, W=Wednesday, R=Thursday, F=Friday, S=Saturday, U=Su
 
 When creating or editing an environment you can change the default settings for number of backups and hours between backups.
 
-![Backup Options](images/backup_options.jpg)
+![Backup Options](images/backup_options.png)
 
 
 ## Locate Backups
