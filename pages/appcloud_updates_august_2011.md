@@ -1,4 +1,4 @@
-# AppCloud updates August 2011
+AppCloud updates August 2011
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
