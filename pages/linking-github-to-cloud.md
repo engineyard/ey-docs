@@ -44,14 +44,14 @@ For example, you might have two GitHub accounts: a personal GitHub account for e
 
 <h2 id="topic3">To create an application from a repository in a linked GitHub account</h2>
 
-Create an application as you normally do for Engine Yard Cloud with the following exceptions:
+* Create an application for Engine Yard Cloud, making sure to do the following: 
 
-1. In the Git Repository URI, select the name of the application from the dropdown menu or begin typing the name of application.
+    (For general instructions on creating an application, see [[Getting Started|getting_started_home]].):
 
-2. After you click Create Application, do not copy a Git deploy key to your GitHub account. 
-     Instead, the key is added directly to the linked GitHub account.
+    a. In the Git Repository URI, select the name of the application from the dropdown menu or begin typing the name of application.
 
-     The deploy key is named "Engine Yard Deploy Key (_application name_)".
+    b. After you click Create Application, do not copy a Git deploy key to your GitHub account. <br>
+     Instead, the key is added directly to the linked GitHub account. The deploy key is named "Engine Yard Deploy Key <i>app_name</i>".
 
 <h2 id="topic4">To unlink your Engine Yard account from a GitHub account</h2>
 
@@ -62,7 +62,8 @@ Create an application as you normally do for Engine Yard Cloud with the followin
 2. Click on the account that you want to unlink from GitHub account.
 
 3. Under the Services heading, click un-link.
-  
+
+
 
 [1]: #topic1        "topic1"
 [2]: #topic2        "topic2"
