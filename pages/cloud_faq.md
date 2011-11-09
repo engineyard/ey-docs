@@ -28,6 +28,7 @@
 * <a href=#FAQ28> Bundler 1.0 Will Not Install Compiled Gems in UNIX When bundle install is Run in Windows </a>
 * <a href=#FAQ29> One of my instances is not responding. What can I do? </a>
 * <a href=#FAQ30> Can I open a custom port for my application? </a>
+* <a href=#FAQ31> Can I use my Engine Yard-provided AWS/S3 account for asset storage? </a>
 
 
 
@@ -99,7 +100,7 @@ If you've got an app that runs with:
 
 Then it runs on Engine Yard Cloud.  See our [[Stack Page|http://www.engineyard.com/technology/stack]] for the latest version we support.
 
-<a href=#FAQ13><h2 id="FAQ13"> Does Engine Yard manage my Domain Name or does my Company? </h2></a>
+<a href=#FAQ13><h2 id="FAQ13"> Does Engine Yard manage my Domain Name or does my company? </h2></a>
 
 You setup and control the DNS records for your domain name of your website. You'll setup the IP address inside the application and then point your DNS to that IP address.
 
@@ -236,7 +237,15 @@ If one of your instances stops responding, it may have crashed or frozen. You ne
 
 No. Turning on a custom port can create security risks and incite problems difficult to diagnose. 
 
+<a href=#FAQ31> <h2 id="FAQ31"> Can I use my Engine Yard-provided AWS/S3 account for asset storage? </h2></a>
 
+No. Engine Yard does not recommend this because:
+
+* Engine Yard Cloud relies on specific and important resources in this AWS account. Accidental alteration of these resources can result in an unstable environment and even data loss.
+
+* If you close your Engine Yard account, all your stored assets are deleted when the account is closed.  
+
+Engine Yard *does* recommend that you set up a separate S3 account to store your assets. That way, you are in full control of your assets. For information about how to serve assets from an S3 account using fog and CarrierWave, see [[How to use CarrierWave (and optionally fog) to upload and store files|use-carrierwave-and-optionally-fog-to-upload-and-store-files]].
 
 
 
