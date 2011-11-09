@@ -22,20 +22,20 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
       <li>
 			 [[Engine Yard Cloud FAQs|cloud_faq#FAQ31]]
 	  </li>
-		
+	  <li>
+           [[Engine Yard Technology Stack|cloud-tech-stack]]
+      </li>	
 	  <li>
 		 [[Rails 3.1 asset pipeline tips|asset-pipeline]]
-	 </li>
-	 <li>
-	 [[Engine Yard Beta Program|beta-intro]]
-     </li>
+	  </li>
+	  <li>
+	     [[Engine Yard Beta Program|beta-intro]]
+      </li>
 	   
-     <li>
-	  [[Engine Yard Cloud updates October 2011|appcloud-updates-october-2011]]
-     </li>
-     <li>
-           [[Engine Yard Technology Stack|cloud-tech-stack]]
-      
+      <li>
+	     [[Engine Yard Cloud updates October 2011|appcloud-updates-october-2011]]
+      </li>
+     
     </ul>
 
     
