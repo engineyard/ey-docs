@@ -15,7 +15,7 @@ component update to provide reliability, security, and compatibility within the 
 As a result, you can confidently deploy and manage your application with any Engine Yard product. Read about the many [[benefits|http://www.engineyard.com/products/cloud/benefits]] of using our Platform-as-a-Service.
 
 <p class="note">
-  <strong>Note: </strong>This version is correct as of October 31, 2011.
+  <strong>Note: </strong>This version is correct as of November 9, 2011.
 </p>
 
 <br /><br />
@@ -550,7 +550,7 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <p>
-         MongoDB is not supported. However, it may be supported in the future.
+         MonogoDB is currently being assessed for future support.
         </p>
       </td>
     </tr>
