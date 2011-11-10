@@ -31,7 +31,7 @@ The following procedure _outlines_ how to create an application and environment 
 
 This procedure applies only to the Rubinius Alpha on the trial account. 
 
-The trial is setup with a streamlined workflow that automatically creates a Ruby-based environment. To work around this, you reconfigure the environment as a Rubinius one.
+The trial account is setup with a streamlined workflow that automatically creates a Ruby-based environment. To work around this, you reconfigure the environment as a Rubinius one.
 
 ###To reconfigure the environment for Rubinius
 
