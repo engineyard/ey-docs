@@ -126,7 +126,6 @@
   * [[MySQL 5.1 and 5.5|database-mysql-upgrade]]
   * [[PostgreSQL 9|postgresql]]
   * [[Rubinius|rubinius]]
-  * [[Rubinius and trial|beta-rubinius-environment-with-cloud-trial]]
   * [[Link a GitHub account|linking-github-to-cloud]]
 * [[FAQs|faq_home]]
 * [[Release Notes|release_notes]]

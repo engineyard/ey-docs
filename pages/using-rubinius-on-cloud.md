@@ -2,11 +2,7 @@
 
 ##Introduction
 
-Rubinius is currently in Beta support on Engine Yard Cloud. This version of Rubinius brings substantial performance improvements.
-
-##Getting Started
-
-Each environment is associated with a specific version of the runtime that is used to run all applications contained in that environment.
+Rubinius 2 is currently in Alpha. This version of Rubinius brings improved performance, parallelism, and better memory usage.
 
 ##Support
 
@@ -21,11 +17,30 @@ Support for users of Rubinius is provided via the dedicated [[Rubinius forum|sig
   
 3. In the Runtime section, select Rubinius.  
 
-##To edit an existing environment to use Rubinius
+##To edit an existing Passenger 3 environment to use Rubinius 
 
 1. On the Environment page, click Edit Environment.  
-2. Select Passenger 3 for the web server.  
+
+2. In the Runtime section, select Rubinius.
+
+3. Click Update Environment.
+
+4. Click !Apply.
+
+##To edit an existing non-Passenger 3 environment to use Rubinius
+
+If your environment is not already running Passenger 3, you need to stop the environment to edit it.
+
+1. Stop the environment.
+
+2. On the Environment page, click Edit Environment. 
+ 
+2. Select Passenger 3 for the Application Server Stack.  
 	Rubinius works only with Passenger 3.
 
 3. In the Runtime section, select Rubinius.  
-    If you have existing applications running in the environment, the Dashboard prompts you to rebuild the environment, which will re-run chef recipes and update the runtime to use Rubinius.
+
+4. Click Update Environment.
+
+5. Click Boot.
+  
