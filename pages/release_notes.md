@@ -158,10 +158,7 @@
 
 * [[Fix: HAproxy restart from single instance snapshot|appcloud_updates_june_2011#update3]] *June 2nd, 2011*  
 
-* [[Fix: Rubygems 1.5.2 update|appcloud_updates_june_2011#update2]] *June 2nd, 2011*  
-
-* [[<b>Major:</b> X-Forwarded-For SSL traffic enabled |appcloud_updates_june_2011#update1]] *June 2nd, 2011*  
-   
+* [[Fix: Rubygems 1.5.2 update|appcloud_updates_june_2011#update2]] *June 2nd, 2011*     
 
 ### [[May 2011|appcloud_update_2011_05_18]]
 
