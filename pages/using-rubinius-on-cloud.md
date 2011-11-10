@@ -2,7 +2,7 @@
 
 ##Introduction
 
-Rubinius 2 is currently in Alpha. This version of Rubinius brings improved performance, parallelism, and better memory usage.
+Rubinius 2 is currently available with Alpha support. This version of Rubinius brings improved performance, parallelism, and better memory usage.
 
 ##Support
 
@@ -15,13 +15,13 @@ Support for users of Rubinius is provided via the dedicated [[Rubinius forum|sig
 2. Select Passenger 3 for the web server.  
     Rubinius works only with Passenger 3.
   
-3. In the Runtime section, select Rubinius.  
+3. In the Runtime section, select Rubinius 2.0.0 (1.8) (beta).  
 
 ##To edit an existing Passenger 3 environment to use Rubinius 
 
 1. On the Environment page, click Edit Environment.  
 
-2. In the Runtime section, select Rubinius.
+2. In the Runtime section, select Rubinius 2.0.0 (1.8) (beta).
 
 3. Click Update Environment.
 
@@ -38,7 +38,7 @@ If your environment is not already running Passenger 3, you need to stop the env
 2. Select Passenger 3 for the Application Server Stack.  
 	Rubinius works only with Passenger 3.
 
-3. In the Runtime section, select Rubinius.  
+3. In the Runtime section, select Rubinius 2.0.0 (1.8) (beta).  
 
 4. Click Update Environment.
 
