@@ -154,12 +154,6 @@ Upgrading to rubygems 1.5.2 was breaking Rails applications. This issue was fixe
 
 
 
-<a href=#update1> <h2 id="update1"> **Major:** X-Forwarded-For SSL traffic enabled </h2></a>
-
-June 2nd, 2011
-
-You can now request Engine Yard Support to enable HTTPS support of X-Forwarded-For via stunneled feature.
-
 
 
 [1]: #update1        "update1"
