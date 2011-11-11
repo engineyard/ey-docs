@@ -3,6 +3,8 @@
 
 ### [[November 2011|cloud-updates-november-2011]]
 
+* [[Minor: Assorted improvements to the Engine Yard Stack|cloud-updates-november-2011#update4]] *November 11th, 2011*
+
 * [[Minor: Engine Yard product renaming complete|cloud-updates-november-2011#update3]] *November 2nd, 2011*
 
 * [[Minor: Faster MySQL database backups|cloud-updates-november-2011#update2]] *November 2nd, 2011*
