@@ -4,7 +4,7 @@ The updates described are either important (where you need to take action) or of
 
 <a href=#update4><h2 id="update4">Major: Rubinius 2.0 (1.8) is available with Alpha support</h2></a>
 
-November 10th, 2011
+November 11th, 2011
 
 Rubinius 2.0 (language mode Ruby 1.8) Developer Preview is available in Engine Yard Cloud with Alpha support. ([[Sign up|signup-rubinius]] to participate in the program.)
 

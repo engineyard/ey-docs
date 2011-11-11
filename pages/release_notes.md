@@ -3,7 +3,7 @@
 
 ### [[November 2011|cloud-updates-november-2011]]
 
-* [[<b>Major</b>: Rubinius 2.0 (1.8) is available with Alpha support|cloud-updates-november-2011#update4]] *November 10, 2011*
+* [[<b>Major</b>: Rubinius 2.0 (1.8) is available with Alpha support|cloud-updates-november-2011#update4]] *November 11, 2011*
 
 * [[Minor: Engine Yard product renaming complete|cloud-updates-november-2011#update3]] *November 2nd, 2011*
 
