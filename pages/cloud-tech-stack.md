@@ -15,7 +15,7 @@ component update to provide reliability, security, and compatibility within the 
 As a result, you can confidently deploy and manage your application with any Engine Yard product. Read about the many [[benefits|http://www.engineyard.com/products/cloud/benefits]] of using our Platform-as-a-Service.
 
 <p class="note">
-  <strong>Note: </strong>This version is correct as of October 31, 2011.
+  <strong>Note: </strong>This version is correct as of November 9, 2011.
 </p>
 
 <br /><br />
@@ -535,6 +535,22 @@ As a result, you can confidently deploy and manage your application with any Eng
         <p>
           Avoid all 8.2.x versions prior to 8.2.13 and all 8.3.x versions prior to 8.3.7<br>
           <a href="http://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=postgresql">http://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=postgresql</a>.
+        </p>
+      </td>
+    </tr>
+ <tr>
+      <td>
+        MongoDB
+      </td>
+      <td>
+      </td>
+      <td>	
+      </td>
+      <td>
+      </td>
+      <td>
+        <p>
+         MonogoDB is currently being assessed for future support.
         </p>
       </td>
     </tr>
