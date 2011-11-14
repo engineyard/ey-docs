@@ -4,6 +4,10 @@ This section provides information about configuring and using the MySQL database
 
 ## Topics
 
+1. ### [[Set up database instances|database-environments]]
+
+    Learn how to create master and slave database instances in a clustered environment. 
+
 1. ### [[Find your generated MySQL password and connect to your database|find-your-generated-mysql-password-and-connect-to-your-db]]
 
 2. ### [[Access your MySQL database remotely|access-your-mysql-database-remotely]]
