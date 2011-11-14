@@ -1,6 +1,16 @@
 # Release Notes
 <a href="http://feed43.com/1082485410203701.xml" class="rss">Release Notes RSS Feed</a>
 
+### [[November 2011|cloud-updates-november-2011]]
+
+* [[Minor: Assorted improvements to the Engine Yard Stack|cloud-updates-november-2011#update4]] *November 11th, 2011*
+
+* [[Minor: Engine Yard product renaming complete|cloud-updates-november-2011#update3]] *November 2nd, 2011*
+
+* [[Minor: Faster MySQL database backups|cloud-updates-november-2011#update2]] *November 2nd, 2011*
+
+* [[Minor: Debugging script for the Trinidad application server|cloud-updates-november-2011#update1]] *November 2nd, 2011*
+
 ### [[October 2011|appcloud-updates-october-2011]]
 
 * [[<b>Major:</b> Ruby 1.9.3 is available with Alpha support|appcloud-updates-october-2011#update18]] *October 31st, 2011*
@@ -150,10 +160,7 @@
 
 * [[Fix: HAproxy restart from single instance snapshot|appcloud_updates_june_2011#update3]] *June 2nd, 2011*  
 
-* [[Fix: Rubygems 1.5.2 update|appcloud_updates_june_2011#update2]] *June 2nd, 2011*  
-
-* [[<b>Major:</b> X-Forwarded-For SSL traffic enabled |appcloud_updates_june_2011#update1]] *June 2nd, 2011*  
-   
+* [[Fix: Rubygems 1.5.2 update|appcloud_updates_june_2011#update2]] *June 2nd, 2011*     
 
 ### [[May 2011|appcloud_update_2011_05_18]]
 

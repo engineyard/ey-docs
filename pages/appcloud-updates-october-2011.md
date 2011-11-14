@@ -158,7 +158,7 @@ Special thanks to one of our customers for suggesting this dual directory soluti
 
 
 ###More information
-For additional information about the asset pipeline, see [[Rails 3.1 Asset pipeline tips for Engine Yard Cloud|asset-pipeline]].
+For additional information about the asset pipeline, see [[Rails 3.1 asset pipeline tips for Engine Yard Cloud|asset-pipeline]].
 
 
 
