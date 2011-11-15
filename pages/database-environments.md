@@ -1,6 +1,6 @@
-# Setting up databases in environments
+# Configuring a custom cluster environment (database focus)
 
-This page describes...
+This page describes decisions you need to make when setting up database servers and database slaves for your application.
 
 <!-- Use this page as an introduction. Make sure to address that we automatically create the database for you.
 How to choose the size of the database instance
@@ -12,16 +12,24 @@ This is the process:
 * [  ][1].  
 * [  ][2].
 
+For a small testing environment, a single server that contains both the application and the database is fine. 
+For typical mid-scale applications using ... database ... 
+
+However, for some applications, you want to create a custom cluster, containing:
+
+* One application master
+* One or more application application slaves
+* One database master
+* One or more database slaves
+* One or more utility servers
 
 
-<a href=#topic1><h2 id="topic1">To something</h2></a> 
 
-intro
+##To set up a custom environment
 
-
-###To prepare your local environment and application for JRuby
-
-1. Do this
+1. Create the environment as described [[ Create an environment|environment-create]].
+2. Choose Custom Environment.
+3. 
 
        
 

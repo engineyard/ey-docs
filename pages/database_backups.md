@@ -1,44 +1,72 @@
-# Database Backups
+# Backing up the database
 
-## Frequency
+This page describes how to:
 
-By default the database is backed up every 24 hours, and we rotate 10 days worth of backups.
+* Set the frequency and number of scheduled database backups
+* Do an on-demand backup of the database 
 
-So if today is a Monday, you can restore back to the 2nd previous Friday.  
-
-Use the quick list below to see at a glance how far back your backups are currently stored.  The last day on the row would be whatever day it is today.
-
-  F S U M T W R F S U M  
-  S U M T W R F S U M T  
-  U M T W R F S U M T W  
-  M T W R F S U M T W R  
-  T W R F S U M T W R F  
-  W R F S U M T W R F S  
-  R F S U M T W R F S U
-
-LEGEND: M=Monday, T=Tuesday, W=Wednesday, R=Thursday, F=Friday, S=Saturday, U=Sunday
-
-When creating or editing an environment you can change the default settings for number of backups and hours between backups.
-
-![Backup Options](images/backup_options.png)
+By default the database is backed up every 24 hours, and the last 10 days of backups are kept.
 
 
-## Locate Backups
+## Changing the frequency and number of scheduled backups
 
-Your database backups are located on the Environment page under the More Options heading. Click Database Backups to see download links for the last 10 days of backups.
+When you create an environment, you set the frequency and number of backups (or accept the default). You can later change the frequency and number of database backups as described below.
 
-Download the backup you are interested in restoring and you can continue with the next step.
+You can keep up to 100 backups and back up every hour, every two hours, four times a day, twice a day or daily.
 
-## Restore a Backup
+You don't have to restart your environment to change the frequency or number of backups.
 
-The key to which instance you run the restore command on is if you're running a separate database server or not.
+###To change the number or frequency of database backups
 
-If you've setup an [[ssh alias to your database or solo instance|ssh-intro]] then you could use a command like this to copy your dump to your instance:
+1. On the Environment page, click Edit Environment.  
+2. Under the Backups heading, set the number of hours between backups and the number of backups to keep.
 
-    scp ~/Downloads/wiki_production.2010-03-17T01-10-03.sql myapp/~
+    ![Backup Options](images/backup_options.png)
 
-And, that would copy the sql dump file to the home folder of the deploy user on your myapp solo instance.  Once again, if you have a separate database instance, you'll need to move the sql dump file to **that** instance instead.
+    **Note:** The number of backups to keep includes both scheduled backups and on-demand backups.  
+3. Click Update Environment.
+4. Click !Apply.
 
-Here's the command to run to restore a backup:
+## Backing up on-demand
 
-    mysql --user=XXXXXXXX --password=XXXXXXX database_name < /path/to/dumpfile.sql
+Sometimes you might want to do an on-demand backup (also called ad-hoc backup). For example:
+
+{REVIEWERS: Give a few examples of when to do an on-demand backup. 
+	
+For example, when I shut down an environment -- snapshots are automatically taken -- but does that also snapshot my database? or should I snapshot that separately?
+
+If a stack update was likely to make a substantial difference to the database, for example, when we go from PostgreSQL 9.0 to 9.1 -- will we want customers to do an on-demand backup of their database. 
+
+You perform on-demand backups using the ey-backup tool. Each instance comes with the ey-backup gem pre-installed.
+
+## To back up a MySQL database on-demand 
+
+1. Via SSH, connect to the Application and Database instance (for single server environment) or the Master Database instance (for a clustered environment).  
+2. Type  
+        sudo -i eybackup -e mysql --new-backup
+    or
+        sudo -i eybackup -n
+
+
+## To back up a PostgreSQL database on-demand 
+
+1. Via SSH, connect to the Application and Database instance (for single server environment) or the Master Database instance (for a clustered environment).  
+2. Type  
+        sudo -i eybackup -e postgresql --new-backup
+	or
+		sudo -i eybackup -e postgresql -n
+
+
+<h2 id="topic5"> More information</h2>
+
+<table>
+	  <tr>
+	    <th>For more information about...</th><th>See...</th>
+	  </tr>
+	  <tr>
+	    <td>SSHing into an instance</td><td>[[Connect to your instance via SSH|ssh-connect]]]]</td>
+	  </tr> 
+	 <tr>
+	    <td>Viewing and downloading database backups</td><td>[[TBD|TBD]]]]</td>
+	  </tr>
+	</table>
