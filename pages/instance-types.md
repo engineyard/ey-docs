@@ -55,3 +55,16 @@ We automatically push your code to the utility instances with each deploy for yo
 Single instance environments, commonly called a solo instance, are great for staging and development environments since they'll save you money. You can boot up just a single instance and we'll deploy both your application and your database to this instance. These types of environments are not, however, ideal for product because your database and application will be contending for the same system resources. 
 
 If you boot up a single instance environment to start with you can upgrade it to a multi-instance environment later.
+
+<h2 id="high-avail">About High Availability clusters</h2>
+
+In general, when you deploy your environment, Engine Yard Cloud boots like instances in different Amazon Availability Zones in the same region. 
+
+Whenever possible, your application master and master database are placed in the same zone (for example, US East Zone 1c) and your application and slave database instances placed in a different zone (for example, US East Zone 1d).  Similarly if you to add a couple of utility servers to the environment, the first is placed in US East Zone 1c and the second in US East Zone 1d.  This provides you with a redundant environment if there are problems in one zone of a region.
+
+To take advantage of high availability, you need to have at least the following instances in your environment: 
+* Application Master
+* Application
+* Master Database
+* Slave Database
+
