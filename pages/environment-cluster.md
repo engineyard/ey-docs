@@ -5,16 +5,14 @@
 ![Cluster Architecture](images/cluster_architechture.png)
 
 
-## Start an instance in a cluster
+## Add an instance to a cluster
 
-You can grow your cluster by adding additional application or database instances as needed.
+You can grow your cluster by adding additional application, database, or utility instances as needed.
 
-From the Dashboard again, this time click on **Add New Instance to Cluster** link.
-
-You can choose from three options:
-
-  * Add Application Server
-  * Add Database Server
-  * Add Utility Server
-
-Click the **Add to Instances** button to add the type of instance to your cluster.
+###To add an instance to a cluster
+1. On the Environment page, click Add.  
+2. Select one of the following:  
+    * Add Application Server
+    * Add Database Server
+    * Add Utility Server
+3. Click Add to Cluster.

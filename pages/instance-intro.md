@@ -37,3 +37,15 @@ take regular disk snapshots of both of these volumes.
 
 If you ever have to rebuild your instances from scratch you will have the ability to restore 
 both of these volumes from previous snapshots.
+
+<h2 id="topic5"> More information</h2>
+
+<table>
+  <tr>
+    <th>For more information about...</th><th>See...</th>
+  </tr>
+<tr>
+    <td>adding an instance to a cluster</td><td>[[Clustered Environments|environment-cluster]]</td>
+  </tr>
+
+</table>
