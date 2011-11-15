@@ -26,7 +26,7 @@ the various instances types: [[Compute instances on Engine Yard Cloud|instance-t
   Learn how to delete an environment on Engine Yard Cloud.
 
 * ### [[Clustered Environments|environment-cluster]]
-  Learn about our clustered architecture and managing clusters on Engine Yard Cloud.
+  Learn about our clustered architecture and how to add an instance to a cluster.
 
 * ### [[Change an instance size|change-an-instance-size]]
   Learn how to change the size of an instance in an environment.
