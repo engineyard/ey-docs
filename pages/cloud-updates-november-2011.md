@@ -2,7 +2,13 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
-<a href=#update4><h2 id="update">Minor: Assorted improvements to the Engine Yard Stack</h2></a>
+<a href=#update5><h2 id="update5">Minor: Ruby 1.9.2 supports Psych</h2></a>
+
+November 15th, 2011
+
+Ruby 1.9.2 now supports the Psych YAML parser and emitter. Psych can be used as an alternative to the Ruby standard library Syck. 
+
+<a href=#update4><h2 id="update4">Minor: Assorted improvements to the Engine Yard Stack</h2></a>
 
 November 11th, 2011
 
