@@ -3,6 +3,8 @@
 
 ### [[November 2011|cloud-updates-november-2011]]
 
+* [[Minor: Snapshot messages are now removed from the Environment page|cloud-updates-november-2011#update6]] *November 15th, 2011*
+
 * [[Minor: Ruby 1.9.2 supports Psych|cloud-updates-november-2011#update5]] *November 15th, 2011* 
 
 * [[Minor: Assorted improvements to the Engine Yard Stack|cloud-updates-november-2011#update4]] *November 11th, 2011*
