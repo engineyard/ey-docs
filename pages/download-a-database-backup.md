@@ -30,54 +30,18 @@ This page describes where to find your database backup files and how to download
 		2:myapp myapp.2011-11-15T01-10-03.sql.gz
 		
 3. To download a backup file, type:
-        sudo -i eybackup --download 2:myapp
+        sudo -i eybackup --download N:myapp
 	or 
-		sudo -i eybackup -d 2:myapp
+		sudo -i eybackup -d N:myapp
 
-    (where "2" is the number of the backup you want to download.)
+    (where "N" is the number of the backup you want to download. For example, to download the oldest backup `sudo -i eybackup -d 0:myapp`)
 
-    The file is downloaded to /mnt/tmp:
+    The file is downloaded to /mnt/tmp on your database server instance:
         Downloading basiccluster.myapp/myapp.2011-11-15T01-10-03.sql.gz to /mnt/tmp
 
-sudo -i eybackup --download 2:deploy_day_app
-or 
-sudo -i eybackup -d 2:deploy_day_app
-
-Downloading simpleEnv.deploy_day_app/deploy_day_app.2011-11-03T01-10-03.sql.gz to /mnt/tmp
-
-The file is downloaded to /mnt/tmp on your server instance.
-ls /mnt/tmp
-deploy_day_app.2011-11-03T01-10-03.sql.gz
-To copy the file downloaded in step 2 to your local machine:
-
-scp deploy@ec2-174-129-17-196.compute-1.amazonaws.com:/mnt/tmp/deploy_day_app.2011-11-03T01-10-03.sql.gz .
-Download a database backup
-
-If you have downloaded a database backup via the [[ey-backup gem|manage-database-backups]] to your running instance, you can then use `scp` to transfer the backup file to your local computer.
-
-    scp username@IP_address:/path_to_file destination
-
-## Prerequisites
-
-This assumes that either:
-
-* You are on a *NIX system, such as Linux or OS X, or
-* You are on Windows and are using Cygwin
-
-You'll need:  
-
-* Your username on the instance  
-* The IP Address assigned to the instance  
-* The path to the file on the server  
-
-## Putting it all together
-
-Where `username` equals the "User account name" you've configured in your environment, and the `IP_address` is one you've generated for the instance currently running.  
-
-The common practice for the destination is to change to the directory on your local computer where you want to receive the file.  For example:  `cd ~/database_backups`.
-
-    scp cloud_user@123.123.123.123:/path/to/the/db_backup_file .
-
-This will use the `scp` protocol to have the `cloud_user@123.123.123.123` transfer the `/path/to/the/db_backup_file` to the current working directory on your local machine `.`.
-
-**Note:** don't forget the colon ":" between the IP address and the /path/to/the/db_backup_file.
+4. To copy the file from your database server instance to your local machine, type:
+        scp username@IP_address:/path_to_file destination
+    For example, `scp deploy@ec2-174-129-17-196.compute-1.amazonaws.com:/mnt/tmp/myapp.2011-11-14T16-43-39.sql.gz .`
+	    
+    **Tip:** Don't forget the colon ":" between the IP address and the /path/to/the/db_backup_file.
+	
