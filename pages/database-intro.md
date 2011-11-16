@@ -1,6 +1,6 @@
 # Managing your Database on Engine Yard Cloud
 
-This section provides information about configuring and using the MySQL database in Engine Yard Cloud.
+This section provides information about configuring and using a database in Engine Yard Cloud.
 
 Whenever Engine Yard Cloud creates an environment, it creates a MySQL or PostgreSQL database for the application. 
 

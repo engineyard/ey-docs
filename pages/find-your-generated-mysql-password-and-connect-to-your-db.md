@@ -10,51 +10,51 @@ Here are some example database.yml files.
 
 * For a MySQL database in a single server environment   
 
-    ````production:
-	  adapter:   mysql2
-	  database:  myapp
-	  username:  deploy
-	  password:  MyP4ssW0rd (75NdX2ia1b)
-	  host:      ec2-174-129-17-196.compute-1.amazonaws.com
-	  reconnect: true````
+        production:
+	      adapter:   mysql2
+	      database:  myapp
+	      username:  deploy
+	      password:  MyP4ssW0rd (75NdX2ia1b)
+    	  host:      ec2-174-129-17-196.compute-1.amazonaws.com
+	      reconnect: true
 
 * For a MySQL database in a clustered environment  
 
-    ````production:
-	  adapter:   mysql2
-	  database:  myapp
-	  username:  deploy
-	  password:  MyP4ssW0rd (ITcq203g2U)
-	  host:      ec2-184-73-124-47.compute-1.amazonaws.com
-	  reconnect: true````
+        production:
+	      adapter:   mysql2
+	      database:  myapp
+    	  username:  deploy
+    	  password:  MyP4ssW0rd (ITcq203g2U)
+    	  host:      ec2-184-73-124-47.compute-1.amazonaws.com
+    	  reconnect: true
 	
 
 * For a PostgreSQL database in a single server environment  
 
-    ````production:
-	  adapter:   postgresql
-	  database:  myappp
-	  username:  deploy
-	  password:  MyP4ssW0rd (GCmIVIAUbT)
-	  host:      ec2-107-20-236-163.compute-1.amazonaws.com
-	  reconnect: true````
+        production:
+    	  adapter:   postgresql
+	      database:  myappp
+    	  username:  deploy
+    	  password:  MyP4ssW0rd (GCmIVIAUbT)
+    	  host:      ec2-107-20-236-163.compute-1.amazonaws.com
+	      reconnect: true
 	
 
 * For a PostgreSQL database in a clustered environment  
 
-    ````production:
-	  adapter:   postgresql
-	  database:  postgres_test2
-	  username:  deploy
-	  password:  MyP4ssW0rd  (uf1XGqDDN1)
-	  host:      ec2-184-73-113-43.compute-1.amazonaws.com
-	  reconnect: true````
+        production:
+    	  adapter:   postgresql
+    	  database:  postgres_test2
+    	  username:  deploy
+	      password:  MyP4ssW0rd  (uf1XGqDDN1)
+	      host:      ec2-184-73-113-43.compute-1.amazonaws.com
+	      reconnect: true
 	   
 
-* **database name.** This is always the same name as your application. In examples, we use myapp as the application name.
+* **database name.** The database is always named the same as your application. In examples, "myapp" is the application name.
 * **username.** This is the name of the database user?. This username is always deploy.
 { REVIEWERS: questions about user: is this the database owner or administrator? What permissions does this database user have? What other database users are created? There's a root user too, right? And the root user's password is the same as the deploy user's.} 
-* **password.** This is the password for the deploy database user and also the root database user. It is an automatically-generated, case-sensitive, alpha numeric string. In examples, we use MyP4ssW0rd as the database password.  
+* **password.** This is the password for the deploy database user and also the root database user. It is an automatically-generated, case-sensitive, alphanumeric string. In examples, "MyP4ssW0rd" is the database password.  
 * **host.** This identifies the server instance that is hosting the database. 
 
 
@@ -66,10 +66,10 @@ Here are some example database.yml files.
 
 2. Type:
         /data/myapp/shared/config/database.yml
-  where myapp is the name of your application.
+  where "myapp" is the name of your application.
 
 3. Make note of the database password.  
-    You might need this password to manage your database. 
+    You need this password to manage your database. 
 
 <h2 id="topic5"> More information</h2>
 
@@ -78,6 +78,6 @@ Here are some example database.yml files.
 	    <th>For more information about...</th><th>See...</th>
 	  </tr>
 	  <tr>
-	    <td>SSHing into an instance</td><td>[[Connect to your instance via SSH|[[Connect to your instance via SSH|ssh-connect]]]]</td>
+	    <td>SSHing into an instance</td><td>[[Connect to your instance via SSH|Connect to your instance via SSH|ssh-connect]]</td>
 	  </tr> 
 	</table>

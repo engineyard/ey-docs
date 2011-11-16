@@ -12,7 +12,7 @@ By default the database is backed up every 24 hours, and the last 10 days of bac
 
 When you create an environment, you set the frequency and number of backups (or accept the default). You can later change the frequency and number of database backups as described below.
 
-You can keep up to 100 backups and back up every hour, every two hours, four times a day, twice a day or daily.
+You can keep up to 100 backups. You can schedule backup to happen every hour, every two hours, four times a day, twice a day, or daily.
 
 You don't have to restart your environment to change the frequency or number of backups.
 
@@ -30,12 +30,16 @@ You don't have to restart your environment to change the frequency or number of 
 ## Backing up on-demand
 
 Sometimes you might want to do an on-demand backup (also called ad-hoc backup). For example:
+	
+* Example 1
 
-{REVIEWERS: Give a few examples of when to do an on-demand backup. 
+* Example 2
+
+<it>{REVIEWERS: Give a few examples of when to do an on-demand backup. 
 	
 For example, when I shut down an environment -- snapshots are automatically taken -- but does that also snapshot my database? or should I snapshot that separately?
 
-If a stack update was likely to make a substantial difference to the database, for example, when we go from PostgreSQL 9.0 to 9.1 -- will we want customers to do an on-demand backup of their database. 
+If a stack update was likely to make a substantial difference to the database, for example, when we go from PostgreSQL 9.0 to 9.1 -- will we want customers to do an on-demand backup of their database. }</it>
 
 You perform on-demand backups using the ey-backup tool. Each instance comes with the ey-backup gem pre-installed.
 
@@ -64,9 +68,9 @@ You perform on-demand backups using the ey-backup tool. Each instance comes with
 	    <th>For more information about...</th><th>See...</th>
 	  </tr>
 	  <tr>
-	    <td>SSHing into an instance</td><td>[[Connect to your instance via SSH|ssh-connect]]]]</td>
+	    <td>SSHing into an instance</td><td>[[Connect to your instance via SSH|ssh-connect]]</td>
 	  </tr> 
 	 <tr>
-	    <td>Viewing and downloading database backups</td><td>[[TBD|TBD]]]]</td>
+	    <td>Viewing and downloading database backups</td><td>[[TBD|TBD]]</td>
 	  </tr>
 	</table>
