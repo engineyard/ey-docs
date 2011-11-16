@@ -2,16 +2,30 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
-<a href=#update5><h2 id="update5">Major: Rubinius 2.0 (1.8) is available with Alpha support</h2></a>
+<a href=#update8><h2 id="update8">Major: Rubinius 2.0 (1.8) is available with Alpha support</h2></a>
 
-November 14th, 2011
+November 22nd, 2011
 
 Rubinius 2.0 (language mode Ruby 1.8) Developer Preview is available in Engine Yard Cloud with Alpha support. ([[Sign up|signup-rubinius]] to participate in the program.)
 
 Rubinius 2.0 offers improved performance, parallelism, and better memory usage. For general information about Rubinius 2, see [[Inside the Rubinius 2.0 Preview Release|http://rubini.us/2011/06/07/inside-rubinius-20-preview/]].
 
 
-<a href=#update4><h2 id="update">Minor: Assorted improvements to the Engine Yard Stack</h2></a>
+<a href=#update6><h2 id="update6">Minor: Snapshot messages are now removed from the Environment page</h2></a>
+
+November 15th, 2011
+
+Snapshot status messages are no longer displayed forever on the Environment page. The messages are now removed after 10 minutes.
+
+![Example of a snapshot status message](images/snapshot_status_message.png)
+
+<a href=#update5><h2 id="update5">Minor: Ruby 1.9.2 supports Psych</h2></a>
+
+November 15th, 2011
+
+Ruby 1.9.2 now supports the Psych YAML parser and emitter. Psych can be used as an alternative to the Ruby standard library Syck. 
+
+<a href=#update4><h2 id="update4">Minor: Assorted improvements to the Engine Yard Stack</h2></a>
 
 November 11th, 2011
 
