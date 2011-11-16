@@ -10,7 +10,7 @@ This is the process:
 * [Create your Node.js application][2]
 * [Deploy your Node.js application on Engine Yard Cloud][3]
 
-**Note:** If you already have a Node.js application in a git repo or if you want to deploy one of the Engine Yard test applications for Node.js, skip to [Run your Node.js application on Engine Yard Cloud][3].
+**Note:** If you already have a Node.js application in a git repository or if you want to deploy one of the Engine Yard test applications for Node.js, skip to [Run your Node.js application on Engine Yard Cloud][3].
 
 Additional information at the bottom of this page: 
 
@@ -27,8 +27,8 @@ If you haven't written Node.js applications before, follow these steps to set up
 
 1. Install Node.js.  
 
-    To build Node.js from source, follow the steps in [the project wiki](https://github.com/joyent/node/wiki/Installation).  
-    Alternatively, if you are using Mac OS X, install Node.js using [Homebrew](http://mxcl.github.com/homebrew/) with this command: 
+    * To build Node.js from source, follow the steps in [the project wiki](https://github.com/joyent/node/wiki/Installation).  
+    * Alternatively, if you are using Mac OS X, install Node.js using [Homebrew](http://mxcl.github.com/homebrew/) with this command: 
 
         brew install node
 
