@@ -50,3 +50,29 @@ If you wish to restore your Database from an available backup, assuming we again
 ## Download a file
 
 If you want to download the backup file you just created, read the [[Download a Database Backup|download-a-database-backup]] article.
+
+
+-------
+
+GOO TO KEEP FOR A LITTLE WHILE
+
+
+## Locate Backups
+
+Your database backups are located on the Environment page under the More Options heading. Click Database Backups to see download links for the last 10 days of backups.
+
+Download the backup you are interested in restoring and you can continue with the next step.
+
+## Restore a Backup
+
+The key to which instance you run the restore command on is if you're running a separate database server or not.
+
+If you've setup an [[ssh alias to your database or solo instance|ssh-intro]] then you could use a command like this to copy your dump to your instance:
+
+    scp ~/Downloads/wiki_production.2010-03-17T01-10-03.sql myapp/~
+
+And, that would copy the sql dump file to the home folder of the deploy user on your myapp solo instance.  Once again, if you have a separate database instance, you'll need to move the sql dump file to **that** instance instead.
+
+Here's the command to run to restore a backup:
+
+    mysql --user=XXXXXXXX --password=XXXXXXX database_name < /path/to/dumpfile.sql
