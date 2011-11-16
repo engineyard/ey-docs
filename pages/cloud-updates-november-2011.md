@@ -2,6 +2,14 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update6><h2 id="update6">Minor: Snapshot messages are now removed from the Environment page</h2></a>
+
+November 15th, 2011
+
+Snapshot status messages are no longer displayed forever on the Environment page. The messages are now removed after 10 minutes.
+
+![Example of a snapshot status message](images/snapshot_status_message.png)
+
 <a href=#update5><h2 id="update5">Minor: Ruby 1.9.2 supports Psych</h2></a>
 
 November 15th, 2011
