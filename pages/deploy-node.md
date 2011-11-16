@@ -30,7 +30,7 @@ If you haven't written Node.js applications before, follow these steps to set up
     * To build Node.js from source, follow the steps in [the project wiki](https://github.com/joyent/node/wiki/Installation).  
     * Alternatively, if you are using Mac OS X, install Node.js using [Homebrew](http://mxcl.github.com/homebrew/) with this command: 
 
-        brew install node
+            brew install node
 
 2. Install [npm](http://npmjs.org/).
 
