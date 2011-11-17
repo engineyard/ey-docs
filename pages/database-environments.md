@@ -1,6 +1,6 @@
-# Configuring a custom cluster environment (database focus)
+# Setting up replication
 
-This page describes decisions you need to make when setting up database servers and database slaves for your application.
+This page describes how to set up a replicated database. 
 
 <!-- Use this page as an introduction. Make sure to address that we automatically create the database for you.
 How to choose the size of the database instance
@@ -31,6 +31,18 @@ However, for some applications, you want to create a custom cluster, containing:
 2. Choose Custom Environment.
 3. 
 
+
+Right now when I fireup the slave, it is always the same size as the master.
+
+If my master database dies, then I call support.
+Don't have recreate the environment if I have a database slave. Where I do if I just have a recent backup.
+Lose less than the backup version.
+
+See wikipedia to harvest info about database slaves. 
+
+Make a little list about why slaves are better than back ups.
+
+Mention high availability.
        
 
 

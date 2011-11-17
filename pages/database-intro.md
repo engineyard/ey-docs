@@ -22,8 +22,16 @@ Whenever Engine Yard Cloud creates an environment, it creates a MySQL or Postgre
 
     Learn how to view and download backup files.
 
-6. ### [[Manage database backups|manage-database-backups]]
+6. ### [[Restoring the database from a backup| TBD]]
 
+7. ### [[Monitoring database usage and increasing the database size| database-monitoring]]
+
+    Learn what to do if your database volume fills up or you need a bigger database server.
+
+
+
+---
+OLD
 2. ### [[Access your MySQL database remotely|access-your-mysql-database-remotely]]
 
 3. ### [[Configure the MySQL server|configure-mysql-server]]
