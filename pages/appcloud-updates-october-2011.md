@@ -141,6 +141,8 @@ To migrate your current Rails 3.0 application to Rails 3.1, follow this process:
 4. Redeploy your application in an Engine Yard staging environment.
 5. After testing in the staging environment, redeploy your application in your production environment.
 
+**Note:** If you are using ey deploy from the CLI to deploy your Rails 3.1 application, make sure that you have installed the latest engineyard gem.
+
 ###New deploy hooks
 
 However, if you have special asset-compilation needs, you can edit the assets:precompile rake task or use the new deploy hooks, 'before_compile_assets.rb' and 'after_compile_assets.rb'. (For general information about deploy hooks, see [[Using deploy hooks|use-deploy-hooks-with-engine-yard-cloud]].)
