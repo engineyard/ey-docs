@@ -11,5 +11,3 @@ Steps to getting started:
   - [[Getting Started with Collaboration|account-collaboration]]
 
 Only the account owner needs to request the Collaboration feature. They can share their account with other users who haven't requested access to the Collaboration feature.
-
-Those other developers (Engine Yard Cloud users) can request to join the Collaboration Beta mailing list too.

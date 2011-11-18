@@ -6,7 +6,7 @@ Rubinius 2 is currently available with Alpha support. This version of Rubinius b
 
 ##Support
 
-Support for users of Rubinius is provided via the dedicated [[Rubinius forum|signup-rubinius]]. All Engine Yard users can access support for Rubinius via this forum until it is promoted from the [[Engine Yard Beta Program|beta-intro]].
+Support for users of Rubinius is provided via the dedicated [[Rubinius forum|signup-rubinius]]. All Engine Yard users can access support for Rubinius via this forum until it is promoted from the [[Engine Yard Early Access program|beta-intro]].
 
 ##To use Rubinius for a new environment
 

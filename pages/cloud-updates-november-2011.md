@@ -10,6 +10,18 @@ Rubinius 2.0 (language mode Ruby 1.8) Developer Preview is available in Engine Y
 
 Rubinius 2.0 offers improved performance, parallelism, and better memory usage. For general information about Rubinius 2, see [[Inside the Rubinius 2.0 Preview Release|http://rubini.us/2011/06/07/inside-rubinius-20-preview/]].
 
+<a href=#update7><h2 id="update7"><b>Major:</b> Engine Yard announces Engine Yard Labs program and Node.js</h2></a>
+
+November 16, 2011
+
+Engine Yard Labs features are experimental features that Engine Yard makes available to developers. Some Labs features might later be incorporated into our product; some might remain as Labs features; and some Labs features might even be tested out and then deprecated.
+
+Node.js is the first Labs feature. 
+
+To try deploying Node.js applications on Engine Yard Cloud, sign up for the Node.js Labs feature [[here|signup-node]]. For information about how to run Node.js applications on Engine Yard Cloud and some example node.js applications, see [[Deploying Node.js applications on Engine Yard Cloud|deploy-node]].
+
+Node.js lets you run JavaScript code in the backend, server-side--not just in a browser. To execute JavaScript in the backend, it needs to be interpreted and executed. This is what Node.js does: it interprets and executes JavaScript; it is a runtime environment and a library.
+
 
 <a href=#update6><h2 id="update6">Minor: Snapshot messages are now removed from the Environment page</h2></a>
 
@@ -36,7 +48,6 @@ November 11th, 2011
 * In clustered environments, HAproxy web server error pages can now be customized via HTTP files in /etc/haproxy/errorfiles. This does not include 404 errors or (already customized) 500 errors.
 
 * Increase the maximum length for a connection request queue in Passenger 3 to reduce likelihood of Passenger workers disconnecting from Nginx (and still using resources).
->>>>>>> master
 
 <a href=#update3><h2 id="update3">Minor: Engine Yard product renaming complete</h2></a>
 

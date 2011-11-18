@@ -107,7 +107,7 @@ If you already have a free trial, you might want to upgrade to a full account be
 	    <td>Support plans available</td><td>[[Engine Yard Cloud support|cloud-support]]</td>
 	  </tr>
 	<tr>
-	    <td>Participating in Alpha and Beta testing</td><td>[[Beta program|beta-intro]]</td>
+	    <td>Participating in Alpha and Beta testing</td><td>[[Engine Yard Early Access|beta-intro]]</td>
 	  </tr>
 	<tr>
 	    <td>Environments and clusters</td><td>[[Compute instances|instance-types]]</td>

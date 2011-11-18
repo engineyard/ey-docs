@@ -75,7 +75,7 @@ Yes. If you have a Gemfile in your application directory when you deploy your ap
 
 <a href=#FAQ9><h2 id="FAQ9"> Is PostgreSQL supported on Engine Yard Cloud? </h2></a>
 
-Support for PostgreSQL 9 is an Alpha feature. For more information, see [[Engine Yard Beta Program|beta-intro]].  
+Support for PostgreSQL 9 is an Alpha feature. For more information, see [[Engine Yard Engine Yard Early Access|beta-intro]].  
 
 <a href=#FAQ11><h2 id="FAQ11"> What scale of applications are appropriate for Engine Yard Cloud? </h2></a>
 
