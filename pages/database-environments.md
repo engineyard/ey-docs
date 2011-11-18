@@ -1,6 +1,6 @@
 # Setting up replication
 
-This page describes how to set up a replicated database. 
+This page describes how to set up a replicated (or slave) database. 
 
 <!-- Use this page as an introduction. Make sure to address that we automatically create the database for you.
 How to choose the size of the database instance

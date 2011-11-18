@@ -12,7 +12,7 @@ To ensure you have as quick and smooth a migration as possible, it is important 
 
 ## Prepare your application
   - [[Deploy your app|application_home]]
-    * Load a dump of your current DB so you have some data to test against. Read our [[How To|dump-and-load-your-mysql-database]] for instructions.
+    * Load a dump of your current DB so you have some data to test against. See [[Restore or load a database|database-restore]] for instructions.
     * Setup any [[customizations|custom-chef-recipes]] you might need.
   - Test your setup for functionality. Some common areas to look for:
     * Ensure all areas of your application are functional.

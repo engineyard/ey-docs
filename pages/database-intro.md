@@ -22,13 +22,22 @@ Whenever Engine Yard Cloud creates an environment, it creates a MySQL or Postgre
 
     Learn how to view and download backup files.
 
-6. ### [[Restoring the database from a backup| TBD]]
+6. ### [[Restoring the database from a backup|database-restore]]
 
 7. ### [[Monitoring database usage and increasing the database size| database-monitoring]]
 
     Learn what to do if your database volume fills up or you need a bigger database server.
 
 
+8. ### [[Connecting your database via an SSH tunnel| tbd]]
+
+    Learn how to create an SSH tunnel to your database. If you want to use third party tools to manage your database, you need an SSH tunnel from your local machine to the database instance.
+
+9. ### [[MySQL troubleshooting|mysql-troubleshooting]]
+
+10. ### [[Feedback|data-feedback]]
+
+	    The Engine Yard Data team wants to know more about how you use your Engine Yard Cloud database and if there are new data-related features that you would like added to Engine Yard Cloud.
 
 ---
 OLD
@@ -39,10 +48,10 @@ OLD
 
 
 
-7. ### [[Dump and load your MySQL database|dump-and-load-your-mysql-database]]
 
-8. ### [[Grow the database volume|growing-the-db-volume]]
 
 9. ### [[MySQL troubleshooting|mysql-troubleshooting]]
 
 10. ### [[Feedback|data-feedback]]
+
+    The Engine Yard Data team wants to know more about how you use your Engine Yard Cloud database and if there are new data-related features that you would like added to Engine Yard Cloud.

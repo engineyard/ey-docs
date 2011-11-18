@@ -68,9 +68,9 @@ You perform on-demand backups using the ey-backup tool. Each instance comes with
 	    <th>For more information about...</th><th>See...</th>
 	  </tr>
 	  <tr>
-	    <td>SSHing into an instance</td><td>[[Connect to your instance via SSH|ssh-connect]]</td>
+	    <td>SSHing into an instance</td><td>[[Connect to your instance via SSH|ssh-connect]].</td>
 	  </tr> 
 	 <tr>
-	    <td>Viewing and downloading database backups</td><td>[[TBD|TBD]]</td>
+	    <td>Viewing and downloading database backups</td><td>[[TBD|TBD]].</td>
 	  </tr>
 	</table>
