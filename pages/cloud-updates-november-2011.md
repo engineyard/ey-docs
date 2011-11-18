@@ -2,6 +2,19 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update7><h2 id="update7"><b>Major:</b> Engine Yard announces Engine Yard Labs program and Node.js</h2></a>
+
+November 16, 2011
+
+Engine Yard Labs features are experimental features that Engine Yard makes available to developers. Some Labs features might later be incorporated into our product; some might remain as Labs features; and some Labs features might even be tested out and then deprecated.
+
+Node.js is the first Labs feature. 
+
+To try deploying Node.js applications on Engine Yard Cloud, sign up for the Node.js Labs feature [[here|signup-node]]. For information about how to run Node.js applications on Engine Yard Cloud and some example node.js applications, see [[Deploying Node.js applications on Engine Yard Cloud|deploy-node]].
+
+Node.js lets you run JavaScript code in the backend, server-side--not just in a browser. To execute JavaScript in the backend, it needs to be interpreted and executed. This is what Node.js does: it interprets and executes JavaScript; it is a runtime environment and a library.
+
+
 <a href=#update6><h2 id="update6">Minor: Snapshot messages are now removed from the Environment page</h2></a>
 
 November 15th, 2011
