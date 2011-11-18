@@ -49,12 +49,12 @@ If you wish to restore your Database from an available backup, assuming we again
 
 ## Download a file
 
-If you want to download the backup file you just created, read the [[Download a Database Backup|download-a-database-backup]] article.
+If you want to download the backup file you just created, see [[Download a Database Backup|database-download]].
 
 
 -------
 
-GOO TO KEEP FOR A LITTLE WHILE
+GOOD TO KEEP FOR A LITTLE WHILE
 
 
 ## Locate Backups

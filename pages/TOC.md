@@ -102,7 +102,6 @@
   * [[Configure MySQL server|configure-mysql-server]]
   * [[Download a database backup|download-a-database-backup]]
   * [[Manage database backups|manage-database-backups]]
-  * [[Growing the database volume|growing-the-db-volume]]
   * [[Feedback|data-feedback]]
 * [[Migrating|migration-intro]]
   * [[Introduction|migration-intro]]

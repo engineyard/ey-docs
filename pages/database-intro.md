@@ -18,7 +18,7 @@ Whenever Engine Yard Cloud creates an environment, it creates a MySQL or Postgre
 
     Learn how to set the number and frequency of backups. Also learn how to backup on demand using the eybackup CLI tool. 
 
-5. ### [[Download a database backup|download-a-database-backup]] 
+5. ### [[Download a database backup|database-download]] 
 
     Learn how to view and download backup files.
 
