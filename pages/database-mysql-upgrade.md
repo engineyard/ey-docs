@@ -115,7 +115,7 @@ See the MySQL documentation for full details on dumping and restoring a database
 4. Import the output file to the new MySQL 5.1/5.5 database. 
 
 		gunzip -v dumpfile.sql
-		mysql -u _user_ -p _password_ -h _hostname_ _dbname_ < dumpfile.sql
+		mysql -u _user_ -p_password_ -h _hostname_ _dbname_ < dumpfile.sql
 	
 5. Test the application running in the new environment.
 

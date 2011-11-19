@@ -49,7 +49,15 @@ Here are some example database.yml files.
 	      password:  MyP4ssW0rd  (uf1XGqDDN1)
 	      host:      ec2-184-73-113-43.compute-1.amazonaws.com
 	      reconnect: true
-	   
+	   	
+	    production:
+		  adapter:   postgresql
+		  database:  myappp
+		  username:  deploy
+		  password:  FBwgKemkuR
+		  host:      ec2-50-18-139-19.us-west-1.compute.amazonaws.com
+		  reconnect: true
+	
 
 * **database name.** The database is always named the same as your application. In examples, "myapp" is the application name.
 * **username.** This is the name of the database user?. This username is always deploy.
@@ -65,7 +73,7 @@ Here are some example database.yml files.
 1. Via SSH, connect to the Application and Database instance (for single server environment) or the Application Master instance (for a clustered environment).
 
 2. Type:
-        /data/myapp/shared/config/database.yml
+        cat /data/myapp/shared/config/database.yml
   where "myapp" is the name of your application.
 
 3. Make note of the database password.  
