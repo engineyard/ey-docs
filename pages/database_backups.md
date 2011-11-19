@@ -2,13 +2,13 @@
 
 This page describes how to:
 
-* Set the frequency and number of scheduled database backups
-* Do an on-demand backup of the database 
+* [Set the frequency and number of scheduled database backups][1]
+* [Do an on-demand backup of the database][2] 
 
 By default the database is backed up every 24 hours, and the last 10 days of backups are kept.
 
 
-## Changing the frequency and number of scheduled backups
+<h2 id="topic1">Changing the frequency and number of scheduled backups</h2>
 
 When you create an environment, you set the frequency and number of backups (or accept the default). You can later change the frequency and number of database backups as described below.
 
@@ -27,13 +27,14 @@ You don't have to restart your environment to change the frequency or number of 
 3. Click Update Environment.
 4. Click !Apply.
 
-## Backing up on-demand
+<h2 id="topic2"> Backing up on-demand</h2>
 
 Sometimes you might want to do an on-demand backup (also called ad-hoc backup). For example:
 	
-* Example 1
+* An on-demand backup can be done on a database slave -- this allows you to back up even when you master database is under heavy load. 
 
-* Example 2
+* Before you make a significant change to your environment, you want to make sure that you have a very recent backup.
+
 
 <it>{REVIEWERS: Give a few examples of when to do an on-demand backup. 
 	
@@ -74,3 +75,6 @@ You perform on-demand backups using the ey-backup tool. Each instance comes with
 	    <td>Viewing and downloading database backups</td><td>[[TBD|TBD]].</td>
 	  </tr>
 	</table>
+
+[1]: #topic1        "topic1"
+[2]: #topic2        "topic2"

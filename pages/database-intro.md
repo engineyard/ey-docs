@@ -22,7 +22,9 @@ Whenever Engine Yard Cloud creates an environment, it creates a MySQL or Postgre
 
     Learn how to view and download backup files.
 
-6. ### [[Restoring the database from a backup|database-restore]]
+6. ### [[Restoring or loading the database from a backup file|database-restore]]
+
+    Learn how to restore a backup on the instance using eybackup. And learn how to move a database file from one environment to another.
 
 7. ### [[Monitoring database usage and increasing the database size| database-monitoring]]
 
