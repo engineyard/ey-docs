@@ -165,12 +165,12 @@ Once this child starts processing your job, as each model pertinent to that job 
 
 A simple solution is to modify your Rakefile or, wherever you set your environment up, to change this line:
 
-    task resque:setup => :environment
+    task "resque:setup" => :environment
     
 to something like this:
 
 
-    task resque:setup => :environment do
+    task "resque:setup" => :environment do
       User.columns
       Post.columns
     end
@@ -179,6 +179,6 @@ to something like this:
 Or perhaps as a way to hit all your models at once:    
 
 
-    task resque:setup => :environment do    
+    task "resque:setup" => :environment do    
       ActiveRecord::Base.send(:subclasses).each { |klass|  klass.columns }
     end
