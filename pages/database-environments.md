@@ -1,27 +1,23 @@
 # Setting up replication
 
-This page describes how to set up a replicated (or slave) database. 
-
-<!-- Use this page as an introduction. Make sure to address that we automatically create the database for you.
-How to choose the size of the database instance
-How to choose the size of the /db volume
-When to choose a database slave (is there any point to having more than one slave?) -->
-
-This is the process:
-
-* [  ][1].  
-* [  ][2].
+This page describes how to: 
+Create a clustered environment that includes a database slave.
+Add database slave to an existing environment for database replication.
 
 For a small testing environment, a single server that contains both the application and the database is fine. 
-For typical mid-scale applications using ... database ... 
-
-However, for some applications, you want to create a custom cluster, containing:
+However, for typical mid-scale applications, you want to use a clustered environment, containing:
 
 * One application master
-* One or more application application slaves
+* An application slave
 * One database master
-* One or more database slaves
-* One or more utility servers
+* A database slave
+* (Optionally) one or two utility servers
+
+The Engine Yard basic cluster does not include a database slave. 
+
+##Replication versus database backups and snapshots
+
+In non-production environments or environments where the database data is not critical for the application, you might decide against database replication.
 
 ---
 <!-- Erik Jones writes -->
@@ -38,12 +34,16 @@ Choosing between creating a new snapshot v. using an older one when booting a ne
 
 ---
 
-##To set up a custom environment
+##To set up a custom environment with database replication
 
-1. Create the environment as described [[ Create an environment|environment-create]].
-2. Choose Custom Environment.
-3. 
-
+1. Create the environment as described [[Create an environment|environment-create]].
+2. Select Custom.
+3. Set the Number of read slaves to add to 1.
+    The size and volume for the read slave will be the same as the master.
+3. Set the server and volume sizes as needed for your application.  
+    **Note:** Make sure to anticipate growth for your database. You cannot later increase the size of the database without incurring downtime.
+    ![datbase server and slave size](image/db_server_n_slave.png)
+4. Click Boot This Configuration.
 
 Right now when I fireup the slave, it is always the same size as the master.
 
@@ -67,6 +67,9 @@ Mention high availability.
   </tr>
   <tr>
     <td>Creating an environment</td><td>[[Create an environment|environment-create]]</td>
+  </tr>
+  <tr>
+    <td>Increasing the size of a database instance or /db volume</td><td>[[Monitoring database usage and increasing the database volume or instance size|database-monitoring]]</td>
   </tr> 
 </table>
 
