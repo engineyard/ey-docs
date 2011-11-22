@@ -2,11 +2,11 @@
 
 **Important!** Always test Early Access (Alpha or Beta) and Engine Yard Labs features very carefully in a development or staging environment.
 
-This feature is in **Beta**:
+No features are in Beta. <!--This feature is in **Beta**:
 
 * [[GitHub/Engine Yard account linking|linking-github-to-cloud]]
 
-Beta features are labelled beta on the UI and are available to all users. 
+Beta features are labelled beta on the UI and are available to all users. -->
 
 These features are in **Alpha**:  
 
