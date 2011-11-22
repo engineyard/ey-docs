@@ -35,13 +35,6 @@ Sometimes you might want to do an on-demand backup (also called ad-hoc backup). 
 
 * Before you make a significant change to your environment, you want to make sure that you have a very recent backup.
 
-
-<it>{REVIEWERS: Give a few examples of when to do an on-demand backup. 
-	
-For example, when I shut down an environment -- snapshots are automatically taken -- but does that also snapshot my database? or should I snapshot that separately?
-
-If a stack update was likely to make a substantial difference to the database, for example, when we go from PostgreSQL 9.0 to 9.1 -- will we want customers to do an on-demand backup of their database. }</it>
-
 You perform on-demand backups using the ey-backup tool. Each instance comes with the ey-backup gem pre-installed.
 
 ## To back up a MySQL database on-demand 
@@ -72,7 +65,7 @@ You perform on-demand backups using the ey-backup tool. Each instance comes with
 	    <td>SSHing into an instance</td><td>[[Connect to your instance via SSH|ssh-connect]].</td>
 	  </tr> 
 	 <tr>
-	    <td>Viewing and downloading database backups</td><td>[[TBD|TBD]].</td>
+	    <td>Viewing and downloading database backups</td><td>[[Viewing and downloading database backups|database-download]].</td>
 	  </tr>
 	</table>
 

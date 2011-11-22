@@ -6,54 +6,46 @@ Whenever Engine Yard Cloud creates an environment, it creates a MySQL or Postgre
 
 ## Topics
 
-1. ### [[Set up database instances|database-environments]]
+1. ### [[Set up replication (database slave instances)|database-environments]]
 
-    Learn how to create master and slave database instances in a clustered environment. 
+    Learn how to create slave database instances in a clustered environment so that your master database is replicated. 
 
-1. ### [[Finding key information about your database|find-your-generated-mysql-password-and-connect-to-your-db]]  
+2. ### [[Finding key information about your database|database-password]]  
 
     Learn where to find the database.yml file that Engine Yard Cloud creates for your environment. The database.yml contains the database name and password. You need your database password to perform some maintenance tasks.
 
-4. ### [[Backing up your database|database_backups]]
+3. ### [[Backing up your database|database_backups]]
 
     Learn how to set the number and frequency of backups. Also learn how to backup on demand using the eybackup CLI tool. 
 
-5. ### [[Download a database backup|database-download]] 
+4. ### [[Download a database backup|database-download]] 
 
     Learn how to view and download backup files.
 
-6. ### [[Restoring or loading the database from a backup file|database-restore]]
+5. ### [[Restoring or loading the database from a backup file|database-restore]]
 
     Learn how to restore a backup on the instance using eybackup. And learn how to move a database file from one environment to another.
 
-7. ### [[Monitoring database usage and increasing the database size| database-monitoring]]
+6. ### [[Monitoring database usage and increasing the database size| database-monitoring]]
 
     Learn what to do if your database volume fills up or you need a bigger database server.
 
-
-8. ### [[Connecting your database via an SSH tunnel| tbd]]
+7. ### [[Connecting your database via an SSH tunnel| database-tunnel]]
 
     Learn how to create an SSH tunnel to your database. If you want to use third party tools to manage your database, you need an SSH tunnel from your local machine to the database instance.
 
-9. ### [[MySQL troubleshooting|mysql-troubleshooting]]
+<!-- 8. ### [[Configure a MySQL database|database-mysql-configure]]
 
-10. ### [[Feedback|data-feedback]]
+    Learn how to configure the MySQL Server(?) or Instance(?) or Database(?) using Chef recipes(?). 
 
-	    The Engine Yard Data team wants to know more about how you use your Engine Yard Cloud database and if there are new data-related features that you would like added to Engine Yard Cloud.
+9. 	### [[Configure a PostgreSQL database|database-pg-configure]]
 
----
-OLD
-2. ### [[Access your MySQL database remotely|access-your-mysql-database-remotely]]
+    Learn how to configure the PostgreSQL Server(?) or Instance(?) or Database(?) using Chef recipes(?). -->
+	
+10. ### [[Database troubleshooting|database-troubleshooting]]
 
-3. ### [[Configure the MySQL server|configure-mysql-server]]
+    Some troubleshooting tips for databases, including how to restart your database.
 
-
-
-
-
-
-9. ### [[MySQL troubleshooting|mysql-troubleshooting]]
-
-10. ### [[Feedback|data-feedback]]
+11. ### [[Feedback|data-feedback]]
 
     The Engine Yard Data team wants to know more about how you use your Engine Yard Cloud database and if there are new data-related features that you would like added to Engine Yard Cloud.

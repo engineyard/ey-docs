@@ -94,7 +94,7 @@ See the MySQL documentation for full details on dumping and restoring a database
 		mysqldump -u _user_ -p_password_ -h _hostname_ _dbname_ > dumpfile.sql  
 		gzip -v dumpfile.sql 
 	
-	**Note:** _dbname_ is the name of the database used by your application. _hostname_ is the name of the server or instance hosting your MySQL 5.0.x database. For more information, see [[Find your generated MySQL password and connect to your DB|find-your-generated-mysql-password-and-connect-to-your-db]].
+	**Note:** _dbname_ is the name of the database used by your application. _hostname_ is the name of the server or instance hosting your MySQL 5.0.x database. For more information, see [[Find your generated MySQL password and connect to your DB|database-password]].
 				
 	For example, 
 	
@@ -127,7 +127,7 @@ See the MySQL documentation for full details on dumping and restoring a database
 
 ### To connect to your MySQL 5.1/5.5 database
 
-* See [[Access Your MySQL Database Remotely|access-your-mysql-database-remotely]] and [[Find your generated MySQL password and connect to your DB|find-your-generated-mysql-password-and-connect-to-your-db]].
+* See [[Access Your MySQL Database Remotely|access-your-mysql-database-remotely]] and [[Find your generated MySQL password and connect to your DB|database-password]].
 
 
 <h2 id="topic5"> More information</h2>

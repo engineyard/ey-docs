@@ -121,7 +121,7 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 ### To connect to your PosgreSQL 9 database
 See the [[Managing your database|database-intro]] documentation (Many of the tasks apply to PostgreSQL as well as MySQL.)
 
-1. Find your generated PostgreSQL password (the [[MySQL instructions on passwords|find-your-generated-mysql-password-and-connect-to-your-db]] describe this step)
+1. Find your generated PostgreSQL password (the [[MySQL instructions on passwords|database-password]] describe this step)
 
 2. Extract list of databases
 				

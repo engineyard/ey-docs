@@ -24,7 +24,7 @@
   * [[Troubleshooting cron issues|adding-cron-jobs#trouble]]
   * [[Troubleshooting your deployment|deployment-troubleshooting]]
   * [[Troubleshooting Sphinx setup with your application|full-tex-search-with-thinking-sphinx#topic6]]
-  * [[MySQL error Troubleshooting|mysql-troubleshooting]]
+  * [[MySQL error Troubleshooting|database-troubleshooting]]
   * [[500 errors after deploying (known issue)|issue-mysql2-adapter]]
   * [[Error in the deployment log "Please install the mysql2 adapter" (known issue)|issue-mysql2-adapter]]
   * [[Can't install RMagick 2.13.1. You must have ImageMagick 6.4.9 or later. (known issue)|imagemagick-rmagick-may-26]]
