@@ -60,7 +60,7 @@ Here are some example database.yml files.
 	
 
 * **database name.** The database is always named the same as your application. In examples, "myapp" is the application name.
-* **username.** This is the name of the database user?. This username is always deploy.
+* **username.** This is the name of the database user. This username is always deploy.
 * **password.** This is the password for the deploy database user and also the root database user. It is an automatically-generated, case-sensitive, alphanumeric string. In examples, "MyP4ssW0rd" is the database password.  
 * **host.** This identifies the server instance that is hosting the database. 
 

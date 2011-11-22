@@ -22,15 +22,7 @@ In non-production environments or environments where the database data is not cr
 ---
 <!-- Erik Jones writes -->
 
-Choosing between creating a new snapshot v. using an older one when booting a new slave is a trade-off.
 
-* Creating a new snapshot  
-
-    Using this method will mean that the new db_slave has less data from the master's binary logs to replay in order for replication to be current.  However, creating a snapshot can be very IO intensive on the master and, as such, may not be desirable on high traffic databases during your application's peak traffic hours.  Also, for large databases, the shorter time required for replication to catch up once the db_slave is up and running may be off-set by the time needed to create a new snapshot.
-
-* Using an older snapshot
-
-    This method skips the need for a new snapshot to be created and instead uses a pre-existing one.  Note that this option will only be available if the master still has enough binary log data going back to when the snapshot was created.  The new db_slave will then have to read, and replay, more binary log data than when using a new snapshot, and the amount of binary log data that entails is entirely dependent on your database's write traffic volume, but it should usually be a lot less IO intensive to the db_master than creating a new snapshot is.
 
 ---
 
@@ -45,6 +37,21 @@ Choosing between creating a new snapshot v. using an older one when booting a ne
     ![datbase server and slave size](image/db_server_n_slave.png)
 4. Click Boot This Configuration.
 
+---
+
+##To add a database slave to an existing environment
+
+Choosing between creating a new snapshot v. using an older one when booting a new slave is a trade-off.
+
+* Creating a new snapshot  
+
+    Using this method will mean that the new db_slave has less data from the master's binary logs to replay in order for replication to be current.  However, creating a snapshot can be very IO intensive on the master and, as such, may not be desirable on high traffic databases during your application's peak traffic hours.  Also, for large databases, the shorter time required for replication to catch up once the db_slave is up and running may be off-set by the time needed to create a new snapshot.
+
+* Using an older snapshot
+
+    This method skips the need for a new snapshot to be created and instead uses a pre-existing one.  Note that this option will only be available if the master still has enough binary log data going back to when the snapshot was created.  The new db_slave will then have to read, and replay, more binary log data than when using a new snapshot, and the amount of binary log data that entails is entirely dependent on your database's write traffic volume, but it should usually be a lot less IO intensive to the db_master than creating a new snapshot is.
+
+1. 
 Right now when I fireup the slave, it is always the same size as the master.
 
 If my master database dies, then I call support.
