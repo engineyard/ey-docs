@@ -3,6 +3,8 @@
 
 ### [[November 2011|cloud-updates-november-2011]]
 
+* [[<b>Major:</b> High availability for clustered environment now in Alpha|cloud-updates-november-2011#update8]] *November 28th, 2011*
+
 * [[<b>Major:</b> Engine Yard announces Engine Yard Labs program and Node.js|cloud-updates-november-2011#update7]] *November 16th, 2011*
 
 * [[Minor: Snapshot messages are now removed from the Environment page|cloud-updates-november-2011#update6]] *November 15th, 2011*

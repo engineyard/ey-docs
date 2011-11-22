@@ -124,6 +124,7 @@
   * [[Add Redis to your application|add-redis-to-your-application]]
 * [[Early Access and Labs|beta-intro]]
   * [[Introduction|beta-intro]]
+  * [[High availability|environment-high-availability]]
   * [[Ruby 1.9.3|ruby-193]]
   * [[MySQL 5.1 and 5.5|database-mysql-upgrade]]
   * [[PostgreSQL 9|postgresql]]
