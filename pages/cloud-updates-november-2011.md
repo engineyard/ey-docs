@@ -2,6 +2,43 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update10><h2 id="update10"><b>Major:</b> Engine Yard supports New Relic Server Monitoring</h2></a>
+
+November 22, 2011
+
+[[New Relic Server Monitoring|http://newrelic.com/features/server-monitoring]] is now available.
+
+###To take advantage of Server Monitoring with New Relic
+
+1. Upgrade your Engine Yard Cloud environment.
+
+2. If you have not already, sign up for a New Relic account and configure your application for New Relic monitoring. For information, see [[Monitor applications with New Relic on Engine Yard Cloud|monitoring-new-relic]].
+
+3. Review information about your Engine Yard server instances in the Servers tab in New Relic.
+
+    ![New Relic Servers tab](images/new_relic_servers_tab.png)   
+
+<a href=#update9><h2 id="update9">Minor: Redis 2.4.2 upgrade</h2></a>
+
+November 22, 2011
+
+Upgrade to Redis 2.4.2 from Redis 2.2.11. For more information, see the [[Redis 2.4 release notes|https://raw.github.com/antirez/redis/2.4/00-RELEASENOTES]].
+
+To take advantage of this upgrade, upgrade your environment and restart your database.
+ 
+<a href=#update8><h2 id="update8"><b>Fix:</b> Assorted fixes for the Engine Yard stack</h2></a>
+
+November 22, 2011
+
+* Fixed an issue where, under certain conditions, Mongrel, Unicorn, Passenger 2, and Passenger 3 did not serve assets under HTTPS.
+
+* Fixed an issue where Passenger 2, Passenger 3, and Trinidad restarted nginx unnecessarily.
+
+* Fixed an issue where only privileged users could customize HAproxy web server error pages. Now, all users can customize the HTTP files in /etc/haproxy/errorfiles. For more information, see [Minor: Assorted improvements to the Engine Yard Stack][4].
+
+These fixes are applied when you upgrade your environment.
+
+
 <a href=#update7><h2 id="update7"><b>Major:</b> Engine Yard announces Engine Yard Labs program and Node.js</h2></a>
 
 November 16, 2011
