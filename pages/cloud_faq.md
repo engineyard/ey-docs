@@ -65,7 +65,7 @@ If you have multiple domains pointed at your application and they all need to ru
 
 <a href=#FAQ6><h2 id="FAQ6"> Can I failover to a Database Slave? </h2></a>
 
-No, failover to a database slave is not currently an option on Engine Yard Cloud. If you do ever run into issues with your Database Master we suggest you can recreate your Master Database Instance from a snapshot. This is quicker than failing over and does not pose the risk of any data loss should replication be out-of-sync.
+No, failover to a database slave is not currently an option on Engine Yard Cloud. If you do ever run into issues with your master database we suggest you can recreate your Master Database Instance from a snapshot. This is quicker than failing over and does not pose the risk of any data loss should replication be out-of-sync.
 
 We take fresh snapshots of your `/db` volume when you terminate an instance. If you have to rebuild your DB instance you can terminate it and recreate it from the most recent snapshots.
 
@@ -136,7 +136,7 @@ Therefore we recommend you keep all vital data on the persistent EBS storage vol
 
 No.  Turning off your instance destroys the virtual instance on Amazon EC2.  But, your files and data stored on the `/data` and `/db` volumes are saved to snapshots.  When you boot your instance again, select a custom configuration so you can choose the most recent snapshot. Your instance is then restored to the state before shutdown.
 
-It's worth noting that snapshot of the `/data` volume is only taken off of the Application Master instance.  The same is true for the `/db` volume and the Database Master.
+It's worth noting that snapshot of the `/data` volume is only taken off of the Application Master instance.  The same is true for the `/db` volume and the master database.
 
 Read [[Instance Overview|instance-types|]] for more information.
 

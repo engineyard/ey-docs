@@ -12,7 +12,7 @@ consider booting a cluster of multiple instances instead.
 
 When you boot a cluster for the first time, you may choose to boot from a new 
 volume or existing snapshot for your app servers, each utility server, and 
-database master server.
+master database server.
 
 When you are adding an instance to an existing cluster, then you'll need follow 
 these practices:

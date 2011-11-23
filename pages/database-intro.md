@@ -1,14 +1,16 @@
 # Managing your Database on Engine Yard Cloud
 
-This section provides information about configuring and using a database in Engine Yard Cloud.
+This section provides information about using <!-- and configuring --> a database in Engine Yard Cloud.
 
 Whenever Engine Yard Cloud creates an environment, it creates a MySQL or PostgreSQL database for the application. 
+
+**Note:** The PostgreSQL database is supported in Alpha. (To sign up for Alpha, see [[signup|signup-postgresql]].) Beta is coming soon. 
 
 ## Topics
 
 1. ### [[Set up replication (database slave instances)|database-environments]]
 
-    Learn how to create slave database instances in a clustered environment so that your master database is replicated. 
+    Learn how to create slave database instances in a clustered environment so that your database is replicated. 
 
 2. ### [[Finding key information about your database|database-password]]  
 
