@@ -34,14 +34,6 @@ Whenever Engine Yard Cloud creates an environment, it creates a MySQL or Postgre
 
     Learn how to create an SSH tunnel to your database. If you want to use third party tools to manage your database, you need an SSH tunnel from your local machine to the database instance.
 
-<!-- 8. ### [[Configure a MySQL database|database-mysql-configure]]
-
-    Learn how to configure the MySQL Server(?) or Instance(?) or Database(?) using Chef recipes(?). 
-
-9. 	### [[Configure a PostgreSQL database|database-pg-configure]]
-
-    Learn how to configure the PostgreSQL Server(?) or Instance(?) or Database(?) using Chef recipes(?). -->
-	
 10. ### [[Database troubleshooting|database-troubleshooting]]
 
     Some troubleshooting tips for databases, including how to restart your database.
@@ -49,3 +41,11 @@ Whenever Engine Yard Cloud creates an environment, it creates a MySQL or Postgre
 11. ### [[Feedback|data-feedback]]
 
     The Engine Yard Data team wants to know more about how you use your Engine Yard Cloud database and if there are new data-related features that you would like added to Engine Yard Cloud.
+
+<!-- 8. ### [[Configure a MySQL database|database-mysql-configure]]
+
+	    Learn how to configure the MySQL Server(?) or Instance(?) or Database(?) using Chef recipes(?). 
+
+	9. 	### [[Configure a PostgreSQL database|database-pg-configure]]
+
+	    Learn how to configure the PostgreSQL Server(?) or Instance(?) or Database(?) using Chef recipes(?). -->

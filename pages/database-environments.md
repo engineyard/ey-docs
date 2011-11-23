@@ -1,8 +1,12 @@
 # Setting up replication
 
-This page describes how to: 
-Create a clustered environment that includes a database slave.
-Add database slave to an existing environment for database replication.
+This page describes how to:  
+ 
+* Create a clustered environment that includes a database slave.  
+
+* Add database slave to an existing environment for database replication.
+
+If the Database Master fails, contact [[Engine Yard Support|http://support.cloud.engineyard.com]] to have your slave instance promoted to master instance.
 
 For a small testing environment, a single server that contains both the application and the database is fine. 
 However, for typical mid-scale applications, you want to use a clustered environment, containing:
@@ -15,16 +19,8 @@ However, for typical mid-scale applications, you want to use a clustered environ
 
 The Engine Yard basic cluster does not include a database slave. 
 
-##Replication versus database backups and snapshots
+In non-production environments or environments where the database data is not critical for the application, you might decide against database replication. If this is the case, make sure that you backup frequently enough for your disaster recovery needs.
 
-In non-production environments or environments where the database data is not critical for the application, you might decide against database replication.
-
----
-<!-- Erik Jones writes -->
-
-
-
----
 
 ##To set up a custom environment with database replication
 
@@ -33,13 +29,15 @@ In non-production environments or environments where the database data is not cr
 3. Set the Number of read slaves to add to 1.
     The size and volume for the read slave will be the same as the master.
 3. Set the server and volume sizes as needed for your application.  
-    **Note:** Make sure to anticipate growth for your database. You cannot later increase the size of the database without incurring downtime.
-    ![datbase server and slave size](image/db_server_n_slave.png)
+    **Note:** Make sure to anticipate growth for your database. You cannot later increase the size of the database without incurring downtime.  
+    ![database server and slave size](images/db_server_n_slave.png)
 4. Click Boot This Configuration.
 
 ---
 
 ##To add a database slave to an existing environment
+
+1. Decide whether or not to do take a 
 
 Choosing between creating a new snapshot v. using an older one when booting a new slave is a trade-off.
 
@@ -51,10 +49,10 @@ Choosing between creating a new snapshot v. using an older one when booting a ne
 
     This method skips the need for a new snapshot to be created and instead uses a pre-existing one.  Note that this option will only be available if the master still has enough binary log data going back to when the snapshot was created.  The new db_slave will then have to read, and replay, more binary log data than when using a new snapshot, and the amount of binary log data that entails is entirely dependent on your database's write traffic volume, but it should usually be a lot less IO intensive to the db_master than creating a new snapshot is.
 
-1. 
-Right now when I fireup the slave, it is always the same size as the master.
 
-If my master database dies, then I call support.
+
+<!-- Right now when I fireup the slave, it is always the same size as the master.
+
 Don't have recreate the environment if I have a database slave. Where I do if I just have a recent backup.
 Lose less than the backup version.
 
@@ -62,7 +60,7 @@ See wikipedia to harvest info about database slaves.
 
 Make a little list about why slaves are better than back ups.
 
-Mention high availability.
+Mention high availability. -->
        
 
 
