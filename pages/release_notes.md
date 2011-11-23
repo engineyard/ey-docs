@@ -3,6 +3,20 @@
 
 ### [[November 2011|cloud-updates-november-2011]]
 
+* [[<b>Major:</b> Engine Yard supports New Relic Server Monitoring|cloud-updates-november-2011#update10]] *November 22nd, 2011*
+
+* [[Minor: Redis 2.4.2 upgrade|cloud-updates-november-2011#update9]] *November 22nd, 2011*
+
+* [[Fix: Assorted fixes for Engine Yard stack|cloud-updates-november-2011#update8]] *November 22nd, 2011*
+
+* [[<b>Major:</b> Engine Yard announces Engine Yard Labs program and Node.js|cloud-updates-november-2011#update7]] *November 16th, 2011*
+
+* [[Minor: Snapshot messages are now removed from the Environment page|cloud-updates-november-2011#update6]] *November 15th, 2011*
+
+* [[Minor: Ruby 1.9.2 supports Psych|cloud-updates-november-2011#update5]] *November 15th, 2011* 
+
+* [[Minor: Assorted improvements to the Engine Yard Stack|cloud-updates-november-2011#update4]] *November 11th, 2011*
+
 * [[Minor: Engine Yard product renaming complete|cloud-updates-november-2011#update3]] *November 2nd, 2011*
 
 * [[Minor: Faster MySQL database backups|cloud-updates-november-2011#update2]] *November 2nd, 2011*
@@ -158,10 +172,7 @@
 
 * [[Fix: HAproxy restart from single instance snapshot|appcloud_updates_june_2011#update3]] *June 2nd, 2011*  
 
-* [[Fix: Rubygems 1.5.2 update|appcloud_updates_june_2011#update2]] *June 2nd, 2011*  
-
-* [[<b>Major:</b> X-Forwarded-For SSL traffic enabled |appcloud_updates_june_2011#update1]] *June 2nd, 2011*  
-   
+* [[Fix: Rubygems 1.5.2 update|appcloud_updates_june_2011#update2]] *June 2nd, 2011*     
 
 ### [[May 2011|appcloud_update_2011_05_18]]
 

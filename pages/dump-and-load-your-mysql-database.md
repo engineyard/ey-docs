@@ -6,7 +6,7 @@ Here are the steps involved to dump a MySQL Database from one location and load 
 
 First conduct a MySQL dump, then compress and copy the output to the new location:
 
-    mysqldump -u user -ppassword -h hostname dbname > dumpfile.sql  
+    mysqldump -u user -p password -h hostname dbname > dumpfile.sql  
   
     gzip -v dumpfile.sql 
    

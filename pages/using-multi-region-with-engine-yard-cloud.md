@@ -7,7 +7,7 @@ can be located in a particular geographic region around the world.
 An excellent use case for this feature is lowering latency and response
 times for your application users who are located in a particular geographic region.
 If a majority of your application users are based in a certain region, its
-best to locate your environment in the availability zone (region) that is closest
+best to locate your environment in the region that is closest
 to those users.
 
 These AWS regions are supported:
@@ -16,7 +16,7 @@ These AWS regions are supported:
   * **US East** (Northern Virginia/us-east-1)
   * **US West** (Northern California/us-west-1)
   * **EU** (Ireland/eu-west-1)
-  * **Asia** Pacific (Singapore/ap-southeast-1)
+  * **Asia Pacific** (Singapore/ap-southeast-1)
   * **Japan** (Tokyo/ap-northeast-1)
 
 
@@ -35,17 +35,17 @@ These AWS regions are supported:
 ## Boot an environment in any region
 
 When [[creating a new environment|environment-create]], select the appropriate 
-Availability Zone this environment should be deployed to. Finish configuring this 
+region this environment should be deployed to. Finish configuring this 
 environment and click Create Environment.
 
 When the environment has been saved, configure your environment instances on the next page 
-and boot. This environment is now being deployed in the Availability Zone you selected.
+and boot. This environment is now being deployed in the Region you selected.
 
 
 ## Recreating an existing environment in a new region
   
   1. Follow the steps in our article on [[cloning your environment|environment-clone]]
-    making sure to select the appropriate **Availability Zone** in the configuration form.
+    making sure to select the appropriate region in the configuration form.
   
   2. Change your DNS TTL to the lowest setting, such as 60 seconds.
   3. Enable your [[maintenance page|deployment-maintenance-pages]] for the old environment.

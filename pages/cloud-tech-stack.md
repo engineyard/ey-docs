@@ -15,7 +15,7 @@ component update to provide reliability, security, and compatibility within the 
 As a result, you can confidently deploy and manage your application with any Engine Yard product. Read about the many [[benefits|http://www.engineyard.com/products/cloud/benefits]] of using our Platform-as-a-Service.
 
 <p class="note">
-  <strong>Note: </strong>This version is correct as of October 31, 2011.
+  <strong>Note: </strong>This version is correct as of November 22, 2011.
 </p>
 
 <br /><br />
@@ -29,7 +29,7 @@ As a result, you can confidently deploy and manage your application with any Eng
   <col>
   <thead>
     <tr>
-      <th><li>Note:</li><li class="experimental" title='Experimental'>Alpha versions in red.</li><li class="beta" title='Beta'>Beta versions in yellow.</li></th>
+      <th><li>Note:</li><li class="experimental" title='Experimental'>Alpha and Labs versions in red.</li><li class="beta" title='Beta'>Beta versions in yellow.</li></th>
       <th>
         We recommend
       </th>
@@ -48,7 +48,7 @@ As a result, you can confidently deploy and manage your application with any Eng
   <tbody>
     <tr>
       <th colspan="5">
-        Ruby interpreters
+        Interpreters
       </th>
     </tr>
     <tr>
@@ -166,6 +166,34 @@ As a result, you can confidently deploy and manage your application with any Eng
       <td>
         <p>
           <span class="caps">Rubinius</span> support is in Alpha status.
+        </p>
+      </td>
+    </tr>
+	<tr>
+      <td>
+        Node.js
+      </td>
+      <td>
+        <ul>
+          <li class="experimental">
+          </li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li class="experimental">0.6.1
+          </li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li class="experimental">0.6.1
+          </li>
+        </ul>
+      </td>
+      <td>
+        <p>
+          Node.js is a Labs feature.
         </p>
       </td>
     </tr>
@@ -538,6 +566,22 @@ As a result, you can confidently deploy and manage your application with any Eng
         </p>
       </td>
     </tr>
+ <tr>
+      <td>
+        MongoDB
+      </td>
+      <td>
+      </td>
+      <td>	
+      </td>
+      <td>
+      </td>
+      <td>
+        <p>
+         MonogoDB is currently being assessed for future support.
+        </p>
+      </td>
+    </tr>
     <tr>
       <th colspan="5">
         Caches and stores
@@ -581,19 +625,19 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="beta" title='Beta'>2.2.11
+          <li class="beta" title='Beta'>2.4.2
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="beta" title='Beta'>2.2.11
+          <li class="beta" title='Beta'>2.4.2
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="beta" title='Beta'>2.2.11
+          <li class="beta" title='Beta'>2.4.2
           </li>
         </ul>
       </td>
@@ -754,22 +798,6 @@ As a result, you can confidently deploy and manage your application with any Eng
 <div class="footnotes">
 
 <br> <br>
-<strong>Alpha components:</strong>
-<ul>
-	<li>
-		Require signup
-	</li>
-	<li>
-		Should not be used in a production environment
-	</li>
-	<li>
-		Are not offered with an SLA
-	</li>
-	<li>
-		Support issues are assigned low priority and might not be addressed
-	</li>
-</ul>	
-	<br>
 <strong>Beta components:</strong>
 <ul>
 		<li>
@@ -784,6 +812,22 @@ As a result, you can confidently deploy and manage your application with any Eng
 		<li>
 			Some issues may not be fixed before GA
 		</li>
+</ul>	
+<br>
+<strong>Alpha components and Engine Yard Labs components:</strong>
+<ul>
+	<li>
+		Require signup
+	</li>
+	<li>
+		Should not be used in a production environment
+	</li>
+	<li>
+		Are not offered with an SLA
+	</li>
+	<li>
+		Support issues are assigned low priority and might not be addressed
+	</li>
 </ul>	
 
 
