@@ -56,9 +56,9 @@ However, Engine Yard Support Engineers are able to increase the size of your dat
 
     ![/db volume size](images/db_vol_size.png)
 
-    {Questions:  One time I couldn't change the server size for the db -- the pulldown was "stuck". But I went in again later and unstuck it. Can I change from anything to anything? 32-bit to 64-bit and back down again? What about shrinking my volume size? I tried cutting it down to something smaller but still big enough but the instance didn't boot but it could be co-incidence.} 
+    **Note:** You cannot decrease the size of the database volume. 
 
-5. Select the most recent snapshots from the drop-downs.  
+5. Select the most recent snapshots from the dropdown.  
     This ensures that you don't lose data. If there are snapshots are pending, this is indicated in the dropdown.
 
 6. Click Boot This Configuration.

@@ -1,6 +1,6 @@
 #Viewing and downloading database backups
 
-You should review your database backups from time. Confirm that backups are being made and retained as you expect. 
+You should periodically inspect your database backups. Confirm that backups are being made and retained as you expect. Also, confirm the integrity of the database backup files, for example, by loading backup files into a test environment. 
 
 This page describes where to find your database backup files and how to download them to your local machine.
 
@@ -30,16 +30,14 @@ These procedures describe how to view and download database backups using the ey
 * [For MySQL: To view and/or download database backups (eybackup method)][A]
 * [For PostgreSQL: To view and/or download database backups (eybackup method)][B] 
 
-Getting the backup to your local machine is a two-step process: you download it to /mnt/tmp on the database instance and then copy it to your local machine.
-
 <h3 id="topicA"> For MySQL: To view and/or download database backups (eybackup method) </h3>
 
 1. Via SSH, connect to the Application and Database instance (for single server environment) or the database instance (for a clustered environment).
 
 2. Type (to list the backups):
-        sudo -i eybackup --list-backup myapp
+        sudo -i eybackup -e mysql --list-backup myapp
     or
-        sudo -i eybackup -l myapp
+        sudo -i eybackup -e mysql -l myapp
 
     The database backups are listed, for example, 
         Listing database backups for myapp
@@ -49,11 +47,11 @@ Getting the backup to your local machine is a two-step process: you download it 
 		2:myapp myapp.2011-11-15T01-10-03.sql.gz
 		
 3. To download a backup file, type:
-        sudo -i eybackup --download N:myapp
+        sudo -i eybackup -e mysql --download N:myapp
 	or 
-		sudo -i eybackup -d N:myapp
+		sudo -i eybackup -e mysql -d N:myapp
 
-    (where "N" is the number of the backup you want to download. For example, to download the oldest backup `sudo -i eybackup -d 0:myapp`)
+    (where "N" is the number of the backup you want to download. For example, to download the oldest backup `sudo -i eybackup -e mysql -d 0:myapp`)
 
     The file is downloaded to /mnt/tmp on your database server instance:
         Downloading myenvironment.myapp/myapp.2011-11-15T01-10-03.sql.gz to /mnt/tmp

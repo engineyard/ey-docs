@@ -31,7 +31,7 @@ The syntax for creating the SSH tunnel is `ssh -L [local port]:[database host]:[
 
     where  
     `3307` is the local port,  
-    `ec2-50-18-139-19.us-west-1.compute.amazonaws.com` is the database host,  
+    `ec2-172-16-139-19.us-west-1.compute.amazonaws.com` is the database host,  
     `3306` is the listening port, and  
     `deploy` is the username.
 
@@ -56,11 +56,11 @@ The syntax for creating the SSH tunnel is `ssh -L [local port]:[database host]:[
 
 1. In a terminal window on your local machine, type
 		
-	    ssh -L 5433:ec2-50-18-139-19.us-west-1.compute.amazonaws.com:5432 deploy@ec2-50-18-139-19.us-west-1.compute.amazonaws.com
+	    ssh -L 5433:ec2-172-16-139-19.us-west-1.compute.amazonaws.com:5432 deploy@ec2-172-16-139-19.us-west-1.compute.amazonaws.com
 
     where  
     `5433` is the local port,  
-    `ec2-50-18-139-19.us-west-1.compute.amazonaws.com` is the database host,  
+    `ec2-172-16-139-19.us-west-1.compute.amazonaws.com` is the database host,  
     `5432` is the listening port, and  
     `deploy` is the username.
 
@@ -68,20 +68,20 @@ The syntax for creating the SSH tunnel is `ssh -L [local port]:[database host]:[
     
     a. Type `logout` to close the connection (the prompt and response are shown here):
         deploy@domU-12-31-39-12-8D-C2 ~ $ logout
-        Connection to ec2-174-129-17-196.compute-1.amazonaws.com closed.
+        Connection to ec2-172-16-139-19.us-west-1.compute.amazonaws.com closed.
 
 	b. To test the SSH tunnel, type		 
 	    
 	    psql -udeploy -pMyP4ssW0rd -d myapp -P 5433 -h 127.0.0.1
-	    psql -Udeploy -pFBwgKemkuR -d myappp -P 5433 -h 127.0.0.1
-	    psql -Udeploy -pFBwgKemkuR -d myappp -h 127.0.0.1
-	    psql -Udeploy -p5433 -dmyappp -h 127.0.0.1
+	    psql -Udeploy -pFBwgKemkuR -d myapp -P 5433 -h 127.0.0.1
+	    psql -Udeploy -pFBwgKemkuR -d myapp -h 127.0.0.1
+	    psql -Udeploy -p5433 -dmyapp -h 127.0.0.1
 	
-	    psql -Udeploy -p5432 -dmyappp -h 127.0.0.1   <-- This one worked if you don't logout. No password needed. 
+	    psql -Udeploy -p5432 -dmyapp -h 127.0.0.1   <-- This one worked if you don't logout. No password needed. 
 	
     where  
     `5433` is the local port,  
-    `ec2-50-18-139-19.us-west-1.compute.amazonaws.com` is the database host,  
+    `ec2-172-16-139-19.us-west-1.compute.amazonaws.com` is the database host,  
     `5432` is the listening port, and  
     `deploy` is the username.
 
@@ -121,6 +121,6 @@ To test the connnection (PostgreSQL)
 	    <th>For more information about...</th><th>See...</th>
 	  </tr>
 	  <tr>
-	    <td>Finding database hostname and password</td><td><td>[[Finding key information about your database|database-password]].</td></td>
+	    <td>Finding database hostname and password</td><td>[[Finding key information about your database|database-password]].</td></td>
 	  </tr>
 </table>

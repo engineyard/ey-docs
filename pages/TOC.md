@@ -94,8 +94,6 @@
   * [[Restore databases|database-restore]]
   * [[Monitor/Increase database size|database-monitoring]]
   * [[Access databases via an SSH tunnel|database-tunnel]]
-  * [[Configure MySQL databases|database-mysql-configure]]
-  * [[Configure PostgreSQL databases|database-pg-configure]]
   * [[Database troubleshooting|database-troubleshooting]]
   * [[Feedback|data-feedback]]
 * [[Migrating|migration-intro]]

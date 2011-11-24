@@ -21,20 +21,20 @@ This assumes that you are logged into your Master Database instance and you want
 
 2. Type (to list the backups):
 
-        sudo -i eybackup --list-backup myapp
+        sudo -i eybackup -e mysql --list-backup myapp
     or
-        sudo -i eybackup -l myapp
+        sudo -i eybackup -e mysql -l myapp
 
 2. Type (to restore the backup):
 
     **Important!** This command overwrites the current database with the backup. (If you want to keep a copy of the current backup, make an on-demand backup before restoring).
 	
 
-        sudo -i eybackup --restore N:myapp
+        sudo -i eybackup -e mysql --restore N:myapp
     or  
-        sudo -i eybackup -r N:myapp
+        sudo -i eybackup -e mysql -r N:myapp
 
-	(where "N" is the number of the backup you want to overwrite the current database. For example, to restore the tenth backup `sudo -i eybackup -d 10:myapp`)
+	(where "N" is the number of the backup you want to overwrite the current database. For example, to restore the tenth backup `sudo -i eybackup -e mysql -d 10:myapp`)
 	
 
 ###To restore your PostgreSQL database
@@ -57,9 +57,8 @@ This assumes that you are logged into your Master Database instance and you want
         sudo -i eybackup -e postgresql -r N:myapp
 
 
-    (where "N" is the number of the backup you want to overwrite the current database. For example, to restore the tenth backup `sudo -i eybackup -d 10:myapp`)	
+    (where "N" is the number of the backup you want to overwrite the current database. For example, to restore the tenth backup `sudo -i eybackup -e postgresql -d 10:myapp`)	
 
-	QUESTION: THIS FAILED FOR ME. WHAT SHOULD IT BE? 
 
 <h2 id="topic2">Load your database (Scenario 2)</h2>
 
@@ -91,11 +90,11 @@ This scenario assumes that you are moving data from one environment (or instance
 
 1. Copy the database backup file to the database instance that you want to load it on.
 
-        scp myapp.2011-11-18T12-20-03.pgz deploy@ec2-50-18-139-19.us-west-1.compute.amazonaws.com:/tmp/postgres/dumpfile.pgz
+        scp myapp.2011-11-18T12-20-03.pgz deploy@ec2-172-16-139-19.us-west-1.compute.amazonaws.com:/tmp/postgres/dumpfile.pgz
 
     where  
     `myapp.2011-11-18T12-20-03.pgz` is the name of the database backup file,  
-    `ec2-50-18-139-19.us-west-1.compute.amazonaws.com` is the IP address of the database instance, and  
+    `ec2-172-16-139-19.us-west-1.compute.amazonaws.com` is the IP address of the database instance, and  
     `/tmp/postgres/dumpfile.pgz` is the directory and file name that you want to copy the backup file to.
 
 2. Via SSH, connect to the Application and Database instance (for single server environment) or the Master Database instance (for a clustered environment), and change to the directory where you copied the database backup file in Step 1 (e.g.`cd /tmp/postgres`).
