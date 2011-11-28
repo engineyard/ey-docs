@@ -61,7 +61,7 @@ Any frequently scheduled jobs can sometimes potentially run longer than their sc
 
 To solve this common problem, we recommend the use of [[lockrun|http://unixwiz.net/tools/lockrun.html]]. Lockrun is not installed by default so you will need to install it as outlined in the [[manage UNIX packages|application_home]] article.
 
-Once you have lockrun installed on your instance(s), you can then use it in your cron jobs by writing the commands like this:
+After you have lockrun installed on your instance(s), you can then use it in your cron jobs by writing the commands like this:
 
     /usr/bin/lockrun --lockfile=/tmp/jobname.lockrun -- sh -c "cd /data/appname/current && rake RAILS_ENV=production some:task"
 

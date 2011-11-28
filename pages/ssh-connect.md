@@ -1,6 +1,6 @@
 # Connect to your instance via SSH
 
-Once you have [[setup your keys|ssh-setup]] locally, [[added your keys|ssh-add-to-cloud]]
+After you have [[setup your keys|ssh-setup]] locally, [[added your keys|ssh-add-to-cloud]]
 to Engine Yard Cloud and [[installed the keys|ssh-install]] to your applications environment, you 
 are now ready to connect to your instance(s) via an SSH client.
 

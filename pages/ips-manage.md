@@ -58,7 +58,7 @@ are sure it is no longer needed.
   
 <h2 id="attach">Attach an address</h2>
 
-Once you detach an IP address you can move it to a different environment (in the same region). 
+After you detach an IP address you can move it to a different environment (in the same region). 
 You need to shut down the environment before attaching it.  We recommend 
 taking a manual snapshot of your data to help speed the termination of the 
 environment.
@@ -66,7 +66,7 @@ environment.
 1. Take notes of your current environment settings including all instance configurations.
 2. Click the Snapshot button in your environment to take a snapshot.
 3. Click the Stop button to shutdown your environment after snapshots have completed.
-4. Click the Boot button once all instances are terminated.
+4. Click the Boot button after all instances are terminated.
 5. Configure your environment using the notes taken in Step 1.
 6. Under External Address select the ip address you want to attach to this environment.
 7. Complete your environment configuration.
