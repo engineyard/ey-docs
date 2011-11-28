@@ -164,7 +164,7 @@ Test the syntax of your new recipe:
     $ rake test
 
 
-The final step is to commit your changes to the repository.  Once your changes are committed to HEAD of your local git repository then you are ready to deploy.
+The final step is to commit your changes to the repository.  After your changes are committed to HEAD of your local git repository then you are ready to deploy.
 
 
     $ git add . && git commit -am "Custom logrotate for nginx"
