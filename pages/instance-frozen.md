@@ -18,7 +18,7 @@ While we cannot often find out the reason for a crash like this, it's certainly 
 
 *Note: When rebuilding the instance or environment as per the instructions below, do not worry that the snapshot process will not work. Snapshots are handled by the machines that host the EBS disks, not the instances, so a snapshot can still run against an instance even if it has crashed.*
 
-Once you have lost the ability to connect to the instance over SSH, the only way to recover is to terminate it and rebuild from snapshots. The way to do this differs, depending on the role of the problematic instance:
+After you have lost the ability to connect to the instance over SSH, the only way to recover is to terminate it and rebuild from snapshots. The way to do this differs, depending on the role of the problematic instance:
 
   * **Application Master or Solo Instance** - If an application master in a clustered environment fails, our takeover process kicks in and terminates this instance for you. It promotes another application instance to the master and build another application instance for you. (For more information about this process, see [[Application master takeover|instance-takeover]].) However, if you run a solo environment, then this protocol is not in place and you will need to [[terminate and rebuild the whole environment|environment-rebuild]].
   * **DB Master** - If your DB master fails, you need to [[rebuild the whole environment|environment-rebuild]] as there is no way to terminate a DB master.

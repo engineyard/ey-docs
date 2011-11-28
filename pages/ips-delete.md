@@ -5,7 +5,7 @@ them associated with your account. If you want to eliminate all IP address charg
 here is what you need to do.
 
 <p class="note">
-  <strong>Note:</strong> You will not be able to recover your IP address once it 
+  <strong>Note:</strong> You will not be able to recover your IP address after it 
   has been deleted.
 </p>
 

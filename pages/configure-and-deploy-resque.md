@@ -161,7 +161,7 @@ In case you're not aware, this setting in `config/environments/production.rb` is
 
 So why is that a problem? Because in Resque the worker doesn't do the work, the child it forks does. For all useful purposes, it has a copy of the worker with your Rails application. At this stage no models have been accessed, and this is what the forked child inherits. 
 
-Once this child starts processing your job, as each model pertinent to that job is touched, the class code defining that model is ran. This involves issuing a `SHOW FIELDS` for each model involved to the database which has locking implications for your database. Further some fat models, may also have a substantial time cost spent in ruby itself. In fact for a quick job, most of the time could be spent instantiating your models.
+After this child starts processing your job, as each model pertinent to that job is touched, the class code defining that model is ran. This involves issuing a `SHOW FIELDS` for each model involved to the database which has locking implications for your database. Further some fat models, may also have a substantial time cost spent in ruby itself. In fact for a quick job, most of the time could be spent instantiating your models.
 
 A simple solution is to modify your Rakefile or, wherever you set your environment up, to change this line:
 
