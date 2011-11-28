@@ -32,7 +32,7 @@ To take advantage of high availability, you need to have _at least_ the followin
 
 In the case of zone failure:  
 
-* If the Application Master fails, then the takeover process begins. See [[Application master takeover|instance-takeover] for details. If you have cron jobs or custom chef recipes for the environment, then you need to take action.
+* If the Application Master fails, then the takeover process begins. See [[Application master takeover|instance-takeover]] for details. If you have cron jobs or custom chef recipes for the environment, then you need to take action.
 * If the Database Master fails, then contact [[Engine Yard Support|http://support.cloud.engineyard.com]] to have your slave instance promoted to master instance. 
 
 
