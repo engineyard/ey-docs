@@ -2,6 +2,15 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+
+<a href=#update8><h2 id="update8"><b>Major:</b> High availability for clustered environment now in Alpha</h2></a>
+
+November 28, 2011
+
+With high availability, when you create an environment, Engine Yard Cloud automatically deploys your instances across different availability zones in an Amazon Web Services region.  Engine Yard balances the instances and ensures that master and slave instances are in separate zones.
+
+For more information, see [[High availability for clustered environments|environment-high-availability]]. To try out high availability, sign up [[here|signup-high-availability]]. 
+
 <a href=#update10><h2 id="update10"><b>Major:</b> Engine Yard supports New Relic Server Monitoring</h2></a>
 
 November 22, 2011
@@ -38,6 +47,7 @@ November 22, 2011
 
 These fixes are applied when you upgrade your environment.
 
+>>>>>>> master
 
 <a href=#update7><h2 id="update7"><b>Major:</b> Engine Yard announces Engine Yard Labs program and Node.js</h2></a>
 
