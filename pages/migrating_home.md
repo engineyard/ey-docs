@@ -51,5 +51,5 @@ When it's time for the final cutover you should have a nice migration guide that
   * In your current hosting environment put up your maintenance page and stop your application prior dumping the database. You want to be absolutely sure that your users are not still writing to the old database after you start the dump. 
   * Make sure you shut off any crons and/or background processes that modify data. This includes letting any queued processes finish running (if you are using something like [[resque|http://github.com/defunkt/resque]]). 
   * Lowering your TTL for your DNS a few days prior to the cutover will result in quick DNS updates.
-  * Updating your DNS entries to point to cloud is the point of no return. Once you do this you'll be taking live traffic on your new cloud environment. As such it is especially important that you do one final test against your cloud setup before you update DNS. 
+  * Updating your DNS entries to point to cloud is the point of no return. After you do this, you'll be taking live traffic on your new cloud environment. As such it is especially important that you do one final test against your cloud setup before you update DNS. 
 

@@ -35,7 +35,7 @@ taken at the time of termination runs faster because of the recent prior snapsho
     
   2. Click Snapshot in your environment to start a snapshot.
   3. *After snapshots have completed*, click Stop to shutdown your environment.
-  4. Click Boot once all instances are terminated.
+  4. Click Boot after all instances are terminated.
   5. Choose the Custom option from the configuration screen.
   6. Configure new instances using previous settings or select new options if desired.
   7. Ensure that the most recent snapshots from the Application snapshot and Database snapshot drop-downs are selected.
