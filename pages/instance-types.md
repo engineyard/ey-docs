@@ -55,3 +55,4 @@ We automatically push your code to the utility instances with each deploy for yo
 Single instance environments, commonly called a solo instance, are great for staging and development environments since they'll save you money. You can boot up just a single instance and we'll deploy both your application and your database to this instance. These types of environments are not, however, ideal for product because your database and application will be contending for the same system resources. 
 
 If you boot up a single instance environment to start with you can upgrade it to a multi-instance environment later.
+

@@ -23,7 +23,7 @@ Then save your file read-able, or owned by the mysql system user, with a `.cnf` 
 
 ## Dynamic Change
 
-Once you've got your configuration changes in place do you need to restart the MySQL server? It depends.
+After you've got your configuration changes in place do you need to restart the MySQL server? It depends.
 
 If the option you're setting is a [[Dynamic option|http://dev.mysql.com/doc/refman/5.0/en/mysqld-option-tables.html]] you can simply make the configuration on the fly and avoid a restart.
 
@@ -57,7 +57,7 @@ If your configuration isn't dynamic (as determined above) you need to reboot MyS
 
 ## One Caveat
 
-When you create a new instance Chef recipes are not run before MySQL is started.  So you'll need to either add the option dynamically or restart MySQL once the instance is fully started.
+When you create a new instance Chef recipes are not run before MySQL is started.  So you'll need to either add the option dynamically or restart MySQL after the instance is fully started.
 
 So if you clone, restart or resize an instance, make sure you keep this in mind.
 

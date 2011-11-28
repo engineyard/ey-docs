@@ -4,7 +4,7 @@ This page describes getting your local environment ready for Ruby on Rails devel
 
 ## Windows
 
-For Windows users, check out [Rails Windows Installer](http://railsinstaller.org/). This one-click installer will provide a Ruby 1.8.7, Rails 3, Git, Sqlite, and DevKit. Once the download is complete, you are ready to start writing and running Rails code.  Check out their video for more details on the installation process.
+For Windows users, check out [Rails Windows Installer](http://railsinstaller.org/). This one-click installer will provide a Ruby 1.8.7, Rails 3, Git, Sqlite, and DevKit. After the download is complete, you are ready to start writing and running Rails code.  Check out their video for more details on the installation process.
 
 ## Mac OSX
 
@@ -22,7 +22,7 @@ Now that will get your environment setup, your next step is picking an editor th
 
 ## Linux
 
-Linux users especially Ubuntu users should follow the directions on the [Ubuntu community forum](https://help.ubuntu.com/community/RubyOnRails) for getting setup to use Ruby on Rails. If you do not want to install Ruby on Rails the manual way, you can use the unofficial pre-integrated [TurnKey Ruby on Rails Appliance](http://www.turnkeylinux.org/rails). Once you get that done go to the GitHub website and follow the tutorial on [getting git setup for Linux](http://help.github.com/linux-git-installation/).
+Linux users especially Ubuntu users should follow the directions on the [Ubuntu community forum](https://help.ubuntu.com/community/RubyOnRails) for getting setup to use Ruby on Rails. If you do not want to install Ruby on Rails the manual way, you can use the unofficial pre-integrated [TurnKey Ruby on Rails Appliance](http://www.turnkeylinux.org/rails). After you get that done go to the GitHub website and follow the tutorial on [getting git setup for Linux](http://help.github.com/linux-git-installation/).
 
 Also, there is a great step-by-step guide on how to setup [Ruby, Rails, RVM, MySQL, and PostgreSQL by Ryan Bigg for Ubuntu](http://ryanbigg.com/2010/12/ubuntu-ruby-rvm-rails-and-you).
 

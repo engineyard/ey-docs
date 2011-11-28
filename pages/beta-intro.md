@@ -2,20 +2,17 @@
 
 **Important!** Always test Early Access (Alpha or Beta) and Engine Yard Labs features very carefully in a development or staging environment.
 
-This feature is in **Beta**:
-
-* [[GitHub/Engine Yard account linking|linking-github-to-cloud]]
-
-Beta features are labelled beta on the UI and are available to all users. 
+No features are in Beta. 
 
 These features are in **Alpha**:  
 
 * [[Rubinius|rubinius]] - [[Sign up|signup-rubinius]]
+* [[High availability|environment-high-availability]] - [[Sign up|signup-high-availability]]
 * [[Ruby 1.9.3|ruby-193]] - [[Sign up|signup-ruby193]]
 * [[MySQL 5.1 and 5.5|database-mysql-upgrade]] - [[Sign up|signup-mysql]]
 * [[PostgreSQL 9|postgresql]] - [[Sign up|signup-postgresql]]
 
-Sign up to get access to Alpha features. The MySQL and PostgreSQL features require full accounts. If you have a trial account and want to upgrade to a full account, see [[Upgrading free trial account|upgrading-free-trial-to-full-account]].
+Sign up to get access to Alpha features. The high availability, MySQL, and PostgreSQL features require full accounts. If you have a trial account and want to upgrade to a full account, see [[Upgrading free trial account|upgrading-free-trial-to-full-account]].
 
 This feature is in **Labs**:
 

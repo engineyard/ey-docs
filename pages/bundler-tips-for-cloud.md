@@ -57,6 +57,7 @@ is where `bundle pack` comes in handy. Just run that command from your developme
 machine which will pack the gems into `vendor/cache`. When you deploy, run
 `bundle install --local` to install the gems from the `vendor/cache` directory.
 
+<!--commenting out this section. see DOC-319 for details
 ## Installation groups
 
 Currently, the only way to configure the groups passed to `bundle
@@ -72,3 +73,4 @@ application. Then put the following in it and modify as needed:
       ]
       BundleInstaller.new(version, opts.join(" "))
     end
+-->

@@ -45,7 +45,7 @@ Otherwise you can SSH into the slice by using your IP or amazon hostname and you
 
 ### SSH hostname alias
 
-Setup an SSH hostname alias and you'll be able to save your fingers some walking.  Once you've setup the alias you can access your instance by typing:
+Setup an SSH hostname alias and you'll be able to save your fingers some walking.  After you've setup the alias you can access your instance by typing:
     
     ssh myapp
 
