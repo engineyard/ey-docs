@@ -5,7 +5,7 @@ If your database outgrows the current available space on your `/db` volume you'l
 ## Step-by-Step Instructions
 
   - Terminate your currently running instance by clicking the **Terminate** button located at the top of the environment. When this is done we'll snapshot both your `/data` and `/db` volumes for you. 
-  - Once the instances spin down click the **Boot** button from the top of the environment.
+  - After the instances spin down click the **Boot** button from the top of the environment.
   - Choose the **Custom** radio button.
   - Choose the number of app instance, utility instances and database instances. Be sure to select the proper instance size for each.
   - Choose the most recent snapshots from the drop-downs. This will ensure you get your most recent data from when you terminated. If any snapshots are still pending we'll indicate so in the dropdown.

@@ -37,7 +37,7 @@ To enable uptime monitoring for an environment:
 
 ## Update your environment
 
-Once FitterHappier has been successfully installed, commit the changes to your git repository 
+After FitterHappier has been successfully installed, commit the changes to your git repository 
 and redeploy your application. Ensure deployment was successful by testing the same URIs from above.
 
 ## Add the monitored URL to Engine Yard Cloud
