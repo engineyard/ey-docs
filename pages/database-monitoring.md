@@ -14,7 +14,7 @@ The /db volume size and load capacity of your environment depends on whether you
     <td>Single server</td><td>15 GB </td><td>5 ECU  (application server with local database)</td>
   </tr>
   <tr>
-    <td>Basic cluster</td><td>15 GB </td><td>5 ECU  (dedicated database server)</td>
+    <td>Basic cluster</td><td>15 GB </td><td>5 ECU  (dedicated database instance)</td>
   </tr>
   <tr>
     <td>Custom cluster</td><td>Configurable (5 GB to 1024 GB)</td><td>Configurable; see [[Instance sizes|instance-sizes]]  </td>
@@ -38,10 +38,10 @@ When you increase the size of the database via the UI, you are effectively creat
 
 However, Engine Yard Support Engineers are able to increase the size of your database without downtime. 
 
-###To increase the size of the database volume or database server instance _without_ downtime  
+###To increase the size of the database volume or database instance _without_ downtime  
 * Please file a ticket with [[Engine Yard Support|http://support.cloud.engineyard.com]] to schedule an instance upgrade.
 
-###To increase the size of the database volume or database server instance _with_ downtime
+###To increase the size of the database volume or database instance _with_ downtime
 
 1. Make sure that you know the number and size of the server instances in your current environment.
    

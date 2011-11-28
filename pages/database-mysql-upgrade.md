@@ -79,7 +79,7 @@ If you are migrating an existing MySQL database, you'll to perform a dump and re
 
 <h2 id="topic4"> Dump and restore an existing MySQL database</h2>
 
-If you are currently running a MySQL database (5.0.x), you need to dump the database, create a new MySQL environment, move the database dump file to the database server, and finally load the file into the MySQL database.  
+If you are currently running a MySQL database (5.0.x), you need to dump the database, create a new MySQL environment, move the database dump file to the database instance, and finally load the file into the MySQL database.  
 
 You can perform these tasks yourself (as outlined below) or ask [[Engine Yard Professional Services|http://www.engineyard.com/services]] to do the migration for you.
 

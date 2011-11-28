@@ -39,7 +39,7 @@ See [[500 errors after deploying / Gemfile missing database adapter|issue-mysql2
 <h2 id="topic3"> MySQL: Host '...' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'</h2>
 
 ### Symptom
-This is a security feature of MySQL to prevent unauthorized users from gaining access to your database server.  After 10 consecutive failed authentications from a specific host that host will be barred from further attempts to log in until the administrator flushes the hosts or the database server is restarted.  Frequent occurrences of this error may indicate an attack or possibly an otherwise undetectable network issue.
+This is a security feature of MySQL to prevent unauthorized users from gaining access to your database instance.  After 10 consecutive failed authentications from a specific host that host will be barred from further attempts to log in until the administrator flushes the hosts or the database instance is restarted.  Frequent occurrences of this error may indicate an attack or possibly an otherwise undetectable network issue.
 
 ### Solution
 Run the FLUSH HOSTS command, either through the mysql client or through mysqladmin.

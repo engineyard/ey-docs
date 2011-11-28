@@ -6,7 +6,7 @@ The database.yml is written to the /data/*app_name*/shared/config/ directory in 
 
 Here are some example database.yml files.  
 
-* For a MySQL database  
+* For a MySQL master database
 
         production:
 	      adapter:   mysql2
@@ -15,21 +15,27 @@ Here are some example database.yml files.
     	  password:  MyP4ssW0rd
     	  host:      ec2-172-16-124-47.compute-1.amazonaws.com
     	  reconnect: true
-	
 
-* For a PostgreSQL database  
-	   	
-	    production:
-		  adapter:   postgresql
-		  database:  myapp
-		  username:  deploy
-		  password:  MyP4ssW0rd
-		  host:      ec2-172-16-139-19.us-west-1.compute.amazonaws.com
-		  reconnect: true
-	
+* For a PostgreSQL database cluster with a master database and a slave database
 
-* **database name.** The database is always named the same as your application. In examples, `myapp` is the application name.
-* **username.** This is the name of the database user. This username is always deploy.
+        production:
+          adapter:   postgresql
+          database:  myapp
+          username:  deploy
+          password:  MyP4ssW0rd
+          host:      ec2-172-18-139-19.us-west-1.compute.amazonaws.com
+          reconnect: true
+
+        slave:
+          adapter:   postgresql
+          database:  myapp
+          username:  deploy
+          password:  MyP4ssW0rd
+          host:      ip-192-168-47-113.us-west-1.compute.internal
+          reconnect: true	
+
+* **database name.** The database is always named the same as your application. In examples, `myapp` is the application name.  
+* **username.** This is the name of the database user. This username is always deploy.  
 * **password.** This is the password for the deploy database user and also the root database user. It is an automatically-generated, case-sensitive, alphanumeric string. In examples, `MyP4ssW0rd` is the database password.  
 * **host.** This identifies the server instance that is hosting the database. 
 

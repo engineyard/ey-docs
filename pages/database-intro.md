@@ -30,7 +30,7 @@ Whenever Engine Yard Cloud creates an environment, it creates a MySQL or Postgre
 
 6. ### [[Monitoring database usage and increasing the database size| database-monitoring]]
 
-    Learn what to do if your database volume fills up or you need a bigger database server.
+    Learn what to do if your database volume fills up or you need a bigger database instance.
 
 7. ### [[Connecting your database via an SSH tunnel| database-tunnel]]
 

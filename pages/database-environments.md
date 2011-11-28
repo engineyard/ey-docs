@@ -36,7 +36,7 @@ This procedure describes how to set up a new environment that includes a databas
     The size and volume for the read slave will be the same as the master.
 3. Set the server and volume sizes as needed for your application.  
     **Note:** Make sure to anticipate growth for your database. You cannot increase the size of the database later without incurring downtime.  
-    ![database server and slave size](images/db_server_n_slave.png)
+    ![database instance and slave size](images/db_server_n_slave.png)
 4. Click Boot This Configuration.
 
 

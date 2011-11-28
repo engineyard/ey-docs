@@ -46,7 +46,7 @@ If you want to get going and work the rest out later, here's the quick version.
 
 ### Redis configuration
 
-All our environments use redis on the master database server (or on the solo instance if just one slice is used with out a separate database) as part of our cloud application infrastructure. Typically for Resque, you use this redis instance. However, you can use a custom chef recipe to put a redis instance on your utility or any slice you want and use that.
+All our environments use redis on the master database instance (or on the solo instance if just one slice is used with out a separate database) as part of our cloud application infrastructure. Typically for Resque, you use this redis instance. However, you can use a custom chef recipe to put a redis instance on your utility or any slice you want and use that.
 
 ### Queues vs workers
 

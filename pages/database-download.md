@@ -53,10 +53,10 @@ These procedures describe how to view and download database backups using the ey
 
     (where "N" is the number of the backup you want to download. For example, to download the oldest backup `sudo -i eybackup -e mysql -d 0:myapp`)
 
-    The file is downloaded to /mnt/tmp on your database server instance:
+    The file is downloaded to /mnt/tmp on your database instance:
         Downloading myenvironment.myapp/myapp.2011-11-15T01-10-03.sql.gz to /mnt/tmp
 
-4. To copy the file from your database server instance to your local machine, type:
+4. To copy the file from your database instance to your local machine, type:
         scp username@IP_address:/path_to_file destination
     For example, `scp deploy@ec2-174-129-17-196.compute-1.amazonaws.com:/mnt/tmp/myapp.2011-11-14T16-43-39.sql.gz .`
 	    
@@ -87,10 +87,10 @@ These procedures describe how to view and download database backups using the ey
 
     (where "N" is the number of the backup you want to download. For example, to download the oldest backup `sudo -i eybackup -e postgresql -d 0:myapp`)
 
-    The file is downloaded to /mnt/tmp on your database server instance:
+    The file is downloaded to /mnt/tmp on your database instance:
         Downloading myenvironment.myapp/myapp.2011-11-16T15-20-02.pgz to /mnt/tmp
 
-4. To copy the file from your database server instance to your local machine, type:
+4. To copy the file from your database instance to your local machine, type:
         scp username@IP_address:/path_to_file destination
     For example, `scp deploy@ec2-174-129-17-196.compute-1.amazonaws.com:/mnt/tmp/myapp.2011-11-16T15-20-02.pgz .`
 	    
