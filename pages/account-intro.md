@@ -13,3 +13,6 @@
   
 * ### [[Hibernate Your Account|account-hibernation]]
   Learn how to hibernate your account to avoid charges and to use at a later time.
+
+* ### [[GitHub/Engine Yard account linking|linking-github-to-cloud]]
+  Learn how to link your GitHub account to your Engine Yard Cloud account.
