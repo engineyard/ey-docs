@@ -17,7 +17,7 @@ This procedure describes how to view and download database backups using the Eng
 ### To view and/or download database backups (UI method)
 
 1. On the Environment page, click Database Backups.
-    A time-stamped list of backup links appears.
+    A time-stamped list of backup links appears.  
     ![Example list of backup links](images/database_backups.png)
 
 2. Click a link to download a backup file.  

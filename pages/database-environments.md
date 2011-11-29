@@ -69,7 +69,7 @@ Choosing between creating a new snapshot or using an older snapshot is a trade-o
 
 * **Creating a new snapshot** means that the new database slave has less data from the master binary logs that it has to replay to make the replication.  However, creating a snapshot can be very IO intensive on the master and, thus, might be a bad choice for high traffic databases during peak traffic hours.  Also, for large databases, the shorter time required for replication to catch up after the database slave is up might be off-set by the time needed to create the new snapshot.
 
-* **Using an existing snapshot** skips creating a new snapshot and instead uses an existing one.  This option is only be available if the master database has binary log data going back to when the snapshot was created. The new database slave then has to read and replay more binary log data than if using a new snapshot. The amount of binary log data is entirely dependent on your database write traffic volume, but, this method is usually much less IO intensive to the master database than creating a new snapshot.
+* **Using an existing snapshot** skips creating a new snapshot and instead uses an existing one.  This option is only available if the master database has binary log data going back to when the snapshot was created. The new database slave then has to read and replay more binary log data than if using a new snapshot. The amount of binary log data is entirely dependent on your database write traffic volume, but this method is usually much less IO intensive to the master database than creating a new snapshot.
 
 
 

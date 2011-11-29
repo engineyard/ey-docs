@@ -21,7 +21,7 @@ The syntax for creating the SSH tunnel is `ssh -L [local port]:[database host]:[
     For MySQL databases, this is 3306 by default.  
     For PostgreSQL database, this is 5432 by default.
 
-* `[username]` Your username for the [remote host]. The default user for the Engine Yard Cloud database is "deploy".
+* `[username]` the user for the database instance. The default user for the Engine Yard Cloud database is `deploy`.
 
 ###To create and test the SSH tunnel for a MySQL database
 

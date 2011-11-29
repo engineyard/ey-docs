@@ -68,44 +68,65 @@ This scenario assumes that you are moving data from one environment (or instance
 
 1. Copy the database backup file to the database instance that you want to load it on.
 
-        scp myapp.2011-11-14T16-47-02.sql deploy@ec2-174-129-17-196.compute-1.amazonaws.com:/tmp/mysql/dumpfile.sql
+        scp [database file] [username]@[database host]:[target directory]/[filename]
 
     where  
-    `myapp.2011-11-14T16-47-02.sql` is the name of the database backup file,  
-    `ec2-174-129-17-196.compute-1.amazonaws.com` is the IP address of the database instance, and  
-    `/tmp/mysql/dumpfile.sql` is the directory and file name that you want to copy the backup file to.
+    `[database file]` is the name of the database backup file.  
+    `[username]` is the user for the database instance. (The default user for the Engine Yard Cloud database is `deploy`.) 
+    `[database host]` is the hostname of the database instance.   
+    `[target directory]` is the directory that you want to copy the backup file to.  
+    `[filename]` is the name for the file in its new location.  
+
+    for example
+
+        scp myapp.2011-11-14T16-47-02.sql deploy@ec2-174-129-17-196.compute-1.amazonaws.com:/tmp/mysql/dumpfile.sql
 
 2. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment), and change to the directory where you copied the database backup file in Step 1 (e.g.`cd /tmp/mysql`).
 
 3. Import the database backup file to the database:
 
+        mysql -u [username] -p[password] -h [database host] [app_name] < [filename]
+
+    where
+    `[username]` is the user for the database instance. The default user for the Engine Yard Cloud database is `deploy`.  
+    `[password]` is the password for the user on the MySQL database.  
+    `[database host]` is the hostname of the database instance. In a single server environment, you can type `localhost` for the database hostname.  
+    `[app_name]` is the name of the database.  
+    `[filename]` is the name of the database backup file.  
+     
+    for example
         mysql -u deploy -pMyP4ssW0rd -h ec2-174-129-17-196.compute-1.amazonaws.com myapp < dumpfile.sql
-    where `MyP4ssW0rd` is the database password.
-		
-    **Note:** In a single server environment, you can type `localhost` instead of `ec2-174-129-17-196.compute-1.amazonaws.com`
-
-
 
 ###To load your PostgreSQL database 
 
 1. Copy the database backup file to the database instance that you want to load it on.
 
-        scp myapp.2011-11-18T12-20-03.pgz deploy@ec2-172-16-139-19.us-west-1.compute.amazonaws.com:/tmp/postgres/dumpfile.pgz
+    scp [database file] [username]@[database host]:[target directory]/[filename]
 
     where  
-    `myapp.2011-11-18T12-20-03.pgz` is the name of the database backup file,  
-    `ec2-172-16-139-19.us-west-1.compute.amazonaws.com` is the IP address of the database instance, and  
-    `/tmp/postgres/dumpfile.pgz` is the directory and file name that you want to copy the backup file to.
+    `[database file]` is the name of the database backup file.  
+    `[username]` is the user for the database instance. (The default user for the Engine Yard Cloud database is `deploy`.) 
+    `[database host]` is the hostname of the database instance.   
+    `[target directory]` is the directory that you want to copy the backup file to.  
+    `[filename]` is the name for the file in its new location.  
+
+    for example
+
+        scp myapp.2011-11-18T12-20-03.pgz deploy@ec2-172-16-139-19.us-west-1.compute.amazonaws.com:/tmp/postgres/dumpfile.pgz
 
 2. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment), and change to the directory where you copied the database backup file in Step 1 (e.g.`cd /tmp/postgres`).
 
-3. Import the database backup file to the database:
+3. Import the database backup file to the database:  
+        pg_restore -d [app_name] [filename] --clean -U postgres
+
+    where
+    `[app_name]` is the name of the database.  
+    `[filename]` is the name of the database backup file.   
+    `--clean` permits overwriting of the existing database with the backup file.  
+    `-U postgres` sets the user to the postgreSQL user who has permission to overwrite the database. (The deploy user does not have these permissions.)
+
+    for example  
         pg_restore -d myapp dumpfile.pgz --clean -U postgres
-
-    where  
-    `--clean` permits overwriting of the existing database with the backup file, and  
-    `-U postgres` sets the user to the postgres user who has permission to overwrite the database. (The deploy user does not have these permissions.)
-
 
 <table>
   <tr>
