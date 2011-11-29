@@ -46,7 +46,7 @@ Before high availability, your instances were assigned randomly to availability 
     The database slave instance is created in an availability zone other than the zone that your master database is in.
 
 2. Examine your environment to determine what zones your instances are currently in:  
-    On the environment page, place your mouse over the IP address to see the zone. 
+    On the environment page, place your mouse over the hostname to see the zone. 
 
     ![Place mouse over IP address to see the availability zone](images/avail_zone.png)
 

@@ -3,7 +3,7 @@
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
 
-<a href=#update8><h2 id="update8"><b>Major:</b> High availability for clustered environment now in Alpha</h2></a>
+<a href=#update11><h2 id="update11"><b>Major:</b> High availability for clustered environment now in Alpha</h2></a>
 
 November 28, 2011
 
@@ -47,7 +47,6 @@ November 22, 2011
 
 These fixes are applied when you upgrade your environment.
 
->>>>>>> master
 
 <a href=#update7><h2 id="update7"><b>Major:</b> Engine Yard announces Engine Yard Labs program and Node.js</h2></a>
 
