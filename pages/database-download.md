@@ -32,7 +32,7 @@ These procedures describe how to view and download database backups using the ey
 
 <h3 id="topicA"> For MySQL: To view and/or download database backups (eybackup method) </h3>
 
-1. Via SSH, connect to the Application and Database instance (for single server environment) or the database instance (for a clustered environment).
+1. Via SSH, connect to the application and database instance (for single server environment) or the database instance (for a clustered environment).
 
 2. Type (to list the backups):
         sudo -i eybackup -e mysql --list-backup myapp
@@ -65,7 +65,7 @@ These procedures describe how to view and download database backups using the ey
 
 <h3 id="topicB"> For PostgreSQL: To view and/or download database backups (eybackup method)</h3>
 
-1. Via SSH, connect to the Application and Database instance (for single server environment) or the database instance instance (for a clustered environment).
+1. Via SSH, connect to the application and database instance (for single server environment) or the database instance instance (for a clustered environment).
 
 2. Type (to list the backups):
         sudo -i eybackup -e postgresql --list-backup myapp

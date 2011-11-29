@@ -50,8 +50,8 @@ If you have a basic cluster and want to add database replication, follow this pr
 
 2. Click Add Database Slave.
 
-3. Clear the check box to create a new snapshot for the slave or select to use a recent snapshot.    
-    See [New or existing snapshot for the database slave?][3].
+3. Clear the check box to create a new snapshot for the slave or select to use a recent snapshot.     
+    See [New or existing snapshot for the database slave?][3].  
     **Note:** The check box does not appear if a recent snapshot is not available.
     
 3. Click Add to Cluster.
@@ -80,10 +80,13 @@ Choosing between creating a new snapshot or using an older snapshot is a trade-o
     <th>For more information about...</th><th>See...</th>
   </tr>
   <tr>
-    <td>Creating an environment</td><td>[[Create an environment|environment-create]]</td>
+    <td>Creating an environment</td><td>[[Create an environment|environment-create]].</td>
   </tr>
   <tr>
-    <td>Increasing the size of a database instance or /db volume</td><td>[[Monitoring database usage and increasing the database volume or instance size|database-monitoring]]</td>
+    <td>Increasing the size of a database instance or /db volume</td><td>[[Monitoring database usage and increasing the database volume or instance size|database-monitoring]].</td>
+  </tr>
+  <tr>
+    <td>High availability in custom clustered environments</td><td>[[High availability for clustered environments|environment-high-availability]].</td>
   </tr> 
 </table>
 

@@ -1,6 +1,6 @@
 # Troubleshooting your database
 
-Here are some things to check when troubleshooting your Engine Yard Cloud database.
+This page describes some things to check when troubleshooting your database.
 
 Topics on this page:
 
@@ -12,11 +12,11 @@ Topics on this page:
 
 <h2 id="topic1"> MySQL: Restart the database</h2>
 
-Sometimes problems can be fixed by restarting the database.
+Some problems can be fixed by restarting the database.
 
 **To restart the MySQL database** 
 
-1. Via SSH, connect to the Application and Database instance (for single server environment) or the Master Database instance (for a clustered environment).
+1. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment).
 
 2. Type:  
         sudo /etc/init.d/mysql restart
@@ -28,7 +28,7 @@ Sometimes problems can be fixed by restarting the database.
 
 ###Symptom
 
-After deploying you see 500 errors and the deployment log shows "Please install the mysql2 adapter" error.
+After deploying, you see 500 errors and the deployment log shows "Please install the mysql2 adapter" error.
 
 ###Solution
 
@@ -39,14 +39,14 @@ See [[500 errors after deploying / Gemfile missing database adapter|issue-mysql2
 <h2 id="topic3"> MySQL: Host '...' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'</h2>
 
 ### Symptom
-This is a security feature of MySQL to prevent unauthorized users from gaining access to your database instance.  After 10 consecutive failed authentications from a specific host that host will be barred from further attempts to log in until the administrator flushes the hosts or the database instance is restarted.  Frequent occurrences of this error may indicate an attack or possibly an otherwise undetectable network issue.
+This is a security feature of MySQL to prevent unauthorized users from gaining access to your database instance.  After 10 consecutive failed authentications from a specific host that host is barred from further attempts to log in until the administrator flushes the hosts or the database instance is restarted.  Frequent occurrences of this error may indicate an attack or possibly an otherwise undetectable network issue.
 
 ### Solution
 Run the FLUSH HOSTS command, either through the mysql client or through mysqladmin.
 
 **To run the FLUSH HOSTS command**  
 
-1. Via SSH, connect to the Application and Database instance (for single server environment) or the Master Database instance (for a clustered environment).
+1. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment).
 
 2. Type:  
         mysql -u root -pMyP4ssW0rd -e "FLUSH HOSTS;"
@@ -77,16 +77,16 @@ Verify MySQL is running on the appropriate database instance.
 
 <h2 id="topic5">PostgreSQL: Restart the database</h2>
 
-Sometimes problems can be fixed by restarting the database.
+Some problems can be fixed by restarting the database.
 
 ###To restart the PostgreSQL database
 
-1. Via SSH, connect to the Application and Database instance (for single server environment) or the Master Database instance (for a clustered environment).
+1. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment).
 
 2. Type:  
         sudo /etc/init.d/postgresql-x.x restart
     where
-    `x` is the version of PostgreSQL, for example
+    `x.x` is the version of PostgreSQL, for example
         sudo /etc/init.d/postgresql-9.0 restart
     or
         sudo /etc/init.d/postgresql-9.1 restart
@@ -99,7 +99,7 @@ Sometimes problems can be fixed by restarting the database.
 	<th>For more information about...</th><th>See...</th>
   </tr>
   <tr>
-	<td>SSHing into an instance</td><td>[[Connect to your instance via SSH|Connect to your instance via SSH|ssh-connect]]</td>
+	<td>SSHing into an instance</td><td>[[Connect to your instance via SSH|Connect to your instance via SSH|ssh-connect]].</td>
   </tr> 
   <tr>
 	 <td>Finding the password for your database</td><td>[[Finding key information about your database|database-password]].</td>

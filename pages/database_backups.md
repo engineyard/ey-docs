@@ -12,7 +12,7 @@ By default the database is backed up every 24 hours, and the last 10 days of bac
 
 When you create an environment, you set the frequency and number of backups (or accept the default). You can later change the frequency and number of database backups as described below.
 
-You can keep up to 100 backups. You can schedule backup to happen every hour, every two hours, four times a day, twice a day, or daily.
+You can keep up to 100 backups. You can schedule backups to happen every hour, every two hours, four times a day, twice a day, or daily.
 
 You don't have to restart your environment to change the frequency or number of backups.
 
@@ -39,7 +39,7 @@ You perform on-demand backups using the eybackup tool. Each instance comes with 
 
 ## To back up a MySQL database on-demand 
 
-1. Via SSH, connect to the Application and Database instance (for single server environment) or the Master Database instance (for a clustered environment).  
+1. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment).  
 2. Type:  
         sudo -i eybackup -e mysql --new-backup
     or
@@ -48,7 +48,7 @@ You perform on-demand backups using the eybackup tool. Each instance comes with 
 
 ## To back up a PostgreSQL database on-demand 
 
-1. Via SSH, connect to the Application and Database instance (for single server environment) or the Master Database instance (for a clustered environment).  
+1. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment).  
 2. Type:  
         sudo -i eybackup -e postgresql --new-backup
 	or

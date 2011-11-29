@@ -27,7 +27,7 @@ You might want to check on database volume usage _before_ you get an alert.
 
 ###To check the database volume usage 
 
-1. Via SSH, connect to the Application and Database instance (for single server environment) or the Master Database instance (for a clustered environment).  
+1. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment).  
 2. Type:  
         df -h
     ![/db usage](images/database_usage.png)

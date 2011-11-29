@@ -2,7 +2,7 @@
 
 When an Engine Yard Cloud environment is created, a database is set up for the application and a database.yml file is generated. The database.yml file contains key information about your database.
 
-The database.yml is written to the /data/*app_name*/shared/config/ directory in the Application and Database instance (single server environment) or the Application Master instance (clustered environment). 
+The database.yml is written to the /data/*app_name*/shared/config/ directory in the application and database instance (single server environment) or the Application Master instance (clustered environment). 
 
 Here are some example database.yml files.  
 
@@ -44,7 +44,7 @@ Here are some example database.yml files.
 
 ## To view your database.yml file
 
-1. Via SSH, connect to the Application and Database instance (for single server environment) or the Application Master instance (for a clustered environment).
+1. Via SSH, connect to the application and database instance (for single server environment) or the Application Master instance (for a clustered environment).
 
 2. Type:
         cat /data/myapp/shared/config/database.yml
@@ -60,6 +60,6 @@ Here are some example database.yml files.
 	    <th>For more information about...</th><th>See...</th>
 	  </tr>
 	  <tr>
-	    <td>SSHing into an instance</td><td>[[Connect to your instance via SSH|Connect to your instance via SSH|ssh-connect]]</td>
+	    <td>SSHing into an instance</td><td>[[Connect to your instance via SSH|Connect to your instance via SSH|ssh-connect]].</td>
 	  </tr> 
 </table>

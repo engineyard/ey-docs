@@ -17,7 +17,7 @@ This assumes that you are logged into your Master Database instance and you want
 
 ###To restore your MySQL database
 
-1. Via SSH, connect to the Application and Database instance (for single server environment) or the Master Database instance (for a clustered environment).  
+1. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment).  
 
 2. Type (to list the backups):
 
@@ -34,12 +34,12 @@ This assumes that you are logged into your Master Database instance and you want
     or  
         sudo -i eybackup -e mysql -r N:myapp
 
-	(where "N" is the number of the backup you want to overwrite the current database. For example, to restore the tenth backup `sudo -i eybackup -e mysql -d 10:myapp`)
+	where `N`"` is the number of the backup you want to overwrite the current database. For example, to restore the tenth backup `sudo -i eybackup -e mysql -d 10:myapp`
 	
 
 ###To restore your PostgreSQL database
 
-1. Via SSH, connect to the Application and Database instance (for single server environment) or the Master Database instance (for a clustered environment).  
+1. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment).  
 
 2. Type (to list the backups):
 
@@ -75,7 +75,7 @@ This scenario assumes that you are moving data from one environment (or instance
     `ec2-174-129-17-196.compute-1.amazonaws.com` is the IP address of the database instance, and  
     `/tmp/mysql/dumpfile.sql` is the directory and file name that you want to copy the backup file to.
 
-2. Via SSH, connect to the Application and Database instance (for single server environment) or the Master Database instance (for a clustered environment), and change to the directory where you copied the database backup file in Step 1 (e.g.`cd /tmp/mysql`).
+2. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment), and change to the directory where you copied the database backup file in Step 1 (e.g.`cd /tmp/mysql`).
 
 3. Import the database backup file to the database:
 
@@ -97,7 +97,7 @@ This scenario assumes that you are moving data from one environment (or instance
     `ec2-172-16-139-19.us-west-1.compute.amazonaws.com` is the IP address of the database instance, and  
     `/tmp/postgres/dumpfile.pgz` is the directory and file name that you want to copy the backup file to.
 
-2. Via SSH, connect to the Application and Database instance (for single server environment) or the Master Database instance (for a clustered environment), and change to the directory where you copied the database backup file in Step 1 (e.g.`cd /tmp/postgres`).
+2. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment), and change to the directory where you copied the database backup file in Step 1 (e.g.`cd /tmp/postgres`).
 
 3. Import the database backup file to the database:
         pg_restore -d myapp dumpfile.pgz --clean -U postgres
