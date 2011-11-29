@@ -62,7 +62,7 @@ For more information, see [[http://dev.mysql.com/doc/refman/5.0/en/flush.html]].
 
 <h2 id="topic4"> MySQL server has gone away</h2>
 
-###Solution
+###Symptom
 
 Rails relies upon connection pooling to eliminate the time overhead of spawning a database connection when a request comes in; the default connection pool size is 5.  MySQL operates with a default `wait_timeout` setting of 28,800 seconds (8 hours).  If a connection in the pool is inactive for more than 8 hours MySQL closes it to avoid the memory overhead of unused connections.  The next attempt by Rails to use this connection results in the error that the connection has gone away.
 
