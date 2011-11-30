@@ -66,7 +66,7 @@ Running a JRuby application is similar to running any Ruby application. The main
 
 3. Create the environment, setting the Application Server to Trinidad.  
     When the Application Server is set to Trinidad, the Runtime defaults to JRuby 1.6.5 compatible with Ruby 1.8.7.  
-    For JRuby compatible with Ruby 1.9.2, set the Runtime to JRuby 6.5.5 (ruby-1.9.2-p136).
+    For JRuby compatible with Ruby 1.9.2, set the Runtime to JRuby 1.6.5 (ruby-1.9.2-p136).
 	
 4. Deploy the application.
 
