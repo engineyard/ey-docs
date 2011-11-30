@@ -6,6 +6,8 @@
 
 * [[<b>Major:</b> High availability for clustered environment now in Alpha|cloud-updates-november-2011#update11]] *November 28th, 2011*
 
+* [[Fix: engineyard gem update|cloud-updates-november-2011#update12]] *November 26th, 2011*
+
 * [[<b>Major:</b> Engine Yard supports New Relic Server Monitoring|cloud-updates-november-2011#update10]] *November 22nd, 2011*
 
 * [[Minor: Redis 2.4.2 upgrade|cloud-updates-november-2011#update9]] *November 22nd, 2011*

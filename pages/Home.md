@@ -20,10 +20,10 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
     <h2>Updated documentation</h2>
     <ul>
       <li>
+	         [[Engine Yard Cloud updates November 2011|cloud-updates-november-2011]]
+	  </li>
+	  <li>
          [[Engine Yard Early Access and Labs|beta-intro]]
-      </li>
-      <li>
-         [[Engine Yard Cloud updates November 2011|cloud-updates-november-2011]]
       </li>
       <li>
          [[Engine Yard Technology Stack|cloud-tech-stack]]
