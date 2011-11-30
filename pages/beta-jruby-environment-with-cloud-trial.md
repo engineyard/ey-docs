@@ -65,9 +65,10 @@ Running a JRuby application is similar to running any Ruby application. The main
 
 1. In your Dashboard, create an application.  
 
-3. Create the environment.  
-	Set the Application Server to Trinidad. When the Application Server is set to Trinidad, the Runtime defaults to JRuby.
-	
+4. On the Edit the Environment page, set Application Server Stack to Trinidad.   
+    The Runtime defaults to JRuby 1.6.5 compatible with Ruby 1.8.7. (If you want JRuby compatible with Ruby 1.9.2, set the Runtime to JRuby 6.5.5 (ruby-1.9.2-p136).    
+    **Note:** If you can't edit the Application Server Stack, make sure that you have stopped the environment. Only stopped environments can be edited. 
+ 	
 4. Deploy the application.
 
 

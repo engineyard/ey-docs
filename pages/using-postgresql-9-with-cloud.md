@@ -100,7 +100,7 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 	
 		scp dumpfile newserver:/path/to/file/dumpfile
 	
-	In this case, the new server is the database server assigned for your PostgreSQL 9 Alpha environment.
+	In this case, the new server is the database server assigned for your PostgreSQL 9 Alpha environment.  
 	
 	**Note:** To use the scp command, you need keys and scp setup.
 	 
@@ -110,7 +110,7 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 
 		pg_restore -d dbname dumpfile
 	
-	**Note:** the dbname should correspond to the database name of your application
+	**Note:** The dbname should correspond to the database name of your application.
 
 5. Test the application running in the new environment before deleting your original environment.
 
