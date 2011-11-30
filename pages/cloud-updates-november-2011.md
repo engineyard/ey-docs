@@ -11,6 +11,14 @@ With high availability, when you create an environment, Engine Yard Cloud automa
 
 For more information, see [[High availability for clustered environments|environment-high-availability]]. To try out high availability, sign up [[here|signup-high-availability]]. 
 
+<a href=#update12><h2 id="update12">Fix: engineyard gem update</h2></a>
+
+November 26th, 2011
+
+Fixed an issue where the deploy process reinstalled all gems on deploy. This caused short spans of downtime on every deploy.
+
+If you deploy from the Engine Yard CLI using an engineyard gem versioned between 1.4.5 and 1.4.8 (inclusive), we strongly recommend that you upgrade the gem. (The engineyard gem 1.4.4 and below does not have this issue, but upgrading the gem is still recommended.)
+
 <a href=#update10><h2 id="update10"><b>Major:</b> Engine Yard supports New Relic Server Monitoring</h2></a>
 
 November 22, 2011
