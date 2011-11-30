@@ -8,9 +8,6 @@ Whenever Engine Yard Cloud creates an environment, it creates a MySQL or Postgre
 
 ## Topics
 
-1. ### [[Set up replication (database slave instances)|database-environments]]
-
-    Learn how to create slave database instances in a clustered environment so that your database is replicated. 
 
 2. ### [[Finding key information about your database|database-password]]  
 
@@ -32,6 +29,10 @@ Whenever Engine Yard Cloud creates an environment, it creates a MySQL or Postgre
 
     Learn what to do if your database volume fills up or you need a bigger database instance.
 
+1. ### [[Set up replication (database slave instances)|database-environments]]
+
+	 Learn how to create slave database instances in a clustered environment so that your database is replicated. 
+	
 7. ### [[Connecting your database via an SSH tunnel| database-tunnel]]
 
     Learn how to create an SSH tunnel to your database. If you want to use third party tools to manage your database, you need an SSH tunnel from your local machine to the database instance.

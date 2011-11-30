@@ -21,7 +21,13 @@ The /db volume size and load capacity of your environment depends on whether you
   </tr> 
 </table>
 
-## Find out database volume usage
+This page describes:  
+
+* [Finding database volume usage][1]
+* [Increasing the size of the database _with_ some downtime][2]
+* [Increasing the size of the database _without_ downtime][3]
+
+<h2 id="topic1">Find database volume usage</h2>
 
 You might want to check on database volume usage _before_ you get an alert.
 
@@ -32,16 +38,11 @@ You might want to check on database volume usage _before_ you get an alert.
         df -h
     ![/db usage](images/database_usage.png)
 
-## Increase the size of the database
+<h2 id="topic2"> Increase the size of the database with some downtime</h2>
 
-When you increase the size of the database via the UI, you are effectively creating a new environment and moving the snapshots of the instances from the old environment to a new environment. This means some downtime for your application. 
+When you increase the size of the database instances via the UI, you are effectively creating a new environment and moving the snapshots of the instances from the old environment to a new environment. This means some downtime for your application. 
 
-However, Engine Yard Support Engineers are able to increase the size of your database without downtime. 
-
-###To increase the size of the database volume or database instance _without_ downtime  
-* Please file a ticket with [[Engine Yard Support|http://support.cloud.engineyard.com]] to schedule an instance upgrade.
-
-###To increase the size of the database volume or database instance _with_ downtime
+###To increase the size of the database volume or database instance via the UI _with_ some downtime
 
 1. Make sure that you know the number and size of the server instances in your current environment.
    
@@ -52,17 +53,28 @@ However, Engine Yard Support Engineers are able to increase the size of your dat
 
 3. Select Custom.
 
-4. Increase the Server size and the /db volume size.
+4. For the Database Server, increase the server size and the /db volume size.
 
     ![/db volume size](images/db_vol_size.png)
 
-    **Note:** You cannot decrease the size of the database volume. 
+    **Note:** You cannot decrease the size of the database volume.
 
 5. Select the most recent snapshots from the dropdown.  
     This ensures that you don't lose data. If there are snapshots are pending, this is indicated in the dropdown.
 
 6. Click Boot This Configuration.
 
+<h2 id="topic3"> Increase the size of the database without downtime</h2>
+
+If you need to increase the size of your master database instance without any downtime, you can do this with assistance from Engine Yard Support. First a larger database slave instance is created and then after replication is complete the slave is promoted to master and the original (smaller) master is decommissioned. 
+
+
+###To increase the size of the database volume or database instance _without_ downtime  
+
+1. Create a database slave as described in [[Add a database slave to an existing environment|database-environments#topic3]].  
+    Select a larger /db volume size or a larger instance size or both.
+
+2. File a ticket with [[Engine Yard Support|http://support.cloud.engineyard.com]] asking to have the database slave promoted to database master.
 
 <h2 id="topic5"> More information</h2>
 
@@ -80,3 +92,9 @@ However, Engine Yard Support Engineers are able to increase the size of your dat
 	 <td>SSHing into an instance</td><td>[[Connect to your instance via SSH|ssh-connect]].</td>
    </tr>
 </table>
+
+[1]: #topic1        "topic1"
+[2]: #topic2        "topic2"
+[3]: #topic3        "topic3"
+[4]: #topic4		"topic4"
+[5]: #topic5        "topic5"

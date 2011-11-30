@@ -14,14 +14,16 @@ Engine Yard offers three environment configurations: Single Server, Basic Cluste
 
 * **Single Server.** For a small testing environment, a single server that contains both the application and the database is ideal. 
 * **Basic Cluster.** The basic cluster does not include a database slave.  
-    In non-production environments or environments where the database data is not critical, a basic cluster is a good choice. With a basic cluster the database is not replicated; make sure that you backup frequently enough.  
+    In non-production environments or environments with small databases, a basic cluster is a good choice. With a basic cluster the database is not replicated; make sure that you backup frequently enough.  
     You can add a database slave to an existing basic cluster (see [below][3]).  
-    **Note** _For PostgreSQL only:_ If you expect your database server requirements to grow so that you will need a larger database instance, consider starting with a Custom environment using 64-bit instances. PostgreSQL instances cannot easily be upgraded from 32-bit to 64-bit instances.
+    **Note** _For PostgreSQL only:_ If you expect your database server requirements to grow so that you will need a larger database instance, consider starting with a Custom environment using 64-bit instances. PostgreSQL instances cannot easily be upgraded from a High CPU Medium to a High CPU Large instance.  
 * **Custom.** For typical applications in production environments, best practice is to use a custom clustered environment, containing the following:  
     * One application master
     * An application slave
     * One master database
     * A database slave
+
+<!-- -->
 
 <h2 id="topic2"> Set up a custom environment with database replication</h2>
 
@@ -33,10 +35,8 @@ This procedure describes how to set up a new environment that includes a databas
 
 1. Create the environment as described in [[Create an environment|environment-create]].
 2. Select Custom.
-3. Set the Number of read slaves to add to 1.
-    The size and volume for the read slave will be the same as the master.
-3. Set the server and volume sizes as needed for your application.  
-    **Note:** Make sure to anticipate growth for your database. You cannot increase the size of the database later without incurring downtime.  
+3. Set the size of the master database instance (Server size) and the slave, and enter the size for the /db volume. 
+    The /db volume for the read slave will be the same as the master.
     ![database instance and slave size](images/db_server_n_slave.png)
 4. Click Boot This Configuration.
 
@@ -52,16 +52,22 @@ If you have a basic cluster and want to add database replication, follow this pr
 2. Click Add Database Slave.
 
 3. Set the instance size and the volume size to be the same or larger than the master database.  
-    **Note: About postgres instances and about environments older than November 2011.**
+    **Note:** You cannot enlarge a PostgreSQL database to a 64-bit instance using a 32-bit snapshot.  
 
 3. Clear the check box to create a new snapshot for the slave or select to use a recent snapshot.     
-    See [New or existing snapshot for the database slave?][3].  
+    See [New or existing snapshot for the database slave?][3]  
     **Note:** The check box does not appear if a recent snapshot is not available.
     
 3. Click Add to Cluster.
 
 4. After the database slave boots, click Apply.  
     This generates new database.yml files for the database slave on the Application Master.
+
+5. If your environment is older than November 28th, 2011, then the /db volume size is not automatically increased and you need to do _one_ of the following:  
+    * Upgrade your environment, or
+    * Via SSH, connect to the database slave instance and increase the size of the /db volume to the volume size entered in step 3 above, or
+    * File a ticket with [[Engine Yard Support|http://support.cloud.engineyard.com]] and ask to have /db volume size reset (to the size entered in step 3 above).
+ 
 
 <!-- QUESTION: Do I still have to click Apply after this? PL-6488 -->
 
@@ -92,6 +98,14 @@ Choosing between creating a new snapshot or using an older snapshot is a trade-o
   <tr>
     <td>High availability in custom clustered environments</td><td>[[High availability for clustered environments|environment-high-availability]].</td>
   </tr> 
+<tr>
+    <td>Upgrade an environment</td><td>[[Upgrading an environment|environment-upgrade ]].</td>
+  </tr>
+  <tr>
+	<td>SSHing into an instance</td><td>[[Connect to your instance via SSH|Connect to your instance via SSH|ssh-connect]].</td>
+  </tr>
+  <tr>
+	<td>32-bit and 64-bit instance sizes</td><td>[[Instance sizes|instance-sizes]]
 </table>
 
 
