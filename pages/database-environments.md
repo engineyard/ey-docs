@@ -15,7 +15,8 @@ Engine Yard offers three environment configurations: Single Server, Basic Cluste
 * **Single Server.** For a small testing environment, a single server that contains both the application and the database is ideal. 
 * **Basic Cluster.** The basic cluster does not include a database slave.  
     In non-production environments or environments where the database data is not critical, a basic cluster is a good choice. With a basic cluster the database is not replicated; make sure that you backup frequently enough.  
-    You can add a database slave to an existing basic cluster (see [below][3])
+    You can add a database slave to an existing basic cluster (see [below][3]).  
+    **Note** _For PostgreSQL only:_ If you expect your database server requirements to grow so that you will need a larger database instance, consider starting with a Custom environment using 64-bit instances. PostgreSQL instances cannot easily be upgraded from 32-bit to 64-bit instances.
 * **Custom.** For typical applications in production environments, best practice is to use a custom clustered environment, containing the following:  
     * One application master
     * An application slave
@@ -49,6 +50,9 @@ If you have a basic cluster and want to add database replication, follow this pr
 1. On the Environment page, click Add.  
 
 2. Click Add Database Slave.
+
+3. Set the instance size and the volume size to be the same or larger than the master database.  
+    **Note: About postgres instances and about environments older than November 2011.**
 
 3. Clear the check box to create a new snapshot for the slave or select to use a recent snapshot.     
     See [New or existing snapshot for the database slave?][3].  
