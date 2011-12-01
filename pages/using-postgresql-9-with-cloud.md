@@ -87,7 +87,7 @@ You can perform these tasks yourself (as outlined below) or ask [[Engine Yard Pr
 
 ### To dump and restore the PostgreSQL database
 
-See the PostgreSQL documentation for full details on dumping and restoring a database. 
+See the PostgreSQL documentation for full details on dumping and restoring a database.  
 **Note:** The following commands assume you are logged into the db_master instance.  
 
 1.  Dump the database. 
@@ -100,6 +100,7 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 	
 		scp dumpfile newserver:/path/to/file/dumpfile
 	
+
 	In this case, the new server is the database instance assigned for your PostgreSQL 9 Alpha environment.
 	
 	**Note:** To use the scp command, you need keys and scp setup.
@@ -110,7 +111,7 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 
 		pg_restore -d dbname dumpfile
 	
-	**Note:** the dbname should correspond to the database name of your application
+	**Note:** The dbname should correspond to the database name of your application.
 
 5. Test the application running in the new environment before deleting your original environment.
 

@@ -23,14 +23,14 @@ This procedure describes how to view and download database backups using the Eng
 2. Click a link to download a backup file.  
     A MySQL backup file has the SQL extension and a PostgreSQL backup file has the PGZ extension. The file names contain the database name, date and timestamp. For example: `myapp.2011-11-14T16-47-02.sql` and `myapp.2011-11-15T15-20-02.pgz` 
 
-<h2 id="topic1"> View and/or download database backups (eybackup method)</h2>
+<h2 id="topic2"> View and/or download database backups (eybackup method)</h2>
 
 These procedures describe how to view and download database backups using the eybackup tool:
 
-* [For MySQL: To view and/or download database backups (eybackup method)][A]
-* [For PostgreSQL: To view and/or download database backups (eybackup method)][B] 
+* [MySQL: To view and/or download database backups (eybackup method)][A]
+* [PostgreSQL: To view and/or download database backups (eybackup method)][B] 
 
-<h3 id="topicA"> For MySQL: To view and/or download database backups (eybackup method) </h3>
+<h3 id="topicA"> MySQL: To view and/or download database backups (eybackup method) </h3>
 
 1. Via SSH, connect to the application and database instance (for single server environment) or the database instance (for a clustered environment).
 
@@ -63,7 +63,7 @@ These procedures describe how to view and download database backups using the ey
     **Tip:** Don't forget the colon ":" between the IP address and the /path/to/the/db_backup_file.
 
 
-<h3 id="topicB"> For PostgreSQL: To view and/or download database backups (eybackup method)</h3>
+<h3 id="topicB"> PostgreSQL: To view and/or download database backups (eybackup method)</h3>
 
 1. Via SSH, connect to the application and database instance (for single server environment) or the database instance instance (for a clustered environment).
 
@@ -95,6 +95,21 @@ These procedures describe how to view and download database backups using the ey
     For example, `scp deploy@ec2-174-129-17-196.compute-1.amazonaws.com:/mnt/tmp/myapp.2011-11-16T15-20-02.pgz .`
 	    
     **Tip:** Don't forget the colon ":" between the IP address and the /path/to/the/db_backup_file.
+
+
+<h2 id="topic5"> More information</h2>
+
+<table>
+	  <tr>
+	    <th>For more information about...</th><th>See...</th>
+	  </tr>
+	  <tr>
+	    <td>SSHing into an instance</td><td>[[Connect to your instance via SSH|ssh-connect]].</td>
+	  </tr> 
+	<tr>
+	    <td>Loading a backup file into a database</td><td>[[Restore or load a database|database-restore]].</td>
+	  </tr>
+</table>
 
 [1]: #topic1        "topic1"
 [2]: #topic2        "topic2"

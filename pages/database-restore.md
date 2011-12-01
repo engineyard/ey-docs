@@ -15,7 +15,7 @@ Here are a couple of scenarios for restoring / loading your database:
 
 This assumes that you are logged into your Master Database instance and you want to overwrite the current database with one of the backups on the instance. Use eybackup to overwrite the existing database with one of the backups on the instance.
 
-###To restore your MySQL database
+###MySQL:To restore your database (eybackup method)
 
 1. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment).  
 
@@ -37,7 +37,13 @@ This assumes that you are logged into your Master Database instance and you want
 	where `N`"` is the number of the backup you want to overwrite the current database. For example, to restore the tenth backup `sudo -i eybackup -e mysql -d 10:myapp`
 	
 
-###To restore your PostgreSQL database
+###PostgreSQL: To restore your database (eybackup method)
+
+_Coming soon._ 
+
+To restore a PostgreSQL database without eybackup
+1. [[Download the backup file.|database-download]]
+2. [Load it into a PostgreSQL database.][B]
 
 1. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment).  
 
@@ -64,7 +70,7 @@ This assumes that you are logged into your Master Database instance and you want
 
 This scenario assumes that you are moving data from one environment (or instance) to another. You copy the database backup file to a new database instance and then use a native MySQL or PostgreSQL command to load the database backup file.
  
-###To load your MySQL database 
+###MySQL: To load your database 
 
 1. Copy the database backup file to the database instance that you want to load it on.
 
@@ -97,7 +103,7 @@ This scenario assumes that you are moving data from one environment (or instance
     for example
         mysql -u deploy -pMyP4ssW0rd -h ec2-174-129-17-196.compute-1.amazonaws.com myapp < dumpfile.sql
 
-###To load your PostgreSQL database 
+<h3 id="topicB">PostgreSQL: To load your database</h3> 
 
 1. Copy the database backup file to the database instance that you want to load it on.
 
@@ -146,3 +152,4 @@ This scenario assumes that you are moving data from one environment (or instance
 
 [1]: #topic1        "topic1"
 [2]: #topic2        "topic2"
+[B]: #topicB        "topicB"

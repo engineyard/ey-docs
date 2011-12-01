@@ -92,14 +92,14 @@ Some problems can be fixed by restarting the database.
         sudo /etc/init.d/postgresql-9.1 restart
 
 
-
+<h2 id="topic6"> More information</h2>
 
 <table>
   <tr>
 	<th>For more information about...</th><th>See...</th>
   </tr>
   <tr>
-	<td>SSHing into an instance</td><td>[[Connect to your instance via SSH|Connect to your instance via SSH|ssh-connect]].</td>
+	<td>SSHing into an instance</td><td>[[Connect to your instance via SSH|ssh-connect]].</td>
   </tr> 
   <tr>
 	 <td>Finding the password for your database</td><td>[[Finding key information about your database|database-password]].</td>

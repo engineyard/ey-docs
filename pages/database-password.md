@@ -60,6 +60,6 @@ Here are some example database.yml files.
 	    <th>For more information about...</th><th>See...</th>
 	  </tr>
 	  <tr>
-	    <td>SSHing into an instance</td><td>[[Connect to your instance via SSH|Connect to your instance via SSH|ssh-connect]].</td>
+	    <td>SSHing into an instance</td><td>[[Connect to your instance via SSH|ssh-connect]].</td>
 	  </tr> 
 </table>

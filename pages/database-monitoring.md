@@ -66,7 +66,7 @@ When you increase the size of the database instances via the UI, you are effecti
 
 <h2 id="topic3"> Increase the size of the database without downtime</h2>
 
-If you need to increase the size of your master database instance without any downtime, you can do this with assistance from Engine Yard Support. First a larger database slave instance is created and then after replication is complete the slave is promoted to master and the original (smaller) master is decommissioned. 
+If you need to increase the size of your master database instance without any downtime, you can do this with assistance from Engine Yard Support. First, a larger database slave instance is created and then, after replication is complete, the slave is promoted to master and the original (smaller) master is decommissioned. 
 
 
 ###To increase the size of the database volume or database instance _without_ downtime  
@@ -74,7 +74,7 @@ If you need to increase the size of your master database instance without any do
 1. Create a database slave as described in [[Add a database slave to an existing environment|database-environments#topic3]].  
     Select a larger /db volume size or a larger instance size or both.
 
-2. File a ticket with [[Engine Yard Support|http://support.cloud.engineyard.com]] asking to have the database slave promoted to database master.
+2. Submit a ticket with [[Engine Yard Support|http://support.cloud.engineyard.com]] asking to have the database slave promoted to database master.
 
 <h2 id="topic5"> More information</h2>
 
@@ -86,7 +86,7 @@ If you need to increase the size of your master database instance without any do
      <td>Enabling email alerts</td><td>[[Enable alerts|monitoring-setup#enable]]. </td>
    </tr>
    <tr>
-     <td>Alert thresholds</td><td>[[About alerts for your environment|monitoring-alerts]] documentation. </td>
+     <td>Alert thresholds</td><td>[[About alerts for your environment|monitoring-alerts]]. </td>
    </tr>
    <tr>
 	 <td>SSHing into an instance</td><td>[[Connect to your instance via SSH|ssh-connect]].</td>

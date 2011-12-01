@@ -1,10 +1,19 @@
 # Release Notes
 <a href="http://feed43.com/1082485410203701.xml" class="rss">Release Notes RSS Feed</a>
 
+### [[December 2011|cloud-updates-december-2011]]
+
+* [[Minor: Database slaves can be sized differently from the database master|cloud-updates-december-2011#update2]] *December 1st, 2011*
+
+* [[Minor: New Early Access Features page|cloud-updates-december-2011#update1]] *December 1st, 2011*
+
 ### [[November 2011|cloud-updates-november-2011]]
 
+* [[Minor: JRuby is compatible with Ruby 1.9.2|cloud-updates-november-2011#update12]] *November 29th, 2011*
 
 * [[<b>Major:</b> High availability for clustered environment now in Alpha|cloud-updates-november-2011#update11]] *November 28th, 2011*
+
+* [[Fix: engineyard gem update|cloud-updates-november-2011#update12]] *November 26th, 2011*
 
 * [[<b>Major:</b> Engine Yard supports New Relic Server Monitoring|cloud-updates-november-2011#update10]] *November 22nd, 2011*
 

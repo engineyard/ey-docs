@@ -3,13 +3,30 @@
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
 
+<a href=#update12><h2 id="update12">Minor: JRuby is compatible with Ruby 1.9.2</h2></a>
+
+November 29th, 2011
+
+Now, when you create an environment for a JRuby runtime, you can select JRuby that is compatible with Ruby 1.9.2.
+
+![JRuby for Ruby 1.9.2 pulldown](images/jruby4192.png)  
+
+
 <a href=#update11><h2 id="update11"><b>Major:</b> High availability for clustered environment now in Alpha</h2></a>
 
-November 28, 2011
+November 28th, 2011
 
 With high availability, when you create an environment, Engine Yard Cloud automatically deploys your instances across different availability zones in an Amazon Web Services region.  Engine Yard balances the instances and ensures that master and slave instances are in separate zones.
 
 For more information, see [[High availability for clustered environments|environment-high-availability]]. To try out high availability, sign up [[here|signup-high-availability]]. 
+
+<a href=#update12><h2 id="update12">Fix: engineyard gem update</h2></a>
+
+November 26th, 2011
+
+Fixed an issue where the deploy process reinstalled all gems on deploy. This caused short spans of downtime on every deploy.
+
+If you deploy from the Engine Yard CLI using an engineyard gem versioned between 1.4.5 and 1.4.8 (inclusive), we strongly recommend that you upgrade the gem. (The engineyard gem 1.4.4 and below does not have this issue, but upgrading the gem is still recommended.)
 
 <a href=#update10><h2 id="update10"><b>Major:</b> Engine Yard supports New Relic Server Monitoring</h2></a>
 
