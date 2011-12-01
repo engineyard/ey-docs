@@ -3,6 +3,7 @@
 
 ### [[November 2011|cloud-updates-november-2011]]
 
+* [[Minor: JRuby is compatible with Ruby 1.9.2|cloud-updates-november-2011#update12]] *November 29th, 2011*
 
 * [[<b>Major:</b> High availability for clustered environment now in Alpha|cloud-updates-november-2011#update11]] *November 28th, 2011*
 

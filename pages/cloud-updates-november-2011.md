@@ -2,10 +2,18 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update12><h2 id="update12">Minor: JRuby is compatible with Ruby 1.9.2</h2></a>
+
+November 29th, 2011
+
+Now, when you create an environment for a JRuby runtime, you can select JRuby that is compatible with Ruby 1.9.2.
+
+![JRuby for Ruby 1.9.2 pulldown](images/jruby4192.png)  
+
 
 <a href=#update11><h2 id="update11"><b>Major:</b> High availability for clustered environment now in Alpha</h2></a>
 
-November 28, 2011
+November 28th, 2011
 
 With high availability, when you create an environment, Engine Yard Cloud automatically deploys your instances across different availability zones in an Amazon Web Services region.  Engine Yard balances the instances and ensures that master and slave instances are in separate zones.
 
