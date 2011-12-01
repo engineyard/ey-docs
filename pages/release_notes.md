@@ -1,6 +1,10 @@
 # Release Notes
 <a href="http://feed43.com/1082485410203701.xml" class="rss">Release Notes RSS Feed</a>
 
+### [[December 2011|cloud-updates-december-2011]]
+
+* [[Minor: New Early Access Features page|cloud-updates-december-2011#update1]] *December 1st, 2011*
+
 ### [[November 2011|cloud-updates-november-2011]]
 
 * [[Minor: JRuby is compatible with Ruby 1.9.2|cloud-updates-november-2011#update12]] *November 29th, 2011*
