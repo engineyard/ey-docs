@@ -18,6 +18,16 @@ This feature is in **Labs**:
 
 * [[Node.js|deploy-node]] - [[Sign up|signup-node]]
 
+## Get instant access to Alpha and Labs features
+
+If you have a full Engine Yard account, you can access Alpha and Labs features from your Account Settings page instead of through the signup pages above.
+
+<b>To access Alpha and Engine Yard Labs features (full account users only)</b>
+
+1. Navigate to Accounts > Account Settings.
+2. Click Manage Early Access Features (under Services at the bottom of the page).
+3. Enable the Early Access features that you want to try.
+
 ## Get notified about Early Access and Labs features
 
 We notify people about Early Access and Labs features via one mailing list. If you want to be notified, join the [[Beta Announcements|http://groups.google.com/group/ey-beta-announce]] Google group below.

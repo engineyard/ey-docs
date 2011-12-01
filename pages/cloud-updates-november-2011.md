@@ -2,6 +2,7 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+
 <a href=#update12><h2 id="update12">Minor: JRuby is compatible with Ruby 1.9.2</h2></a>
 
 November 29th, 2011
