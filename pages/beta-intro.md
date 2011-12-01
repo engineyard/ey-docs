@@ -25,6 +25,7 @@ If you have a full Engine Yard account, you can access Alpha and Labs features f
 <b>To access Alpha and Engine Yard Labs features (full account users only)</b>
 
 1. Navigate to Accounts > Account Settings.
+2. If you have multiple accounts, click an account name.
 2. Click Manage Early Access Features (under Services at the bottom of the page).
 3. Enable the Early Access features that you want to try.
 

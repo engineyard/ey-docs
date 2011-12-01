@@ -11,12 +11,14 @@ Getting access to Alpha features and Engine Yard Labs features is now faster and
 <b>To access Alpha and Engine Yard Labs features</b>
 
 1. Navigate to Accounts > Account Settings.
+2. If you have multiple accounts, click an account name.
 2. Click Manage Early Access Features (under Services at the bottom of the page).
+    ![The Manage Early Access button](images/manage_early_access.png)
 3. Enable the Early Access features that you want to try.
 
 **Note:** Trial account users must use the signup pages at [[Engine Yard Early Access and Labs|beta-intro]]. Full account users can also use the signup pages.
 
-For more information, see [link to David's blog].
+<!--For more information, see [the blog about this new feature]. -->
 
 [1]: #update1        "update1"
 [2]: #update2        "update2"
