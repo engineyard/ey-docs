@@ -15,7 +15,7 @@ Here are a couple of scenarios for restoring / loading your database:
 
 This assumes that you are logged into your Master Database instance and you want to overwrite the current database with one of the backups on the instance. Use eybackup to overwrite the existing database with one of the backups on the instance.
 
-###MySQL:To restore your database (eybackup method)
+###MySQL: To restore your database (eybackup method)
 
 1. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment).  
 
@@ -34,18 +34,19 @@ This assumes that you are logged into your Master Database instance and you want
     or  
         sudo -i eybackup -e mysql -r N:myapp
 
-	where `N`"` is the number of the backup you want to overwrite the current database. For example, to restore the tenth backup `sudo -i eybackup -e mysql -d 10:myapp`
+	where `N` is the number of the backup you want to overwrite the current database. For example, to restore the tenth backup type `sudo -i eybackup -e mysql -d 10:myapp`
 	
 
 ###PostgreSQL: To restore your database (eybackup method)
 
-_Coming soon._ 
+_Coming soon._  
 
-To restore a PostgreSQL database without eybackup
-1. [[Download the backup file.|database-download]]
-2. [Load it into a PostgreSQL database.][B]
+To restore a PostgreSQL database without eybackup  
 
-1. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment).  
+1. [[Download the backup file.|database-download]]  
+2. [Load the backup file into a PostgreSQL database.][B]
+
+<!-- 1. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment).  
 
 2. Type (to list the backups):
 
@@ -63,7 +64,7 @@ To restore a PostgreSQL database without eybackup
         sudo -i eybackup -e postgresql -r N:myapp
 
 
-    (where "N" is the number of the backup you want to overwrite the current database. For example, to restore the tenth backup `sudo -i eybackup -e postgresql -d 10:myapp`)	
+    (where `N` is the number of the backup you want to overwrite the current database. For example, to restore the tenth backup type `sudo -i eybackup -e postgresql -d 10:myapp`) -->	
 
 
 <h2 id="topic2">Load your database (Scenario 2)</h2>

@@ -2,13 +2,20 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
-<a href=#update2><h2 id="update2">Minor: Database slaves can be sized differently from the database master</h2></a>
+<a href=#update2><h2 id="update2"><b>Major:</b> Database slave instances can be sized differently from the database master instances</h2></a>
 
-December 1st, 2011
+December 2nd, 2011
+
+Now, when you create a custom cluster or add a database slave to an existing cluster, the database slave instance can be larger or smaller than the master database instance.
+
+![Environment page showing both a large and a small db instance](images/largeandsmalldbs.png)
+
+**Scenario 1: A smaller database slave instance.** You use the database slave only for replication. Save money by using a database slave instance that is less powerful than the master database instance. 
+
+**Scenario 2: A larger database slave instance.** Your database master instance gets an average amount of traffic, but your reporting software puts a lot of load on your database slave instance. Make your reporting more robust with a more powerful database slave instance.
 
 
-
-To take full advantage of this new feature, upgrade your environment. See [[Add a database slave to an existing environment|database-environment#topic3]]
+<!--To take full advantage of this new feature, upgrade your environment. See [[Add a database slave to an existing environment|database-environment#topic3]] -->
 
 <a href=#update1><h2 id="update1">Minor: New Early Access Features page</h2></a>
 

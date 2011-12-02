@@ -35,7 +35,7 @@ This procedure describes how to set up a new environment that includes a databas
 1. Create the environment as described in [[Create an environment|environment-create]].
 2. Select Custom.
 3. Set the size of the master database instance (Server size) and the slave, and enter the size for the /db volume.  
-    The /db volume for the read slave will be the same as the master.
+    The /db volume for the slave will be the same size as the master.  
     ![database instance and slave size](images/db_server_n_slave.png)
 4. Click Boot This Configuration.
 
@@ -62,8 +62,13 @@ If you have a basic cluster and want to add database replication, follow this pr
 4. After the database slave boots, click Apply.  
     This generates new database.yml files for the database slave on the Application Master.
 
-5. If your environment hasn't been updated since December 1st, 2011 (i.e. if you see "Enable creation of db slaves with a larger volume than the db master" in the change log), then the /db volume size is not automatically increased and you need to do _one_ of the following:  
-    * Upgrade your environment, or
+
+5. After December 5th, do this step: If your environment hasn't been updated since December 5th, 2011 (i.e. if you see "Enable creation of db slaves with a larger volume than the db master" in the change log), then the /db volume size is not automatically increased and you need to do _one_ of the following:  
+	* Upgrade your environment, or
+	* Via SSH, connect to the database slave instance and increase the size of the /db volume to the volume size entered in step 3 above, or
+	* Submit a ticket with [[Engine Yard Support|http://support.cloud.engineyard.com]] and ask to have /db volume size reset (to the size entered in step 3 above). 
+	
+5. Before December 5th, do this step: Then the /db volume size is not automatically increased and you need to do _one_ of the following:  
     * Via SSH, connect to the database slave instance and increase the size of the /db volume to the volume size entered in step 3 above, or
     * Submit a ticket with [[Engine Yard Support|http://support.cloud.engineyard.com]] and ask to have /db volume size reset (to the size entered in step 3 above).
  
@@ -113,5 +118,3 @@ Choosing between creating a new snapshot or using an older snapshot is a trade-o
 [3]: #topic3        "topic3"
 [4]: #topic4		"topic4"
 [5]: #topic5        "topic5"
-
-<!-- Add a link to High Availability in the more information table. -->
