@@ -12,7 +12,7 @@ Topics on this page:
 
 <h2 id="topic1"> MySQL: Restart the database</h2>
 
-Some problems can be fixed by restarting the database.
+If you change database configuration, you might need to restart the database.
 
 **To restart the MySQL database** 
 
@@ -39,6 +39,8 @@ See [[500 errors after deploying / Gemfile missing database adapter|issue-mysql2
 <h2 id="topic3"> MySQL: Host '...' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'</h2>
 
 ### Symptom
+This error `Host '...' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'` appears, for example, in the application log, /data/app_name/current/log.
+
 This is a security feature of MySQL to prevent unauthorized users from gaining access to your database instance.  After 10 consecutive failed authentications from a specific host that host is barred from further attempts to log in until the administrator flushes the hosts or the database instance is restarted.  Frequent occurrences of this error may indicate an attack or possibly an otherwise undetectable network issue.
 
 ### Solution
@@ -60,9 +62,12 @@ Run the FLUSH HOSTS command, either through the mysql client or through mysqladm
 For more information, see [[http://dev.mysql.com/doc/refman/5.0/en/flush.html]].
 
 
-<h2 id="topic4"> MySQL server has gone away</h2>
+<h2 id="topic4"> Mysql::Error: MySQL server has gone away [query that was trying to run] </h2>
 
 ###Symptom
+
+The application log (in /data/app_name/current/log) shows an error like this:  
+`Mysql::Error: MySQL server has gone away: `.  
 
 Rails relies upon connection pooling to eliminate the time overhead of spawning a database connection when a request comes in; the default connection pool size is 5.  MySQL operates with a default `wait_timeout` setting of 28,800 seconds (8 hours).  If a connection in the pool is inactive for more than 8 hours MySQL closes it to avoid the memory overhead of unused connections.  The next attempt by Rails to use this connection results in the error that the connection has gone away.
 
@@ -71,13 +76,15 @@ This error can also be seen if the MySQL server is not running.
 For more information, see [[http://dev.mysql.com/doc/refman/5.0/en/gone-away.html]].
 
 ### Solution
-Verify MySQL is running on the appropriate database instance.
+Verify MySQL is running on the appropriate database instance. Type: `ps -ef |grep '[m]ysqld'`
 
 [[Rails 2.3|http://guides.rubyonrails.org/2_3_release_notes.html#reconnecting-mysql-connections]] and higher offers the ability to specify `reconnect: true` in the `database.yml`.  Using this functionality results in rails automatically reconnecting to the database if the connection has been closed.
 
+**Note:** `reconnect: true` is now added to database.yml by default. 
+
 <h2 id="topic5">PostgreSQL: Restart the database</h2>
 
-Some problems can be fixed by restarting the database.
+If you change database configuration, you might need to restart the database.
 
 ###To restart the PostgreSQL database
 

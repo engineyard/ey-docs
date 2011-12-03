@@ -1,4 +1,4 @@
-# Managing your Database on Engine Yard Cloud
+# Managing your database on Engine Yard Cloud
 
 This section provides information about using <!-- and configuring --> a database in Engine Yard Cloud.
 

@@ -21,7 +21,7 @@ This procedure describes how to view and download database backups using the Eng
     ![Example list of backup links](images/database_backups.png)
 
 2. Click a link to download a backup file.  
-    A MySQL backup file has the SQL extension and a PostgreSQL backup file has the PGZ extension. The file names contain the database name, date and timestamp. For example: `myapp.2011-11-14T16-47-02.sql` and `myapp.2011-11-15T15-20-02.pgz` 
+    A MySQL backup file has the SQL extension and a PostgreSQL backup file has the PGZ extension. The file names contain the database name, date and timestamp. For example: `myapp.2011-11-14T16-47-02.sql.gz` and `myapp.2011-11-15T15-20-02.pgz` 
 
 <h2 id="topic2"> View and/or download database backups (eybackup method)</h2>
 

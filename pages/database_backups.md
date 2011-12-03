@@ -71,3 +71,8 @@ You perform on-demand backups using the eybackup tool. Each instance comes with 
 
 [1]: #topic1        "topic1"
 [2]: #topic2        "topic2"
+
+
+<!-- Add info about how locking is used with dump style mysql backups (locking for consistency with MyISAM)
+
+Also explain the role of eysnapshot backups in this section as well and how they are used. -->

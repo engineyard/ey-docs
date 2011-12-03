@@ -86,13 +86,14 @@ This scenario assumes that you are moving data from one environment (or instance
 
     for example
 
-        scp myapp.2011-11-14T16-47-02.sql deploy@ec2-174-129-17-196.compute-1.amazonaws.com:/tmp/mysql/dumpfile.sql
+        scp myapp.2011-11-14T16-47-02.sql.gz deploy@ec2-174-129-17-196.compute-1.amazonaws.com:/tmp/mysql/dumpfile.sql
 
 2. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment), and change to the directory where you copied the database backup file in Step 1 (e.g.`cd /tmp/mysql`).
 
 3. Import the database backup file to the database:
 
-        mysql -u [username] -p[password] -h [database host] [app_name] < [filename]
+        gunzip < [filename] | mysql -u [username] -p[password] -h [database host] [app_name]
+		
 
     where
     `[username]` is the user for the database instance. The default user for the Engine Yard Cloud database is `deploy`.  
@@ -102,13 +103,14 @@ This scenario assumes that you are moving data from one environment (or instance
     `[filename]` is the name of the database backup file.  
      
     for example
-        mysql -u deploy -pMyP4ssW0rd -h ec2-174-129-17-196.compute-1.amazonaws.com myapp < dumpfile.sql
+        gunzip < myapp.2011-11-14T16-47-02.sql.gz | mysql -u deploy -pMyP4ssW0rd -h ec2-174-129-17-196.compute-1.amazonaws.com myapp
+		
 
 <h3 id="topicB">PostgreSQL: To load your database</h3> 
 
 1. Copy the database backup file to the database instance that you want to load it on.
 
-    scp [database file] [username]@[database host]:[target directory]/[filename]
+        scp [database file] [username]@[database host]:[target directory]/[filename]
 
     where  
     `[database file]` is the name of the database backup file.  
@@ -140,6 +142,9 @@ This scenario assumes that you are moving data from one environment (or instance
     <th>For more information about...</th><th>See...</th>
   </tr>
   <tr>
+     <td>How to download a backup file</td><td>[[Viewing and downloading database backups|database-download]]. </td>
+   </tr>
+   <tr>
      <td>On-demand backup of the database</td><td>[[Backing up the database|database_backups]]. </td>
    </tr>
    <tr>

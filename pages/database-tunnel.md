@@ -40,7 +40,7 @@ The syntax for creating the SSH tunnel is `ssh -L [local port]:[database host]:[
     `3307` is the local port,  
     `ec2-172-16-139-19.us-west-1.compute.amazonaws.com` is the database host,  
     `3306` is the listening port, and  
-    `deploy` is the username.
+    `deploy` is the database username.
 
 2. Before connecting the external database tool such as MySQL Query Browser or SQLyog, test the connection with a simple tool such as the database console, mysql.  
 (Your tunnel needs to be running for this test.)
@@ -50,7 +50,7 @@ The syntax for creating the SSH tunnel is `ssh -L [local port]:[database host]:[
         mysql -udeploy -pMyP4ssW0rd -P 3307 -h 127.0.0.1
 
     where  
-    `deploy` is the username on the remote host,  
+    `deploy` is the database username on the remote host,  
     `MyP4ssW0rd` is the password for the deploy user on the MySQL database, and  
     `3307` is the local port.
         
@@ -64,7 +64,7 @@ The syntax for creating the SSH tunnel is `ssh -L [local port]:[database host]:[
     `5433` is the local port,  
     `ec2-172-16-139-19.us-west-1.compute.amazonaws.com` is the database host,  
     `5432` is the listening port, and  
-    `deploy` is the username.
+    `deploy` is the database username.
 
 2. Before connecting the external database tool such as pgAdmin, test the connection with a simple tool such as the database console psql.  
     (Your tunnel needs to be running for this test.)
@@ -77,7 +77,7 @@ The syntax for creating the SSH tunnel is `ssh -L [local port]:[database host]:[
     `5433` is the local port,  
     `ec2-172-16-139-19.us-west-1.compute.amazonaws.com` is the database host,  
     `5432` is the listening port, and  
-    `deploy` is the username.
+    `deploy` is the database username.
 
 
     You are prompted for your database password. (psql cannot accept the password from standard input.)

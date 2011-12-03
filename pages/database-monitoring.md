@@ -24,8 +24,8 @@ The /db volume size and load capacity of your environment depends on whether you
 This page describes:  
 
 * [Finding database volume usage][1]
-* [Increasing the size of the database _with_ some downtime][2]
-* [Increasing the size of the database _without_ downtime][3]
+* [Increasing the size of the database with _some_ downtime][2]
+* [Increasing the size of the database with _minimal_ downtime][3]
 
 <h2 id="topic1">Find database volume usage</h2>
 
@@ -42,7 +42,7 @@ You might want to check on database volume usage _before_ you get an alert.
 
 When you increase the size of the database instances via the UI, you are effectively creating a new environment and moving the snapshots of the instances from the old environment to a new environment. This means some downtime for your application. 
 
-###To increase the size of the database volume or database instance via the UI _with_ some downtime
+###To increase the size of the database volume or database instance via the UI with some downtime
 
 1. Make sure that you know the number and size of the server instances in your current environment.
    
@@ -60,21 +60,26 @@ When you increase the size of the database instances via the UI, you are effecti
     **Note:** You cannot decrease the size of the database volume.
 
 5. Select the most recent snapshots from the dropdown.  
-    This ensures that you don't lose data. If there are snapshots are pending, this is indicated in the dropdown.
+    This ensures that you don't lose data.  
+    If there are snapshots are pending, this is indicated in the dropdown; wait until the snapshot is complete.
 
 6. Click Boot This Configuration.
 
-<h2 id="topic3"> Increase the size of the database without downtime</h2>
+<h2 id="topic3"> Increase the size of the database with minimal downtime</h2>
 
-If you need to increase the size of your master database instance without any downtime, you can do this with assistance from Engine Yard Support. First, a larger database slave instance is created and then, after replication is complete, the slave is promoted to master and the original (smaller) master is decommissioned. 
+If you need to increase the size of your master database instance with minimal downtime, you can do this with assistance from Engine Yard Support. First, a larger database slave instance is created and then, after replication is complete, the slave is promoted to master and the original (smaller) master is decommissioned. 
+
+**Note:** This procedure applies only to clustered environments. (Single instances cannot be increased this way.) 
 
 
-###To increase the size of the database volume or database instance _without_ downtime  
+###To increase the size of the database volume or database instance with minimal downtime  
 
 1. Create a database slave as described in [[Add a database slave to an existing environment|database-environments#topic3]].  
     Select a larger /db volume size or a larger instance size or both.
 
-2. Submit a ticket with [[Engine Yard Support|http://support.cloud.engineyard.com]] asking to have the database slave promoted to database master.
+2. Submit a ticket with [[Engine Yard Support|http://support.cloud.engineyard.com]] to arrange promotion of the database slave.  
+    Engine Yard Support works with you to schedule and coordinate the failover process.
+	
 
 <h2 id="topic5"> More information</h2>
 

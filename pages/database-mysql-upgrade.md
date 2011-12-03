@@ -137,7 +137,7 @@ See the MySQL documentation for full details on dumping and restoring a database
     <th>For more information about...</th><th>See...</th>
   </tr>
 <tr>
-    <td>database tasks</td><td>[[Managing your Database|database-intro]] (Many of the tasks apply to MySQL 5.1 and 5.5 as well as to MySQL 5.0.)</td>
+    <td>database tasks</td><td>[[Managing your database|database-intro]] (Many of the tasks apply to MySQL 5.1 and 5.5 as well as to MySQL 5.0.)</td>
   </tr>
 <tr>
     <td>MySQL</td><td>[[MySQL|http://dev.mysql.com/doc]] documentation </td>
