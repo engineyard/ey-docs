@@ -2,7 +2,35 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
-<a href=#update1><h2 id="update11">Minor: New Early Access Features page</h2></a>
+<a href=#update2><h2 id="update2"><b>Major:</b> Database slave instances can be sized differently from the database master instances</h2></a>
+
+December 2nd, 2011
+
+There are two ways that database slaves can be sized differently:  
+
+* Instance sizing
+* /db volume sizing
+ 
+
+**Instance sizing**
+
+Now, when you create a custom cluster or add a database slave to an existing cluster, the database slave can be a larger or a smaller instance than the master database instance.
+
+![Environment page showing both a large and a small db instance](images/dbinstances.png)
+
+*Scenario 1: A smaller database slave instance.* Your database slave is only for replication. Save money by using a database slave instance that is less powerful than the master database instance. 
+
+*Scenario 2: A larger database slave instance.* Your database master instance gets an average amount of traffic, but your reporting software puts a lot of load on your database slave instance. Make your reporting more robust with a more powerful database slave instance.
+
+**/db volume sizing**
+
+Now, when you add a database slave to an existing cluster, the slave can have a /db volume larger than the master database /db volume. 
+
+*Scenario:* The /db volume on your master database is getting full. Add a database slave with a larger volume and after replication is finished, work with Engine Yard Support to promote the slave to master and decommission the original (smaller) master. 
+
+To take advantage of /db volume resizing, upgrade your environment. For more information, see [[Add a database slave to an existing environment|database-environments#topic3]].
+
+<a href=#update1><h2 id="update1">Minor: New Early Access Features page</h2></a>
 
 December 1st, 2011
 

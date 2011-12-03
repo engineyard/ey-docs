@@ -81,7 +81,7 @@ gem "pg"</pre>
 <h2 id="topic4"> Dump and restore an existing PostgreSQL database</h2>
 
 ### Introduction
-If you are currently running a PostgreSQL database (8.x or 9), you need to dump the database, create a new PostgreSQL environment in Engine Yard Cloud, move the database dump file to the database server, and finally load the file into the PostgreSQL database.  
+If you are currently running a PostgreSQL database (8.x or 9), you need to dump the database, create a new PostgreSQL environment in Engine Yard Cloud, move the database dump file to the database instance, and finally load the file into the PostgreSQL database.  
 
 You can perform these tasks yourself (as outlined below) or ask [[Engine Yard Professional Services|http://www.engineyard.com/services]] to do the migration for you.
 
@@ -100,11 +100,12 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 	
 		scp dumpfile newserver:/path/to/file/dumpfile
 	
-	In this case, the new server is the database server assigned for your PostgreSQL 9 Alpha environment.  
+
+	In this case, the new server is the database instance assigned for your PostgreSQL 9 Alpha environment.
 	
 	**Note:** To use the scp command, you need keys and scp setup.
 	 
-3. SSH to the database server.
+3. SSH to the database instance.
 
 4. Import the output file to the new PostgreSQL 9 database. 
 
@@ -121,7 +122,7 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 ### To connect to your PosgreSQL 9 database
 See the [[Managing your database|database-intro]] documentation (Many of the tasks apply to PostgreSQL as well as MySQL.)
 
-1. Find your generated PostgreSQL password (the [[MySQL instructions on passwords|find-your-generated-mysql-password-and-connect-to-your-db]] describe this step)
+1. Find your generated PostgreSQL password (the [[MySQL instructions on passwords|database-password]] describe this step)
 
 2. Extract list of databases
 				

@@ -79,7 +79,7 @@ If you are migrating an existing MySQL database, you'll to perform a dump and re
 
 <h2 id="topic4"> Dump and restore an existing MySQL database</h2>
 
-If you are currently running a MySQL database (5.0.x), you need to dump the database, create a new MySQL environment, move the database dump file to the database server, and finally load the file into the MySQL database.  
+If you are currently running a MySQL database (5.0.x), you need to dump the database, create a new MySQL environment, move the database dump file to the database instance, and finally load the file into the MySQL database.  
 
 You can perform these tasks yourself (as outlined below) or ask [[Engine Yard Professional Services|http://www.engineyard.com/services]] to do the migration for you.
 
@@ -94,7 +94,7 @@ See the MySQL documentation for full details on dumping and restoring a database
 		mysqldump -u _user_ -p_password_ -h _hostname_ _dbname_ > dumpfile.sql  
 		gzip -v dumpfile.sql 
 	
-	**Note:** _dbname_ is the name of the database used by your application. _hostname_ is the name of the server or instance hosting your MySQL 5.0.x database. For more information, see [[Find your generated MySQL password and connect to your DB|find-your-generated-mysql-password-and-connect-to-your-db]].
+	**Note:** _dbname_ is the name of the database used by your application. _hostname_ is the name of the server or instance hosting your MySQL 5.0.x database. For more information, see [[Find your generated MySQL password and connect to your DB|database-password]].
 				
 	For example, 
 	
@@ -115,7 +115,7 @@ See the MySQL documentation for full details on dumping and restoring a database
 4. Import the output file to the new MySQL 5.1/5.5 database. 
 
 		gunzip -v dumpfile.sql
-		mysql -u _user_ -p _password_ -h _hostname_ _dbname_ < dumpfile.sql
+		mysql -u _user_ -p_password_ -h _hostname_ _dbname_ < dumpfile.sql
 	
 5. Test the application running in the new environment.
 
@@ -127,7 +127,7 @@ See the MySQL documentation for full details on dumping and restoring a database
 
 ### To connect to your MySQL 5.1/5.5 database
 
-* See [[Access Your MySQL Database Remotely|access-your-mysql-database-remotely]] and [[Find your generated MySQL password and connect to your DB|find-your-generated-mysql-password-and-connect-to-your-db]].
+* See [[Access Your MySQL Database Remotely|access-your-mysql-database-remotely]] and [[Find your generated MySQL password and connect to your DB|database-password]].
 
 
 <h2 id="topic5"> More information</h2>
@@ -137,7 +137,7 @@ See the MySQL documentation for full details on dumping and restoring a database
     <th>For more information about...</th><th>See...</th>
   </tr>
 <tr>
-    <td>database tasks</td><td>[[Managing your Database|database-intro]] (Many of the tasks apply to MySQL 5.1 and 5.5 as well as to MySQL 5.0.)</td>
+    <td>database tasks</td><td>[[Managing your database|database-intro]] (Many of the tasks apply to MySQL 5.1 and 5.5 as well as to MySQL 5.0.)</td>
   </tr>
 <tr>
     <td>MySQL</td><td>[[MySQL|http://dev.mysql.com/doc]] documentation </td>
