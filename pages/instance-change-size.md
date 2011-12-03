@@ -17,7 +17,7 @@ good idea to also consider resizing your volume sizes during this process as
 well. The default volume size of 5GB (15GB for the database) is a good start, but 
 at a cost of $0.10 per GB per month, it's cheap to switch to a larger volume size 
 and give yourself room to grow later. A good amount to go with generally is 15GB 
-for your application instances and maybe 30GB for your database master. It's best 
+for your application instances and maybe 30GB for your master database. It's best 
 to give yourself a lot of growing room since it requires full termination to increase 
 your volume size.
 

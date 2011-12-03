@@ -1,6 +1,6 @@
 # Troubleshooting your deployment
 
-Here's a list of things to look for when you need to troubleshoot your deployment because it has failed or is not working as expected.
+Here are some things to check when troubleshooting your deployment because it failed or is not working as expected.
 
 Topics on this page:
 
