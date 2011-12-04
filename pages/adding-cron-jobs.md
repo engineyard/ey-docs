@@ -41,7 +41,7 @@ or for Rails 3:
 
 ### Running crons on different instances
 
-As mentioned at the start of this document, the default setup for scheduled jobs is to only configure them on the app master to avoid inadvertently running duplicate jobs. If you want to run cron jobs on other instances, then you need to create a [custom chef recipe|custom_chef_recipes]] to add the jobs to the crontabs of different instances.
+As mentioned at the start of this document, the default setup for scheduled jobs is to only configure them on the app master to avoid inadvertently running duplicate jobs. If you want to run cron jobs on other instances, then you need to create a [[custom chef recipe|custom-chef-recipes]] to add the jobs to the crontabs of different instances.
 
 A common requirement is to have cron jobs running on a utility instance, to achieve this you might write code like the following inside a cookbook recipe file:
 
