@@ -3,6 +3,8 @@
 
 ### [[December 2011|cloud-updates-december-2011]]
 
+* [[Coming soon: Amazon EC2 System Update|cloud-updates-december-2011#update3]] *December 2011*
+
 * [[<b>Major:</b> Database slave instances can be sized differently from the database master instances|cloud-updates-december-2011#update2]] *December 2nd, 2011*
 
 * [[Minor: New Early Access Features page|cloud-updates-december-2011#update1]] *December 1st, 2011*
