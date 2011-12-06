@@ -2,6 +2,14 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update4><h2 id="update5"> Major: MySQL 5.5 is now available with Beta support</h2></a>
+
+December 6th, 2011
+
+MySQL 5.5 brings substantial feature and performance improvements over MySQL 5.0.
+
+For more information, see [[MySQL 5.5 is in Beta|http://www.engineyard.com/blog/2011/mysql-5-5-is-in-beta]] and [[Using MySQL 5.1 or MySQL 5.5 with Engine Yard Cloud|database-mysql-upgrade]].
+
 <a href=#update4><h2 id="update4"> Major: High availability for clustered environment now generally available</h2></a>
 
 December 6th, 2011
