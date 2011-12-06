@@ -3,6 +3,8 @@
 
 ### [[December 2011|cloud-updates-december-2011]]
 
+* [[<b>Major:</b> High availability for clustered environments is now generally available|cloud-updates-december-2011#update4]] *December 6th, 2011*
+
 * [[Coming soon: Amazon EC2 System Update|cloud-updates-december-2011#update3]] *December 2011*
 
 * [[<b>Major:</b> Database slave instances can be sized differently from the database master instances|cloud-updates-december-2011#update2]] *December 2nd, 2011*
@@ -13,7 +15,7 @@
 
 * [[Minor: JRuby is compatible with Ruby 1.9.2|cloud-updates-november-2011#update12]] *November 29th, 2011*
 
-* [[<b>Major:</b> High availability for clustered environment now in Alpha|cloud-updates-november-2011#update11]] *November 28th, 2011*
+* [[<b>Major:</b> High availability for clustered environments now in Alpha|cloud-updates-november-2011#update11]] *November 28th, 2011*
 
 * [[Fix: engineyard gem update|cloud-updates-november-2011#update12]] *November 26th, 2011*
 

@@ -13,4 +13,3 @@ Moving from a single instance to a cluster can be done, but it requires some dow
 [Learn more about EC2 Instances]()
 [Learn more about Elastic IP Addresses]()
 [Learn about the instance bootstrap process]()
-[I get a message *Amazon Out Of Capacity*. What do I need to do?]()

@@ -20,7 +20,6 @@
   * [[Diagnose errors on Engine Yard Cloud|diagnose-errors-on-engine-yard-cloud]]    
   * [[Termination failed error when shutting down an instance|trouble-termination-failed]]
   * [[Troubleshoot SSH|ssh-troubleshooting]]
-  * [[Amazon out of capacity Message|amazon-out-of-capacity]]
   * [[Troubleshooting cron issues|adding-cron-jobs#trouble]]
   * [[Troubleshooting your deployment|deployment-troubleshooting]]
   * [[Troubleshooting Sphinx setup with your application|full-tex-search-with-thinking-sphinx#topic6]]
