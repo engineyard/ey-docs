@@ -1,13 +1,10 @@
 #High availability for clustered environments
 
-High availability for clustered environments is currently in Alpha support on Engine Yard Cloud. To use high availability for clustered environments, sign up [[here|signup-high-availability]].
-
 This page describes:  
 
 * [About high-availability clusters][1]
 * [What to do if a zone fails][2]
 * [Make an existing environment a high-availability environment][3]
-* [Engine Yard Cloud changes for high availability][4]
 
 <h2 id="topic1">About high-availability clusters</h2>
 
@@ -56,12 +53,6 @@ Before high availability, your instances were assigned randomly to availability 
     * Option A: (a) Clone the environment. (b) Test the environment. (c) Use the cloned environment as your production environment. (d) Delete the original environment.
     * Option B: (a) Add a new slave to the current environment. (b) Delete the old slave. (c) Repeat Step 2 above to confirm that both your application and database slaves are in different availability zones from their masters. 
 
-<h2 id="topic4">Engine Yard Cloud changes for high availability</h2>
-
-You might notice the following changes in Engine Yard Cloud after you are signed up for the high-availability Alpha program:  
-
-* When you create a new environment, you cannot choose a specific zone within a region; the zone is chosen automatically.  
-* You no longer get Amazon out-of-capacity errors.
 
 
 
