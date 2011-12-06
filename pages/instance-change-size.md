@@ -42,8 +42,6 @@ your volume size.
       2. Choose the snapshot used to restore these instances.
   8. Click Boot this Configuration.
 
-In some cases, you may run into problems where Amazon has run out of capacity for the instance size you're using (this happens most frequently with Small instances or the extremely large ones). If this happens it would show up on your Dashboard as an instance's status turning red and "Amazon is currently out of capacity" will show as the error. If you get that error, [[read here|amazon-out-of-capacity]] to fix the problem.
-
 Generally speaking, this process is fairly painless aside from how long it can take sometimes. It's highly recommended that you plan to perform this upgrade at a non-peak hour and give yourself plenty of time to sort out any potential issues you may run into.
 
 
