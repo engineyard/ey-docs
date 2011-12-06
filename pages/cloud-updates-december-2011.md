@@ -2,6 +2,20 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update4><h2 id="update4"> Major: High availability for clustered environment now generally available</h2></a>
+
+December 6th, 2011
+
+With high availability, when you create an environment, Engine Yard Cloud automatically deploys your instances across different availability zones in an Amazon Web Services region.  Engine Yard balances the instances and ensures that master and slave instances are in separate zones.
+
+You might notice the following changes in the Engine Yard Cloud UI:  
+
+* When you create a new environment, you cannot choose a specific zone within a region; the zone is chosen automatically.  
+* You no longer get Amazon out-of-capacity errors.
+
+
+For more information, see [[High availability for clustered environments|environment-high-availability]].
+
 <a href=#update3><h2 id="update3">Coming soon: Amazon EC2 System Update</h2></a>
 
 December 5th, 2011
