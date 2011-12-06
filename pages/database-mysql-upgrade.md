@@ -1,29 +1,31 @@
 # Using MySQL 5.1 or MySQL 5.5 with Engine Yard Cloud
 
-The MySQL 5.1 and MySQL 5.5 databases are now candidates for testing on Engine Yard Cloud. Read this page if you want to participate in the MySQL 5.1/5.5 Alpha program.
+The MySQL 5.1 and MySQL 5.5 databases are now candidates for testing on Engine Yard Cloud. Read this page if you want to participate in the MySQL 5.1/5.5 Early Access program.
 
-**Important!** MySQL 5.1/5.5 on Engine Yard Cloud is an Alpha features. Always test in a development or staging environment.
+**Important!** MySQL 5.1/5.5 on Engine Yard Cloud are Early Access features. Always test in a development or staging environment.
 
 
 ### Process
 
 The process for setting up and running your application on MySQL 5.1 or MySQL 5.5 depends on your current environment.
 
+**Note:** MySQL 5.5 is in Beta, and no signup is required.
+
 * _Is this a new application?_ Then do these tasks:
 
-   * [Get access to the Alpha program and ey-beta-talk group][2]  
-   * [Set up an application to use MySQL 5.1/5.5 in Alpha][3]  
+   * For MySQL 5.1: [Get access to the Alpha program and ey-beta-talk group][2]  
+   * [Set up an application to use MySQL 5.1/5.5][3]  
 
 * _Are you running Engine Yard Cloud with MySQL 5.0.x now?_ Then, do these tasks:  
 
-    * [Get access to the Alpha program and ey-beta-talk group][2]  
-    * [Set up an application to use MySQL 5.1/5.5 in Alpha][3]  
+    * For MySQL 5.1: [Get access to the Alpha program and ey-beta-talk group][2]  
+    * [Set up an application to use MySQL 5.1/5.5][3]  
     * [Dump and restore an existing MySQL 5.0.x database][4]
  
 * _Are you migrating a MySQL-based application to Engine Yard Cloud from another platform?_ Then, do these tasks:  
 
-    * [Get access to the Alpha program and ey-beta-talk group][2]  
-    * [Set up an application to use MySQL 5.1/5.5 in Alpha][3]  
+    * For MySQL 5.1: [Get access to the Alpha program and ey-beta-talk group][2]  
+    * [Set up an application to use MySQL 5.1/5.5][3]  
     * [Dump and restore an existing MySQL database][4]
 
 * _Are you using a database other than MySQL?_ Then:  
@@ -39,7 +41,7 @@ The process for setting up and running your application on MySQL 5.1 or MySQL 5.
 Follow this procedure to gain access to the Alpha program and access to the Beta Conversations Google group (ey-beta-talk). Use ey-beta-talk for issues or questions with this Alpha program.
 
 
-### To access the MySQL 5.1/5.5 Alpha program
+### To access the MySQL 5.1 Alpha program
 
 1. [[Request access to the MySQL Alpha program|signup-MySQL]].
 
@@ -49,13 +51,13 @@ Follow this procedure to gain access to the Alpha program and access to the Beta
 
 
 
-<h2 id="topic3"> Set up an application to use MySQL 5.1/5.5 in Alpha </h2>
+<h2 id="topic3"> Set up an application to use MySQL 5.1/5.5 </h2>
 
 Follow this procedure to set up a new environment that uses a MySQL 5.1/5.5 database. You can create new application and a new environment or create a new environment for an existing application. 
 
 If you are migrating an existing MySQL database, you'll to perform a dump and restore _after_ creating a new environment ([Dump and restore an existing MySQL database][3]).
 
-### To use MySQL 5.1/5.5 with Engine Yard Cloud in Alpha
+### To use MySQL 5.1/5.5 with Engine Yard Cloud
 
 1. **Important!** If you have applied any custom chef recipes for MySQL, disable them in your ey-cloud-recipes repository. You may reapply them to your new database instance after completing the tasks on this page.   
     For general information about custom chef recipes, see [[Custom Chef Recipes|custom-chef-recipes]].
@@ -108,7 +110,7 @@ See the MySQL documentation for full details on dumping and restoring a database
 	
 	    scp dumpfile.sql deploy@ec2-174-129-17-196.compute-1.amazonaws.com:/tmp/mysql		
 	
-	**Note** The new server is the database instance assigned for your MySQL 5.1/5.5 Alpha environment that you created [above][3].
+	**Note** The new server is the database instance assigned for your MySQL 5.1/5.5 environment that you created [above][3].
 					 
 3. SSH to the new database instance.
 
@@ -123,7 +125,7 @@ See the MySQL documentation for full details on dumping and restoring a database
 
 
 
-<h2 id="topic8">Connect to your MySQL 5.1/5.5 Database </h2>
+<h2 id="topic8">Connect to your MySQL 5.1/5.5 database </h2>
 
 ### To connect to your MySQL 5.1/5.5 database
 
@@ -155,14 +157,14 @@ See the MySQL documentation for full details on dumping and restoring a database
 
 <h2 id="topic6"> Troubleshooting</h2>
 
-This table contains troubleshooting tips related to the MySQL Alpha program.
+This table contains troubleshooting tips related to MySQL and the Alpha program.
 
 <table>
   <tr>
     <th>Symptom</th><th>Solution</th>
   </tr>
   <tr>
-    <td>I don't have the Database Stack option on my new environment page.</td><td>You don't yet have access to the MySQL Alpha program. <br> Try submitting the request again, noting in the comments field that you are unable to see the Database Stack option. </td>
+    <td>I don't have the Database Stack option for MySQL 5.1 on my new environment page.</td><td>You don't yet have access to the MySQL Alpha program. <br> Try submitting the request again, noting in the comments field that you are unable to see the Database Stack option. </td>
   </tr>
   <tr>
     <td>My application doesn't run in the new MySQL environment.</td><td>Post to the [[Beta Conversations Google group|http://groups.google.com/group/ey-beta-talk]]. To subscribe to the group, see [[Beta Conversations|beta-intro]]. <br> <br>
