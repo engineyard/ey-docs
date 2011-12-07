@@ -2,8 +2,9 @@
 
 ## What is happening with Amazon?
 
-Amazon is in the process of applying patches to their systems. At 
-this time, no action is required. However, to complete the patch process, 
+Amazon is in the process of applying patches to their systems. Alerts will be sent 
+to you via email and dashboard with more instructions on how to proceed when the 
+patch is available for your instances. To complete the patch process, 
 your instances will need to be restarted. Amazon and Engine Yard are 
 currently working on a plan to ensure this is as painless as possible. Engine 
 Yard will provide more information on timeframes shortly. In the meantime, 
