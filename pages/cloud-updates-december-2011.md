@@ -2,7 +2,16 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
-<a href=#update4><h2 id="update5"> Major: MySQL 5.5 is now available with Beta support</h2></a>
+<a href=#update6><h2 id="update6"> Minor: Nginx and Passenger 3 upgrades</h2></a>
+
+December 6th, 2011
+
+* Upgraded Passenger 3 to Passenger 3.0.11.  
+* Upgraded Nginx to 1.0.10 except for Passenger 2 environments.
+
+**Note:** You must upgrade your environment to apply these changes.
+
+<a href=#update5><h2 id="update5"> Major: MySQL 5.5 is now available with Beta support</h2></a>
 
 December 6th, 2011
 
