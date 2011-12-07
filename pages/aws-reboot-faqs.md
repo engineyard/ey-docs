@@ -21,11 +21,13 @@ this process is as seamless as possible.
 
 ## How do I reboot my instances?
 
-First, make sure your database has stopped. For further, instructions, **[[click here|aws-reboot-database]]**.
+**[[Follow these instructions|aws-reboot-old-stack]]** if you are on an older version of the Engine Yard stack.
 
-Next, **[[follow these instructions|aws-reboot-old-stack]]** to update your Chef recipes.
+**[[Follow these instructions|aws-reboot-reboot-instructions]]** if you are on a newer version of the Engine Yard stack.
 
-Last, to reboot the instance, **[[follow these steps|aws-reboot-instructions]]**.
+## How do I know if I am on an old or new stack?
+
+This information was included in the information we emailed you regarding the AWS reboot.
 
 ## How do I protect my data?
 
@@ -33,3 +35,6 @@ In order to minimize chances of database corruption you will want to cleanly shu
 your database prior to your scheduled instance reboot. To learn more about shutting
 down your database properly during this reboot, **[[click here|aws-reboot-database]]**.
 
+## There is upgrade available to my environment, should I upgrade first?
+
+No, we would recommend you wait to update your environment until the reboot maintenance is over. We also recommend not doing any further changes to your environment or application until the reboot maintenance is over.
