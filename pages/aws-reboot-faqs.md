@@ -19,6 +19,13 @@ You will be receiving an email with your specific reboot instructions
 and/or time window.  Please know we are working closely with Amazon to ensure 
 this process is as seamless as possible.
 
+## How do I reboot my instances?
+
+First, make sure your database has stopped. For further, instructions, **[[click here|aws-reboot-database]]**.
+
+Next, if you are not currently an older version of the Engine Yard stack, please **[[follow these instructions|aws-reboot-old-stack]]**. If you are up to date, proceed to the next step.
+
+Last, to reboot the instance, **[[follow these steps|aws-reboot-instructions]]**.
 
 ## How do I protect my data?
 
