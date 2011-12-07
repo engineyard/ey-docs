@@ -23,7 +23,7 @@ this process is as seamless as possible.
 
 First, make sure your database has stopped. For further, instructions, **[[click here|aws-reboot-database]]**.
 
-Next, if you are not currently an older version of the Engine Yard stack, please **[[follow these instructions|aws-reboot-old-stack]]**. If you are up to date, proceed to the next step.
+Next, **[[follow these instructions|aws-reboot-old-stack]]** to update your Chef recipes.
 
 Last, to reboot the instance, **[[follow these steps|aws-reboot-instructions]]**.
 
