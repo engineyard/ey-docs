@@ -23,7 +23,7 @@ this process is as seamless as possible.
 
 **[[Follow these instructions|aws-reboot-old-stack]]** if you are on an **older version** of the Engine Yard stack.
 
-**[[Follow these instructions|aws-reboot-reboot-instructions]]** if you are on a **newer version** of the Engine Yard stack.
+**[[Follow these instructions|aws-reboot-instructions]]** if you are on a **newer version** of the Engine Yard stack.
 
 ## How do I know if I am on an old or new stack?
 
