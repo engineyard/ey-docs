@@ -1,4 +1,4 @@
-# AWS Reboot - Shutting Your Database Down
+# AWS Reboot - Protecting Your Data
 
 In order to minimize chances of database corruption you will want to 
 cleanly shutdown your database prior to your scheduled instance reboot.
@@ -12,7 +12,8 @@ After the maintenance page is up, you can [[ssh to your database|ssh-intro]] ins
 
 ## Shutting down your database
 
-### Database specific shutdown commands
+The following database specific commands will ensure you cleanly shutdown your database server before
+your instances are rebooted.
 
 * **MySQL**: `sudo /etc/init.d/mysql stop`
 
@@ -39,9 +40,8 @@ command and looking for the appropriate processes to be running:
 
 (database_name can be "mysql", "mongod", and "postgres")
 
-If they are not running, you can start them in a similar manner to stopping them as directed below.
-
-### Database specific startup commands
+You can start your database serviers in a similar manner to stopping them as directed below 
+with these database specific startup comands.
 
 * **MySQL**: `sudo /etc/init.d/mysql start`
 
