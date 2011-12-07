@@ -13,7 +13,7 @@ To minimize post-reboot down time for your environment, we have turned off the a
     `/usr/local/ey_resin/bin/ey-enzyme --main --chef-bin /usr/local/ey_resin/bin/chef-solo`
   
     * If you do not have all your configurations captured in a custom chef recipe, you will have to manually start any additional processes -- refer to the notes you gathered before rebooting your instances.
-4. Reboot all utility instances, performing step 3 on them as they become available again. For utility instance with database-like services, follow **[[these instructions|aws-reboot-database]]** to ensure data integrity
+4. Reboot all utility instances, performing step 3 on them as they become available again. For utility instance with database-like services, follow **[[these instructions|aws-reboot-database]]** to ensure data integrity.
 5. Go to each of your application instances (master and slaves), and issue the following command to stop the automatic master takeover from happening when the instances are rebooted:
   
     `sudo -s /usr/local/ey_resin/bin/stonith-stop`
