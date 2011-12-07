@@ -16,14 +16,11 @@ To minimize post-reboot down time for your environment, we have turned off the a
 4. Reboot all utility instances, performing step 3 on them as they become available again.
 5. Go to each of your application instances (master and slaves), and issue the following command to stop the automatic master takeover from happening when the instances are rebooted:
   
-  `sudo -s /usr/local/ey_resin/bin/stonith-stop`
+    `sudo -s /usr/local/ey_resin/bin/stonith-stop`
   
 6. Reboot all application instances.
 7. Repeat step 3 for the application instances.
 
 **Note:** To reboot any instance, ssh onto that instance and issue the following command:
 
-   sudo shutdown -r now
-
-
-
+    sudo shutdown -r now
