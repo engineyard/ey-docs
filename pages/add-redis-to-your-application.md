@@ -20,7 +20,7 @@ The one way to add Redis to your Ruby application on Engine Yard Cloud is to:
 ## Redis Version
 
 The Redis version on the Engine Yard platform was recently updated to
-v2.2.10. For new instances, you won't have to do anything to use this
+v2.4.2. For new instances, you won't have to do anything to use this
 version. If you have a current running application, you may need to
 actually restart the Redis server to apply the changes. Just SSH into
 your instance and run `/etc/init.d/redis restart`.
@@ -43,12 +43,47 @@ to see all of the information about Redis on your instance.
       .
       .
       redis 127.0.0.1:6379>
+      
+## Install Redis on utility instance
+
+If you plan on using Redis in-depth, installing on a Utility instance is
+recommended so it doesn't share resources with your Application server. In
+order to do this, a custom Chef recipe is required. You can about custom Chef 
+recipes [[here|custom-chef-recipes]]. 
+
+Below are the steps for adding it to a Utility instance. They assume a Utility
+instance named 'redis'. You'll need to adjust for your specific environment.
+
+1. Download the [ey-cloud-recipes](http://github.com/engineyard/ey-cloud-recipes)
+to your local computer.
+
+        $ git clone git@github.com/engineyard/ey-cloud-recipes.git
+        
+2. Uncomment `require_recipe "redis"` from the main cookbook (main/recipes/default.rb)
+3. Add a Utility instance named 'redis' to your application if you haven't done so
+already.
+4. Upload and apply the recipes to your environment
+
+        $ ey recipes upload -e <environment_name>
+        $ ey recipes apply -e <environment_name>
+
+You can now connect to the Utility Redis from your Rails application. 
+[Here](https://gist.github.com/1417571) is a link to a Gist that will write out a 
+`redis.yml` configuration file. You can then connect to Redis in an initializer or
+environment file using the following:
+
+    # Load the redis.yml configuration file
+    redis_config = YAML.load_file(Rails.root + 'config/redis.yml')[Rails.env]
+    
+    # Connect to Redis using the redis_config host and port
+    if redis_config
+      $redis = Redis.new(host: redis_config['host'], port: redis_config['port'])
+    end
+
 
 ## Enjoy Redis
 
-Assuming deployment completed without errors, you should then be able to
-do `Redis.new` to connect to the server and start having fun with
-Redis in your application. Some of the things you can do with Redis
+Some of the things you can do with Redis
 are: [using Redis as your Rails cache](http://jimneath.org/2011/03/24/using-redis-with-ruby-on-rails.html#using_redis_as_your_rails_cache_store),
 use Redis for application notifications, [create a note-taking app](https://gist.github.com/86714),
 [[configure and deploy Resque|configure-and-deploy-resque]] and much more.
