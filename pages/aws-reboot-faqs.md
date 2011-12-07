@@ -23,5 +23,5 @@ this process is as seamless as possible.
 
 In order to minimize chances of database corruption you will want to cleanly shutdown 
 your database prior to your scheduled instance reboot. To learn more about shutting
-down your database properly during this reboot, [[click here|aws-reboot-database]].
+down your database properly during this reboot, **[[click here|aws-reboot-database]]**.
 
