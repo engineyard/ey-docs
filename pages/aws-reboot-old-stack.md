@@ -4,8 +4,8 @@ If your environment is running an older version of the Engine Yard stack that is
 
 To minimize post-reboot down time for your environment, we have turned off the automatic Chef run on reboot for you.  While this will protect you from the incompatibility, this will result in processes started by Chef not starting automatically on reboot.
 
-1. Make notes on what processes are running on your instances.  Capture any unique configurations that are not reflected in a customer chef recipe.
-2. Reboot database instances.
+1. Make notes on what processes are running on your instances.  Capture any unique configurations that are not reflected in your custom chef recipe.
+2. When rebooting database instances (or utility instance with database-like services), follow the instructions [[found here|aws-reboot-database]] to ensure database integrity.
 3. Once the instances have rebooted, ssh into them to ensure all processes are running:
   
     * If you have set up configurations via custom chef recipes, you can run the following command (all on one line) to start all processes up again:
