@@ -2,6 +2,14 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update7><h2 id="update7">Fix: engineyard gem update</h2></a>
+
+December 7th, 2011
+
+Version 1.4.13 of the engineyard gem fixes an issue with Gemfiles for private git repositories that use the deploy key.
+
+Previously, in certain cases, accessing private git repositories during bundle install failed when an instance was added that did not have GIT_SSH set correctly. This prevented the addition of new instances to a cluster.
+
 <a href=#update6><h2 id="update6"> Minor: Nginx and Passenger 3 upgrades</h2></a>
 
 December 6th, 2011
