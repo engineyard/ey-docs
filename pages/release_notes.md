@@ -3,6 +3,8 @@
 
 ### [[December 2011|cloud-updates-december-2011]]
 
+* [[<b>Action Req'd</b>: Amazon EC2 System Update|cloud-updates-december-2011#update3]] *December 2011*
+
 * [[Fix: engineyard gem update|cloud-updates-december-2011#update7]] *December 7th, 2011*
 
 * [[Minor: Nginx and Passenger 3 upgrades|cloud-updates-december-2011#update6]] *December 6th, 2011*
@@ -10,8 +12,6 @@
 * [[<b>Major:</b> MySQL 5.5 is now available with Beta support|cloud-updates-december-2011#update5]] *December 6th, 2011*
 
 * [[<b>Major:</b> High availability for clustered environments is now generally available|cloud-updates-december-2011#update4]] *December 6th, 2011*
-
-* [[Coming soon: Amazon EC2 System Update|cloud-updates-december-2011#update3]] *December 2011*
 
 * [[<b>Major:</b> Database slave instances can be sized differently from the database master instances|cloud-updates-december-2011#update2]] *December 2nd, 2011*
 
