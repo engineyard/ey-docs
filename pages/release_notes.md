@@ -3,6 +3,8 @@
 
 ### [[December 2011|cloud-updates-december-2011]]
 
+* [[Fix: engineyard gem update|cloud-updates-december-2011#update7]] *December 7th, 2011*
+
 * [[Minor: Nginx and Passenger 3 upgrades|cloud-updates-december-2011#update6]] *December 6th, 2011*
 
 * [[<b>Major:</b> MySQL 5.5 is now available with Beta support|cloud-updates-december-2011#update5]] *December 6th, 2011*
@@ -21,7 +23,7 @@
 
 * [[<b>Major:</b> High availability for clustered environments now in Alpha|cloud-updates-november-2011#update11]] *November 28th, 2011*
 
-* [[Fix: engineyard gem update|cloud-updates-november-2011#update12]] *November 26th, 2011*
+* [[Fix: engineyard gem update|cloud-updates-november-2011#update18]] *November 26th, 2011*
 
 * [[<b>Major:</b> Engine Yard supports New Relic Server Monitoring|cloud-updates-november-2011#update10]] *November 22nd, 2011*
 

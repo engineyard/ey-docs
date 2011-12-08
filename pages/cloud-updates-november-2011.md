@@ -20,7 +20,7 @@ With high availability, when you create an environment, Engine Yard Cloud automa
 
 For more information, see [[High availability for clustered environments|environment-high-availability]]. To try out high availability, sign up [[here|signup-high-availability]]. 
 
-<a href=#update12><h2 id="update12">Fix: engineyard gem update</h2></a>
+<a href=#update18><h2 id="update18">Fix: engineyard gem update</h2></a>
 
 November 26th, 2011
 
