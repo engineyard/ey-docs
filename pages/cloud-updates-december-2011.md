@@ -2,6 +2,18 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update3><h2 id="update3">Action Req'd: Amazon EC2 System Update</h2></a>
+
+December 8th, 2011
+
+Amazon is in the process of applying patches to their systems. To complete the patch process, your instances need to be restarted. 
+
+**Important!** Check your email for details about your environment and visit our [[AWS Reboot FAQs|aws-reboot-faqs]].
+
+Here is some additional information from Amazon:
+
+_We frequently upgrade our EC2 fleet, with many of our patches and upgrades being applied invisibly to customers.  However, some updates require instances to be restarted and we periodically reboot instances in order to apply these updates.  The upgrade we're currently rolling out to a portion of our fleet requires a short reboot of these customer instances.  We recently released our Scheduled Events functionality which allows customers to have greater visibility into when these reboots are happening going forward.    In addition to added visibility, this enables customers to manage reboots on their own schedule if they want to reboot before the scheduled update window.  This data is available for customers to easily see on the AWS management console as well as through the APIs.  Reboots such as these should be infrequent, but may be necessary from time to time to apply upgrades that strengthen our security, reliability and operational performance._
+
 <a href=#update7><h2 id="update7">Fix: engineyard gem update</h2></a>
 
 December 7th, 2011
@@ -41,13 +53,6 @@ You might notice the following changes in the Engine Yard Cloud UI:
 
 For more information, see [[High availability for clustered environments|environment-high-availability]].
 
-<a href=#update3><h2 id="update3">Coming soon: Amazon EC2 System Update</h2></a>
-
-December 5th, 2011
-
-Amazon is in the process of applying patches to their systems. <b>At this time, no action is required.</b> However, to complete the patch process, your instances will need to be restarted. Amazon and Engine Yard are currently working on a plan to ensure this is as painless as possible. Engine Yard will provide more information on timeframes shortly.  In the meantime, here is some additional information from Amazon:
-
-_We frequently upgrade our EC2 fleet, with many of our patches and upgrades being applied invisibly to customers.  However, some updates require instances to be restarted and we periodically reboot instances in order to apply these updates.  The upgrade we're currently rolling out to a portion of our fleet requires a short reboot of these customer instances.  We recently released our Scheduled Events functionality which allows customers to have greater visibility into when these reboots are happening going forward.    In addition to added visibility, this enables customers to manage reboots on their own schedule if they want to reboot before the scheduled update window.  This data is available for customers to easily see on the AWS management console as well as through the APIs.  Reboots such as these should be infrequent, but may be necessary from time to time to apply upgrades that strengthen our security, reliability and operational performance._
 
 <a href=#update2><h2 id="update2"><b>Major:</b> Database slave instances can be sized differently from the database master instances</h2></a>
 
