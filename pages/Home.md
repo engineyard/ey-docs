@@ -2,6 +2,8 @@
 
 Engine Yard is a Ruby on Rails Platform as a Service that provides the ability to scale from hundreds of users to millions. We are a pioneer in automated Rails application deployment and management in the cloud. We've been a part of the Ruby community for a long time and have contributed to Ruby on Rails, JRuby, Rubinius, and fog.
 
+**Important!** See [[Action Req'd: Amazon EC2 System Updates|cloud-updates-december-2011#update3]] for information about the Amazon EC2 system updates. 
+
 ## In Depth On
 * [[Engine Yard Cloud platform|cloud-intro]]
 * [[Quick start to deploying|getting-started-intro]]
