@@ -19,7 +19,7 @@ To add Redis to your application
         bundle install
 3. Deploy your application.
 
-## Redis version
+## Update the Redis version
 
 New (or newly upgraded) environments have the Engine Yard recommended version of Redis installed. (See [[Engine Yard Technology Stack|cloud-tech-stack]].) If your application is running in an older environment, you might have to restart the Redis server to apply the changes. 
 
@@ -31,50 +31,44 @@ New (or newly upgraded) environments have the Engine Yard recommended version of
         redis-cli
 
 3. At the Redis prompt, type:  
-        info
+        redis 127.0.0.1:6379> info
 
-    Response is:
-        solo i-dd3970b3 ~ # redis-cli
-          redis 127.0.0.1:6379> info
+    The response shows the version number on the first line:
+
           redis_version:2.2.10
-          redis_git_sha1:00000000
-          redis_git_dirty:0
-          .
-          .
-          .
-          redis 127.0.0.1:6379>
 
-4. Note the version number on the first line.
+4. If your version is older that the recommended version (see [[Engine Yard Technology Stack|cloud-tech-stack]]), follow the procedure below to update the Redis version.
 
-    If your version is older that the recommended version (see [[Engine Yard Technology Stack|cloud-tech-stack]]), follow the procedure below to update the Redis version.
+### To update Redis
 
-Just SSH into
-your instance and run `/etc/init.d/redis restart`.
+1. Via SSH, connect to the application and database instance (for single server environment) or the database instance (for a clustered environment).
 
-    solo i-dd3970b3 ~ # /etc/init.d/redis restart
+2. Type:
+
+        sudo /etc/init.d/redis restart
+
       * Starting Redis server ...                      [ ok ]
-    solo i-dd3970b3 ~ # 
+    or
+      * Starting Redis server ...                      [ !! ]
 
 
       
 ## Install Redis on a utility instance
 
-If you plan on using Redis in-depth, installing on a Utility instance is
-recommended so it doesn't share resources with your Application server. In
-order to do this, a custom Chef recipe is required. You can about custom Chef 
-recipes [[here|custom-chef-recipes]]. 
+If you plan to use Redis in-depth, we recommend that you install Redis on a Utility instance. This way, Redis doesn't share resources with your application instance. To do this, you need a custom Chef recipe is required. For more information about custom Chef 
+recipes see [[Custom Chef Recipes|custom-chef-recipes]]. 
 
-Below are the steps for adding it to a Utility instance. They assume a Utility
-instance named 'redis'. You'll need to adjust for your specific environment.
+Here is a procedure for adding Redis to a utility instance named "redis". You'll need to adjust this procedure for your specific environment.
+
+###To install Redis on a utility instance
 
 1. Download the [ey-cloud-recipes](http://github.com/engineyard/ey-cloud-recipes)
 to your local computer.
 
         $ git clone git@github.com/engineyard/ey-cloud-recipes.git
         
-2. Uncomment `require_recipe "redis"` from the main cookbook (main/recipes/default.rb)
-3. Add a Utility instance named 'redis' to your application if you haven't done so
-already.
+2. Uncomment `require_recipe "redis"` from the main cookbook (main/recipes/default.rb).
+3. Add a utility instance named "redis" to your application.
 4. Upload and apply the recipes to your environment
 
         $ ey recipes upload -e <environment_name>
