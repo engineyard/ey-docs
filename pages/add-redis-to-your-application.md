@@ -48,14 +48,15 @@ New (or newly upgraded) environments have the Engine Yard recommended version of
         sudo /etc/init.d/redis restart
 
       * Starting Redis server ...                      [ ok ]
-    or
-      * Starting Redis server ...                      [ !! ]
+
+<!--  I get 
+      * Starting Redis server ...                      [ !! ] -->
 
 
       
 ## Install Redis on a utility instance
 
-If you plan to use Redis in-depth, we recommend that you install Redis on a Utility instance. This way, Redis doesn't share resources with your application instance. To do this, you need a custom Chef recipe is required. For more information about custom Chef 
+If you plan to use Redis in-depth, we recommend that you install Redis on a utility instance. This way, Redis doesn't share resources with your application instance. To do this, you need a custom Chef recipe is required. For more information about custom Chef 
 recipes see [[Custom Chef Recipes|custom-chef-recipes]]. 
 
 Here is a procedure for adding Redis to a utility instance named "redis". You'll need to adjust this procedure for your specific environment.
@@ -74,6 +75,7 @@ to your local computer.
         $ ey recipes upload -e <environment_name>
         $ ey recipes apply -e <environment_name>
 
+<!-- Not sure how I should handle the stuff below. Is it part of a procedure or a procedure on its own. Why and when do I do this? What is Utility Redis? -->
 You can now connect to the Utility Redis from your Rails application. 
 [Here](https://gist.github.com/1417571) is a link to a Gist that will write out a 
 `redis.yml` configuration file. You can then connect to Redis in an initializer or
