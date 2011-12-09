@@ -3,7 +3,7 @@
 
 ### [[December 2011|cloud-updates-december-2011]]
 
-* [[<b>Action Req'd</b>: Amazon EC2 System Update|cloud-updates-december-2011#update3]] *December 2011*
+* [[<b>Action Req'd</b>: Amazon EC2 System Updates|cloud-updates-december-2011#update3]] *December 2011*
 
 * [[Fix: engineyard gem update|cloud-updates-december-2011#update7]] *December 7th, 2011*
 
