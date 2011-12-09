@@ -19,6 +19,11 @@ You will be receiving an email with your specific reboot instructions
 and/or time window.  Please know we are working closely with Amazon to ensure 
 this process is as seamless as possible.
 
+## I've been given a time or window when my instances will be restarted.  When exactly will my instances(s) restart?
+
+If you've received communication asking you to restart your system before a specified time or window, what we have communicated is the _earliest_ your instances would be automatically restarted by Amazon.  Therefore, we highly recommend you restart your instance prior to the time communicated to you.  Once you've restarted your instance(s) they will no longer be subject to automatic reboot by Amazon.
+
+
 ## How do I reboot my instances?
 
 **[[Follow these instructions|aws-reboot-old-stack]]** if you are on an **older version** of the Engine Yard stack.
