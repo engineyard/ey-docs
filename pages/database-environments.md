@@ -6,7 +6,7 @@ This page describes how to:
 
 * [Add a database slave to an existing environment for database replication.][3]
 
-* [Decide whether to use an existing snapshot or take a new snapshot when adding a database slave.][4]
+* [MySQL only: Decide whether to use an existing snapshot or take a new snapshot when adding a database slave.][4]
 
 * [Choose the correct instance size for a database slave.][6]
 
@@ -21,7 +21,7 @@ Engine Yard offers three environment configurations: Single Server, Basic Cluste
 * **Basic Cluster.** The basic cluster does not include a database slave.  
     In non-production environments or environments with small databases, a basic cluster is a good choice. With a basic cluster, the database is not replicated so make sure that you backup frequently.  
     You can add a database slave to an existing basic cluster (see [below][3]).  
-    **Note** _PostgreSQL only:_ If you expect your database server requirements to grow so that you will need a larger database instance, consider starting with a Custom environment using 64-bit instances. PostgreSQL instances cannot be upgraded easily from a High CPU Medium to a High CPU Large instance.  
+    **Note** PostgreSQL only: If you expect your database server requirements to grow so that you will need a larger database instance, consider starting with a Custom environment using 64-bit instances. PostgreSQL instances cannot be upgraded easily from a High CPU Medium to a High CPU Large instance.  
 * **Custom.** For typical applications in production environments, best practice is to use a custom clustered environment containing the following:  
     * One application master
     * An application slave
@@ -63,7 +63,7 @@ If you have a basic cluster and want to add database replication, follow this pr
     For information about choosing instance sizes, see [About Database slave instance sizes][6].
     
 
-3. Clear the check box to create a new snapshot for the slave or select to use a recent snapshot.     
+3. MySQL only: Clear the check box to create a new snapshot for the slave or select to use a recent snapshot.     
     For more information, see [New or existing snapshot for the database slave?][3].  
     **Note:** The check box appears only if a recent snapshot is available.
     
@@ -80,7 +80,7 @@ If you have a basic cluster and want to add database replication, follow this pr
 
 <!-- QUESTION: Do I still have to click Apply after this? PL-6488 -->
 
-<h2 id="topic4">New or existing snapshot for the database slave?</h2>
+<h2 id="topic4">MySQL only: New or existing snapshot for the database slave?</h2>
 
 You can take a snapshot of your environment immediately before creating a new database slave or you can use an existing snapshot (assuming that you have one). 
 

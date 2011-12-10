@@ -2,7 +2,14 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
-<a href=#update3><h2 id="update3">Action Req'd: Amazon EC2 System Update</h2></a>
+<a href=#update8><h2 id="update8">Fix: An issue with New Relic Server Monitoring</h2></a>
+
+December 8th, 2011
+
+Upgraded New Relic to 1.1.2.124 to fix an issue with Server Monitoring.
+
+
+<a href=#update3><h2 id="update3">Action Req'd: Amazon EC2 System Updates</h2></a>
 
 December 8th, 2011
 
