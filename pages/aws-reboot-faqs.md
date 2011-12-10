@@ -46,7 +46,7 @@ The following should yield the lowest downtime for your website:
 * Reboot the Application slaves
     * only after the Application Master is up and running again
 
-Full instructions are found here: http://docs.engineyard.com/aws-reboot-instructions.html
+Full instructions are **[[found here|http://docs.engineyard.com/aws-reboot-instructions.html]]**.
 
 
 
@@ -86,7 +86,7 @@ You should see output similar to:
     the configuration file /etc/nginx/nginx.conf syntax is ok
     configuration file /etc/nginx/nginx.conf test is successful
 
-If you see warnings, do not worry. Generally speaking, these will not prevent nginx from starting. The main thing to look for is the presence of the '[ ok ]' item at the end of the configuration test. If you have concerns, feel free to [[file a ticket with support|https://support.cloud.engineyard.com]]. In general, however, you should be safe to proceed, by issuing the following command:
+If you see warnings, do not worry. Generally speaking, these will not prevent nginx from starting. The main thing to look for is the presence of the '[ ok ]' item at the end of the configuration test. If you have concerns, feel free to **[[file a ticket with support|https://support.cloud.engineyard.com]]**. In general, however, you should be safe to proceed, by issuing the following command:
 
     sudo /etc/init.d/nginx restart
 
