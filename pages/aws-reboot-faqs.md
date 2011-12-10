@@ -91,3 +91,9 @@ If you see warnings, do not worry. Generally speaking, these will not prevent ng
     sudo /etc/init.d/nginx restart
 
 Give it a few seconds, then try accessing your site. It may take a few moments longer on the initial page load, but after that it should be back to normal.
+
+## I ran the reboot and my dashboard is stuck on "Instance is alive, bootstrapping Engine Yard Stack" but it never finishes. What should I do?
+
+To remedy this, click "Apply" once or manually run Chef with the following command:
+
+    /usr/local/ey_resin/bin/ey-enzyme --main --chef-bin /usr/local/ey_resin/bin/chef-solo
