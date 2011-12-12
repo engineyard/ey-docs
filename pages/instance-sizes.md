@@ -6,11 +6,11 @@ seven different instance sizes broken down into three categories.
 **Note:** Engine Yard recommends the High CPU Medium instances when your application starts
 taking on heavier traffic or load.
 
-Learn more about the following instance sizes:
+This page describes:
 
-* [[Normal Instances|instance-sizes#normal]]
-* [[High Memory Instances|instance-sizes#memory]]
-* [[High CPU Instances|instance-sizes#cpu]]
+* [[Normal instances|instance-sizes#normal]]
+* [[High Memory instances|instance-sizes#memory]]
+* [[High CPU instances|instance-sizes#cpu]]
 
   
 <h2 id="normal">Normal instances</h2>
