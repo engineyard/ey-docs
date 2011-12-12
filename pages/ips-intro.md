@@ -1,7 +1,7 @@
 # IP addresses on Engine Yard Cloud
 
 Engine Yard Cloud uses Amazon AWS [[Elastic IP Addresses|http://aws.amazon.com/ec2/]].  
-Each Engine Yard account is initially allotted 20 IP addresses to associate with your 
+Each Engine Yard account is initially allotted five IP addresses to associate with your 
 environments.
 
 
