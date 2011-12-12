@@ -80,6 +80,8 @@ Learn how to [[delete an ip address|ips-delete]] from your Engine Yard account.
 
 <h2 id="getmore"> Get more IP addresses for your account</h2>
 
+Each Engine Yard account is initially allotted five IP addresses. You can request more:
+
 * Submit a ticket with [[Engine Yard Support|http://support.cloud.engineyard.com]] requesting more IP addresses.
 
     **Note:** The standard turnaround time for this is 3 - 5 business days.
