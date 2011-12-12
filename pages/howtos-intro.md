@@ -10,6 +10,7 @@
   * [[Load testing your application with em-proxy|em-proxy]] 
   * [[Implement file uploads with Carrier Wave|use-carrierwave-and-optionally-fog-to-upload-and-store-files]]
   * [[Implement full text search with Sphinx|full-text-search-with-thinking-sphinx]]
+  * [[Add Redis to your application|add-redis-to-your-application]]
 
 ## Queues
 
