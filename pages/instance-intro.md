@@ -12,7 +12,7 @@ meet your CPU, memory, and disk space needs.
 * ### [[Instance types and roles|instance-types]]
   Learn about the different types of instances and their roles on Engine Yard Cloud.
 
-* ###[[Instances limits for your account|instance-limits]]  
+* ###[[Instance limits for your account|instance-limits]]  
   Learn how many instances are allocated to your account and how to increase the allocation.
 
 * ### [[Instance sizes available for your environments|instance-sizes]]
