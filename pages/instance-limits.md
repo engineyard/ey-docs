@@ -1,4 +1,4 @@
-#Instances limits for your account
+#Instance limits for your account
 
 By default, your Engine Yard account is allocated 20 instances. 
 
