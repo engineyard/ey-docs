@@ -2,13 +2,13 @@
 
 [Redis](http://redis.io) is an open source, advanced key-value store. It is often referred to
 as a data structure server because keys can contain strings, hashes, lists,
-sets and sorted sets.
+sets, and sorted sets.
 
 This page describes getting Redis working on your Engine Yard Cloud Ruby application. 
 
 ## Install the Redis gem
 
-Bundling the [Redis gem](http://rubygems.org/gems/redis) into your application.
+First, you need to bundle the [Redis gem](http://rubygems.org/gems/redis) into your application.
 
 ###To add Redis to your application
 
@@ -24,7 +24,7 @@ New (or newly upgraded) environments have the Engine Yard recommended version of
 
 ###To find out your Redis version
 
-1. Via SSH, connect to the application and database instance (for single server environment) or the database instance (for a clustered environment) or a utility server if you have installed Redis there.
+1. Via SSH, connect to the application and database instance (for single server environment), or the database instance (for a clustered environment), or the utility server (if you have installed Redis there).
 
 2. Type:  
         redis-cli
@@ -40,7 +40,7 @@ New (or newly upgraded) environments have the Engine Yard recommended version of
 
 ### To update Redis
 
-1. Via SSH, connect to the application and database instance (for single server environment) or the database instance (for a clustered environment).
+1. Via SSH, connect to the application and database instance (for single server environment), or the database instance (for a clustered environment), or the utility server (if you have installed Redis there).
 
 2. Type:
 
@@ -63,7 +63,7 @@ to your local computer.
         
 2. Uncomment `require_recipe "redis"` from the main cookbook (`main/recipes/default.rb`).
 3. Add a utility instance named "redis" to your application.
-4. Upload and apply the recipes to your environment
+4. Upload and apply the recipes to your environment:
 
         $ ey recipes upload -e <environment_name>
         $ ey recipes apply -e <environment_name>
@@ -88,7 +88,7 @@ environment file using the following:
 
 ## Things to do with Redis
 
-Some of the things you can do with Redis are: 
+Some of the things that you can do with Redis are: 
 
 * [Use Redis as your Rails cache](http://jimneath.org/2011/03/24/using-redis-with-ruby-on-rails.html#using_redis_as_your_rails_cache_store)  
 * Use Redis for application notifications
