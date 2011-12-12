@@ -1,6 +1,6 @@
 # Applications
 
-This section outlines how to manage your application on Engine Yard Cloud. If you're looking to add SSL to your application please see this article: [[SSL Certs|ssl-certificates]].
+This section outlines how to manage your application on Engine Yard Cloud. If you're looking to add SSL to your application please see [[SSL Certs|ssl-certificates]].
 
 ## Add an Application
 

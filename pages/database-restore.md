@@ -137,6 +137,8 @@ This scenario assumes that you are moving data from one environment (or instance
     for example  
         pg_restore -d myapp dumpfile.pgz --clean -U postgres
 
+<h2 id="topic5"> More information</h2>
+
 <table>
   <tr>
     <th>For more information about...</th><th>See...</th>

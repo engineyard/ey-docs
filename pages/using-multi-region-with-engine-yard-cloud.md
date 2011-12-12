@@ -44,9 +44,7 @@ and boot. This environment is now being deployed in the Region you selected.
 
 ## Recreating an existing environment in a new region
   
-  1. Follow the steps in our article on [[cloning your environment|environment-clone]]
-    making sure to select the appropriate region in the configuration form.
-  
+  1. Follow the steps in [[cloning your environment|environment-clone]] to select the appropriate region.    
   2. Change your DNS TTL to the lowest setting, such as 60 seconds.
   3. Enable your [[maintenance page|deployment-maintenance-pages]] for the old environment.
   4. Change your DNS to point to the new environments IP address.

@@ -5,8 +5,7 @@
 an application or set of applications. 
 
 An environment includes Application Instance(s), Database Instance(s), and possibly
-one or more Utility Instances. Check out this article if you want to know more about 
-the various instances types: [[Compute instances on Engine Yard Cloud|instance-types]].
+one or more Utility Instances. For more information about instances types, see [[Compute instances on Engine Yard Cloud|instance-types]].
 
 ## Topics
 

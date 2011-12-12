@@ -1,4 +1,4 @@
-# Application tips and how to articles
+# Application tips and how-to information
 
 
 ## Topics

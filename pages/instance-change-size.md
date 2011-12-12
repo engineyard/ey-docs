@@ -4,7 +4,7 @@ Currently, it's only possible to change the size of instances by terminating you
 
 One thing to keep in mind is that your existing instance configuration is *not stored after you terminate*. When you spin up new instances, the IP you had previously used will be used again by default, but the size and number of instances you used along with any utility instance names will not be saved, so you'll want to take note of what those settings are prior to terminating your environment.
 
-This article covers the following topics:
+This page describes:
 
 * [[Disk Space Considerations|instance-change-size#space]]
 * [[Resizing an Instance|instance-change-size#steps]]

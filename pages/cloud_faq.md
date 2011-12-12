@@ -108,7 +108,7 @@ You setup and control the DNS records for your domain name of your website. You'
 
 If you're just doing staging or testing, no.  If you're ready for production then yes, because you'll need the IP address to point your DNS entries to your IP address.
 
-Read the [[IP Address Overview|ip-addresses]] article for more in-depth information about IP addresses and how they are used with Engine Yard Cloud.
+See [[IP Address Overview|ip-addresses]] for more information about IP addresses and how they are used with Engine Yard Cloud.
 
 <a href=#FAQ15><h2 id="FAQ15"> Do I have sudo access? </h2></a>
 
