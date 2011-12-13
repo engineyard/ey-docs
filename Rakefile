@@ -23,3 +23,8 @@ desc "Deploy to production environment"
 task :production do
   sh "ey deploy --no-migrate -e EY_Documentation"
 end
+
+namespace :db do
+  task :migrate do
+  end
+end
