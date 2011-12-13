@@ -19,7 +19,7 @@ environments as monitoring is disabled by default.
 * ### [[Setup monitoring|monitoring-setup]]
   Learn how to setup monitoring and view alerts for your environments.
   
-* ### [[Understanding alerts for your application|monitoring-alerts]]
+* ### [[About alerts for your application|monitoring-alerts]]
   Learn the different types of alerts and what they mean for your environment.  
 
 * ### [[Uptime monitoring for your application|monitoring-uptime]]

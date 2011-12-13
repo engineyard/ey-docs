@@ -4,7 +4,7 @@ Currently, it's only possible to change the size of instances by terminating you
 
 One thing to keep in mind is that your existing instance configuration is *not stored after you terminate*. When you spin up new instances, the IP you had previously used will be used again by default, but the size and number of instances you used along with any utility instance names will not be saved, so you'll want to take note of what those settings are prior to terminating your environment.
 
-This article covers the following topics:
+This page describes:
 
 * [[Disk Space Considerations|instance-change-size#space]]
 * [[Resizing an Instance|instance-change-size#steps]]
@@ -17,7 +17,7 @@ good idea to also consider resizing your volume sizes during this process as
 well. The default volume size of 5GB (15GB for the database) is a good start, but 
 at a cost of $0.10 per GB per month, it's cheap to switch to a larger volume size 
 and give yourself room to grow later. A good amount to go with generally is 15GB 
-for your application instances and maybe 30GB for your database master. It's best 
+for your application instances and maybe 30GB for your master database. It's best 
 to give yourself a lot of growing room since it requires full termination to increase 
 your volume size.
 
@@ -41,8 +41,6 @@ your volume size.
       1. Choose the appropriate size for each instance.
       2. Choose the snapshot used to restore these instances.
   8. Click Boot this Configuration.
-
-In some cases, you may run into problems where Amazon has run out of capacity for the instance size you're using (this happens most frequently with Small instances or the extremely large ones). If this happens it would show up on your Dashboard as an instance's status turning red and "Amazon is currently out of capacity" will show as the error. If you get that error, [[read here|amazon-out-of-capacity]] to fix the problem.
 
 Generally speaking, this process is fairly painless aside from how long it can take sometimes. It's highly recommended that you plan to perform this upgrade at a non-peak hour and give yourself plenty of time to sort out any potential issues you may run into.
 

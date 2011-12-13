@@ -15,7 +15,7 @@ component update to provide reliability, security, and compatibility within the 
 As a result, you can confidently deploy and manage your application with any Engine Yard product. Read about the many [[benefits|http://www.engineyard.com/products/cloud/benefits]] of using our Platform-as-a-Service.
 
 <p class="note">
-  <strong>Note: </strong>This version is correct as of November 22, 2011.
+  <strong>Note: </strong>This version is correct as of December 6, 2011.
 </p>
 
 <br /><br />
@@ -307,11 +307,15 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="full">0.8.54
+          <li class="full">1.0.10
           </li>
         </ul>
       </td>
       <td>
+        <ul>
+          <li class="full">1.0.10
+          </li>
+        </ul>
         <ul>
           <li class="full">0.8.54
           </li>
@@ -322,6 +326,10 @@ As a result, you can confidently deploy and manage your application with any Eng
         </ul>
       </td>
       <td>
+        <ul>
+          <li class="full">1.0.10
+          </li>
+        </ul>
         <ul>
           <li class="full">0.8.54
           </li>
@@ -410,11 +418,15 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="full">0.8.54-r2/<br>3.0.7
+          <li class="full">1.0.10/3.0.11
           </li>
         </ul>
       </td>
       <td>
+        <ul>
+          <li class="full">1.0.10/3.0.11
+          </li>
+        </ul>
         <ul>
           <li class="full">0.8.54-r2/<br>3.0.7
           </li>
@@ -425,6 +437,10 @@ As a result, you can confidently deploy and manage your application with any Eng
         </ul>
       </td>
       <td>
+        <ul>
+          <li class="full">1.0.10/3.0.11
+          </li>
+        </ul>
         <ul>
           <li class="full">0.8.54-r2/<br>3.0.7
           </li>
@@ -487,7 +503,7 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="experimental">5.5.13
+          <li class="beta">5.5.13
           </li>
 		<li class="experimental">5.1.55
           </li>

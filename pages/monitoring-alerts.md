@@ -1,15 +1,19 @@
-# Understand alerts for your environment
+# About alerts for your environment
 
 ## Load Average
 
-Load average represents the average system load an instance experiences over a period of time.
+Load average represents the average system load an instance experiences over a period of time. 
 
 ###Current Thresholds:
 
-  * Warn: 4 x VCPU
-  * Fail: 10 x VCPU
+  * Warn: 4 x vCPU
+  * Fail: 10 x vCPU
 
-For example: a 1 VCPU, the load would be 4.00 but a 5 VCPU, it would be 20.00.  
+For example: a 1 vCPU, the load would be 4.00 but a 5 vCPU, it would be 20.00.  
+
+**Note:** A vCPU is the same as an ECU (an Amazon EC2 Compute Unit).
+
+For general information about how load average is calculated, see [[Load (computing)|http://en.wikipedia.org/wiki/Load_%28computing%29]].
 
 ## IO-Wait
 

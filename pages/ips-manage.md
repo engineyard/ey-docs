@@ -1,14 +1,16 @@
 # Manage your IP addresses on Engine Yard Cloud
 
-This article provides guidance on how to manage adding, detaching, and 
-attaching IP addresses within an Engine Yard Cloud environment.
+This page provides information on adding, detaching, and 
+attaching IP addresses.
 
-Topics discussed in this article:
+This page describes:
 
   * [[Environments and IP addresses|ips-manage#info]]
   * [[Adding an address|ips-manage#add]]
   * [[Detaching an address|ips-manage#detach]]
   * [[Attaching an address|ips-manage#attach]]
+  * [[Getting more addresses for your account|ips-manage#getmore]]
+
 
 
 <h2 id="info">Environments and IP addresses</h2>
@@ -45,11 +47,10 @@ IP addresses are assigned when configuring an environments instances.
 
 <h2 id="detach">Detach an address</h2>
 
-  * Login to your Engine Yard account.
-  * Click the IP Addresses menu item.
-  * Locate the IP address you want to detach.
-  * Click the Detach link.
-  * Click OK when asked to confirm.
+  1. Login to your Engine Yard account.
+  2. Click the IP Addresses menu item.
+  3. Locate the IP address you want to detach.
+  4. Click the Detach link.
 
 The address is now detached from the associated environment.  You can now reuse
 the ip address and attach to another environment, or delete the ip address if you
@@ -76,3 +77,12 @@ environment.
 ## Delete an address
 There are special considerations to take when deleting an ip address from your account.
 Learn how to [[delete an ip address|ips-delete]] from your Engine Yard account.
+
+<h2 id="getmore"> Get more IP addresses for your account</h2>
+
+Each Engine Yard account is initially allotted five IP addresses. You can request more:
+
+* Submit a ticket with [[Engine Yard Support|http://support.cloud.engineyard.com]] requesting more IP addresses.
+
+    **Note:** The standard turnaround time for this is 3 - 5 business days.
+    

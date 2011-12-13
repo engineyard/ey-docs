@@ -1,21 +1,39 @@
 # Release Notes
 <a href="http://feed43.com/1082485410203701.xml" class="rss">Release Notes RSS Feed</a>
 
+### [[December 2011|cloud-updates-december-2011]]
+
+* [[<b>Major:</b> Rubinius 2.0 (1.8) is available with Alpha support|cloud-updates-december-2011#update10]] *December 15th 2011*  
+
+* [[Fix: An issue with New Relic Server Monitoring|cloud-updates-december-2011#update8]] *December 8th 2011*
+
+* [[<b>Action Req'd</b>: Amazon EC2 System Updates|cloud-updates-december-2011#update3]] *December 8th 2011*
+
+* [[Fix: engineyard gem update|cloud-updates-december-2011#update7]] *December 7th, 2011*
+
+* [[Minor: Nginx and Passenger 3 upgrades|cloud-updates-december-2011#update6]] *December 6th, 2011*
+
+* [[<b>Major:</b> MySQL 5.5 is now available with Beta support|cloud-updates-december-2011#update5]] *December 6th, 2011*
+
+* [[<b>Major:</b> High availability for clustered environments is now generally available|cloud-updates-december-2011#update4]] *December 6th, 2011*
+
+* [[<b>Major:</b> Database slave instances can be sized differently from the database master instances|cloud-updates-december-2011#update2]] *December 2nd, 2011*
+
+* [[Minor: New Early Access Features page|cloud-updates-december-2011#update1]] *December 1st, 2011*
+
 ### [[November 2011|cloud-updates-november-2011]]
 
+* [[Minor: JRuby is compatible with Ruby 1.9.2|cloud-updates-november-2011#update12]] *November 29th, 2011*
 
-<<<<<<< HEAD
-* [[<b>Major</b>: Rubinius 2.0 (1.8) is available with Alpha support|cloud-updates-november-2011#update8]] *November 22nd, 2011*
-=======
-* [[<b>Major:</b> High availability for clustered environment now in Alpha|cloud-updates-november-2011#update8]] *November 28th, 2011*
+* [[<b>Major:</b> High availability for clustered environments now in Alpha|cloud-updates-november-2011#update11]] *November 28th, 2011*
+
+* [[Fix: engineyard gem update|cloud-updates-november-2011#update18]] *November 26th, 2011*
 
 * [[<b>Major:</b> Engine Yard supports New Relic Server Monitoring|cloud-updates-november-2011#update10]] *November 22nd, 2011*
 
 * [[Minor: Redis 2.4.2 upgrade|cloud-updates-november-2011#update9]] *November 22nd, 2011*
 
 * [[Fix: Assorted fixes for Engine Yard stack|cloud-updates-november-2011#update8]] *November 22nd, 2011*
->>>>>>> master
->>>>>>> master
 
 * [[<b>Major:</b> Engine Yard announces Engine Yard Labs program and Node.js|cloud-updates-november-2011#update7]] *November 16th, 2011*
 

@@ -10,6 +10,7 @@
   * [[Load testing your application with em-proxy|em-proxy]] 
   * [[Implement file uploads with Carrier Wave|use-carrierwave-and-optionally-fog-to-upload-and-store-files]]
   * [[Implement full text search with Sphinx|full-text-search-with-thinking-sphinx]]
+  * [[Add Redis to your application|add-redis-to-your-application]]
 
 ## Queues
 
@@ -20,11 +21,10 @@
   * [[Diagnose errors on Engine Yard Cloud|diagnose-errors-on-engine-yard-cloud]]    
   * [[Termination failed error when shutting down an instance|trouble-termination-failed]]
   * [[Troubleshoot SSH|ssh-troubleshooting]]
-  * [[Amazon out of capacity Message|amazon-out-of-capacity]]
   * [[Troubleshooting cron issues|adding-cron-jobs#trouble]]
   * [[Troubleshooting your deployment|deployment-troubleshooting]]
   * [[Troubleshooting Sphinx setup with your application|full-tex-search-with-thinking-sphinx#topic6]]
-  * [[MySQL error Troubleshooting|mysql-troubleshooting]]
+  * [[MySQL error Troubleshooting|database-troubleshooting]]
   * [[500 errors after deploying (known issue)|issue-mysql2-adapter]]
   * [[Error in the deployment log "Please install the mysql2 adapter" (known issue)|issue-mysql2-adapter]]
   * [[Can't install RMagick 2.13.1. You must have ImageMagick 6.4.9 or later. (known issue)|imagemagick-rmagick-may-26]]
