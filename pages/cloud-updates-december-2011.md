@@ -2,13 +2,21 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
-<a href=#update10><h2 id="update10">Major: Rubinius 2.0 (1.8) is available with Alpha support</h2></a>
+<a href=#update10><h2 id="update10">Major: Rubinius 2.0 (1.8) and the Puma web server are available with Alpha support</h2></a>
 
 December 15th, 2011
+
+**Rubinius 2.0**
 
 Rubinius 2.0 (language mode Ruby 1.8) Developer Preview is available in Engine Yard Cloud with Alpha support. ([[Sign up|signup-rubinius]] to participate in the program.)
 
 Rubinius 2.0 offers improved performance, parallelism, and better memory usage. For general information about Rubinius 2, see [[Inside the Rubinius 2.0 Preview Release|http://rubini.us/2011/06/07/inside-rubinius-20-preview/]].
+
+**Puma**  
+
+Puma is a small, concurrent Ruby web server for running rack applications. Puma is very fast because it uses a Ragel extension that provides fast and accurate HTTP 1.1 protocol parsing. 
+ 
+Puma is available for use with the Rubinius runtime. (You can choose Puma or Passenger 3 for the Application Server Stack when you select a Rubinius runtime.)
 
 <a href=#update8><h2 id="update8">Fix: An issue with New Relic Server Monitoring</h2></a>
 
