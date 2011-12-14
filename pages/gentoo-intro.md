@@ -47,6 +47,8 @@ To search for a package, inside your environment use the "eix" command. For exam
     			1.2.4!p[1] "amd64 x86"
     	(2.0)
     		~	2.0.0!p[1] "~amd64 ~x86"
+    		~	2.0.0-r1!p[1] "~amd64 ~x86"
+    		~	2.0.0-r2!p[1] "~amd64 ~x86"
          Homepage:            http://rubini.us/
          Description:         An environment for Ruby, the programming language that provides performance balanced with accessibility, focusing on improving programming productivity.
 
@@ -61,6 +63,13 @@ To search for a package, inside your environment use the "eix" command. For exam
     
 On this system ("on this portage") there are two rubinius packages - dev-lang/rubinius and dev-lang/rubinius19. The latter is pre-wired into ruby 19 mode. The former is in ruby 18 mode.
 
+## I cannot see a package that should be there
+
+If you run "emerge rubinius" and do not see a release that should exist, then you may need to update the eix database of packages on the system. You can do that by:
+
+* Pressing "Apply" or "Upgrade" on the dashboard for this environment
+* Running "update-eix" on the system.
+
 ## How do I install a package into my environment?
 
 To install the latest available rubinius version:
@@ -72,9 +81,12 @@ To install the latest available rubinius version:
 
 What?! Why did you get 1.2.4 instead of 2.0? The versions with the tilde (~), such as 2.0.0 above, are "masked" which broadly means "not fully supported by Engine Yard". Specifically it means you do not get them by default and require extra effort to install this package.
 
-To install the masked 2.0.0 version on an x86 instance (assumes running as root):
+To install the masked 2.0.0 version on an x86 instance (assumes running as root), first unmask it via package keywords:
 
-    ACCEPT_KEYWORDS="~x86" emerge rubinius
+    echo "=dev-lang/rubinius-2.0*" >> /etc/portage/package.keywords/rubinus
+    emerge =rubinius-2.0.0-r2
+
+But you should do this only for testing a package. Please remember that in the Cloud, instances come and go, and the best way to be able to build new instances into an environment in a repeatable way is with custom recipes.
 
 ## How do I install a package using custom recipes?
 
