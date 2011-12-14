@@ -2,6 +2,16 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update9><h2 id="update9">Minor: engineyard gem update</h2></a>
+
+December 13th, 2011
+
+Version 1.4.14 of the engineyard gem includes the following enhancements:  
+
+* Deploy logs now show more information for failing deploys.  
+* Show the user name of the person who triggers a deploy as deployed_by in deploy hooks.
+* Minor fix for checking the status of applications that have not yet been deployed.
+
 <a href=#update8><h2 id="update8">Fix: An issue with New Relic Server Monitoring</h2></a>
 
 December 8th, 2011
@@ -15,7 +25,7 @@ December 8th, 2011
 
 Amazon is in the process of applying patches to their systems. To complete the patch process, your instances need to be restarted. 
 
-**Important!** Check your email for details about your environment and visit our [[AWS Reboot FAQs|aws-reboot-faqs]].
+**Important!** If your instances have not yet been restarted, check your email for details about your environment and visit our [[AWS Reboot FAQs|aws-reboot-faqs]].
 
 Here is some additional information from Amazon:
 
