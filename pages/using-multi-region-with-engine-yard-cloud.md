@@ -5,7 +5,7 @@ With Multi-Region in Engine Yard Cloud, an entire environment and its instances
 can be located in a particular geographic region around the world. 
 
 If a majority of your application users are based in a certain region, then locate your environment in the region that is closest to those users. This can lower latency and response
-times for your application users in a that region.
+times for your users in that region.
 
 
 These AWS regions are supported:

@@ -3,6 +3,8 @@
 
 ### [[December 2011|cloud-updates-december-2011]]
 
+* [[Minor: Engine Yard now supports the AWS regions Oregon and Brazil|cloud-updates-december-2011#update10]] *December 16th 2011*
+
 * [[Minor: engineyard gem update|cloud-updates-december-2011#update9]] *December 13th 2011*
 
 * [[Fix: An issue with New Relic Server Monitoring|cloud-updates-december-2011#update8]] *December 8th 2011*
