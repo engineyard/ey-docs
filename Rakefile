@@ -8,7 +8,7 @@ end
 desc "Run the gollum server"
 task :serve do
   port = ENV['PORT'] || "3011"
-  sh "bundle exec gollum-site serve -p #{port}"
+  sh "bundle exec gollum-site serve -p #{port} --watch"
 end
 
 desc "Generate and run the gollum site in development mode"

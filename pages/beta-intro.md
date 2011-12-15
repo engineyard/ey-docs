@@ -2,21 +2,33 @@
 
 **Important!** Always test Early Access (Alpha or Beta) and Engine Yard Labs features very carefully in a development or staging environment.
 
-No features are in Beta. 
+This feature is in Beta:
+
+* [[MySQL 5.5|database-mysql-upgrade]]
 
 These features are in **Alpha**:  
 
-* [[High availability|environment-high-availability]] - [[Sign up|signup-high-availability]]
 * [[Ruby 1.9.3|ruby-193]] - [[Sign up|signup-ruby193]]
-* [[MySQL 5.1 and 5.5|database-mysql-upgrade]] - [[Sign up|signup-mysql]]
+* [[MySQL 5.1|database-mysql-upgrade]] - [[Sign up|signup-mysql]]
 * [[PostgreSQL 9|postgresql]] - [[Sign up|signup-postgresql]]
 * [[Rubinius|rubinius]] - [[Sign up|signup-rubinius]]
 
-Sign up to get access to Alpha features. The high availability, MySQL, and PostgreSQL features require full accounts. If you have a trial account and want to upgrade to a full account, see [[Upgrading free trial account|upgrading-free-trial-to-full-account]].
+Sign up to get access to Alpha features. The MySQL and PostgreSQL features require full accounts. If you have a trial account and want to upgrade to a full account, see [[Upgrading free trial account|upgrading-free-trial-to-full-account]].
 
 This feature is in **Labs**:
 
 * [[Node.js|deploy-node]] - [[Sign up|signup-node]]
+
+## Get instant access to Alpha and Labs features
+
+If you have a full Engine Yard account, you can access Alpha and Labs features from your Account Settings page instead of through the signup pages above.
+
+<b>To access Alpha and Engine Yard Labs features (full account users only)</b>
+
+1. Navigate to Accounts > Account Settings.
+2. If you have multiple accounts, click an account name.
+2. Click Manage Early Access Features (under Services at the bottom of the page).
+3. Enable the Early Access features that you want to try.
 
 ## Get notified about Early Access and Labs features
 

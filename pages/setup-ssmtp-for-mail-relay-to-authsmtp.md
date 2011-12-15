@@ -9,7 +9,7 @@ Our recommendation is to get an account with one of the following providers:
   * [[AuthSMTP|http://www.authsmtp.com]]
   * [[SMTP.com|http://smtp.com]]
 
-After you have your account set up, take note of your username/password and come back to this article.
+After you have your account set up, take note of your username/password and come back to this page.
 
 **Note:** If using AuthSMTP, go into the control panel and enable SSL access to your mail relay.
 
