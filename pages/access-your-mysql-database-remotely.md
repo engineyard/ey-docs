@@ -14,7 +14,7 @@ The basic syntax for the connection is:
 
 So lets start filling in the pieces:
 
-  * __[local port]__ This is the local port that you will connect you application to.  If you have a local MySQL installation on your local system it will be running on port 3306 by default, so we recommend using 3307 for this value.
+  * __[local port]__ This is the local port that you will connect your application to.  If you have a local MySQL installation on your local system it will be running on port 3306 by default, so we recommend using 3307 for this value.
   
   * __[dbhost]__ This is the hostname or IP address of the database host relative to the [remote host] which you connected to.  If the [remote host] is the database instance you will want to set this to 127.0.0.1 (so it refers to itself).  If you used an application instance as [remote host] then you can use the value of "host:" from your database.yml instead.
   
