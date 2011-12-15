@@ -2,11 +2,13 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
-<a href=#update9><h2 id="update9">Minor: engineyard gem update</h2></a>
+<a href=#update9><h2 id="update9">Minor: engineyard gem updates</h2></a>
 
-December 13th, 2011
+December 14th, 2011
 
-Version 1.4.14 of the engineyard gem includes the following enhancements:  
+Version 1.4.15 of the engineyard gem contains some minor interface improvements.  
+
+Version 1.4.14 of the engineyard gem contains these enhancements:  
 
 * Deploy logs now show more information for failing deploys.  
 * Show the user name of the person who triggers a deploy as deployed_by in deploy hooks.
