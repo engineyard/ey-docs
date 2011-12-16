@@ -200,6 +200,9 @@ These are the available methods:
     * `app`: a non-master application server
     * `util`: a utility server. The `current_name` method will allow you to distinguish between different types of utility servers.
 
+  * `deployed_by()`: <br />
+    the name of the user who triggered the current deployment, e.g. "John Smith".
+	
   * `environment()`: <br />
     the value of the `RAILS_ENV`, `RACK_ENV`, and `MERB_ENV` environment variable.
 

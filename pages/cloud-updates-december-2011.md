@@ -11,7 +11,7 @@ Version 1.4.15 of the engineyard gem contains some minor interface improvements.
 Version 1.4.14 of the engineyard gem contains these enhancements:  
 
 * Deploy logs now show more information for failing deploys.  
-* Show the user name of the person who triggers a deploy as deployed_by in deploy hooks.
+* Show the user name of the person who triggers a deploy as deployed_by in deploy hooks. (See [[Using deploy hooks|use-deploy-hooks-with-engine-yard-cloud]].)
 * Minor fix for checking the status of applications that have not yet been deployed.
 
 <a href=#update8><h2 id="update8">Fix: An issue with New Relic Server Monitoring</h2></a>
