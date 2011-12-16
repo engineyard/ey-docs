@@ -7,16 +7,20 @@ This page describes:
 * [Setting the frequency and number of scheduled database backups][1]
 * [Making an on-demand backup of the database][2] 
 
-By default, the database is backed up every 24 hours, starting around 1:10 am Pacific time (server time) and the last 10 days of backups are kept. Start times can be configured through cron jobs and custom chef recipes.
+By default, the database is backed up every 24 hours, starting around 1:10 am Pacific time (server time) and the last 10 days of backups are kept. Backup frequency and number of backups kept can be configured through the UI. Start times can be configured through cron jobs and custom chef recipes. 
 
 <h2 id="topic0">Types of database backups</h2>
 
 Engine Yard backs up your database in two ways:  
 
-* <b>Snapshots</b> are incremental EBS copies of the /db volume. By default, these snapshots are made every night at 1:00 am Pacific time. Snapshots are used to rebuild the instance, build a slave database instance, or create a copy (clone) of the database instance.
-* <b>Database backup files</b> are SQL formatted dumps of the application's database. Database backup files are used for selective or full data restores, or for downloading locally. An advantage of database backup files is that the data integrity is checked when the file is written.
 
-Database backup files are discussed on this page. For information about snapshots, see [[Using snapshots|using-snapshots]].
+* <b>Database backup files</b> are dumps of the application's database (SQL format files from mysqldump or archive files from pg_dump). Database backup files can be used for selective or full data restores and for downloading locally. An advantage of database backup files is that the data integrity is checked as the file is written.  
+
+    Database backup files are discussed on this page. 
+
+* <b>Snapshots</b> are incremental EBS copies of the /db volume. By default, these snapshots are made every night at 1:00 am Pacific time. Snapshots are used to rebuild the instance, build a slave database instance, or create a copy (clone) of the database instance. Snapshots are fast and incremental but not a replacement for database backup files because snapshots do not check data integrity.  
+
+    For information about snapshots, see [[Using snapshots|using-snapshots]].
 
 <h2 id="topic1">Changing the frequency and number of scheduled backups</h2>
 
