@@ -21,23 +21,24 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
   <div class="col col-first">
     <h2>Updated documentation</h2>
     <ul>
-  	 	<li>
+  	  
+	  <li>
 		     [[Engine Yard Cloud updates December 2011|cloud-updates-december-2011]]
-		 </li>
-		
-		 <li>
-	     [[Using MySQL 5.1 or MySQL 5.5 with Engine Yard Cloud|database-mysql-upgrade]]
-     </li>
-	 
-	 <li>
-         [[Engine Yard Technology Stack|cloud-tech-stack]]
-     </li>
-     <li>
-         [[Engine Yard Early Access and Labs|beta-intro]]
+	  </li>
+	  <li>
+         [[Using multi-region on Engine Yard Cloud|using-multi-region-with-engine-yard-cloud]]
       </li>
 	  <li>
-	     [[Engine Yard Cloud updates November 2011|cloud-updates-november-2011]]
+		     [[Using deploy hooks|use-deploy-hooks-with-engine-yard-cloud]]
 	  </li>	
+	  <li>
+	     [[Using MySQL 5.1 or MySQL 5.5 with Engine Yard Cloud|database-mysql-upgrade]]
+      </li>
+	 
+	  <li>
+         [[Engine Yard Technology Stack|cloud-tech-stack]]
+      </li>
+      
     </ul>   
   </div>
   

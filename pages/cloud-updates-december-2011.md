@@ -2,9 +2,9 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
-<a href=#update10><h2 id="update10">Minor: Engine Yard now supports the AWS regions Oregon and Brazil</h2></a>
+<a href=#update10><h2 id="update10"><b>Major:</b> Engine Yard now supports the AWS regions Oregon and Brazil</h2></a>
 
-December 16th, 2011
+December 19th, 2011
 
 You can now choose to locate your Engine Yard environment in any of seven AWS regions. 
 The two newest regions are:  
@@ -14,14 +14,16 @@ The two newest regions are:
 
 For more information, see [[Using multi-region on Engine Yard Cloud|using-multi-region-with-engine-yard-cloud]].
 
-<a href=#update9><h2 id="update9">Minor: engineyard gem update</h2></a>
+<a href=#update9><h2 id="update9">Minor: engineyard gem updates</h2></a>
 
-December 13th, 2011
+December 14th, 2011
 
-Version 1.4.14 of the engineyard gem includes the following enhancements:  
+Version 1.4.15 of the engineyard gem contains some minor interface improvements.  
+
+Version 1.4.14 of the engineyard gem contains these enhancements:  
 
 * Deploy logs now show more information for failing deploys.  
-* Show the user name of the person who triggers a deploy as deployed_by in deploy hooks.
+* Show the user name of the person who triggers a deploy as deployed_by in deploy hooks. (See [[Using deploy hooks|use-deploy-hooks-with-engine-yard-cloud]].)
 * Minor fix for checking the status of applications that have not yet been deployed.
 
 <a href=#update8><h2 id="update8">Fix: An issue with New Relic Server Monitoring</h2></a>
