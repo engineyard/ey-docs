@@ -12,12 +12,20 @@ For production quality control, Engine Yard Cloud uses a Gentoo package distribu
 
 Engine Yard manages is own highly secure, highly optimized Gentoo Portage that is tuned for the specific purpose of running your web applications.
 
+## Before proceeding
+
+In order to follow the examples/instructions below, you will need an environment booted, to have SSH'd into it:
+
+    > ey ssh -e myenvironment
+    
+Please don't do destructive things to your production environment. Instead, use staging environments or new environments.
+
 ## What packages do I have installed?
 
 To see what packages are installed on your system we turn to the helpful tool genlop.
 
-    # emerge genlop
-    # genlop -el
+    $ sudo emerge genlop
+    $ sudo genlop -el
     ...
     Tue Dec 13 19:57:21 2011 >>> dev-perl/DateManip-5.54
     Tue Dec 13 19:57:24 2011 >>> dev-perl/HTML-Tree-3.23
@@ -74,7 +82,7 @@ If you run "emerge rubinius" and do not see a release that should exist, then yo
 
 To install the latest available rubinius version:
 
-    # emerge dev-lang/rubinius
+    # sudo emerge dev-lang/rubinius
     ...
     >>> Extracting dev-lang/rubinius-1.2.4
     >>> Installing dev-lang/rubinius-1.2.4
@@ -83,8 +91,8 @@ What?! Why did you get 1.2.4 instead of 2.0? The versions with the tilde (~), su
 
 To install the masked 2.0.0 version on an x86 instance (assumes running as root), first unmask it via package keywords:
 
-    echo "=dev-lang/rubinius-2.0*" >> /etc/portage/package.keywords/rubinus
-    emerge =rubinius-2.0.0-r2
+    $ sudo sh -lc 'echo "=dev-lang/rubinius-2.0*" >> /etc/portage/package.keywords/rubinus'
+    $ sudo emerge =rubinius-2.0.0-r2
 
 But you should do this only for testing a package. Please remember that in the Cloud, instances come and go, and the best way to be able to build new instances into an environment in a repeatable way is with custom recipes.
 
