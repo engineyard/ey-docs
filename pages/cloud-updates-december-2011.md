@@ -2,6 +2,21 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update10><h2 id="update10">Minor: Engine Yard stack upgrades</h2></a>
+
+December 19th, 2011
+
+The following upgrades have been made to the Engine Yard stack:  
+
+* HAProxy to 1.4.18
+* Rsync to 3.0.9
+* Monit to 5.3.1
+* Redis to 2.4.4
+* Rubinius 2.0.0
+
+These changes are applied when you upgrade your environment.
+
+
 <a href=#update9><h2 id="update9">Minor: engineyard gem updates</h2></a>
 
 December 14th, 2011

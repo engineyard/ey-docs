@@ -153,13 +153,13 @@ As a result, you can confidently deploy and manage your application with any Eng
       <td></td>
       <td>
         <ul>
-          <li class="experimental" title='Experimental'>1.2.4
+          <li class="experimental" title='Experimental'>2.0.0
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="experimental" title='Experimental'>1.2.4
+          <li class="experimental" title='Experimental'>2.0.0
           </li>
         </ul>
       </td>
@@ -394,19 +394,19 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="full">1.4.2
+          <li class="full">1.4.18
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="full">1.4.2
+          <li class="full">1.4.18
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="full">1.4.2
+          <li class="full">1.4.18
           </li>
         </ul>
       </td>
@@ -641,19 +641,19 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="beta" title='Beta'>2.4.2
+          <li class="beta" title='Beta'>2.4.4
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="beta" title='Beta'>2.4.2
+          <li class="beta" title='Beta'>2.4.4
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="beta" title='Beta'>2.4.2
+          <li class="beta" title='Beta'>2.4.4
           </li>
         </ul>
       </td>
