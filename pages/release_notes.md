@@ -3,7 +3,9 @@
 
 ### [[December 2011|cloud-updates-december-2011]]
 
-* [[<b>Major:</b> Engine Yard now supports the AWS regions Oregon and Brazil|cloud-updates-december-2011#update10]] *December 19th 2011*
+* [[<b>Major:</b> Engine Yard now supports the AWS regions Oregon and Brazil|cloud-updates-december-2011#update11]] *December 20th 2011*
+
+* [[Minor: Engine Yard stack upgrades|cloud-updates-december-2011#update10]] *December 19th, 2011*
 
 * [[Minor: engineyard gem updates|cloud-updates-december-2011#update9]] *December 14th, 2011*
 
