@@ -41,7 +41,7 @@ or for Rails 3:
 
 ### Running crons on different instances
 
-As mentioned at the start of this document, the default setup for scheduled jobs is to only configure them on the app master to avoid inadvertently running duplicate jobs. If you want to run cron jobs on other instances, then you need to create a [custom chef recipe|custom_chef_recipes]] to add the jobs to the crontabs of different instances.
+As mentioned at the start of this document, the default setup for scheduled jobs is to only configure them on the app master to avoid inadvertently running duplicate jobs. If you want to run cron jobs on other instances, then you need to create a [[custom chef recipe|custom-chef-recipes]] to add the jobs to the crontabs of different instances.
 
 A common requirement is to have cron jobs running on a utility instance, to achieve this you might write code like the following inside a cookbook recipe file:
 
@@ -59,9 +59,9 @@ Above, *instance_name* would be the name you gave your utility instance when you
 
 Any frequently scheduled jobs can sometimes potentially run longer than their scheduled window allows. This can cause multiple runs of the same task to overlap. For example, if you have a rake task that runs every five minutes and one of these runs takes fifteen minutes to complete, cron will happily fire up another two runs of this task once their scheduled time comes round. This can cause various effects, dependent on what the task does, but most often causes spikes in server load and memory consumption. This problem tends to slow down the running of subsequent tasks, causing more overruns and compounding the issue.
 
-To solve this common problem, we recommend the use of [[lockrun|http://unixwiz.net/tools/lockrun.html]]. Lockrun is not installed by default so you will need to install it as outlined in the [[manage UNIX packages|application_home]] article.
+To solve this common problem, we recommend the use of [[lockrun|http://unixwiz.net/tools/lockrun.html]]. Lockrun is not installed by default so you will need to install it as outlined in [[manage UNIX packages|application_home]].
 
-Once you have lockrun installed on your instance(s), you can then use it in your cron jobs by writing the commands like this:
+After you have lockrun installed on your instance(s), you can then use it in your cron jobs by writing the commands like this:
 
     /usr/bin/lockrun --lockfile=/tmp/jobname.lockrun -- sh -c "cd /data/appname/current && rake RAILS_ENV=production some:task"
 

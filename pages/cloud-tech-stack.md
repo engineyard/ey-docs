@@ -15,7 +15,7 @@ component update to provide reliability, security, and compatibility within the 
 As a result, you can confidently deploy and manage your application with any Engine Yard product. Read about the many [[benefits|http://www.engineyard.com/products/cloud/benefits]] of using our Platform-as-a-Service.
 
 <p class="note">
-  <strong>Note: </strong>This version is correct as of October 14, 2011.
+  <strong>Note: </strong>This version is correct as of December 6, 2011.
 </p>
 
 <br /><br />
@@ -29,7 +29,7 @@ As a result, you can confidently deploy and manage your application with any Eng
   <col>
   <thead>
     <tr>
-      <th><li>Note:</li><li class="experimental" title='Experimental'>Alpha versions in red.</li><li class="beta" title='Beta'>Beta versions in yellow.</li></th>
+      <th><li>Note:</li><li class="experimental" title='Experimental'>Alpha and Labs versions in red.</li><li class="beta" title='Beta'>Beta versions in yellow.</li></th>
       <th>
         We recommend
       </th>
@@ -48,7 +48,7 @@ As a result, you can confidently deploy and manage your application with any Eng
   <tbody>
     <tr>
       <th colspan="5">
-        Ruby interpreters
+        Interpreters
       </th>
     </tr>
     <tr>
@@ -62,6 +62,9 @@ As a result, you can confidently deploy and manage your application with any Eng
         </ul>
       </td>
       <td>
+		<ul>
+          <li class="experimental" title='Experimental'>1.9.3.p0
+          </li>        
         <ul>
           <li class="full">1.9.2.p290
           </li>
@@ -76,6 +79,9 @@ As a result, you can confidently deploy and manage your application with any Eng
         </ul>
       </td>
       <td>
+        <ul>
+          <li class="experimental" title='Experimental'>1.9.3.p0
+          </li>
         <ul>
           <li class="full">1.9.2.p290
           </li>
@@ -106,19 +112,18 @@ As a result, you can confidently deploy and manage your application with any Eng
       <td></td>
       <td> 
 	    <ul>
-		  <li class="beta" title='Beta'>1.6.4/1.6u26 
+		  <li>1.6.5/1.6u26 
 		  </li>
 		</ul>
 	  </td>
       <td>
         <ul>
-          	<li class="beta" title='Beta'>1.6.4/1.6u26 
+          	<li>1.6.5/1.6u26 
 			  </li>
         </ul>
       </td>
       <td>
         <p>
-          JRuby support is in beta status.
         </p>
       </td>
     </tr>
@@ -148,19 +153,47 @@ As a result, you can confidently deploy and manage your application with any Eng
       <td></td>
       <td>
         <ul>
-          <li class="experimental" title='Experimental'>1.2.4
+          <li class="experimental" title='Experimental'>2.0.0
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="experimental" title='Experimental'>1.2.4
+          <li class="experimental" title='Experimental'>2.0.0
           </li>
         </ul>
       </td>
       <td>
         <p>
           <span class="caps">Rubinius</span> support is in Alpha status.
+        </p>
+      </td>
+    </tr>
+	<tr>
+      <td>
+        Node.js
+      </td>
+      <td>
+        <ul>
+          <li class="experimental">
+          </li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li class="experimental">0.6.1
+          </li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li class="experimental">0.6.1
+          </li>
+        </ul>
+      </td>
+      <td>
+        <p>
+          Node.js is a Labs feature.
         </p>
       </td>
     </tr>
@@ -274,11 +307,15 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="full">0.8.54
+          <li class="full">1.0.10
           </li>
         </ul>
       </td>
       <td>
+        <ul>
+          <li class="full">1.0.10
+          </li>
+        </ul>
         <ul>
           <li class="full">0.8.54
           </li>
@@ -289,6 +326,10 @@ As a result, you can confidently deploy and manage your application with any Eng
         </ul>
       </td>
       <td>
+        <ul>
+          <li class="full">1.0.10
+          </li>
+        </ul>
         <ul>
           <li class="full">0.8.54
           </li>
@@ -353,19 +394,19 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="full">1.4.2
+          <li class="full">1.4.18
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="full">1.4.2
+          <li class="full">1.4.18
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="full">1.4.2
+          <li class="full">1.4.18
           </li>
         </ul>
       </td>
@@ -377,11 +418,15 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="full">0.8.54-r2/<br>3.0.7
+          <li class="full">1.0.10/3.0.11
           </li>
         </ul>
       </td>
       <td>
+        <ul>
+          <li class="full">1.0.10/3.0.11
+          </li>
+        </ul>
         <ul>
           <li class="full">0.8.54-r2/<br>3.0.7
           </li>
@@ -392,6 +437,10 @@ As a result, you can confidently deploy and manage your application with any Eng
         </ul>
       </td>
       <td>
+        <ul>
+          <li class="full">1.0.10/3.0.11
+          </li>
+        </ul>
         <ul>
           <li class="full">0.8.54-r2/<br>3.0.7
           </li>
@@ -454,7 +503,7 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="experimental">5.5.13
+          <li class="beta">5.5.13
           </li>
 		<li class="experimental">5.1.55
           </li>
@@ -533,6 +582,22 @@ As a result, you can confidently deploy and manage your application with any Eng
         </p>
       </td>
     </tr>
+ <tr>
+      <td>
+        MongoDB
+      </td>
+      <td>
+      </td>
+      <td>	
+      </td>
+      <td>
+      </td>
+      <td>
+        <p>
+         MonogoDB is currently being assessed for future support.
+        </p>
+      </td>
+    </tr>
     <tr>
       <th colspan="5">
         Caches and stores
@@ -576,27 +641,23 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="beta" title='Beta'>1.2.6
+          <li class="beta" title='Beta'>2.4.4
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="beta" title='Beta'>1.2.6
+          <li class="beta" title='Beta'>2.4.4
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="beta" title='Beta'>1.2.6
+          <li class="beta" title='Beta'>2.4.4
           </li>
         </ul>
       </td>
-      <td>
-        <p>
-          Avoid using very large data sets with Redis 1.0.
-        </p>
-      </td>
+      <td></td>
     </tr>
     <tr>
       <th colspan="5">
@@ -753,7 +814,23 @@ As a result, you can confidently deploy and manage your application with any Eng
 <div class="footnotes">
 
 <br> <br>
-<strong>Alpha components:</strong>
+<strong>Beta components:</strong>
+<ul>
+		<li>
+			Are available to all accounts (some restrictions may apply to trial accounts)
+		</li>
+		<li>
+			Associated issues (bugs) may be forwarded to the developer community
+		</li>
+		<li>
+			Installation and configuration support issues are addressed, but may be given low priority  
+		</li>
+		<li>
+			Some issues may not be fixed before GA
+		</li>
+</ul>	
+<br>
+<strong>Alpha components and Engine Yard Labs components:</strong>
 <ul>
 	<li>
 		Require signup
@@ -767,22 +844,6 @@ As a result, you can confidently deploy and manage your application with any Eng
 	<li>
 		Support issues are assigned low priority and might not be addressed
 	</li>
-</ul>	
-	<br>
-<strong>Beta components:</strong>
-<ul>
-		<li>
-			Are available to all accounts (some restrictions may apply to trial accounts)
-		</li>
-		<li>
-			Associated issues (bugs) may be forwarded to the developper community
-		</li>
-		<li>
-			Installation and configuration support issues are addressed, but may be given low priority  
-		</li>
-		<li>
-			Some issues may not be fixed before GA
-		</li>
 </ul>	
 
 

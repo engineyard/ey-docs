@@ -15,13 +15,16 @@
   Learn how to delete an environment on Engine Yard Cloud.
 
 * ### [[Clustered environments|environment-cluster]]
-  Learn about our clustered architecture and managing clusters on Engine Yard Cloud.
+  Learn about our clustered architecture and how to add an instance to a cluster.
 
 * ### [[Change an instance size|change-an-instance-size]]
   Learn how to change the size of an instance in an environment.
 
 * ### [[Multi-Region support|using-multi-region-with-engine-yard-cloud]]
   Learn how to deploy your application in different geographic regions.
+
+* ### [[High availability for clustered environments|environment-high-availability]]
+  Learn how to use high availability to create redundancy in a clustered environment. This protects your environment if there are problems in one zone of a region.
 
 * ### [[Using snapshots|using-snapshots]]
   Learn how to use snapshots in your environment.
@@ -88,8 +91,8 @@
 
 ## Troubleshooting
 
-* ### [[Amazon: Out of capacity error|amazon-out-of-capacity]]
-  Learn more about this Amazon error when booting new instances on Engine Yard Cloud.
+* ### [[Site is down: Diagnostic checklist|site-is-down]]
+  If your site is down, work through this diagnostic checklist to troubleshoot the problem.
 
 * ### [[Termination failed error when shutting down an instance|trouble-termination-failed]]
   Learn more about what to do if an instance does not terminate.

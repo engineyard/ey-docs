@@ -26,6 +26,26 @@ Ruby 1.9 is a version of MRI which brings substantial performance improvements. 
     a. Clone a production environment and edit the Runtime to Ruby 1.9.2. (Alternatively, create a new production environment.)  
     b. Deploy the application to the staging environment.  
 
+<h2 id="topic6"> Troubleshooting tip</h2>
+
+<table>
+  <tr>
+    <th>Symptom</th><th>Solution</th>
+  </tr>
+  <tr>
+    <td>Bundle install and gem errors after upgrading an application to Ruby 1.9.2. This can be caused by Ruby 1.8 gems not being updated.</td> 
+    <td>
+      <ol>
+        <li>Remove the bundled_gems directory: <br> <code>rm -rf /data/myapp/shared/bundled_gems</code> 
+        </li> 
+        <li>Re-deploy the "myapp" application.
+        </li>
+       </ol>
+    </td>
+  </tr>
+</table>		
+
+
 <h2 id="topic5"> More information</h2>
 
 

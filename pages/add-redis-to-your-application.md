@@ -1,55 +1,107 @@
 # Adding Redis to your application
 
 [Redis](http://redis.io) is an open source, advanced key-value store. It is often referred to
-as a data structure server since keys can contain strings, hashes, lists,
-sets and sorted sets.
+as a data structure server because keys can contain strings, hashes, lists,
+sets, and sorted sets.
 
-Getting Redis working on Engine Yard Cloud is not as daunting a task as it may
-seem. It is as easy as bundling the [Redis gem](http://rubygems.org/gems/redis) gem into your application.
+This page describes getting Redis working on your Engine Yard Cloud Ruby application. 
 
-## Install the Redis Gem
+## Install the Redis gem
 
-The one way to add Redis to your Ruby application on Engine Yard Cloud is to:
+First, you need to bundle the [Redis gem](http://rubygems.org/gems/redis) into your application.
 
-* Add the Redis gem to your gemfile
+###To add Redis to your application
+
+1. Add the Redis gem to your gemfile.
         gem 'redis'
-* Install the Redis gem using bundler from your development machine
+2. Install the Redis gem using bundler from your development machine.
         bundle install
-* Deploy your application
+3. Deploy your application.
 
-## Redis Version
+## Update the Redis version
 
-The Redis version on the Engine Yard platform was recently updated to
-v2.2.10. For new instances, you won't have to do anything to use this
-version. If you have a current running application, you may need to
-actually restart the Redis server to apply the changes. Just SSH into
-your instance and run `/etc/init.d/redis restart`.
+New (or newly upgraded) environments have the Engine Yard recommended version of Redis installed. (See [[Engine Yard Technology Stack|cloud-tech-stack]].) If your application is running in an older environment, you might have to restart the Redis server to apply the changes. 
 
-    solo i-dd3970b3 ~ # /etc/init.d/redis restart
-      * Starting Redis server ...                      [ ok ]
-    solo i-dd3970b3 ~ # 
+###To find out your Redis version
 
-To check your Redis version, the easiest way is to SSH into your instance
-and view the info from the command line. From your instance, run
-`redis-cli` which will startup the Redis prompt and then type in `info`
-to see all of the information about Redis on your instance.
+1. Via SSH, connect to the application and database instance (for single server environment), or the database instance (for a clustered environment), or the utility server (if you have installed Redis there).
 
-    solo i-dd3970b3 ~ # redis-cli
-      redis 127.0.0.1:6379> info
-      redis_version:2.2.10
-      redis_git_sha1:00000000
-      redis_git_dirty:0
-      .
-      .
-      .
-      redis 127.0.0.1:6379>
+2. Type:  
+        redis-cli
 
-## Enjoy Redis
+3. At the Redis prompt, type:  
+        redis 127.0.0.1:6379> info
 
-Assuming deployment completed without errors, you should then be able to
-do `Redis.new` to connect to the server and start having fun with
-Redis in your application. Some of the things you can do with Redis
-are: [using Redis as your Rails cache](http://jimneath.org/2011/03/24/using-redis-with-ruby-on-rails.html#using_redis_as_your_rails_cache_store),
-use Redis for application notifications, [create a note-taking app](https://gist.github.com/86714),
-[[configure and deploy Resque|configure-and-deploy-resque]] and much more.
+    The response shows the version number on the first line:
 
+          redis_version:2.2.10
+
+4. If your version is older that the recommended version (see [[Engine Yard Technology Stack|cloud-tech-stack]]), follow the procedure below to update the Redis version.
+
+### To update Redis
+
+1. Via SSH, connect to the application and database instance (for single server environment), or the database instance (for a clustered environment), or the utility server (if you have installed Redis there).
+
+2. Type:
+
+        sudo /etc/init.d/redis restart
+
+      
+## Install Redis on a utility instance
+
+If you plan to use Redis in-depth, we recommend that you install Redis on a utility instance. This way, Redis doesn't share resources with your application instance. To do this, you need a custom Chef recipe. For more information about custom Chef 
+recipes, see [[Custom Chef Recipes|custom-chef-recipes]]. 
+
+Here is a procedure for adding Redis to a utility instance named "redis". You'll need to adjust this procedure for your specific environment.
+
+###To install Redis on a utility instance
+
+1. Download the [ey-cloud-recipes](http://github.com/engineyard/ey-cloud-recipes)
+to your local computer.
+
+        $ git clone git@github.com/engineyard/ey-cloud-recipes.git
+        
+2. Uncomment `require_recipe "redis"` from the main cookbook (`main/recipes/default.rb`).
+3. Add a utility instance named "redis" to your application.
+4. Upload and apply the recipes to your environment:
+
+        $ ey recipes upload -e <environment_name>
+        $ ey recipes apply -e <environment_name>
+
+
+### To connect to Redis on the utility instance from your Rails application
+
+<!-- I think that this text should be turned into a procedure. I think that all customers who put Redis on a utility server will need to connect from their Rail application. We should tell them how to do it in steps.  -->
+
+[Here](https://gist.github.com/1417571) is a link to a Gist that will write out a 
+`redis.yml` configuration file. You can then connect to Redis in an initializer or
+environment file using the following:
+
+    # Load the redis.yml configuration file
+    redis_config = YAML.load_file(Rails.root + 'config/redis.yml')[Rails.env]
+    
+    # Connect to Redis using the redis_config host and port
+    if redis_config
+      $redis = Redis.new(host: redis_config['host'], port: redis_config['port'])
+    end
+
+
+## Things to do with Redis
+
+Some of the things that you can do with Redis are: 
+
+* [Use Redis as your Rails cache](http://jimneath.org/2011/03/24/using-redis-with-ruby-on-rails.html#using_redis_as_your_rails_cache_store)  
+* Use Redis for application notifications
+* [Create a note-taking application](https://gist.github.com/86714)
+* [[Configure and deploy Resque|configure-and-deploy-resque]]
+
+<h2 id="topic5"> More information</h2>
+
+<table>
+	  <tr>
+	    <th>For more information about...</th><th>See...</th>
+	  </tr>
+	  <tr>
+	    <td>SSHing into an instance</td><td>[[Connect to your instance via SSH|ssh-connect]].</td>
+	  </tr> 
+</table>

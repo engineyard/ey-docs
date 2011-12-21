@@ -1,7 +1,7 @@
 # Engine Yard CLI User Guide
 
 Welcome to the user guide for deploying to Engine Yard Cloud with the `engineyard` gem.  The `engineyard` gem provides a command line
-interface to perform tasks such as deploying your application, rebuilding your applications environment, opening an ssh session to 
+interface (CLI) to perform tasks such as deploying your application, rebuilding your applications environment, opening an ssh session to 
 any of your instances, uploading and applying custom chef recipes, and more.
 
 ## Getting Started
@@ -17,7 +17,7 @@ any of your instances, uploading and applying custom chef recipes, and more.
       
 4. You will be prompted for your Engine Yard Cloud login (email address) and password. You'll only have to enter these once. 
     If your application is running in multiple environments, tack on `-e ENV_NAME` to disambiguate.
-- Congratulations! Your application is now deployed.
+    Your application is now deployed.
 
 
 ## Command Reference

@@ -59,7 +59,7 @@ After initial signup for an Engine Yard account, you get an email from Engine Ya
 5. Choose a support plan.  
     For more information, see <a href="http://www.engineyard.com/support-plans" target="_blank">Engine Yard Support Plans.</a> 
 
-	![Support Plan](images/appcloud_support_plans.png)
+	![Support Plan](images/cloud_support_plans.png)
 	
 6. If you choose Premium Support, enter your emergency contact information.  
     You can update this information later through Account Settings.	

@@ -20,7 +20,7 @@ This procedure uses the specific example of [[DNSimple|http://www.dnsimple.com]]
 4. Click ADD A DOMAIN.
 
 5. Add your domain if you have one already, if not, you can create one.   
-The status changes to Active once your domain has been added.
+The status changes to Active after your domain has been added.
 	![Domains_Added](images/dns3.png)
 	
 6. Click MANAGE.

@@ -4,7 +4,7 @@ We sincerely apologize for the downtime and issues that this has caused your com
 
 Here are the steps you can take to bring your site back up in the US West zone.
 
-1. Dump your data from the /db volume and pull that dump down locally: [http://docs.engineyard.com/dump-and-load-your-mysql-database.html](http://docs.engineyard.com/dump-and-load-your-mysql-database.html)
+1. Dump your data from the /db volume and pull that dump down locally: [[Backing up the database|database_backups]]
 
 2. Any other assets required for your site, on the /data volume need to be pulled down locally in preparation to be restored on the new zone.
 

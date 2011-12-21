@@ -1,6 +1,6 @@
 # Applications
 
-This section outlines how to manage your application on Engine Yard Cloud. If you're looking to add SSL to your application please see this article: [[SSL Certs|ssl-certificates]].
+This section outlines how to manage your application on Engine Yard Cloud. If you're looking to add SSL to your application please see [[SSL Certs|ssl-certificates]].
 
 ## Add an Application
 
@@ -21,7 +21,7 @@ A new screen with the git deploy key for your application will appear.
   - Paste it to deploy keep section of your GitHub Account.
   - Click My Deploy Key is in Place when ready.
 
-Once you've setup the deploy key, you're ready to fine tune your environment. Often the defaults are fine but you should still look over them. 
+After you've setup the deploy key, you're ready to fine tune your environment. Often the defaults are fine but you should still look over them. 
 
   * Set your Environment Name 
   * Framework Environment ("production" , "staging", etc.)
@@ -33,7 +33,7 @@ Once you've setup the deploy key, you're ready to fine tune your environment. Of
   * Database
   * How often snapshots are taken
 
-Once your have finished configuring your environment, click "Create Environment" 
+After your have finished configuring your environment, click "Create Environment" 
 
 You are now at the deployment screen for your environment. Here you can select if you wish to run your application on a single server or as a cluster. You can also choose to boot from previous snapshots of your application if they exist.
 
@@ -51,7 +51,7 @@ Alternatively you can go from the Dashboard.
 
   * In your environment, under the Applications tab there is an Edit link.
 
-Once you're on the Edit Application screen you'll be able to modify the following options.
+After you're on the Edit Application screen you'll be able to modify the following options.
 
   * Git Repository URI
   * Application Type

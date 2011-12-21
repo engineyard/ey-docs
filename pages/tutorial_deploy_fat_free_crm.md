@@ -1,6 +1,6 @@
 # Tutorial: How to deploy a sample application on a trial account
 
-In this tutorial, you deploy a Ruby application (named Fat Free CRM) to the Engine Yard Cloud. 
+In this tutorial, you deploy a Ruby application named Fat Free CRM (Customer Relationship Management) to the Engine Yard Cloud. 
 
 <!--This tutorial is illustrated in [[Learn to Deploy Rails Apps on Engine Yard in under 5 Mins!|http://vimeo.com/17825326]] video. -->
 

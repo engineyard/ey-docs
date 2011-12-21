@@ -10,10 +10,13 @@ meet your CPU, memory, and disk space needs.
 ## Topics
 
 * ### [[Instance types and roles|instance-types]]
-  Learn more about the different types of instances and their roles on Engine Yard Cloud.
+  Learn about the different types of instances and their roles on Engine Yard Cloud.
+
+* ###[[Instance limits for your account|instance-limits]]  
+  Learn how many instances are allocated to your account and how to increase the allocation.
 
 * ### [[Instance sizes available for your environments|instance-sizes]]
-  Learn more about the varying instance sizes available on Engine Yard Cloud.
+  Learn about the varying instance sizes available on Engine Yard Cloud and how to get more instances for your account.
   
 * ### [[Change an Instance size|instance-change-size]]
   Learn how to change an instances size within your Engine Yard Cloud environment.
@@ -37,3 +40,15 @@ take regular disk snapshots of both of these volumes.
 
 If you ever have to rebuild your instances from scratch you will have the ability to restore 
 both of these volumes from previous snapshots.
+
+<h2 id="topic5"> More information</h2>
+
+<table>
+  <tr>
+    <th>For more information about...</th><th>See...</th>
+  </tr>
+<tr>
+    <td>adding an instance to a cluster</td><td>[[Clustered Environments|environment-cluster]]</td>
+  </tr>
+
+</table>

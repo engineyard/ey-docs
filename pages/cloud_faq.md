@@ -28,6 +28,7 @@
 * <a href=#FAQ28> Bundler 1.0 Will Not Install Compiled Gems in UNIX When bundle install is Run in Windows </a>
 * <a href=#FAQ29> One of my instances is not responding. What can I do? </a>
 * <a href=#FAQ30> Can I open a custom port for my application? </a>
+* <a href=#FAQ31> Can I use my Engine Yard-provided AWS/S3 account for asset storage? </a>
 
 
 
@@ -64,7 +65,7 @@ If you have multiple domains pointed at your application and they all need to ru
 
 <a href=#FAQ6><h2 id="FAQ6"> Can I failover to a Database Slave? </h2></a>
 
-No, failover to a database slave is not currently an option on Engine Yard Cloud. If you do ever run into issues with your Database Master we suggest you can recreate your Master Database Instance from a snapshot. This is quicker than failing over and does not pose the risk of any data loss should replication be out-of-sync.
+No, failover to a database slave is not currently an option on Engine Yard Cloud. If you do ever run into issues with your master database we suggest you can recreate your Master Database Instance from a snapshot. This is quicker than failing over and does not pose the risk of any data loss should replication be out-of-sync.
 
 We take fresh snapshots of your `/db` volume when you terminate an instance. If you have to rebuild your DB instance you can terminate it and recreate it from the most recent snapshots.
 
@@ -99,7 +100,7 @@ If you've got an app that runs with:
 
 Then it runs on Engine Yard Cloud.  See our [[Stack Page|http://www.engineyard.com/technology/stack]] for the latest version we support.
 
-<a href=#FAQ13><h2 id="FAQ13"> Does Engine Yard manage my Domain Name or does my Company? </h2></a>
+<a href=#FAQ13><h2 id="FAQ13"> Does Engine Yard manage my Domain Name or does my company? </h2></a>
 
 You setup and control the DNS records for your domain name of your website. You'll setup the IP address inside the application and then point your DNS to that IP address.
 
@@ -107,7 +108,7 @@ You setup and control the DNS records for your domain name of your website. You'
 
 If you're just doing staging or testing, no.  If you're ready for production then yes, because you'll need the IP address to point your DNS entries to your IP address.
 
-Read the [[IP Address Overview|ip-addresses]] article for more in-depth information about IP addresses and how they are used with Engine Yard Cloud.
+See [[IP Address Overview|ip-addresses]] for more information about IP addresses and how they are used with Engine Yard Cloud.
 
 <a href=#FAQ15><h2 id="FAQ15"> Do I have sudo access? </h2></a>
 
@@ -135,7 +136,7 @@ Therefore we recommend you keep all vital data on the persistent EBS storage vol
 
 No.  Turning off your instance destroys the virtual instance on Amazon EC2.  But, your files and data stored on the `/data` and `/db` volumes are saved to snapshots.  When you boot your instance again, select a custom configuration so you can choose the most recent snapshot. Your instance is then restored to the state before shutdown.
 
-It's worth noting that snapshot of the `/data` volume is only taken off of the Application Master instance.  The same is true for the `/db` volume and the Database Master.
+It's worth noting that snapshot of the `/data` volume is only taken off of the Application Master instance.  The same is true for the `/db` volume and the master database.
 
 Read [[Instance Overview|instance-types|]] for more information.
 
@@ -236,7 +237,15 @@ If one of your instances stops responding, it may have crashed or frozen. You ne
 
 No. Turning on a custom port can create security risks and incite problems difficult to diagnose. 
 
+<a href=#FAQ31> <h2 id="FAQ31"> Can I use my Engine Yard-provided AWS/S3 account for asset storage? </h2></a>
 
+No. Engine Yard does not recommend this because:
+
+* Engine Yard Cloud relies on specific and important resources in this AWS account. Accidental alteration of these resources can result in an unstable environment and even data loss.
+
+* If you close your Engine Yard account, all your stored assets are deleted when the account is closed.  
+
+Engine Yard *does* recommend that you set up a separate S3 account to store your assets. That way, you are in full control of your assets. For information about how to serve assets from an S3 account using fog and CarrierWave, see [[How to use CarrierWave (and optionally fog) to upload and store files|use-carrierwave-and-optionally-fog-to-upload-and-store-files]].
 
 
 

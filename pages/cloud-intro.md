@@ -23,7 +23,7 @@ data backup/restore, and system monitoring \- all backed by legendary
 ### Application Developers
 Start from scratch and get your first application up and running in less than five 
 minutes. Need to test out new code? Clone your production environment and test your 
-new code on the clone, then terminate the clone once your test is complete. Using 
+new code on the clone, then terminate the clone after your test is complete. Using 
 application cloning, a 20-server environment can cost less than $4 for an hour-long 
 integration test.
 

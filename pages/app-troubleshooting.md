@@ -2,8 +2,8 @@
 
 ## Topics
 
-* ### [[Amazon: Out of Capacity Error|amazon-out-of-capacity]]
-  Learn more about this Amazon error when booting new instances.
+* ### [[Site is down: Diagnostic checklist|site-is-down]]
+  If your site is down, work through this diagnostic checklist to troubleshoot the problem.
 
 * ### [[Termination Failed error when shutting down an instance|trouble-termination-failed]]
   Learn more about what to do if an instance does not terminate.

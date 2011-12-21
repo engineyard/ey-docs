@@ -7,7 +7,9 @@
 }
 
 .subnav ul li ul li ul li a {
-  padding: 6px 20px 6px 50px;
+  padding: 4px 20px 4px 40px;
+  font-size: 14px;
+  line-height: 1.2em;
 }
 
 .subnav ul li.selected.expanded a.selected.arrow::after {

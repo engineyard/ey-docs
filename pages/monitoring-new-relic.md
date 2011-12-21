@@ -39,11 +39,11 @@ that the Professional plan better suits you needs.
 Your New Relic account is created automatically using your Engine Yard account and password. 
 
 If you selected the Professional plan, the New Relic charge appears on your Engine Yard Cloud 
-account bill. You will not get a separate bill from New Relic.
+account bill. You do not get a separate bill from New Relic.
 
 <h2 id="topic2"> Configure your application for monitoring</h2>
 
-In order to montior your application with New Relic, you need to add the New Relic gem to the environment and enable New Relic monitoring for the application.
+In order to monitor your application with New Relic, you add the New Relic gem to the environment and enable New Relic monitoring for the application.
 
 <h3 id="topicC"> To configure your environment and application for New Relic monitoring</h3>
 
@@ -51,7 +51,7 @@ In order to montior your application with New Relic, you need to add the New Rel
     * For Rails 3 and installations using bundler, add the gem to your Gemfile.
     * For Rails 2.0 and Rails 2.1 to 2.3 without bundler, edit your environment.rb file.  
 
-    For details, see the [[New Relic Knowledge Base about installing the gem.|  http://support.newrelic.com/kb/ruby/ruby-agent-installation-gem]]  
+    For details about installing the gem, see the [[New Relic documentation|http://newrelic.com/docs/ruby/ruby-agent-installation]]. (Do not install newrelic.yml. Engine Yard does this for you.)  
 1. In Engine Yard Cloud, click Dashboard.
 2. Click the application name that needs monitoring.
 3. Click the pencil icon to edit this application.
@@ -62,7 +62,7 @@ In order to montior your application with New Relic, you need to add the New Rel
 
 <h2 id="topic3"> View New Relic performance data for your application</h2>
 
-Once an environment has been configured and updated with New Relic support, you can
+After an environment has been configured and updated with New Relic support, you can
 access your New Relic account directly from Engine Yard Cloud to view monitoring details about 
 your application.
 
