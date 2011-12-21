@@ -14,7 +14,7 @@ By default, the database is backed up every 24 hours, starting around 1:10 am Pa
 Engine Yard backs up your database in two ways:  
 
 
-* <b>Database backup files</b> are dumps of the application's database (SQL format files from mysqldump or archive files from pg_dump). Database backup files can be used for selective or full data restores and for downloading locally. An advantage of database backup files is that the data integrity is checked as the file is written.  
+* <b>Database backup files</b> are dumps of the application's database (e.g. mysqldump, pg_dump). Database backup files can be used for selective or full data restores and for downloading locally. An advantage of database backup files is that the data integrity is checked as the file is written.  
 
     Database backup files are discussed on this page. 
 
@@ -88,7 +88,3 @@ You perform on-demand backups using the eybackup tool. Each instance comes with 
 [1]: #topic1        "topic1"
 [2]: #topic2        "topic2"
 
-
-<!-- Add info about how locking is used with dump style mysql backups (locking for consistency with MyISAM)
-
-Also explain the role of eysnapshot backups in this section as well and how they are used. -->
