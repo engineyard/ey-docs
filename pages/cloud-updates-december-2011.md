@@ -2,14 +2,45 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
-<a href=#update9><h2 id="update9">Minor: engineyard gem update</h2></a>
 
-December 13th, 2011
+<a href=#update11><h2 id="update11"><b>Major:</b> Engine Yard now supports the AWS regions Oregon and Brazil</h2></a>
 
-Version 1.4.14 of the engineyard gem includes the following enhancements:  
+December 20th, 2011
+
+You can now choose to locate your Engine Yard environment in any of seven AWS regions. 
+The two newest regions are:  
+
+* US West (Oregon), us-west-2
+* South America (Sao Paulo), sa-east-1  
+
+For more information, see [[Using multi-region on Engine Yard Cloud|using-multi-region-with-engine-yard-cloud]].
+
+<a href=#update10><h2 id="update10">Minor: Engine Yard stack upgrades</h2></a>
+
+December 19th, 2011
+
+The following upgrades have been made to the Engine Yard stack:  
+
+* HAProxy to 1.4.18
+* Rsync to 3.0.9
+* Monit to 5.3.1
+* Redis to 2.4.4
+* Rubinius 2.0.0
+
+These changes are applied when you upgrade your environment.
+
+
+
+<a href=#update9><h2 id="update9">Minor: engineyard gem updates</h2></a>
+
+December 14th, 2011
+
+Version 1.4.15 of the engineyard gem contains some minor interface improvements.  
+
+Version 1.4.14 of the engineyard gem contains these enhancements:  
 
 * Deploy logs now show more information for failing deploys.  
-* Show the user name of the person who triggers a deploy as deployed_by in deploy hooks.
+* Show the user name of the person who triggers a deploy as deployed_by in deploy hooks. (See [[Using deploy hooks|use-deploy-hooks-with-engine-yard-cloud]].)
 * Minor fix for checking the status of applications that have not yet been deployed.
 
 <a href=#update8><h2 id="update8">Fix: An issue with New Relic Server Monitoring</h2></a>
