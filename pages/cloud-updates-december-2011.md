@@ -2,6 +2,19 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+
+<a href=#update11><h2 id="update11"><b>Major:</b> Engine Yard now supports the AWS regions Oregon and Brazil</h2></a>
+
+December 20th, 2011
+
+You can now choose to locate your Engine Yard environment in any of seven AWS regions. 
+The two newest regions are:  
+
+* US West (Oregon), us-west-2
+* South America (Sao Paulo), sa-east-1  
+
+For more information, see [[Using multi-region on Engine Yard Cloud|using-multi-region-with-engine-yard-cloud]].
+
 <a href=#update10><h2 id="update10">Minor: Engine Yard stack upgrades</h2></a>
 
 December 19th, 2011
@@ -15,6 +28,7 @@ The following upgrades have been made to the Engine Yard stack:
 * Rubinius 2.0.0
 
 These changes are applied when you upgrade your environment.
+
 
 
 <a href=#update9><h2 id="update9">Minor: engineyard gem updates</h2></a>
