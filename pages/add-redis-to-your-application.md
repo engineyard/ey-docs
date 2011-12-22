@@ -59,7 +59,7 @@ Here is a procedure for adding Redis to a utility instance named "redis". You'll
 1. Download the [ey-cloud-recipes](http://github.com/engineyard/ey-cloud-recipes)
 to your local computer.
 
-        $ git clone git@github.com/engineyard/ey-cloud-recipes.git
+        $ git clone https://github.com/engineyard/ey-cloud-recipes.git
         
 2. Uncomment `require_recipe "redis"` from the main cookbook (`main/recipes/default.rb`).
 3. Add a utility instance named "redis" to your application.
