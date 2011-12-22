@@ -112,6 +112,7 @@
   * [[Introduction|howtos-intro]]
   * [[Custom Chef recipes|custom-chef-recipes]]
   * [[Use keep files to maintain configurations|configuration-keep-files]]
+  * [[Customize Nginx|customize-nginx]]
   * [[Customize Unicorn|customize-unicorn]]
   * [[Configure and deploy Resque|configure-and-deploy-resque]]
   * [[Setup SSMTP for mail relay to AuthSMTP|setup-ssmtp-for-mail-relay-to-authsmtp]]
