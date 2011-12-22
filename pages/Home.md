@@ -4,7 +4,7 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
 
 **Important!** See [[Action Req'd: Amazon EC2 System Updates|cloud-updates-december-2011#update3]] for information about the Amazon EC2 system updates. 
 
-## In Depth On
+## In Depth on
 * [[Engine Yard Cloud platform|cloud-intro]]
 * [[Quick start to deploying|getting-started-intro]]
 * [[Deployment|deployment-intro]]
@@ -27,6 +27,9 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
 		<li>
 		    [[Engine Yard Early Access and Labs|beta-intro]]
 		</li>
+		<li>
+			[[Engine Yard Cloud updates December 2011|cloud-updates-december-2011]]
+		  </li>
 		<li>
 			[[Backing up the database|database_backups]]
 		</li>	

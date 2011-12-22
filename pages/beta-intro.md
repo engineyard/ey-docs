@@ -19,7 +19,7 @@ This feature is in **Labs**:
 
 * [[Node.js|deploy-node]] - [[Sign up|signup-node]]
 
-## Get instant access to Alpha and Labs features
+<h2 id="topic2"> Get instant access to Alpha and Labs features</h2>
 
 If you have a full Engine Yard account, you can access Alpha and Labs features from your Account Settings page instead of through the signup pages above.
 
@@ -92,3 +92,8 @@ Alpha features are available on request for users who want to test and help impr
 ##About Labs features
 
 Labs features are experimental features that Engine Yard makes available to developers. Some Labs features might later be incorporated into our product; some might remain as Labs features; and some tried and then deprecated. 
+
+[1]: #topic1        "topic1"
+[2]: #topic2        "topic2"
+[3]: #topic3        "topic3"
+[4]: #topic4        "topic4"

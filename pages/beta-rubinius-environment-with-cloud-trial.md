@@ -37,7 +37,7 @@ The trial account is setup with a streamlined workflow that automatically create
 
 1. Make sure that the instance is loaded (that the indicator light is green).  
 3. On the Environment, click Edit Environment.    
-4. On the Edit the Environment page, set the Runtime to Rubinius 2.0.0 (1.8) (beta). 
+4. On the Edit the Environment page, set the Runtime to Rubinius 2.0 (ruby-1.8.7-p352) (beta). 
 5. Click Update Environment.  
 6. On the Environment page, click !Apply.  
     This reboots the Rubinius environment, changing the Runtime to Rubinus.  

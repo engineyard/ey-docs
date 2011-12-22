@@ -12,15 +12,15 @@ Support for users of Rubinius is provided via the dedicated [[Rubinius forum|sig
 
 1. Create a new environment using the Create New Environment link on the Dashboard. 
 
-2. Select Passenger 3, Unicorn, or Puma for the Application Server Stack.  
+2. Select Passenger 3 or Unicorn for the Application Server Stack.  
   
-3. In the Runtime section, select Rubinius 2.0.0 (1.8) (beta).  
+3. In the Runtime section, select Rubinius 2.0 (ruby-1.8.7-p352) (beta).  
 
 ##To edit an existing Passenger 3 environment to use Rubinius 
 
 1. On the Environment page, click Edit Environment.  
 
-2. In the Runtime section, select Rubinius 2.0.0 (1.8) (beta).
+2. In the Runtime section, select Rubinius 2.0 (ruby-1.8.7-p352) (beta).
 
 3. Click Update Environment.
 
@@ -34,9 +34,9 @@ If your environment is not already running Passenger 3, you need to stop the env
 
 2. On the Environment page, click Edit Environment. 
  
-2. Select Passenger 3, Unicorn, or Puma for the Application Server Stack.  
+2. Select Passenger 3 or Unicorn for the Application Server Stack.  
 
-3. In the Runtime section, select Rubinius 2.0.0 (1.8) (beta).  
+3. In the Runtime section, select Rubinius 2.0 (ruby-1.8.7-p352) (beta).  
 
 4. Click Update Environment.
 

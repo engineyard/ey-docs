@@ -2,13 +2,11 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
-<a href=#update12><h2 id="update12">Major: Rubinius 2.0 (1.8) and the Puma web server are available with Alpha support</h2></a>
+<a href=#update12><h2 id="update12">Major: Rubinius 2.0 (1.8) is available with Alpha support</h2></a>
 
 December 22nd, 2011
 
-**Rubinius 2.0**
-
-Rubinius 2.0 (language mode Ruby 1.8) Developer Preview is available in Engine Yard Cloud with Alpha support. ([[Sign up|signup-rubinius]] to participate in the program.)
+Rubinius 2.0 (language mode Ruby 1.8) Developer Preview is available in Engine Yard Cloud with Alpha support. (Use the [[Early Access Features page|beta-intro#topic2]] or [[sign up|signup-rubinius]] to participate in the program.)
 
 Rubinius 2.0 offers improved performance, parallelism, and better memory usage. For general information about Rubinius 2, see [[Inside the Rubinius 2.0 Preview Release|http://rubini.us/2011/06/07/inside-rubinius-20-preview/]].
 
