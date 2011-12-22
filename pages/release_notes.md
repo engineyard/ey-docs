@@ -3,6 +3,8 @@
 
 ### [[December 2011|cloud-updates-december-2011]]
 
+* [[<b>Major:</b> Ruby 1.9.3 is available with Beta support|cloud-updates-december-2011#update14]] December 22nd, 2011
+
 * [[<b>Major:</b> Rubinius 2.0 (1.8) is available with Alpha support|cloud-updates-december-2011#update12]] *December 22nd, 2011*  
 
 * [[<b>Major:</b> Engine Yard now supports the AWS regions Oregon and Brazil|cloud-updates-december-2011#update11]] *December 20th 2011*
