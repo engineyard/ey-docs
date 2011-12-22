@@ -63,7 +63,7 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
 		<ul>
-          <li class="experimental" title='Experimental'>1.9.3.p0
+          <li class="beta" title='Beta'>1.9.3.p0
           </li>        
         <ul>
           <li class="full">1.9.2.p290
@@ -80,7 +80,7 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="experimental" title='Experimental'>1.9.3.p0
+          <li class="beta" title='Beta'>1.9.3.p0
           </li>
         <ul>
           <li class="full">1.9.2.p290
