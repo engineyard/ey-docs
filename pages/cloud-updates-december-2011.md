@@ -2,6 +2,14 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update12><h2 id="update12">Major: Rubinius 2.0 (1.8) is available with Alpha support</h2></a>
+
+December 22nd, 2011
+
+Rubinius 2.0 (language mode Ruby 1.8) Developer Preview is available in Engine Yard Cloud with Alpha support. (Use the [[Early Access Features page|beta-intro#topic2]] or [[sign up|signup-rubinius]] to participate in the program.)
+
+Rubinius 2.0 offers improved performance, parallelism, and better memory usage. For general information about Rubinius 2, see [[Inside the Rubinius 2.0 Preview Release|http://rubini.us/2011/06/07/inside-rubinius-20-preview/]].
+
 
 <a href=#update11><h2 id="update11"><b>Major:</b> Engine Yard now supports the AWS regions Oregon and Brazil</h2></a>
 
@@ -42,6 +50,7 @@ Version 1.4.14 of the engineyard gem contains these enhancements:
 * Deploy logs now show more information for failing deploys.  
 * Show the user name of the person who triggers a deploy as deployed_by in deploy hooks. (See [[Using deploy hooks|use-deploy-hooks-with-engine-yard-cloud]].)
 * Minor fix for checking the status of applications that have not yet been deployed.
+
 
 <a href=#update8><h2 id="update8">Fix: An issue with New Relic Server Monitoring</h2></a>
 
@@ -146,7 +155,6 @@ Getting access to Alpha features and Engine Yard Labs features is now faster and
 
 **Note:** Trial account users must use the signup pages at [[Engine Yard Early Access and Labs|beta-intro]]. Full account users can also use the signup pages.
 
-<!--For more information, see [the blog about this new feature]. -->
 
 [1]: #update1        "update1"
 [2]: #update2        "update2"

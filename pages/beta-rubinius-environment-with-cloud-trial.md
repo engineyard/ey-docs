@@ -24,22 +24,22 @@ The following procedure _outlines_ how to create an application and environment 
 ###To create an application and environment  
 1. Sign up for a trial account.  
 2. Validate and start the trial account.  
-3. Create your (Rubinius) application.  
+3. Create your (Rubinius / Ruby 1.8.x) application.  
     If you don't have a Rubinius application, choose our ToDo application, located at: `git://github.com/engineyard/todo.git`
 
 <h2 id="topic3"> Reconfigure the environment for Rubinius </h2>
 
 This procedure applies only to the Rubinius Alpha on the trial account. 
 
-The trial is setup with a streamlined workflow that automatically creates a Ruby-based environment. To work around this, you reconfigure the environment as a Rubinius one.
+The trial account is setup with a streamlined workflow that automatically creates a Ruby-based environment. To work around this, you reconfigure the environment as a Rubinius one.
 
 ###To reconfigure the environment for Rubinius
 
 1. Make sure that the instance is loaded (that the indicator light is green).  
 3. On the Environment, click Edit Environment.    
-4. On the Edit the Environment page, set the Runtime to Rubinius 1.2.4 (beta). 
+4. On the Edit the Environment page, set the Runtime to Rubinius 2.0 (ruby-1.8.7-p352) (beta). 
 5. Click Update Environment.  
-6. On the Environment page, click !Update.  
+6. On the Environment page, click !Apply.  
     This reboots the Rubinius environment, changing the Runtime to Rubinus.  
 
 <h2 id="topic4"> What next? </h2>

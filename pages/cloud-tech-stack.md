@@ -153,19 +153,19 @@ As a result, you can confidently deploy and manage your application with any Eng
       <td></td>
       <td>
         <ul>
-          <li class="experimental" title='Experimental'>2.0.0
+          <li class="experimental" title='Experimental'>2.0.0 (1.8)
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="experimental" title='Experimental'>2.0.0
+          <li class="experimental" title='Experimental'>2.0.0 (1.8)
           </li>
         </ul>
       </td>
       <td>
         <p>
-          <span class="caps">Rubinius</span> support is in Alpha status.
+          Alpha support for Rubinius 2.0.0 in Ruby language mode 1.8.
         </p>
       </td>
     </tr>

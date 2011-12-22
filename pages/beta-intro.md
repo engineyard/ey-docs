@@ -9,9 +9,9 @@ These features are in **Beta**:
 
 These features are in **Alpha**:  
 
+* [[Rubinius|rubinius]] - [[Sign up|signup-rubinius]]
 * [[MySQL 5.1|database-mysql-upgrade]] - [[Sign up|signup-mysql]]
 * [[PostgreSQL 9|postgresql]] - [[Sign up|signup-postgresql]]
-* [[Rubinius|rubinius]] - [[Sign up|signup-rubinius]]
 
 Sign up to get access to Alpha features. The MySQL and PostgreSQL features require full accounts. If you have a trial account and want to upgrade to a full account, see [[Upgrading free trial account|upgrading-free-trial-to-full-account]].
 
@@ -19,7 +19,7 @@ This feature is in **Labs**:
 
 * [[Node.js|deploy-node]] - [[Sign up|signup-node]]
 
-## Get instant access to Alpha and Labs features
+<h2 id="topic2"> Get instant access to Alpha and Labs features</h2>
 
 If you have a full Engine Yard account, you can access Alpha and Labs features from your Account Settings page instead of through the signup pages above.
 
@@ -92,3 +92,8 @@ Alpha features are available on request for users who want to test and help impr
 ##About Labs features
 
 Labs features are experimental features that Engine Yard makes available to developers. Some Labs features might later be incorporated into our product; some might remain as Labs features; and some tried and then deprecated. 
+
+[1]: #topic1        "topic1"
+[2]: #topic2        "topic2"
+[3]: #topic3        "topic3"
+[4]: #topic4        "topic4"
