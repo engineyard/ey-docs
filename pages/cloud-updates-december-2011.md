@@ -20,6 +20,7 @@ Rubinius 2.0 (language mode Ruby 1.8) Developer Preview is available in Engine Y
 
 Rubinius 2.0 offers improved performance, parallelism, and better memory usage. For general information about Rubinius 2, see [[Inside the Rubinius 2.0 Preview Release|http://rubini.us/2011/06/07/inside-rubinius-20-preview/]].
 
+Rubinius 2.0 (language mode Ruby 1.9) is coming soon.
 
 <a href=#update11><h2 id="update11"><b>Major:</b> Engine Yard now supports the AWS regions Oregon and Brazil</h2></a>
 
