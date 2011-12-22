@@ -2,13 +2,13 @@
 
 **Important!** Always test Early Access (Alpha or Beta) and Engine Yard Labs features very carefully in a development or staging environment.
 
-This feature is in Beta:
+These features are in **Beta**:
 
+* [[Ruby 1.9.3|ruby-193]]
 * [[MySQL 5.5|database-mysql-upgrade]]
 
 These features are in **Alpha**:  
 
-* [[Ruby 1.9.3|ruby-193]] - [[Sign up|signup-ruby193]]
 * [[MySQL 5.1|database-mysql-upgrade]] - [[Sign up|signup-mysql]]
 * [[PostgreSQL 9|postgresql]] - [[Sign up|signup-postgresql]]
 * [[Rubinius|rubinius]] - [[Sign up|signup-rubinius]]
