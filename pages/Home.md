@@ -21,11 +21,13 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
   <div class="col col-first">
     <h2>Updated documentation</h2>
     <ul>
-  	  
-	  	<li>
-			     [[Backing up the database|database_backups]]
-		  </li>
-		<li>
+  	  <li>
+	    [[Engine Yard Early Access and Labs|beta-intro]]
+	  </li>
+	  <li>
+		[[Backing up the database|database_backups]]
+	  </li>
+	  <li>
 		     [[Engine Yard Cloud updates December 2011|cloud-updates-december-2011]]
 	  </li>
 	<li>
@@ -34,9 +36,7 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
 	  <li>
          [[Using multi-region on Engine Yard Cloud|using-multi-region-with-engine-yard-cloud]]
       </li>
-	  <li>
-		     [[Using deploy hooks|use-deploy-hooks-with-engine-yard-cloud]]
-	  </li>	
+	  	
 	  
 	 
 	  
