@@ -64,7 +64,6 @@ November 22, 2011
 
 These fixes are applied when you upgrade your environment.
 
-
 <a href=#update7><h2 id="update7"><b>Major:</b> Engine Yard announces Engine Yard Labs program and Node.js</h2></a>
 
 November 16, 2011
