@@ -52,7 +52,7 @@ Sometimes you might want to do an on-demand backup (also called ad-hoc backup). 
 
 You perform on-demand backups using the eybackup tool. Each instance comes with the eybackup gem pre-installed.
 
-## To back up a MySQL database on-demand 
+### To back up a MySQL database on-demand 
 
 1. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment).  
 2. Type:  
@@ -61,7 +61,7 @@ You perform on-demand backups using the eybackup tool. Each instance comes with 
         sudo -i eybackup -e mysql -n
 
 
-## To back up a PostgreSQL database on-demand 
+### To back up a PostgreSQL database on-demand 
 
 1. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment).  
 2. Type:  
