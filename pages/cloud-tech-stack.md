@@ -15,7 +15,7 @@ component update to provide reliability, security, and compatibility within the 
 As a result, you can confidently deploy and manage your application with any Engine Yard product. Read about the many [[benefits|http://www.engineyard.com/products/cloud/benefits]] of using our Platform-as-a-Service.
 
 <p class="note">
-  <strong>Note: </strong>This version is correct as of December 6, 2011.
+  <strong>Note: </strong>This version is correct as of December 22, 2011.
 </p>
 
 <br /><br />
@@ -63,7 +63,7 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
 		<ul>
-          <li class="experimental" title='Experimental'>1.9.3.p0
+          <li class="beta" title='Beta'>1.9.3.p0
           </li>        
         <ul>
           <li class="full">1.9.2.p290
@@ -80,7 +80,7 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="experimental" title='Experimental'>1.9.3.p0
+          <li class="beta" title='Beta'>1.9.3.p0
           </li>
         <ul>
           <li class="full">1.9.2.p290
@@ -394,19 +394,19 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="full">1.4.2
+          <li class="full">1.4.18
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="full">1.4.2
+          <li class="full">1.4.18
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="full">1.4.2
+          <li class="full">1.4.18
           </li>
         </ul>
       </td>
@@ -641,19 +641,19 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="beta" title='Beta'>2.4.2
+          <li class="beta" title='Beta'>2.4.4
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="beta" title='Beta'>2.4.2
+          <li class="beta" title='Beta'>2.4.4
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="beta" title='Beta'>2.4.2
+          <li class="beta" title='Beta'>2.4.4
           </li>
         </ul>
       </td>

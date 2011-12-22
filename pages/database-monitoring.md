@@ -2,7 +2,7 @@
 
 Whenever Engine Yard Cloud creates an environment, it creates a MySQL or PostgreSQL database for the application and EBS volume called /db is created to store the data.
 
-When you set up your environment, make sure that you enable email alerts so that when your /db volume starts to fill up or if you database instance is under too much load, you receive an alert. 
+When you set up your environment, make sure that you enable email alerts so that when your /db volume starts to fill up or if your database instance is under too much load, you receive an alert. 
 
 The /db volume size and load capacity of your environment depends on whether you are using a single server, basic cluster, or configured environment. (See table below.)
 
