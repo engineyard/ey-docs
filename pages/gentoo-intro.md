@@ -16,7 +16,8 @@ Engine Yard manages is own highly secure, highly optimized Gentoo Portage that i
 
 In order to follow the examples/instructions below, you will need an environment booted, to have SSH'd into it:
 
-    > ey ssh -e myenvironment
+    cd /path/to/my/app
+    ey ssh -e myenvironment
     
 Please don't do destructive things to your production environment. Instead, use staging environments or new environments.
 
