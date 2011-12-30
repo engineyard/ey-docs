@@ -25,12 +25,20 @@ Here are some examples of different types of certificates.
 
 NOTE: Engine Yard Cloud does not support the deployment of a Multiple Domain certificate.
 
-### Recommended vendors
+### Choose a vendor
 
-In general we recommend the following vendors for your SSL certificates:
+When it comes to choosing who to host your certificate with, some of the research has already been done for you on Wikipedia's excellent table [comparing SSL certificates](http://en.wikipedia.org/wiki/Comparison_of_SSL_certificates_for_web_servers).  Hopefully this can help you understand what features are more important for your site, or at least an idea of what to search for in a vendor.
 
-  * [Godaddy](http://www.godaddy.com)
-  * [Verisign](http://www.verisign.com)
+Here are a list of vendors that are known to have been deployed on Engine Yard Cloud.
+
+  * [Comodo](http://www.comodo.com/)
+  * [Digicert](http://www.digicert.com/)
+  * [Entrust](http://www.entrust.com/)
+  * [GeoTrust](http://www.geotrust.com/)
+  * [Godaddy](http://www.godaddy.com/)
+  * [RapidSSL](http://www.rapidssl.com/)
+  * [Thawte](http://www.thawte.com/)
+  * [Verisign](http://www.verisign.com/)
 
 ## Prepare your files to take to your vendor
 
