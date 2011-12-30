@@ -27,9 +27,8 @@ NOTE: Engine Yard Cloud does not support the deployment of a Multiple Domain cer
 
 ### Recommended vendors
 
-In general we recommend the following vendors for your SSL certificates:
+In general we recommend the following vendor for your SSL certificates:
 
-  * [Godaddy](http://www.godaddy.com)
   * [Verisign](http://www.verisign.com)
 
 ## Prepare your files to take to your vendor
