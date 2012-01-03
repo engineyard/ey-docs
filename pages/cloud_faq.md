@@ -225,6 +225,8 @@ Also you may see the error:
 
 To fix this, include the `mysql2` gem in your Gemfile.
 
+For more information, see [[500 errors after deploying / Gemfile missing database adapter|issue-mysql2-adapter]].
+
 <a href=#FAQ28><h2 id="FAQ28"> Bundler 1.0 will not install compiled gems in UNIX when bundle install is run in Windows </h2></a>
 
 When developing on Windows, you'll find when you deploy your applications that it will not find certain gems such as MySQL2 no matter what you do.  For more information, see [[Bug report #646|https://github.com/carlhuda/bundler/issues#issue/646]].
