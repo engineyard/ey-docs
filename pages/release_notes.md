@@ -1,9 +1,13 @@
 # Release Notes
 <a href="http://feed43.com/1082485410203701.xml" class="rss">Release Notes RSS Feed</a>
 
+### [[January 2012|cloud-updates-january-2012]]
+
+* [[Fix: Engine Yard stack upgrades|cloud-updates-january-2012#update1]] *January 3rd, 2012*
+
 ### [[December 2011|cloud-updates-december-2011]]
 
-* [[<b>Major:</b> Ruby 1.9.3 is available with Beta support|cloud-updates-december-2011#update14]] December 22nd, 2011
+* [[<b>Major:</b> Ruby 1.9.3 is available with Beta support|cloud-updates-december-2011#update14]] *December 22nd, 2011*
 
 * [[<b>Major:</b> Rubinius 2.0 (1.8) is available with Alpha support|cloud-updates-december-2011#update12]] *December 22nd, 2011*  
 
