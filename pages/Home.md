@@ -44,6 +44,9 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
     <h2>New documentation</h2>
     <ul> 
 	  <li>
+	     [[Engine Yard Cloud updates January 2012|cloud-updates-january-2012]]
+	  </li>
+	  <li>
          [[High availability for clustered environments|environment-high-availability]]
       </li>
 	  <li>
@@ -54,9 +57,6 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
       </li>
       <li>
          [[Using Ruby 1.9.3 with Engine Yard Cloud|ruby-193]]
-      </li>
-      <li>
-	 [[500 errors after deploying|issue-mysql2-adapter]]
       </li>
      
     </ul>
