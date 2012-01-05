@@ -1,20 +1,51 @@
 # Customize Nginx
 
-You may find that you need to customize our default Nginx configuration that we setup for your app. While there are many ways to do this with [[custom Chef recipes|custom-chef-recipes]] or '[[keep-files|configuration-keep-files]]', these methods have caveats that you need to be aware of. This document shows you the layout of our Nginx configuration files and shows you which files can be customized by you, without being altered by Chef on subsequent runs.
+You might need to customize the default Nginx configuration. This page describes the layout of our Nginx configuration files and lists the files that are not altered by Chef on subsequent runs. These non-altered (customizable) files are straightforward to customize.
 
-## Customizable Files
+You can also customize Nginx with [[custom Chef recipes|custom-chef-recipes]] and with [[keep-files|configuration-keep-files]]; however, this is more difficult.  
+**Note:** If you need to create new customized instances that are not based on data volume snapshots of existing customized instances, then you must use custom Chef recipes for your Nginx configuration; *cf.* [Apply Nginx customizations to new or rebuilt instances][2]. 
 
-The files that we provide that you can edit without needing to write a custom Chef recipe or use keep-files are as follows (note that `/etc/nginx` is a symbolic link to `/data/nginx` on each instance):
+## Customizable files
 
-* `/etc/nginx/http-custom.conf` - use this file to add any configurations that need to go inside the _http_ context. An example use for this file could involve configuring Nginx's [[proxy_cache_path|http://wiki.nginx.org/HttpProxyModule#proxy_cache_path]] directive.
-* `/etc/nginx/servers/YOUR_APP/custom.conf` - use this file to add configurations inside the _server_ context of __YOUR_APP__. It is common for this file to be used for rewrites.
-* `/etc/nginx/servers/YOUR_APP/custom.ssl.conf` - use this file to add configurations inside the _server_ context of __YOUR_APP__ that only apply when the request comes in over HTTPS. This file will not exist if your app does not have SSL enabled.
-* `/etc/nginx/servers/YOUR_APP.rewrites` - this file is no longer used in newer versions of our stack, but if you're still using Passenger 2 or Mongrel, you can use this file.
-* `/etc/nginx/servers/default.conf` - this file exists to ensure that Nginx can start successfully if your environment has no apps currently configured. `/etc/nginx/nginx.conf` tries to include all `*.conf` files under the `servers` directory, so if this file did not exist, Nginx would fail if you removed all apps from an environment. While you can treat this file in the same was as the `http-custom.conf` file, we recommend that you leave it empty.
+These are the files that you can edit without writing a custom Chef recipe or using keep-files:  
 
-## Persistence of Customizations
+**Note:** `/etc/nginx` is a symbolic link to `/data/nginx` on each instance.
 
-As these files are not managed by Chef, you will need to bear in mind that they will not be generated with your customizations in place if you rebuild your environment or add an application instance from a fresh data volume. To ensure that these files appear on any new instances (or after a rebuild), you will need to create your data volume from a previous snapshot.
+* `/etc/nginx/http-custom.conf` - Use this file to add configurations that need to go inside the _http_ context, for example, configuring the Nginx [[proxy_cache_path|http://wiki.nginx.org/HttpProxyModule#proxy_cache_path]] directive.
 
-If you need to be able to boot instances from non-snapshotted data volumes for any reason, then you would need to use a custom Chef recipe to ensure that these files existed with the customizations in place.
+* `/etc/nginx/servers/app_name/custom.conf` - Use this file to add configurations inside the _server_ context of *app_name*. This file is commonly used for rewrites.
 
+* `/etc/nginx/servers/app_name/custom.ssl.conf` - Use this file to add configurations inside the _server_ context of *app_name* that only apply when the request comes in over HTTPS. This file does not exist if SSL is not enabled for your application.
+
+* `/etc/nginx/servers/app_name.rewrites` - If you use Passenger 2 or Mongrel, use this file. (This file is not  used in newer versions of the stack.) 
+
+<!-- Do you need to say what/how you would use this file if you are on Passenger 2 or Mongrel? Presumably you use it for rewrites... but if that's the case why not just use /etc/nginx/servers/app_name/custom.ssl.conf ? -->
+
+* `/etc/nginx/servers/default.conf` - This file ensures that Nginx starts <!-- even? --> if your environment has no configured applications. `/etc/nginx/nginx.conf` tries to include all CONF files under the `servers` directory, so if `/etc/nginx/servers/default.conf` did not exist, Nginx would fail if you removed all applications from an environment. Although you can treat this file in the same way as  `http-custom.conf`, we recommend that you leave it empty.
+
+<!-- When you write : "if your environment has no configured applications." Do we need the word "configured"? When does my environment have non-configured applications in it? Is the distinction required? -->  
+
+
+<!--**Question:** What do I need to do after editing these files to have a Nginx configuration changes take effect? -->
+
+<h2 id="topic1"> Apply Nginx customizations to new or rebuilt instances</h2>
+
+**Important!** Because these files are not managed by Chef, if you rebuild your environment or add an application instance from a fresh data volume, your Nginx customizations are lost. 
+
+<!-- Is this about new instances to an existing environment or creating a new environment?  -->
+
+<!-- what are the steps for creating a data volume from a previous snapshot? -->
+
+###To apply your Nginx customizations to a new or rebuilt instance
+
+1. If you don't take a recent snapshot available, take a snapshot of the environment. 
+ 
+<!-- I snapshot a whole environment, right? Not just an instance? -->
+2. Create the data volume from a previous snapshot.
+
+
+
+[1]: #topic1        "topic1"
+[2]: #topic2        "topic2"
+[3]: #topic3        "topic3"
+[4]: #topic4        "topic4"
