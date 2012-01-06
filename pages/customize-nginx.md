@@ -41,7 +41,9 @@ These are the files that you can edit without writing a custom Chef recipe or us
 1. If you don't take a recent snapshot available, take a snapshot of the environment. 
  
 <!-- I snapshot a whole environment, right? Not just an instance? -->
-2. Create the data volume from a previous snapshot.
+
+<!-- Then I can clone the environment. If I have a cluster, I can add an instance like app or database slave that is based on a snapshot... is Nginx on DB instances or only app instances. -->
+
 
 
 
