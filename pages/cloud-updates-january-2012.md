@@ -1,10 +1,30 @@
-# Engine Yard Cloud updates January 2011
+# Engine Yard Cloud updates January 2012
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
-<a href=#update1><h2 id="update11">Fix: Engine Yard stack upgrades</h2></a>
+<a href=#update2><h2 id="update2"><b>Major:</b> Engine Yard stack updates</h2></a>
 
-January 3rd, 2011
+January 6, 2012
+
+Security improvements related to hashing have been made for these Ruby versions:  
+
+* Ruby 1.8.7
+* Ruby 1.8.6
+* JRuby
+* Ruby Enterprise Edition
+* Rubinius
+
+For more information, see [[Denial of service attack was found for Ruby's Hash algorithm (CVE-2011-4815)|http://www.ruby-lang.org/en/news/2011/12/28/denial-of-service-attack-was-found-for-rubys-hash-algorithm-cve-2011-4815/]].
+
+In addition, Java has been updated to 1.6u30 to address hashing issues related to CERT-2011-003.
+
+**Important!** If you use any of the above Ruby versions or Java or Trinidad (which relies on Java), Engine Yard strongly recommends that you update your environments. See [[Upgrading an environment|http://docs.engineyard.com/environment-upgrade.html]]. 
+
+**Note:** Ruby 1.9.x is not affected.
+
+<a href=#update1><h2 id="update1">Fix: Engine Yard stack upgrades</h2></a>
+
+January 3rd, 2012
 
 The following fixes have been made to the Engine Yard stack:  
 
@@ -12,6 +32,7 @@ The following fixes have been made to the Engine Yard stack:
 * A problem where snapshots reported failure even though they succeeded
 
 These fixes are applied when you upgrade your environment.
+
 
 [1]: #update1        "update1"
 [2]: #update2        "update2"
