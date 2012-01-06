@@ -20,6 +20,9 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
     <h2>Updated documentation</h2>
     <ul>
   	 	<li>
+			 [[SSL certificates|ssl-certificates]]
+		</li>  	 	
+		<li>
 			 [[Using Rubinius 2 with Engine Yard Cloud|using-rubinius-on-cloud]]
 		</li>
 		<li>
@@ -31,9 +34,6 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
 		<li>
 			[[Backing up the database|database_backups]]
 		</li>	
-	    <li>
-         [[Using multi-region on Engine Yard Cloud|using-multi-region-with-engine-yard-cloud]]
-        </li>
     </ul>   
 
   </div>
