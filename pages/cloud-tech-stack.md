@@ -73,10 +73,6 @@ As a result, you can confidently deploy and manage your application with any Eng
           <li class="full">1.8.7.p352
           </li>
         </ul>
-        <ul>
-          <li class="experimental" title='Experimental'>1.8.6.p420
-          </li>
-        </ul>
       </td>
       <td>
         <ul>
@@ -90,18 +86,12 @@ As a result, you can confidently deploy and manage your application with any Eng
           <li class="full">1.8.7.p352
           </li>
         </ul>
-        <ul>
-          <li class="full">1.8.6.p420
-          </li>
-        </ul>
       </td>
       <td>
         <p>
-          Avoid 1.8.5 and below, 1.8.6.p369 and below, 1.8.7.p171 and below, (multiple vulnerabilities)<br>
+          Avoid 1.8.7.p171 and below, (multiple vulnerabilities)<br>
           <a href="http://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=ruby">http://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=ruby</a>.<br>
           1.9.1 is not supported.
-			<br>
-		  1.8.6 is not available for new environments.
         </p>
       </td>
     </tr>
@@ -242,7 +232,6 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <p>
-          2.3.8 does not work with Mongrel.<br>
           2.3.3 and below must apply a<br>
           <a href="http://www.engineyard.com/blog/2009/cross-site-scripting-vulnerability-in-rails-2-x-on-ruby-1-8-x/">patch for a cross-site scripting vulnerability</a>.<br>
           Avoid 2.3.2 and below (multiple vulnerabilities)<br>
@@ -334,21 +323,6 @@ As a result, you can confidently deploy and manage your application with any Eng
         </p>
       </td>
     </tr>
-    <tr>
-      <td>
-        Mongrel
-      </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>
-        <p>
-          Avoid 1.1.3 and below (multiple vulnerabilities)<br>
-          <a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-6612">http://web.nvd.nist.gov/view/vuln/detail?vulnId=<span class="caps">CVE</span>-2007-6612</a>.
-        </p>
-      </td>
-    </tr>
-    <tr>
       <td>
         Unicorn
       </td>
