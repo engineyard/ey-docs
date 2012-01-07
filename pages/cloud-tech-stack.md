@@ -225,14 +225,6 @@ As a result, you can confidently deploy and manage your application with any Eng
           <li class="full">2.3.x
           </li>
         </ul>
-        <ul>
-          <li class="full">2.2.2
-          </li>
-        </ul>
-        <ul>
-          <li class="full">2.1.2
-          </li>
-        </ul>
       </td>
       <td>
          <ul>
@@ -245,14 +237,6 @@ As a result, you can confidently deploy and manage your application with any Eng
         </ul>
         <ul>
           <li class="full">2.3.x
-          </li>
-        </ul>
-        <ul>
-          <li class="full">2.2.2
-          </li>
-        </ul>
-        <ul>
-          <li class="full">2.1.2
           </li>
         </ul>
       </td>
