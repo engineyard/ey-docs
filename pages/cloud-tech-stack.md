@@ -15,7 +15,7 @@ component update to provide reliability, security, and compatibility within the 
 As a result, you can confidently deploy and manage your application with any Engine Yard product. Read about the many [[benefits|http://www.engineyard.com/products/cloud/benefits]] of using our Platform-as-a-Service.
 
 <p class="note">
-  <strong>Note: </strong>This version is correct as of January 6, 2012.
+  <strong>Note: </strong>This version is correct as of January 9, 2012.
 </p>
 
 <br /><br />
@@ -70,7 +70,7 @@ As a result, you can confidently deploy and manage your application with any Eng
           </li>
         </ul>
         <ul>
-          <li class="full">1.8.7.p352
+          <li class="full">1.8.7.p357
           </li>
         </ul>
       </td>
@@ -83,7 +83,7 @@ As a result, you can confidently deploy and manage your application with any Eng
           </li>
         </ul>
         <ul>
-          <li class="full">1.8.7.p352
+          <li class="full">1.8.7.p357
           </li>
         </ul>
       </td>
@@ -102,13 +102,13 @@ As a result, you can confidently deploy and manage your application with any Eng
       <td></td>
       <td> 
 	    <ul>
-		  <li>1.6.5/1.6u30 
+		  <li>1.6.5.1/1.6u30 
 		  </li>
 		</ul>
 	  </td>
       <td>
         <ul>
-          	<li>1.6.5/1.6u30 
+          	<li>1.6.5.1/1.6u30 
 			  </li>
         </ul>
       </td>
@@ -124,13 +124,13 @@ As a result, you can confidently deploy and manage your application with any Eng
       <td></td>
       <td>
         <ul>
-          <li class="full">2011.03
+          <li class="full">1.8.7.2011.12
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="full">2011.03
+          <li class="full">1.8.7.2011.12
           </li>
         </ul>
       </td>
@@ -293,10 +293,6 @@ As a result, you can confidently deploy and manage your application with any Eng
           <li class="full">0.8.54
           </li>
         </ul>
-        <ul>
-          <li class="full">0.6.35-r25 (patched)
-          </li>
-        </ul>
       </td>
       <td>
         <ul>
@@ -307,20 +303,8 @@ As a result, you can confidently deploy and manage your application with any Eng
           <li class="full">0.8.54
           </li>
         </ul>
-        <ul>
-          <li class="beta" title='Beta'>0.7.65-r23
-          </li>
-        </ul>
-        <ul>
-          <li class="full">0.6.35-r25 (patched)
-          </li>
-        </ul>
       </td>
       <td>
-        <p>
-          0.6.38 and below must apply several security patches.<br>
-          0.7.65-r2 support is in Beta status for Engine Yard Managed.
-        </p>
       </td>
     </tr>
       <td>
