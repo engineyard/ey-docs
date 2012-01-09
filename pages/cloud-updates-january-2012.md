@@ -2,7 +2,7 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
-<a href=#update2><h2 id="update2"><b>Major:</b> Engine Yard stack updates</h2></a>
+<a href=#update2><h2 id="update2"><b>Major:</b> Engine Yard stack upgrades</h2></a>
 
 January 6, 2012
 
@@ -14,13 +14,19 @@ Security improvements related to hashing have been made for these Ruby versions:
 * Ruby Enterprise Edition
 * Rubinius
 
-For more information, see [[Denial of service attack was found for Ruby's Hash algorithm (CVE-2011-4815)|http://www.ruby-lang.org/en/news/2011/12/28/denial-of-service-attack-was-found-for-rubys-hash-algorithm-cve-2011-4815/]].
-
 In addition, Java has been updated to 1.6u30 to address hashing issues related to CERT-2011-003.
 
 **Important!** If you use any of the above Ruby versions or Java or Trinidad (which relies on Java), Engine Yard strongly recommends that you update your environments. See [[Upgrading an environment|http://docs.engineyard.com/environment-upgrade.html]]. 
 
 **Note:** Ruby 1.9.x is not affected.
+
+For detailed information about the security issue, see:  
+
+* [[Our recent blog post|http://www.google.com/url?q=http%3A%2F%2Fwww.engineyard.com%2Fblog%2F2011%2Fspecial-jruby-release-1-6-5-1%2F&sa=D&sntz=1&usg=AFQjCNGH_0fg-BNab2J4obsHpkclGg_bfw]]
+* [[Denial of service attack was found for Ruby's Hash algorithm (CVE-2011-4815)|http://www.ruby-lang.org/en/news/2011/12/28/denial-of-service-attack-was-found-for-rubys-hash-algorithm-cve-2011-4815/]]
+* [[Vulnerability Note VU#903934|http://www.kb.cert.org/vuls/id/903934]]  
+* [[http://www.nruns.com/_downloads/advisory28122011.pdf|http://www.nruns.com/_downloads/advisory28122011.pdf]]
+
 
 <a href=#update1><h2 id="update1">Fix: Engine Yard stack upgrades</h2></a>
 
