@@ -276,7 +276,7 @@ As a result, you can confidently deploy and manage your application with any Eng
     </tr>
     <tr>
       <td>
-        nginx
+        Nginx
       </td>
       <td>
         <ul>
@@ -356,7 +356,7 @@ As a result, you can confidently deploy and manage your application with any Eng
     </tr>
     <tr>
       <td>
-        nginx/psgr
+        Nginx/Passenger
       </td>
       <td>
         <ul>
@@ -370,11 +370,11 @@ As a result, you can confidently deploy and manage your application with any Eng
           </li>
         </ul>
         <ul>
-          <li class="full">0.8.54-r2/<br>3.0.7
+          <li class="full">0.8.x/3.0.7
           </li>
         </ul>
 		<ul>
-          <li class="full">0.7.65-r9/<br>2.2.10
+          <li class="full">0.7.x/2.x
           </li>
         </ul>
       </td>
@@ -384,19 +384,15 @@ As a result, you can confidently deploy and manage your application with any Eng
           </li>
         </ul>
         <ul>
-          <li class="full">0.8.54-r2/<br>3.0.7
+          <li class="full">0.8.x/3.0.7
           </li>
         </ul>
 		<ul>
-	       <li class="full">0.7.65-r9/<br>2.2.10
+	       <li class="full">0.7.x/2.x
 	       </li>
 	    </ul>
       </td>
       <td>
-        <p>
-          Avoid Passenger 2.2.3 (memory leak issues).<br>
-          nginx must apply several security patches.
-        </p>
       </td>
     </tr>
     <tr>
