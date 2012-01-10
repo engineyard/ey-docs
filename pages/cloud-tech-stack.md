@@ -15,7 +15,7 @@ component update to provide reliability, security, and compatibility within the 
 As a result, you can confidently deploy and manage your application with any Engine Yard product. Read about the many [[benefits|http://www.engineyard.com/products/cloud/benefits]] of using our Platform-as-a-Service.
 
 <p class="note">
-  <strong>Note: </strong>This version is correct as of January 9, 2012.
+  <strong>Note: </strong>This version is correct as of January 10, 2012.
 </p>
 
 <br /><br />
@@ -770,9 +770,7 @@ As a result, you can confidently deploy and manage your application with any Eng
 <br>
 <strong>Alpha components and Engine Yard Labs components:</strong>
 <ul>
-	<li>
-		Require signup
-	</li>
+
 	<li>
 		Should not be used in a production environment
 	</li>
