@@ -67,7 +67,7 @@ When you increase the size of the database instances via the UI, you are effecti
 
 <h2 id="topic3"> Increase the size of the database with minimal downtime</h2>
 
-If you need to increase the size of your master database instance with minimal downtime, you can engage Engine Yard Support to help. (Self-supporting customers will have to pay the per-incident support fee for this service.)
+If you need to increase the size of your master database instance with minimal downtime, you can engage Engine Yard Support to help. (Self-supporting customers pay the per-incident support fee for this service.)
 
 First, a larger database slave instance is created and then, after replication is complete, the slave is promoted to master and the original (smaller) master is decommissioned. 
 
