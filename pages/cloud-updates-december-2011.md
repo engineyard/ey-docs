@@ -2,6 +2,16 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update14><h2 id="update14"><b>Major:</b> Ruby 1.9.3 is available with Beta support </h2></a>
+
+December 22nd, 2011
+
+Ruby 1.9.3.p0 is available in Engine Yard Cloud with Beta support.
+
+This is the first stable release of Ruby 1.9.3. 
+
+Ruby 1.9.3 offers faster loading times for Rails 3.x applications. For more information about this release, see [[Ruby 1.9.3 p0 is released|http://www.ruby-lang.org/en/news/2011/10/31/ruby-1-9-3-p0-is-released/]].
+
 <a href=#update12><h2 id="update12">Major: Rubinius 2.0 (1.8) is available with Alpha support</h2></a>
 
 December 22nd, 2011
@@ -10,6 +20,7 @@ Rubinius 2.0 (language mode Ruby 1.8) Developer Preview is available in Engine Y
 
 Rubinius 2.0 offers improved performance, parallelism, and better memory usage. For general information about Rubinius 2, see [[Inside the Rubinius 2.0 Preview Release|http://rubini.us/2011/06/07/inside-rubinius-20-preview/]].
 
+Rubinius 2.0 (language mode Ruby 1.9) is coming soon.
 
 <a href=#update11><h2 id="update11"><b>Major:</b> Engine Yard now supports the AWS regions Oregon and Brazil</h2></a>
 

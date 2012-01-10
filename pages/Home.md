@@ -2,8 +2,6 @@
 
 Engine Yard is a Ruby on Rails Platform as a Service that provides the ability to scale from hundreds of users to millions. We are a pioneer in automated Rails application deployment and management in the cloud. We've been a part of the Ruby community for a long time and have contributed to Ruby on Rails, JRuby, Rubinius, and fog.
 
-**Important!** See [[Action Req'd: Amazon EC2 System Updates|cloud-updates-december-2011#update3]] for information about the Amazon EC2 system updates. 
-
 ## In Depth on
 * [[Engine Yard Cloud platform|cloud-intro]]
 * [[Quick start to deploying|getting-started-intro]]
@@ -22,6 +20,9 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
     <h2>Updated documentation</h2>
     <ul>
   	 	<li>
+			 [[SSL certificates|ssl-certificates]]
+		</li>  	 	
+		<li>
 			 [[Using Rubinius 2 with Engine Yard Cloud|using-rubinius-on-cloud]]
 		</li>
 		<li>
@@ -33,9 +34,6 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
 		<li>
 			[[Backing up the database|database_backups]]
 		</li>	
-	    <li>
-         [[Using multi-region on Engine Yard Cloud|using-multi-region-with-engine-yard-cloud]]
-        </li>
     </ul>   
 
   </div>
@@ -43,6 +41,9 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
   <div class="col col-last">
     <h2>New documentation</h2>
     <ul> 
+	  <li>
+	     [[Engine Yard Cloud updates January 2012|cloud-updates-january-2012]]
+	  </li>
 	  <li>
          [[High availability for clustered environments|environment-high-availability]]
       </li>
@@ -54,9 +55,6 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
       </li>
       <li>
          [[Using Ruby 1.9.3 with Engine Yard Cloud|ruby-193]]
-      </li>
-      <li>
-	 [[500 errors after deploying|issue-mysql2-adapter]]
       </li>
      
     </ul>
