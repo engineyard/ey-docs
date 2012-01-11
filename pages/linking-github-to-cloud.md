@@ -28,7 +28,7 @@ For example, you might have two GitHub accounts: a personal GitHub account for e
 
 2. In the Engine Yard Cloud Dashboard, click Create New Application.
 
-3. On the Create New Application page, click Link MyAccount.
+3. On the Create New Application page, click Link Account_Name.
 
 <h2 id="topic2">To link your Engine Yard account to a GitHub account (Method 2)</h2>
 
@@ -43,12 +43,6 @@ For example, you might have two GitHub accounts: a personal GitHub account for e
      ![github link](images/github_icon.png)
 
 4. Click OK.
-
-5. Click Allow to authorize.
-
-6. On your Accounts page, verify that the account is linked to the GitHub account.
-
-     ![confirm the link](images/confirm_github_link.png)
 
 <h2 id="topic3">To create an application from a repository in a linked GitHub account</h2>
 
