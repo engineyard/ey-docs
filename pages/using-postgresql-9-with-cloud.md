@@ -46,8 +46,8 @@ Follow this procedure to gain access to the Alpha program and access to the Beta
 
 1. [[Request access to the PostgreSQL 9 Alpha program|signup-postgresql]].
 
-2. Subscribe to Beta Conversations Google group under the Beta Conversations heading on the [[Beta Program page|beta-intro]].     
-	If you have participated in other Engine Yard Alpha and Beta programs, you might already be group member.
+2. Subscribe to Beta Conversations Google group under the Beta Conversations heading on the [[Engine Yard Early Access page|beta-intro]].     
+	If you have participated in other Engine Yard Early Access programs, you might already be group member.
 
 
 <h2 id="topic3"> Set up an application to use PostgreSQL 9 in Alpha </h2>

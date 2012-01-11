@@ -4,7 +4,7 @@ CarrierWave is a Ruby gem used to upload and store files (typically images and d
 Ruby applications. For example, you might use CarrierWave to associate and store 
 photos with user identities. (CarrierWave is an alternative to the Paperclip gem.)
 
-Topics covered in this article:
+This page describes:
 
 * [Setting up CarrierWave for local storage in Engine Yard Cloud][2]
 * [Setting up CarrierWave for online storage with a web service][3]

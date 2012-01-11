@@ -2,7 +2,7 @@
 
 Whenever Engine Yard Cloud creates an environment, it creates a MySQL or PostgreSQL database for the application and EBS volume called /db is created to store the data.
 
-When you set up your environment, make sure that you enable email alerts so that when your /db volume starts to fill up or if you database instance is under too much load, you receive an alert. 
+When you set up your environment, make sure that you enable email alerts so that when your /db volume starts to fill up or if your database instance is under too much load, you receive an alert. 
 
 The /db volume size and load capacity of your environment depends on whether you are using a single server, basic cluster, or configured environment. (See table below.)
 
@@ -67,7 +67,9 @@ When you increase the size of the database instances via the UI, you are effecti
 
 <h2 id="topic3"> Increase the size of the database with minimal downtime</h2>
 
-If you need to increase the size of your master database instance with minimal downtime, you can do this with assistance from Engine Yard Support. First, a larger database slave instance is created and then, after replication is complete, the slave is promoted to master and the original (smaller) master is decommissioned. 
+If you need to increase the size of your master database instance with minimal downtime, you can engage Engine Yard Support to help. (Self-supporting customers pay the per-incident support fee for this service.)
+
+First, a larger database slave instance is created and then, after replication is complete, the slave is promoted to master and the original (smaller) master is decommissioned. 
 
 **Note:** This procedure applies only to clustered environments. (Single instances cannot be increased this way.) 
 

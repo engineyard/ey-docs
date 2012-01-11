@@ -15,7 +15,7 @@ component update to provide reliability, security, and compatibility within the 
 As a result, you can confidently deploy and manage your application with any Engine Yard product. Read about the many [[benefits|http://www.engineyard.com/products/cloud/benefits]] of using our Platform-as-a-Service.
 
 <p class="note">
-  <strong>Note: </strong>This version is correct as of December 6, 2011.
+  <strong>Note: </strong>This version is correct as of January 10, 2012.
 </p>
 
 <br /><br />
@@ -63,45 +63,35 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
 		<ul>
-          <li class="experimental" title='Experimental'>1.9.3.p0
+          <li class="beta" title='Beta'>1.9.3.p0
           </li>        
         <ul>
           <li class="full">1.9.2.p290
           </li>
         </ul>
         <ul>
-          <li class="full">1.8.7.p352
-          </li>
-        </ul>
-        <ul>
-          <li class="experimental" title='Experimental'>1.8.6.p420
+          <li class="full">1.8.7.p357
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="experimental" title='Experimental'>1.9.3.p0
+          <li class="beta" title='Beta'>1.9.3.p0
           </li>
         <ul>
           <li class="full">1.9.2.p290
           </li>
         </ul>
         <ul>
-          <li class="full">1.8.7.p352
-          </li>
-        </ul>
-        <ul>
-          <li class="full">1.8.6.p420
+          <li class="full">1.8.7.p357
           </li>
         </ul>
       </td>
       <td>
         <p>
-          Avoid 1.8.5 and below, 1.8.6.p369 and below, 1.8.7.p171 and below, (multiple vulnerabilities)<br>
+          Avoid 1.8.7.p171 and below, (multiple vulnerabilities)<br>
           <a href="http://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=ruby">http://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=ruby</a>.<br>
           1.9.1 is not supported.
-			<br>
-		  1.8.6 is not available for new environments.
         </p>
       </td>
     </tr>
@@ -112,13 +102,13 @@ As a result, you can confidently deploy and manage your application with any Eng
       <td></td>
       <td> 
 	    <ul>
-		  <li>1.6.5/1.6u26 
+		  <li>1.6.5.1/1.6u30 
 		  </li>
 		</ul>
 	  </td>
       <td>
         <ul>
-          	<li>1.6.5/1.6u26 
+          	<li>1.6.5.1/1.6u30 
 			  </li>
         </ul>
       </td>
@@ -134,13 +124,13 @@ As a result, you can confidently deploy and manage your application with any Eng
       <td></td>
       <td>
         <ul>
-          <li class="full">2011.03
+          <li class="full">1.8.7.2011.12
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="full">2011.03
+          <li class="full">1.8.7.2011.12
           </li>
         </ul>
       </td>
@@ -153,19 +143,19 @@ As a result, you can confidently deploy and manage your application with any Eng
       <td></td>
       <td>
         <ul>
-          <li class="experimental" title='Experimental'>1.2.4
+          <li class="experimental" title='Experimental'>2.0.0 (1.8)
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="experimental" title='Experimental'>1.2.4
+          <li class="experimental" title='Experimental'>2.0.0 (1.8)
           </li>
         </ul>
       </td>
       <td>
         <p>
-          <span class="caps">Rubinius</span> support is in Alpha status.
+          Alpha support for Rubinius 2.0.0 in Ruby language mode 1.8.
         </p>
       </td>
     </tr>
@@ -225,14 +215,6 @@ As a result, you can confidently deploy and manage your application with any Eng
           <li class="full">2.3.x
           </li>
         </ul>
-        <ul>
-          <li class="full">2.2.2
-          </li>
-        </ul>
-        <ul>
-          <li class="full">2.1.2
-          </li>
-        </ul>
       </td>
       <td>
          <ul>
@@ -247,18 +229,9 @@ As a result, you can confidently deploy and manage your application with any Eng
           <li class="full">2.3.x
           </li>
         </ul>
-        <ul>
-          <li class="full">2.2.2
-          </li>
-        </ul>
-        <ul>
-          <li class="full">2.1.2
-          </li>
-        </ul>
       </td>
       <td>
         <p>
-          2.3.8 does not work with Mongrel.<br>
           2.3.3 and below must apply a<br>
           <a href="http://www.engineyard.com/blog/2009/cross-site-scripting-vulnerability-in-rails-2-x-on-ruby-1-8-x/">patch for a cross-site scripting vulnerability</a>.<br>
           Avoid 2.3.2 and below (multiple vulnerabilities)<br>
@@ -303,7 +276,7 @@ As a result, you can confidently deploy and manage your application with any Eng
     </tr>
     <tr>
       <td>
-        nginx
+        Nginx
       </td>
       <td>
         <ul>
@@ -320,10 +293,6 @@ As a result, you can confidently deploy and manage your application with any Eng
           <li class="full">0.8.54
           </li>
         </ul>
-        <ul>
-          <li class="full">0.6.35-r25 (patched)
-          </li>
-        </ul>
       </td>
       <td>
         <ul>
@@ -334,37 +303,10 @@ As a result, you can confidently deploy and manage your application with any Eng
           <li class="full">0.8.54
           </li>
         </ul>
-        <ul>
-          <li class="beta" title='Beta'>0.7.65-r23
-          </li>
-        </ul>
-        <ul>
-          <li class="full">0.6.35-r25 (patched)
-          </li>
-        </ul>
       </td>
       <td>
-        <p>
-          0.6.38 and below must apply several security patches.<br>
-          0.7.65-r2 support is in Beta status for Engine Yard Managed.
-        </p>
       </td>
     </tr>
-    <tr>
-      <td>
-        Mongrel
-      </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>
-        <p>
-          Avoid 1.1.3 and below (multiple vulnerabilities)<br>
-          <a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-6612">http://web.nvd.nist.gov/view/vuln/detail?vulnId=<span class="caps">CVE</span>-2007-6612</a>.
-        </p>
-      </td>
-    </tr>
-    <tr>
       <td>
         Unicorn
       </td>
@@ -394,19 +336,19 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="full">1.4.2
+          <li class="full">1.4.18
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="full">1.4.2
+          <li class="full">1.4.18
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="full">1.4.2
+          <li class="full">1.4.18
           </li>
         </ul>
       </td>
@@ -414,7 +356,7 @@ As a result, you can confidently deploy and manage your application with any Eng
     </tr>
     <tr>
       <td>
-        nginx/psgr
+        Nginx/Passenger
       </td>
       <td>
         <ul>
@@ -428,11 +370,11 @@ As a result, you can confidently deploy and manage your application with any Eng
           </li>
         </ul>
         <ul>
-          <li class="full">0.8.54-r2/<br>3.0.7
+          <li class="full">0.8.x/3.0.7
           </li>
         </ul>
 		<ul>
-          <li class="full">0.7.65-r9/<br>2.2.10
+          <li class="full">0.7.x/2.x
           </li>
         </ul>
       </td>
@@ -442,19 +384,15 @@ As a result, you can confidently deploy and manage your application with any Eng
           </li>
         </ul>
         <ul>
-          <li class="full">0.8.54-r2/<br>3.0.7
+          <li class="full">0.8.x/3.0.7
           </li>
         </ul>
 		<ul>
-	       <li class="full">0.7.65-r9/<br>2.2.10
+	       <li class="full">0.7.x/2.x
 	       </li>
 	    </ul>
       </td>
       <td>
-        <p>
-          Avoid Passenger 2.2.3 (memory leak issues).<br>
-          nginx must apply several security patches.
-        </p>
       </td>
     </tr>
     <tr>
@@ -641,19 +579,19 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="beta" title='Beta'>2.4.2
+          <li class="beta" title='Beta'>2.4.4
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="beta" title='Beta'>2.4.2
+          <li class="beta" title='Beta'>2.4.4
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="beta" title='Beta'>2.4.2
+          <li class="beta" title='Beta'>2.4.4
           </li>
         </ul>
       </td>
@@ -832,9 +770,7 @@ As a result, you can confidently deploy and manage your application with any Eng
 <br>
 <strong>Alpha components and Engine Yard Labs components:</strong>
 <ul>
-	<li>
-		Require signup
-	</li>
+
 	<li>
 		Should not be used in a production environment
 	</li>

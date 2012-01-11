@@ -75,7 +75,7 @@ Yes. If you have a Gemfile in your application directory when you deploy your ap
 
 <a href=#FAQ9><h2 id="FAQ9"> Is PostgreSQL supported on Engine Yard Cloud? </h2></a>
 
-Support for PostgreSQL 9 is an Alpha feature. For more information, see [[Engine Yard Beta Program|beta-intro]].  
+Support for PostgreSQL 9 is an Alpha feature. For more information, see [[Engine Yard Engine Yard Early Access|beta-intro]].  
 
 <a href=#FAQ11><h2 id="FAQ11"> What scale of applications are appropriate for Engine Yard Cloud? </h2></a>
 
@@ -108,7 +108,7 @@ You setup and control the DNS records for your domain name of your website. You'
 
 If you're just doing staging or testing, no.  If you're ready for production then yes, because you'll need the IP address to point your DNS entries to your IP address.
 
-Read the [[IP Address Overview|ip-addresses]] article for more in-depth information about IP addresses and how they are used with Engine Yard Cloud.
+See [[IP Address Overview|ip-addresses]] for more information about IP addresses and how they are used with Engine Yard Cloud.
 
 <a href=#FAQ15><h2 id="FAQ15"> Do I have sudo access? </h2></a>
 
@@ -224,6 +224,8 @@ Also you may see the error:
 <a href=#FAQ27><h2 id="FAQ27"> Error: "missing activerecord-mysql2-adapter gem" </h2></a>
 
 To fix this, include the `mysql2` gem in your Gemfile.
+
+For more information, see [[500 errors after deploying / Gemfile missing database adapter|issue-mysql2-adapter]].
 
 <a href=#FAQ28><h2 id="FAQ28"> Bundler 1.0 will not install compiled gems in UNIX when bundle install is run in Windows </h2></a>
 

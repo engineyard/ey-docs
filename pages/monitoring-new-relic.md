@@ -51,7 +51,7 @@ In order to monitor your application with New Relic, you add the New Relic gem t
     * For Rails 3 and installations using bundler, add the gem to your Gemfile.
     * For Rails 2.0 and Rails 2.1 to 2.3 without bundler, edit your environment.rb file.  
 
-    For details about installing the gem, see the [[New Relic documentation.|http://newrelic.com/docs/ruby/ruby-agent-installation]]  
+    For details about installing the gem, see the [[New Relic documentation|http://newrelic.com/docs/ruby/ruby-agent-installation]]. (Do not install newrelic.yml. Engine Yard does this for you.)  
 1. In Engine Yard Cloud, click Dashboard.
 2. Click the application name that needs monitoring.
 3. Click the pencil icon to edit this application.

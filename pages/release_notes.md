@@ -1,11 +1,27 @@
 # Release Notes
 <a href="http://feed43.com/1082485410203701.xml" class="rss">Release Notes RSS Feed</a>
 
+### [[January 2012|cloud-updates-january-2012]]
+
+* [[<b>Major:</b> Engine Yard stack upgrades|cloud-updates-january-2012#update2]] *January 6th, 2012*
+
+* [[Fix: Engine Yard stack upgrades|cloud-updates-january-2012#update1]] *January 3rd, 2012*
+
 ### [[December 2011|cloud-updates-december-2011]]
 
-* [[Fix: An issue with New Relic Server Monitoring|cloud-updates-december-2011#update8]] *December 8th 2011*
+* [[<b>Major:</b> Ruby 1.9.3 is available with Beta support|cloud-updates-december-2011#update14]] *December 22nd, 2011*
 
-* [[<b>Action Req'd</b>: Amazon EC2 System Updates|cloud-updates-december-2011#update3]] *December 8th 2011*
+* [[<b>Major:</b> Rubinius 2.0 (1.8) is available with Alpha support|cloud-updates-december-2011#update12]] *December 22nd, 2011*  
+
+* [[<b>Major:</b> Engine Yard now supports the AWS regions Oregon and Brazil|cloud-updates-december-2011#update11]] *December 20th 2011*
+
+* [[Minor: Engine Yard stack upgrades|cloud-updates-december-2011#update10]] *December 19th, 2011*
+
+* [[Minor: engineyard gem updates|cloud-updates-december-2011#update9]] *December 14th, 2011*
+
+* [[Fix: An issue with New Relic Server Monitoring|cloud-updates-december-2011#update8]] *December 8th, 2011*
+
+* [[<b>Action Req'd</b>: Amazon EC2 System Updates|cloud-updates-december-2011#update3]] *December 8th, 2011*
 
 * [[Fix: engineyard gem update|cloud-updates-december-2011#update7]] *December 7th, 2011*
 

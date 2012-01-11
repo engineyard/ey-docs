@@ -49,7 +49,7 @@ On the account management screen for each account, you can edit the name of the 
 
 #### Add new users
 
-Enter the email address of the new user you would like to add to the current account, and click Add User. This sends an email invitation to that account with a link to accept the invitation. After the recipient accepts the invitation, they appear on the list of members of this account and their Dashboard shows all the environments from this account.
+Enter the email address of the new user you want to add to the current account, and click Add User. This sends an email invitation to that account with a link to accept the invitation. After the recipient accepts the invitation, they appear on the list of members of this account and their Dashboard shows all the environments from this account.
 
 <img src="/images/collaboration/collab-invite.jpg" alt="Invite Collaboration User" width="700" />
 

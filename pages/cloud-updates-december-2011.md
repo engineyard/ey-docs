@@ -2,6 +2,67 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update14><h2 id="update14"><b>Major:</b> Ruby 1.9.3 is available with Beta support </h2></a>
+
+December 22nd, 2011
+
+Ruby 1.9.3.p0 is available in Engine Yard Cloud with Beta support.
+
+This is the first stable release of Ruby 1.9.3. 
+
+Ruby 1.9.3 offers faster loading times for Rails 3.x applications. For more information about this release, see [[Ruby 1.9.3 p0 is released|http://www.ruby-lang.org/en/news/2011/10/31/ruby-1-9-3-p0-is-released/]].
+
+<a href=#update12><h2 id="update12">Major: Rubinius 2.0 (1.8) is available with Alpha support</h2></a>
+
+December 22nd, 2011
+
+Rubinius 2.0 (language mode Ruby 1.8) Developer Preview is available in Engine Yard Cloud with Alpha support. (Use the [[Early Access Features page|beta-intro#topic2]] or [[sign up|signup-rubinius]] to participate in the program.)
+
+Rubinius 2.0 offers improved performance, parallelism, and better memory usage. For general information about Rubinius 2, see [[Inside the Rubinius 2.0 Preview Release|http://rubini.us/2011/06/07/inside-rubinius-20-preview/]].
+
+Rubinius 2.0 (language mode Ruby 1.9) is coming soon.
+
+<a href=#update11><h2 id="update11"><b>Major:</b> Engine Yard now supports the AWS regions Oregon and Brazil</h2></a>
+
+December 20th, 2011
+
+You can now choose to locate your Engine Yard environment in any of seven AWS regions. 
+The two newest regions are:  
+
+* US West (Oregon), us-west-2
+* South America (Sao Paulo), sa-east-1  
+
+For more information, see [[Using multi-region on Engine Yard Cloud|using-multi-region-with-engine-yard-cloud]].
+
+<a href=#update10><h2 id="update10">Minor: Engine Yard stack upgrades</h2></a>
+
+December 19th, 2011
+
+The following upgrades have been made to the Engine Yard stack:  
+
+* HAProxy to 1.4.18
+* Rsync to 3.0.9
+* Monit to 5.3.1
+* Redis to 2.4.4
+* Rubinius 2.0.0
+
+These changes are applied when you upgrade your environment.
+
+
+
+<a href=#update9><h2 id="update9">Minor: engineyard gem updates</h2></a>
+
+December 14th, 2011
+
+Version 1.4.15 of the engineyard gem contains some minor interface improvements.  
+
+Version 1.4.14 of the engineyard gem contains these enhancements:  
+
+* Deploy logs now show more information for failing deploys.  
+* Show the user name of the person who triggers a deploy as deployed_by in deploy hooks. (See [[Using deploy hooks|use-deploy-hooks-with-engine-yard-cloud]].)
+* Minor fix for checking the status of applications that have not yet been deployed.
+
+
 <a href=#update8><h2 id="update8">Fix: An issue with New Relic Server Monitoring</h2></a>
 
 December 8th, 2011
@@ -15,7 +76,7 @@ December 8th, 2011
 
 Amazon is in the process of applying patches to their systems. To complete the patch process, your instances need to be restarted. 
 
-**Important!** Check your email for details about your environment and visit our [[AWS Reboot FAQs|aws-reboot-faqs]].
+**Important!** If your instances have not yet been restarted, check your email for details about your environment and visit our [[AWS Reboot FAQs|aws-reboot-faqs]].
 
 Here is some additional information from Amazon:
 
@@ -105,7 +166,6 @@ Getting access to Alpha features and Engine Yard Labs features is now faster and
 
 **Note:** Trial account users must use the signup pages at [[Engine Yard Early Access and Labs|beta-intro]]. Full account users can also use the signup pages.
 
-<!--For more information, see [the blog about this new feature]. -->
 
 [1]: #update1        "update1"
 [2]: #update2        "update2"

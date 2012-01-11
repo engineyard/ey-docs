@@ -6,7 +6,7 @@ The updates described are either important (where you need to take action) or of
 
 October 31st, 2011
 
-Ruby 1.9.3.p0 is available in Engine Yard Cloud with Alpha support. ([[Sign up|signup-ruby193]] to participate in the program.)
+Ruby 1.9.3.p0 is available in Engine Yard Cloud with Alpha support.
 
 This is the first stable release of Ruby 1.9.3. 
 
