@@ -6,7 +6,7 @@ the deployment of your application to meet its particular needs.
 
 For example, if your application uses Resque, then deploy hooks provide 
 a way for you to restart your Resque workers when you deploy a new version 
-of your application. Hoptoad users can use deploy hooks to notify Hoptoad 
+of your application. Airbrake users can use deploy hooks to notify Airbrake 
 of a deploy.
 
 Deploy hooks live in the `APP_ROOT/deploy` directory of your application. The order 
