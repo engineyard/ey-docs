@@ -41,6 +41,10 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
   <div class="col col-last">
     <h2>New documentation</h2>
     <ul> 
+      <li>
+		 [[Customize Nginx|customize-nginx]]
+	  </li>  
+	
 	  <li>
 	     [[Engine Yard Cloud updates January 2012|cloud-updates-january-2012]]
 	  </li>
