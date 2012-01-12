@@ -3,6 +3,7 @@
 You might need to customize the default Nginx configuration. This page describes the layout of our Nginx configuration files and lists the files that are not altered by Chef on subsequent runs. These non-altered (customizable) files are straightforward to customize.
 
 You can also customize Nginx with [[custom Chef recipes|custom-chef-recipes]] and with [[keep-files|configuration-keep-files]]; however, this is more difficult.  
+ 
 **Note:** If you need to create new customized instances that cannot be based on data volume snapshots of existing customized instances, then you must use custom Chef recipes for your Nginx configuration; *cf.* [Apply Nginx customizations to new or rebuilt instances][2]. 
 
 <h2 id="topic1"> Customizable files</h2>
@@ -17,11 +18,9 @@ These are the files that you can edit without writing a custom Chef recipe or us
 
 * `/etc/nginx/servers/app_name/custom.ssl.conf` - Use this file to add configurations inside the _server_ context of *app_name* that only apply when the request comes in over HTTPS. This file does not exist if SSL is not enabled for your application.
 
-* `/etc/nginx/servers/app_name.rewrites` - This file is only used by (deprecated) Mongrel. 
+* `/etc/nginx/servers/app_name.rewrites` - This file is only used by (deprecated) Mongrel.  Both HTTP and HTTPS requests can be affected by the rewrites in this file. 
 
 * `/etc/nginx/servers/default.conf` - This file ensures that Nginx starts. We recommend that you leave it empty.
-
-<!--**Question:** What do I need to do after editing these files to have a Nginx configuration changes take effect? -->
 
 <h2 id="topic2"> Apply Nginx customizations to your environment</h2>
 
@@ -29,7 +28,9 @@ After you edit customizable files, make sure to reload Ngnix in your environment
 
 ###To apply your Nginx customizations to your environment
 
-1. Via SSH connect to the application master instance and edit one or more of the files listed [above][1].
+1. Via SSH, connect to the application master instance and edit one or more of the files listed [above][1].
+
+2. If you have a clustered environment with one or more application-slave instances, make the same edits on the slave instances (or copy the edited files from the application master instance). 
 
 2. Load new the Ngnix configuration files by doing one of the following:  
     * In the UI, click Apply.
