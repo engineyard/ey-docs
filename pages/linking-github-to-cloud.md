@@ -22,7 +22,15 @@ You can link your Engine Yard account to only one GitHub account. Make sure that
 
 For example, you might have two GitHub accounts: a personal GitHub account for early phase and private projects and a group account that contains the mainline versions of your company's applications and that your colleagues/collaborators already have access to. You choose the group account to link your Engine Yard account to.
 
-<h2 id="topic2">To link your Engine Yard account to a GitHub account</h2>
+<h2 id="topic2">To link your Engine Yard account to a GitHub account (Method 1)</h2>
+
+1. Log into the GitHub account that you want to link to. 
+
+2. In the Engine Yard Cloud Dashboard, click Create New Application.
+
+3. On the Create New Application page, click Link account_name.
+
+<h2 id="topic2">To link your Engine Yard account to a GitHub account (Method 2)</h2>
 
 1. Log into the GitHub account that you want to link to. 
 
@@ -36,12 +44,6 @@ For example, you might have two GitHub accounts: a personal GitHub account for e
 
 4. Click OK.
 
-5. Click Allow to authorize.
-
-6. On your Accounts page, verify that the account is linked to the GitHub account.
-
-     ![confirm the link](images/confirm_github_link.png)
-
 <h2 id="topic3">To create an application from a repository in a linked GitHub account</h2>
 
 * Create an application for Engine Yard Cloud, making sure to do the following: 
@@ -54,8 +56,6 @@ For example, you might have two GitHub accounts: a personal GitHub account for e
      Instead, the key is added directly to the linked GitHub account. The deploy key is named "Engine Yard Deploy Key <i>app_name</i>".
 
 <h2 id="topic4">To unlink your Engine Yard account from a GitHub account</h2>
-
-1. Log into the GitHub account that you want to unlink your Engine Yard account from. 
 
 2. In your Engine Yard account, go to Account > Account Settings.
 
