@@ -32,9 +32,9 @@ After you edit customizable files, make sure to reload Ngnix in your environment
 
 2. If you have a clustered environment with one or more application-slave instances, make the same edits on the slave instances (or copy the edited files from the application master instance). 
 
-2. Load new the Ngnix configuration files by doing one of the following:  
+3. Load new the Ngnix configuration files by doing one of the following:  
     * In the UI, click Apply.
-    * Via SSH connect to the application master instance and type this engineyard gem command:  
+    * Use the CLI interface (on your local machine), type this engineyard gem command:  
 
             ey ssh "sudo /etc/init.d/nginx reload" -e environment_name --app-servers
 
