@@ -67,7 +67,7 @@ The unix environment variable LANG is now set to C by default. Previously, LANG 
 
 September 14th, 2011
 
-Nginx now supports retrieving assets from the local file system (the `assets` directory and the `last_assets` directory) or upstream from Passenger or Unicorn. This change is in preparation for full Rails 3.1 support.
+Nginx now supports retrieving assets from the local filesystem (the `assets` directory and the `last_assets` directory) or upstream from Passenger or Unicorn. This change is in preparation for full Rails 3.1 support.
 
 <a href=#update7><h2 id="update7">Fix: Access log file rotation</h2></a>
 

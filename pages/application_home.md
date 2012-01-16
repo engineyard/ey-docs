@@ -102,11 +102,10 @@ Just click the x Remove link and the gem is removed.  This will remove the gem f
 
 ## Manage Unix Packages
 
-Configure additional software packages for your application within Engine Yard Cloud.
+To configure additional software packages for your application within Engine Yard Cloud
 
-  - Under SERVER TOOLS, click Dashboard to view your list of applications.
-  - Click name of the application you want to modify
-  - Then click the Add Unix Packages icon in the upper right.
+1. On the Dashboard, click name of the application you want to modify.  
+2. Click the Add Unix Packages icon in the upper right.
 
 ### Add a Software Package
 

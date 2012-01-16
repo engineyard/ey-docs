@@ -10,7 +10,7 @@ Topics covered on this page:
 
 <h2 id="paths">Using asset path helper methods</h2>
 
-With the asset pipeline, static assets are served from a flat file system in the `public/assets` directory. 
+With the asset pipeline, static assets are served from a flat filesystem in the `public/assets` directory. 
 
 Sprockets is integrated with Rails 3.1. Sprockets makes it easier to manage your asset files. Using Sprockets and its asset path helper methods can make ERB more readable.
 
