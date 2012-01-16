@@ -30,15 +30,15 @@ deploying your applications to the cloud with our platform.
    Learn more about the deploy you application from a Windows environment.
 
 7. ### [[Deploy JRuby applications|deploy-jruby]]
-   Learn how to deploy a Jruby application on Engine Yard Cloud.
+   Learn how to deploy a JRuby application on Engine Yard Cloud.
 
 8. ### [[Deploy JRuby applications in trial accounts|deploy-jruby-trial]]
-   Learn how to reconfigure your Trial account to deploy a Jruby application.
+   Learn how to reconfigure your Trial account to deploy a JRuby application.
 
 9. ### [[Maintenance pages|deployment-maintenance-pages]]
    Learn how to display maintenance pages while your application is deployed.
 
-10. ### [[Change your Git repo location|change-your-repo-location]]
+10. ### [[Change your Git repository location|change-your-repo-location]]
    Learn how to update the location of your Git repository.
 
 11. ### [[Convert Capistrano symlinks to Engine Yard Cloud symlinks|convert-capistrano-symlinks-to-cloud-symlinks]]
