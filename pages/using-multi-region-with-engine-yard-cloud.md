@@ -12,7 +12,7 @@ These AWS regions are supported:
 
   * US East (N. Virginia), us-east-1
   * US West (N. California), us-west-1
-  * US West (Orgeon), us-west-2
+  * US West (Oregon), us-west-2
   * EU West (Dublin), eu-west-1
   * Asia Pacific (Singapore), ap-southeast-1
   * Asia Pacific (Tokyo), ap-northeast-1
