@@ -1,4 +1,3 @@
-
 # Host your code on GitHub
 
 After your local machine is setup and you have created your first Ruby on Rails application, place your code in a git repository. You have options on where to host your code, but the simplest is hosting it on [GitHub](http://www.github.com). This page describes how to host your code on GitHub.
@@ -23,7 +22,7 @@ After your local machine is setup and you have created your first Ruby on Rails 
     <th>For more information about...</th><th>See...</th>
   </tr>
   <tr>
-    <td>Setting up your local machine</td><td>[[Setup your local environment|setup-environment]].</td>
+    <td>Setting up your local machine</td><td>[[Set up your local environment|setup-environment]].</td>
   </tr> 
   <tr>
 	<td>hosting your code on GitHub</td><td>this [[Spanish translation of the Host your Code on GitHub tutorial|http://www.decisionesinteligentes.com/guides/github-como-repositorio]], courtesy of Mario Alberto Chavez Cardenas of [[Decisiones Inteligentes|http://www.decisionesinteligentes.com/]] and [[Tiajuana.rb|http://tijuanarb.org/]].</td>
