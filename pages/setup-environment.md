@@ -1,4 +1,4 @@
-# Setup your local environment
+# Set up your local environment
 
 This page describes getting your local environment ready for Ruby on Rails development.
 
