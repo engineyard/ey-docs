@@ -1,18 +1,19 @@
 
 # Host your code on GitHub
 
-Now that you have your local machine setup and have created your first Ruby on Rails application it is time for you to host your code somewhere. You have many options on where you can host your code, but the simplest is hosting it on [GitHub](http://www.github.com). This will guide you through that process.
+After your local machine is setup and you have created your first Ruby on Rails application, place your code in a git repository. You have options on where to host your code, but the simplest is hosting it on [GitHub](http://www.github.com). This page describes how to host your code on GitHub.
 
-  -  First, you create a [[GitHub|https://github.com/]] account.
-  -  After logging in, create a new repository. Click New Repository.
+##To host your code on GitHub  
 
-<img src="images/new_repository.jpg" width="600" />
-
-  -  Give your project a name and description and then click Create Repository.
-  -  Next you are presented with the guide of how to connect your local git repo with your GitHub repo.
+1. Create a [[GitHub|https://github.com/]] account.
+2. After logging in, create a new repository. (Click New repository.)
+3. Give your project a name and description and click Create Repository.
+4. Follow the GitHub instructions to connect your local git repo with your GitHub repo.
   
-<img src="images/github-repo-guide.jpg" width="600" />
+    ![GitHub instructions 2012](images/github-repo-guide.png)
 
-  -  After you have completed these directions, your applications code are be stored remotely on GitHub. Whenever you make any local changes in your git repo and want to have it pushed to your remote GitHub repository, all you have to do is type `git push` while inside of your local repo and git will push your newly committed code to GitHub.
+    After you have completed the GitHub, your application code is stored remotely on GitHub. Whenever you make any local changes in your git repository and want to have it pushed to your remote GitHub repository, type `git push` while inside of your local repository; git will push your newly committed code to GitHub.
 
-Check out this [[Spanish translation of the Host your Code on GitHub tutorial|http://www.decisionesinteligentes.com/guides/github-como-repositorio]], courtesy of Mario Alberto Chávez Cárdenas of [[Decisiones Inteligentes|http://www.decisionesinteligentes.com/]] and [[Tiajuana.rb|http://tijuanarb.org/]].
+**Important!** Make sure to put your Rails root directory at the root level of your git repository. Don't put it in a subdirectory. (The Rails root directory is the one that contains the app, config, and public directories.)
+
+Check out this [[Spanish translation of the Host your Code on GitHub tutorial|http://www.decisionesinteligentes.com/guides/github-como-repositorio]], courtesy of Mario Alberto Chavez Cardenas of [[Decisiones Inteligentes|http://www.decisionesinteligentes.com/]] and [[Tiajuana.rb|http://tijuanarb.org/]].
