@@ -3,6 +3,7 @@
 ## Customizations
   * [[Custom Chef Recipes|custom-chef-recipes]]
   * [[Use keep files to make custom configurations to Monit, Nginx, etc.|configuration-keep-files]]
+  * [[Customize Nginx|customize-nginx]]
   * [[Customize Unicorn|customize-unicorn]]
   * [[Find important log files|find-important-log-files]]
   * [[Setup SSMTP for mail relay to AuthSMTP|setup-ssmtp-for-mail-relay-to-authsmtp]]

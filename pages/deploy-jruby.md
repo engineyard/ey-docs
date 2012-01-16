@@ -7,10 +7,17 @@ This is the process:
 * [Set up your local environment for JRuby development and CLI deployment][1].  
 * [Run a JRuby application on Engine Yard Cloud][2].
 
-**Note:** If you are using a free trial account, see [Deploy JRuby applications in trial accounts](deploy-jruby-trial).
+**Note:** If you are using a free trial account, see [[Deploy JRuby applications in trial accounts|deploy-jruby-trial]].
 
+###About JRuby and C extensions
 
-<a href=#topic1><h2 id="topic1">Prepare your local machine for JRuby</h2></a> 
+Loading C extensions (cext) is disabled for JRuby on Engine Yard Cloud. If cext support is necessary for your application, please submit a ticket with [[Engine Yard Support|http://support.cloud.engineyard.com]] and tell us why.
+
+###About the web_apps option
+
+Engine Yard's Trinidad application server does not support the `:web_apps` option. (The `:web_apps` option allows configuration of several Rails applications within the same Tomcat container.)
+
+<h2 id="topic1">Prepare your local machine for JRuby</h2></a> 
 
 If you are new to JRuby, follow the procedure below to prepare your local machine to develop and test JRuby code. 
 
@@ -53,11 +60,10 @@ If you are already running JRuby on your local machine, review the procedure bel
   		rvm wrapper jruby@ey --no-prefix ey
 
 
-<a href=#topic2><h2 id="topic2">Run a JRuby application on Engine Yard Cloud</h2></a>
+<h2 id="topic2">Run a JRuby application on Engine Yard Cloud</h2></a>
 
 Running a JRuby application is similar to running any Ruby application. The main difference is that you set the Application Server to Trinidad.   
 
-**Note:** Engine Yard's Trinidad application server does not support the `:web_apps` option. (The `:web_apps` option allows configuration of several Rails applications within the same Tomcat container.)
 
 
 ###To run a new JRuby application on Engine Yard Cloud

@@ -48,7 +48,7 @@ both of these volumes from previous snapshots.
     <th>For more information about...</th><th>See...</th>
   </tr>
 <tr>
-    <td>adding an instance to a cluster</td><td>[[Clustered Environments|environment-cluster]]</td>
+    <td>adding an instance to a cluster</td><td>[[Clustered environments|environment-cluster]]</td>
   </tr>
 
 </table>
