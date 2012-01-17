@@ -9,7 +9,7 @@ To use a public key generated for your development machine, the key must be uplo
 2. In your Dashboard, click SSH Public Keys.
 3. Click Add a new SSH public key.
 4. Enter a name for the key.
-5. Paste the key (from step 1) into the Public Key field.
+5. Paste the key (from Step 1) into the Public Key field.
 6. Click Add Key.  
   You receive a confirmation that your ssh public key has been created and added to your
 Engine Yard account.

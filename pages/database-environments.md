@@ -75,7 +75,7 @@ If you have a basic cluster and want to add database replication, follow this pr
 
 5. If your environment hasn't been upgraded since December 2nd, 2011 (i.e. if you see "Enable creation of db slaves with a larger volume than the db master" in the change log), then the /db volume size is not automatically increased and you need to do _one_ of the following:  
 	* Upgrade your environment, or
-	* Submit a ticket with [[Engine Yard Support|http://support.cloud.engineyard.com]] and ask to have /db volume size reset (to the size entered in step 3 above).
+	* Submit a ticket with [[Engine Yard Support|http://support.cloud.engineyard.com]] and ask to have /db volume size reset (to the size entered in Step 3 above).
  
 
 <!-- QUESTION: Do I still have to click Apply after this? PL-6488 -->
