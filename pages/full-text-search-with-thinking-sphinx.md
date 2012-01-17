@@ -54,7 +54,7 @@ This table contains troubleshooting tips related to setting up Sphinx with your 
 	  </tr>
 	  <tr>
 	    <td>My files aren't being indexed. </td> 
-		<td> Make sure you have edited the cron_interval in default.rb (step 3 above). If the cron_interval=nil files are not indexed.  </td>
+		<td> Make sure you have edited the cron_interval in default.rb (Step 3 above). If the cron_interval=nil files are not indexed.  </td>
 	  </tr>
 	  <tr>
 	    <td>I set up Sphinx without using chef recipes. It worked fine at first but then stopped working.</td>
@@ -62,7 +62,7 @@ This table contains troubleshooting tips related to setting up Sphinx with your 
 	</tr>
 	<tr>
 		<td>I can't connect to the Sphinx server / Sphinx server not found.</td>
-		<td>Make sure that you have added the deploy hooks and that the sphinx.yml file is present (step 4 above).
+		<td>Make sure that you have added the deploy hooks and that the sphinx.yml file is present (Step 4 above).
 </td>
 	  </tr>
 	</table>

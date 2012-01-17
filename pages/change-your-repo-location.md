@@ -30,7 +30,7 @@ your production environment.
 ## Check the deploy key
 
 If the repository has been moved to a new account, you will need to ensure that your deploy key is installed for this repository on GitHub. You can find your
-deploy key on the application page referenced in step 3 above.
+deploy key on the application page referenced in Step 3 above.
 
 
 ## A note about SVN
