@@ -45,7 +45,10 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
   <div class="col col-last">
     <h2>New documentation</h2>
     <ul> 
-      <li>
+       <li>
+	         [[Stopping an application running on a multi-application environment|issue-delete-application]]
+	   </li>
+	   <li>
 		 [[Customize Nginx|customize-nginx]]
 	  </li>  
 	
@@ -61,9 +64,7 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
       <li>
          [[Deploying Node.js applications on Engine Yard Cloud|deploy-node]]
       </li>
-      <li>
-         [[Using Ruby 1.9.3 with Engine Yard Cloud|ruby-193]]
-      </li>
+     
      
     </ul>
   </div>
