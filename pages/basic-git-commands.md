@@ -1,26 +1,26 @@
-# Introduction to Basic Git Commands
+# Introduction to basic git commands
 
 
 ## What is git?
 [Git](http://git-scm.com/) is a version control system. While there are numerous uses for Git, we will highlight using it to manage the changes you make to your project. Check out the links at the bottom for some more ideas and uses for Git.
 
-## Basic Commands
+## Basic commands
 
-Git stores everything in a Git repository.  To retrieve a Git repository, there are two options.  You can either initialize a new repository in a project's directory or you can clone one from a public Git repository.
+Git stores everything in a git repository.  To retrieve a git repository, there are two options.  You can either initialize a new repository in a project's directory or you can clone one from a public git repository.
 
-### Initialize a New Repository
+### Initialize a new repository
 
 To create a repository for an existing directory of files, `cd` into the home directory of your project and initialize the repository:
 
     git init
 
-### Clone an Existing Repository
+### Clone an Existing repository
 
 To create a copy of an existing project, you must run the `git clone` command with the URL for the project you want
 
     git clone git://github.com/radiant/radiant.git
 
-## Working in Repository
+## Working in repository
 
 Think of git as taking snapshots of your files.  You can edit and manipulate your files to how you want them, then you can send them to the staging area, and then you can take a snapshot of these files.
 

@@ -2,9 +2,17 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update5><h2 id="update5">Fix: Engine Yard stack upgrade</h2></a>
+
+January 18th, 2012
+
+Fixed an issue where utility instances were being incorrectly configured as application instances.
+
+This fix is applied when you upgrade your environment.
+
 <a href=#update4><h2 id="update4">Minor: Trinidad and JVM options are now configurable</h2></a>
 
-January 17, 2012
+January 17th, 2012
 
 If your environment runs on the Trinidad application stack server, you can now configure Trinidad and JVM options. Customize the `/data/#{appname}/shared/config/trinidad_env.sh` file and save it as a keep file.
 
@@ -12,9 +20,9 @@ For information about keep files, see [[Use keep files to customize and maintain
 
 This feature becomes available when you upgrade your environment.
 
-<a href=#update3><h2 id="update3"><b>Fix:</b> Engine Yard stack upgrades</h2></a>
+<a href=#update3><h2 id="update3">Fix: Engine Yard stack upgrade</h2></a>
 
-January 17, 2012
+January 17th, 2012
 
 The following fixes have been made to the Engine Yard stack:  
 
@@ -25,7 +33,7 @@ These fixes are applied when you upgrade your environment.
 
 <a href=#update2><h2 id="update2"><b>Major:</b> Engine Yard stack upgrades</h2></a>
 
-January 6, 2012
+January 6th, 2012
 
 Security improvements related to hashing have been made for these Ruby versions:  
 
