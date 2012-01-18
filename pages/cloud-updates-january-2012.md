@@ -2,6 +2,27 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update4><h2 id="update4">Minor: Trinidad and JVM options are now configurable</h2></a>
+
+January 17, 2012
+
+If your environment runs on the Trinidad application stack server, you can now configure Trinidad and JVM options. Customize the `/data/#{appname}/shared/config/trinidad_env.sh` file and save it as a keep file.
+
+For information about keep files, see [[Use keep files to customize and maintain configurations on Engine Yard Cloud|configuration-keep-files]].
+
+This feature becomes available when you upgrade your environment.
+
+<a href=#update3><h2 id="update3"><b>Fix:</b> Engine Yard stack upgrades</h2></a>
+
+January 17, 2012
+
+The following fixes have been made to the Engine Yard stack:  
+
+* A problem with database backups in the US West (Oregon) and South America (Sao Paulo)  
+* A problem where PostgreSQL alerts displayed as MySQL alerts
+
+These fixes are applied when you upgrade your environment.
+
 <a href=#update2><h2 id="update2"><b>Major:</b> Engine Yard stack upgrades</h2></a>
 
 January 6, 2012

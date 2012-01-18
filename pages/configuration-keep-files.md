@@ -13,7 +13,8 @@ These are the files that can be made into keep files.
 **Note:** Only this subset of files in the /etc or /data directories can be made into keep files. Other files in these directories might be overwritten or ignored even if they have been prefaced with "keep".  
 
 
-* /data/#{appname}/shared/config/database.yml
+* /data/#{appname}/shared/config/database.yml  
+*  /data/#{appname}/shared/config/trinidad_env.sh
 * /data/nginx/nginx.conf
 * /data/nginx/common/proxy.conf
 * /data/nginx/common/servers.conf

@@ -3,6 +3,10 @@
 
 ### [[January 2012|cloud-updates-january-2012]]
 
+* [[Minor: Trinidad and JVM options are now configurable|cloud-updates-january-2012#update4]] *January 17th, 2012*
+
+* [[Fix: Engine Yard stack upgrades|cloud-updates-january-2012#update3]] *January 17th, 2012*
+
 * [[<b>Major:</b> Engine Yard stack upgrades|cloud-updates-january-2012#update2]] *January 6th, 2012*
 
 * [[Fix: Engine Yard stack upgrades|cloud-updates-january-2012#update1]] *January 3rd, 2012*
