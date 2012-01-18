@@ -17,7 +17,7 @@ You can configure many different applications and their corresponding repository
   1. In your Engine Yard account, click on the Dashboard link.
   2. On the Dashboard page, click on the application you want to update.
   3. On the Application page, click the pencil icon to edit your application.
-  4. On the Application edit page, enter your new Git repository url.
+  4. On the Application edit page, enter your new git repository url.
   5. Click the Update Application submit button
 
 ## Test your changes first

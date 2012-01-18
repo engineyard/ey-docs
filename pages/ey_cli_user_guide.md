@@ -9,7 +9,7 @@ any of your instances, uploading and applying custom chef recipes, and more.
 1. Install the `engineyard` gem: 
         gem install engineyard
 
-2. Switch to your local app directory that contains your git repo:
+2. Switch to your local app directory that contains your git repository:
         cd ~/my_application
 
 3. Deploy your app:
