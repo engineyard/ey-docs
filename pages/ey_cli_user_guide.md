@@ -1,6 +1,6 @@
 # Engine Yard CLI User Guide
 
-Welcome to the user guide for deploying to Engine Yard Cloud with the `engineyard` gem.  The `engineyard` gem provides a command line
+Welcome to the user guide for deploying to Engine Yard Cloud with the engineyard gem.  The engineyard gem provides a command line
 interface (CLI) to perform tasks such as deploying your application, rebuilding your applications environment, opening an ssh session to 
 any of your instances, uploading and applying custom chef recipes, and more.
 
@@ -8,7 +8,7 @@ any of your instances, uploading and applying custom chef recipes, and more.
 
 ###To deploy an application from the CLI
 
-1. Install the `engineyard` gem: 
+1. Install the engineyard gem: 
         gem install engineyard
 
 2. Switch to your local application directory that contains your git repository:
@@ -24,14 +24,14 @@ any of your instances, uploading and applying custom chef recipes, and more.
 
 ## Switching Engine Yard accounts
 
-If you want to log out of one Engine Yard account and log in to another, you need to delete the file that holds your account API token (this file is created by Step 4 above).
+If you want to log out of one Engine Yard account and log in to another, use the logout command to delete the API token from ``~/.eyrc`` or `env $EYRC`. This token is created at Step 4 above.
 
 ###To switch accounts within the CLI
 
 1. Type:
-        rm ~/.eyrc
+        ey logout
 
-2. Run an `engineyard` gem command, for example, `ey status`
+2. Run any engineyard gem command, for example, `ey login`
 
 3. At the prompt, enter the credentials for the account you want to use.
 
@@ -41,7 +41,7 @@ If you want to log out of one Engine Yard account and log in to another, you nee
 
    - Print a short help message.
 
-   - `ey help COMMAND` will print out the help for that command. For example, `ey help deploy` will print out the help for the `ey deploy` command, while `ey help recipes apply` will show the help for `ey recipes apply`. 
+   - `ey help COMMAND` prints out the help for that command. For example, `ey help deploy`  prints out the help for the `ey deploy` command, while `ey help recipes apply` shows the help for `ey recipes apply`. 
 
 - - - 
 #### `ey version`
@@ -67,7 +67,7 @@ If you want to log out of one Engine Yard account and log in to another, you nee
         - **Note:** the deployment process pulls the code from the git remote that was previously entered into the Engine Yard Cloud web application. Thus, the named branch must exist in that git remote for your deployment to succeed.
     - `--branch`: alias for `--ref`
     - `--tag`: alias for `--ref`
-    - `--app/-a NAME` (optional): the application to deploy. If the current working directory is inside the application's git repository and `--app` is omitted, `ey` will infer the application from the configured git remotes.
+    - `--app/-a NAME` (optional): the application to deploy. If the current working directory is inside the application's git repository and `--app` is omitted, `ey` infers the application from the configured git remotes.
     - `--migrate/-m COMMAND`: the command to use for database migrations. Default is `rake db:migrate`.
     - `--no-migrate`: Skip migrations.
     - `--force/-f`: Allow deployment of non-default branch. Only useful if you have a default branch configured in `ey.yml`.
@@ -167,6 +167,12 @@ If you want to log out of one Engine Yard account and log in to another, you nee
   - This command has to be invoked from the application's git repository so it can figure out which application gets its maintenance page taken down.
 
   - For more information, see [[Application maintenance pages|deployment-maintenance-pages]].
+
+- - -
+#### `ey logout`
+
+  - Take down the maintenance page.
+
 
 ---
 
