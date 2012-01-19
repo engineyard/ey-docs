@@ -1,6 +1,6 @@
 # Deploy from your Dashboard
 
-You can run a simple code deployment from your master branch, deploy your code and run migrations, or deploy code from another branch in your Git repository.
+You can run a simple code deployment from your master branch, deploy your code and run migrations, or deploy code from another branch in your git repository.
 
 ## Prerequisites
 

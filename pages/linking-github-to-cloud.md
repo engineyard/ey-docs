@@ -52,7 +52,7 @@ For example, you might have two GitHub accounts: a personal GitHub account for e
 
     a. In the Git Repository URI, select the name of the application from the dropdown menu or begin typing the name of application.
 
-    b. After you click Create Application, do not copy a Git deploy key to your GitHub account. <br>
+    b. After you click Create Application, do not copy a git deploy key to your GitHub account. <br>
      Instead, the key is added directly to the linked GitHub account. The deploy key is named "Engine Yard Deploy Key <i>app_name</i>".
 
 <h2 id="topic4">To unlink your Engine Yard account from a GitHub account</h2>

@@ -8,7 +8,7 @@ Steps to create and deploy your application from Windows:
 
   * [[Create a Rails application|deployment-windows#rails]]
   * [[Adjust your Gemfile|deployment-windows#adjust]]
-  * [[Setup Git and SSH|deployment-windows#git-ssh]]
+  * [[Setup git and SSH|deployment-windows#git-ssh]]
   * [[Create an application|deployment-windows#application]]
   * [[Create an environment|deployment-windows#environment]]
   * [[Configure instances|deployment-windows#instances]]

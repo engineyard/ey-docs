@@ -52,7 +52,7 @@ any of your instances, uploading and applying custom chef recipes, and more.
         - **Note:** the deployment process pulls the code from the git remote that was previously entered into the Engine Yard Cloud web application. Thus, the named branch must exist in that git remote for your deployment to succeed.
     - `--branch`: alias for `--ref`
     - `--tag`: alias for `--ref`
-    - `--app/-a NAME` (optional): the application to deploy. If the current working directory is inside the application's Git repository and `--app` is omitted, `ey` will infer the application from the configured Git remotes.
+    - `--app/-a NAME` (optional): the application to deploy. If the current working directory is inside the application's git repository and `--app` is omitted, `ey` will infer the application from the configured git remotes.
     - `--migrate/-m COMMAND`: the command to use for database migrations. Default is `rake db:migrate`.
     - `--no-migrate`: Skip migrations.
     - `--force/-f`: Allow deployment of non-default branch. Only useful if you have a default branch configured in `ey.yml`.
@@ -138,7 +138,7 @@ any of your instances, uploading and applying custom chef recipes, and more.
     - `--environment/-e NAME` (optional): the environment in which to put up the maintenance page.
     - `app/-a APP` (optional): name of the application whose maintenance page will be put up
 
-  - This command has to be invoked from the application's Git repository so it can figure out which application gets the maintenance page.
+  - This command has to be invoked from the application's git repository so it can figure out which application gets the maintenance page.
 
 - - -
 #### `ey web enable`
@@ -149,7 +149,7 @@ any of your instances, uploading and applying custom chef recipes, and more.
     - `--environment/-e NAME` (optional): the environment in which to take down the maintenance page.
     - `app/-a APP` (optional): name of the application whose maintenance page will be put up
 
-  - This command has to be invoked from the application's Git repository so it can figure out which application gets its maintenance page taken down.
+  - This command has to be invoked from the application's git repository so it can figure out which application gets its maintenance page taken down.
 
   - For more information, see [[Application maintenance pages|deployment-maintenance-pages]].
 
