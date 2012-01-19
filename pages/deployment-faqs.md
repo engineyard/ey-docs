@@ -14,9 +14,9 @@
 
 SVN is not supported at this time. Git is the only supported 
 version control system for deployment on Engine Yard Cloud. Your repository 
-will need to be ported to Git before your application can be 
+will need to be ported to git before your application can be 
 deployed on Engine Yard Cloud. GitHub has a great article on porting 
-an existing SVN repository to Git.
+an existing SVN repository to git.
 
 
 

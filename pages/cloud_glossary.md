@@ -24,7 +24,7 @@ Environments are a way to separate and categorize your instances according to in
 
 ## git clone URL
 
-This is the URL of your repository from which your application will be deployed.  For example, a Git repository at GitHub will have a URL that looks similar to:
+This is the URL of your repository from which your application will be deployed.  For example, a git repository at GitHub will have a URL that looks similar to:
 
     git@github.com:engineyard/vertebra.git
 

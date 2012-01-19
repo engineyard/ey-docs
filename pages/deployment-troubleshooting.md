@@ -7,7 +7,8 @@ Topics on this page:
 * [View the deployment log file][1] 
 * [500 errors after deploying and the deployment log shows "Please install the mysql2 adapter" error][2]
 * [Rails 3.1 application not displaying correctly in the staging environment][3]
-* [Application fails to deploy and the deployment log shows "Malformed or pre bundler-1.0.0 Gemfile.lock"][4]
+* [Application fails to deploy and the deployment log shows "Malformed or pre bundler-1.0.0 Gemfile.lock"][4]  
+* [Application fails to deploy and the deployment log shows "rake aborted! No Rakefile found"][5]  
 
 
 <h2 id="topic1"> View the deployment log file</h2>
@@ -37,7 +38,26 @@ If you deploy to your Rails 3.1 application staging environment and your applica
 
 If you are using Bundler 0.9, upgrade to Bundler 1.0 or later. See [[Action Req'd: Bundler 0.9 is being deprecated on October 3rd 2011|appcloud-updates-october-2011#update1]].
 
+<h2 id="topic5"> Application fails to deploy with this message: "rake aborted!"</h2>
+
+###Symptom  
+
+Application fails to deploy and the deployment log shows a message like this: 
+
+    rake aborted! 
+    No Rakefile found (looking for: rakefile, Rakefile, rakefile.rb, Rakefile.rb) 
+    /usr/lib/ruby/gems/1.8/gems/rake-0.8.3/lib/rake.rb:2343:in `raw_load_rakefile' 
+    (See full trace by running task with –trace)
+
+###Solution  
+
+This problem can occur if your application is nested in a subdirectory in git.
+
+Place your Rails root directory at the root level of your git repository. (The Rails root directory is the one that contains the app, config, and public directories.)
+
+
 [1]: #topic1        "topic1"
 [2]: #topic2        "topic2"
 [3]: #topic3        "topic3"
-[4]: #topic4		    "topic4"
+[4]: #topic4	    "topic4"
+[5]: #topic5        "topic5"

@@ -38,8 +38,8 @@ deploying your applications to the cloud with our platform.
 9. ### [[Maintenance pages|deployment-maintenance-pages]]
    Learn how to display maintenance pages while your application is deployed.
 
-10. ### [[Change your Git repository location|change-your-repo-location]]
-   Learn how to update the location of your Git repository.
+10. ### [[Change your git repository location|change-your-repo-location]]
+   Learn how to update the location of your git repository.
 
 11. ### [[Convert Capistrano symlinks to Engine Yard Cloud symlinks|convert-capistrano-symlinks-to-cloud-symlinks]]
    Learn how to convert Capistrano symlinks to Engine Yard Cloud symlinks for deployment.

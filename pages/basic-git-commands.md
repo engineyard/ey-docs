@@ -2,7 +2,7 @@
 
 
 ## What is git?
-[Git](http://git-scm.com/) is a version control system. While there are numerous uses for Git, we will highlight using it to manage the changes you make to your project. Check out the links at the bottom for some more ideas and uses for Git.
+[Git](http://git-scm.com/) is a version control system. While there are numerous uses for git, we highlight using it to manage the changes you make to your project. Check out the links at the bottom for some more ideas and uses for git.
 
 ## Basic commands
 
