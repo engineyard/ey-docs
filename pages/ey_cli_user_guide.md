@@ -6,19 +6,34 @@ any of your instances, uploading and applying custom chef recipes, and more.
 
 ## Getting Started
 
+###To deploy an application from the CLI
+
 1. Install the `engineyard` gem: 
         gem install engineyard
 
-2. Switch to your local app directory that contains your git repository:
+2. Switch to your local application directory that contains your git repository:
         cd ~/my_application
 
-3. Deploy your app:
-        ey deploy
+3. Deploy your application:
+        ey deploy  
+    If your application is running in multiple environments, append `-e environment_name` to disambiguate, for example, `ey deploy -e production`.
       
-4. You will be prompted for your Engine Yard Cloud login (email address) and password. You'll only have to enter these once. 
-    If your application is running in multiple environments, tack on `-e ENV_NAME` to disambiguate.
-- Congratulations! Your application is now deployed.
+4. The first time you run the engineyard gem, enter your Engine Yard account credentials (email address and password) at the prompts. You only have to enter these once. 
 
+    Your application is now deployed.
+
+## Switching Engine Yard accounts
+
+If you want to log out of one Engine Yard account and log in to another, you need to delete the file that holds your account API token (this file is created by Step 4 above).
+
+###To switch accounts within the CLI
+
+1. Type:
+        rm ~/.eyrc
+
+2. Run an `engineyard` gem command, for example, `ey status`
+
+3. At the prompt, enter the credentials for the account you want to use.
 
 ## Command Reference
 
