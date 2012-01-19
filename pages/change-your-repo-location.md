@@ -1,8 +1,8 @@
-# Change Your Git Repo Location
+# Change your git repository location
 
 ## Introduction
 
-Your application is linked to a Git repository that holds your 
+Your application is linked to a git repository that holds your 
 current production code.  When you deploy code it will be fetched 
 from this repository and deployed to your instances.
 
@@ -34,6 +34,6 @@ deploy key on the application page referenced in Step 3 above.
 
 
 ## A note about SVN
-Currently Engine Yard Cloud only supports git repositories for deployment.  If you use SVN you can now migrate to Git and continue to use your SVN workflow.  See [GitHub's documentation](http://help.github.com/svn-importing/) for an example, or check the documentation for your repository provider.
+Currently Engine Yard Cloud only supports git repositories for deployment.  If you use SVN you can now migrate to git and continue to use your SVN workflow.  See [GitHub's documentation](http://help.github.com/svn-importing/) for an example, or check the documentation for your repository provider.
 
-If your Repo URL looks like http://svn.mydomain.com/svn/myapp/trunk, then it's most likely SVN and wouldn't deploy as is but could be moved to Git with history with a little work.
+If your Repo URL looks like http://svn.mydomain.com/svn/myapp/trunk, then it's most likely SVN and wouldn't deploy as is but could be moved to git with history with a little work.

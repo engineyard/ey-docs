@@ -12,7 +12,7 @@
   * [[Set up your application and environment|getting_started_home]]
   * [[Setup your local environment|setup-environment]]
   * [[Host your code on GitHub|host-your-code-on-github]]
-  * [[Basic Git commands|basic-git-commands]]
+  * [[Basic git commands|basic-git-commands]]
   * [[Create your Bundler Gemfile|create-your-bundler-gemfile]]
   * [[Create your Rails application|create-your-rails-application]]
   * [[Tutorial on trial account and Rails 2 deployment|tutorial_deploy_fat_free_crm]]

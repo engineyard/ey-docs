@@ -113,7 +113,7 @@ Because the readme for Fat Free CRM says that this is a Rails 2.3.8 application;
 
 <h2 id="topic6"> Create a trusted relationship between your GitHub and Engine Yard accounts </h2>
 
-In this procedure, you set a Git deploy key so that you can deploy the Fat Free CRM code from GitHub to your Engine Yard account.  
+In this procedure, you set a git deploy key so that you can deploy the Fat Free CRM code from GitHub to your Engine Yard account.  
 
 ### To create the trusted relationship between GitHub and Engine Yard
 

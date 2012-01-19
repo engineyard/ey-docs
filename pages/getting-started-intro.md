@@ -20,8 +20,8 @@
 6. ### [[Host your code on GitHub|host-your-code-on-github]]
    Learn a few GitHub basics.
 
-7. ### [[Introduction to basic Git commands|basic-git-commands]]
-   Learn a few key Git commands.
+7. ### [[Introduction to basic git commands|basic-git-commands]]
+   Learn a few key git commands.
 
 8. ### [[Create your Bundler Gemfile|create-your-bundler-gemfile]]
    Watch a screencast about using Bundler to manage Ruby gems.

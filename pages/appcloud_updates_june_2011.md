@@ -41,7 +41,7 @@ June 24th, 2011
 
 If you are new to AppCloud, test our sample repository and get the ToDo application up and running in your Engine Yard account. 
 
-Click Try our sample... to populate the Git Repository URI with the source code for the ToDo application.
+	Click Try our sample... to populate the Git Repository URI with the source code for the ToDo application.
 
 ![Try our sample ToDo application](images/github_sample_repo.png)
 

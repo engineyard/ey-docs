@@ -12,7 +12,7 @@ We need to have your **Git repository URI** to checkout your code and deploy it 
 
 ![Where to find your GitHub repository URL](images/2sm.png)
 
-We will try to guess a good name for your application from the Git URI. If we choose poorly, please enter a better name. 
+We will try to guess a good name for your application from the git URI. If we choose poorly, please enter a better name. 
 
 Next we need to know how to setup your application. This depends largely on what framework you used to develop your application. For all modern frameworks (including Sinatra and Rails 3), simply select Rack and everything will work. If you are using an older framework, please select the appropriate one. 
 

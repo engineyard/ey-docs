@@ -20,24 +20,20 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
     <h2>Updated documentation</h2>
     <ul>
   	 	<li>
-			[[Host your code on GitHub|host-your-code-on-github]]
+	      [[Troubleshooting your deployment|deployment-troubleshooting]]
+	    </li>
+	    <li>
+		  [[Engine Yard Cloud updates January 2012|cloud-updates-january-2012]]
 		</li>
 		<li>
-  	 	         [[Using JRuby on Engine Yard Cloud|deploy-jruby]]
+		  [[Host your code on GitHub|host-your-code-on-github]]
+		</li>
+		<li>
+  	 	  [[Using JRuby on Engine Yard Cloud|deploy-jruby]]
   	 	</li>         
   	 	<li>
-			 [[SSL certificates|ssl-certificates]]
+		  [[SSL certificates|ssl-certificates]]
 		</li>  	 	
-		<li>
-			 [[Using Rubinius 2 with Engine Yard Cloud|using-rubinius-on-cloud]]
-		</li>
-		<li>
-		    [[Engine Yard Early Access and Labs|beta-intro]]
-		</li>
-		<li>
-			[[Engine Yard Cloud updates December 2011|cloud-updates-december-2011]]
-		  </li>
-			
     </ul>   
 
   </div>
@@ -46,24 +42,20 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
     <h2>New documentation</h2>
     <ul> 
        <li>
-	         [[Stopping an application running on a multi-application environment|issue-delete-application]]
+	     [[Stopping an application running on a multi-application environment|issue-delete-application]]
 	   </li>
 	   <li>
 		 [[Customize Nginx|customize-nginx]]
-	  </li>  
-	
-	  <li>
-	     [[Engine Yard Cloud updates January 2012|cloud-updates-january-2012]]
-	  </li>
-	  <li>
+	   </li>  	  
+	   <li>
          [[High availability for clustered environments|environment-high-availability]]
-      </li>
-	  <li>
+       </li>
+	   <li>
 	     [[Managing your database on Engine Yard Cloud|database-intro]]
-	  </li>
-      <li>
+	   </li>
+       <li>
          [[Deploying Node.js applications on Engine Yard Cloud|deploy-node]]
-      </li>
+       </li>
      
      
     </ul>
