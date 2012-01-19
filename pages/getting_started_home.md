@@ -56,11 +56,11 @@ If this is a staging environment without strict uptime requirements and which yo
 
 If you have larger needs right now, please select **Custom** and configure your cluster as necessary. 
 
-## Where to Go From Here
+## Where to Go from Here
 
 You can set up various Internet and networking technologies.
 
-  * [[IP Addressess|ip-addresses]]
+  * [[IP addresses on Engine Yard Cloud|ips-intro]]
   * [[SSH Keys and Configuration|ssh-intro]]
   * [[SSL Certificates|ssl-certificates]]
 
