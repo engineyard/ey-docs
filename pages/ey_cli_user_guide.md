@@ -168,6 +168,7 @@ If you want to log out of one Engine Yard account and log in to another, you nee
 
   - For more information, see [[Application maintenance pages|deployment-maintenance-pages]].
 
+---
 
 ## Environment Variables
 
