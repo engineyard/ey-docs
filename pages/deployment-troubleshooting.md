@@ -43,15 +43,13 @@ If you are using Bundler 0.9, upgrade to Bundler 1.0 or later. See [[Action Req'
 ###Symptom  
 
 Application fails to deploy and the deployment log shows a message like this: 
-
     rake aborted! 
     No Rakefile found (looking for: rakefile, Rakefile, rakefile.rb, Rakefile.rb) 
     /usr/lib/ruby/gems/1.8/gems/rake-0.8.3/lib/rake.rb:2343:in `raw_load_rakefile' 
-    (See full trace by running task with –trace)
 
 ###Solution  
 
-This problem can occur if your application is nested in a subdirectory in git.
+This problem occurs if your application is nested in a subdirectory in git.
 
 Place your Rails root directory at the root level of your git repository. (The Rails root directory is the one that contains the app, config, and public directories.)
 
