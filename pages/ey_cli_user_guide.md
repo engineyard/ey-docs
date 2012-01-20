@@ -22,7 +22,7 @@ any of your instances, uploading and applying custom chef recipes, and more.
 
     Your application is now deployed.
 
-## Switching Engine Yard accounts
+<h2 id="topic2">Switching Engine Yard accounts</h2>
 
 If you want to log out of one Engine Yard account and log in to another, use the logout command to delete the API token from ``~/.eyrc`` or `env $EYRC`. This token is created at Step 4 above.
 
@@ -214,3 +214,7 @@ If you have a large .git directory and you do not want it copied over on every d
        copy_exclude:
          - .git
 
+
+[1]: #topic1        "topic1"
+[2]: #topic2        "topic2"
+[3]: #topic3        "topic3"
