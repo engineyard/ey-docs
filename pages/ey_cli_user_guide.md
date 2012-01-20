@@ -1,24 +1,39 @@
 # Engine Yard CLI User Guide
 
-Welcome to the user guide for deploying to Engine Yard Cloud with the `engineyard` gem.  The `engineyard` gem provides a command line
+Welcome to the user guide for deploying to Engine Yard Cloud with the engineyard gem.  The engineyard gem provides a command line
 interface (CLI) to perform tasks such as deploying your application, rebuilding your applications environment, opening an ssh session to 
 any of your instances, uploading and applying custom chef recipes, and more.
 
 ## Getting Started
 
-1. Install the `engineyard` gem: 
+###To deploy an application from the CLI
+
+1. Install the engineyard gem: 
         gem install engineyard
 
-2. Switch to your local app directory that contains your git repository:
+2. Switch to your local application directory that contains your git repository:
         cd ~/my_application
 
-3. Deploy your app:
-        ey deploy
+3. Deploy your application:
+        ey deploy  
+    If your application is running in multiple environments, append `-e environment_name` to disambiguate, for example, `ey deploy -e production`.
       
-4. You will be prompted for your Engine Yard Cloud login (email address) and password. You'll only have to enter these once. 
-    If your application is running in multiple environments, tack on `-e ENV_NAME` to disambiguate.
-- Congratulations! Your application is now deployed.
+4. The first time you run the engineyard gem, enter your Engine Yard account credentials (email address and password) at the prompts. You only have to enter these once. 
 
+    Your application is now deployed.
+
+<h2 id="topic2">Switching Engine Yard accounts</h2>
+
+If you want to log out of one Engine Yard account and log in to another, use the logout command to delete the API token from ``~/.eyrc`` or `env $EYRC`. This token is created at Step 4 above.
+
+###To switch accounts within the CLI
+
+1. Type:
+        ey logout
+
+2. Run any engineyard gem command, for example, `ey login`
+
+3. At the prompt, enter the credentials for the account you want to use.
 
 ## Command Reference
 
@@ -26,7 +41,7 @@ any of your instances, uploading and applying custom chef recipes, and more.
 
    - Print a short help message.
 
-   - `ey help COMMAND` will print out the help for that command. For example, `ey help deploy` will print out the help for the `ey deploy` command, while `ey help recipes apply` will show the help for `ey recipes apply`. 
+   - `ey help COMMAND` prints out the help for that command. For example, `ey help deploy`  prints out the help for the `ey deploy` command, while `ey help recipes apply` shows the help for `ey recipes apply`. 
 
 - - - 
 #### `ey version`
@@ -52,7 +67,7 @@ any of your instances, uploading and applying custom chef recipes, and more.
         - **Note:** the deployment process pulls the code from the git remote that was previously entered into the Engine Yard Cloud web application. Thus, the named branch must exist in that git remote for your deployment to succeed.
     - `--branch`: alias for `--ref`
     - `--tag`: alias for `--ref`
-    - `--app/-a NAME` (optional): the application to deploy. If the current working directory is inside the application's git repository and `--app` is omitted, `ey` will infer the application from the configured git remotes.
+    - `--app/-a NAME` (optional): the application to deploy. If the current working directory is inside the application's git repository and `--app` is omitted, `ey` infers the application from the configured git remotes.
     - `--migrate/-m COMMAND`: the command to use for database migrations. Default is `rake db:migrate`.
     - `--no-migrate`: Skip migrations.
     - `--force/-f`: Allow deployment of non-default branch. Only useful if you have a default branch configured in `ey.yml`.
@@ -153,6 +168,13 @@ any of your instances, uploading and applying custom chef recipes, and more.
 
   - For more information, see [[Application maintenance pages|deployment-maintenance-pages]].
 
+- - -
+#### `ey logout`
+
+  - Take down the maintenance page.
+
+
+---
 
 ## Environment Variables
 
@@ -192,3 +214,7 @@ If you have a large .git directory and you do not want it copied over on every d
        copy_exclude:
          - .git
 
+
+[1]: #topic1        "topic1"
+[2]: #topic2        "topic2"
+[3]: #topic3        "topic3"

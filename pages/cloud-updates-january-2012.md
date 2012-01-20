@@ -2,6 +2,12 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update6><h2 id="update6">Minor: engineyard gem update</h2></a>
+
+January 19th, 2012
+
+Version 1.4.21 of the engineyard gem contains logout and login commands. Use these commands to change from one user account to another within the CLI. For more information, see [[Switching Engine Yard accounts|ey_cli_user_guide#topic2]]. 
+
 <a href=#update5><h2 id="update5">Fix: Engine Yard stack upgrade</h2></a>
 
 January 18th, 2012
