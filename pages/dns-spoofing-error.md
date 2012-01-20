@@ -1,6 +1,10 @@
+#Warning message DNS SPOOFING DETECTED when SSHing into instances
+
+
+
 ### Warning: Remote host identification has changed!
 
-You may find that you receive this message when you SSH into your instance:
+You might get this message when you SSH into your instance:
 
     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
     @ WARNING: POSSIBLE DNS SPOOFING DETECTED! @ 
@@ -23,17 +27,17 @@ You may find that you receive this message when you SSH into your instance:
     Offending key in /home/deploy/.ssh/known_hosts:1 
     Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
 
-The sequence of events that will cause this warning are:
+This sequence of events that can cause this warning to appear:
 
-  - You create an instance with an IP address.
-  - You SSH into that instance, no warnings happen (as expected).
-  - You shutdown that instance.
-  - You create a new instance, assigning it the previously used IP address.
-  - You SSH into this new instance, and receive the warning.
+1. Creation of an instance with an IP address.
+2. SSHing into that instance, no warnings happen (as expected).
+3. Shutdown of that instance.
+4. Creation of a new instance, assigning it the previously used IP address.
+5. SSHing into this new instance. This is when the warning appears.
 
-#### Don't Panic
+### Why this message appears
 
-When you create a new instance, it is a new virtualized computer.  So when you return to the same IP address, your computer is smart enough to realize that it's not the same computer as before.  While this could in some scenarios indicate malicious activity as the warning indicates, in this scenario it is expected and fine.
+When you create a new instance, it is a new virtualized computer.  So when you return to the same IP address, your computer recognizes that it's not the same computer as before.  While this can in some scenarios indicate malicious activity as the warning indicates, in this scenario it is expected and fine.
 
 ### Solution
 
