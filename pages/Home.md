@@ -20,20 +20,20 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
     <h2>Updated documentation</h2>
     <ul>
   	 	<li>
-	      [[Troubleshooting your deployment|deployment-troubleshooting]]
+	      [[Engine Yard CLI User Guide|ey_cli_user_guide]]
 	    </li>
 	    <li>
 		  [[Engine Yard Cloud updates January 2012|cloud-updates-january-2012]]
 		</li>
 		<li>
+	      [[Troubleshooting your deployment|deployment-troubleshooting]]
+	    </li>    
+		<li>
 		  [[Host your code on GitHub|host-your-code-on-github]]
 		</li>
 		<li>
   	 	  [[Using JRuby on Engine Yard Cloud|deploy-jruby]]
-  	 	</li>         
-  	 	<li>
-		  [[SSL certificates|ssl-certificates]]
-		</li>  	 	
+  	 	</li>           	 	
     </ul>   
 
   </div>
