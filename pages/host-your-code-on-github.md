@@ -2,6 +2,8 @@
 
 After your local machine is setup and you have created your first Ruby on Rails application, place your code in a git repository. You have options on where to host your code, but the simplest is hosting it on [GitHub](http://www.github.com). This page describes how to host your code on GitHub.
 
+**Note:** If your code is in a Subversion (SVN) repository, see [[GitHub:Help Import from Subversion|http://help.github.com/import-from-subversion/]].
+
 ##To host your code on GitHub  
 
 1. Create a [[GitHub|https://github.com/]] account.
