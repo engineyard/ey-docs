@@ -18,7 +18,7 @@ You can configure many different applications and their corresponding repository
   2. On the Dashboard page, click on the application you want to update.
   3. On the Application page, click the pencil icon to edit your application.
   4. On the Application edit page, enter your new git repository url.
-  5. Click the Update Application submit button
+  5. Click the Update Application submit button.
 
 ## Test your changes first
 
@@ -36,4 +36,4 @@ deploy key on the application page referenced in Step 3 above.
 ## A note about SVN
 Currently Engine Yard Cloud only supports git repositories for deployment.  If you use SVN you can now migrate to git and continue to use your SVN workflow.  See [GitHub's documentation](http://help.github.com/svn-importing/) for an example, or check the documentation for your repository provider.
 
-If your Repo URL looks like http://svn.mydomain.com/svn/myapp/trunk, then it's most likely SVN and wouldn't deploy as is but could be moved to git with history with a little work.
+If your repository URL looks like http://svn.mydomain.com/svn/myapp/trunk, then it's most likely SVN and does not deploy as is but it can be moved to git with history with a little work.

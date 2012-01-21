@@ -2,40 +2,41 @@
 
 * <a href=#FAQ1>Which SCMs (Source Code Management) do you support?</a>
 * <a href=#FAQ2>Is there any shared storage on Engine Yard Cloud?</a>
-* <a href=#FAQ3>Do you offer Email services on Engine Yard Cloud?</a>
+* <a href=#FAQ3>Do you offer email services on Engine Yard Cloud?</a>
 * <a href=#FAQ4> Can Engine Yard Cloud host my DNS?</a>
 * <a href=#FAQ5> Can I have more than one IP address for my application?</a>
-* <a href=#FAQ6> Can I failover to a Database Slave?</a>
+* <a href=#FAQ6> Can I failover to a database slave?</a>
 * <a href=#FAQ8> Do you support Bundler?</a>
 * <a href=#FAQ9> Is PostgreSQL Supported on Engine Yard Cloud?</a>
 * <a href=#FAQ11> What scale of applications are appropriate for Engine Yard Cloud?</a>
 * <a href=#FAQ12> What types of applications run on Engine Yard Cloud?</a>
-* <a href=#FAQ13> Does Engine Yard manage my Domain Name or does my Company?</a>
+* <a href=#FAQ13> Does Engine Yard manage my domain name or does my company?</a>
 * <a href=#FAQ14> Do I need an IP address? </a>
 * <a href=#FAQ15> Do I have sudo access? </a>
 * <a href=#FAQ16> Can I use my own SSH key? </a>
 * <a href=#FAQ17> Can I reboot my instance without worrying about losing data? </a>
 * <a href=#FAQ18> If I shutdown and create an instance with the same volumes, will I lose data? </a>
-* <a href=#FAQ19> How do I migrate from SVN to Git? </a>
+* <a href=#FAQ19> How do I migrate from SVN to GitHub? </a>
 * <a href=#FAQ20> Are there reserved names in Engine Yard Cloud? </a>
 * <a href=#FAQ21> What are availability zones? </a>
-* <a href=#FAQ22> How do I change my Credit Card information? </a>
+* <a href=#FAQ22> How do I change my credit card information? </a>
 * <a href=#FAQ23> How do Engine Yard Cloud instances differ from Engine Yard Managed slices? </a>
 * <a href=#FAQ24> Unicorn failing to reload after Bundler </a>
-* <a href=#FAQ25> Do you offer any DDoS Protection on Engine Yard Cloud? </a>
+* <a href=#FAQ25> Do you offer any DDoS protection on Engine Yard Cloud? </a>
 * <a href=#FAQ26> 400 Bad Request While Updating Chef Recipes </a>
 * <a href=#FAQ27> Error: "missing activerecord-mysql2-adapter gem" </a>
 * <a href=#FAQ28> Bundler 1.0 Will Not Install Compiled Gems in UNIX When bundle install is Run in Windows </a>
 * <a href=#FAQ29> One of my instances is not responding. What can I do? </a>
 * <a href=#FAQ30> Can I open a custom port for my application? </a>
 * <a href=#FAQ31> Can I use my Engine Yard-provided AWS/S3 account for asset storage? </a>
+* <a href=#FAQ32> What are the login credentials for the AWS account associated with my Engine Yard account?</a>
 
 
 
 
 <a href=#FAQ1><h2 id="FAQ1"> Which SCMs (Source Code Management) do you support? </h2></a>
 
-Only git is supported at this time. Your repository needs to be ported to git before your application can be deployed. [[GitHub|http://github.com/guides/import-from-subversion]] has a great doc on porting an SVN repository to git. 
+Only git is supported at this time. Your repository needs to be ported to git before your application can be deployed. [[GitHub|http://github.com/guides/import-from-subversion]] has a great doc on porting an SVN repository to GitHub. 
 
 <a href=#FAQ2><h2 id="FAQ2"> Is there any shared storage on Engine Yard Cloud? </h2></a>
 
@@ -43,7 +44,7 @@ No. Shared storage (GFS) is not supported on Engine Yard Cloud. If your applicat
 
 We currently do not have any plans to support a shared storage on Engine Yard Cloud. 
 
-<a href=#FAQ3><h2 id="FAQ3"> Do you offer Email services on Engine Yard Cloud? </h2></a>
+<a href=#FAQ3><h2 id="FAQ3"> Do you offer email services on Engine Yard Cloud? </h2></a>
 
 Email services are not offered on Engine Yard Cloud. If your application uses Engine Yard for email either inbound or outbound, you need to sign up with an external service provider. For applications which send a lot of mail we recommend SendGrid or authSMTP. For incoming, try Rackspace mail hosting. For lower volumes in either direction we recommend Google.
 
@@ -63,7 +64,7 @@ On Engine Yard Managed, it has been possible to have multiple domains, each with
 
 If you have multiple domains pointed at your application and they all need to run under SSL you need to purchase a multi-domain cert.
 
-<a href=#FAQ6><h2 id="FAQ6"> Can I failover to a Database Slave? </h2></a>
+<a href=#FAQ6><h2 id="FAQ6"> Can I failover to a database slave? </h2></a>
 
 No, failover to a database slave is not currently an option on Engine Yard Cloud. If you do ever run into issues with your master database we suggest you can recreate your Master Database Instance from a snapshot. This is quicker than failing over and does not pose the risk of any data loss should replication be out-of-sync.
 
@@ -100,7 +101,7 @@ If you've got an app that runs with:
 
 Then it runs on Engine Yard Cloud.  See our [[Stack Page|http://www.engineyard.com/technology/stack]] for the latest version we support.
 
-<a href=#FAQ13><h2 id="FAQ13"> Does Engine Yard manage my Domain Name or does my company? </h2></a>
+<a href=#FAQ13><h2 id="FAQ13"> Does Engine Yard manage my domain name or does my company? </h2></a>
 
 You setup and control the DNS records for your domain name of your website. You'll setup the IP address inside the application and then point your DNS to that IP address.
 
@@ -124,7 +125,7 @@ For more information read the [[Manage Keys|ssh-intro]] section.
 
 Yes.  An explicit *reboot* of an instance from the command line does not affect your data on your root partition. You can *reboot* the instance at will.
 
-NOTE: Destroying an instance from the web interface and/or a crash of the instance does not preserve the data on the instance's root partition.
+**Note:** Destroying an instance from the web interface and/or a crash of the instance does not preserve the data on the instance's root partition.
 
 The distinction is between *rebooting* an instance and *terminating* an instance.  When you terminate an instance, the data on the root partition **is** lost. 
 
@@ -140,13 +141,13 @@ It's worth noting that snapshot of the `/data` volume is only taken off of the A
 
 Read [[Instance Overview|instance-types|]] for more information.
 
-<a href=#FAQ19><h2 id="FAQ19"> How do I migrate from SVN to Git? </h2></a>
+<a href=#FAQ19><h2 id="FAQ19"> How do I migrate from SVN to GitHub? </h2></a>
 
-GitHub has a guide that outlines many options for importing your SVN repository into GIT.
+GitHub has a guide that outlines many options for importing your SVN repository into GitHub.
 
 [[GitHub - Import from Subversion|http://github.com/guides/import-from-subversion|]]
 
-If you plan on using GitHub, the first option to automatically import your SVN repo is straightforward.  The other manual options give you more control over reconfiguring your authors or the ability to import Tags.
+If you plan on using GitHub, the first option to automatically import your SVN repository is straightforward.  The other manual options give you more control over reconfiguring your authors or the ability to import Tags.
 
 <a href=#FAQ20><h2 id="FAQ20"> Are there reserved names in Engine Yard Cloud? </h2></a>
 
@@ -178,7 +179,7 @@ Your Engine Yard Cloud instance closely resembles the Engine Yard Managed slices
 
 The hard work, detailed configuration, and battle-tested setup that have gone into building the [[Engine Yard Stack|http://www.engineyard.com/technology/stack]] serve as the foundation for each Engine Yard Cloud instance. 
 
-### Convention over Configuration
+### Convention over configuration
 
 We continue to use conventions developed on Engine Yard Managed.  If you are familiar with an Engine Yard slice, you should feel at home.
 
@@ -208,7 +209,7 @@ If you need assistance protecting your site against DDoS attacks, here are some 
 * [[Black Lotus| http://www.blacklotus.net/]]
 * [[CloudFlare| http://www.cloudflare.com/]]
 
-<a href=#FAQ26><h2 id="FAQ26"> 400 Bad Request While Updating Chef Recipes </h2></a>
+<a href=#FAQ26><h2 id="FAQ26"> 400 Bad Request while updating Chef recipes </h2></a>
 
 While trying to update your custom chef scripts, if you run into the error "400 Bad Request" you need to do two things.
 
@@ -248,6 +249,11 @@ No. Engine Yard does not recommend this because:
 * If you close your Engine Yard account, all your stored assets are deleted when the account is closed.  
 
 Engine Yard *does* recommend that you set up a separate S3 account to store your assets. That way, you are in full control of your assets. For information about how to serve assets from an S3 account using fog and CarrierWave, see [[How to use CarrierWave (and optionally fog) to upload and store files|use-carrierwave-and-optionally-fog-to-upload-and-store-files]].
+
+<a href=#FAQ32> <h2 id="FAQ32"> What are the login credentials for the AWS account associated with my Engine Yard account? </h2></a>
+
+For security reasons, Engine Yard does not provide the AWS login credentials associated with your instances.  
+This AWS account is exclusively used by Engine Yard to host your applications on Engine Yard Cloud. 
 
 
 
