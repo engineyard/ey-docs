@@ -39,16 +39,16 @@ When you create a new instance, it is a new virtualized computer.  So, when you 
 
 Try one of the following solutions:
 
-* [Remove strict host key checking (recommended)][5]  
+* [Remove strict host key checking][5]  
 * [Edit the .ssh/known_hosts file][6]  
 * [Delete the known_hosts file][7]
 
 
-<h3 id="topic5"> Remove strict host key checking (recommended)</h3>
+<h3 id="topic5"> Remove strict host key checking</h3>
 
 By turning off StrictHostKeyChecking, you continue to see a warning but are able to SSH into the instance.
 
-*To removing strict host checking*  
+*To remove strict host key checking*  
 
 1. On your local machine, open `~/.ssh/config` for editing.  
 2. Add this directive:  
