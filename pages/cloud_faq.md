@@ -252,7 +252,7 @@ Engine Yard *does* recommend that you set up a separate S3 account to store your
 
 <a href=#FAQ32> <h2 id="FAQ32"> What are the login credentials for the AWS account associated with my Engine Yard account? </h2></a>
 
-For security reasons, Engine Yard does not provide the AWS login credentials associated with your instances.  
+For security reasons, Engine Yard does not provide the AWS login credentials associated with your account.  
 This AWS account is exclusively used by Engine Yard to host your applications on Engine Yard Cloud. 
 
 
