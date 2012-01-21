@@ -3,6 +3,8 @@
 
 ### [[January 2012|cloud-updates-january-2012]]
 
+* [[Fix: Engine Yard stack upgrade|cloud-updates-january-2012#update7]] *January 20th, 2012*
+
 * [[Minor: engineyard gem update|cloud-updates-january-2012#update6]] *January 19th, 2012*
 
 * [[Fix: Engine Yard stack upgrade|cloud-updates-january-2012#update5]] *January 18th, 2012*
