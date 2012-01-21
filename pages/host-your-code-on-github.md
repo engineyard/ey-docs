@@ -7,7 +7,8 @@ After your local machine is setup and you have created your first Ruby on Rails 
 1. Create a [[GitHub|https://github.com/]] account.
 2. After logging in, create a new repository. (Click New repository.)
 3. Give your project a name and description and click Create Repository.
-4. Follow the GitHub instructions to connect your local git repository with your GitHub repository.
+4. Follow the GitHub instructions to connect your local git repository with your GitHub repository.  
+    **Note:** If your code is in a Subversion (SVN) repository, see [[GitHub:Help Import from Subversion|http://help.github.com/import-from-subversion/]].
   
     ![GitHub instructions 2012](images/github-repo-guide.png)
 
