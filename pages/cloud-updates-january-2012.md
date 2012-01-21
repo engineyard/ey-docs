@@ -2,6 +2,14 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update7><h2 id="update7">Fix: Engine Yard stack upgrade</h2></a>
+
+January 20th, 2012
+
+Fixed an issue where MySQL alerts displayed in PostgreSQL environments.
+
+This fix is applied when you upgrade your environment.
+
 <a href=#update6><h2 id="update6">Minor: engineyard gem update</h2></a>
 
 January 19th, 2012
