@@ -1,6 +1,6 @@
-### Warning: Remote host identification has changed!
+#Warning message DNS SPOOFING DETECTED when SSHing into instances
 
-You may find that you receive this message when you SSH into your instance:
+You might get this message when you SSH into your instance:
 
     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
     @ WARNING: POSSIBLE DNS SPOOFING DETECTED! @ 
@@ -23,22 +23,64 @@ You may find that you receive this message when you SSH into your instance:
     Offending key in /home/deploy/.ssh/known_hosts:1 
     Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
 
-The sequence of events that will cause this warning are:
+This sequence of events can cause the warning to appear:
 
-  - You create an instance with an IP address.
-  - You SSH into that instance, no warnings happen (as expected).
-  - You shutdown that instance.
-  - You create a new instance, assigning it the previously used IP address.
-  - You SSH into this new instance, and receive the warning.
+1. Creation of an instance with an IP address.
+2. SSHing into that instance, no warnings happen (as expected).
+3. Shutdown of that instance.
+4. Creation of a new instance, assigning it the previously used IP address.
+5. SSHing into this new instance. This is when the warning appears.
 
-#### Don't Panic
+## Why this message appears
 
-When you create a new instance, it is a new virtualized computer.  So when you return to the same IP address, your computer is smart enough to realize that it's not the same computer as before.  While this could in some scenarios indicate malicious activity as the warning indicates, in this scenario it is expected and fine.
+When you create a new instance, it is a new virtualized computer.  So, when you return to the same IP address, your computer recognizes that it's not the same computer as before.  While this can, in some scenarios, indicate malicious activity as the warning indicates, in this scenario, it is expected and fine.
 
-### Solution
+## Solutions
 
-The best solution is to remove the line from your 'known_hosts' file (`~/.ssh/known_hosts`) or delete the file altogether. You will then be re-prompted to save the secure keys the next time you SSH into the server.
+Try one of the following solutions:
 
-(DUE TO SECURITY RISKS, THIS METHOD IS NO LONGER RECOMMENDED) Another solution is to add the following directive to your ''~/.ssh/config'':
+* [Remove strict host key checking][5]  
+* [Edit the .ssh/known_hosts file][6]  
+* [Delete the known_hosts file][7]
 
-`StrictHostKeyChecking no`
+
+<h3 id="topic5"> Remove strict host key checking</h3>
+
+By turning off StrictHostKeyChecking, you continue to see a warning but are able to SSH into the instance.
+
+*To remove strict host key checking*  
+
+1. On your local machine, open `~/.ssh/config` for editing.  
+2. Add this directive:  
+        StrictHostKeyChecking no
+
+<h3 id="topic6">Edit the .ssh/known_hosts file</h3>
+You can edit the .ssh/known_hosts file and remove the line that contains the IP address shown in the warning message.
+
+*To edit the .ssh/known_hosts file*  
+  
+1. On your local machine, open your `~/.ssh/known_hosts` file for editing.  
+2. Delete the line that corresponds to the IP address in the warning, for example, the line 
+        ec2-46-137-83-49.eu-west-1.compute.amazonaws.com  
+        ...
+        jkEkIXAIRJQ==`
+
+<h3 id="topic7">Delete the known_hosts file</h3>
+This is the least recommended solution.   
+
+*To delete the known_hosts file*  
+   
+1. On your local machine, type `rm ~/.ssh/known_hosts`  
+2. Type `ssh-add`  
+    Deleting the file can leave the SSH binary in state where it no longer recognizes your SSH, and you see an error "Agent admitted failure to sign using the key." Running ssh-add solves this error. 
+
+<!-- Do we recommend a passphrase? I kinda think that we don't. -->
+
+[1]: #topic1        "topic1"
+[2]: #topic2        "topic2"
+[3]: #topic3        "topic3"
+[4]: #topic4        "topic4"
+[5]: #topic5        "topic5"
+[6]: #topic6        "topic6"
+[7]: #topic7        "topic7"
+    
