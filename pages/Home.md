@@ -20,6 +20,9 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
     <h2>Updated documentation</h2>
     <ul>
   	 	<li>
+  	 	  [[Known Issue: DNS spoofing detected when SSHing into instances|dns-spoofing-error]]
+  	 	</li>
+     	<li>
 		  [[Engine Yard Cloud updates January 2012|cloud-updates-january-2012]]
 		</li>	
 		<li>
@@ -31,9 +34,7 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
 		<li>
 	      [[Troubleshooting your deployment|deployment-troubleshooting]]
 	    </li>    
-		<li>
-  	 	  [[Using JRuby on Engine Yard Cloud|deploy-jruby]]
-  	 	</li>           	 	
+		         	 	
     </ul>   
 
   </div>
