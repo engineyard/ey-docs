@@ -23,7 +23,6 @@ These are the files that can be made into keep files.
 * /data/nginx/servers/#{appname}.conf
 * /data/nginx/servers/#{appname}.ssl.conf
 * /etc/haproxy.cfg
-* /etc/mysql/my.cnf
 * /etc/conf.d/nginx
 * /etc/engineyard/collectd.conf
 * /etc/redis/redis.conf
