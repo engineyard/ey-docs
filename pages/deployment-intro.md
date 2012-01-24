@@ -18,7 +18,7 @@ deploying your applications to the cloud with our platform.
    Learn how to deploy your application from the Dashboard.
 
 3. ### [[Deploy from the CLI|ey_cli_user_guide]]
-   Learn how to use the Engine Yard gem and our custom CLI to deploy your application.
+   Learn how to use the engineyard gem and our custom CLI to deploy your application.
 
 4. ### [[Customize your deployment|customize-your-deployment]]
    Learn how to customize your applications deployment strategy.

@@ -29,7 +29,7 @@ taken at the time of termination runs faster because of the recent prior snapsho
   <a href="/environment-clone.html">cloned environment</a> first.
 
 
-  1. Put your site into [[maintenance mode|deployment-maintenance-pages]] using the Engine Yard gem:
+  1. Put your site into [[maintenance mode|deployment-maintenance-pages]] using the engineyard gem:
     
           ey web disable
     

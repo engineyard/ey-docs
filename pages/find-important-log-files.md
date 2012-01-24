@@ -108,6 +108,9 @@ Unicorn sends log information to three log files in the `/data/myapp/current/log
 * `/data/app_name/current/log/unicorn.stderr.log`  
 * `/data/app_name/current/log/unicorn.stout.log`  
 
+<h2 id="topic12"> Chef recipe logs</h2>
+
+See [[Log files for Chef recipes|find-important-log-files#topic9]]
     
 
 

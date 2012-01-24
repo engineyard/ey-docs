@@ -1,30 +1,42 @@
 # Custom Chef Recipes
 
-## Setup Chef Environment
+This page describes:   
+
+* [Setting up a Chef environment][2]
+* [Cloning the ey-cloud-recipes repository][3]
+* [The file structure of ey-cloud-recipes][4]
+* [Turning on a cookbook][5]
+* [Creating a cookbook][6]
+* [Invoking custom Chef recipes][7]
+* [Reporting to the Dashboard from custom recipes][8]
+* [Log files for Chef recipes][9]
+* [Specifying which instance roles run a recipe][10]
+
+
+<h2 id="topic2"> Setup Chef environment</h2>
 
 In order to be able to develop chef recipes that build (and rebuild each time you start an instance) dependencies of your application, you need to install a few gems and set up API credentials for your Engine Yard account.
 
-### Install the Engineyard Gem
+### To install the engineyard gem
 
-First install the engineyard gem.
+* Type: 
+        $ sudo gem install engineyard
 
-    $ sudo gem install engineyard
-
-## Clone ey-cloud-recipes repository
+<h2 id="topic3">Clone the ey-cloud-recipes repository</h2>
 
 Fork and clone the [ey-cloud-recipes](http://github.com/engineyard/ey-cloud-recipes) repository.
 
-  - Browse to the [ey-cloud-recipes](http://github.com/engineyard/ey-cloud-recipes) site on GitHub.
-  - Click on the **Fork** button to "Fork" the repository.
-  - This creates a fork under your user account on GitHub.
-  - Click on the **clipboard icon** to copy the URL of your forked repository to your clipboard.
-  - Clone the repository to your local development machine. Be sure you do **not** put this inside of your app repository as nested repositories aren't supported in git.
+1. Browse to the [ey-cloud-recipes](http://github.com/engineyard/ey-cloud-recipes) site on GitHub.  
+2. Click Fork to fork the repository.  
+    This creates a fork under your user account on GitHub.
+3. Click the clipboard icon to copy the URL of your forked repository to your clipboard.  
+4. Clone the repository to your local development machine. Be sure you do **not** put this inside of your app repository as nested repositories aren't supported in git.
 
         git clone git@github.com:<github username>/ey-cloud-recipes.git
 
 This local copy of your **ey-cloud-recipes** repository will be the folder you work in when writing custom recipes for your environment.
 
-## File structure of ey-cloud-recipes
+<h2 id="topic4">File structure of ey-cloud-recipes</h2>
 
 ### Base files and folders
 
@@ -104,7 +116,7 @@ The variables above are passed to the template below and then chef renders the s
       group sphinx_<%= @app_name %>
 
 
-## Turn on a cookbook
+<h2 id="topic5"> Turn on a cookbook</h2>
 
 Please browse the [[available cookbooks|http://github.com/engineyard/ey-cloud-recipes/tree/master/cookbooks]] to see the latest versions.
 
@@ -114,7 +126,7 @@ This file contains a series of lines commented out that either describe or requi
 
 For an example of using a cookbook checkout: [[Full text search with thinking sphinx |full-text-search-with-thinking-sphinx]]
 
-## Create a cookbook
+<h2 id="topic6">Create a cookbook</h2>
 
 For the purposes of this example, we will be creating a new recipe called **nginx_logrotate**.
 
@@ -170,7 +182,7 @@ The final step is to commit your changes to the repository.  After your changes 
     $ git add . && git commit -am "Custom logrotate for nginx"
 
 
-## Invoking custom Chef recipes
+<h2 id="topic7"> Invoking custom Chef recipes</h2>
 
 To run your new recipe set you first need to upload the recipes to your environment.
 
@@ -190,9 +202,9 @@ To run your new recipe set you first need to upload the recipes to your environm
 
 You can now deploy your app code that depends on customizations that chef has configured for you.
 
-## Report to the Dashboard from custom recipes
+<h2 id="topic8"> Report to the Dashboard from custom recipes</h2>
 
-You can have messages appear when your custom chef recipes run.  
+You can have messages appear when your custom chef recipes run.  These appear on the environment page under the "Instances" heading.
 
 The first part of this is included in the **ey-cloud-recipes** repository.  The second part you can include in the **recipe/default.rb** you create.
 
@@ -216,7 +228,18 @@ There are further examples of how the ''ey_cloud_report'' method is used in the 
 
 Now can see when the custom portions of your chef recipes are running in the Dashboard.
 
-## Specifying which instance roles run a recipe
+<h2 id="topic9">Log files for Chef recipes</h2>
+
+Your custom recipes are logged to /var/log/chef.custom.log. (Default Engine Yard Cloud recipes are logged to /var/log/chef.main.log.)
+
+For example, running this code in your *.rb custom recipe file:  
+`Chef::Log.info "Doing step 1."`  
+writes a line like this:  
+`[Sun, 22 Jan 2012 22:29:00 +0000] INFO: Doing step 1.`  
+to the /var/log/chef.custom.log file. 
+
+
+<h2 id="topic10"> Specifying which instance roles run a recipe</h2>
 
 In a clustered environment, you have multiple instances, each instance playing a different role. In most cases, you want the recipe to run on only one type of instance, for example, to run on the application master, but not on the application slaves, utility instances, etc.
 
@@ -242,7 +265,15 @@ In the [[ssh_tunnel recipe|https://github.com/engineyard/ey-cloud-recipes/blob/m
     end
 
 
-
-
-
-
+[1]: #topic1        "topic1"
+[2]: #topic2        "topic2"
+[3]: #topic3        "topic3"	
+[4]: #topic4        "topic4"
+[5]: #topic5        "topic5"
+[6]: #topic6        "topic6"
+[7]: #topic7        "topic7"
+[8]: #topic8        "topic8"
+[9]: #topic9        "topic9"
+[10]: #topic10        "topic10"
+[9]: #topic11        "topic11"
+[10]: #topic12        "topic12"
