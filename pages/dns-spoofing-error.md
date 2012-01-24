@@ -56,7 +56,8 @@ You can edit the .ssh/known_hosts file and remove the line that contains the IP 
         jkEkIXAIRJQ==`
 
 <h3 id="topic7">Delete the known_hosts file</h3>
-This is the least recommended solution.   
+
+An alternative to editing the known_hosts file is to delete it.
 
 *To delete the known_hosts file*  
    
@@ -64,11 +65,9 @@ This is the least recommended solution.
 2. Type `ssh-add`  
     Deleting the file can leave the SSH binary in state where it no longer recognizes your SSH, and you see an error "Agent admitted failure to sign using the key." Running ssh-add solves this error. 
 
-<!-- Do we recommend a passphrase? I kinda think that we don't. -->
-
 <h3 id="topic5"> Remove strict host key checking</h3>
 
-By turning off StrictHostKeyChecking, you continue to see the "possible DNS spoofing" message but you are able to SSH into the instance. 
+By turning off StrictHostKeyChecking, you continue to see the "possible DNS spoofing" message but you are able to SSH into the instance. This is the least recommended solution.
 
 **WARNING!** Turning off strict host checking affects all SSH connections. 
 
