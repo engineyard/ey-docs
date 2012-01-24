@@ -215,3 +215,34 @@ Then inside your cookbook in the **recipe/default.rb** file, you can use the cod
 There are further examples of how the ''ey_cloud_report'' method is used in the [sphinx recipe](http://github.com/engineyard/ey-cloud-recipes/blob/master/cookbooks/sphinx/recipes/default.rb).
 
 Now can see when the custom portions of your chef recipes are running in the Dashboard.
+
+## Specifying which instance roles run a recipe
+
+In a clustered environment, you have multiple instances, each instance playing a different role. In most cases, you want the recipe to run on only one type of instance, for example, to run on the application master, but not on the application slaves, utility instances, etc.
+
+###To specify which instance (role) runs a recipe 
+
+1. Add an if statement like this around the recipe code:  
+        if node[:instance_role] == 'instance_role'  
+    Where instance_role is one of the following:  
+	* `app_master` (for the application master)  
+	* `app` (for an application slave)  
+	* `util` (for a utility instance)  
+	* `solo` (for a single instance)
+	
+**Question** Can I run recipes on database instances? 	
+
+**Question** If I write the recipe where `if node[:instance_role] == 'app_master'` , will the recipe fail if I try to run it on a single instance environment?
+
+### Example
+
+In the [[ssh_tunnel recipe|https://github.com/engineyard/ey-cloud-recipes/blob/master/cookbooks/ssh_tunnel/recipes/default.rb]] for a clustered environment, set the instance role to app_master:  
+    if node[:instance_role] == 'app_master' 
+    ...
+    end
+
+
+
+
+
+
