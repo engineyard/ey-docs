@@ -20,6 +20,9 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
     <h2>Updated documentation</h2>
     <ul>
   	 	<li>
+	      [[Custom Chef Recipes|custom-chef-recipes]]
+	    </li>
+	    <li>
 	      [[Find important log files|find-important-log-files]]
 	    </li>
 	    <li>
@@ -31,9 +34,7 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
 		<li>
 		  [[Host your code on GitHub|host-your-code-on-github]]
 		</li>
-		<li>
-	      [[Engine Yard CLI User Guide|ey_cli_user_guide]]
-	    </li>		         	 	
+			         	 	
     </ul>   
 
   </div>
