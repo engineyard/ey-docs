@@ -241,11 +241,11 @@ to the /var/log/chef.custom.log file.
 
 <h2 id="topic10"> Specifying which instance roles run a recipe</h2>
 
-In a clustered environment, you have multiple instances, each instance playing a different role. In most cases, you want the recipe to run on only one type of instance, for example, to run on the application master, but not on the application slaves, utility instances, etc.
+In a clustered environment, you have multiple instances, each instance playing a different role. In most cases, you want the recipe to run on only one type of instance; for example, to run on the application master, but not on the application slave or utility instances.
 
 ###To specify which instance (role) runs a recipe 
 
-1. Add an if statement like this around the recipe code:  
+1. Add an if statement around the recipe code:  
         if node[:instance_role] == 'instance_role'  
     Where instance_role is one of the following:  
 	* `app_master` (for the application master)  
@@ -253,14 +253,19 @@ In a clustered environment, you have multiple instances, each instance playing a
 	* `util` (for a utility instance)  
 	* `solo` (for a single instance)
 	
-**Question** Can I run recipes on database instances? 	
+(Chef recipes do not run on database instances.)
+	
+### Examples
 
-**Question** If I write the recipe where `if node[:instance_role] == 'app_master'` , will the recipe fail if I try to run it on a single instance environment?
-
-### Example
-
-In the [[ssh_tunnel recipe|https://github.com/engineyard/ey-cloud-recipes/blob/master/cookbooks/ssh_tunnel/recipes/default.rb]] for a clustered environment, set the instance role to app_master:  
+In the [[ssh_tunnel recipe|https://github.com/engineyard/ey-cloud-recipes/blob/master/cookbooks/ssh_tunnel/recipes/default.rb]], to have the recipe run on only the application master in a clustered environment:  
+ 
     if node[:instance_role] == 'app_master' 
+    ...
+    end  
+
+However, to have the same recipe run in either a clustered environment or a single-instance environment, write the condition this way:
+
+    if ['app_master', 'solo'].include?(node[:instance_role])
     ...
     end
 
@@ -275,5 +280,5 @@ In the [[ssh_tunnel recipe|https://github.com/engineyard/ey-cloud-recipes/blob/m
 [8]: #topic8        "topic8"
 [9]: #topic9        "topic9"
 [10]: #topic10        "topic10"
-[9]: #topic11        "topic11"
-[10]: #topic12        "topic12"
+[11]: #topic11        "topic11"
+[12]: #topic12        "topic12"
