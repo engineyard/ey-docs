@@ -12,7 +12,8 @@ This page describes:
 * [Monit log][8] 
 * [Monit configuration][9]
 * [Passenger 3 log][10]
-* [Unicorn log][11]
+* [Unicorn log][11]  
+* [Chef recipe logs][12]
 
 Use the following substitutions for illustration:  
 Username: `deploy`  
@@ -108,6 +109,9 @@ Unicorn sends log information to three log files in the `/data/myapp/current/log
 * `/data/app_name/current/log/unicorn.stderr.log`  
 * `/data/app_name/current/log/unicorn.stout.log`  
 
+<h2 id="topic12"> Chef recipe logs</h2>
+
+See [[Log files for Chef recipes|custom-chef-recipes#topic9]].
     
 
 
