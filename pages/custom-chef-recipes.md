@@ -233,9 +233,8 @@ Now can see when the custom portions of your chef recipes are running in the Das
 Custom recipes are logged to /var/log/chef.custom.log. (Default Engine Yard Cloud recipes are logged to /var/log/chef.main.log.)
 
 For example, running this code in your *.rb custom recipe file:  
-`Chef::Log.info "Doing step 1."`  
-writes a line like this:  
-`[Sun, 22 Jan 2012 22:29:00 +0000] INFO: Doing step 1.`  
+  `Chef::Log.info "Doing step 1."`  
+writes a line like this:  `[Sun, 22 Jan 2012 22:29:00 +0000] INFO: Doing step 1.`  
 to the /var/log/chef.custom.log file. 
 
 
