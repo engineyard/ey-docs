@@ -1,4 +1,4 @@
-# Custom Chef Recipes
+# Custom Chef recipes
 
 This page describes:   
 
