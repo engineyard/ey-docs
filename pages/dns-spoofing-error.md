@@ -5,7 +5,7 @@ You might get this message when you SSH into your instance:
     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
     @ WARNING: POSSIBLE DNS SPOOFING DETECTED! @ 
     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
-    The RSA host key for ec2-46-137-83-49.eu-west-1.compute.amazonaws.com has changed, 
+    The RSA host key for ec2-46-137-83-49.us-west-1.compute.amazonaws.com has changed, 
     and the key for the corresponding IP address 10.56.63.182 
     is unknown. This could either mean that 
     DNS SPOOFING is happening or the IP address for the host 
@@ -39,20 +39,10 @@ When you create a new instance, it is a new virtualized computer.  So, when you 
 
 Try one of the following solutions:
 
-* [Remove strict host key checking][5]  
 * [Edit the .ssh/known_hosts file][6]  
 * [Delete the known_hosts file][7]
+* [Remove strict host key checking][5]  
 
-
-<h3 id="topic5"> Remove strict host key checking</h3>
-
-By turning off StrictHostKeyChecking, you continue to see a warning but are able to SSH into the instance.
-
-*To remove strict host key checking*  
-
-1. On your local machine, open `~/.ssh/config` for editing.  
-2. Add this directive:  
-        StrictHostKeyChecking no
 
 <h3 id="topic6">Edit the .ssh/known_hosts file</h3>
 You can edit the .ssh/known_hosts file and remove the line that contains the IP address shown in the warning message.
@@ -61,12 +51,13 @@ You can edit the .ssh/known_hosts file and remove the line that contains the IP 
   
 1. On your local machine, open your `~/.ssh/known_hosts` file for editing.  
 2. Delete the line that corresponds to the IP address in the warning, for example, the line 
-        ec2-46-137-83-49.eu-west-1.compute.amazonaws.com  
+        ec2-46-137-83-49.us-west-1.compute.amazonaws.com  
         ...
         jkEkIXAIRJQ==`
 
 <h3 id="topic7">Delete the known_hosts file</h3>
-This is the least recommended solution.   
+
+An alternative to editing the known_hosts file is to delete it.
 
 *To delete the known_hosts file*  
    
@@ -74,7 +65,17 @@ This is the least recommended solution.
 2. Type `ssh-add`  
     Deleting the file can leave the SSH binary in state where it no longer recognizes your SSH, and you see an error "Agent admitted failure to sign using the key." Running ssh-add solves this error. 
 
-<!-- Do we recommend a passphrase? I kinda think that we don't. -->
+<h3 id="topic5"> Remove strict host key checking</h3>
+
+By turning off StrictHostKeyChecking, you continue to see the "possible DNS spoofing" message but you are able to SSH into the instance. This is the least recommended solution.
+
+**WARNING!** Turning off strict host checking affects all SSH connections. 
+
+*To remove strict host key checking*  
+
+1. On your local machine, open `~/.ssh/config` for editing.  
+2. Add this directive:  
+        StrictHostKeyChecking no
 
 [1]: #topic1        "topic1"
 [2]: #topic2        "topic2"

@@ -2,7 +2,7 @@
 
 ## Cluster architecture
 
-![Cluster Architecture](images/cluster_architechture.png)
+![Cluster Architecture](images/cluster_architecture.png)
 
 
 <h2 id="addinstance"> Add an instance to a cluster</h2>

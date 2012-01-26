@@ -92,6 +92,8 @@ This scenario assumes that you are moving data from one environment (or instance
 
 3. Import the database backup file to the database:
 
+        gunzip < [filename] | mysql -u [username] --password=[password] -h [database host] [app_name]
+    or 
         gunzip < [filename] | mysql -u [username] -p[password] -h [database host] [app_name]
 		
 
@@ -103,7 +105,7 @@ This scenario assumes that you are moving data from one environment (or instance
     `[filename]` is the name of the database backup file.  
      
     for example
-        gunzip < myapp.2011-11-14T16-47-02.sql.gz | mysql -u deploy -pMyP4ssW0rd -h ec2-174-129-17-196.compute-1.amazonaws.com myapp
+        gunzip < myapp.2011-11-14T16-47-02.sql.gz | mysql -u deploy --password=MyP4ssW0rd -h ec2-174-129-17-196.compute-1.amazonaws.com myapp
 		
 
 <h3 id="topicB">PostgreSQL: To load your database</h3> 
