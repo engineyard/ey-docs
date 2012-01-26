@@ -3,6 +3,12 @@
 
 ### [[January 2012|cloud-updates-january-2012]]
 
+* [[Minor: Node.js upgrade|cloud-updates-january-2012#update10]] *January  26th, 2012* 
+
+* [[Minor: Trinidad and JVM options are now configurable via env.custom|cloud-updates-january-2012#update9]] *January 26th, 2012*
+
+* [[Fix: Engine Yard stack upgrade|cloud-updates-january-2012#update8]] *January 26th, 2012*
+
 * [[Fix: Engine Yard stack upgrade|cloud-updates-january-2012#update7]] *January 20th, 2012*
 
 * [[Minor: engineyard gem update|cloud-updates-january-2012#update6]] *January 19th, 2012*
