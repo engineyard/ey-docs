@@ -241,7 +241,7 @@ to the /var/log/chef.custom.log file.
 
 <h2 id="topic10"> Specifying which instance roles run a recipe</h2>
 
-In a clustered environment, you have multiple instances, each instance playing a different role. In most cases, you want the recipe to run on only one type of instance; for example, to run on the application master, but not on the application slave or utility instances.
+In a clustered environment, you have multiple instances, each instance playing a different role. In most cases, you want the recipe to run on only one type of instance; for example, to run on the application master, but not on the application slave, database, or utility instances.
 
 ###To specify which instance (role) runs a recipe 
 
@@ -250,10 +250,10 @@ In a clustered environment, you have multiple instances, each instance playing a
     Where instance_role is one of the following:  
 	* `app_master` (for the application master)  
 	* `app` (for an application slave)  
-	* `util` (for a utility instance)  
 	* `solo` (for a single instance)
-	
-(Chef recipes do not run on database instances.)
+	* `master_db` (for a database master)  
+	* `db_slave` (for a database slave)
+	* `util` (for a utility instance)  	
 	
 ### Examples
 
@@ -269,6 +269,16 @@ However, to have the same recipe run in either a clustered environment or a sing
     ...
     end
 
+### About utility servers
+
+If you want a recipe to run on a particular utility server, you can specify it by name instead of by instance role.
+
+For example, 
+    if node[:name] == 'myutility' 
+    ...
+    end
+
+Where *myutility* is the name of a utility instance.
 
 [1]: #topic1        "topic1"
 [2]: #topic2        "topic2"
