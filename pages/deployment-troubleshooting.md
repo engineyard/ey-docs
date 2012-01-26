@@ -7,8 +7,9 @@ Topics on this page:
 * [View the deployment log file][1] 
 * [500 errors after deploying and the deployment log shows "Please install the mysql2 adapter" error][2]
 * [Rails 3.1 application not displaying correctly in the staging environment][3]
-* [Application fails to deploy and the deployment log shows "Malformed or pre bundler-1.0.0 Gemfile.lock"][4]  
-* [Application fails to deploy and the deployment log shows "rake aborted! No Rakefile found"][5]  
+* [Application fails to deploy and deployment log shows "Malformed or pre bundler-1.0.0 Gemfile.lock"][4]  
+* [Application fails to deploy and deployment log shows "rake aborted! No Rakefile found"][5]  
+* [Application (developed in a Windows local environment) fails to deploy][6]
 
 
 <h2 id="topic1"> View the deployment log file</h2>
@@ -53,9 +54,34 @@ This problem occurs if your application is nested in a subdirectory in git.
 
 Place your Rails root directory at the root level of your git repository. (The Rails root directory is the one that contains the app, config, and public directories.)
 
+<h2 id="topic6"> Application (developed in a Windows local environment) fails to deploy</h2>
+
+
+
+
+###Symptom  
+
+Application developed on a Windows environment fails to deploy and the Gemfile.lock contains "mingw32".
+
+QUESTION for Reviewers: Under what heading in the Gemfile.lock file will we see this "mingw32"?
+
+
+###Solution  
+
+Currently, you cannot bundle on a Windows environment and deploy to a Unix environment. You must bundle on a Unix-based system to use Bundler. 
+
+The workaround for this problem is:  
+
+1. Via SSH, connect to the application and database instance (for single server environment) or the database instance (for a clustered environment).  
+    For more information, see [[Connect to your instance via SSH|ssh-connect]].
+2. On the instance, generate a new Gemfile.lock file with a command such as this one:  
+    `cd /data/railsinstaller_demo/current && export LANG="en_US.UTF-8" && unset RUBYOPT BUNDLE_PATH BUNDLE_FROZEN BUNDLE_WITHOUT BUNDLE_BIN BUNDLE_GEMFILE && bundle _1.0.21_ install --gemfile /data/railsinstaller_demo/current/Gemfile --path /data/railsinstaller_demo/shared/bundled_gems --binstubs /data/railsinstaller_demo/current/ey_bundler_binstubs --without test development --no-deployment`
+
+For more information, see [[Gemfile.lock generated on Windows not usable when deploying to Linux|https://github.com/carlhuda/bundler/issues/1610]].
 
 [1]: #topic1        "topic1"
 [2]: #topic2        "topic2"
 [3]: #topic3        "topic3"
 [4]: #topic4	    "topic4"
 [5]: #topic5        "topic5"
+[6]: #topic6        "topic6"
