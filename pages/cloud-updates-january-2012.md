@@ -2,6 +2,37 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update10><h2 id="update10">Minor: Node.js upgrade</h2></a>
+
+January 26th, 2012
+
+Upgrade to Node.js 0.6.8 from Node.js 0.6.1. 
+
+Node.js is now installed from EY Portage and uninstalled from /opt/node.
+
+(Node.js is an [[Engine Yard Labs feature|deploy-node]].)
+
+To take advantage of this upgrade, upgrade your environment.
+
+<a href=#update9><h2 id="update9">Minor: Trinidad and JVM options are now configurable via env.custom</h2></a>
+
+January 26th, 2012
+
+If your environment runs on the Trinidad application stack server, you can now configure Trinidad and JVM options via  the `/data/app_name/shared/config/env.custom` file. 
+
+This feature becomes available when you upgrade your environment.
+
+<a href=#update8><h2 id="update8">Fixes: Engine Yard stack upgrade</h2></a>
+
+January 26th, 2012
+
+The following fixes have been made to the Engine Yard stack:  
+
+* A problem where ey-monitor got linked even when not installed.
+* A problem where Trinidad did not start because the connection pool was too small.
+
+These fixes are applied when you upgrade your environment.
+
 <a href=#update7><h2 id="update7">Fix: Engine Yard stack upgrade</h2></a>
 
 January 20th, 2012
