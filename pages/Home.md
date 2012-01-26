@@ -19,19 +19,19 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
   <div class="col col-first">
     <h2>Updated documentation</h2>
     <ul>
-  	 	<li>
+  	     <li>
+	      [[Engine Yard Cloud updates January 2012|cloud-updates-january-2012]]
+	     </li>	
+	     <li>
 	      [[Custom Chef Recipes|custom-chef-recipes]]
-	    </li>
-	    <li>
+	     </li>
+	     <li>
 	      [[Find important log files|find-important-log-files]]
-	    </li>
-	    <li>
+	     </li>
+	     <li>
   	 	  [[Known Issue: DNS spoofing detected when SSHing into instances|dns-spoofing-error]]
-  	 	</li>
-     	<li>
-		  [[Engine Yard Cloud updates January 2012|cloud-updates-january-2012]]
-		</li>	
-		<li>
+  	     </li>     		
+	     <li>
 		  [[Host your code on GitHub|host-your-code-on-github]]
 		</li>
 			         	 	
