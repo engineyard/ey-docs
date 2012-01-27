@@ -61,7 +61,7 @@ January 17th, 2012
 
 *On January 26th, 2012, this feature was superseded by "[Minor: Trinidad and JVM options are now configurable via env.custom][9]" above.*
 
-If your environment runs on the Trinidad application stack server, you can now configure Trinidad and JVM options with a keep file. 
+If your environment runs on the Trinidad application server stack, you can now configure Trinidad and JVM options with a keep file. 
 
 <a href=#update3><h2 id="update3">Fix: Engine Yard stack upgrade</h2></a>
 
