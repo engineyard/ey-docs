@@ -61,9 +61,7 @@ Place your Rails root directory at the root level of your git repository. (The R
 
 ###Symptom  
 
-Application developed on a Windows environment fails to deploy and the Gemfile.lock contains "mingw32".
-
-QUESTION for Reviewers: Under what heading in the Gemfile.lock file will we see this "mingw32"?
+Application developed on a Windows environment fails to deploy and the Gemfile.lock contains "mingw32", for example, `bcrypt-ruby (3.0.1-x86-mingw32)`.
 
 
 ###Solution  
@@ -71,6 +69,12 @@ QUESTION for Reviewers: Under what heading in the Gemfile.lock file will we see 
 Currently, you cannot bundle on a Windows environment and deploy to a Unix environment. You must bundle on a Unix-based system to use Bundler. 
 
 The workaround for this problem is:  
+
+**Version 1: **
+
+[[Adjust your application Gemfile|deployment-windows#adjust]] to remove references to mingw32.
+
+**Version 2: **
 
 1. Via SSH, connect to the application and database instance (for single server environment) or the database instance (for a clustered environment).  
     For more information, see [[Connect to your instance via SSH|ssh-connect]].
