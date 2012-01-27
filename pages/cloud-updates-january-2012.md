@@ -59,11 +59,9 @@ This fix is applied when you upgrade your environment.
 
 January 17th, 2012
 
-If your environment runs on the Trinidad application stack server, you can now configure Trinidad and JVM options. Customize the `/data/#{appname}/shared/config/trinidad_env.sh` file and save it as a keep file.
+*On January 26th, 2012, this feature was superseded by "[Minor: Trinidad and JVM options are now configurable via env.custom][9]" above.*
 
-For information about keep files, see [[Use keep files to customize and maintain configurations on Engine Yard Cloud|configuration-keep-files]].
-
-This feature becomes available when you upgrade your environment.
+If your environment runs on the Trinidad application stack server, you can now configure Trinidad and JVM options with a keep file. 
 
 <a href=#update3><h2 id="update3">Fix: Engine Yard stack upgrade</h2></a>
 

@@ -14,7 +14,6 @@ These are the files that can be made into keep files.
 
 
 * /data/#{appname}/shared/config/database.yml  
-*  /data/#{appname}/shared/config/trinidad_env.sh
 * /data/nginx/nginx.conf
 * /data/nginx/common/proxy.conf
 * /data/nginx/common/servers.conf
