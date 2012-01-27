@@ -61,4 +61,4 @@ When you create a new instance Chef recipes are not run before MySQL is started.
 
 So if you clone, restart or resize an instance, make sure you keep this in mind.
 
-Every other time you restart MySQL, your configuration in the `/etc/mysql.d/` folder will be used.
+Every other time you restart MySQL, your configuration in the `/etc/mysql.d/` folder is used.
