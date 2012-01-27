@@ -18,7 +18,7 @@ To take advantage of this upgrade, upgrade your environment.
 
 January 26th, 2012
 
-If your environment runs on the Trinidad application stack server, you can now configure Trinidad and JVM options via  the `/data/app_name/shared/config/env.custom` file. 
+If your environment runs on the Trinidad application server stack, you can now configure Trinidad and JVM options via  the `/data/app_name/shared/config/env.custom` file. 
 
 This feature becomes available when you upgrade your environment.
 
