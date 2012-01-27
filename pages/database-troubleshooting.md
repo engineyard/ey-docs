@@ -51,12 +51,11 @@ Run the FLUSH HOSTS command, either through the mysql client or through mysqladm
 1. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment).
 
 2. Type:  
-        mysql -u root -pMyP4ssW0rd -e "FLUSH HOSTS;"
+        mysql -u root -p -e "FLUSH HOSTS;"
 	or
-	    mysqladmin -u root -pMyP4ssW0rd flush-hosts
+	    mysqladmin -u root -p flush-hosts
 		
-    where
-    `MyP4ssW0rd` is the password for the deploy user and the root user on the MySQL database.
+    The password is the same for the deploy user and the root user on the MySQL database.
         
 
 For more information, see [[http://dev.mysql.com/doc/refman/5.0/en/flush.html]].
