@@ -92,20 +92,17 @@ This scenario assumes that you are moving data from one environment (or instance
 
 3. Import the database backup file to the database:
 
-        gunzip < [filename] | mysql -u [username] --password=[password] -h [database host] [app_name]
-    or 
-        gunzip < [filename] | mysql -u [username] -p[password] -h [database host] [app_name]
+        gunzip < [filename] | mysql -u [username] -p -h [database host] [app_name]
 		
 
     where
     `[username]` is the user for the database instance. The default user for the Engine Yard Cloud database is `deploy`.  
-    `[password]` is the password for the user on the MySQL database.  
     `[database host]` is the hostname of the database instance. In a single server environment, you can type `localhost` for the database hostname.  
     `[app_name]` is the name of the database.  
     `[filename]` is the name of the database backup file.  
      
     for example
-        gunzip < myapp.2011-11-14T16-47-02.sql.gz | mysql -u deploy --password=MyP4ssW0rd -h ec2-174-129-17-196.compute-1.amazonaws.com myapp
+        gunzip < myapp.2011-11-14T16-47-02.sql.gz | mysql -u deploy -p -h ec2-174-129-17-196.compute-1.amazonaws.com myapp
 		
 
 <h3 id="topicB">PostgreSQL: To load your database</h3> 

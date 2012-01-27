@@ -47,11 +47,10 @@ The syntax for creating the SSH tunnel is `ssh -L [local port]:[database host]:[
 
     Type		 
 
-        mysql -udeploy -pMyP4ssW0rd -P 3307 -h 127.0.0.1
+        mysql -udeploy -p -P 3307 -h 127.0.0.1
 
     where  
-    `deploy` is the database username on the remote host,  
-    `MyP4ssW0rd` is the password for the deploy user on the MySQL database, and  
+    `deploy` is the database username on the remote host and 
     `3307` is the local port.
         
 ###To create and test the SSH tunnel for a PostgreSQL database

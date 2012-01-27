@@ -32,7 +32,7 @@ Follow these steps to add your configuration change to the system dynamically.
   - SSH into your MySQL instance.
   - Log into the MySQL console.
         
-        mysql -u root -p password
+        mysql -u root -p
 
 Your root MySQL password is the same as your deploy user password.
 

@@ -93,14 +93,14 @@ See the MySQL documentation for full details on dumping and restoring a database
 
 1.  Dump the database.
 		
-		mysqldump -u _user_ -p_password_ -h _hostname_ _dbname_ > dumpfile.sql  
+		mysqldump -u _user_ -p -h _hostname_ _dbname_ > dumpfile.sql  
 		gzip -v dumpfile.sql 
 	
 	**Note:** _dbname_ is the name of the database used by your application. _hostname_ is the name of the server or instance hosting your MySQL 5.0.x database. For more information, see [[Find your generated MySQL password and connect to your DB|database-password]].
 				
 	For example, 
 	
-        mysqldump -u deploy -pmysecret -h ec2-172-72-33-150.us-west-1.compute.amazonaws.com mydatabase > dumpfile.sql	
+        mysqldump -u deploy -p -h ec2-172-72-33-150.us-west-1.compute.amazonaws.com mydatabase > dumpfile.sql	
 
 2. 	Move the output file to the new environment. 
 	
@@ -117,7 +117,7 @@ See the MySQL documentation for full details on dumping and restoring a database
 4. Import the output file to the new MySQL 5.1/5.5 database. 
 
 		gunzip -v dumpfile.sql
-		mysql -u _user_ -p_password_ -h _hostname_ _dbname_ < dumpfile.sql
+		mysql -u _user_ -p -h _hostname_ _dbname_ < dumpfile.sql
 	
 5. Test the application running in the new environment.
 
