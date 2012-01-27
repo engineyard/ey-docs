@@ -35,47 +35,17 @@ This sequence of events can cause the warning to appear:
 
 When you create a new instance, it is a new virtualized computer.  So, when you return to the same IP address, your computer recognizes that it's not the same computer as before.  While this can, in some scenarios, indicate malicious activity as the warning indicates, in this scenario, it is expected and fine.
 
-## Solutions
+<h2 id="topic6">Solution: Edit the .ssh/known_hosts file</h2>
 
-Try one of the following solutions:
-
-* [Edit the .ssh/known_hosts file][6]  
-* [Delete the known_hosts file][7]
-* [Remove strict host key checking][5]  
-
-
-<h3 id="topic6">Edit the .ssh/known_hosts file</h3>
-You can edit the .ssh/known_hosts file and remove the line that contains the IP address shown in the warning message.
+Edit the .ssh/known_hosts file and remove the line that contains the offending key.
 
 *To edit the .ssh/known_hosts file*  
   
 1. On your local machine, open your `~/.ssh/known_hosts` file for editing.  
-2. Delete the line that corresponds to the IP address in the warning, for example, the line 
+2. Delete the line that contains the offending key and that corresponds to the IP address given in the warning. In the example above, this is the first line of the file: 
         ec2-46-137-83-49.us-west-1.compute.amazonaws.com  
         ...
-        jkEkIXAIRJQ==`
-
-<h3 id="topic7">Delete the known_hosts file</h3>
-
-An alternative to editing the known_hosts file is to delete it.
-
-*To delete the known_hosts file*  
-   
-1. On your local machine, type `rm ~/.ssh/known_hosts`  
-2. Type `ssh-add`  
-    Deleting the file can leave the SSH binary in state where it no longer recognizes your SSH, and you see an error "Agent admitted failure to sign using the key." Running ssh-add solves this error. 
-
-<h3 id="topic5"> Remove strict host key checking</h3>
-
-By turning off StrictHostKeyChecking, you continue to see the "possible DNS spoofing" message but you are able to SSH into the instance. This is the least recommended solution.
-
-**WARNING!** Turning off strict host checking affects all SSH connections. 
-
-*To remove strict host key checking*  
-
-1. On your local machine, open `~/.ssh/config` for editing.  
-2. Add this directive:  
-        StrictHostKeyChecking no
+        jkEkIXAIRJQ==
 
 [1]: #topic1        "topic1"
 [2]: #topic2        "topic2"
