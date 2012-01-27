@@ -53,6 +53,11 @@ Here are some example database.yml files.
 3. Make note of the database password.  
     You need this password to manage your database. 
 
+## About typing the MySQL password in command lines
+
+For security, Engine Yard recommends the `-p` syntax in command lines instead of `-pMyP4ssW0rd`. If you type the password in the command line, it is saved to the shell history.  
+However, if security is not a concern, you can use the `-pMyP4ssW0rd` or `--password=MyP4ssW0rd` syntax and avoid the password prompt.
+
 <h2 id="topic5"> More information</h2>
 
 <table>
