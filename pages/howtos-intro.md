@@ -5,6 +5,7 @@
   * [[Use keep files to make custom configurations to Monit, Nginx, etc.|configuration-keep-files]]
   * [[Customize Nginx|customize-nginx]]
   * [[Customize Unicorn|customize-unicorn]]
+  * [[Customize Trinidad|customize-trinidad]]
   * [[Find important log files|find-important-log-files]]
   * [[Setup SSMTP for mail relay to AuthSMTP|setup-ssmtp-for-mail-relay-to-authsmtp]]
   * [[Set time zone for an instance|set-time-zone-for-an-cloud-instance]]

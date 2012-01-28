@@ -114,6 +114,7 @@
   * [[Use keep files to maintain configurations|configuration-keep-files]]
   * [[Customize Nginx|customize-nginx]]
   * [[Customize Unicorn|customize-unicorn]]
+  * [[Customize Trinidad|customize-trinidad]]
   * [[Configure and deploy Resque|configure-and-deploy-resque]]
   * [[Setup SSMTP for mail relay to AuthSMTP|setup-ssmtp-for-mail-relay-to-authsmtp]]
   * [[Find important log files|find-important-log-files]]
