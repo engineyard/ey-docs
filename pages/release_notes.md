@@ -3,7 +3,9 @@
 
 ### [[January 2012|cloud-updates-january-2012]]
 
-* [[Minor: Node.js upgrade|cloud-updates-january-2012#update10]] *January  26th, 2012* 
+* [[Minor: Engine Yard stack upgrade|cloud-updates-january-2012#update11]] *January 30th, 2012*
+
+* [[Minor: Node.js upgrade|cloud-updates-january-2012#update10]] *January 26th, 2012* 
 
 * [[Minor: Trinidad and JVM options are now configurable via env.custom|cloud-updates-january-2012#update9]] *January 26th, 2012*
 

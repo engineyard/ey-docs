@@ -15,7 +15,7 @@ component update to provide reliability, security, and compatibility within the 
 As a result, you can confidently deploy and manage your application with any Engine Yard product. Read about the many [[benefits|http://www.engineyard.com/products/cloud/benefits]] of using our Platform-as-a-Service.
 
 <p class="note">
-  <strong>Note: </strong>This version is correct as of January 26th, 2012.
+  <strong>Note: </strong>This version is correct as of January 30th, 2012.
 </p>
 
 <br /><br />
@@ -579,19 +579,19 @@ As a result, you can confidently deploy and manage your application with any Eng
       </td>
       <td>
         <ul>
-          <li class="beta" title='Beta'>2.4.4
+          <li>2.4.6
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="beta" title='Beta'>2.4.4
+          <li>2.4.6
           </li>
         </ul>
       </td>
       <td>
         <ul>
-          <li class="beta" title='Beta'>2.4.4
+          <li>2.4.6
           </li>
         </ul>
       </td>
