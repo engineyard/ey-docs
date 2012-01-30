@@ -43,7 +43,7 @@ Edit the .ssh/known_hosts file and remove the line that contains the offending k
   
 1. On your local machine, open your `~/.ssh/known_hosts` file for editing.  
 2. Delete the line that contains the offending key and that corresponds to the IP address given in the warning.  
-    In the example above, this is the first line of the file (the line number is given after the colon in the warning "Offending key in /home/deploy/.ssh/known_hosts:1"): 
+    In the example above, this is the first line of the file (the line number is given after the colon in the warning "Offending key in /home/deploy/.ssh/known_hosts:"): 
         ec2-46-137-83-49.us-west-1.compute.amazonaws.com  
         ...
         jkEkIXAIRJQ==
