@@ -2,6 +2,18 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update11><h2 id="update11">Minor: Engine Yard stack update</h2></a>
+
+January 30th, 2012
+
+The following changes have been made to the Engine Yard stack:  
+
+* Upgraded Redis to 2.4.6.
+* Added Collectd support for PostgreSQL alerts.
+
+These changes are applied when you upgrade your environment.
+
+
 <a href=#update10><h2 id="update10">Minor: Node.js upgrade</h2></a>
 
 January 26th, 2012
