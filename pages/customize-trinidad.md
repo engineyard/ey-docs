@@ -2,8 +2,10 @@
 
 Trinidad's environment and configuration are customized by two files:  
 
-* [/data/_myapp_/shared/config/env.custom][2] 
-* [/data/_myapp_/shared/config/trinidad.yml][3]  
+* [/data/app_name/shared/config/env.custom][2] 
+* [/data/app_name/shared/config/trinidad.yml][3]  
+
+Where app_name is the name of your application.
 
 Which file you edit depends on what you want to customize.
 
@@ -20,12 +22,12 @@ Environment variables commonly changed:
 Be sure to export any new environment variables in env.custom so that the Trinidad process can access them. (JAVA_OPTS and JRUBY_OPTS are already exported for you.)
 
 
-CLASSPATH=/data/_myapp_/current/lib/iText.jar
+CLASSPATH=/data/app_name/current/lib/iText.jar
 export CLASSPATH
 
 
 
-Additionally, two shell functions are available: add_java_option and set_jvm_memory. add_java_option is simply a helper function for adding to the JAVA_OPTS environment variable. set_jvm_memory allows customization of the JVM maximum heap size if the default value is not sufficient. (The heap size is set dynamically depending on the size of your instance; find the default value inside /data/_myapp_/shared/config/env.)
+Additionally, two shell functions are available: add_java_option and set_jvm_memory. add_java_option is simply a helper function for adding to the JAVA_OPTS environment variable. set_jvm_memory allows customization of the JVM maximum heap size if the default value is not sufficient. (The heap size is set dynamically depending on the size of your instance; find the default value inside /data/app_name/shared/config/env.)
 
 # Makes the JVM use the G1 garbage collector
 add_java_option -XX:UnlockExperimentalVMOptions -XX:+UseG1GC
@@ -37,10 +39,10 @@ set_jvm_memory 2G
 
 <h2 id="topic3">trinidad.yml</h2>
 
-If you wish to customize the way Trinidad is launched, modify trinidad.yml. If the file does not exist in /data/_myapp_/shared/config/trinidad.yml, create it and add your custom configuration. Read this page for details on what to put in trinidad.yml.
+If you wish to customize the way Trinidad is launched, modify trinidad.yml. If the file does not exist in /data/app_name/shared/config/trinidad.yml, create it and add your custom configuration. Read this page for details on what to put in trinidad.yml.
 
 ###To customize how Trinidad is launched
-1. Open /data/_myapp_/shared/config/trinidad.yml for editing.  
+1. Open /data/app_name/shared/config/trinidad.yml for editing.  
     *Question* Do I do this in my development environment or on my instance? 
     If this file does not exist, create it and    
 
