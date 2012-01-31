@@ -1,4 +1,4 @@
-# Customize Trinidad
+# Customize Trinidad and JVM options
 
 Trinidad's environment and configuration are customized by two files:  
 
@@ -9,7 +9,7 @@ Where app_name is the name of your application.
 
 Which file you edit depends on what you want to customize.
 
-<h2 id="topic2">env.custom</h2>
+<h2 id="topic2">Customize process environment or JVM/JRuby startup parameters</h2>
 
 env.custom is where you change the process environment or JVM/JRuby startup parameters by adding or changing shell environment variables. 
 
