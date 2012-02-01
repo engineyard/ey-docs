@@ -27,8 +27,8 @@ that the Professional plan better suits you needs.
 1. Login to your account.
 2. Click Account > Account Settings on the toolbar.
 3. Click the account name.  
-    You must be the account **owner**.
-4. Click Manage your New Relic plan under the Services section.
+    You must be the account **owner**.  
+4. Click Manage your New Relic plan under the Services section.  
       ![New Relic logo under Services](images/new_relic_logo.png)
 5. Choose the Standard plan or the Professional plan.
 6. Read and agree to the New Relic Terms of Service and select the check box. 
