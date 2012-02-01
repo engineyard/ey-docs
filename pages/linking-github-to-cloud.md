@@ -30,13 +30,14 @@ For example, you might have two GitHub accounts: a personal GitHub account for e
 
 3. On the Create New Application page, click Link account_name.
 
-<h2 id="topic2">To link your Engine Yard account to a GitHub account (Method 2)</h2>
+<h2 id="topic5">To link your Engine Yard account to a GitHub account (Method 2)</h2>
 
 1. Log into the GitHub account that you want to link to. 
 
 2. In your Engine Yard account, go to Account > Account Settings.
 
-2. Click on the account you want to link to a GitHub account.
+2. Click on the account you want to link to a GitHub account.  
+   You must be the account **owner**.  
 
 3. Under the Services heading, click Link your account to GitHub.
 
@@ -46,7 +47,7 @@ For example, you might have two GitHub accounts: a personal GitHub account for e
 
 <h2 id="topic3">To create an application from a repository in a linked GitHub account</h2>
 
-* Create an application for Engine Yard Cloud, making sure to do the following: 
+1. Create an application for Engine Yard Cloud, making sure to do the following: 
 
     (For general instructions on creating an application, see [[Getting Started|getting_started_home]].):
 
@@ -59,9 +60,23 @@ For example, you might have two GitHub accounts: a personal GitHub account for e
 
 2. In your Engine Yard account, go to Account > Account Settings.
 
-2. Click on the account that you want to unlink from GitHub account.
+2. Click on the account that you want to unlink from GitHub account.  
+   You must be the account **owner**.  
 
 3. Under the Services heading, click un-link.
+
+<h2 id="topic6"> Troubleshooting</h2>
+
+<table>
+  <tr>
+    <th>Symptom</th><th>Solution</th>
+  </tr>
+  <tr>
+    <td>I don't see GitHub under the Services heading on the Account Settings page.</td><td>You must be the owner of the Engine Yard account to link or unlink with GitHub.<br>Ask the account owner to perform these tasks.</td>
+  </tr>
+</td>
+  </tr>
+</table>
 
 
 

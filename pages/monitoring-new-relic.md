@@ -24,17 +24,15 @@ that the Professional plan better suits you needs.
 
 ### To choose a New Relic plan
 
-  1. Login to your account.
-  2. Click Account > Account Settings on the toolbar.
-  3. Click your account name.
-
-  4. Click Manage your New Relic plan under the Services section.
-
+1. Login to your account.
+2. Click Account > Account Settings on the toolbar.
+3. Click the account name.  
+    You must be the account **owner**.  
+4. Click Manage your New Relic plan under the Services section.  
       ![New Relic logo under Services](images/new_relic_logo.png)
-
-  5. Choose the Standard plan or the Professional plan.
-  6. Read and agree to the New Relic Terms of Service and select the check box. 
-  7. Click Activate New Relic to activate your plan.
+5. Choose the Standard plan or the Professional plan.
+6. Read and agree to the New Relic Terms of Service and select the check box. 
+7. Click Activate New Relic to activate your plan.
 
 Your New Relic account is created automatically using your Engine Yard account and password. 
 
@@ -69,8 +67,9 @@ your application.
 ### To view New Relic data for your application
 
 1. Login to your account.
-2. Click Account > Account Settings on the toolbar.
-3. Click the account name.
+2. Click Account > Account Settings on the toolbar.  
+3. Click the account name.  
+    You must be the account **owner**.
 4. Click Access your app metrics under the Services section.
 
     ![New Relic logo under Services now activated](images/new_relic_logo_activated.png)
@@ -81,9 +80,23 @@ your application.
     **Tip:** Bookmark this New Relic page.  
 
 
-  [1]: #topic1        "topic1"
-  [2]: #topic2        "topic2"
-  [3]: #topic3        "topic3"
-  [A]: #topicA        "topicA"	
-  [B]: #topicB        "topicB"
-  [C]: #topicC        "topicC"
+<h2 id="topic6"> Troubleshooting</h2>
+
+<table>
+  <tr>
+    <th>Symptom</th><th>Solution</th>
+  </tr>
+  <tr>
+    <td>I don't see New Relic under the Services heading on the Account Settings page.</td><td>You must be the owner of the Engine Yard account to set up New Relic.<br>Ask the account owner to perform this task.</td>
+  </tr>
+</td>
+  </tr>
+</table>
+
+
+[1]: #topic1        "topic1"
+[2]: #topic2        "topic2"
+[3]: #topic3        "topic3"
+[A]: #topicA        "topicA"	
+[B]: #topicB        "topicB"
+[C]: #topicC        "topicC"
