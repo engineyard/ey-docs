@@ -1,71 +1,53 @@
-# Using PostgreSQL 9 with Engine Yard Cloud
+# Using PostgreSQL 9.1 with Engine Yard Cloud
 
 ## Introduction
 
-The PostgreSQL 9 database is now a candidate for testing on Engine Yard Cloud. Read this page if you want to participate in the PostgreSQL 9 Alpha program.
+The PostgreSQL 9.1 database is now a candidate for testing on Engine Yard Cloud. Read this page if you want to participate in the PostgreSQL 9.1 Beta program.
 
 
 ### Process
 
-The process for setting up and running your application on PostgreSQL 9 depends on your current environment.
+The process for setting up and running your application on PostgreSQL 9.1 depends on your current environment.
 
 * _Is this a new application?_ Then do these tasks:
 
-   * [Get access to the Alpha program and ey-beta-talk group][2]  
-   * [Set up an application to use PostgreSQL 9 in Alpha][3]  
+   * [Set up an application to use PostgreSQL 9.1][3]  
+
+
+* _Are you running with PostgreSQL on a platform other than Engine Yard Cloud?_ Then, do these tasks:  
+
+    * [Set up an application to use PostgreSQL 9.1][3]  
+    * [Dump and restore an existing PostgreSQL database][4]
 
 * _Are you running Engine Yard Cloud with PostgreSQL now (with a custom chef recipe from ey-cloud-recipes or 2010 PostgreSQL 8.x Alpha program)?_ Then, do these tasks:  
 
-    * [Get access to the Alpha program and ey-beta-talk group][2]  
-    * [Set up an application to use PostgreSQL 9 in Alpha][3]  
-    * [Dump and restore an existing PostgreSQL database][4]
- 
-* _Are you running with PostgreSQL on a platform other than Engine Yard Cloud?_ Then, do these tasks:  
-
-    * [Get access to the Alpha program and ey-beta-talk group][2]  
-    * [Set up an application to use PostgreSQL 9 in Alpha][3]  
+    * [Set up an application to use PostgreSQL 9.1][3]  
     * [Dump and restore an existing PostgreSQL database][4]
 
 * _Are you using MySQL?_ Then:  
 
-    Please consult [[Engine Yard Professional Services|http://www.engineyard.com/services]] for assistance migrating your mySQL database to PostgreSQL 9. 
+    Please consult [[Engine Yard Professional Services|http://www.engineyard.com/services]] for assistance migrating your mySQL database to PostgreSQL 9.1. 
 
 
-**Important!** PostgreSQL 9 on Engine Yard Cloud is an Alpha feature. Always test in a development or staging environment. 
+**Important!** PostgreSQL 9.1 on Engine Yard Cloud is a Beta feature. Always test in a development or staging environment. 
 
 
-
-<h2 id="topic2"> Get access to the Alpha program and ey-beta-talk group </h2>
-
-### Introduction
-
-Follow this procedure to gain access to the Alpha program and access to the Beta Conversations Google group (ey-beta-talk). Use ey-beta-talk for issues or questions with this Alpha program.
-
-
-### To get access to the PostgreSQL 9 Alpha program
-
-1. [[Request access to the PostgreSQL 9 Alpha program|signup-postgresql]].
-
-2. Subscribe to Beta Conversations Google group under the Beta Conversations heading on the [[Engine Yard Early Access page|beta-intro]].     
-	If you have participated in other Engine Yard Early Access programs, you might already be group member.
-
-
-<h2 id="topic3"> Set up an application to use PostgreSQL 9 in Alpha </h2>
+<h2 id="topic3"> Set up an application to use PostgreSQL 9.1</h2>
 
 ### Introduction
 
-Follow this procedure to set up a new environment that uses a PostgreSQL 9 database. You can create new application and a new environment or create a new environment for an existing application. 
+Follow this procedure to set up a new environment that uses a PostgreSQL 9.1 database. You can create new application and a new environment or create a new environment for an existing application. 
 
 If you are migrating an existing PostgreSQL database, you'll to perform a dump and restore _after_ creating a new environment ([Dump and restore an existing PostgreSQL database][3]).
 
-### To use PostgreSQL 9 with Engine Yard Cloud in Alpha
+### To use PostgreSQL 9.1 with Engine Yard Cloud
 
 1. **Important!** If you have applied any custom chef recipes for PostgreSQL, delete them from your ey-cloud-recipes repository. Do not apply them to this instance.  
     For general information about custom chef recipes, see [[Custom Chef Recipes|custom-chef-recipes]].
 
 2. Create a new application with a new environment or add an environment to an existing application, making sure to:
 
-    * Set the Database Stack to PostgreSQL 9.  
+    * Set the Database Stack to PostgreSQL 9.1.  
       If this option is not available, see [Troubleshooting][6].
 
     * Add the pg gem to your Gemfile for Rails 3 (or via the Dashboard for Rails 2).
@@ -101,13 +83,13 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 		scp dumpfile newserver:/path/to/file/dumpfile
 	
 
-	In this case, the new server is the database instance assigned for your PostgreSQL 9 Alpha environment.
+	In this case, the new server is the database instance assigned for your PostgreSQL 9.1 environment.
 	
 	**Note:** To use the scp command, you need keys and scp setup.
 	 
 3. SSH to the database instance.
 
-4. Import the output file to the new PostgreSQL 9 database. 
+4. Import the output file to the new PostgreSQL 9.1 database. 
 
 		pg_restore -d dbname dumpfile
 	
@@ -117,9 +99,9 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 
 
 
-<h2 id="topic8">Connect to your PostgreSQL 9 database </h2>
+<h2 id="topic8">Connect to your PostgreSQL 9.1 database </h2>
 
-### To connect to your PosgreSQL 9 database
+### To connect to your PosgreSQL 9.1 database
 See the [[Managing your database|database-intro]] documentation (Many of the tasks apply to PostgreSQL as well as MySQL.)
 
 1. Find your generated PostgreSQL password (the [[MySQL instructions on passwords|database-password]] describe this step)
@@ -134,13 +116,11 @@ See the [[Managing your database|database-intro]] documentation (Many of the tas
 
 
 
-<h2 id="topic7"> Known issues</h2>
+<h2 id="topic7"> Known Issue: Upsizing from a 32-bit instance</h2>
 
-Known issues associated with PostgresSQL 9 on Engine Yard Cloud are:
+In the current implementation, snapshots cannot be used for upsizing from a 32-bit instance to a 64-bit instance. Workaround: Use dump and restore if you need to move your data from a 32-bit to 64-bit instance.   
 
-* In the Alpha phase, snapshots cannot be used for upsizing from a 32-bit instance to a 64-bit instance. Workaround: Use dump and restore if you need to move your data from a 32-bit to 64-bit instance.   
-
-* Extensions for the PostgreSQL 9 server are not yet available in custom recipes (but they are coming soon).
+<!-- * Extensions for the PostgreSQL 9.1 server are not yet available in custom recipes (but they are coming soon). -->
 
 
 
@@ -155,7 +135,7 @@ Known issues associated with PostgresSQL 9 on Engine Yard Cloud are:
     <td>about setting up and deploying an Engine Yard Cloud application in general</td><td>[[docs.engineyard.com|http://docs.engineyard.com]] </td>
   </tr>
 <tr>
-    <td>database tasks</td><td>[[Managing your Database|database-intro]] (Many of the tasks apply to PostgreSQL as well as MySQL.)</td>
+    <td>database tasks</td><td>[[Managing your Database|database-intro]]</td>
   </tr>
 <tr>
     <td>PostgreSQL</td><td>[[PostgreSQL|http://www.postgresql.org/docs]] documentation </td>
@@ -164,22 +144,6 @@ Known issues associated with PostgresSQL 9 on Engine Yard Cloud are:
 
 
 
-<h2 id="topic6"> Troubleshooting</h2>
-
-This table contains troubleshooting tips related to the PostgreSQL 9 Alpha program.
-
-<table>
-  <tr>
-    <th>Symptom</th><th>Solution</th>
-  </tr>
-  <tr>
-    <td>I don't have the Database Stack option on my new environment page.</td><td>You don't yet have access to the PostgreSQL 9 Alpha program. <br> Try submitting the request again, noting in the comments field that you are unable to see the Database Stack option. </td>
-  </tr>
-  <tr>
-    <td>My application doesn't run in the new PostgreSQL environment.</td><td>Post to the [[Beta Conversations Google group|http://groups.google.com/group/ey-beta-talk]]. To subscribe to the group, see [[Beta Conversations|beta-intro]]. <br> <br>
-</td>
-  </tr>
-</table>
 
 
 [1]: #topic1        "topic1"

@@ -1,6 +1,10 @@
 # Release Notes
 <a href="http://feed43.com/1082485410203701.xml" class="rss">Release Notes RSS Feed</a>
 
+### [[February 2012|cloud-updates-february-2012]]
+
+* [[<b>Major:</b> PostgreSQL 9.1 is now available with Beta support|cloud-updates-february-2012#update1]] *February 2nd, 2012*
+
 ### [[January 2012|cloud-updates-january-2012]]
 
 * [[Minor: Engine Yard stack upgrade|cloud-updates-january-2012#update11]] *January 30th, 2012*
