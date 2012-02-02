@@ -37,6 +37,10 @@ Whenever Engine Yard Cloud creates an environment, it creates a MySQL or Postgre
 
     Learn how to create an SSH tunnel to your database. If you want to use third party tools to manage your database, you need an SSH tunnel from your local machine to the database instance.
 
+12. ### [[Migrating to MySQL 5.5|database-mysql-upgrade]]  
+
+	    Learn how to upgrade a MySQL database from an earlier version (_i.e._ 5.0.x) and how to migrate a MySQL database to Engine Yard Cloud from another platform. 
+
 10. ### [[Database troubleshooting|database-troubleshooting]]
 
     Some troubleshooting tips for databases, including how to restart your database.

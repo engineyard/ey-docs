@@ -1,36 +1,34 @@
-# Using MySQL 5.1 or MySQL 5.5 with Engine Yard Cloud
+# Migrating to MySQL 5.5 or MySQL 5.1 with Engine Yard Cloud
 
-The MySQL 5.1 and MySQL 5.5 databases are now candidates for testing on Engine Yard Cloud. Read this page if you want to participate in the MySQL 5.1/5.5 Early Access program.
+Read this page if you want to migrate an application to use a MySQL 5.5 or 5.1 database.
 
-**Important!** MySQL 5.1/5.5 on Engine Yard Cloud are Early Access features. Always test in a development or staging environment.
+**Important!** MySQL 5.1 on Engine Yard Cloud is an Alpha features. Always test in a development or staging environment.
 
 
 ### Process
 
-The process for setting up and running your application on MySQL 5.1 or MySQL 5.5 depends on your current environment.
-
-**Note:** MySQL 5.5 is in Beta, and no signup is required.
+The process for setting up and running your application on MySQL 5.5 or MySQL 5.1 depends on your current environment.
 
 * _Is this a new application?_ Then do these tasks:
 
    * For MySQL 5.1: [Get access to the Alpha program and ey-beta-talk group][2]  
-   * [Set up an application to use MySQL 5.1/5.5][3]  
+   * [Set up an application to use MySQL 5.5/5.1][3]  
 
 * _Are you running Engine Yard Cloud with MySQL 5.0.x now?_ Then, do these tasks:  
 
     * For MySQL 5.1: [Get access to the Alpha program and ey-beta-talk group][2]  
-    * [Set up an application to use MySQL 5.1/5.5][3]  
+    * [Set up an application to use MySQL 5.5/5.1][3]  
     * [Dump and restore an existing MySQL 5.0.x database][4]
  
 * _Are you migrating a MySQL-based application to Engine Yard Cloud from another platform?_ Then, do these tasks:  
 
     * For MySQL 5.1: [Get access to the Alpha program and ey-beta-talk group][2]  
-    * [Set up an application to use MySQL 5.1/5.5][3]  
+    * [Set up an application to use MySQL 5.5/5.1][3]  
     * [Dump and restore an existing MySQL database][4]
 
 * _Are you using a database other than MySQL?_ Then:  
 
-    Please consult [[Engine Yard Professional Services|http://www.engineyard.com/services]] for assistance migrating your database to MySQL 5.1/5.5. 
+    Please consult [[Engine Yard Professional Services|http://www.engineyard.com/services]] for assistance migrating your database to MySQL 5.5/5.1. 
 
 
 
@@ -51,13 +49,13 @@ Follow this procedure to gain access to the Alpha program and access to the Beta
 
 
 
-<h2 id="topic3"> Set up an application to use MySQL 5.1/5.5 </h2>
+<h2 id="topic3"> Set up an application to use MySQL 5.5/5.1 </h2>
 
-Follow this procedure to set up a new environment that uses a MySQL 5.1/5.5 database. You can create new application and a new environment or create a new environment for an existing application. 
+Follow this procedure to set up a new environment that uses a MySQL 5.5/5.1 database. You can create new application and a new environment or create a new environment for an existing application. 
 
 If you are migrating an existing MySQL database, you'll to perform a dump and restore _after_ creating a new environment ([Dump and restore an existing MySQL database][3]).
 
-### To use MySQL 5.1/5.5 with Engine Yard Cloud
+### To use MySQL 5.5/5.1 with Engine Yard Cloud
 
 1. **Important!** If you have applied any custom chef recipes for MySQL, disable them in your ey-cloud-recipes repository. You may reapply them to your new database instance after completing the tasks on this page.   
     For general information about custom chef recipes, see [[Custom Chef Recipes|custom-chef-recipes]].
@@ -110,11 +108,11 @@ See the MySQL documentation for full details on dumping and restoring a database
 	
 	    scp dumpfile.sql deploy@ec2-174-129-17-196.compute-1.amazonaws.com:/tmp/mysql		
 	
-	**Note** The new server is the database instance assigned for your MySQL 5.1/5.5 environment that you created [above][3].
+	**Note** The new server is the database instance assigned for your MySQL 5.5/5.1 environment that you created [above][3].
 					 
 3. SSH to the new database instance.
 
-4. Import the output file to the new MySQL 5.1/5.5 database. 
+4. Import the output file to the new MySQL 5.5/5.1 database. 
 
 		gunzip -v dumpfile.sql
 		mysql -u _user_ -p -h _hostname_ _dbname_ < dumpfile.sql
@@ -125,9 +123,9 @@ See the MySQL documentation for full details on dumping and restoring a database
 
 
 
-<h2 id="topic8">Connect to your MySQL 5.1/5.5 database </h2>
+<h2 id="topic8">Connect to your MySQL 5.5/5.1 database </h2>
 
-### To connect to your MySQL 5.1/5.5 database
+### To connect to your MySQL 5.5/5.1 database
 
 * See [[Access Your MySQL Database Remotely|access-your-mysql-database-remotely]] and [[Find your generated MySQL password and connect to your DB|database-password]].
 

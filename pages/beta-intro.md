@@ -6,7 +6,6 @@ These features are in **Beta**:
 
 * [[PostgreSQL 9|using-postgresql-9-with-cloud]]
 * [[Ruby 1.9.3|ruby-193]]
-* [[MySQL 5.5|database-mysql-upgrade]]
 
 These features are in **Alpha**:  
 
