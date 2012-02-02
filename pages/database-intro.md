@@ -4,7 +4,7 @@ This section provides information about using <!-- and configuring --> a databas
 
 Whenever Engine Yard Cloud creates an environment, it creates a MySQL or PostgreSQL database for the application. 
 
-**Note:** The PostgreSQL database is supported in Alpha. (To sign up for Alpha, see [[signup|signup-postgresql]].) Beta is coming soon. 
+**Note:** The PostgreSQL database is supported in Beta.
 
 ## Topics
 

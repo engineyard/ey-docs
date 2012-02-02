@@ -7,7 +7,6 @@
 * <a href=#FAQ5> Can I have more than one IP address for my application?</a>
 * <a href=#FAQ6> Can I failover to a database slave?</a>
 * <a href=#FAQ8> Do you support Bundler?</a>
-* <a href=#FAQ9> Is PostgreSQL Supported on Engine Yard Cloud?</a>
 * <a href=#FAQ11> What scale of applications are appropriate for Engine Yard Cloud?</a>
 * <a href=#FAQ12> What types of applications run on Engine Yard Cloud?</a>
 * <a href=#FAQ13> Does Engine Yard manage my domain name or does my company?</a>
@@ -73,10 +72,6 @@ We take fresh snapshots of your `/db` volume when you terminate an instance. If 
 <a href=#FAQ8><h2 id="FAQ8"> Do you support Bundler? </h2></a>
 
 Yes. If you have a Gemfile in your application directory when you deploy your application, we detect it and then bundle your gems. This means you can skip the gems page during the setup of your environment.
-
-<a href=#FAQ9><h2 id="FAQ9"> Is PostgreSQL supported on Engine Yard Cloud? </h2></a>
-
-Support for PostgreSQL 9 is an Alpha feature. For more information, see [[Engine Yard Engine Yard Early Access|beta-intro]].  
 
 <a href=#FAQ11><h2 id="FAQ11"> What scale of applications are appropriate for Engine Yard Cloud? </h2></a>
 
