@@ -8,7 +8,7 @@ February 2nd, 2012
 
 PostgreSQL offers stability, robustness, and an attractive feature set. 
 
-PostgreSQL 9.1 offers some exciting new features over the 9.0 feature set. For more information about these features, see [[PostgreSQL 9.1 is now in Beta|http://www.engineyard.com/blog/]]. 
+PostgreSQL 9.1 offers some exciting new features over the 9.0 feature set. For more information about these features, see [[PostgreSQL 9.1 is now in Beta|http://www.engineyard.com/blog/2012/postgresql-9-1-is-now-in-beta/]]. 
 
 For information about upgrading getting started with or upgrading to PostgreSQL 9.1 on Engine Yard Cloud, see [[Using PostgreSQL 9.1 with Engine Yard Cloud|using-postgresql-9-with-cloud]].
 
