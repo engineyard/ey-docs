@@ -107,7 +107,7 @@ and other resources.
 
 <h2 id="consider">Considerations</h2>
 
-* RailsInstaller installs Ruby 1.8.7 and Rails 3.0.7. You can update the
+* RailsInstaller installs Ruby 1.9.2 and Rails 3.1.1. You can update the
   Rails version by running `gem update rails` from the command prompt. If
   you want to run multiple Ruby versions on Windows, check out
   [pik](https://github.com/vertiginous/pik) on GitHub.

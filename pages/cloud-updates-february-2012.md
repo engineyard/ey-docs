@@ -1,0 +1,33 @@
+# Engine Yard Cloud updates February 2012
+
+The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
+
+<a href=#update1><h2 id="update1">Major: PostgreSQL 9.1 is now available with Beta support</h2></a>
+
+February 2nd, 2012
+
+PostgreSQL offers stability, robustness, and an attractive feature set. 
+
+PostgreSQL 9.1 offers some exciting new features over the 9.0 feature set. For more information about these features, see [[PostgreSQL 9.1 is now in Beta|http://www.engineyard.com/blog/2012/postgresql-9-1-is-now-in-beta/]]. 
+
+For information about upgrading getting started with or upgrading to PostgreSQL 9.1 on Engine Yard Cloud, see [[Using PostgreSQL 9.1 with Engine Yard Cloud|using-postgresql-9-with-cloud]].
+
+
+[1]: #update1        "update1"
+[2]: #update2        "update2"
+[3]: #update3        "update3"
+[4]: #update4        "update4"
+[5]: #update5        "update5"
+[6]: #update6        "update6"
+[7]: #update7        "update7"
+[8]: #update8        "update8"
+[9]: #update9        "update9"
+[10]: #update10        "update10"
+[11]: #update11        "update11"
+[12]: #update12        "update12"
+[13]: #update13        "update13"
+[14]: #update14        "update14"
+[15]: #update15        "update15"
+[16]: #update16        "update16"
+[17]: #update17        "update17"
+[18]: #update18        "update18"

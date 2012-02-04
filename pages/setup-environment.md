@@ -4,7 +4,7 @@ This page describes getting your local environment ready for Ruby on Rails devel
 
 ## Windows
 
-For Windows users, check out [Rails Windows Installer](http://railsinstaller.org/). This one-click installer will provide a Ruby 1.8.7, Rails 3, Git, Sqlite, and DevKit. After the download is complete, you are ready to start writing and running Rails code.  Check out their video for more details on the installation process.
+For Windows users, check out [Rails Windows Installer](http://railsinstaller.org/). This one-click installer will provide an environment with Ruby, Rails, Git, Sqlite, the DevKit, and SQLServer support. After the download is complete, you are ready to start writing and running Rails code.  Check out their video for more details on the installation process.
 
 ## Mac OSX
 

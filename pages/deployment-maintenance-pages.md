@@ -23,6 +23,6 @@ To enable or disable your maintenance pages, use the [[Engine Yard CLI|ey_cli_us
 and run the following commands.
 
 - Enable your maintenance page:        
-        `ey web enable`
+      ey web enable
 - Disable your maintenance page:  
-        `ey web disable`
+      ey web disable
