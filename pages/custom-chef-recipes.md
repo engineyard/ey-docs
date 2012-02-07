@@ -250,7 +250,7 @@ In a clustered environment, you have multiple instances, each instance playing a
 	* `app_master` (for the application master)  
 	* `app` (for an application slave)  
 	* `solo` (for a single instance)
-	* `master_db` (for a database master)  
+	* `db_master` (for a database master)  
 	* `db_slave` (for a database slave)
 	* `util` (for a utility instance)  	
 	
