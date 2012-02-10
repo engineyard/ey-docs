@@ -2,6 +2,31 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update4><h2 id="update4">Fixes: Engine Yard stack upgrade</h2></a>
+
+February 10th, 2012
+
+The following fixes have been made to the Engine Yard stack:
+
+* A problem with HAProxy configuration in very large (more than 50 application instances) environments.
+* Two minor changes to SSL behavior (stunnel) in order to improve performance.
+
+These fixes are applied when you upgrade your environment.
+
+<a href=#update3><h2 id="update3">Minor: JRuby upgrade</h2></a>
+
+February 7th, 2012
+
+Upgraded JRuby to 1.6.6 from 1.6.5.  This upgrades RubyGems to 1.8.15 from 1.8.9. 
+
+<a href=#update2><h2 id="update2">Fix: Engine Yard stack upgrade</h2></a>
+
+February 7th, 2012
+
+Fixed an issue with the PostgreSQL implementation where PostgreSQL defaulted to version 8.3.
+
+This fix is applied when you upgrade your environment.
+
 <a href=#update1><h2 id="update1">Major: PostgreSQL 9.1 is now available with Beta support</h2></a>
 
 February 2nd, 2012

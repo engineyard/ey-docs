@@ -29,7 +29,7 @@
 * <a href=#FAQ30> Can I open a custom port for my application? </a>
 * <a href=#FAQ31> Can I use my Engine Yard-provided AWS/S3 account for asset storage? </a>
 * <a href=#FAQ32> What are the login credentials for the AWS account associated with my Engine Yard account?</a>
-
+* <a href=#FAQ33> Can I use my Amazon Relational Database Service (RDS) with Engine Yard Cloud?</a>
 
 
 
@@ -252,3 +252,8 @@ This AWS account is exclusively used by Engine Yard to host your applications on
 
 
 
+<a href=#FAQ33> <h2 id="FAQ33"> Can I use my Amazon Relational Database Service (RDS) with Engine Yard Cloud? </h2></a>
+
+Yes, you can connect to your existing RDS instance; the connection can be configured through a custom Chef recipe.  (For general information about Chef recipes, see [[Custom Chef recipes|custom-chef-recipes]].) 
+
+**Note:** If you are using a clustered environment, you still need a master database instance; but, in this case, choose the smallest instance for the Engine Yard database because you aren't using it for your application data.

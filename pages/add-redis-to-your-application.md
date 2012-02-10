@@ -50,7 +50,7 @@ New (or newly upgraded) environments have the Engine Yard recommended version of
 ## Install Redis on a utility instance
 
 If you plan to use Redis in-depth, we recommend that you install Redis on a utility instance. This way, Redis doesn't share resources with your application instance. To do this, you need a custom Chef recipe. For more information about custom Chef 
-recipes, see [[Custom Chef Recipes|custom-chef-recipes]]. 
+recipes, see [[Custom Chef recipes|custom-chef-recipes]]. 
 
 Here is a procedure for adding Redis to a utility instance named "redis". You'll need to adjust this procedure for your specific environment.
 

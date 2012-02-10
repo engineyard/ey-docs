@@ -3,6 +3,12 @@
 
 ### [[February 2012|cloud-updates-february-2012]]
 
+* [[Fixes: Engine Yard stack upgrade|cloud-updates-february-2012#update4]] *February 10th, 2012*
+
+* [[Minor: JRuby upgrade|cloud-updates-february-2012#update3]] *February 7th, 2012*
+
+* [[Fix: Engine Yard stack upgrade|cloud-updates-february-2012#update2]] *February 7th, 2012*
+
 * [[<b>Major:</b> PostgreSQL 9.1 is now available with Beta support|cloud-updates-february-2012#update1]] *February 2nd, 2012*
 
 ### [[January 2012|cloud-updates-january-2012]]
@@ -232,7 +238,7 @@
 
 * [[Minor: Environment variables for custom scripts|appcloud_updates_june_2011#update4]] *June 2nd, 2011*  
 
-* [[Fix: HAproxy restart from single instance snapshot|appcloud_updates_june_2011#update3]] *June 2nd, 2011*  
+* [[Fix: HAProxy restart from single instance snapshot|appcloud_updates_june_2011#update3]] *June 2nd, 2011*  
 
 * [[Fix: Rubygems 1.5.2 update|appcloud_updates_june_2011#update2]] *June 2nd, 2011*     
 
