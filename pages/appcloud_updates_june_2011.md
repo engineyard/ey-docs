@@ -137,11 +137,11 @@ You can source /engineyard/bin/env.sh to access these variables: $EY_ENVIRONMENT
 
 
 
-<a href=#update3><h2 id="update3"> Fix: HAproxy restart from single instance snapshot </h2></a>
+<a href=#update3><h2 id="update3"> Fix: HAProxy restart from single instance snapshot </h2></a>
 
 June 2nd, 2011
 
-Fixed an issue where HAproxy was failing to restart when creating a cluster from a single instance snapshot.
+Fixed an issue where HAProxy was failing to restart when creating a cluster from a single instance snapshot.
 
 
 

@@ -332,7 +332,7 @@ As a result, you can confidently deploy and manage your application with any Eng
     </tr>
     <tr>
       <td>
-        haproxy
+        HAProxy
       </td>
       <td>
         <ul>
