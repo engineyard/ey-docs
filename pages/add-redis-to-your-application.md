@@ -88,11 +88,17 @@ environment file using the following:
 
 ## Things to do with Redis
 
-Some of the things that you can do with Redis are: 
+You can use Redis: 
 
-* [Use Redis as your Rails cache](http://jimneath.org/2011/03/24/using-redis-with-ruby-on-rails.html#using_redis_as_your_rails_cache_store)  
-* Use Redis for application notifications
-* [Create a note-taking application](https://gist.github.com/86714)
+* [as your Rails cache](http://jimneath.org/2011/03/24/using-redis-with-ruby-on-rails.html#using_redis_as_your_rails_cache_store)  
+* for application notifications
+* [for a note-taking application](https://gist.github.com/86714)
+* as persistence for in-app background processing with [Girl Friday](https://github.com/mperham/girl_friday) or message processor like [Sidekiq](https://github.com/mperham/sidekiq)
+* as persistence for social graph data with [Amico](https://github.com/agoragames/amico)
+* as persistence for leaderboard with [Leaderboard](https://github.com/agoragames/leaderboard)
+
+## More docs
+
 * [[Configure and deploy Resque|configure-and-deploy-resque]]
 
 <h2 id="topic5"> More information</h2>
