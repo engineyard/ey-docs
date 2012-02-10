@@ -41,7 +41,7 @@ This instance is configured to run your database. Running your database on a sep
 
 Your database resides on the `/db` mount. This mount point is persistent and can be used to restore your database later. We take regular snapshots and backups of your database by default.
 
-Every clustered environment must have a master database instance. (If your application does not use a database, you can use a small instance.)
+Every clustered environment must have a master database instance. (If your application does not use a database, choose the smallest instance when setting up the cluster.)
 
 For more information about databases, see [[Managing your database on Engine Yard Cloud|database-intro]].
 
