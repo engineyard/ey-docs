@@ -26,7 +26,7 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
 	      [[Engine Yard Cloud updates January 2012|cloud-updates-january-2012]]
 	     </li>	
 	     <li>
-	      [[Custom Chef Recipes|custom-chef-recipes]]
+	      [[Custom Chef recipes|custom-chef-recipes]]
 	     </li>
 	     <li>
 	      [[Find important log files|find-important-log-files]]

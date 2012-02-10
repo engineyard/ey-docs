@@ -236,7 +236,7 @@
 
 * [[Minor: Environment variables for custom scripts|appcloud_updates_june_2011#update4]] *June 2nd, 2011*  
 
-* [[Fix: HAproxy restart from single instance snapshot|appcloud_updates_june_2011#update3]] *June 2nd, 2011*  
+* [[Fix: HAProxy restart from single instance snapshot|appcloud_updates_june_2011#update3]] *June 2nd, 2011*  
 
 * [[Fix: Rubygems 1.5.2 update|appcloud_updates_june_2011#update2]] *June 2nd, 2011*     
 

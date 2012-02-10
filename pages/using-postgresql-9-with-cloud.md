@@ -43,7 +43,7 @@ If you are migrating an existing PostgreSQL database, you'll to perform a dump a
 ### To use PostgreSQL 9.1 with Engine Yard Cloud
 
 1. **Important!** If you have applied any custom chef recipes for PostgreSQL, delete them from your ey-cloud-recipes repository. Do not apply them to this instance.  
-    For general information about custom chef recipes, see [[Custom Chef Recipes|custom-chef-recipes]].
+    For general information about custom chef recipes, see [[Custom Chef recipes|custom-chef-recipes]].
 
 2. Create a new application with a new environment or add an environment to an existing application, making sure to:
 
