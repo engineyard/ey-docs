@@ -86,26 +86,25 @@ environment file using the following:
     end
 
 
-## Things to do with Redis
+<h2 id="topic4"> Things to do with Redis </h2>
 
 You can use Redis: 
 
-* [as your Rails cache](http://jimneath.org/2011/03/24/using-redis-with-ruby-on-rails.html#using_redis_as_your_rails_cache_store)  
-* for application notifications
-* [for a note-taking application](https://gist.github.com/86714)
-* as persistence for in-app background processing with [Girl Friday](https://github.com/mperham/girl_friday) or message processor like [Sidekiq](https://github.com/mperham/sidekiq)
-* as persistence for social graph data with [Amico](https://github.com/agoragames/amico)
-* as persistence for leaderboard with [Leaderboard](https://github.com/agoragames/leaderboard)
-
-## More docs
-
-* [[Configure and deploy Resque|configure-and-deploy-resque]]
+* [As your Rails cache](http://jimneath.org/2011/03/24/using-redis-with-ruby-on-rails.html#using_redis_as_your_rails_cache_store)  
+* For application notifications
+* [For a note-taking application](https://gist.github.com/86714)
+* As persistence for in-app background processing with [Girl Friday](https://github.com/mperham/girl_friday) or message processor like [Sidekiq](https://github.com/mperham/sidekiq)
+* As persistence for social graph data with [Amico](https://github.com/agoragames/amico)
+* As persistence for leaderboard with [Leaderboard](https://github.com/agoragames/leaderboard)
 
 <h2 id="topic5"> More information</h2>
 
 <table>
 	  <tr>
 	    <th>For more information about...</th><th>See...</th>
+	  </tr>
+	  <tr>
+	    <td>Resque and Redis</td><td>[[Configuring and deploying Resque|configure-and-deploy-resque]].</td>
 	  </tr>
 	  <tr>
 	    <td>SSHing into an instance</td><td>[[Connect to your instance via SSH|ssh-connect]].</td>
