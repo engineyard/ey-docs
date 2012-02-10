@@ -19,14 +19,6 @@ February 7th, 2012
 
 Upgraded JRuby to 1.6.6 from 1.6.5.  This upgrades RubyGems to 1.8.15 from 1.8.9. 
 
-<a href=#update2><h2 id="update2">Fix: Engine Yard stack upgrade</h2></a>
-
-February 7th, 2012
-
-Fixed an issue with the PostgreSQL implementation where PostgreSQL defaulted to version 8.3.
-
-This fix is applied when you upgrade your environment.
-
 <a href=#update1><h2 id="update1">Major: PostgreSQL 9.1 is now available with Beta support</h2></a>
 
 February 2nd, 2012

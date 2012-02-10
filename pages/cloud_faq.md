@@ -254,6 +254,6 @@ This AWS account is exclusively used by Engine Yard to host your applications on
 
 <a href=#FAQ33> <h2 id="FAQ33"> Can I use my Amazon Relational Database Service (RDS) with Engine Yard Cloud? </h2></a>
 
-Yes, you can connect to your existing RDS instance; the connection can be configured through a custom Chef recipe.  (For general information about Chef recipes, see [[Custom Chef recipes|custom-chef-recipes]].) 
+Yes, you can connect to your existing RDS instance, although the RDS will not be backed up or supported by Engine Yard. The connection to the RDS can be configured through a custom Chef recipe. (For general information about Chef recipes, see [[Custom Chef recipes|custom-chef-recipes]].) 
 
 **Note:** If you are using a clustered environment, you still need a master database instance; but, in this case, choose the smallest instance for the Engine Yard database because you aren't using it for your application data.
