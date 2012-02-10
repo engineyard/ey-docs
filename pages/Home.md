@@ -20,6 +20,9 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
     <h2>Updated documentation</h2>
     <ul>
   	     <li>
+		  [[Things to do with Redis|add-redis-to-your-application#topic4]]
+		 </li>
+		 <li>
 	      [[Engine Yard Technology Stack|cloud-tech-stack]]
 	     </li>
 	     <li>
@@ -34,9 +37,7 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
 	     <li>
   	 	  [[Known Issue: DNS spoofing detected when SSHing into instances|dns-spoofing-error]]
   	     </li>     		
-	     <li>
-		  [[Host your code on GitHub|host-your-code-on-github]]
-		</li>
+	     
 			         	 	
     </ul>   
 
