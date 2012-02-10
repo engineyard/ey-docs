@@ -39,9 +39,11 @@ You can run [[crons|adding-cron-jobs]] on your Application instances and you can
 
 This instance is configured to run your database. Running your database on a separate server prevents your database and application from contending for the same resources. 
 
-MySQL is currently the only supported database on Engine Yard Cloud. If you need to run a postgres DB you'll have to set it up via a custom chef recipe. Here's a template to get you started: http://github.com/engineyard/ey-cloud-recipes/tree/master/cookbooks/postgres/
-
 Your database resides on the `/db` mount. This mount point is persistent and can be used to restore your database later. We take regular snapshots and backups of your database by default.
+
+Every clustered environment must have a master database instance. (If your application does not use a database, choose the smallest instance when setting up the cluster.)
+
+For more information about databases, see [[Managing your database on Engine Yard Cloud|database-intro]].
 
 <h2 id="util-instance">Utility instances</h2>
 
