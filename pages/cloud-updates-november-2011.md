@@ -60,7 +60,7 @@ November 22, 2011
 
 * Fixed an issue where Passenger 2, Passenger 3, and Trinidad restarted nginx unnecessarily.
 
-* Fixed an issue where only privileged users could customize HAproxy web server error pages. Now, all users can customize the HTTP files in /etc/haproxy/errorfiles. For more information, see [Minor: Assorted improvements to the Engine Yard Stack][4].
+* Fixed an issue where only privileged users could customize HAProxy web server error pages. Now, all users can customize the HTTP files in /etc/haproxy/errorfiles. For more information, see [Minor: Assorted improvements to the Engine Yard Stack][4].
 
 These fixes are applied when you upgrade your environment.
 
@@ -99,7 +99,7 @@ November 11th, 2011
  
 * Slave database setup modified to prevent problems with replication setup.
 
-* In clustered environments, HAproxy web server error pages can now be customized via HTTP files in /etc/haproxy/errorfiles. This does not include 404 errors or (already customized) 500 errors.
+* In clustered environments, HAProxy web server error pages can now be customized via HTTP files in /etc/haproxy/errorfiles. This does not include 404 errors or (already customized) 500 errors.
 
 * Increase the maximum length for a connection request queue in Passenger 3 to reduce likelihood of Passenger workers disconnecting from Nginx (and still using resources).
 

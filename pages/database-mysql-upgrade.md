@@ -60,7 +60,7 @@ If you are migrating an existing MySQL database, you'll to perform a dump and re
 ### To use MySQL 5.1/5.5 with Engine Yard Cloud
 
 1. **Important!** If you have applied any custom chef recipes for MySQL, disable them in your ey-cloud-recipes repository. You may reapply them to your new database instance after completing the tasks on this page.   
-    For general information about custom chef recipes, see [[Custom Chef Recipes|custom-chef-recipes]].
+    For general information about custom chef recipes, see [[Custom Chef recipes|custom-chef-recipes]].
 
 2. Create a new application with a new environment or add an environment to an existing application, making sure to:
 
