@@ -1,33 +1,19 @@
 # How to obtain and installing SSL certificates for applications
 
-This page describes how to obtain an SSL certificate from a third-party vendor and how to install the certificate on an Engine Yard Cloud environment. 
+This page describes how to obtain an SSL certificate from a third-party vendor and how to install the certificate on an Engine Yard Cloud environment. The workflow is:
+
+* [Prerequisite: You have chosen an SSL-certificate vendor][3]
+* [Create the key file and the signing request file needed by the vendor][4]
+* [Purchase the SSL certificate from chosen vendor][7]
 
 This page also describes how to use a self-signed SSL certificate. A self-signed certificate is a good choice for a staging or development environment where you want to test SSL features, but aren't ready to purchase an SSL certificate. See [Install a self-signed certificate][8].
 
-
-
-
-*In order to install a SSL certificate on Engine Yard Cloud's platform you'll need to generate a request and key file.  You'll take that request and key file to your vendor who will give you the actual certificate file back, which you'll bring back to this document and we'll step you through how to install it on the system.*
-
-**Question:** This original text (above) sounds like a procedure, but maybe it is a workflow. 
-
-###To install an SSL certificate on Engine Yard Cloud
-
-1. Choose a vendor.
-2. Generate a request and key file.  
-2. Take the request and key file to your vendor.  
-3. Receive the actual certificate file back from vendor.  
-    **Question:** Do I give the actual certificate file to the vendor? It says I get it *back* from the vendor which implies I must have given it to the vendor in order to get it back. Are there other certificate files that aren't actually certificate files?   
-4. Install the actual certificate file on the system.  
-    **Question:** What is the relationship between the "platform" and the "system" and "Engine Yard Cloud"? 
     
 ---               
 
-<h2 id="topic3"> Types of certificates</h2>
+<h2 id="topic2"> Types of certificates</h2>  
 
-**Question:** What is the purpose of telling me these types of certificates? Why do I need this information? How do I choose? If I expect to have only one application running on my domain, then I use a singe domain? and if I have more than one application, then I should use a wildcard domain.  
-
-Engine Yard supports single domain and wildcard domain certificates.   
+Engine Yard supports single domain and wildcard domain certificates. Get a single domain certificate if you anticipate having one application running on one domain address. If you use subdomains, then you'll need a wildcard domain certificate. 
 **Important!** Engine Yard **does not** support multiple domain certificates. 
 
 <table>
@@ -49,7 +35,7 @@ Engine Yard supports single domain and wildcard domain certificates.
 
 ---
 
-## Prerequisite: A vendor
+<h2 id="topic3"> Prerequisite: You have chosen an SSL-certificate vendor</h2>
 
 The workflow described on this page assumes that you have chosen a vendor to host your certificate. 
 If you haven't yet chosen a vendor, consider reviewing this Wikipedia article [comparing SSL certificates](http://en.wikipedia.org/wiki/Comparison_of_SSL_certificates_for_web_servers). 
@@ -93,9 +79,9 @@ Here are some vendors who have hosted certificates deployed on Engine Yard Cloud
 
 ---
 
-## Create the key and the signing request files needed by the vendor  
+<h2 id="topic4"> Create the key file and the signing request file needed by the vendor</h2>
 
-**Question:** What's the relationship between the following:  
+<!-- here are some terms that could be added as metadata 
 
 * a key and a signing request 
 * request and key file  
@@ -105,17 +91,31 @@ Here are some vendors who have hosted certificates deployed on Engine Yard Cloud
 * key  
 * key file 
 * private key 
-* private key file  
+* private key file
+* CTR
+* certificate file 
+* intermediate key
+* intermediate certificate
+* chain certificate
+
+key file
+certificate signing request file
+certificate file (CTR)-->
 
 
 
-**Question:** How do you take your files to your vendor? Sounds like you have to physically show up at the vendor's place of business. Why don't you *send* files to your vendor? 
+<!--**Question:** How do you take your files to your vendor? Sounds like you have to physically show up at the vendor's place of business. Why don't you *send* files to your vendor? -->
 
 **Important!** The key file cannot have a passphrase associated with it. If you have already generated a key file with a passphrase, see [Removing a passphrase from a key file][9] below.
 
-The procedure is slightly different depending on whether you want a single or a wildcard domain certificate. 
+To create the key file and signing request file, follow one of these procedures:  
 
-### For a single domain certificate: To generate the key file and the signing request file needed by the vendor  
+* [For a single domain certificate: To generate the key file and the signing request file needed by the vendor][5]  
+* [For a wildcard domain certificate: To generate the key file and the signing request file needed by the vendor][6]
+
+
+
+<h3 id="topic5"> For a single domain certificate: To generate the key file and the signing request file needed by the vendor</h3>  
 
 1. Generate a private key file. Type:  (*Q*: See above wrt to terminology.) *Q*: Where do I do this?  
 
@@ -134,12 +134,18 @@ The procedure is slightly different depending on whether you want a single or a 
 
         	openssl req -new -key mydomain.com.key -out mydomain.com.csr
 
-    b. Make sure to enter your domain name for the Common Name.  
-    *Q*: The example shows `mydomain.com` but why is this not `www.mydomain.com` ?
-    
+    b. **Important!** Make sure to enter your domain name for the Common Name.  For example, `mydomain.com`.
+Ask Kevin to confirm. 
 
 
-### For a wildcard domain certificate: To generate the key file and the signing request file needed by the vendor  
+3. Confirm that you have two files in the current directory:  
+	    * `mydomain.com.key` - the key file
+	    * `mydomain.com.csr` - the certificate signing request    
+
+
+<h3 id="topic6">  For a wildcard domain certificate: To generate the key file and the signing request file needed by the vendor </h3> 
+
+Engine Yard convention for wildcard domains is to prefix the key file name with an underscore.
 
 1. Generate a private key file. Type:  (*Q*: See above wrt to terminology.) *Q*: Where do I do this?  
 
@@ -161,110 +167,52 @@ The procedure is slightly different depending on whether you want a single or a 
     b. Make sure to enter your domain name for the Common Name.  
     *Q*: What is this for a wildcard domain?
 
-### Wildcard example commands
+3. Confirm that you have two files in the current directory:  
+    * `_.mydomain.com.key` - the key file
+    * `_.mydomain.com.csr` - the certificate signing request
+    
 
-If you were going to do a Wildcard domain instead of a Single Site domain, a convention Engine Yard has used to signify this has been to change the file name with a preceding underscore:
+<h2 id="topic7"> Purchase the SSL certificate from chosen vendor</h2>
 
-    $ openssl genrsa -out _.mydomain.com.key 2048
-    $ openssl req -new -key _.mydomain.com.key -out _.mydomain.com.csr
-
-### Files ready for vendor
-
-Now you should have the following two files in the folder you ran the command in:
-
-  * `mydomain.com.key` - the private key
-  * `mydomain.com.csr` - the certificate signing request
-  
-Or for Wildcard domains:
-  
-  * `_.mydomain.com.key` - the private key
-  * `_.mydomain.com.csr` - the certificate signing request
-
-### Purchase a certificate
-
-You have your two files, now you can purchase your certificate.  Here's some helpful advice when setting up your certificate with your vendor.
+Now that you have the KEY and CSR two files, you can purchase your SSL certificate.  
  
-IMPORTANT: Always use a plain text editor like Notepad on Windows or equivalent on Mac or Linux, to copy and paste the contents of the `.key` and `.csr` files into the form fields.
 
-Also some other tips:
+###To purchase an SSL certificate
 
-  * When presented with server type: Choose Apache.
-  * You will get at least `.crt` file back from the vendor.
-  * You might also get a "certificate chain file".  Make sure to grab this.
+1. Follow the instructions provided by your chosen vendor. (See [Prerequisite][3] above for a list of vendors.)
+
+2. Consider these tips:  
+    * Always use a plain text editor like Notepad on Windows or equivalent on Mac or Linux to copy and paste the contents of the KEY and CSR files into the form fields.
+    * Choose Apache as the server type.   *Q* When I did the [SSL Shopper](http://www.sslshopper.com/ssl-checker.html) thing, the server type appeared as nginx.  Can you confirm that Apache is the right server type? 
+    * Make sure to get a CRT file from the vendor.
+    * If you are offered "certificate chain file", make sure to get that too. (The certificate chain file is sometimes referred to as an *intermediate* certificate or key.)
+
 
 ---
 
-#BEFORE
+## Apply the certificate to your application on Engine Yard Cloud
 
-## Prepare your files to take to your vendor
+###To install a self-signed certificate
 
-In order to go to your vendor and get a Single Domain certificate or a Wildcard certificate, you'll need both a key and a signing request.
+1. In your Dashboard, select SSL Certificates from the Tools menu.  
+    The SSL Certificates page appears.
 
-### Generate your private key file
+3. Click Add SSL Certificate.  
+    The Create New SSL Certificate page appears.
 
-*Note: Certificates on Engine Yard Cloud cannot have a passphrase.  So we'll generate it without one.*
+2. If you have access to more than one Engine Yard account, select an account.
 
-Run this command to generate a key file with no passphrase.
+3. Enter a name in the SSL Certificate Name field.  
+    **Q**: What should I choose for the name? 
 
-    $ openssl genrsa -out mydomain.com.key 2048
+4. Click Upload SSL Certificate.
 
-### Generate your CSR (Certificate Signing Request) file
+5. **Q** What do I paste where? I have four things: the KEY file, the CSR file, the CRT file, and the certificate chain file. But I have only three text boxes. My guess is that I paste the CRT in the first box, the KEY in the second box and the certificate chain file in the third box and I discard the CSR file. Is that right? 
 
-The certificate signing request file will contain the information that users will see when they click for more information about your SSL certificate. Here's the command you'd run to generate that file.
+<!--  5. In the SSL Certificate text box, paste the contents of the CTR file. 6. In the SSL Certificate Key text box, paste the SSL Certificate Key 7. If you have a certificate chain file, paste it into the SSL Certificate Chain field. -->
 
-    $ openssl req -new -key mydomain.com.key -out mydomain.com.csr
- 
-When it asks your "Common Name" it's asking for your website's domain name, i.e. `www.mydomain.com` as you can see in the example below:
+6. Click Add Certificates.
 
-    You are about to be asked to enter information that will be incorporated into your
-    certificate request.
-    What you are about to enter is what is called a Distinguished Name or a DN.
-    There are quite a few fields but you can leave some blank
-    For some fields there will be a default value,
-    If you enter '.', the field will be left blank.
-    ------
-    Country Name (2 letter code) [AU]:US
-    State or Province Name (full name) [Some-State]:Washington
-    Locality Name (eg, city) []:Seattle
-    Organization Name (eg, company) [Internet Widgits Pty Ltd]:Your Company
-    Organizational Unit Name (eg, section) []:
-    Common Name (eg, YOUR name) []:mydomain.com
-    Email Address []:your.email@address.com
-
-### Wildcard example commands
-
-If you were going to do a Wildcard domain instead of a Single Site domain, a convention Engine Yard has used to signify this has been to change the file name with a preceding underscore:
-
-    $ openssl genrsa -out _.mydomain.com.key 2048
-    $ openssl req -new -key _.mydomain.com.key -out _.mydomain.com.csr
-
-### Files ready for vendor
-
-Now you should have the following two files in the folder you ran the command in:
-
-  * `mydomain.com.key` - the private key
-  * `mydomain.com.csr` - the certificate signing request
-  
-Or for Wildcard domains:
-  
-  * `_.mydomain.com.key` - the private key
-  * `_.mydomain.com.csr` - the certificate signing request
-
-### Purchase a certificate
-
-You have your two files, now you can purchase your certificate.  Here's some helpful advice when setting up your certificate with your vendor.
- 
-IMPORTANT: Always use a plain text editor like Notepad on Windows or equivalent on Mac or Linux, to copy and paste the contents of the `.key` and `.csr` files into the form fields.
-
-Also some other tips:
-
-  * When presented with server type: Choose Apache.
-  * You will get at least `.crt` file back from the vendor.
-  * You might also get a "certificate chain file".  Make sure to grab this.
-
----
-
-## Adding certificates to an application
 
 In general, you follow these three steps to add your certificate to any application:
 
@@ -347,8 +295,9 @@ Click on the **Apply** button at the top.
 
 <img src="images/applyssl.jpg" width="600" alt="Apply SSL Certificate" />
 
-It will run the chef recipes for this environment and install the SSL certificate during this process.
+It will run the chef recipes for this environment and install the SSL certificate during this process. 
 
+---
 ## Verify your SSL certificate
 
 You can verify your SSL certificate is to use a site like [SSL Shopper](http://www.sslshopper.com/ssl-checker.html).
@@ -368,7 +317,8 @@ For general information about self-signed certificates, see [[this article about
 1. In your Dashboard, select SSL Certificates from the Tools menu.  
     The SSL Certificates page appears.
 
-3. Click Add SSL Certificate.
+3. Click Add SSL Certificate.  
+    The Create New SSL Certificate page appears.
 
 2. If you have access to more than one Engine Yard account, select an account.
 
@@ -386,7 +336,7 @@ For general information about self-signed certificates, see [[this article about
 
 <h2 id="topic9">Remove a passphrase from a key file</h2>
 
-Q: When and why do you need to do this?
+**Q:** When and why do you need to do this?  Can I still use the original CTR file that I got from my vendor using the key file that contained a passphrase? 
 
 Engine Yard Cloud 
 
@@ -416,6 +366,28 @@ Engine Yard Cloud
 
     	$ rm temp.key
 
+---
+
+<h2 id="topic10"> Troubleshooting </h2>
+
+This table contains troubleshooting tips.
+
+<table>
+  <tr>
+    <th>Symptom</th><th>Solution</th>
+  </tr>
+   
+   <tr>
+    <td>I applied an SSL certificate. The "Apply" works, throws no errors, but the old cert is what's installed (and still failing). Any idea how to flush that old one and get the new one to actually be loaded? We can't sell at present so I guess this is "Urgent". </td><td>Make sure that your key file does not use a passphrase. If it does, remove it and paste the new key file into the  </td>
+   </tr>
+</td>
+
+<tr>
+	<td> Other problems? <td>Post to the [[Beta Conversations Google group|http://groups.google.com/group/ey-beta-talk]]. To subscribe to the group, see [[Beta Conversations|beta-intro]]. <br> <br>
+   </tr>
+
+  </tr>
+</table>
 
 
 
@@ -428,3 +400,25 @@ Engine Yard Cloud
 [7]: #topic7        "topic7"
 [8]: #topic8        "topic8"
 [9]: #topic9        "topic9"
+
+
+<!-- here are some terms that could be added as metadata 
+
+* a key and a signing request 
+* request and key file  
+* certificate signing request file  
+* certificate signing request  
+* CSR file  
+* key  
+* key file 
+* private key 
+* private key file
+* CTR
+* certificate file 
+* intermediate key
+* intermediate certificate
+* chain certificate
+
+key file
+certificate signing request file
+certificate file (CTR)-->
