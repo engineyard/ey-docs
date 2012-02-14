@@ -2,7 +2,7 @@
 
 This page describes how to obtain an SSL certificate from a third-party vendor and how to install the certificate on an Engine Yard Cloud environment. 
 
-This page also describes how to use a self-signed SSL certificate. A self-signed certificate is a good choice for a staging or development environment where you want to test SSL features, but aren't ready to purchase an SSL certificate. 
+This page also describes how to use a self-signed SSL certificate. A self-signed certificate is a good choice for a staging or development environment where you want to test SSL features, but aren't ready to purchase an SSL certificate. See [Install a self-signed certificate][8].
 
 
 
@@ -93,48 +93,73 @@ Here are some vendors who have hosted certificates deployed on Engine Yard Cloud
 
 ---
 
-## Prepare your files to take to your vendor
+## Create the key and the signing request files needed by the vendor  
 
-**Question:** What's the relationship between "a key and a signing request" and the "request and key file" mentioned above?
+**Question:** What's the relationship between the following:  
+
+* a key and a signing request 
+* request and key file  
+* certificate signing request file  
+* certificate signing request  
+* CSR file  
+* key  
+* key file 
+* private key 
+* private key file  
+
+
 
 **Question:** How do you take your files to your vendor? Sounds like you have to physically show up at the vendor's place of business. Why don't you *send* files to your vendor? 
 
-### To prepare files to take to your vendor  
+**Important!** The key file cannot have a passphrase associated with it. If you have already generated a key file with a passphrase, see [Removing a passphrase from a key file][9] below.
 
-1. Generate a private key file. 
+The procedure is slightly different depending on whether you want a single or a wildcard domain certificate. 
 
-### Generate your private key file
+### For a single domain certificate: To generate the key file and the signing request file needed by the vendor  
 
-*Note: Certificates on Engine Yard Cloud cannot have a passphrase.  So we'll generate it without one.*
+1. Generate a private key file. Type:  (*Q*: See above wrt to terminology.) *Q*: Where do I do this?  
 
-Run this command to generate a key file with no passphrase.
+        openssl genrsa -out mydomain.com.key 2048  
+       You get a response like this:  
+        Generating RSA private key, 2048 bit long modulus
+		...+++
+		...........................................................................................................+++
+		e is 65537 (0x10001)
 
-    $ openssl genrsa -out mydomain.com.key 2048
+    This creates a request key file (mydomain.com.key) without a passphrase.  
 
-**Important!** If you have already generated a key file with a passphrase, see [Removing a passphrase from a key file][9] below to remove it.
+2. 	Generate a signing request file. 
 
-### Generate your CSR (Certificate Signing Request) file
+    a. Type:  
 
-The certificate signing request file will contain the information that users will see when they click for more information about your SSL certificate. Here's the command you'd run to generate that file.
+        	openssl req -new -key mydomain.com.key -out mydomain.com.csr
 
-    $ openssl req -new -key mydomain.com.key -out mydomain.com.csr
- 
-When it asks your "Common Name" it's asking for your website's domain name, i.e. `www.mydomain.com` as you can see in the example below:
+    b. Make sure to enter your domain name for the Common Name.  
+    *Q*: The example shows `mydomain.com` but why is this not `www.mydomain.com` ?
+    
 
-    You are about to be asked to enter information that will be incorporated into your
-    certificate request.
-    What you are about to enter is what is called a Distinguished Name or a DN.
-    There are quite a few fields but you can leave some blank
-    For some fields there will be a default value,
-    If you enter '.', the field will be left blank.
-    ------
-    Country Name (2 letter code) [AU]:US
-    State or Province Name (full name) [Some-State]:Washington
-    Locality Name (eg, city) []:Seattle
-    Organization Name (eg, company) [Internet Widgits Pty Ltd]:Your Company
-    Organizational Unit Name (eg, section) []:
-    Common Name (eg, YOUR name) []:mydomain.com
-    Email Address []:your.email@address.com
+
+### For a wildcard domain certificate: To generate the key file and the signing request file needed by the vendor  
+
+1. Generate a private key file. Type:  (*Q*: See above wrt to terminology.) *Q*: Where do I do this?  
+
+        openssl genrsa -out _.mydomain.com.key 2048  
+       You get a response like this:  
+        Generating RSA private key, 2048 bit long modulus
+		...+++
+		...........................................................................................................+++
+		e is 65537 (0x10001)
+
+    This creates a request key file (????mydomain.com.key) without a passphrase.  
+
+2. 	Generate a signing request file. 
+
+    a. Type:  
+
+        	openssl req -new -key _.mydomain.com.key -out _.mydomain.com.csr
+
+    b. Make sure to enter your domain name for the Common Name.  
+    *Q*: What is this for a wildcard domain?
 
 ### Wildcard example commands
 
@@ -332,10 +357,34 @@ You can verify your SSL certificate is to use a site like [SSL Shopper](http://w
 
 1.  and it lets you put in your URL and will check your certificate and all chain files involved, to ensure that everything is passing.  We recommend after deploying you give this site a quick check and ensure that your site returns all green.
 
+---
+
+<h2 id="topic8">Install a self-signed certificate</h2>
+
+For general information about self-signed certificates, see [[this article about self-signed certificates in Wikipedia|http://en.wikipedia.org/wiki/Self-signed_certificate]].
+
+###To install a self-signed certificate  
+
+1. In your Dashboard, select SSL Certificates from the Tools menu.  
+    The SSL Certificates page appears.
+
+3. Click Add SSL Certificate.
+
+2. If you have access to more than one Engine Yard account, select an account.
+
+3. Enter a name in the SSL Certificate Name field.  
+
+    *Q:* What does it mean "This will be used as the hostname for self-signed certificates" Sounds important but I don't understand. If my application is at http://ec2-50-18-232-212.us-west-1.compute.amazonaws.com/ , what do I put? If my application is at tonyandjane.net/fun what do I put here? 
+
+4. Click Generate Self-Signed SSL Certificate.
+
+5. Click Add Certificates.
+
+6. Follow the steps in XX above to add the certificate to an environment. 
 
 ---
 
-<h2 id="topic9">Removing a passphrase from a key file</h2>
+<h2 id="topic9">Remove a passphrase from a key file</h2>
 
 Q: When and why do you need to do this?
 
