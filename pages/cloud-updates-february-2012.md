@@ -2,6 +2,18 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update5><h2 id="update5">Minor: Layout changes on the Dashboard</h2></a>
+
+February 14th, 2012
+
+Three layout changes have been made to the Engine Yard Cloud Dashboard:  
+
+1. Server Tools are now on a drop-down menu.  
+2. Quick links to Support and Documentation have been added.
+3. Alerts and notifications now appear on the right (not at the top).
+
+For more information, see [[Visual Enhancements to the Dashboard|http://www.engineyard.com/blog/2012/visual-enhancements-to-the-dashboard/]].
+
 <a href=#update4><h2 id="update4">Fixes: Engine Yard stack upgrade</h2></a>
 
 February 10th, 2012
