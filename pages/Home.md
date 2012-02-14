@@ -20,6 +20,9 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
     <h2>Updated documentation</h2>
     <ul>
   	     <li>
+	      [[Engine Yard Cloud updates February 2012|cloud-updates-february-2012]]
+	     </li>
+	     <li>
 		  [[Things to do with Redis|add-redis-to-your-application#topic4]]
 		 </li>
 		 <li>
@@ -31,13 +34,6 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
 	     <li>
 	      [[Custom Chef recipes|custom-chef-recipes]]
 	     </li>
-	     <li>
-	      [[Find important log files|find-important-log-files]]
-	     </li>
-	     <li>
-  	 	  [[Known Issue: DNS spoofing detected when SSHing into instances|dns-spoofing-error]]
-  	     </li>     		
-	     
 			         	 	
     </ul>   
 
@@ -46,9 +42,6 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
   <div class="col col-last">
     <h2>New documentation</h2>
     <ul> 
-       	<li>
-	      [[Engine Yard Cloud updates February 2012|cloud-updates-february-2012]]
-	    </li>
 	    <li>
 	     [[Stopping an application running on a multi-application environment|issue-delete-application]]
 	    </li>
@@ -63,9 +56,7 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
 	    </li>
         <li>
          [[Deploying Node.js applications on Engine Yard Cloud|deploy-node]]
-        </li>
-     
-     
+        </li>         
     </ul>
   </div>
 </div>
