@@ -256,4 +256,6 @@ This AWS account is exclusively used by Engine Yard to host your applications on
 
 Yes, you can connect to your existing RDS instance, although the RDS will not be backed up or supported by Engine Yard. The connection to the RDS can be configured through a custom Chef recipe. (For general information about Chef recipes, see [[Custom Chef recipes|custom-chef-recipes]].) 
 
+In order for your Engine Yard application instances to connect to your RDS environment, you have to create a DB Security Group in the RDS environment and authorize your application Amazon Account ID to connect to that DB Security Group. For more information, see [[Working with DB Security Groups|http://docs.amazonwebservices.com/AmazonRDS/latest/UserGuide/USER_WorkingWithSecurityGroups.html]].
+
 **Note:** If you are using a clustered environment, you still need a master database instance; but, in this case, choose the smallest instance for the Engine Yard database because you aren't using it for your application data.
