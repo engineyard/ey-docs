@@ -39,14 +39,9 @@ This assumes that you are logged into your Master Database instance and you want
 
 ###PostgreSQL: To restore your database (eybackup method)
 
-_Coming soon._  
+With PostgreSQL, it is not possible to drop a database while there are active connections to it. Because of this, you might need to stop the application before restoring the database (Step 3).
 
-To restore a PostgreSQL database without eybackup  
-
-1. [[Download the backup file.|database-download]]  
-2. [Load the backup file into a PostgreSQL database.][B]
-
-<!-- 1. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment).  
+1. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment).  
 
 2. Type (to list the backups):
 
@@ -54,7 +49,15 @@ To restore a PostgreSQL database without eybackup
     or
         sudo -i eybackup -e postgresql -l myapp
 
-2. Type (to restore the backup):
+3. Stop active connections to the target database. 
+
+    a. See how many active connections there are:
+
+       psql -U postgres -t -c "select count(*) from pg_stat_activity where datname='myapp'"
+
+    b. If there are active connections, stop them by stopping the application and logging out of the database.
+
+4. Type (to restore the backup):
 
     **Important!** This command overwrites the current database with the backup. (If you want to keep a copy of the current backup, make an on-demand backup before restoring).
 	
@@ -64,7 +67,7 @@ To restore a PostgreSQL database without eybackup
         sudo -i eybackup -e postgresql -r N:myapp
 
 
-    (where `N` is the number of the backup you want to overwrite the current database. For example, to restore the tenth backup type `sudo -i eybackup -e postgresql -d 10:myapp`) -->	
+    (where `N` is the number of the backup you want to overwrite the current database. For example, to restore the tenth backup type `sudo -i eybackup -e postgresql -d 10:myapp`)
 
 
 <h2 id="topic2">Load your database (Scenario 2)</h2>
