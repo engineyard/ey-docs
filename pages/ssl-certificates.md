@@ -198,7 +198,7 @@ After you've configured your SSL Certificate, tell Engine Yard Cloud which envir
 
 1. In your Dashboard, click the application environment that you want to add the certificate to.
 
-2. Click Assign SSL Certificate *your app*.
+2. Click Assign SSL Certificate to *app_name*.
 
 3. From the SSL Certificate drop-down, select the certificate.
 
