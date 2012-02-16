@@ -13,11 +13,11 @@ This page also describes how to [install a self-signed certificate][8]. A self-s
 
 Additional topics on this page are:   
 
-* [Remove a passphrase from a key file][11]
+* [Remove a passphrase from a key file][13]
 * [Troubleshooting][10]
 
     
-<h3 id="topic2"> Types of SSL certificates</h2>  
+<h3 id="topic2"> Types of SSL certificates</h3>  
 
 Engine Yard supports single-domain and wildcard-domain certificates. Get a single-domain certificate if you anticipate having one application running on one domain address. If you use subdomains, then you'll need a wildcard-domain certificate.  
 
@@ -31,12 +31,14 @@ Engine Yard supports single-domain and wildcard-domain certificates. Get a singl
 	    <td>Single domain</td><td>https://www.mydomain.com</td>
 	  </tr>
 	  <tr>
-	    <td>Wildcard domain<br>(single domain, with subdomains)</td><td>https://www.mydomain.com<br>https://mydomain.com<br>https://app.mydomain.com<br>https://help.mydomain.com</td>
+	    <td>Wildcard domain [*.mydomain.com] <br>(A single domain, with subdomains.)<br><b>Note:</b> Not all vendors include the root domain (e.g. mydomain.com) in the wildcard-domain certificate.</td><td>https://www.mydomain.com<br>https://mydomain.com<br>https://app.mydomain.com<br>https://help.mydomain.com</td>
 	  </tr>
 	  <tr>
-	    <td>Multiple domain,<br>also called UCC (Unified Communications Certificate)</td><td>https://www.mydomain.com<br>https://www.myotherdomain.com<br>https://www.yourdomain.com</td>
+	    <td>Multiple domain,<br>also called UCC (Unified Communications Certificate)</td><td>https://www.mydomain.com<br>https://www.myotherdomain.com<br>https://www.yourdomain.com<br>https://app.mydomain.com</td>
 	  </tr> 
 </table>
+
+
 
 <h2 id="topic3"> Prerequisite: A chosen SSL-certificate vendor</h2>
 
@@ -237,9 +239,8 @@ For general information about self-signed certificates, see [[this article about
 
 2. If you have access to more than one Engine Yard account, select an account.
 
-3. Enter a name in the SSL Certificate Name field.  
-
-    *Q:* What does it mean "This will be used as the hostname for self-signed certificates" Sounds important but I don't understand. If my application is at http://ec2-50-18-232-212.us-west-1.compute.amazonaws.com/ , what do I put? If my application is at tonyandjane.net/fun what do I put here? 
+3. Enter your domain name in the SSL Certificate Name field.  
+    For example, staging.mydomain.com  
 
 4. Click Generate Self-Signed SSL Certificate.
 
@@ -248,7 +249,7 @@ For general information about self-signed certificates, see [[this article about
 6. Follow the steps in [Apply the certificate to an application in an environment][12] above to add the certificate to an environment. 
 
 
-<h2 id="topic9">Remove a passphrase from a key file</h2>
+<h2 id="topic13">Remove a passphrase from a key file</h2>
 
 If your key file contains a passphrase, you need to remove it before entering the key file on the SSL Certificate page.   
 
@@ -256,7 +257,7 @@ If your key file contains a passphrase, you need to remove it before entering th
 
 1. Locate your key file and look at it to see if it contains a passphrase.  
         head mydomain.com.key  
-    The key file contains a passphrase if it begins with text like this (*Proc-Type:* and *DEK-Info:*):
+    The key file contains a passphrase if it begins with text like this (with *Proc-Type:* and *DEK-Info:*):
         -----BEGIN RSA PRIVATE KEY-----
 		Proc-Type: 4,ENCRYPTED
 		DEK-Info: DES-EDE3-CBC,91B305001070B5FD
@@ -268,7 +269,7 @@ If your key file contains a passphrase, you need to remove it before entering th
         cp mydomain.com.key temp.key
         openssl rsa -in temp.key -out mydomain.com.key
 
-    Enter the original key's passphrase when prompted.
+3. Enter the original key's passphrase when prompted.
 	
 
 <h2 id="topic10"> Troubleshooting </h2>
