@@ -20,6 +20,9 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
     <h2>Updated documentation</h2>
     <ul>
   	     <li>
+	      [[How to obtain and install SSL certificates for applications|ssl-certificates]]
+	     </li>
+	     <li>
 	      [[Engine Yard Cloud updates February 2012|cloud-updates-february-2012]]
 	     </li>
 	     <li>
@@ -31,9 +34,7 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
 	     <li>
 	      [[Engine Yard Cloud updates January 2012|cloud-updates-january-2012]]
 	     </li>	
-	     <li>
-	      [[Custom Chef recipes|custom-chef-recipes]]
-	     </li>
+	     
 			         	 	
     </ul>   
 
