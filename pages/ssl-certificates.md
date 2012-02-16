@@ -1,12 +1,12 @@
 # How to obtain and install SSL certificates for applications
 
-This page describes how to obtain an SSL certificate from a third-party vendor and how to install the certificate on an Engine Yard Cloud environment. The process is:
+This page describes how to obtain an SSL certificate from a third-party vendor and how to install the SSL certificate on an Engine Yard Cloud environment. The process is:
 
 * [Prerequisite: A chosen SSL-certificate vendor][3]
 * [Create the key file and the signing request file needed by the vendor][4]
 * [Purchase the SSL certificate from chosen vendor][7]
-* [Install certificate to your application on Engine Yard Cloud][11]
-* [Apply the certificate to an environment][12]
+* [Install the SSL certificate to your application on Engine Yard Cloud][11]
+* [Apply the SSL certificate to an environment][12]
 * [Verify your SSL certificate][14]
 
 This page also describes how to [install a self-signed certificate][8]. A self-signed certificate is a good choice for a staging or development environment where you want to test SSL features, but aren't ready to purchase an SSL certificate.
@@ -17,15 +17,15 @@ Additional topics on this page are:
 * [Troubleshooting][10]
 
     
-<h2 id="topic2"> Types of certificates</h2>  
+<h2 id="topic2"> Types of SSL certificates</h2>  
 
-Engine Yard supports single domain and wildcard domain certificates. Get a single-domain certificate if you anticipate having one application running on one domain address. If you use subdomains, then you'll need a wildcard-domain certificate.  
+Engine Yard supports single-domain and wildcard-domain certificates. Get a single-domain certificate if you anticipate having one application running on one domain address. If you use subdomains, then you'll need a wildcard-domain certificate.  
 
 **Important!** Engine Yard **does not** support multiple-domain certificates. 
 
 <table>
 	  <tr>
-	    <th>Certificate type</th><th>Example</th>
+	    <th>SSL certificate type</th><th>Example</th>
 	  </tr>
 	  <tr>
 	    <td>Single domain</td><td>https://www.mydomain.com</td>
@@ -40,10 +40,10 @@ Engine Yard supports single domain and wildcard domain certificates. Get a singl
 
 <h2 id="topic3"> Prerequisite: A chosen SSL-certificate vendor</h2>
 
-The workflow described on this page assumes that you have chosen a vendor to host your certificate. 
+The workflow described on this page assumes that you have chosen a vendor to host your SSL certificate. 
 If you haven't yet chosen a vendor, consider reviewing this Wikipedia article [comparing SSL certificates](http://en.wikipedia.org/wiki/Comparison_of_SSL_certificates_for_web_servers). 
 
-Here are some vendors who have hosted certificates deployed on Engine Yard Cloud:  
+Here are some vendors who have hosted SSL certificates deployed on Engine Yard Cloud:  
 <div class="split">
   <div class="col col-first">
     <ul>
@@ -84,12 +84,12 @@ Here are some vendors who have hosted certificates deployed on Engine Yard Cloud
 
 To create the key file and signing request file, follow one of these procedures:  
 
-* [For a single domain certificate: To generate the key file and the signing request file needed by the vendor][5]  
-* [For a wildcard domain certificate: To generate the key file and the signing request file needed by the vendor][6]
+* [For a single-domain certificate: To generate the key file and the signing request file needed by the vendor][5]  
+* [For a wildcard-domain certificate: To generate the key file and the signing request file needed by the vendor][6]
 
 **Important!** The key file cannot have a passphrase associated with it. If you have already generated a key file with a passphrase, see [Removing a passphrase from a key file][9] below.
 
-<h3 id="topic5"> For a single domain certificate: To generate the key file and the signing request file needed by the vendor</h3>  
+<h3 id="topic5"> For a single-domain certificate: To generate the key file and the signing request file needed by the vendor</h3>  
 
 1. Open a unix shell, for example, by SSHing into one of your Engine Yard Cloud instances.
 
@@ -118,7 +118,7 @@ To create the key file and signing request file, follow one of these procedures:
 	    * `mydomain.com.csr` - the certificate signing request    
 
 
-<h3 id="topic6">  For a wildcard domain certificate: To generate the key file and the signing request file needed by the vendor </h3> 
+<h3 id="topic6">  For a wildcard-domain certificate: To generate the key file and the signing request file needed by the vendor </h3> 
 
 Engine Yard convention for wildcard domains is to prefix the key file name with an underscore.
 
@@ -131,7 +131,7 @@ Engine Yard convention for wildcard domains is to prefix the key file name with 
 		...........................................................................................................+++
 		e is 65537 (0x10001)
 
-    This creates a key file (????mydomain.com.key) without a passphrase.  
+    This creates a key file (_.mydomain.com.key) without a passphrase.  
 
 2. 	Generate a signing request file. 
 
@@ -139,8 +139,7 @@ Engine Yard convention for wildcard domains is to prefix the key file name with 
 
         	openssl req -new -key _.mydomain.com.key -out _.mydomain.com.csr
 
-    b. Make sure to enter your domain name for the Common Name.  
-    *Q*: What is this for a wildcard domain?
+    b. Make sure to enter your domain name (e.g. mydomain.com) for the Common Name.   
 
 3. Confirm that you have two files in the current directory:  
     * `_.mydomain.com.key` - the key file
@@ -162,17 +161,20 @@ Now that you have the key file and the certificate signing request file, you can
     * If you are offered "certificate chain file", make sure to get that too. (The certificate chain file is sometimes referred to as an *intermediate* certificate or key.)
 
 
----
 
-<h2 id="topic11"> Install certificate to your application on Engine Yard Cloud</h2>
+<h2 id="topic11"> Install an SSL certificate in your Engine Yard account</h2>
 
-###To install a certificate into your Engine Yard Cloud account
+To add an SSL certificate to your Engine Yard account, you need your key file; the CRT file from your vendor; and, if your vendor provided one, the certificate chain file. 
+
+###To install an SSL certificate in your Engine Yard account
 
 1. In your Dashboard, select SSL Certificates from the Tools menu.  
     The SSL Certificates page appears.
 
 3. Click Add SSL Certificate.  
     The Create New SSL Certificate page appears.
+
+    ![The create new SSL certificate page](images/create_new_ssl.png)
 
 2. If you have access to more than one Engine Yard account, select an account.
 
@@ -199,6 +201,8 @@ After you've configured your SSL Certificate, tell Engine Yard Cloud which envir
 2. Click Assign SSL Certificate *your app*.
 
 3. From the SSL Certificate drop-down, select the certificate.
+
+    ![the SSL section on the Environment page](images/ssl-pane-on-environment-page.png)
 
 4. Click Update SSL Settings.
   
@@ -243,7 +247,6 @@ For general information about self-signed certificates, see [[this article about
 
 6. Follow the steps in [Apply the certificate to an application in an environment][12] above to add the certificate to an environment. 
 
----
 
 <h2 id="topic9">Remove a passphrase from a key file</h2>
 
