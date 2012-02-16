@@ -17,7 +17,7 @@ Additional topics on this page are:
 * [Troubleshooting][10]
 
     
-<h2 id="topic2"> Types of SSL certificates</h2>  
+<h3 id="topic2"> Types of SSL certificates</h2>  
 
 Engine Yard supports single-domain and wildcard-domain certificates. Get a single-domain certificate if you anticipate having one application running on one domain address. If you use subdomains, then you'll need a wildcard-domain certificate.  
 
@@ -255,10 +255,13 @@ If your key file contains a passphrase, you need to remove it before entering th
 ###To remove a passphrase from a key file
 
 1. Locate your key file and look at it to see if it contains a passphrase.  
-        cat mydomain.com.key  
-    The key file contains a passphrase if it begins with text like this:
-        Proc-Type: 4,ENCRYPTED
+        head mydomain.com.key  
+    The key file contains a passphrase if it begins with text like this (*Proc-Type:* and *DEK-Info:*):
+        -----BEGIN RSA PRIVATE KEY-----
+		Proc-Type: 4,ENCRYPTED
 		DEK-Info: DES-EDE3-CBC,91B305001070B5FD
+
+		4/3Oaf8n4XyhUG6Q07/HWuqEkCcXujrJ+dJXgzPAleuKKjxOtN7LHZTvGlXQge/V
 
 2. If the key file contains a passphrase, remove it with these commands:  
 
@@ -267,9 +270,6 @@ If your key file contains a passphrase, you need to remove it before entering th
 
     Enter the original key's passphrase when prompted.
 	
-3. Delete the temp.key file.
-        rm temp.key
-
 
 <h2 id="topic10"> Troubleshooting </h2>
 
@@ -281,7 +281,7 @@ This table contains troubleshooting tips.
   </tr>
    
    <tr>
-    <td>I applied an SSL certificate, clicking Add Certificates throws no errors, but the certificate does not appear installed.</td><td>Make sure that your key file does not use a passphrase. If it does, <a href="#topic9">remove it</a> and paste the new key file into the SSL Certificate Key text box; see <a href="#topic11">Install certificate to your application on Engine Yard Cloud</a>. </td>
+    <td>I applied an SSL certificate and clicking Add Certificates throws no errors, *but* the certificate does not appear installed (or the old certificate is still in place) and Nginx is not restarting.</td><td>Make sure that your key file does not use a passphrase. If it does, <a href="#topic9">remove it</a> and paste the new key file into the SSL Certificate Key text box; see <a href="#topic11">Install certificate to your application on Engine Yard Cloud</a>. </td>
    </tr>
 </td>
 </table>
