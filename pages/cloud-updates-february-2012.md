@@ -2,6 +2,14 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update7><h2 id="update7">Minor: Engine Yard stack upgrade</h2></a>
+
+February 23th, 2012
+
+For Rails 3 applications that use MySQL, database-adapter detection has been improved to prevent deployment errors related to the database gem.
+
+This change is applied when you upgrade your environment.
+
 <a href=#update6><h2 id="update6">Minor: Engine Yard stack upgrade</h2></a>
 
 February 15th, 2012

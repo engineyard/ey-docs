@@ -3,6 +3,8 @@
 
 ### [[February 2012|cloud-updates-february-2012]]
 
+* [[Minor: Engine Yard stack upgrade|cloud-updates-february-2012#update7]] *February 23rd, 2012*
+
 * [[Minor: Engine Yard stack upgrade|cloud-updates-february-2012#update6]] *February 15th, 2012*
 
 * [[Minor: Layout changes on the Dashboard|cloud-updates-february-2012#update5]] *February 14th, 2012*
