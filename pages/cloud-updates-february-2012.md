@@ -4,11 +4,15 @@ The updates described are either important (where you need to take action) or of
 
 <a href=#update7><h2 id="update7">Minor: Engine Yard stack upgrade</h2></a>
 
-February 23th, 2012
+February 24th, 2012
 
-For Rails 3 applications that use MySQL, database-adapter detection has been improved to prevent deployment errors related to the database gem.
+The following changes have been made to the Engine Yard stack:
 
-This change is applied when you upgrade your environment.
+* For Rails 3 applications that use MySQL, database-adapter detection has been improved to prevent deployment errors related to the database gem.  
+* Upgraded JRuby to 1.6.7 from 1.6.6.  
+* Fixed a problem related to the PostgreSQL server restarting after configuration changes; the PostgreSQL server now *reloads* after configuration changes.
+
+These changes are applied when you upgrade your environment.
 
 <a href=#update6><h2 id="update6">Minor: Engine Yard stack upgrade</h2></a>
 
