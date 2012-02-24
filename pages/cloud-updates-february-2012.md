@@ -2,6 +2,30 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update6><h2 id="update6">Minor: Engine Yard stack upgrade</h2></a>
+
+February 15th, 2012
+
+The following changes have been made to the Engine Yard stack:
+
+* An enhancement has been made to the eybackup tool for PostgreSQL 9.1. (An error message displays if you try to restore a database that has active connections.)  
+* Fixed an issue where new environments failed to deploy with PostgreSQL 9.1 if backups were disabled.  
+* Fixed the problem of unintentional Sphinx upgrades after MySQL upgrade to 5.1 or 5.5.</li>
+	
+These changes are applied when you upgrade your environment.
+
+<a href=#update5><h2 id="update5">Minor: Layout changes on the Dashboard</h2></a>
+
+February 14th, 2012
+
+Three layout changes have been made to the Engine Yard Cloud Dashboard:  
+
+1. Server Tools are now on a drop-down menu.  
+2. Quick links to Support and Documentation have been added.
+3. Alerts and notifications now appear on the right (not at the top).
+
+For more information, see [[Visual Enhancements to the Dashboard|http://www.engineyard.com/blog/2012/visual-enhancements-to-the-dashboard/]].
+
 <a href=#update4><h2 id="update4">Fixes: Engine Yard stack upgrade</h2></a>
 
 February 10th, 2012
@@ -18,14 +42,6 @@ These fixes are applied when you upgrade your environment.
 February 7th, 2012
 
 Upgraded JRuby to 1.6.6 from 1.6.5.  This upgrades RubyGems to 1.8.15 from 1.8.9. 
-
-<a href=#update2><h2 id="update2">Fix: Engine Yard stack upgrade</h2></a>
-
-February 7th, 2012
-
-Fixed an issue with the PostgreSQL implementation where PostgreSQL defaulted to version 8.3.
-
-This fix is applied when you upgrade your environment.
 
 <a href=#update1><h2 id="update1">Major: PostgreSQL 9.1 is now available with Beta support</h2></a>
 

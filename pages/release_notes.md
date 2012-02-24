@@ -3,11 +3,13 @@
 
 ### [[February 2012|cloud-updates-february-2012]]
 
+* [[Minor: Engine Yard stack upgrade|cloud-updates-february-2012#update6]] *February 15th, 2012*
+
+* [[Minor: Layout changes on the Dashboard|cloud-updates-february-2012#update5]] *February 14th, 2012*
+
 * [[Fixes: Engine Yard stack upgrade|cloud-updates-february-2012#update4]] *February 10th, 2012*
 
 * [[Minor: JRuby upgrade|cloud-updates-february-2012#update3]] *February 7th, 2012*
-
-* [[Fix: Engine Yard stack upgrade|cloud-updates-february-2012#update2]] *February 7th, 2012*
 
 * [[<b>Major:</b> PostgreSQL 9.1 is now available with Beta support|cloud-updates-february-2012#update1]] *February 2nd, 2012*
 

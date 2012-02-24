@@ -127,7 +127,7 @@
   * [[Introduction|beta-intro]]
   * [[Ruby 1.9.3|ruby-193]]
   * [[MySQL 5.1 and 5.5|database-mysql-upgrade]]
-  * [[PostgreSQL 9.1|postgresql]]
+  * [[PostgreSQL 9.1|using-postgresql-9-with-cloud]]
   * [[Rubinius|rubinius]]
   * [[Rubinius and trial|beta-rubinius-environment-with-cloud-trial]]
   * [[Node.js|deploy-node]]
