@@ -102,22 +102,42 @@ Just click the x Remove link and the gem is removed.  This will remove the gem f
 
 ## Manage Unix Packages
 
-Configure additional software packages for your application within Engine Yard Cloud.
+###To configure additional software packages for your application within Engine Yard Cloud.
 
-  - Under SERVER TOOLS, click Dashboard to view your list of applications.
-  - Click name of the application you want to modify
-  - Then click the Add Unix Packages icon in the upper right.
+1. In the Dashboard, click the name of the application you want to modify.  
+2. Click the Unix Packages icon.
+3. Search for your package.  
+    For example `rabbitmq` for RabbitMQ.  
+    Results are returned under the heading "Available Unix Packages".
+4. Click Add ->.  
+    The package is added to the Selected list.  
+5. To install the package on an existing environment:  
+    a. Click Go to dashboard.  
+    b. Click the environment name.  
+    c. Click Apply.  
+6. To install the package on new environment:  
+	a. Click Go to dashboard.  
+	b. Create and boot a new environment for the application.  
 
-### Add a Software Package
+### To remove a software package
 
-  * Type in a search string for your package.  For example `rabbitmq` for RabbitMQ.
+1. In the Dashboard, click the name of the application to remove the software package from.  
+2. Click the Unix Packages icon.
+3. Click x Remove for the package.  
+   This removes the package from the UI but does not remove the package from any currently running instances.
+4. To remove the package from a running environment:  
+    a. Click Go to dashboard.  
+    b. Click the environment name.  
+    c. Click Apply.
 
-Results returned under the heading "Available Unix Packages" can be configured to install when you boot an instance.
+<h2 id="topic5"> More information</h2>
 
-  * Click the Add -> link to add your package.
+<table>
+	  <tr>
+	    <th>For more information about...</th><th>See...</th>
+	  </tr>
+	  <tr>
+	    <td>Create an environment </td><td>[[Create an environment|environment-create]].</td>
+	  </tr>
+</table>
 
-Now your package moves to the "Selected Unix Packages" on the right.  Boot your instance and the package will be installed.
-
-### Remove a Software Package
-
-Click the x Remove link and the package is removed.  This will remove the package from the UI but will not remove the package from any currently running instances.
