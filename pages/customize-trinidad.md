@@ -37,7 +37,8 @@ Helper functions are provided for adding JAVA_OPTS and RJUBY_OPTS. Use these hel
 	
 5. To set the JVM maximum heap size, use the set\_jvm\_memory helper function described [below][C].
 
-6. To add other environment variables, specify them directly and export. For example, to set the CLASSPATH variable add this to the env.custom file:  
+6. To add other environment variables, specify them directly and export.  
+    For example, to set the CLASSPATH variable, add this to the env.custom file:  
 
         CLASSPATH=/data/app_name/current/lib/iText.jar
         export CLASSPATH
@@ -79,18 +80,18 @@ If you want to customize the way Trinidad is launched, edit `trinidad.yml`.
 
 1. Open `/data/app_name/shared/config/trinidad.yml` for editing.  
    
-2. For documentation about options you can add to this file, see [Advanced configuration|https://github.com/trinidad/trinidad/wiki/advanced-configuration].  
+2. For documentation about options for this file, see [[Advanced configuration|https://github.com/trinidad/trinidad/wiki/advanced-configuration]].  
   
 3. Save the `/data/app_name/shared/config/trinidad.yml` file and deploy your application.
  
 
 <h2 id="topic4">About customizing Trinidad and JVM options in production environments</h2>
 
-In a clustered environment, you need to make the same customizations on the application slaves so if your current application master fails, the takeover instance has the same customizations. 
+In a clustered environment, you need to make the same customizations on the application slave instances so that if your current application master fails, the takeover instance has the same customizations. 
 
 You can do this two ways:  
 
-* Edit the env.custom or trinidad.yml file on the application slaves as described above, or 
+* Edit the env.custom or trinidad.yml files on the application slaves to make the same customizations as on the master application instance, or 
 * Create a custom Chef recipe to apply the customizations to each application instance in the cluster. For information about custom Chef recipes, see [[Custom Chef recipes|custom-chef-recipes]]. 
 
 [1]: #topic1        "topic1"
