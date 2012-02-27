@@ -50,7 +50,8 @@ Helper functions are provided for adding JAVA_OPTS and RJUBY_OPTS. Use these hel
 
 <h3 id="topicA">The add_java_option helper function</h3>
 
-Add\_java\_option is a helper function for adding JAVA_OPTS environment variables. 
+Add\_java\_option is a helper function for adding options to the JAVA_OPTS environment variable.
+ 
 
 For example, to make the JVM use the G1 garbage collector, add this to the env.custom file:  
 
@@ -58,7 +59,7 @@ For example, to make the JVM use the G1 garbage collector, add this to the env.c
 
 <h3 id="topicB">The add_jruby_option helper function</h3>
 	
-Add\_jruby\_option is a helper function for adding JRUBY_OPTS environment variables.
+Add\_jruby\_option is a helper function for adding options to the JRUBY_OPTS environment variable.
 	
 For example, to enable thread pooling, add this to the env.custom file:
 	
