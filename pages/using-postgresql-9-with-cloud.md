@@ -106,11 +106,11 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 	
 	**Note:** The dbname should correspond to the database name of your application.
 
-5. If your database was dumped from a non-Engine Yard environment, import the output file to the new PostgreSQL 9.1 database with these commands:
+	5. If your database was dumped from a non-Engine Yard environment, import the output file to the new PostgreSQL 9.1 database with these commands:
 
         pg_restore -d app_name -no-owner dumpfile --clean -U postgres
 
-		grant all on all tables in schema public to deploy
+		psql -U postgres -c "grant all on all tables in schema public to deploy"
 		
     Where `app_name` is the name of your application.
 

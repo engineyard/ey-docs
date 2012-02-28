@@ -10,6 +10,7 @@ Here are a couple of scenarios for restoring / loading your database:
     * You are upgrading database versions, for example, moving from a PostgreSQL 9.0 environment to a PostgreSQL 9.1 environment.
     * You want a copy of your production database for stress testing on a different non-production environment.
 
+**Important!** If you are restoring a database from 
 
 <h2 id="topic1">Restore your database (Scenario 1)</h2>
 
@@ -127,7 +128,7 @@ This scenario assumes that you are moving data from one environment (or instance
 
 2. Via SSH, connect to the application and database instance (for single server environment) or the master database instance (for a clustered environment), and change to the directory where you copied the database backup file in Step 1 (e.g.`cd /tmp/postgres`).
 
-3. Import the database backup file to the database:  
+3. If your database came from an Engine Yard environment, import the database backup file to the database with this command:  
         pg_restore -d [app_name] [filename] --clean -U postgres
 
     where
@@ -138,6 +139,21 @@ This scenario assumes that you are moving data from one environment (or instance
 
     for example  
         pg_restore -d myapp dumpfile.pgz --clean -U postgres
+
+4. If your database is not from an Engine Yard environment, import the database backup file to the database with these commands:  
+
+		pg_restore -d [app_name] -no-owner [filename] --clean -U postgres
+
+		psql -U postgres -c "grant all on all tables in schema public to deploy"
+
+    where
+    `[app_name]` is the name of the database.  
+    `[filename]` is the name of the database backup file.   
+    `--clean` permits overwriting of the existing database with the backup file.  
+    `-U postgres` sets the user to the postgreSQL user who has permission to overwrite the database. (The deploy user does not have these permissions.)
+
+    for example  
+        pg_restore -d myapp  -no-owner dumpfile.pgz --clean -U postgres
 
 <h2 id="topic5"> More information</h2>
 
@@ -156,6 +172,9 @@ This scenario assumes that you are moving data from one environment (or instance
    </tr>
    <tr>
 	 <td>Finding the password for your database</td><td>[[Finding key information about your database|database-password]].</td>
+   </tr>
+<tr>
+	 <td>About importing a PostgreSQL database from a non-Engine Yard source</td><td>[[About importing a database from Engine Yard versus from another source|using-postgresql-9-with-cloud#topic12]].</td>
    </tr>
 </table>
 
