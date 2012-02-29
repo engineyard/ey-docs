@@ -17,8 +17,8 @@ This page describes:
   
   * **Small** is 32-bit with 1.7 GB RAM, 1 ECU
       
-    These instances are great for staging environments, development environments, and lower traffic production. 
-    environments. With only a single ECU they're not ideal for production environments taking on larger 
+    These instances are great for staging environments, development environments, and lower-traffic production 
+    environments. With only a single ECU, they're not ideal for production environments taking on larger 
     amounts of traffic. We have noticed these instances become CPU starved when serving higher amounts of traffic or load.
   
   * **Large** is 64-bit with 7.5 GB RAM, 4 ECU
@@ -34,7 +34,7 @@ This page describes:
 
   * **High Memory Extra Large** is 64-bit with 17.1 GB RAM, 3.25 ECU
     
-    These instances are great for just starting out with decently large datasets. It's also a good choice for Redis utility instances 
+    These instances are great for starting out with decently large datasets. They are also a good choice for Redis utility instances 
     if you foresee a good amount of data.
   
   * **High Memory Double Extra Large** is 64-bit with 34.2 GB RAM, 14 ECU
