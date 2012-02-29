@@ -1,6 +1,6 @@
 # Moving your application to a different region
 
-A common reason to migrate your application to a different region is to improve response times. For example, you are hosting your application in US West (Oregon) and you discover that most of your users are in Europe. If you move your application to the EU (Ireland) region, your users experience better response times.
+A common reason to migrate your application to a different region is to improve response times. For example, you are hosting your application in US West (Oregon) and you discover that most of your users are in Europe. If you move your application to the EU (Ireland) region, your users will experience better response times.
 
 Unfortunately, an existing environment cannot simply be edited and restarted in a different region. The process of moving to a new region involves creating a new environment in a different region and copying the database and any assets "manually" to the new environment.   
 
