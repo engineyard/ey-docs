@@ -101,6 +101,7 @@
   * [[Migrating to Engine Yard Cloud|migrating_home]]
   * [[Migration steps template|migration-steps-template]]
   * [[Migrating to Ruby 1.9.2|migration-to-newer-ruby]]
+  * [[Migrating your application to a different region|moving-your-site-to-us-west-zone]]
 * [[Manage your Account|account-intro]]
   * [[Introduction|account-intro]]
   * [[Upgrade free trial account|upgrading-free-trial-to-full-account]]

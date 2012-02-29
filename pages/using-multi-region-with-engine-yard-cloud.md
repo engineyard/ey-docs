@@ -41,12 +41,13 @@ environment and click Create Environment.
 When the environment has been saved, configure your environment instances on the next page 
 and boot. This environment is now being deployed in the Region you selected.
 
+<h2 id="topic5"> More information</h2>
 
-## To recreate an existing environment in a new region
-  
-  1. Follow the steps in [[cloning your environment|environment-clone]] to select the region.    
-  2. Change your DNS TTL to the lowest setting, such as 60 seconds.
-  3. Enable your [[maintenance page|deployment-maintenance-pages]] for the old environment.
-  4. Change your DNS to point to the new environments IP address.
-
-When the DNS finishes propagating, your customers see your application in the new region. You can now shut down your old environment.
+<table>
+	  <tr>
+	    <th>For more information about...</th><th>See...</th>
+	  </tr>
+	  <tr>
+	    <td>Moving your application to a different region</td><td>[[Moving your application to a different region|moving-your-site-to-us-west-zone]].</td>
+	  </tr>
+</table>
