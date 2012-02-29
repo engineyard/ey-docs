@@ -1,78 +1,48 @@
 # Moving your application to a different region
 
-The most common reason to migrate your Engine Yard application to a different geographical region is to move your application closer to your users. For example, if you are hosting your application in US West (Oregon) and you discover that most of your users are in Europe. If you move your application to the EU (Ireland) region, your users will experience better response times.
+A common reason to migrate your Engine Yard application to a different region is to improve response times. For example, you are hosting your application in US West (Oregon) and you discover that most of your users are in Europe. If you move your application to the EU (Ireland) region, your users will experience better response times.
 
-
-
-###About using SSH agent forwarding
-
-The procedure below describes moving the database and other data by downloading it to a local machine and then uploading it to the new environment. Alternatively, particularly in a production environment, you might prefer to use SSH agent forwarding to transfer files directly from the old environment to the new one. 
-
+Unfortunately, an existing environment cannot simply be edited and restarted in a different region. The process of moving to a new region involves creating a new environment in a different region and copying the database and any assets "manually" to the new environment.   
 
 ##To move an application to a environment in a different region
 
+This procedure assumes that you are moving a production environment. If you are moving a staging or testing environment, the procedure is simpler because downtime is not a concern. (Omit Steps 6 to 9.)
+
+Also this procedure describes moving the database and any assets by downloading to a local machine and then uploading it to the new environment. If you prefer, you can use SSH agent forwarding to transfer files directly from the old environment to the new one. 
+
+
 1. Create a new environment for your application in the new region.  
-    For general information about creating an environment, see [[create an environment|environment-create]]
+    For general information about creating an environment, see [[create an environment|environment-create]].
 
-2. Backup your database and download the backup onto your local machine.  
+2. Back up your database and download the backup onto your local machine.  
 
-    For instructions, see  
-        * [[Backup on-demand|database_backups.html#topic2]]  
-        * [[]]
-Dump your data from the /db volume and pull that dump down locally: [[Backing up the database|database_backups]].  
+    For instructions, see:  
+    * [[Back up on-demand|database_backups#topic2]]  
+    * [[View and download database backups|database-download]]
 
-    This means:  
-    a. Do a backup on-demand (http://docs.engineyard.com/database_backups.html#topic2).  
-    b. Download the database backup (http://docs.engineyard.com/database-download.html)
+3. Download any assets required for your site, for example, on the /data volume.  
 
-
-2. Any other assets required for your site, on the /data volume need to be pulled down locally in preparation to be restored on the new zone.  
-
-        scp deploy@ec2-50-19-112-194.compute-1.amazonaws.com:/data/preciousfile.txt ~/Downloads
+        scp deploy@ec2-111-111-111-11.compute-1.amazonaws.com:/data/mydata.Z ~/targetdirectory
 	
-	**Note:** To use the scp command, you need keys and scp setup. Link to SSH intro.	
+	**Note:** To use the scp command, you need [[SSH keys|ssh-setup]] and scp setup. 	
 
+4. Upload your database and copy any assets to the new environment.  
 
-3. Create a new environment for the application in the new region: (link to create an environment)
+    For instructions on uploading the database, see [[Load your database (Scenario 2)|database-restore#topic2]].     
 
+5. Test the new environment.
 
-4. After your environment is up in the new region, upload your database and any assets, etc. to the new environment.  
+6. Enable your [[maintenance page|deployment-maintenance-pages]] for the old environment.
 
-    Follow Load your database (Scenario 2) http://docs.engineyard.com/database-restore.html#topic2
-    Copy assets back with the scp command. 
+7. To make sure that you move all the data from the old environment to the new, repeat Steps 2 to 4. 
 
-    Test this environment.
+8. Update your DNS information so that your domain name points to the IP address of the new environment.
 
-6. Enable your [[maintenance page|deployment-maintenance-pages]] for the old environment.	Put up the maintenance on the old region's environment.  (link to deployment maintenance pages)
+9. (Optional) Lower the TTL (time to live) for the old DNS record, for example to 60 seconds.
 
-7. Do a final database dump and restore to get the final data off the old environment.
+    This is to direct users to the new environment as soon as possible.
 
-5. 	Update your DNS information so your domain name points to the new IP address for your environment in the US-West zone. 4. Change your DNS to point to the new environments IP address.
-
-6. (Optional) Lower the TTL (time to live) for your old DNS record to 60 seconds.    2. Change your DNS TTL to the lowest setting, such as 60 seconds.
-    This ensures that your users will be directed to the new region cluster sooner.
-
-9. When the DNS finishes propagating and you have confirmed that your customers can see use your application in the new region, stop the old environment. 
-
-###About using SSH agent forwarding
-
-The procedure below describes moving the database and other data by downloading it to a local machine and then uploading it to the new environment. Alternatively, particularly in a production environment, you might prefer to use SSH agent forwarding to transfer files directly from the old environment to the new one. 
-
-
-
-
-8. 
-
-Update your DNS information so your domain name points to the new IP address for your environment in the US-West zone.
-
-
-## To recreate an existing environment in a new region
-  
-  1. Follow the steps in [[cloning your environment|environment-clone]] to select the region.    
-  2. Change your DNS TTL to the lowest setting, such as 60 seconds.
-  3. Enable your [[maintenance page|deployment-maintenance-pages]] for the old environment.
-  4. Change your DNS to point to the new environments IP address.
-
+10. After confirming that your users can see and use your application in the new environment, stop the old environment. 
 
 
 <h2 id="topic5"> More information</h2>
@@ -85,6 +55,6 @@ Update your DNS information so your domain name points to the new IP address for
 	    <td>Regions in Engine Yard Cloud</td><td>[[Use Multi-Region on Engine Yard Cloud|using-multi-region-with-engine-yard-cloud]].</td>
 	  </tr>
 	<tr>
-	  <td>Permanently deleting the old environment</td><td>[[Use Multi-Region on Engine Yard Cloud|using-multi-region-with-engine-yard-cloud]].</td>
+	  <td>Permanently deleting the old environment</td><td>[[Delete an environment|environment-delete]].</td>
 	  </tr>
 </table>
