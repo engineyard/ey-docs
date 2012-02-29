@@ -4,7 +4,7 @@ A common reason to migrate your Engine Yard application to a different region is
 
 Unfortunately, an existing environment cannot simply be edited and restarted in a different region. The process of moving to a new region involves creating a new environment in a different region and copying the database and any assets "manually" to the new environment.   
 
-##To move an application to a environment in a different region
+##To move an application to an environment in a different region
 
 This procedure assumes that you are moving a production environment. If you are moving a staging or testing environment, the procedure is simpler because downtime is not a concern. (Omit Steps 6 to 9.)
 
