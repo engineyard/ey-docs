@@ -152,7 +152,7 @@ This scenario assumes that you are moving data from one environment (or instance
     `-U postgres` sets the user to the postgreSQL user who has permission to overwrite the database. (The deploy user does not have these permissions.)
 
     for example  
-        pg_restore -d myapp -no-owner dumpfile.pgz --clean -U postgres
+        pg_restore -d myapp --no-owner dumpfile.pgz --clean -U postgres
 
 <h2 id="topic5"> More information</h2>
 
