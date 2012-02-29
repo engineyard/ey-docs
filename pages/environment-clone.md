@@ -39,8 +39,8 @@ of spinning up an environment on-demand within a matter of minutes.
 * ### Choose IP address
   Select the IP address you want to use or optionally opt to use a public Amazon hostname.
   
-* ### Availability Zone
-  Select an AWS Availability Zone for your environment. The default option is usually fine.  
+* ### Region
+  Select an AWS region for your environment. The default option is usually fine.  
 
 * ### Domain name for ...
   Enter the domain name to associate with this environment. Leave this blank if using an Amazon hostname.

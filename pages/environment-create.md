@@ -29,8 +29,8 @@ application setup within your Engine Yard account.
   * ### Domain Name
     Set your domain name for this environment.
     
-  * ### Availability Zone
-    Select an AWS Availability Zone for your environment. The default option is usually fine.
+  * ### Region
+    Select an AWS region for your environment. The default option is usually fine.
     
   * ### SSH Keys
     Select the ssh keys you want to have installed on instances in this environment.
