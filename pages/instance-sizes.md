@@ -31,6 +31,11 @@ This page describes:
     
 
 <h2 id="memory">High memory instances</h2>
+
+  * **High Memory Extra Large** is 64-bit with 17.1 GB RAM
+    
+    These instances are great for just starting out with decently large datasets. It's also a good choice for Redis utility instances 
+    if you foresee a good amount of data.
   
   * **High Memory Double Extra Large** is 64-bit with 34.2 GB RAM
     
