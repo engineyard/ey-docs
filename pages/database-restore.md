@@ -141,7 +141,7 @@ This scenario assumes that you are moving data from one environment (or instance
 
 4. If your database is not from an Engine Yard environment, import the database backup file to the database with these commands:  
 
-		pg_restore -d [app_name] -no-owner [filename] --clean -U postgres
+		pg_restore -d [app_name] --no-owner [filename] --clean -U postgres
 
 		psql -U postgres -c "grant all on all tables in schema public to deploy"
 
