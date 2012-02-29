@@ -17,7 +17,8 @@ The process for setting up and running your application on PostgreSQL 9.1 depend
 * _Are you running with PostgreSQL on a platform other than Engine Yard Cloud?_ Then, do these tasks:  
 
     * [Set up an application to use PostgreSQL 9.1][3]  
-    * [Dump and restore an existing PostgreSQL database][4]
+    * [Dump and restore an existing PostgreSQL database][4]   
+        Make sure to read [About importing a database from Engine Yard versus another source][12].
 
 * _Are you running Engine Yard Cloud with PostgreSQL now (with a custom chef recipe from ey-cloud-recipes or 2010 PostgreSQL 8.x Alpha program)?_ Then, do these tasks:  
 
@@ -67,6 +68,16 @@ If you are currently running a PostgreSQL database (8.x or 9), you need to dump 
 
 You can perform these tasks yourself (as outlined below) or ask [[Engine Yard Professional Services|http://www.engineyard.com/services]] to do the migration for you.
 
+<h3 id="topic12">About importing a database from Engine Yard versus from another source</h3>
+Engine Yard PostgreSQL databases must be owned by the deploy user. 
+
+If you are loading a database that was exported from a non-Engine Yard source, you have to:  
+
+* Restore the database without permissions  
+* Grant all permissions to the deploy user
+
+This is done in Step 5 below. 
+
 ### To dump and restore the PostgreSQL database
 
 See the PostgreSQL documentation for full details on dumping and restoring a database.  
@@ -89,28 +100,36 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 	 
 3. SSH to the database instance.
 
-4. Import the output file to the new PostgreSQL 9.1 database. 
+4. If your database was dumped from an **Engine Yard** environment, import the output file to the new PostgreSQL 9.1 database with this command: 
 
 		pg_restore -d dbname dumpfile
 	
 	**Note:** The dbname should correspond to the database name of your application.
 
-5. Test the application running in the new environment before deleting your original environment.
+5. If your database was dumped from a non-Engine Yard environment, import the output file to the new PostgreSQL 9.1 database with these commands:
+
+        pg_restore -d app_name -no-owner dumpfile --clean -U postgres
+
+        psql -U postgres -c "grant all on all tables in schema public to deploy"
+		
+    Where `app_name` is the name of your application.
+
+6. Test the application running in the new environment before deleting your original environment.
 
 
 
 <h2 id="topic8">Connect to your PostgreSQL 9.1 database </h2>
 
-### To connect to your PosgreSQL 9.1 database
+### To connect to your PostgreSQL 9.1 database
 See the [[Managing your database|database-intro]] documentation (Many of the tasks apply to PostgreSQL as well as MySQL.)
 
-1. Find your generated PostgreSQL password (the [[MySQL instructions on passwords|database-password]] describe this step)
+1. Find your generated PostgreSQL password (the [[MySQL instructions on passwords|database-password]] describe this step).
 
-2. Extract list of databases
+2. Extract list of databases:
 				
 		psql -l -U deploy
 
-3. Connect to your database 
+3. Connect to your database: 
 		
 		psql -U deploy -h localhost -d dbname
 
