@@ -100,17 +100,17 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 	 
 3. SSH to the database instance.
 
-4. If your database was dumped from an Engine Yard environment, import the output file to the new PostgreSQL 9.1 database with this command: 
+4. If your database was dumped from an **Engine Yard** environment, import the output file to the new PostgreSQL 9.1 database with this command: 
 
 		pg_restore -d dbname dumpfile
 	
 	**Note:** The dbname should correspond to the database name of your application.
 
-	5. If your database was dumped from a non-Engine Yard environment, import the output file to the new PostgreSQL 9.1 database with these commands:
+5. If your database was dumped from a non-Engine Yard environment, import the output file to the new PostgreSQL 9.1 database with these commands:
 
         pg_restore -d app_name -no-owner dumpfile --clean -U postgres
 
-		psql -U postgres -c "grant all on all tables in schema public to deploy"
+        psql -U postgres -c "grant all on all tables in schema public to deploy"
 		
     Where `app_name` is the name of your application.
 
@@ -120,16 +120,16 @@ See the PostgreSQL documentation for full details on dumping and restoring a dat
 
 <h2 id="topic8">Connect to your PostgreSQL 9.1 database </h2>
 
-### To connect to your PosgreSQL 9.1 database
+### To connect to your PostgreSQL 9.1 database
 See the [[Managing your database|database-intro]] documentation (Many of the tasks apply to PostgreSQL as well as MySQL.)
 
-1. Find your generated PostgreSQL password (the [[MySQL instructions on passwords|database-password]] describe this step)
+1. Find your generated PostgreSQL password (the [[MySQL instructions on passwords|database-password]] describe this step).
 
-2. Extract list of databases
+2. Extract list of databases:
 				
 		psql -l -U deploy
 
-3. Connect to your database 
+3. Connect to your database: 
 		
 		psql -U deploy -h localhost -d dbname
 
