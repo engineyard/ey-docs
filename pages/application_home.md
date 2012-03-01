@@ -1,6 +1,7 @@
 # Applications
 
-This section outlines how to manage your application on Engine Yard Cloud. If you're looking to add SSL to your application please see [[SSL Certs|ssl-certificates]].
+This section outlines how to manage your application on Engine Yard Cloud. 
+For information about adding SSL to your application, see [[How to obtain and install SSL certificates for applications|ssl-certificates]].
 
 ## Add an Application
 
@@ -97,27 +98,46 @@ The gem appears on the "Selected Gems" list below. Boot your instance and the ge
 
 ### Remove a Gem
 
-Just click the x Remove link and the gem is removed.  This will remove the gem from the UI but will not remove the gem from any currently running instances.
+Click the x Remove link and the gem is removed.  This will remove the gem from the UI but will not remove the gem from any currently running instances.
 
 
-## Manage Unix Packages
+## Add Unix packages to your application
 
-Configure additional software packages for your application within Engine Yard Cloud.
+You can add additional software packages to your application within Engine Yard Cloud. Packages are added at the account-level. After a package is applied to specific environment, it cannot be removed from that environment. (Although, after a package is dissociated from an application, new environments for that application do not have the package.)
 
-  - Under SERVER TOOLS, click Dashboard to view your list of applications.
-  - Click name of the application you want to modify
-  - Then click the Add Unix Packages icon in the upper right.
+###To configure additional software packages for your application within Engine Yard Cloud.
 
-### Add a Software Package
+1. In the Dashboard, click the name of the application you want to modify.  
+2. Click the Unix Packages icon.
+3. Search for your package.  
+    For example `rabbitmq` for RabbitMQ.  
+    Results are returned under the heading "Available Unix Packages".
+4. Click Add ->.  
+    The package is added to the Selected list.  
+5. To install the package on an existing environment:  
+    a. Click Go to dashboard.  
+    b. Click the environment name.  
+    c. Click Apply.  
+6. To install the package on new environment:  
+	a. Click Go to dashboard.  
+	b. Create and boot a new environment for the application.  
 
-  * Type in a search string for your package.  For example `rabbitmq` for RabbitMQ.
+### To remove a software package
 
-Results returned under the heading "Available Unix Packages" can be configured to install when you boot an instance.
+1. In the Dashboard, click the name of the application to remove the software package from.  
+2. Click the Unix Packages icon.
+3. Click x Remove for the package.  
+   This removes the package from the UI but does not remove the package from any currently running environments.
 
-  * Click the Add -> link to add your package.
 
-Now your package moves to the "Selected Unix Packages" on the right.  Boot your instance and the package will be installed.
+<h2 id="topic5"> More information</h2>
 
-### Remove a Software Package
+<table>
+	  <tr>
+	    <th>For more information about...</th><th>See...</th>
+	  </tr>
+	  <tr>
+	    <td>Create an environment </td><td>[[Create an environment|environment-create]].</td>
+	  </tr>
+</table>
 
-Click the x Remove link and the package is removed.  This will remove the package from the UI but will not remove the package from any currently running instances.
