@@ -1,6 +1,7 @@
 # Applications
 
-This section outlines how to manage your application on Engine Yard Cloud. If you're looking to add SSL to your application please see [[SSL Certs|ssl-certificates]].
+This section outlines how to manage your application on Engine Yard Cloud. 
+For information about adding SSL to your application, see [[How to obtain and install SSL certificates for applications|ssl-certificates]].
 
 ## Add an Application
 
@@ -97,10 +98,12 @@ The gem appears on the "Selected Gems" list below. Boot your instance and the ge
 
 ### Remove a Gem
 
-Just click the x Remove link and the gem is removed.  This will remove the gem from the UI but will not remove the gem from any currently running instances.
+Click the x Remove link and the gem is removed.  This will remove the gem from the UI but will not remove the gem from any currently running instances.
 
 
-## Manage Unix Packages
+## Add Unix packages to your application
+
+You can add additional software packages to your application within Engine Yard Cloud. Packages are added at the account-level. After a package is applied to specific environment, it cannot be removed from that environment. (Although, after a package is dissociated from an application, new environments for that application do not have the package.)
 
 ###To configure additional software packages for your application within Engine Yard Cloud.
 
@@ -124,11 +127,8 @@ Just click the x Remove link and the gem is removed.  This will remove the gem f
 1. In the Dashboard, click the name of the application to remove the software package from.  
 2. Click the Unix Packages icon.
 3. Click x Remove for the package.  
-   This removes the package from the UI but does not remove the package from any currently running instances.
-4. To remove the package from a running environment:  
-    a. Click Go to dashboard.  
-    b. Click the environment name.  
-    c. Click Apply.
+   This removes the package from the UI but does not remove the package from any currently running environments.
+
 
 <h2 id="topic5"> More information</h2>
 
