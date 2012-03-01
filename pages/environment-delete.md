@@ -1,13 +1,9 @@
 # Delete an environment
 
-## Before you begin
+**Important!** Before deleting an environment, make sure that there is nothing on that environment that you need to keep. Deleting is permanent.
 
-  * The environment you want to delete can't have any instances running.
+##To delete an environment  
 
-## Delete the Environment
-
-  - Under SERVER TOOLS, click Dashboard to see a list of all environments.
-  - To permanently delete the Environment, click Delete in the top right corner.
-  - You will be prompted to verify that you wish to do so, click OK.
-
-That environment is now gone.
+1. In the Dashboard, click the environment name.  
+2. If the environment is running, click Stop.  
+3. Click Delete.
