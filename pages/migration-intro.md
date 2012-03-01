@@ -12,3 +12,7 @@ Topics in this section describe migrating applications to Engine Yard Cloud and 
 
 * ### [[Migrating to Ruby 1.9.2|migration-to-newer-ruby]]
   Learn how to safely migrate a Ruby 1.8.6 or 1.8.7 application to Ruby 1.9.2.
+
+* ### [[Moving your application to a different region|moving-your-site-to-us-west-zone]]  
+  Learn how to migrate your application from an environment in one region to a new environment in another region.
+
