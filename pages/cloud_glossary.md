@@ -16,7 +16,7 @@ Command Line Interface. For information about using the Engine Yard CLI, see [[E
 
 ## ebuilds
 
-The Gentoo linux distribution uses ebuilds to specify instructions on how to "built" from source a specific library or binary.  So if your application requires the "ImageMagick" library you'll need to install the library.  See [[Manage Unix Packages|application_home]] for more detailed instructions.
+The Gentoo linux distribution uses ebuilds to specify instructions on how to "built" from source a specific library or binary.  If your application requires the "ImageMagick" library, you need to install the library.  See [[Manage Unix Packages|application_home]] for more detailed instructions.
 
 ## environments
 
@@ -38,7 +38,7 @@ IP Addresses are a means of identifying a specific entity on a TCP/IP network.  
 
 ## root partitions
 
-In the file system we refer to the root partition as the primary volume that the gentoo linux filesystem resides on.
+In the filesystem, we refer to the root partition as the primary volume that the Gentoo linux filesystem resides on.
 
 ## SSH keys
 
