@@ -16,15 +16,17 @@ Ruby 1.9 is a version of MRI which brings substantial performance improvements. 
 1. Run your application locally:  
     a. If you use unix or Mac OS X, update your local environment to 1.9.2 using the instructions here: [[beginrescueend.com|http://beginrescueend.com/rvm/install/]].  
     b. If you use Windows, update your local environment to 1.9.2 using the instructions here: [[railsinstaller.org|http://railsinstaller.org/]].  
-    b. Reinstall the gems required for application.  
-    c. Test the application in your local environment; make fixes if needed.
+    c. Reinstall the gems required for application.  
+    d. Test the application in your local environment; make fixes if needed.
 4. Run your application in a staging environment:  
-    a. Clone a staging environment and edit the Runtime to Ruby 1.9.2. (Alternatively, create a new staging environment.)  
-    c. Deploy the application to the staging environment.  
+    a. Clone a staging environment for the application and edit the Runtime to Ruby 1.9.2. (Alternatively, create a new staging environment.)  
+    b. Apply the edit.  
+    c. If Passenger is the application server stack, restart nginx: (i) SSH into the instance. (ii) Type: `sudo /etc/init.d/nginx restart`     
     d. Test the application in the staging environment; make fixes if needed.
 7. Run your application in a production environment:  
     a. Clone a production environment and edit the Runtime to Ruby 1.9.2. (Alternatively, create a new production environment.)  
-    b. Deploy the application to the staging environment.  
+    b. Apply the edit.  
+    c. If Passenger is the application server stack, restart nginx on each application instance in the cluster: (i) SSH into the instance. (ii) Type: `sudo /etc/init.d/nginx restart`
 
 <h2 id="topic6"> Troubleshooting tip</h2>
 
@@ -54,13 +56,16 @@ Ruby 1.9 is a version of MRI which brings substantial performance improvements. 
 	    <th>For more information about...</th><th>See...</th>
 	  </tr>
 	  <tr>
-	    <td>Cloning an environment</td><td>[[Clone an environment|environment-clone]] </td>
+	    <td>Cloning an environment</td><td>[[Clone an environment|environment-clone]]. </td>
 	  </tr>
 	  <tr>
-	    <td>Creating an environment</td><td>[[Create an environment|environment-create]]</td>
+	    <td>Creating an environment</td><td>[[Create an environment|environment-create]].</td>
 	  </tr>
 	  <tr>
-	    <td>Deploying an application</td><td>[[Deploying your application|deployment-intro]]</td>
+	    <td>Deploying an application</td><td>[[Deploying your application|deployment-intro]].</td>
+	  </tr>
+	  <tr>
+		<td>SSHing into an instance</td><td>[[Connect to your instance via SSH|ssh-connect]].</td>
 	  </tr>
 </table>
 	
