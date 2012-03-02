@@ -30,6 +30,6 @@
   * [[500 errors after deploying (known issue)|issue-mysql2-adapter]]
   * [[Error in the deployment log "Please install the mysql2 adapter" (known issue)|issue-mysql2-adapter]]
   * [[Can't install RMagick 2.13.1. You must have ImageMagick 6.4.9 or later. (known issue)|imagemagick-rmagick-may-26]]
-  * [[Bundler version issue "unitialized contant Gem::SilentUI (known issue)|bundler-gemfile-version]]
+  * [[Bundler version issue "uninitialized contant Gem::SilentUI (known issue)|bundler-gemfile-version]]
   * [[Possible DNS spoofing detected (known issue)|dns-spoofing-error]]
 

@@ -1,4 +1,4 @@
-# Bundler version issue "unitialized contant Gem::SilentUI (NameError)"
+# Bundler version issue "uninitialized contant Gem::SilentUI (NameError)"
 
 The EngineYard platform defaults to Bundler version
 1.0.10, which throws the above error with newer versions of Rubygems. A

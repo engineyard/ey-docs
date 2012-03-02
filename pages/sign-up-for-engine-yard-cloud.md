@@ -116,7 +116,7 @@ If you already have a free trial, you might want to upgrade to a full account be
 	    <td>New Relic</td><td>[[Monitor applications with New Relic|monitoring-new-relic]]</td>
 	  </tr>
 	<tr>
-	    <td>Hibernating an Engine Yard account to avoid monthly charges</td><td>[[Hibernate your account|hibernate-your-account]] </td>
+	    <td>Hibernating an Engine Yard account to avoid monthly charges</td><td>[[Hibernate your account|account-hibernation]] </td>
 	  </tr>
 </table>
 
