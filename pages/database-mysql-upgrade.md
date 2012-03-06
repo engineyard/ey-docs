@@ -129,7 +129,7 @@ See the MySQL documentation for full details on dumping and restoring a database
 
 ### To connect to your MySQL 5.1/5.5 database
 
-* See [[Access Your MySQL Database Remotely|access-your-mysql-database-remotely]] and [[Find your generated MySQL password and connect to your DB|database-password]].
+* See [[Accessing your database remotely through an SSH tunnel|database-tunnel]] and [[Find your generated MySQL password and connect to your DB|database-password]].
 
 
 <h2 id="topic5"> More information</h2>
@@ -145,7 +145,7 @@ See the MySQL documentation for full details on dumping and restoring a database
     <td>MySQL</td><td>[[MySQL|http://dev.mysql.com/doc]] documentation </td>
   </tr>
 <tr>
-    <td>SSHing to your database</td><td>[[Access your MySQL database remotely|access-your-mysql-database-remotely]] </td>
+    <td>SSHing to your database</td><td>[[Connect to your instance via SSH|ssh-connect]] </td>
   </tr>
 <tr>
     <td>SSH public keys</td><td>[[Using SSH on Engine Yard Cloud|ssh-intro]] </td>
