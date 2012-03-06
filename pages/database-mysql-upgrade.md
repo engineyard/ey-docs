@@ -129,7 +129,7 @@ See the MySQL documentation for full details on dumping and restoring a database
 
 ### To connect to your MySQL 5.1/5.5 database
 
-* See [[Accessing your database remotely through an SSH tunnel|database-tunnel]] and [[Find your generated MySQL password and connect to your DB|database-password]].
+* See [[Connect to your instance via SSH|ssh-connect]] and [[Find your generated MySQL password and connect to your DB|database-password]].
 
 
 <h2 id="topic5"> More information</h2>
