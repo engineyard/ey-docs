@@ -3,6 +3,8 @@
 
 ### [[March 2012|cloud-updates-march-2012]]
 
+* [[Minor: Engine Yard stack upgrade|cloud-updates-march-2012#update2]] *March 7th, 2012*
+
 * [[Minor: Engine Yard stack upgrade|cloud-updates-march-2012#update1]] *March 1st, 2012*
 
 ### [[February 2012|cloud-updates-february-2012]]

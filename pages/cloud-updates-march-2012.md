@@ -2,6 +2,14 @@
 
 The updates described are either important (where you need to take action) or of interest (you might want to know about these changes but you don't need to do anything). 
 
+<a href=#update2><h2 id="update2">Minor: Engine Yard stack upgrade</h2></a>
+
+March 7th, 2012
+
+Improvements to the load-balancing algorithm used by HAProxy.
+
+Upgrade your environment to take advantage of the improvements.
+
 <a href=#update1><h2 id="update1">Minor: Engine Yard stack upgrade</h2></a>
 
 March 1st, 2012
