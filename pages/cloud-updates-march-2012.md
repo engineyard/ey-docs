@@ -6,9 +6,9 @@ The updates described are either important (where you need to take action) or of
 
 March 7th, 2012
 
-Improvements to the load-balancing algorithm used by HAProxy.
+HAProxy now uses the leastconn load-balancing algorithm by default.
 
-Upgrade your environment to take advantage of the improvements.
+Upgrade your environment to take advantage of this improvement.
 
 <a href=#update1><h2 id="update1">Minor: Engine Yard stack upgrade</h2></a>
 
