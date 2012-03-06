@@ -44,6 +44,9 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
     <h2>New documentation</h2>
     <ul> 
 	    <li>
+		 [[Mass assignment weakness and GitHub security breach|issue-github-ssh-keys]]
+		</li>
+		<li>
 		 [[Moving your application to a different region|moving-your-site-to-us-west-zone]]
 		</li>
 		<li>
@@ -54,10 +57,7 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
 	    </li>  	  
 	    <li>
          [[High availability for clustered environments|environment-high-availability]]
-        </li>
-	    <li>
-	     [[Managing your database on Engine Yard Cloud|database-intro]]
-	    </li>      
+        </li>    
     </ul>
   </div>
 </div>
