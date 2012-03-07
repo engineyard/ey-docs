@@ -6,9 +6,13 @@ The updates described are either important (where you need to take action) or of
 
 March 7th, 2012
 
-HAProxy now uses the leastconn load-balancing algorithm by default.
+The following changes have been made to the Engine Yard stack:  
 
-Upgrade your environment to take advantage of this improvement.
+* HAProxy now uses the leastconn load-balancing algorithm by default.
+* Fixed a problem where X-Forward-Proto appeared in Nginx proxy.conf when stunnel was enabled.
+
+These changes are applied when you upgrade your environment.
+
 
 <a href=#update1><h2 id="update1">Minor: Engine Yard stack upgrade</h2></a>
 
