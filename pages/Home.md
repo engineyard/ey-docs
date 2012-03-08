@@ -43,6 +43,9 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
   <div class="col col-last">
     <h2>New documentation</h2>
     <ul> 
+	   	<li>
+	      [[Customize Trinidad|customize-trinidad]]
+	    </li>
 	    <li>
 		 [[Mass assignment weakness and GitHub security breach|issue-github-ssh-keys]]
 		</li>
@@ -55,9 +58,6 @@ Engine Yard is a Ruby on Rails Platform as a Service that provides the ability t
 	    <li>
 		 [[Customize Nginx|customize-nginx]]
 	    </li>  	  
-	    <li>
-         [[High availability for clustered environments|environment-high-availability]]
-        </li>    
     </ul>
   </div>
 </div>
