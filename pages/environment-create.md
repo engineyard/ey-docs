@@ -21,7 +21,11 @@ application setup within your Engine Yard account.
     Select an option to set the RAILS_ENV, MERB_ENV or RACK_ENV for applications in this environment.
   
   * ### Application Server Stack
-    Select an application server to serve your Rails or Ruby application in this environment.
+    Select an application server to serve your Rails or Ruby application in this environment.  
+
+    If you need to run more than one application on an environment, choose Passenger. 
+
+	If you will be running only one application on an environment (this is more common practice), then choose Unicorn. Engine Yard has found Unicorn to be reliable, easier to monitor, and to have less downtime during deployment.
     
   * ### Runtime
     Select a runtime to run your applications in this environment.
