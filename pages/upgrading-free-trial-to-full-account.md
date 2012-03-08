@@ -24,7 +24,7 @@ This will cause a snapshot to be taken of the current **/data** and **/db** dire
 
 ![Boot Instance](images/02_boot_instance.png)
 
-Next, choose **Boot** to configure and create new instances. You’re presented with three choices: **Single Server** (what you started with), **Basic Cluster** (separate application and database instances), and **Custom**. For this example, we will choose Custom.
+Next, choose **Boot** to configure and create new instances. You're presented with three choices: **Single Server** (what you started with), **Basic Cluster** (separate application and database instances), and **Custom**. For this example, we will choose Custom.
 
 ![Configuration](images/03_configuration.png)
 
