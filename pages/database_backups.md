@@ -7,7 +7,7 @@ This page describes:
 * [Setting the frequency and number of scheduled database backups][1]
 * [Making an on-demand backup of the database][2] 
 
-By default, the database is backed up every 24 hours, starting around 1:10 am Pacific time (server time) and the last 10 days of backups are kept. Backup frequency and number of backups kept can be configured through the UI. Start times can be configured through cron jobs and custom chef recipes. 
+By default, the database is backed up every 24 hours, starting around 1:10 am (server time, which is by default Pacific time) and the last 10 days of backups are kept. Backup frequency and number of backups kept can be configured through the UI. Start times can be configured through cron jobs and custom chef recipes. 
 
 <h2 id="topic0">Types of database backups</h2>
 

@@ -39,3 +39,20 @@ The process is:
 		
 [1]: #topic1        "topic1"
 [2]: #topic2        "topic2"
+
+This is what the env.custom file looks like:
+    cat env.custom
+	#!/bin/bash
+	#
+	# Custom environment variables for Trinidad should go here.
+	#
+	# Note: there are several functions at the top of env that you can use
+	# here, including:
+	#
+	#   - set_jvm_memory MEM: set JVM max memory
+	#       set_memory "2G"
+	#   - add_java_option OPT: add to the JAVA_OPTS environment variable
+	#       add_java_option -Djava.io.tmpdir=/var/tmp
+	#
+	
+	
