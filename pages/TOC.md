@@ -111,7 +111,7 @@
   * [[Link a GitHub account|linking-github-to-cloud]]
 * [[HowTos|howtos-intro]]
   * [[Introduction|howtos-intro]]
-  * [[Custom Chef recipes|custom-chef-recipes]]
+  * [[Customize with Chef recipes|custom-chef-recipes]]
   * [[Use keep files to maintain configurations|configuration-keep-files]]
   * [[Customize Nginx|customize-nginx]]
   * [[Customize Unicorn|customize-unicorn]]

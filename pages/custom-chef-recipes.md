@@ -1,4 +1,6 @@
-# Custom Chef recipes
+# Customize your environment with Chef recipes
+
+You can use Chef recipes to customize your Engine Yard Cloud environments. You can edit cookbooks that are provided by Engine Yard or you can make your own cookbooks. 
 
 This page describes:   
 
@@ -8,72 +10,85 @@ This page describes:
 * [Turning on a cookbook][5]
 * [Creating a cookbook][6]
 * [Invoking custom Chef recipes][7]
-* [Reporting to the Dashboard from custom recipes][8]
-* [Log files for Chef recipes][9]
-* [Specifying which instance roles run a recipe][10]
+* [Reporting to the Dashboard from custom Chef recipes][8]
+* [Reporting to a log file from custom Chef recipes][9]
+* [Specifying which instance roles run a custom Chef recipe][10]
 
 
-<h2 id="topic2"> Setup Chef environment</h2>
+<h2 id="topic2"> Set up the Chef environment</h2>
 
-In order to be able to develop chef recipes that build (and rebuild each time you start an instance) dependencies of your application, you need to install a few gems and set up API credentials for your Engine Yard account.
+In order to be able to develop Chef recipes that build (and rebuild each time you start an instance) your environment customizations, you need to install the engineyard gem in your local environment on your development machine.
+
+Even if you already have the engineyard gem installed, it is good practice to run "install engineyard" to make sure that you have the latest version of the gem. 
 
 ### To install the engineyard gem
 
-* Type: 
+1. Type: 
         $ sudo gem install engineyard
+
+2. When prompted, enter the password for your Engine Yard account.
 
 <h2 id="topic3">Clone the ey-cloud-recipes repository</h2>
 
-Fork and clone the [ey-cloud-recipes](http://github.com/engineyard/ey-cloud-recipes) repository.
+To work with the ey-cloud-recipes repository, you need to fork and clone it to your development environment on your local machine. Clone a local copy of the ey-cloud-recipes repository in the directory that you'll work in when writing custom Chef recipes for your environment (the same environment where you installed the engineyard gem).  
+
+Here is the standard procedure for cloning a GitHub repository:
+
+###To fork and clone the ey-cloud-recipes repository
 
 1. Browse to the [ey-cloud-recipes](http://github.com/engineyard/ey-cloud-recipes) site on GitHub.  
 2. Click Fork to fork the repository.  
     This creates a fork under your user account on GitHub.
-3. Click the clipboard icon to copy the URL of your forked repository to your clipboard.  
-4. Clone the repository to your local development machine. Be sure you do **not** put this inside of your app repository as nested repositories aren't supported in git.
+3. Copy the URL of your forked repository to your clipboard.  
+4. Clone the repository to your local development machine:   
+   **Note:** Unless you are using submodules in git, do **not** put the ey-cloud-recipes repository in the same directory as your application repository. By default, git does not support nesting.
+   
+<h3 id="topic3a">About updating the ey-cloud-recipes repository</h3>
 
-        git clone git@github.com:<github username>/ey-cloud-recipes.git
+From time to time, you might want to or need to refresh your ey-cloud-recipes repository to keep up with changes made by Engine Yard. A good reason to refresh the repository is if something isn't working correctly or if there is a new feature that you want to take advantage of. You can review the GitHub Commit History for the repository to find out about recent changes. 
 
-This local copy of your **ey-cloud-recipes** repository will be the folder you work in when writing custom recipes for your environment.
+Make sure to test carefully after updating the repository before apply the new Chef recipes to a production environment. 
 
-<h2 id="topic4">File structure of ey-cloud-recipes</h2>
+<h2 id="topic4">About the file structure of ey-cloud-recipes</h2>
 
-### Base files and folders
+Become familiar with the file structure of the ey-cloud-recipes repository.
+
+### Base files and directories
 
     README.md
     Rakefile
     cookbooks/
-      main/
-        attributes/
-        definitions/
-        libraries/
-        recipes/
-
-These folders and files were original to the **ey-cloud-recipes** repository before any other cookbooks were added.
+      main/  
+        attributes/  
+        definitions/  
+        libraries/  
+        recipes/  
 
 ### Cookbooks directory
 
-Under `cookbooks/` you will see a folder for each of the self-contained recipes for various components you can choose to enable.
+In the cookbooks directory are directories of the self-contained recipes for various "components" (such as Sphinx, MongoDB, Redis, Varnish) that you can enable and customize for your environment.
 
-Each folder under a cookbook has a number of sub-folders.  For this example the sphinx recipe is used:
+Each directory under a cookbook has a number of sub-directories.  On this page, we use the Sphinx recipe as the example:
 
-    cookbooks/sphinx/
-      files/
-        default/
-          sphinx.logrotate
-      recipes/
-        default.rb
-      templates/
-        sphinx.monitrc.erb
-        sphinx.yml.erb
+    cookbooks/
+        sphinx/
+          files/
+			default/
+              sphinx.logrotate
+          recipes/
+        	default.rb
+      	  templates/
+			default/
+        	  sphinx.monitrc.erb
+        	  sphinx.yml.erb
 
 ### Recipes directory
 
-For each cookbook the `recipes/default.rb` is the main definition file that will prescribe how chef will perform each of its actions to achieve the goal.  View the [sphinx example](http://github.com/engineyard/ey-cloud-recipes/blob/master/cookbooks/sphinx/recipes/default.rb).
+For each cookbook `recipes/default.rb is the main definition file that prescribes how Chef performs each of its actions to achieve the customization.  View the [Sphinx example](http://github.com/engineyard/ey-cloud-recipes/blob/master/cookbooks/sphinx/recipes/default.rb).
 
 ### Files directory
 
-In the sphinx cookbook the `recipes/default.rb` creates a `remote_file` *resource* (that's a chef term).  And that *resource* is found in the `files/default/sphinx.logrotate` location.  Which corresponds to the *source* value in the code block below.
+In the Sphinx cookbook, the `recipes/default.rb` creates a `remote_file` *resource* (that's a Chef term).  That *resource* is found in the `files/default/sphinx.logrotate` location and corresponds to the *source* value in the code block below.
 
 
     remote_file "/etc/logrotate.d/sphinx" do
@@ -86,12 +101,13 @@ In the sphinx cookbook the `recipes/default.rb` creates a `remote_file` *resourc
     end
 
 
-Why have a flat file?  Well the `sphinx.logrotate` is a file that has no variables.  That's what the *templates* are for and that's what you can use standard ERB to inject variable data.
+The `sphinx.logrotate` is a file that has no variables. You use the templates and ERB to insert the variable data into the sphinx.logrotate file.
 
 ### Templates directory
 
-Once again in the `recipes/default.rb` of the sphinx cookbook a *resource* is created.  This time it is passing variables to a template.
+Also in the the Sphinx cookbook, the `recipes/default.rb` creates a template and passes variables to the template. 
 
+*In the recipes/default.rb file:*
 
     template "/etc/monit.d/sphinx.#{app_name}.monitrc" do
       source "sphinx.monitrc.erb"
@@ -106,8 +122,9 @@ Once again in the `recipes/default.rb` of the sphinx cookbook a *resource* is cr
     end
 
 
-The variables above are passed to the template below and then chef renders the static file defined in the template resource, i.e `/etc/monit.d/sphinx.myapp.monitrc`.
+The variables above are passed to the template (`sphinx.monitrc.erb`), and Chef renders the static file (`/etc/monit.d/sphinx.myapp.monitrc`).
 
+*In the sphinx.monitrc.erb file:*
 
     check process sphinx_<%= @app_name %>_3312
       with pidfile /var/run/sphinx/<%= @app_name %>.pid
@@ -118,127 +135,128 @@ The variables above are passed to the template below and then chef renders the s
 
 <h2 id="topic5"> Turn on a cookbook</h2>
 
-Please browse the [[available cookbooks|http://github.com/engineyard/ey-cloud-recipes/tree/master/cookbooks]] to see the latest versions.
+In order to turn on a cookbook and have that set of recipes run when you deploy your application, you need to uncomment the recipe in the `cookbooks/main/recipes/default.rb` file. 
 
-In order to turn on a cookbook and have that set of recipes run when you deploy your application you need to open the `cookbooks/main/recipes/default.rb` file.
 
-This file contains a series of lines commented out that either describe or require a given recipe.  The `require_recipe` method, followed by a string named after the same cookbook.
+###To turn on an existing cookbook
 
-For an example of using a cookbook checkout: [[Full text search with thinking sphinx |full-text-search-with-thinking-sphinx]]
+1. Select the cookbook that you want to use.  
+
+2. In your local environment, open `cookbooks/main/recipes/default.rb` for editing. 
+
+3. Uncomment the "require_recipe" line for the recipe that you want to turn on.
+
+4. Follow any additional instructions in the comments.  
+    For example, for Sphinx, you need to edit cookbooks/sphinx/recipes/default.rb; for details, see [[Full text search with thinking sphinx |full-text-search-with-thinking-sphinx]]. 
+
+4. Save `cookbooks/main/recipes/default.rb` and commit your changes locally and push them to your remote repository.
+
+5. Use the ey recipes commands to upload and apply the recipes:  
+        ey recipes upload -e environment_name
+        ey recipes apply -e environment_name 
+
 
 <h2 id="topic6">Create a cookbook</h2>
 
-For the purposes of this example, we will be creating a new recipe called **nginx_logrotate**.
+If there isn't a ready-made cookbook to suit your needs, you can create your own cookbook from scratch.
 
-Go to your local **ey-cloud-recipes** repository folder.  To generate a new recipe type:
-
-    $ rake new_cookbook COOKBOOK=nginx_logrotate
-
-Edit **cookbooks/nginx_logrotate/recipes/default.rb** adding the following code:
+The procedure below shows how to create a new Chef recipe called nginx_logrotate. This recipe changes the retention time of Nginx logs from 30 days (the default) to 60 days. 
 
 
-    remote_file "/etc/logrotate.d/nginx" do
-      owner "root"
-      group "root"
-      mode 0755
-      source "nginx.logrotate"
-      backup false
-      action :create
-    end
+###To generate a new Chef recipe:
+
+1. In your local environment, in the ey-cloud-recipes repository directory, type:  
+        $ rake new_cookbook COOKBOOK=nginx_logrotate
+
+    This creates the file: cookbooks/nginx_logrotate/recipes/default.rb.
+
+2. Edit cookbooks/nginx_logrotate/recipes/default.rb to add the following code:
+
+        remote_file "/etc/logrotate.d/nginx" do
+          owner "root"
+          group "root"
+          mode 0755
+          source "nginx.logrotate"
+          backup false
+          action :create
+        end
+
+4.  Create a file called files/default/nginx.logrotate with the following content: 
+
+        /var/log/engineyard/nginx/*.log {
+          daily
+          missingok
+          compress
+          rotate 60
+          dateext
+          notifempty
+          sharedscripts
+          extension gz
+          postrotate
+              [ ! -f /var/run/nginx.pid ] || kill -USR1 `cat /var/run/nginx.pid`
+          endscript
+        }
 
 
-Create a new nginx logrotate config file. Change the retention of Nginx logs to 60 days (the default is 30) by creating the file **files/default/nginx.logrotate** with the following content:
+5. Edit cookbook/main/recipes/default.rb to enable the recipe:
 
-    /var/log/engineyard/nginx/*.log {
-      daily
-      missingok
-      compress
-      rotate 60
-      dateext
-      notifempty
-      sharedscripts
-      extension gz
-      postrotate
-          [ ! -f /var/run/nginx.pid ] || kill -USR1 `cat /var/run/nginx.pid`
-      endscript
-    }
+        require_recipe "nginx_logrotate"
 
 
-Add the following line to the bottom of **cookbook/main/recipes/default.rb** to enable the recipe:
+6. Test the syntax of your new recipe:
+
+        $ rake test
 
 
-    require_recipe "nginx_logrotate"
+4. Commit your changes locally and push them to your remote repository.
 
+5. Use the ey recipes commands to upload and apply the recipes:   
 
-Test the syntax of your new recipe:
+	        ey recipes upload -e environment_name
+	        ey recipes apply -e environment_name
 
-
-    $ rake test
-
-
-The final step is to commit your changes to the repository.  After your changes are committed to HEAD of your local git repository then you are ready to deploy.
-
-
-    $ git add . && git commit -am "Custom logrotate for nginx"
-
-
-<h2 id="topic7"> Invoking custom Chef recipes</h2>
-
-To run your new recipe set you first need to upload the recipes to your environment.
-
-  From the root of your recipes repository run:
-
-
-    $ ey recipes upload -e <environment name>
-
-
-  Then run them with:
-
-    $ ey recipes apply -e <environment name>
-
-  You can also choose to do a full chef run:
-
-    $ ey rebuild -e <environment name>
-
-You can now deploy your app code that depends on customizations that chef has configured for you.
 
 <h2 id="topic8"> Report to the Dashboard from custom recipes</h2>
 
-You can have messages appear when your custom chef recipes run.  These appear on the environment page under the "Instances" heading.
+You can have messages appear when your custom Chef recipes run.  These appear on the Environment page under the "Instances" heading; and allow you to see when the custom portions of your Chef recipes are running. These messages also appear in the chef.custom.log file. (See [Report to a log file from custom Chef recipes][9] below.)
 
-The first part of this is included in the **ey-cloud-recipes** repository.  The second part you can include in the **recipe/default.rb** you create.
+###To report to the Dashboard from custom Chef recipes
 
-This code can be found in the **ey-cloud-recipes** repository under ''cookbooks/main/definitions/ey_cloud_report.rb'':
+1. Edit the RB file (for example, recipes/default.rb) file with code like this:  
 
-    define :ey_cloud_report do
-      execute "reporting for #{params[:name]}" do
-        command "ey-enzyme --report '#{params[:message]}'"
-        epic_fail true
-      end
-    end
+        ey_cloud_report "recipe_name" do
+          message "message text"
+        end
+    
+    Where *more message text* is the message that you want to appear on Dashboard when that part of the code is executed.
 
+    For example: 
 
-Then inside your cookbook in the **recipe/default.rb** file, you can use the code like this example: 
+        ey_cloud_report "nginx" do
+          message "custom logrotate for nginx"
+        end
 
-    ey_cloud_report "nginx" do
-      message "custom logrotate for nginx"
-    end
-
-There are further examples of how the ''ey_cloud_report'' method is used in the [sphinx recipe](http://github.com/engineyard/ey-cloud-recipes/blob/master/cookbooks/sphinx/recipes/default.rb).
-
-Now can see when the custom portions of your chef recipes are running in the Dashboard.
-
-<h2 id="topic9">Log files for Chef recipes</h2>
-
-Custom recipes are logged to /var/log/chef.custom.log. (Default Engine Yard Cloud recipes are logged to /var/log/chef.main.log.)
-
-For example, running this code in your *.rb custom recipe file:  
-  `Chef::Log.info "Doing step 1."`  
-writes a line like this:  `[Sun, 22 Jan 2012 22:29:00 +0000] INFO: Doing step 1.`  
-to the /var/log/chef.custom.log file. 
+There is an example of the ey_cloud_report method in the [sphinx recipe](http://github.com/engineyard/ey-cloud-recipes/blob/master/cookbooks/sphinx/recipes/default.rb).
 
 
-<h2 id="topic10"> Specifying which instance roles run a recipe</h2>
+<h2 id="topic9">Report to a log file from custom Chef recipes </h2>
+
+Custom Chef recipes are logged to /var/log/chef.custom.log. (Default Engine Yard Cloud recipes are logged to /var/log/chef.main.log.)
+
+###To report to a log file from custom Chef recipes 
+
+1. Edit the RB file (for example, recipes/default.rb) file with code like this:  
+
+        Chef::Log.info "message text"
+
+    For example:  
+        Chef::Log.info "Doing step 1." 
+    writes a line like this:  
+        [Sun, 22 Jan 2012 22:29:00 +0000] INFO: Doing step 1.   
+    to the /var/log/chef.custom.log file. 
+
+
+<h2 id="topic10"> Specify which instance roles run a recipe</h2>
 
 In a clustered environment, you have multiple instances, each instance playing a different role. In most cases, you want the recipe to run on only one type of instance; for example, to run on the application master, but not on the application slave, database, or utility instances.
 
@@ -278,6 +296,25 @@ For example,
     end
 
 Where *myutility* is the name of a utility instance.
+
+<h2 id="topic5"> More information</h2>
+
+<table>
+  <tr>
+    <th>For more information about...</th><th>See...</th>
+  </tr>
+  <tr>
+    <td>the engineyard gem</td><td>[[Engine Yard CLI User Guide|ey_cli_user_guide]].</td>
+  </tr>
+  <tr>
+	<td> the ey recipes commands</td><td>[[Engine Yard CLI User Guide|ey_cli_user_guide]].</td>
+  </tr>
+  <tr>
+	<td> custom Chef recipes</td><td>[[Common Custom Chef Solutions|http://www.engineyard.com/blog/2011/common-custom-chef-solutions/]] blog post by Tim Littlemore.</td>
+  </tr>
+</table>
+
+
 
 [1]: #topic1        "topic1"
 [2]: #topic2        "topic2"

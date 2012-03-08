@@ -1,7 +1,7 @@
 # How Tos (customizations and troubleshooting)
 
 ## Customizations
-  * [[Custom Chef recipes|custom-chef-recipes]]
+  * [[Customize your environment with Chef recipes|custom-chef-recipes]]
   * [[Use keep files to make custom configurations to Monit, Nginx, etc.|configuration-keep-files]]
   * [[Customize Nginx|customize-nginx]]
   * [[Customize Unicorn|customize-unicorn]]
