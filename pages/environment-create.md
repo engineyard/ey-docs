@@ -31,7 +31,7 @@ application setup within your Engine Yard account.
     Select a runtime to run your applications in this environment.
     
   * ### Domain Name
-    Set your domain name for this environment.
+    Set your domain name for this environment. This is the domain you intend to use for this application. If you are only adding one application to this environment, leave the Domain field blank (not set).
     
   * ### Region
     Select an AWS region for your environment. The default option is usually fine.
