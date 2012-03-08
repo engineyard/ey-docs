@@ -36,15 +36,7 @@ Next we need to ask a few questions about the environment where your application
 
 ![New environment setup](images/5sm.png)
 
-First, and most importantly, we need to know what environment your app should run under. This will be used for the Rails.environment or the **RACK_ENV** in your application. 
-
-Second, we need to name this environment. By default we will choose a name of **APPNAME_ENVIRONMENT**. If this does not suit your application, feel free to change it. 
-
-Next, we need to know what application server you would like to use. We recommend Passenger for production environments.  Mongrel will not work with Rails applications newer than Rails 2.3.8.
-
-Finally, we need to configure the virtual host for this application in this environment. This should be the domain you intend to use for this application. If you are only adding one application to this environment, leave the Domain field blank (not set). 
-
-There are also a few advanced options. In most cases the defaults are fine.
+For help completing this page, see [[Environment options|environment-create#options]]. In most cases, the defaults are fine.
 
 ## Boot Your Cluster
 
