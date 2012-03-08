@@ -30,11 +30,11 @@ Even if you already have the engineyard gem installed, it is good practice to ru
 
 <h2 id="topic3">Clone the ey-cloud-recipes repository</h2>
 
-To work with the ey-cloud-recipes repository, you need to fork and clone it to your development environment on your local machine. Put a local copy of the ey-cloud-recipes repository in the directory that you'll work in when writing custom Chef recipes for your environment (the same environment where you installed the engineyard gem).  
+To work with the ey-cloud-recipes repository, you need to fork and clone it to your development environment on your local machine. Clone a local copy of the ey-cloud-recipes repository in the directory that you'll work in when writing custom Chef recipes for your environment (the same environment where you installed the engineyard gem).  
 
 Here is the standard procedure for cloning a GitHub repository:
 
-###To fork and clone the [ey-cloud-recipes](http://github.com/engineyard/ey-cloud-recipes) repository
+###To fork and clone the ey-cloud-recipes repository
 
 1. Browse to the [ey-cloud-recipes](http://github.com/engineyard/ey-cloud-recipes) site on GitHub.  
 2. Click Fork to fork the repository.  
@@ -218,19 +218,17 @@ The procedure below shows how to create a new Chef recipe called nginx_logrotate
 
 <h2 id="topic8"> Report to the Dashboard from custom recipes</h2>
 
-You can have messages appear when your custom Chef recipes run.  These appear on the Environment page under the "Instances" heading; and allow you to see when the custom portions of your Chef recipes are running.
+You can have messages appear when your custom Chef recipes run.  These appear on the Environment page under the "Instances" heading; and allow you to see when the custom portions of your Chef recipes are running. These messages also appear in the chef.custom.log file. (See [Report to a log file from custom Chef recipes][9] below.)
 
 ###To report to the Dashboard from custom Chef recipes
 
 1. Edit the RB file (for example, recipes/default.rb) file with code like this:  
 
-        ey_cloud_report "my_text" do
+        ey_cloud_report "recipe_name" do
           message "message text"
         end
     
-    Where *my_text* and *more message text* is the message that you want to appear on Dashboard when that part of the code is executed.
-
-    **Question**: I don't think that the above can be correct? What do I choose to put in *my_text* and where does it appear? 
+    Where *more message text* is the message that you want to appear on Dashboard when that part of the code is executed.
 
     For example: 
 
