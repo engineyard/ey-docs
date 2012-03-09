@@ -75,9 +75,6 @@
   Tips to help you troubleshoot issues related to SSH on Engine Yard Cloud.
 
 ## How Tos
-
-* ### [[Upgrading to Ruby 1.9|upgrading-to-ruby19]]
-  Learn how to upgrade an environment to run Ruby 1.9.
   
 * ### [[Managing SSL certificates|ssl-certificates]]
   Learn how to manage SSL certificates on Engine Yard Cloud.

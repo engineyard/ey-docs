@@ -2,9 +2,6 @@
 
 
 ## Topics
-
-* ### [[Upgrading to Ruby 1.9|upgrading-to-ruby19]]
-  Learn how to upgrade an environment to run Ruby 1.9.
   
 * ### [[Managing SSL certificates|ssl-certificates]]
   Learn how to manage SSL certificates.
