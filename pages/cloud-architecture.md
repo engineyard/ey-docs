@@ -17,6 +17,6 @@ sharding provides further options for scaling.
 
 ## Technology stack
 
-For specific components supported in each of these functional areas, please see our current 
+For specific components supported in each of these functional areas, see our current 
 [[Engine Yard Technology Stack|cloud-tech-stack]].
 
