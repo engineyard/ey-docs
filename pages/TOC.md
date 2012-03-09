@@ -67,7 +67,6 @@
     * [[Troubleshooting|ssh-troubleshooting]]
   * [[Tips and HowTos|app-howto-intro]]
     * [[Introduction|app-howto-intro]]
-    * [[Upgrading to Ruby 1.9|upgrading-to-ruby19]]
     * [[SSL certificates|ssl-certificates]]
     * [[Adding Cron jobs | adding-cron-jobs]]
     * [[Bundler tips|bundler-tips-for-cloud]]
