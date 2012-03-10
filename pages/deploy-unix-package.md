@@ -1,4 +1,4 @@
-# Add Unix packages to your application
+# Add unix packages to your application
 
 You can add additional software packages to your application within Engine Yard Cloud. Packages are added at the account-level. After a package is applied to specific environment, it cannot be removed from that environment. (Although, after a package is dissociated from an application, new environments for that application do not have the package.)
 
