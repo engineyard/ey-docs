@@ -29,6 +29,7 @@
   * [[Maintenance pages|deployment-maintenance-pages]]
   * [[Change your Git repository location|change-your-repo-location]]
   * [[Convert Capistrano symlinks|convert-capistrano-symlinks-to-cloud-symlinks]]
+  * [[Add Unix packages to your application|deploy-unix-package]]
   * [[Troubleshooting|deployment-troubleshooting]]
   * [[FAQs|deployment-faqs]]
 * [[Manage your Application|manage-app-intro]]

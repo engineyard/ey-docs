@@ -43,6 +43,9 @@ deploying your applications to the cloud with our platform.
 
 11. ### [[Convert Capistrano symlinks to Engine Yard Cloud symlinks|convert-capistrano-symlinks-to-cloud-symlinks]]
    Learn how to convert Capistrano symlinks to Engine Yard Cloud symlinks for deployment.
+
+12. ### [[Add Unix packages to your application|deploy-unix-package]]  
+   Learn how to add a unix package to an environment.
    
 12. ### [[Troubleshooting|deployment-troubleshooting]]
     Check here for tips and ideas to help troubleshoot your deployment.
