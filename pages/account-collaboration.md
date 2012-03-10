@@ -8,7 +8,7 @@ The collaboration feature introduces three new concepts to Engine Yard Cloud. Th
 
   * Accounts
   * Users
-  * Creator Users
+  * Owners
 
 ### Accounts
 
@@ -22,9 +22,9 @@ A user is a person with login credentials into Engine Yard Cloud and is currentl
 
 Each user can be a part of multiple accounts and can invite other users to an account. Similarly, each account contains multiple users, and each user has access to all the environments in that account.
 
-### Creator user
+### Owners
 
-The creator is the user who created the account by signing up with Engine Yard. This special user is responsible for billing for the account, has access to payment information.  Also, this is the only user who can cancel the account.
+The owner is the user who created the account by signing up with Engine Yard. This special user is responsible for billing for the account, has access to payment information.  Also, this is the only user who can cancel the account.
 
 ## Use cases
 
@@ -39,7 +39,7 @@ Click on the account settings link on the top bar to see the list of accounts th
 
 <img src="/images/collaboration/collab-nav-link.jpg" alt="Account Settings Link" width="700" />
 
-The accounts page lists each account, the creator for that account and some other summary information. You can manage each account by clicking on the account name to get to the account management screen.
+The accounts page lists each account, the owner for that account and some other summary information. You can manage each account by clicking on the account name to get to the account management screen.
 
 <img src="/images/collaboration/collab-account-list.jpg" alt="Engine Yard Cloud List of Accounts" width="700" />
 
@@ -71,9 +71,9 @@ If a user is a part of multiple accounts, each environment from each account wil
 
 Many Engine Yard customers develop applications for multiple consumers simultaneously. These consumers might be external customers or separate internal applications. In such situations, having common credentials that can be used across each account is useful for customers. The following is a recommended workflow for these use cases:
 
-  - Create a new account for each customer. You can do so by [[signing up|http://cloud.engineyard.com]]. This creates a new creator user, which is the administrator user for this account. **Note:** If you already have existing accounts that you would like to collaborate with, skip this step. 
+  - Create a new account for each customer. You can do so by [[signing up|http://cloud.engineyard.com]]. This creates a new owner, which is the administrator user for this account. **Note:** If you already have existing accounts that you would like to collaborate with, skip this step. 
   - In the new account, go to the accounts section and add developers to the account. If the developers already have Engine Yard credentials, they can accept the invitation under whatever account they are signed in as. You can also add new users to each account. Add their email information and they receive an invitation to open a new account.
-  - If you want to hand off the project to your customer, give them credentials for the creator account and remove any members who no longer need access from the Accounts page.
+  - If you want to hand off the project to your customer, give them credentials for the owner account and remove any members who no longer need access from the Accounts page.
 
 The email invitation sent to a user can be accepted only once. However, we do not bind the invitation link to the email address it was originally sent to. This enables users who already have accounts to accept invitations sent to other email addresses that they own. Any member of an account can also rescind an invitation by removing it on the Account Management page.
 
@@ -87,8 +87,8 @@ Learn more about [[managing your ssh keys|env_ssh_keys]] on our docs site.
 
 ### Can we assign specific permissions to individual users in each account?
 
-Currently there are no per-user permissions in Engine Yard Cloud.  Each user for an account has access to all environments on that account. The only special permissions are the ability to change payment information and cancel the account, which is granted to the creator user.
+Currently there are no per-user permissions in Engine Yard Cloud.  Each user for an account has access to all environments on that account. The only special permissions are the ability to change payment information and cancel the account, which is granted to the owner.
 
-### Can we change the creator user for an account?
+### Can we change the owner for an account?
 
-At this point, we do not support reassigning the creator user for an account.
+To change the owner of the account, submit a ticket with [[Engine Yard Support|http://support.cloud.engineyard.com]]. 
