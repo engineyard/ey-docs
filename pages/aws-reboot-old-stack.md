@@ -10,7 +10,7 @@ To minimize post-reboot down time for your environment, we have turned off the a
   
     * If you have set up configurations via custom chef recipes, you can run the following command (all on one line) to start all processes up again:
   
-    `/usr/local/ey_resin/bin/ey-enzyme --main --chef-bin /usr/local/ey_resin/bin/chef-solo`
+    `sudo -s /usr/local/ey_resin/bin/ey-enzyme --main --chef-bin /usr/local/ey_resin/bin/chef-solo`
   
     * If you do not have all your configurations captured in a custom chef recipe, you will have to manually start any additional processes -- refer to the notes you gathered before rebooting your instances.
 4. Reboot all utility instances, performing Step 3 on them as they become available again. For utility instance with database-like services, follow **[[these instructions|aws-reboot-database]]** to ensure data integrity.
