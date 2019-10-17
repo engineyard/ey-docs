@@ -3,7 +3,7 @@ source "http://rubygems.org"
 
 gem 'bundler', '~>1.0.12'
 gem 'gollum-site'
-gem 'gollum', '=1.3.0'
+gem 'gollum', '4.0.1'
 gem 'rdiscount'
 gem 'pygmentize'
 gem 'rake'
